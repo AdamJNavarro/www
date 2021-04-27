@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import Link from 'next/link'
-import routes from '../config/routes'
+import routes from '../../config/routes'
 import { useRouter } from 'next/router'
 
 const defaultRoutes = [
