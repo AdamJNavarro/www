@@ -1,16 +1,11 @@
 import { CenteredColumn, Page } from "../components/layout";
 
-export default function Home() {
-
- 
-
-
+export default function AboutPage() {
   return (
     <Page>
       <CenteredColumn>
-      <h1 className="text-6xl font-bold text-green-600">TESTING</h1>
-
+        <h1>About Page</h1>
       </CenteredColumn>
     </Page>
-  )
+  );
 }

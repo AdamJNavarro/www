@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.wrapTabs": true,
+    "workbench.colorTheme": "In Bed by 7pm",
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
