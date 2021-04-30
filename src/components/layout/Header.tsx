@@ -6,7 +6,7 @@ import Link from "next/link";
 import routes from "../../config/routes";
 import { useRouter } from "next/router";
 
-const defaultRoutes = [routes.home, routes.about];
+const defaultRoutes = [routes.home, routes.projects];
 
 export default function Header() {
   const [isExpanded, setIsExpanded] = React.useState(false);
@@ -21,7 +21,7 @@ export default function Header() {
           .find((r) => currPathName.includes(r.path))?.label;
 
   return (
-    <div className="fixed top-0 z-10 w-full py-2 bg-white border-b border-gray-400 dark:border-opacity-10 border-opacity-20 md:bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-40 filter-blur">
+    <div className="w-full py-2 bg-white border-b border-gray-400 dark:border-opacity-10 border-opacity-20 md:bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-40 filter-blur">
       {/* Mobile nav */}
       <div className="grid grid-cols-1 md:hidden">
         <div className="flex items-center pr-4 text-primary">

@@ -1,5 +1,6 @@
 import { CenteredColumn, Page } from "../components/layout";
 
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -39,6 +40,16 @@ export default function Home() {
   const renderContent = () => {
     return (
       <div className="space-y-16 md:space-y-24 ">
+        <div className="-mx-4 -mt-16 md:mt-0 md:-mx-8 ">
+          <Image
+            src="/images/adam.jpg"
+            alt={"A photo of me"}
+            layout="fixed"
+            width="500"
+            height="500"
+            className="md:rounded-lg"
+          />
+        </div>
         <div className="space-y-8 md:items-center">
           <p>
             Hey, I'm Adam Navarro. I'm currently making this website to get

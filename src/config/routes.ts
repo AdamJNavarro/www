@@ -1,12 +1,12 @@
 const routes = {
-    home: {
-        label: "Home",
-        path: "/"
-    },
-    about: {
-        label: "About",
-        path: "/about"
-    }
-}
+  home: {
+    label: "Home",
+    path: "/",
+  },
+  projects: {
+    label: "Projects",
+    path: "/projects",
+  },
+};
 
-export default routes
+export default routes;
