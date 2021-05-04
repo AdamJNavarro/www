@@ -1,22 +1,30 @@
 import { CenteredColumn, Page } from "../components/layout";
 
-import Link from "next/link";
 export default function ProjectsPage() {
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-10">
-          <div className="space-y-2">
+        <div className="mt-12 space-y-12">
+          <div className="space-y-1">
             <h1 className="font-sans text-2xl font-black md:text-4xl text-primary">
               Projects
             </h1>
-            <p className="font-sans text-xl leading-snug md:text-2xl text-tertiary">
+            <p className="font-sans text-lg leading-snug md:text-xl text-tertiary">
               Various things I've created or worked on.
             </p>
           </div>
-          <div className="space-y-16 md:space-y-24">
+          <div className="space-y-16 md:space-y-20">
             <div className="space-y-8">
-              <ProjectList />
+              <h4 className="font-sans text-xl font-bold md:text-2xl text-secondary">
+                Active Projects
+              </h4>
+              <ActiveProjectList />
+            </div>
+            <div className="space-y-8">
+              <h4 className="font-sans text-xl font-bold md:text-2xl text-secondary">
+                Dead Projects
+              </h4>
+              <DeadProjectsList />
             </div>
           </div>
         </div>
@@ -25,75 +33,56 @@ export default function ProjectsPage() {
   );
 }
 
-const ProjectList = () => {
+const ActiveProjectList = () => {
   return (
-    <div className="space-y-6">
+    <div className="prose space-y-6">
       <div className="space-y-1">
         <a
-          href="https://staff.design"
+          href="https://expo.io/home"
+          target="_blank"
+          rel="noopener noreferrer"
           className="font-medium highlight-link-hover"
         >
-          Staff Design
+          Expo
         </a>
 
         <p className="text-tertiary">
-          A collection of interviews exploring how product designers navigate
-          the individual contributor path to its highest levels.
+          A framework and a platform for universal React applications. It is a
+          set of tools and services built around React Native and native
+          platforms that help you develop, build, deploy, and quickly iterate on
+          iOS, Android, and web apps from the same JavaScript/TypeScript
+          codebase.
         </p>
       </div>
 
       <div className="space-y-1">
-        <Link passHref href="/stack">
-          <a className="font-medium highlight-link-hover">My Stack</a>
-        </Link>
+        <a
+          href="https://getmomento.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium highlight-link-hover"
+        >
+          Momento
+        </a>
 
         <p className="text-tertiary">
-          A curated list of my favorite tools and software.
+          A mobile application designed to help people create lasting video
+          memories to be shared with loved ones.
         </p>
       </div>
+    </div>
+  );
+};
 
+const DeadProjectsList = () => {
+  return (
+    <div className="space-y-6">
       <div className="space-y-1">
-        <Link passHref href="/security">
-          <a className="font-medium highlight-link-hover">Security Checklist</a>
-        </Link>
-
+        <p className="font-medium">Nexus</p>
         <p className="text-tertiary">
-          Tools and resources for staying safe on the internet.
-        </p>
-      </div>
-
-      <div className="space-y-1">
-        <Link passHref href="/bookmarks">
-          <a className="font-medium highlight-link-hover">Bookmarks</a>
-        </Link>
-
-        <p className="text-tertiary">Internet things, saved for later.</p>
-      </div>
-
-      <div className="space-y-1">
-        <Link passHref href="/ama">
-          <a className="font-medium highlight-link-hover">AMA</a>
-        </Link>
-
-        <p className="text-tertiary">Ask me anything.</p>
-      </div>
-
-      <div className="space-y-1">
-        <Link passHref href="/hn">
-          <a className="font-medium highlight-link-hover">Better Hacker News</a>
-        </Link>
-
-        <p className="text-tertiary">A better Hacker News.</p>
-      </div>
-
-      <div className="space-y-1">
-        <Link passHref href="/app-dissection">
-          <a className="font-medium highlight-link-hover">App Dissection</a>
-        </Link>
-
-        <p className="text-tertiary">
-          In-depth explorations of visual and interaction design in well-known
-          apps.
+          A mobile application that aimed to enhance the social experience of
+          going out to bars and clubs. Needless to say it did not take off but
+          it was how I learned to code and ultimately led me to Expo.
         </p>
       </div>
     </div>
