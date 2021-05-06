@@ -1,11 +1,11 @@
-import Header from "./Header";
-import React from "react";
+import Header from "./Header"
+import React from "react"
 
 export default function Page({ children }: any) {
   return (
-    <div className="flex flex-col h-screen">
+    <>
       <Header />
-      <div className="flex-1 overflow-y-auto p-5">{children}</div>
-    </div>
-  );
+      <div className="px-4 py-24 md:py-32 lg:px-0">{children}</div>
+    </>
+  )
 }
