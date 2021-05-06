@@ -43,6 +43,84 @@ const words = [
     word: "inimitable",
     definition: "so good or unusual as to be impossible to copy; unique",
   },
+  {
+    word: "pernicious",
+    definition: "having a harmful effect in a gradual or subtle manner",
+  },
+  {
+    word: "condign",
+    definition: "appropriate to the punishment of the crime, fitting, deserved",
+  },
+  {
+    word: "umbrage",
+    definition: "offense or annoyance",
+  },
+  {
+    word: "melange",
+    definition: "a mixture or medley",
+  },
+  {
+    word: "desiccate",
+    definition: "to dry thoroughly",
+  },
+  {
+    word: "putative",
+    definition: "generally considered or reputed to be",
+  },
+  {
+    word: "assiduously",
+    definition: "with great care and perseverance",
+  },
+  {
+    word: "aspersion",
+    definition: "an attack on the reputation or integrity of someone or something",
+  },
+  {
+    word: "impingement",
+    definition:
+      "to have an impact on or make an impression; to encroach or infringe upon",
+  },
+  {
+    word: "exigency",
+    definition: "an urgent need or demand",
+  },
+  {
+    word: "synodical",
+    definition: "relating to conjunction",
+  },
+  {
+    word: "ermine",
+    definition: "any of several weasels whose coats become white in winter",
+  },
+  {
+    word: "somnolence",
+    definition: "the quality or state of being drowsy",
+  },
+  {
+    word: "obsequious",
+    definition: "marked by or exhibiting a fawning attentiveness",
+  },
+  {
+    word: "querulous",
+    definition: "habitually complaining",
+  },
+  {
+    word: "soporific",
+    definition: "causing or tending to cause sleep",
+  },
+  {
+    word: "pedagogy",
+    definition: "the art, science, or profession of teaching",
+  },
+  {
+    word: "timorously",
+    definition: "of a timid disposition",
+  },
+  {
+    word: "seiche",
+    definition:
+      "an oscillation of the surface of a landlocked body of water that varies in period from a few minutes to several hours",
+  },
 ]
 
 export default words

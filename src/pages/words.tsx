@@ -12,17 +12,17 @@ export default function WordsPage() {
             subtitle="An ever-growing list of words I've encountered and did not know."
           />
 
-          <div className="prose">
+          <div className="space-y-5">
             {words.map((word) => {
               return (
-                <p key={word.word}>
+                <p key={word.word} className="text-gray-900">
                   <a
                     href={`https://www.merriam-webster.com/dictionary/${encodeURIComponent(
                       word.word
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="capitalize"
+                    className="capitalize font-medium underline text-black"
                   >
                     {word.word}
                   </a>{" "}
