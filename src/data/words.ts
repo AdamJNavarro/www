@@ -121,6 +121,30 @@ const words = [
     definition:
       "an oscillation of the surface of a landlocked body of water that varies in period from a few minutes to several hours",
   },
+  {
+    word: "improvident",
+    definition: "not foreseeing and providing for the future",
+  },
+  {
+    word: "contrivance",
+    definition: "an artificial arrangement or development",
+  },
+  {
+    word: "slovenly",
+    definition: "careless; excessively casual",
+  },
+  {
+    word: "festoon",
+    definition: "to adorn a place with ribbons, garlands, or other decorations",
+  },
+  {
+    word: "reconnoiter",
+    definition: "to make a military observation of (a region)",
+  },
+  {
+    word: "scansion",
+    definition: " the action of scanning a line of verse to determine its rhythm",
+  },
 ]
 
 export default words
