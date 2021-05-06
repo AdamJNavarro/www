@@ -7,6 +7,10 @@ const routes = {
     label: "Projects",
     path: "/projects",
   },
+  books: {
+    label: "Books",
+    path: "/books",
+  },
   words: {
     label: "Words",
     path: "/words",

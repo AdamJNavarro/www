@@ -6,7 +6,7 @@ export default function WordsPage() {
   return (
     <Page>
       <CenteredColumn>
-        <div className="mt-12 space-y-12">
+        <div className="mt-12 space-y-10">
           <div className="space-y-1">
             <h1 className="font-sans text-2xl font-black md:text-4xl text-primary">
               Words
@@ -15,14 +15,14 @@ export default function WordsPage() {
               An ever-growing list of words I've encountered and did not know.
             </p>
           </div>
-          <h3 className="font-serif text-base">
+          <h3 className="font-sans text-base italic">
             * The definitions below are for my own understanding. Links to
             Merriam-Webster provided.
           </h3>
           <div className="prose">
             {words.map((word) => {
               return (
-                <p>
+                <p key={word.word}>
                   <a
                     href={`https://www.merriam-webster.com/dictionary/${encodeURIComponent(
                       word.word

@@ -20,6 +20,29 @@ const words = [
     word: "demiurge",
     definition: "a being responsible for the creation of the universe",
   },
+  {
+    word: "luddite",
+    definition:
+      "someone who is opposed or resistant to new technologies or technological change",
+  },
+  {
+    word: "shibboleth",
+    definition:
+      "a custom, principle, or belief distinguishing a particular class or group of people, especially a long-standing one regarded as outmoded or no longer important",
+  },
+  {
+    word: "iconoclast",
+    definition: "a person who attacks cherished beliefs or institutions",
+  },
+  {
+    word: "fusillade",
+    definition:
+      "a series of shots fired or missiles thrown all at the same time or in quick succession",
+  },
+  {
+    word: "inimitable",
+    definition: "so good or unusual as to be impossible to copy; unique",
+  },
 ]
 
 export default words

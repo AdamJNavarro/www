@@ -7,7 +7,7 @@ import cntl from "cntl"
 import routes from "../../config/routes"
 import { useRouter } from "next/router"
 
-const defaultRoutes = [routes.home, routes.projects, routes.words]
+const defaultRoutes = [routes.home, routes.projects, routes.books, routes.words]
 
 const headerCN = cntl`
 w-full py-2 bg-white border-b border-gray-400 dark:border-opacity-10 border-opacity-20 md:bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-40 filter-blur
