@@ -3,6 +3,8 @@ import { CenteredColumn, Page, PageHeader } from "../components/layout"
 import words from "../data/words"
 
 export default function WordsPage() {
+  //const orderedWords = words.sort((a, b) => (a.word > b.word ? 1 : -1))
+
   return (
     <Page>
       <CenteredColumn>

@@ -37,7 +37,7 @@ export default function Header() {
             {isExpanded ? <X size={16} /> : <Menu size={16} />}
           </button>
           <p className="font-sans text-sm font-semibold text-primary">
-            {mobileTitle}
+            {isExpanded ? "" : `${mobileTitle}`}
           </p>
         </div>
         {isExpanded && (
@@ -45,11 +45,19 @@ export default function Header() {
         )}
         {isExpanded &&
           defaultRoutes.map((route) => {
+            const isActive = route.path === router.pathname
+
             const defaultClasses = `flex font-sans items-center pl-12 py-4 font-semibold text-sm text-primary text-opacity-80`
 
             return (
               <Link href={route.path} key={route.path}>
-                <a className={`${defaultClasses}`}>{route.label}</a>
+                <a
+                  className={`${defaultClasses} ${
+                    isActive ? `text-indigo-900` : ``
+                  }`}
+                >
+                  {route.label}
+                </a>
               </Link>
             )
           })}

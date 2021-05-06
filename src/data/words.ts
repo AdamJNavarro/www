@@ -145,6 +145,90 @@ const words = [
     word: "scansion",
     definition: " the action of scanning a line of verse to determine its rhythm",
   },
+  {
+    word: "intransigence",
+    definition: "refusal to change one's views or to agree about something",
+  },
+  {
+    word: "vittles",
+    definition: "provisions or eatables",
+  },
+  {
+    word: "furtive",
+    definition:
+      "attempting to avoid notice or attention, typically because of guilt or a belief that discovery would lead to trouble; secretive",
+  },
+  {
+    word: "autarky",
+    definition: "economic independence or self-sufficiency",
+  },
+  {
+    word: "bivouac",
+    definition:
+      "a temporary camp without tents or cover, used especially by soldiers or mountaineers",
+  },
+  {
+    word: "bien-pensants",
+    definition: "a right thinking or orthodox person",
+  },
+  {
+    word: "remonstrance",
+    definition: "an earnest presentation of reasons for opposition or grievance",
+  },
+  {
+    word: "parsimonious",
+    definition: "unwilling to spend money or use resources",
+  },
+  {
+    word: "semaphore",
+    definition:
+      "a variable or abstract data type used to control access to a common resource",
+  },
+  {
+    word: "presage",
+    definition: "something that foreshadows or portends a future event",
+  },
+  {
+    word: "vituperation",
+    definition: "noun that refers to critical or abusive language",
+  },
+  {
+    word: "pollyannish",
+    definition:
+      "irrepressibly or excessively optimistic; capable of seeing good in anyone",
+  },
+  {
+    word: "rivulet",
+    definition: "a small stream",
+  },
+  {
+    word: "recrimination",
+    definition: "a retaliatory accusation",
+  },
+  {
+    word: "gauche",
+    definition: "lacking social experience or grace",
+  },
+  {
+    word: "sidled",
+    definition: "to move sideways",
+  },
+  {
+    word: "obsequious",
+    definition: "obedient; excessively eager to comply",
+  },
+  {
+    word: "cogitating",
+    definition: "pondering or meditating on",
+  },
+  {
+    word: "contretemps",
+    definition: "minor disagreement or dispute",
+  },
+  {
+    word: "prevaricate",
+    definition: "to deviate from the truth",
+  },
 ]
 
 export default words
