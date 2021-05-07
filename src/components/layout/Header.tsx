@@ -7,7 +7,13 @@ import cntl from "cntl"
 import routes from "../../config/routes"
 import { useRouter } from "next/router"
 
-const defaultRoutes = [routes.home, routes.projects, routes.books, routes.words]
+const defaultRoutes = [
+  routes.home,
+  routes.projects,
+  routes.books,
+  routes.writing,
+  routes.words,
+]
 
 const headerCN = cntl`
 fixed top-0 z-10 w-full py-2 bg-white border-b border-gray-400 md:z-auto md:relative  border-opacity-20 filter-blur
@@ -65,7 +71,7 @@ export default function Header() {
       {/* End mobile nav */}
 
       {/* Desktop nav */}
-      <div className={`hidden max-w-screen-md grid-cols-4 gap-2.5 mx-auto md:grid`}>
+      <div className="hidden max-w-screen-md grid-cols-5 gap-2.5 mx-auto md:grid">
         {defaultRoutes.map((route) => {
           const isActive = route.path === router.pathname
           const defaultClasses = `font-sans font-semibold flex rounded items-center text-opacity-40 justify-center py-2 text-sm`
