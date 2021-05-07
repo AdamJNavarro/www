@@ -1,9 +1,10 @@
 import { CenteredColumn, Page, PageHeader } from "../../components/layout"
+import { format, parseISO } from "date-fns"
 
 import Link from "next/link"
-import posts from "../../data/posts"
+import getAllPosts from "../../helpers/getAllPosts"
 
-export default function WritingPage() {
+export default function WritingPage({ posts }: any) {
   return (
     <Page>
       <CenteredColumn>
@@ -13,6 +14,7 @@ export default function WritingPage() {
             subtitle="A collection of my thoughts put on paper."
           />
         </div>
+        {/*
         <div className="prose">
           {posts.map((post) => {
             return (
@@ -22,12 +24,28 @@ export default function WritingPage() {
                     <a>{post.title}</a>
                   </Link>
                 </p>
+                <p>{format(parseISO(post.date), "MMMM do, uuu")}</p>
                 <p>{post.synopsis}</p>
               </div>
             )
           })}
-        </div>
+        </div> 
+        */}
       </CenteredColumn>
     </Page>
   )
+}
+
+export async function getStaticProps() {
+  const allPosts = getAllPosts()
+  return {
+    props: {
+      posts: allPosts.map(({ data, content, slug }) => ({
+        ...data,
+        date: data.date.toISOString(),
+        content,
+        slug,
+      })),
+    },
+  }
 }
