@@ -14,15 +14,16 @@ export default function BooksPage() {
 
           <div className="prose">
             {books.map((book) => {
+              const { title, author, takeaway, url } = book
               return (
-                <div className="space-y-1">
+                <div key={title} className="space-y-1">
                   <p>
-                    <a href={book.url} target="_blank" rel="noopener noreferrer">
-                      {book.title}
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      {title}
                     </a>{" "}
-                    by {book.author}
+                    by {author}
                   </p>
-                  <p>{book.takeaway}</p>
+                  <p>{takeaway}</p>
                 </div>
               )
             })}

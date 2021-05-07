@@ -1,232 +1,232 @@
 const words = [
   {
-    word: "hegemonic",
+    term: "hegemonic",
     definition: "having complete dominion or power",
   },
   {
-    word: "ameliorate",
+    term: "ameliorate",
     definition: "to make better or more tolerable",
   },
   {
-    word: "nascent",
+    term: "nascent",
     definition:
       "coming into existence and beginning to display signs of future potential",
   },
   {
-    word: "anathema",
+    term: "anathema",
     definition: "someone or something that is detested or shunned",
   },
   {
-    word: "demiurge",
+    term: "demiurge",
     definition: "a being responsible for the creation of the universe",
   },
   {
-    word: "luddite",
+    term: "luddite",
     definition:
       "someone who is opposed or resistant to new technologies or technological change",
   },
   {
-    word: "shibboleth",
+    term: "shibboleth",
     definition:
       "a custom, principle, or belief distinguishing a particular class or group of people, especially a long-standing one regarded as outmoded or no longer important",
   },
   {
-    word: "iconoclast",
+    term: "iconoclast",
     definition: "a person who attacks cherished beliefs or institutions",
   },
   {
-    word: "fusillade",
+    term: "fusillade",
     definition:
       "a series of shots fired or missiles thrown all at the same time or in quick succession",
   },
   {
-    word: "inimitable",
+    term: "inimitable",
     definition: "so good or unusual as to be impossible to copy; unique",
   },
   {
-    word: "pernicious",
+    term: "pernicious",
     definition: "having a harmful effect in a gradual or subtle manner",
   },
   {
-    word: "condign",
+    term: "condign",
     definition: "appropriate to the punishment of the crime, fitting, deserved",
   },
   {
-    word: "umbrage",
+    term: "umbrage",
     definition: "offense or annoyance",
   },
   {
-    word: "melange",
+    term: "melange",
     definition: "a mixture or medley",
   },
   {
-    word: "desiccate",
+    term: "desiccate",
     definition: "to dry thoroughly",
   },
   {
-    word: "putative",
+    term: "putative",
     definition: "generally considered or reputed to be",
   },
   {
-    word: "assiduously",
+    term: "assiduously",
     definition: "with great care and perseverance",
   },
   {
-    word: "aspersion",
+    term: "aspersion",
     definition: "an attack on the reputation or integrity of someone or something",
   },
   {
-    word: "impingement",
+    term: "impingement",
     definition:
       "to have an impact on or make an impression; to encroach or infringe upon",
   },
   {
-    word: "exigency",
+    term: "exigency",
     definition: "an urgent need or demand",
   },
   {
-    word: "synodical",
+    term: "synodical",
     definition: "relating to conjunction",
   },
   {
-    word: "ermine",
+    term: "ermine",
     definition: "any of several weasels whose coats become white in winter",
   },
   {
-    word: "somnolence",
+    term: "somnolence",
     definition: "the quality or state of being drowsy",
   },
   {
-    word: "obsequious",
+    term: "obsequious",
     definition: "marked by or exhibiting a fawning attentiveness",
   },
   {
-    word: "querulous",
+    term: "querulous",
     definition: "habitually complaining",
   },
   {
-    word: "soporific",
+    term: "soporific",
     definition: "causing or tending to cause sleep",
   },
   {
-    word: "pedagogy",
+    term: "pedagogy",
     definition: "the art, science, or profession of teaching",
   },
   {
-    word: "timorously",
+    term: "timorously",
     definition: "of a timid disposition",
   },
   {
-    word: "seiche",
+    term: "seiche",
     definition:
       "an oscillation of the surface of a landlocked body of water that varies in period from a few minutes to several hours",
   },
   {
-    word: "improvident",
+    term: "improvident",
     definition: "not foreseeing and providing for the future",
   },
   {
-    word: "contrivance",
+    term: "contrivance",
     definition: "an artificial arrangement or development",
   },
   {
-    word: "slovenly",
+    term: "slovenly",
     definition: "careless; excessively casual",
   },
   {
-    word: "festoon",
+    term: "festoon",
     definition: "to adorn a place with ribbons, garlands, or other decorations",
   },
   {
-    word: "reconnoiter",
+    term: "reconnoiter",
     definition: "to make a military observation of (a region)",
   },
   {
-    word: "scansion",
+    term: "scansion",
     definition: " the action of scanning a line of verse to determine its rhythm",
   },
   {
-    word: "intransigence",
+    term: "intransigence",
     definition: "refusal to change one's views or to agree about something",
   },
   {
-    word: "vittles",
+    term: "vittles",
     definition: "provisions or eatables",
   },
   {
-    word: "furtive",
+    term: "furtive",
     definition:
       "attempting to avoid notice or attention, typically because of guilt or a belief that discovery would lead to trouble; secretive",
   },
   {
-    word: "autarky",
+    term: "autarky",
     definition: "economic independence or self-sufficiency",
   },
   {
-    word: "bivouac",
+    term: "bivouac",
     definition:
       "a temporary camp without tents or cover, used especially by soldiers or mountaineers",
   },
   {
-    word: "bien-pensants",
+    term: "bien-pensants",
     definition: "a right thinking or orthodox person",
   },
   {
-    word: "remonstrance",
+    term: "remonstrance",
     definition: "an earnest presentation of reasons for opposition or grievance",
   },
   {
-    word: "parsimonious",
+    term: "parsimonious",
     definition: "unwilling to spend money or use resources",
   },
   {
-    word: "semaphore",
+    term: "semaphore",
     definition:
       "a variable or abstract data type used to control access to a common resource",
   },
   {
-    word: "presage",
+    term: "presage",
     definition: "something that foreshadows or portends a future event",
   },
   {
-    word: "vituperation",
+    term: "vituperation",
     definition: "noun that refers to critical or abusive language",
   },
   {
-    word: "pollyannish",
+    term: "pollyannish",
     definition:
       "irrepressibly or excessively optimistic; capable of seeing good in anyone",
   },
   {
-    word: "rivulet",
+    term: "rivulet",
     definition: "a small stream",
   },
   {
-    word: "recrimination",
+    term: "recrimination",
     definition: "a retaliatory accusation",
   },
   {
-    word: "gauche",
+    term: "gauche",
     definition: "lacking social experience or grace",
   },
   {
-    word: "sidled",
+    term: "sidled",
     definition: "to move sideways",
   },
   {
-    word: "obsequious",
+    term: "obsequious",
     definition: "obedient; excessively eager to comply",
   },
   {
-    word: "cogitating",
+    term: "cogitating",
     definition: "pondering or meditating on",
   },
   {
-    word: "contretemps",
+    term: "contretemps",
     definition: "minor disagreement or dispute",
   },
   {
-    word: "prevaricate",
+    term: "prevaricate",
     definition: "to deviate from the truth",
   },
 ]

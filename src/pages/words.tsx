@@ -3,7 +3,7 @@ import { CenteredColumn, Page, PageHeader } from "../components/layout"
 import words from "../data/words"
 
 export default function WordsPage() {
-  //const orderedWords = words.sort((a, b) => (a.word > b.word ? 1 : -1))
+  //const orderedWords = words.sort((a, b) => (a.term > b.term ? 1 : -1))
 
   return (
     <Page>
@@ -16,19 +16,20 @@ export default function WordsPage() {
 
           <div className="prose">
             {words.map((word) => {
+              const { term, definition } = word
               return (
-                <p key={word.word}>
+                <p key={term}>
                   <a
                     href={`https://www.merriam-webster.com/dictionary/${encodeURIComponent(
-                      word.word
+                      term
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="capitalize"
                   >
-                    {word.word}
+                    {term}
                   </a>{" "}
-                  - {word.definition}.
+                  - {definition}.
                 </p>
               )
             })}

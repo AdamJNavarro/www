@@ -10,7 +10,7 @@ const ProjectList = ({ label, projects }: ProjectListProps) => {
         {projects.map((project) => {
           const { name, url, description } = project
           return (
-            <div className="space-y-1">
+            <div key={name} className="space-y-1">
               <a
                 href={url}
                 target="_blank"
