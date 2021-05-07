@@ -3,7 +3,6 @@ import * as React from "react"
 import { Menu, X } from "react-feather"
 
 import Link from "next/link"
-import cntl from "cntl"
 import routes from "../../config/routes"
 import { useRouter } from "next/router"
 
@@ -14,10 +13,6 @@ const defaultRoutes = [
   routes.words,
   routes.writing,
 ]
-
-const headerCN = cntl`
-fixed top-0 z-10 w-full py-2 bg-white border-b border-gray-400 md:z-auto md:relative  border-opacity-20 filter-blur
-`
 
 export default function Header() {
   const [isExpanded, setIsExpanded] = React.useState(false)
@@ -32,7 +27,7 @@ export default function Header() {
           .find((r) => currPathName.includes(r.path))?.label
 
   return (
-    <div className={headerCN}>
+    <div className="fixed top-0 z-10 w-full py-2 bg-white border-b border-gray-400 md:z-auto md:relative border-opacity-20 filter-blur">
       {/* Mobile nav */}
       <div className="grid grid-cols-1 md:hidden">
         <div className="flex items-center pr-4 text-primary">
