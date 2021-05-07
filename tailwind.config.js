@@ -4,7 +4,13 @@ module.exports = {
   purge: ["./src/**/*.tsx"],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        white: "#fff",
+        gray: colors.trueGray,
+        "gray-1000": "#050505",
+      },
+    },
   },
   variants: {
     extend: {},

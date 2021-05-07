@@ -11,6 +11,10 @@ const routes = {
     label: "Books",
     path: "/books",
   },
+  writing: {
+    label: "Writing",
+    path: "/writing",
+  },
   words: {
     label: "Words",
     path: "/words",
