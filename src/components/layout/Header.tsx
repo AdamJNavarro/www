@@ -71,9 +71,7 @@ export default function Header() {
       {/* End mobile nav */}
 
       {/* Desktop nav */}
-      <div
-        className={`hidden max-w-screen-md grid-cols-${defaultRoutes.length} gap-2.5 mx-auto md:grid`}
-      >
+      <div className="hidden max-w-screen-md grid-cols-5 gap-2.5 mx-auto md:grid">
         {defaultRoutes.map((route) => {
           const isActive = route.path === router.pathname
           const defaultClasses = `font-sans font-semibold flex rounded items-center text-opacity-40 justify-center py-2 text-sm`
@@ -96,10 +94,3 @@ export default function Header() {
     </div>
   )
 }
-
-/**
-   * PurgeCSS:
-   * grid-cols-4
-   * grid-cols-5
-
-   */
