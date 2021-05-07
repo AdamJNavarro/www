@@ -1,7 +1,7 @@
 import "../styles/tailwind.css"
 import "../styles/prose.css"
 
-import MetaWrapper from "../components/MetaWrapper"
+import MetaWrapper from "../components/layout/MetaWrapper"
 
 function MyApp({ Component, pageProps }) {
   return (
