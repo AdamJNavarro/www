@@ -1,6 +1,6 @@
 const routes = {
-  home: {
-    label: "Home",
+  about: {
+    label: "About",
     path: "/",
   },
   projects: {

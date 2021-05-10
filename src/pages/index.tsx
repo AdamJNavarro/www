@@ -7,21 +7,29 @@ export default function Home() {
     <Page>
       <CenteredColumn>
         <>
-          <div className="flex my-10">
+          <div className="flex my-10 justify-center">
             <Image
               src="/images/adam.jpg"
               alt={"A photo of me"}
               layout="intrinsic"
-              width="500"
-              height="500"
+              width="350"
+              height="350"
               className="rounded-full shadow-l"
             />
           </div>
           <div className="space-y-6 md:items-center prose">
             <p>
-              Hey, I'm Adam Navarro. I'm still workshoping what I want to say on this
-              about page so for the time being this placeholder paragraph will have
-              to suffice. I'll update this in the near future...hopefully.
+              Hey there, I'm Adam. I enjoy building things and am currently working
+              on{" "}
+              <a
+                href="https://docs.expo.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Expo
+              </a>
+              . Some of my other passions include playing guitar and piano, working
+              out and helping others in whatever way that I can.
             </p>
           </div>
         </>

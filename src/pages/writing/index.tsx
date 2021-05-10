@@ -11,8 +11,11 @@ export default function WritingPage({ posts }: any) {
         <div className="space-y-10">
           <PageHeader
             title="Writing"
-            subtitle="A collection of my thoughts put on paper."
+            subtitle="A collection of my thoughts put to words."
           />
+        </div>
+        <div className="prose mt-10">
+          <h5> *** Will be adding content here hopefully in the near future. ***</h5>
         </div>
         {/*
         <div className="prose">

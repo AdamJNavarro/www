@@ -7,7 +7,7 @@ import routes from "../../config/routes"
 import { useRouter } from "next/router"
 
 const defaultRoutes = [
-  routes.home,
+  routes.about,
   routes.projects,
   routes.books,
   routes.words,
@@ -21,7 +21,7 @@ export default function Header() {
   const routesAsArr = Object.keys(routes).map((r) => routes[r])
   const mobileTitle =
     currPathName === "/"
-      ? "Home"
+      ? "About"
       : routesAsArr
           .filter((r) => r.path !== "/")
           .find((r) => currPathName.includes(r.path))?.label
@@ -54,7 +54,7 @@ export default function Header() {
               <Link href={route.path} key={route.path}>
                 <a
                   className={`${defaultClasses} ${
-                    isActive ? `text-purple-700` : ``
+                    isActive ? `text-indigo-700` : ``
                   }`}
                 >
                   {route.label}
