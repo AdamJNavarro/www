@@ -1,4 +1,4 @@
-import { CenteredColumn, Page, PageHeader } from "../components/layout"
+import { CenteredColumn, Page } from "../components/layout"
 
 import books from "../data/books"
 
@@ -7,10 +7,22 @@ export default function BooksPage() {
     <Page>
       <CenteredColumn>
         <div className="space-y-12">
-          <PageHeader
-            title="Books"
-            subtitle="What I've read recently with my main takeaway from each book."
-          />
+          <div className="space-y-1">
+            <h1 className="font-sans text-2xl font-black md:text-4xl">Books</h1>
+            <p className="prose font-sans text-lg md:text-xl">
+              What I've read recently with my main takeaway from each book. Currently
+              reading{" "}
+              <a
+                href="https://www.goodreads.com/book/show/59716.To_the_Lighthouse"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="italic"
+              >
+                To The Lighthouse
+              </a>{" "}
+              by Virginia Woolf.
+            </p>
+          </div>
 
           <div className="prose">
             {books.map((book) => {
@@ -18,7 +30,12 @@ export default function BooksPage() {
               return (
                 <div key={title} className="space-y-1">
                   <p>
-                    <a href={url} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="italic"
+                    >
                       {title}
                     </a>{" "}
                     by {author}
