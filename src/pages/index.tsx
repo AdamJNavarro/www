@@ -31,6 +31,33 @@ export default function Home() {
               . Some of my other passions include playing guitar and piano, working
               out and helping others in whatever way that I can.
             </p>
+            <p>
+              I'm not very active on other platforms but you can find me on{" "}
+              <a
+                href="https://www.instagram.com/adam_nav/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+              ,{" "}
+              <a
+                href="https://twitter.com/AdamJNavarro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://github.com/AdamJNavarro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+              .{" "}
+            </p>
           </div>
         </>
       </CenteredColumn>

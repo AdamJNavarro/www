@@ -11,7 +11,7 @@ export default function WordsPage() {
         <div className="space-y-10">
           <PageHeader
             title="Words"
-            subtitle="An ever-growing list of words I've encountered and did not know."
+            subtitle="An ever-growing list, beginning from mid-2018, of words I've encountered and did not know."
           />
 
           <div className="prose">

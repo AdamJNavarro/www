@@ -1,5 +1,18 @@
 const words = [
   {
+    term: "prolegomenon",
+    definition:
+      "a formal essay or critical discussion serving to introduce and interpret an extended work",
+  },
+  {
+    term: "prig",
+    definition: "one who offends or irritates",
+  },
+  {
+    term: "cyclamen",
+    definition: "plants of the primrose family having showy nodding flowers",
+  },
+  {
     term: "hegemonic",
     definition: "having complete dominion or power",
   },
