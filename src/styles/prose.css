@@ -1,3 +1,7 @@
+.prose {
+  @apply dark:text-gray-300;
+}
+
 .prose a {
-  @apply text-indigo-700 no-underline;
+  @apply text-indigo-700 no-underline dark:text-purple-500;
 }

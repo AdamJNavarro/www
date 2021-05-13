@@ -27,17 +27,17 @@ export default function Header() {
           .find((r) => currPathName.includes(r.path))?.label
 
   return (
-    <div className="fixed top-0 z-10 w-full py-2 bg-white border-b border-gray-400 md:z-auto md:relative border-opacity-20 filter-blur">
+    <div className="fixed top-0 z-10 w-full py-2 bg-white border-b border-gray-400 md:z-auto md:relative md:bg-opacity-70 border-opacity-20 filter-blur dark:bg-gray-900 dark:bg-opacity-90 dark:border-opacity-10">
       {/* Mobile nav */}
       <div className="grid grid-cols-1 md:hidden">
         <div className="flex items-center pr-4 text-primary">
           <button
-            className="p-4 pl-4 -my-2"
+            className="p-4 pl-4 -my-2 dark:text-white"
             onClick={() => setIsExpanded(!isExpanded)}
           >
             {isExpanded ? <X size={16} /> : <Menu size={16} />}
           </button>
-          <p className="font-sans text-sm font-semibold text-primary">
+          <p className="font-sans text-sm font-semibold dark:text-gray-100">
             {isExpanded ? "" : `${mobileTitle}`}
           </p>
         </div>
@@ -48,13 +48,13 @@ export default function Header() {
           defaultRoutes.map((route) => {
             const isActive = route.path === router.pathname
 
-            const defaultClasses = `flex font-sans items-center pl-12 py-4 font-semibold text-sm text-primary text-opacity-80`
+            const defaultClasses = `flex font-sans items-center pl-12 py-4 font-semibold dark:text-white`
 
             return (
               <Link href={route.path} key={route.path}>
                 <a
                   className={`${defaultClasses} ${
-                    isActive ? `text-indigo-700` : ``
+                    isActive ? `text-indigo-700 dark:text-purple-500` : ``
                   }`}
                 >
                   {route.label}
@@ -69,9 +69,9 @@ export default function Header() {
       <div className="hidden max-w-screen-md grid-cols-5 gap-2.5 mx-auto md:grid">
         {defaultRoutes.map((route) => {
           const isActive = route.path === router.pathname
-          const defaultClasses = `font-sans font-semibold flex rounded items-center text-opacity-40 justify-center py-2 text-sm`
-          const activeClasses = `bg-gray-1000 bg-opacity-10 filter-saturate filter-blur`
-          const inactiveClasses = `hover:bg-gray-1000 filter-saturate hover:bg-opacity-10 hover:text-gray-1000`
+          const defaultClasses = `font-sans font-semibold flex rounded items-center text-opacity-40 justify-center py-2 text-sm dark:text-white`
+          const activeClasses = `bg-gray-1000 bg-opacity-10 filter-saturate filter-blur dark:bg-white dark:text-opacity-100`
+          const inactiveClasses = `hover:bg-gray-1000 filter-saturate hover:bg-opacity-10 hover:text-gray-1000 dark:hover:bg-white dark:text-opacity-70 dark:hover:text-gray-100 `
           return (
             <Link href={route.path} key={route.path}>
               <a

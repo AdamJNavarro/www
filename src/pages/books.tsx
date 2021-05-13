@@ -8,8 +8,10 @@ export default function BooksPage() {
       <CenteredColumn>
         <div className="space-y-12">
           <div className="space-y-1">
-            <h1 className="font-sans text-2xl font-black md:text-4xl">Books</h1>
-            <p className="prose font-sans text-lg md:text-xl">
+            <h1 className="font-sans text-2xl font-black md:text-4xl text-black dark:text-gray-100">
+              Books
+            </h1>
+            <p className="prose font-sans text-lg md:text-xl text-gray-800 dark:text-gray-200">
               What I've read recently with my main takeaway from each book. Currently
               reading{" "}
               <a

@@ -3,7 +3,7 @@ type ProjectListProps = { label: string; projects: any[] }
 const ProjectList = ({ label, projects }: ProjectListProps) => {
   return (
     <div className="space-y-8">
-      <h4 className="font-sans text-xl font-bold md:text-2xl text-secondary">
+      <h4 className="font-sans text-xl font-bold md:text-2xl text-gray-900 dark:text-gray-300">
         {label}
       </h4>
       <div className="prose space-y-6">
