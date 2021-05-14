@@ -2,6 +2,8 @@ import { CenteredColumn, Page } from "../components/layout"
 
 import Image from "next/image"
 
+const email = "adamjnavarro@icloud.com"
+
 export default function Home() {
   return (
     <Page>
@@ -27,6 +29,14 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 Expo
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://getmomento.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Momento
               </a>
               . Some of my other passions include playing guitar and piano, working
               out and helping others in whatever way that I can.
@@ -56,7 +66,11 @@ export default function Home() {
               >
                 Github
               </a>
-              .{" "}
+              . If you want to talk about something, don't hesitate to shoot me an{" "}
+              <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
+                email
+              </a>
+              .
             </p>
           </div>
         </>
