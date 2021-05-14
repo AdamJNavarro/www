@@ -13,7 +13,7 @@ export default function ProjectsPage() {
             subtitle="Various things I've created or worked on."
           />
 
-          <div className="space-y-16 md:space-y-20">
+          <div className="space-y-12 md:space-y-16">
             <ProjectList label="Active Projects" projects={activeProjects} />
             <ProjectList label="Dead Projects" projects={deadProjects} />
           </div>

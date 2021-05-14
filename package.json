@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "suite": "yarn open-simulator && code . && yarn open-browser && next dev",
+    "suite": "open -a Simulator && code . && yarn open-browser && next dev",
     "build": "next build",
     "start": "next start",
-    "open-browser": "open http://localhost:3000 https://nextjs.org/docs/getting-started https://tailwindcss.com/docs",
-    "open-simulator": "open -a Simulator && xcrun simctl openurl booted http://localhost:3000"
+    "open-browser": "open http://localhost:3000 https://nextjs.org/docs/getting-started https://tailwindcss.com/docs && xcrun simctl openurl booted http://localhost:3000"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.0",

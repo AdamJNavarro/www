@@ -9,19 +9,20 @@ function PostPage({ title, date, content }: any) {
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-8">
+        <div className="space-y-6">
           <Link href="/writing" passHref>
-            <a className="hover:text-gray-1000">&larr; Writing</a>
+            <a className="hover:text-purple-600 text-purple-500 dark:text-purple-500 dark:hover:text-purple-400 font-semibold">
+              &larr; Writing
+            </a>
           </Link>
-          <div className="space-y-2">
-            <h1 className="font-sans text-2xl font-extrabold md:text-4xl text-primary">
+          <div className="space-y-1">
+            <h1 className="font-sans text-2xl font-extrabold md:text-4xl dark:text-gray-50">
               {title}
             </h1>
-            <span className="inline-block leading-snug text-tertiary">{date}</span>
           </div>
         </div>
 
-        <div className="mt-12 prose">
+        <div className="mt-10 prose lg:prose-lg">
           <MDXRemote {...content} />
         </div>
       </CenteredColumn>

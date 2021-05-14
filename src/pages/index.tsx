@@ -16,7 +16,7 @@ export default function Home() {
               layout="intrinsic"
               width="350"
               height="350"
-              className="rounded-full shadow-l"
+              className="rounded-full"
             />
           </div>
           <div className="space-y-6 md:items-center prose">
