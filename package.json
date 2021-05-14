@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "code . && yarn open-browser && next dev",
+    "dev": "next dev",
+    "suite": "yarn open-simulator && code . && yarn open-browser && next dev",
     "build": "next build",
     "start": "next start",
-    "open-browser": "open http://localhost:3000 https://nextjs.org/docs/getting-started https://tailwindcss.com/docs"
+    "open-browser": "open http://localhost:3000 https://nextjs.org/docs/getting-started https://tailwindcss.com/docs",
+    "open-simulator": "open -a Simulator && xcrun simctl openurl booted http://localhost:3000"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.0",
@@ -19,7 +21,7 @@
     "react-feather": "^2.0.9"
   },
   "devDependencies": {
-    "@types/node": "^15.0.2",
+    "@types/node": "^15.0.3",
     "@types/react": "^17.0.5",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.15",
