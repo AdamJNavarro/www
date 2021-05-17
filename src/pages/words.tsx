@@ -3,8 +3,8 @@ import { CenteredColumn, Page, PageHeader } from "../components/layout"
 import words from "../data/words"
 
 export default function WordsPage() {
-  //const orderedWords = words.sort((a, b) => (a.term > b.term ? 1 : -1))
-
+  const alphabetizedWords = words.sort((a, b) => (a.term > b.term ? 1 : -1))
+  //const orderedWords = words.sort((a, b) => (a.year > b.year ? 1 : -1))
   return (
     <Page>
       <CenteredColumn>
@@ -13,9 +13,8 @@ export default function WordsPage() {
             title="Words"
             subtitle="An ever-growing list, beginning from mid-2018, of words I've encountered and did not know."
           />
-
           <div className="prose">
-            {words.map((word) => {
+            {alphabetizedWords.map((word: any) => {
               const { term, definition } = word
               return (
                 <p key={term}>
