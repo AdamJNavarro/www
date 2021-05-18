@@ -1,5 +1,6 @@
 import { CenteredColumn, Page } from "../components/layout"
 
+import RecoBox from "../components/books/RecoBox"
 import books from "../data/books"
 
 export default function BooksPage() {
@@ -25,6 +26,8 @@ export default function BooksPage() {
               by Virginia Woolf.
             </p>
           </div>
+
+          <RecoBox />
 
           <div className="prose">
             {books.map((book) => {

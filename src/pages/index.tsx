@@ -38,8 +38,8 @@ export default function Home() {
               >
                 Momento
               </a>
-              . Some of my other passions include playing guitar and piano, working
-              out and helping others in whatever way that I can.
+              . Some of my other passions include playing guitar and piano, dancing,
+              working out, and helping others in whatever way that I can.
             </p>
             <p>
               I'm not very active on other platforms but you can find me on{" "}
