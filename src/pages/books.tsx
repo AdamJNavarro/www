@@ -27,8 +27,6 @@ export default function BooksPage() {
             </p>
           </div>
 
-          <RecoBox />
-
           <div className="prose">
             {books.map((book) => {
               const { title, author, takeaway, url } = book

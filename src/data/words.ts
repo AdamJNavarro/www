@@ -8,6 +8,11 @@
 
 const words = [
   {
+    term: "iniquity",
+    definition: "immoral or grossly unfair behavior",
+    year: 2021,
+  },
+  {
     term: "appelation",
     definition: "a name or title",
     year: 2021,
