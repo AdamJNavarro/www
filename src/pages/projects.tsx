@@ -1,7 +1,7 @@
-import { CenteredColumn, Page, PageHeader } from "../components/layout"
-import { activeProjects, deadProjects } from "../data/projects"
+import { CenteredColumn, Page, PageHeader } from "~/components/layout"
+import { activeProjects, deadProjects } from "~/data/projects"
 
-import { ProjectList } from "../components/projects"
+import { ProjectList } from "~/components/projects"
 
 export default function ProjectsPage() {
   return (

@@ -1,7 +1,7 @@
-import { CenteredColumn, Page } from "../components/layout"
+import { CenteredColumn, Page } from "~/components/layout"
 
-import RecoBox from "../components/books/RecoBox"
-import books from "../data/books"
+import RecoBox from "~/components/books/RecoBox"
+import books from "~/data/books"
 
 export default function BooksPage() {
   return (

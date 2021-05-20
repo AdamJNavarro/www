@@ -1,6 +1,6 @@
-import { CenteredColumn, Page, PageHeader } from "../components/layout"
+import { CenteredColumn, Page, PageHeader } from "~/components/layout"
 
-import words from "../data/words"
+import words from "~/data/words"
 
 export default function WordsPage() {
   const alphabetizedWords = words.sort((a, b) => (a.term > b.term ? 1 : -1))

@@ -1,8 +1,8 @@
-import { CenteredColumn, Page } from "../../components/layout"
+import { CenteredColumn, Page } from "~/components/layout"
 
 import Link from "next/link"
 import { MDXRemote } from "next-mdx-remote"
-import getAllPosts from "../../helpers/getAllPosts"
+import getAllPosts from "~/helpers/getAllPosts"
 import { serialize } from "next-mdx-remote/serialize"
 
 function PostPage({ title, date, content }: any) {

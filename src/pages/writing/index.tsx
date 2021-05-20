@@ -1,7 +1,7 @@
-import { CenteredColumn, Page, PageHeader } from "../../components/layout"
+import { CenteredColumn, Page, PageHeader } from "~/components/layout"
 
 import Link from "next/link"
-import getAllPosts from "../../helpers/getAllPosts"
+import getAllPosts from "~/helpers/getAllPosts"
 
 export default function WritingPage({ posts }: any) {
   return (

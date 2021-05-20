@@ -1,4 +1,4 @@
-import { CenteredColumn, Page } from "../components/layout"
+import { CenteredColumn, Page } from "~/components/layout"
 
 import Image from "next/image"
 

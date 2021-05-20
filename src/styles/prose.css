@@ -17,3 +17,7 @@
 .prose h6 {
   @apply dark:text-gray-300;
 }
+
+.prose blockquote {
+  @apply font-normal  border-gray-300 dark:border-gray-300 dark:text-gray-300;
+}
