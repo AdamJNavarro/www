@@ -22,7 +22,7 @@ export default function RecoBox() {
   }
 
   return (
-    <div className="p-7 space-y-4 border-4 -mx-2 border-gray-300 border-double dark:border-gray-700 bg-elevated">
+    <div className="p-7 space-y-4 border-4 -mx-2 border-gray-300 border-double dark:border-gray-700">
       <div className="prose">
         <p className="flex items-center font-bold">Know of a book I should read?</p>
         <p>
@@ -44,8 +44,8 @@ export default function RecoBox() {
               disabled={status === "loading"}
               onChange={onChange}
               placeholder="Book title and author"
-              type="email"
-              name="email"
+              type="text"
+              name="recommendation"
             />
           </label>
           <PrimaryButton

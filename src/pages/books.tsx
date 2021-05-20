@@ -28,6 +28,8 @@ export default function BooksPage() {
             </p>
           </div>
 
+          <RecoBox />
+
           <div className="prose">
             {books.map((book) => {
               return <BookItem {...book} />
