@@ -1,8 +1,8 @@
 import { ErrorAlert, SuccessAlert } from "../alerts"
 import React, { useState } from "react"
 
-import { Input } from "../inputs"
 import PrimaryButton from "../buttons/PrimaryButton"
+import { Textarea } from "../inputs"
 
 export default function RecoBox() {
   const [book, setBook] = useState("")
@@ -11,7 +11,7 @@ export default function RecoBox() {
 
   function onChange(e) {
     if (status !== "pending") setStatus("pending")
-    return setBook(e.target.value.trim())
+    return setBook(e.target.value)
   }
 
   async function submit(e) {
@@ -33,29 +33,26 @@ export default function RecoBox() {
       {status === "succeeded" ? (
         <SuccessAlert>Thanks for the recommendation!</SuccessAlert>
       ) : (
-        <form
-          onSubmit={submit}
-          className="grid grid-cols-1 gap-2 mt-2 md:grid-cols-3"
-        >
-          <label className="md:col-span-2">
-            <span className="sr-only">Book title</span>
-            <Input
-              value={book}
-              disabled={status === "loading"}
-              onChange={onChange}
-              placeholder="Book title and author"
-              type="text"
-              name="recommendation"
-            />
-          </label>
-          <PrimaryButton
-            onClick={submit}
-            disabled={status === "submitting" || !book}
-            type="submit"
-            className="w-full"
-          >
-            Submit
-          </PrimaryButton>
+        <form onSubmit={submit} className="items-stretch space-y-4">
+          <Textarea
+            value={book}
+            disabled={status === "loading"}
+            onChange={onChange}
+            placeholder="Book title and author"
+            name="recommendation"
+          />
+          {book.length > 0 && (
+            <div className="flex justify-center">
+              <PrimaryButton
+                onClick={submit}
+                disabled={status === "submitting" || !book}
+                type="submit"
+                className="w-1/2"
+              >
+                Submit
+              </PrimaryButton>
+            </div>
+          )}
         </form>
       )}
       {status === "error" && <ErrorAlert>{errorMessage}</ErrorAlert>}

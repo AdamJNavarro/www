@@ -6,3 +6,7 @@ const styles =
 export function Input(props) {
   return <input className={styles} {...props} />
 }
+
+export function Textarea(props) {
+  return <textarea className={`${styles} block`} {...props} />
+}
