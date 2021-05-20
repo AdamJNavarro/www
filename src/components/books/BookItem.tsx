@@ -16,16 +16,18 @@ const BookItem = ({ title, author, takeaway, url }: any) => {
         by {author}
       </p>
       {isMobile ? (
-        <p>{showFull ? takeaway : takeaway.slice(0, 300) + "..."}</p>
+        <>
+          <p>{showFull ? takeaway : takeaway.slice(0, 300) + "..."}</p>
+          <span
+            className="text-purple-300 font-normal"
+            onClick={() => setShowFull(!showFull)}
+          >
+            {showFull ? "Show Less" : "Read More"}
+          </span>
+        </>
       ) : (
         <p>{takeaway}</p>
       )}
-      <span
-        className="text-purple-300 font-normal sm:hidden sm:invisible"
-        onClick={() => setShowFull(!showFull)}
-      >
-        {showFull ? "Show Less" : "Read More"}
-      </span>
     </div>
   )
 }
