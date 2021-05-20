@@ -1,9 +1,11 @@
 import React, { useState } from "react"
 
-/// TODO: Find way to only use read more fx on small devices (multiple breakpoint conditionals seems a little hacky)
+import useMediaQuery from "~/helpers/useMediaQuery"
 
 const BookItem = ({ title, author, takeaway, url }: any) => {
   const [showFull, setShowFull] = useState(false)
+
+  const isMobile = useMediaQuery(640)
 
   return (
     <div key={title} className="space-y-1">
@@ -13,9 +15,13 @@ const BookItem = ({ title, author, takeaway, url }: any) => {
         </a>{" "}
         by {author}
       </p>
-      <p>{showFull ? takeaway : takeaway.slice(0, 300) + "..."}</p>
+      {isMobile ? (
+        <p>{showFull ? takeaway : takeaway.slice(0, 300) + "..."}</p>
+      ) : (
+        <p>{takeaway}</p>
+      )}
       <span
-        className="text-purple-300 font-normal md:hidden md:invisible"
+        className="text-purple-300 font-normal sm:hidden sm:invisible"
         onClick={() => setShowFull(!showFull)}
       >
         {showFull ? "Show Less" : "Read More"}

@@ -1,5 +1,6 @@
 import { CenteredColumn, Page } from "~/components/layout"
 
+import BookItem from "~/components/books/BookItem"
 import RecoBox from "~/components/books/RecoBox"
 import books from "~/data/books"
 
@@ -29,23 +30,7 @@ export default function BooksPage() {
 
           <div className="prose">
             {books.map((book) => {
-              const { title, author, takeaway, url } = book
-              return (
-                <div key={title} className="space-y-1">
-                  <p>
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="italic"
-                    >
-                      {title}
-                    </a>{" "}
-                    by {author}
-                  </p>
-                  <p>{takeaway}</p>
-                </div>
-              )
+              return <BookItem {...book} />
             })}
           </div>
         </div>
