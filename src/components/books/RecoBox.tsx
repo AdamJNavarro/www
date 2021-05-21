@@ -6,19 +6,46 @@ import { Textarea } from "../inputs"
 
 export default function RecoBox() {
   const [book, setBook] = useState("")
-  const [status, setStatus] = useState("pending")
-  const [errorMessage, setErrorMessage] = useState("")
+  const [serverState, setServerState] = React.useState({
+    submitting: false,
+    submitted: false,
+    error: false,
+  })
 
   function onChange(e) {
-    if (status !== "pending") setStatus("pending")
     return setBook(e.target.value)
   }
 
-  async function submit(e) {
+  function handleSubmit(e) {
     e.preventDefault()
+    const form = e.target
+    setServerState({ submitting: true, submitted: false, error: false })
 
-    setBook("")
-    setStatus("succeeded")
+    fetch("https://formspree.io/f/mvodknev", {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    }).then((response) => {
+      if (response.ok) {
+        setServerState({
+          submitting: false,
+          submitted: true,
+          error: false,
+        })
+        //form.reset()
+        //setBook("")
+      } else {
+        response.json().then((data) => {
+          setServerState({
+            submitting: false,
+            submitted: true,
+            error: data.error,
+          })
+        })
+      }
+    })
   }
 
   return (
@@ -30,32 +57,28 @@ export default function RecoBox() {
           know!
         </p>
       </div>
-      {status === "succeeded" ? (
-        <SuccessAlert>Thanks for the recommendation!</SuccessAlert>
-      ) : (
-        <form onSubmit={submit} className="items-stretch space-y-4">
-          <Textarea
-            value={book}
-            disabled={status === "loading"}
-            onChange={onChange}
-            placeholder="Book title and author"
-            name="recommendation"
-          />
-          {book.length > 0 && (
-            <div className="flex justify-center">
-              <PrimaryButton
-                onClick={submit}
-                disabled={status === "submitting" || !book}
-                type="submit"
-                className="w-1/2"
-              >
-                Submit
-              </PrimaryButton>
-            </div>
-          )}
-        </form>
-      )}
-      {status === "error" && <ErrorAlert>{errorMessage}</ErrorAlert>}
+
+      <form onSubmit={handleSubmit} className="items-stretch space-y-4">
+        <Textarea
+          value={book}
+          onChange={onChange}
+          placeholder="Book title and author"
+          name="recommendation"
+          disabled={serverState.submitted && !serverState.error}
+        />
+        <div className="flex justify-center">
+          <PrimaryButton
+            disabled={serverState.submitting || serverState.submitted || !book}
+            type="submit"
+            className="w-1/2"
+          >
+            {serverState.submitted && !serverState.error ? "Thank You!" : "Submit"}
+          </PrimaryButton>
+        </div>
+        {serverState.submitted && serverState.error && (
+          <ErrorAlert>{serverState.error}</ErrorAlert>
+        )}
+      </form>
     </div>
   )
 }
