@@ -1,6 +1,6 @@
 import { CenteredColumn, Page } from "~/components/layout"
 
-import BookItem from "~/components/books/BookItem"
+import BookList from "~/components/books/BookList"
 import RecoBox from "~/components/books/RecoBox"
 import books from "~/data/books"
 
@@ -30,11 +30,7 @@ export default function BooksPage() {
 
           <RecoBox />
 
-          <div className="prose">
-            {books.map((book) => {
-              return <BookItem {...book} />
-            })}
-          </div>
+          <BookList label="📚 Past Books" books={books} />
         </div>
       </CenteredColumn>
     </Page>

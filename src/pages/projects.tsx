@@ -14,8 +14,8 @@ export default function ProjectsPage() {
           />
 
           <div className="space-y-12 md:space-y-16">
-            <ProjectList label="Active Projects" projects={activeProjects} />
-            <ProjectList label="Dead Projects" projects={deadProjects} />
+            <ProjectList label="🛠 Active Projects" projects={activeProjects} />
+            <ProjectList label="☠ Dead Projects" projects={deadProjects} />
           </div>
         </div>
       </CenteredColumn>
