@@ -8,6 +8,11 @@
 
 const words = [
   {
+    term: "suffuse",
+    definition: "gradually spread through or over",
+    year: 2021,
+  },
+  {
     term: "iniquity",
     definition: "immoral or grossly unfair behavior",
     year: 2021,
