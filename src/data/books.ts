@@ -1,4 +1,26 @@
-const books = [
+/*{
+  title: "",
+  author: "",
+  takeaway: "",
+  wouldRecommend: true,
+  url: ""
+}*/
+
+export const currentBook = {
+  title: "The Courage to Be Disliked",
+  author: "Ichiro Kishimi & Fumitake Koga",
+  url: "https://www.goodreads.com/book/show/43306206-the-courage-to-be-disliked",
+}
+
+export const pastBooks = [
+  {
+    title: "To The Lighthouse",
+    author: "Virginia Woolf",
+    takeaway:
+      "Stream of consciousness writing, when executed properly, can craft an incredible narrative experience and Woolf does just that. More often that not, you won't realize you've moved into a different characters head as the transitions are remarkbly smooth. The beginning of the novel can be a bit of a whirlwind but I'd encourage you to perserve if any thoughts of abandonment begin to rear their ugly heads. What resonated most for me is how relentless and unforgiving time can truly be. It renders thoughts moot. It fades relationships away with unnerving ease. It exposes the frailty of the human life for all to see yet perhaps not appreciate.",
+    wouldRecommend: true,
+    url: "https://www.goodreads.com/book/show/59716.To_the_Lighthouse",
+  },
   {
     title: "Atomic Habits",
     author: "James Clear",
@@ -8,5 +30,3 @@ const books = [
     url: "https://jamesclear.com/atomic-habits",
   },
 ]
-
-export default books

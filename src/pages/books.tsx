@@ -1,10 +1,11 @@
 import { CenteredColumn, Page } from "~/components/layout"
+import { currentBook, pastBooks } from "~/data/books"
 
 import BookList from "~/components/books/BookList"
 import RecoBox from "~/components/books/RecoBox"
-import books from "~/data/books"
 
 export default function BooksPage() {
+  const { title, author, url } = currentBook
   return (
     <Page>
       <CenteredColumn>
@@ -14,23 +15,23 @@ export default function BooksPage() {
               Books
             </h1>
             <p className="prose font-sans text-lg md:text-xl text-gray-800 dark:text-gray-200">
-              What I've read recently with my main takeaway from each book. Currently
-              reading{" "}
+              What I've read recently with my main takeaway and thoughts from each
+              book. Currently reading{" "}
               <a
-                href="https://www.goodreads.com/book/show/59716.To_the_Lighthouse"
+                href={url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="italic"
               >
-                To The Lighthouse
+                {title}
               </a>{" "}
-              by Virginia Woolf.
+              by {author}.
             </p>
           </div>
 
           <RecoBox />
 
-          <BookList label="📚 Past Books" books={books} />
+          <BookList label="📚 Past Books" books={pastBooks} />
         </div>
       </CenteredColumn>
     </Page>
