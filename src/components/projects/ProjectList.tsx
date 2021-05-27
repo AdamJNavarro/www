@@ -46,12 +46,12 @@ const ProjectItem = ({ name, slug, description, image, platforms }) => {
           {platforms && (
             <div className="flex space-x-2">
               {platforms.android && (
-                <span className="self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-green-400 dark:border-green-400 text-green-600 bg-green-500 bg-opacity-10 dark:bg-opacity-30">
+                <span className="self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-green-600 bg-green-500 bg-opacity-10  dark:text-green-400 dark:border-green-400 dark:bg-opacity-30">
                   Android
                 </span>
               )}
               {platforms.ios && (
-                <span className="self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-blue-400 dark:border-blue-400 text-blue-600 bg-blue-500 bg-opacity-10 dark:bg-opacity-30">
+                <span className="self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-blue-600 bg-blue-500 bg-opacity-10 dark:text-blue-400 dark:border-blue-400 dark:bg-opacity-30">
                   iOS
                 </span>
               )}
