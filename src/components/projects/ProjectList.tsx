@@ -43,8 +43,6 @@ const ProjectItem = ({ name, slug, description, image, platforms }) => {
               {description}
             </p>
           </div>
-          <div className="hidden text-blue-600 bg-blue-500 bg-opacity-10 dark:text-blue-400 dark:border-blue-400 dark:bg-opacity-30" />
-          <div className="hidden text-green-600 bg-green-500 dark:text-green-400 dark:border-green-400" />
           {platforms && (
             <div className="flex space-x-2">
               {platforms.android && (
