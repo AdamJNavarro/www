@@ -8,7 +8,7 @@ import React from "react"
 const PlatformButton = ({ className, children }: any) => {
   return (
     <div
-      className={`flex items-center rounded justify-center flex-none px-4 py-2 space-x-3 font-medium text-white  ${className}`}
+      className={`flex items-center rounded justify-center flex-none px-4 py-2 space-x-3 font-medium text-white ${className}`}
     >
       {children}
     </div>
@@ -26,7 +26,7 @@ const ProjectProfile = ({ name, image, products, platforms, children }: any) => 
             </a>
           </Link>
 
-          <div className=" flex flex-col items-center">
+          <div className="flex flex-col items-center">
             <Image
               width={200}
               height={200}
@@ -35,7 +35,7 @@ const ProjectProfile = ({ name, image, products, platforms, children }: any) => 
               src={`/images/projects/${image}`}
               alt={`${name} icon`}
             />
-            <div className="flex  flex-col items-center mt-10 space-y-2">
+            <div className="flex flex-col items-center mt-10 space-y-2">
               <h1 className="font-sans text-2xl font-black md:text-4xl text-black dark:text-gray-100">
                 {name}
               </h1>
