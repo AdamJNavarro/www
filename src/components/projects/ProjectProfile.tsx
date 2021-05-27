@@ -5,16 +5,6 @@ import Link from "next/link"
 import ProductList from "../products/ProductList"
 import React from "react"
 
-const PlatformButton = ({ className, children }: any) => {
-  return (
-    <div
-      className={`flex items-center rounded justify-center flex-none px-4 py-2 space-x-3 font-medium text-white ${className}`}
-    >
-      {children}
-    </div>
-  )
-}
-
 const ProjectProfile = ({ name, image, products, platforms, children }: any) => {
   return (
     <Page>
@@ -46,16 +36,20 @@ const ProjectProfile = ({ name, image, products, platforms, children }: any) => 
             <div className="flex items-center justify-center space-x-10">
               {platforms.ios && (
                 <a href={platforms.ios.url}>
-                  <PlatformButton className="bg-blue-600">
+                  <div
+                    className={`flex items-center rounded justify-center flex-none px-4 py-2 space-x-3 font-medium text-white bg-blue-600`}
+                  >
                     Download from Apple
-                  </PlatformButton>
+                  </div>
                 </a>
               )}
               {platforms.android && (
                 <a href={platforms.android.url}>
-                  <PlatformButton className="bg-green-600">
+                  <div
+                    className={`flex items-center rounded justify-center flex-none px-4 py-2 space-x-3 font-medium text-white bg-green-600`}
+                  >
                     Download from Google
-                  </PlatformButton>
+                  </div>
                 </a>
               )}
             </div>
