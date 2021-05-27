@@ -1,9 +1,9 @@
 import { CenteredColumn, Page, PageHeader } from "~/components/layout"
-import { activeProjects, deadProjects } from "~/data/projects"
 
 import { ProjectList } from "~/components/projects"
+import getAllProjects from "~/helpers/getAllProjects"
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ projects }: any) {
   return (
     <Page>
       <CenteredColumn>
@@ -14,11 +14,30 @@ export default function ProjectsPage() {
           />
 
           <div className="space-y-12 md:space-y-16">
-            <ProjectList label="🛠 Active Projects" projects={activeProjects} />
-            <ProjectList label="☠ Dead Projects" projects={deadProjects} />
+            <ProjectList
+              label="🛠 Active Projects"
+              projects={projects.filter((project: any) => !project.dead)}
+            />
+            <ProjectList
+              label="☠ Dead Projects"
+              projects={projects.filter((project: any) => !!project.dead)}
+            />
           </div>
         </div>
       </CenteredColumn>
     </Page>
   )
+}
+
+export async function getStaticProps() {
+  const allProjects = getAllProjects()
+  return {
+    props: {
+      projects: allProjects.map(({ data, content, slug }) => ({
+        ...data,
+        content,
+        slug,
+      })),
+    },
+  }
 }
