@@ -1,6 +1,7 @@
 import { CenteredColumn, Page } from "~/components/layout"
 
 import Image from "next/image"
+import Link from "next/link"
 
 const email = "adamjnavarro@icloud.com"
 
@@ -38,6 +39,10 @@ export default function Home() {
               >
                 Momento
               </a>
+              . If you're interested in what technologies I use you can check out my{" "}
+              <Link href="/stack" passHref>
+                <a>Tech Stack</a>
+              </Link>{" "}
               . Some of my other passions include playing guitar and piano, dancing,
               working out, and helping others in whatever way that I can.
             </p>

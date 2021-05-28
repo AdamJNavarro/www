@@ -8,7 +8,7 @@ import ProductList from "../products/ProductList"
 const ProjectProfile = ({
   name,
   image,
-  products,
+  stack,
   platforms,
   webUrl,
   children,
@@ -67,8 +67,24 @@ const ProjectProfile = ({
           )}
 
           <div className="mt-10 prose lg:prose-lg">{children}</div>
-          {products && (
-            <ProductList label="🛠 &nbsp;Tech Stack" products={products} />
+
+          {stack && (
+            <div className="space-y-8">
+              <h3 className="font-sans text-xl font-black md:text-3xl text-black dark:text-gray-200">
+                Tech Stack
+              </h3>
+              <div className="space-y-10">
+                {Object.entries(stack).map((section) => {
+                  return (
+                    <ProductList
+                      key={`${section[0]}-stack-list`}
+                      label={section[0]}
+                      products={section[1]}
+                    />
+                  )
+                })}
+              </div>
+            </div>
           )}
         </div>
       </CenteredColumn>

@@ -4,21 +4,21 @@ import { ProductName, products as allProducts } from "~/data/products"
 
 import Image from "next/image"
 
-type ProductListProps = { label: string; products: ProductName[] }
+type ProductListProps = { label: string; products: any }
 
 const ProductList = ({ label, products }: ProductListProps) => {
   const finalProducts = allProducts.filter((product: any) =>
-    products.includes(product.name)
+    products.includes(product.name.toLowerCase())
   )
 
   return (
     <div className="space-y-6">
-      <h4 className="font-sans text-xl font-bold md:text-2xl text-gray-900 dark:text-gray-300">
+      <h4 className="capitalize font-sans text-xl font-bold md:text-2xl text-gray-900 dark:text-gray-300">
         {label}
       </h4>
       <div className="space-y-1.5">
         {finalProducts
-          .sort((a, b) => (a.name > b.name ? 1 : -1))
+          .sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1))
           .map((product) => {
             const { name, image, url } = product
             return (
@@ -37,7 +37,7 @@ const ProductList = ({ label, products }: ProductListProps) => {
                 />
 
                 <div className="items-center flex flex-1 pl-5 ">
-                  <p className="text-xl capitalize  font-medium text-black dark:text-gray-100">
+                  <p className="text-xl font-medium text-black dark:text-gray-100">
                     {name}
                   </p>
                 </div>

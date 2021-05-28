@@ -9,94 +9,129 @@
 
 export const products = [
   {
-    name: "next.js",
+    name: "Next.js",
     image: "nextjs.png",
     url: "https://nextjs.org/",
     openSource: true,
   },
   {
-    name: "1password",
+    name: "1Password",
     image: "1password.png",
     url: "https://1password.com",
   },
   {
-    name: "figma",
+    name: "Figma",
     image: "figma.jpg",
     url: "https://www.figma.com/",
   },
   {
-    name: "vercel",
+    name: "Vercel",
     image: "vercel.jpg",
     url: "https://vercel.com",
   },
   {
-    name: "apollo",
+    name: "Apollo",
     image: "apollo.png",
     url: "https://www.apollographql.com/",
     openSource: true,
   },
   {
-    name: "render",
+    name: "Render",
     image: "render.png",
     url: "https://render.com/",
   },
   {
-    name: "cloudinary",
+    name: "Cloudinary",
     image: "cloudinary.png",
     url: "https://cloudinary.com/",
   },
   {
-    name: "aws",
+    name: "AWS",
     image: "aws.png",
     url: "https://aws.amazon.com/",
   },
   {
-    name: "expo",
+    name: "Expo",
     image: "expo.png",
     url: "https://expo.io/",
     openSource: true,
   },
   {
-    name: "react",
+    name: "React",
     image: "react.png",
     url: "https://reactjs.org/",
     openSource: true,
   },
   {
-    name: "react native",
+    name: "React Native",
     image: "react.png",
     url: "https://reactnative.dev/",
     openSource: true,
   },
   {
-    name: "branch",
+    name: "Branch",
     image: "branch.png",
     url: "https://branch.io/",
   },
   {
-    name: "twilio",
+    name: "Twilio",
     image: "twilio.png",
     url: "http://www.twilio.com/",
   },
   {
-    name: "sentry",
+    name: "Sentry",
     image: "sentry.png",
     url: "https://sentry.io/",
   },
   {
-    name: "firebase",
+    name: "Firebase",
     image: "firebase.png",
     url: "http://firebase.google.com/",
   },
   {
-    name: "google cloud platform",
+    name: "Google Cloud Platform",
     image: "gcp.png",
     url: "https://cloud.google.com/",
   },
   {
-    name: "amplitude",
+    name: "Amplitude",
     image: "amplitude.png",
     url: "https://amplitude.com/",
+  },
+  {
+    name: "Gatsby",
+    image: "gatsby.png",
+    url: "https://gatsbyjs.org/",
+  },
+  {
+    name: "Netlify",
+    image: "netlify.jpeg",
+    url: "https://www.netlify.com/",
+  },
+  {
+    name: "Node.js",
+    image: "nodejs.png",
+    url: "https://nodejs.dev/",
+  },
+  {
+    name: "Postgresql",
+    image: "postgresql.png",
+    url: "https://www.postgresql.org/",
+  },
+  {
+    name: "React Navigation",
+    image: "reactnavigation.png",
+    url: "https://reactnavigation.org/",
+  },
+  {
+    name: "Tailwind CSS",
+    image: "tailwindcss.png",
+    url: "https://tailwindcss.com/",
+  },
+  {
+    name: "Typeorm",
+    image: "typeorm.png",
+    url: "https://typeorm.io/#/",
   },
 ]
 
@@ -118,3 +153,10 @@ export type ProductName =
   | "firebase"
   | "google cloud platform"
   | "amplitude"
+  | "gatsby"
+  | "netlify"
+  | "node.js"
+  | "postgresql"
+  | "react navigation"
+  | "tailwind css"
+  | "typeorm"

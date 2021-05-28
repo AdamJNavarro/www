@@ -16,7 +16,6 @@ export async function getStaticProps(context) {
   const allProjects = getAllProjects()
   const { data, content } = allProjects.find((item) => item.slug === params.slug)
   const mdxSource = await serialize(content)
-
   return {
     props: {
       project: data,
