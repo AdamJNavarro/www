@@ -30,9 +30,6 @@ export default function BooksPage() {
           </div>
 
           <RecoBox />
-          <span className="hidden self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-green-600 bg-green-500 bg-opacity-10  dark:text-green-400 dark:border-green-400 dark:bg-opacity-30">
-            Android
-          </span>
           <BookList label="📚 Past Books" books={pastBooks} />
         </div>
       </CenteredColumn>
