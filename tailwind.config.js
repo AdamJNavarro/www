@@ -4,7 +4,7 @@ module.exports = {
   purge: {
     content: ["./src/**/*.{ts,tsx}"],
     options: {
-      safelist: [/blue$/],
+      safelist: [/blue$/, "rounded-md", "bg-purple-700"],
     },
   },
   darkMode: "media",
@@ -14,6 +14,9 @@ module.exports = {
         white: "#fff",
         gray: colors.trueGray,
         "gray-1000": "#050505",
+      },
+      opacity: {
+        15: "0.15",
       },
     },
   },

@@ -15,11 +15,11 @@ export default function ProjectsPage({ projects }: any) {
 
           <div className="space-y-12 md:space-y-16">
             <ProjectList
-              label="🛠 Active Projects"
+              label="🛠 &nbsp;Active Projects"
               projects={projects.filter((project: any) => !project.dead)}
             />
             <ProjectList
-              label="☠ Dead Projects"
+              label="☠ &nbsp;Dead Projects"
               projects={projects.filter((project: any) => !!project.dead)}
             />
           </div>

@@ -93,6 +93,11 @@ export const products = [
     image: "gcp.png",
     url: "https://cloud.google.com/",
   },
+  {
+    name: "amplitude",
+    image: "amplitude.png",
+    url: "https://amplitude.com/",
+  },
 ]
 
 export type ProductName =
@@ -112,3 +117,4 @@ export type ProductName =
   | "sentry"
   | "firebase"
   | "google cloud platform"
+  | "amplitude"

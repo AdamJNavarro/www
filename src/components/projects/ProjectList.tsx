@@ -11,7 +11,7 @@ const ProjectList = ({ label, projects }: ProjectListProps) => {
       </h4>
       <div className="space-y-8">
         {projects.map((project) => {
-          return <ProjectItem {...project} />
+          return <ProjectItem key={project.slug} {...project} />
         })}
       </div>
     </div>
@@ -20,7 +20,7 @@ const ProjectList = ({ label, projects }: ProjectListProps) => {
 
 const ProjectItem = ({ name, slug, description, image, platforms }) => {
   return (
-    <Link key={slug} href={`/projects/${slug}`} passHref>
+    <Link href={`/projects/${slug}`} passHref>
       <a
         key={name}
         className="flex py-4 bg-gray-400 bg-opacity-0 rounded md:-mx-4 sm:p-4 sm:hover:bg-opacity-5 sm:dark:hover:bg-gray-900 sm:dark:hover:bg-opacity-100"
@@ -46,12 +46,12 @@ const ProjectItem = ({ name, slug, description, image, platforms }) => {
           {platforms && (
             <div className="flex space-x-2">
               {platforms.android && (
-                <span className="self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-green-600 bg-green-500 bg-opacity-10  dark:text-green-400 dark:border-green-400 dark:bg-opacity-30">
+                <span className="self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-green-600 bg-green-500 bg-opacity-15  dark:text-green-400 dark:border-green-400 dark:bg-opacity-30">
                   Android
                 </span>
               )}
               {platforms.ios && (
-                <span className="self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-blue-600 bg-blue-500 bg-opacity-10 dark:text-blue-400 dark:border-blue-400 dark:bg-opacity-30">
+                <span className="self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-blue-600 bg-blue-500 bg-opacity-15 dark:text-blue-400 dark:border-blue-400 dark:bg-opacity-30">
                   iOS
                 </span>
               )}
