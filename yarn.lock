@@ -841,11 +841,6 @@ classnames@2.2.6:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
-cntl@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/cntl/-/cntl-1.0.0.tgz#08d022ae1ec59f5112fc6aa428a1226e461b7606"
-  integrity sha512-Z42/BmPqeuE81Ar5OhgyRSgP4/paMSYPO41iFOhouACpWsZwfLTxrARBUqfbr+ftukF/I9zov6w8+VpOPLnamA==
-
 collapse-white-space@^1.0.2:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/collapse-white-space/-/collapse-white-space-1.0.6.tgz#e63629c0016665792060dbbeb79c42239d2c5287"
@@ -1248,6 +1243,11 @@ fastq@^1.6.0:
   integrity sha512-7Eczs8gIPDrVzT+EksYBcupqMyxSHXXrHOLRRxU2/DicV8789MRBRR8+Hc2uWzUupOs4YS4JzBmBxjjCVBxD/g==
   dependencies:
     reusify "^1.0.4"
+
+fathom-client@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/fathom-client/-/fathom-client-3.0.0.tgz#409c047cf1e2fea45b148e28d50fcd635e992893"
+  integrity sha512-d0oH2SHWCMIVLbbegB7nBIjSvbqbHrZBZxIOWSVAxlJL/roL0Ah9NNb6rTIcKMlA4gov9AjWQGEcZRzlnGc3XQ==
 
 fill-range@^7.0.1:
   version "7.0.1"
