@@ -30,12 +30,9 @@ export default function BooksPage() {
           </div>
 
           <RecoBox />
-
-          <div className="hidden flex items-center rounded justify-center flex-none px-4 py-2 space-x-3 font-medium text-white bg-blue-600" />
-          <div className="hidden flex items-center rounded justify-center flex-none px-4 py-2 space-x-3 font-medium text-white bg-green-600" />
-          <div className="hidden self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-green-600 bg-green-500 bg-opacity-10  dark:text-green-400 dark:border-green-400 dark:bg-opacity-30" />
-          <div className="hidden elf-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-blue-600 bg-blue-500 bg-opacity-10 dark:text-blue-400 dark:border-blue-400 dark:bg-opacity-30" />
-          <div className="hidden flex-col rounded-3xl" />
+          <span className="hidden self-start rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide text-green-600 bg-green-500 bg-opacity-10  dark:text-green-400 dark:border-green-400 dark:bg-opacity-30">
+            Android
+          </span>
           <BookList label="📚 Past Books" books={pastBooks} />
         </div>
       </CenteredColumn>
