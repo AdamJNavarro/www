@@ -10,7 +10,7 @@ import { useRouter } from "next/router"
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
   useEffect(() => {
-    Fathom.load("TOSBYDZC", {
+    Fathom.load("FQERWMZR", {
       includedDomains: ["adamjnavarro.com"],
       excludedDomains: ["localhost", "now.sh"],
     })
