@@ -19,6 +19,10 @@ const routes = {
     label: "Words",
     path: "/words",
   },
+  stack: {
+    label: "Stack",
+    path: "/stack",
+  },
 }
 
 export default routes

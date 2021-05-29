@@ -55,7 +55,7 @@ export default function Header() {
             {isExpanded ? <X size={16} /> : <Menu size={16} />}
           </button>
           <p className="font-sans text-sm font-semibold dark:text-gray-100">
-            {isExpanded ? "" : `${mobileTitle}`}
+            {mobileTitle}
           </p>
         </div>
         {isExpanded && (
