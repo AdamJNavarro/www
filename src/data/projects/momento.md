@@ -12,10 +12,11 @@ stack:
   front end:
     - expo
     - react native
-    - apollo
+    - apollo client
     - react navigation
     - gatsby
   back end:
+    - apollo server
     - typeorm
     - node.js
     - postgresql

@@ -30,7 +30,13 @@ export const products = [
     url: "https://vercel.com",
   },
   {
-    name: "Apollo",
+    name: "Apollo Client",
+    image: "apollo.png",
+    url: "https://www.apollographql.com/",
+    openSource: true,
+  },
+  {
+    name: "Apollo Server",
     image: "apollo.png",
     url: "https://www.apollographql.com/",
     openSource: true,
@@ -140,11 +146,13 @@ export type ProductName =
   | "vercel"
   | "figma"
   | "1password"
-  | "apollo"
+  | "apollo server"
+  | "apollo client"
   | "render"
   | "cloudinary"
   | "aws"
   | "expo"
+  | "expo application services"
   | "react"
   | "react native"
   | "branch"
