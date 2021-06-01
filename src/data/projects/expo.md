@@ -1,7 +1,7 @@
 ---
 name: Expo
 image: expo.png
-description: A framework and a platform for universal React applications. It is a set of tools and services built around React Native and native platforms that help you develop, build, deploy, and quickly iterate on iOS, Android, and web apps from the same JavaScript/TypeScript codebase.
+description: Build and share an iOS, Android and Web app from a single codebase.
 webUrl: https://expo.io/
 platforms:
   ios:
@@ -10,4 +10,10 @@ platforms:
     url: https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www
 ---
 
-This is simply a placeholder paragraph that will eventually be replaced by my thoughts, intentions, motivations and the story behind the project. It's going to take a little time to hammer out those words so in the interim this will have to suffice. Hopefully it is less jarring than a lorem ipsum block to folks who stumble upon it. A project's story will hopefully be an interesting read for those who visit the website so I'd prefer not to rush things and put up a scatter-brained wall of text that will leave readers in a state of discomboulation.
+Expo is an open-source platform for making universal native apps that run on Android, iOS, and the web. It includes a universal runtime and libraries that let you build native apps by writing React and JavaScript.
+
+### Origin Story
+
+Expo was co-founded by [Charlie Cheever](http://ccheever.com/) and [James Ide](https://jameside.com/) in 2013 from a shared desire to make it easier to create and use universal mobile apps that run everywhere.
+
+Fun fact: The company was originally named Exponent until being [renamed to Expo](https://blog.expo.io/exponent-expo-b172fb6725a7) in March of 2017.

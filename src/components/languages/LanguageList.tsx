@@ -1,5 +1,6 @@
 import * as React from "react"
 
+import GridList from "../grid/GridList"
 import Image from "next/image"
 import { languages } from "~/data/languages"
 
@@ -9,13 +10,15 @@ const LanguageList = ({}) => {
       <h4 className="font-sans text-xl font-bold md:text-2xl text-gray-900 dark:text-gray-300">
         Languages
       </h4>
-      <div className="space-y-1.5">
-        {languages.map((language) => {
+      <GridList>
+        {languages.map((language, index) => {
           const { name, image } = language
           return (
             <div
               key={`langkey-${name}`}
-              className="flex py-4 bg-gray-400 bg-opacity-0 rounded md:-mx-4 sm:p-4"
+              className={`flex py-4 bg-gray-400 bg-opacity-0 rounded md:-mx-4 sm:p-4 ${
+                index % 2 == 0 ? "md:-ml-4" : "md:-mr-4"
+              }`}
             >
               <Image
                 src={`/images/languages/${image}`}
@@ -26,15 +29,15 @@ const LanguageList = ({}) => {
                 className="border border-gray-100 rounded-xl dark:border-gray-900 flex-0"
               />
 
-              <div className="items-center flex flex-1 pl-5 ">
-                <p className="text-xl capitalize  font-medium text-black dark:text-gray-100">
+              <div className="items-center flex flex-1 pl-2 sm:pl-4 ">
+                <p className="capitalize text-lg sm:text-xl font-semibold sm:font-mediumtext-black dark:text-gray-100">
                   {name}
                 </p>
               </div>
             </div>
           )
         })}
-      </div>
+      </GridList>
     </div>
   )
 }

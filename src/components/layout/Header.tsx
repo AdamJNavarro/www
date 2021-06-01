@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { Menu, X } from "react-feather"
+import { FiMenu as Menu, FiX as X } from "react-icons/fi"
 
 import Link from "next/link"
 import routes from "../../config/routes"

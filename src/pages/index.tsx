@@ -15,8 +15,8 @@ export default function Home() {
               src="/images/adam.jpg"
               alt={"A photo of me"}
               layout="intrinsic"
-              width="350"
-              height="350"
+              width="300"
+              height="300"
               className="rounded-full"
             />
           </div>
@@ -24,21 +24,13 @@ export default function Home() {
             <p>
               Hey there, I'm Adam. I enjoy building things and am currently working
               on{" "}
-              <a
-                href="https://docs.expo.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Expo
-              </a>{" "}
+              <Link href="/projects/expo" passHref>
+                <a>Expo</a>
+              </Link>{" "}
               and{" "}
-              <a
-                href="https://getmomento.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Momento
-              </a>
+              <Link href="/projects/momento" passHref>
+                <a>Momento</a>
+              </Link>
               . If you're interested in what technologies I use you can check out my{" "}
               <Link href="/stack" passHref>
                 <a>Tech Stack</a>
