@@ -41,7 +41,7 @@ export default function Header() {
 
   return (
     <HeaderContainer
-      baseClasses="fixed top-0 z-10 w-full py-2 bg-white border-b border-opacity-20 border-gray-400 filter-blur"
+      baseClasses="fixed top-0 z-10 w-full py-2.5 bg-white border-b border-opacity-20 border-gray-400 filter-blur"
       breakpointClasses="md:z-auto md:relative md:bg-opacity-70"
       darkClasses="dark:bg-gray-900 dark:bg-opacity-90 dark:border-opacity-10"
     >
@@ -86,8 +86,8 @@ export default function Header() {
       <div className="hidden max-w-screen-md grid-cols-5 gap-2.5 mx-auto md:grid">
         {defaultRoutes.map((route) => {
           const defaultClasses = `font-sans font-semibold flex rounded items-center text-opacity-40 justify-center py-2 text-sm dark:text-white`
-          const activeClasses = `bg-gray-1000 bg-opacity-10 filter-saturate filter-blur dark:bg-white dark:text-opacity-100`
-          const inactiveClasses = `hover:bg-gray-1000 filter-saturate hover:bg-opacity-10 hover:text-gray-1000 dark:hover:bg-white dark:text-opacity-70 dark:hover:text-gray-100 `
+          const activeClasses = `bg-gray-600 bg-opacity-10 filter-saturate filter-blur dark:bg-white dark:text-opacity-100`
+          const inactiveClasses = `text-gray-900 hover:bg-gray-600 filter-saturate hover:text-black hover:bg-opacity-10  dark:hover:bg-white dark:text-opacity-70 dark:hover:text-gray-100 `
           return (
             <Link href={route.path} key={route.path}>
               <a

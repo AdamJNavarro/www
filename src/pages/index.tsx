@@ -37,6 +37,7 @@ export default function Home() {
               width="300"
               height="300"
               className="rounded-full"
+              priority={true}
             />
           </div>
           <div className="space-y-6 md:items-center prose">
