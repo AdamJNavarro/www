@@ -1,10 +1,13 @@
 import * as React from "react"
 
+import { DefaultSeo } from "next-seo"
 import Head from "next/head"
+import { defaultSEO } from "~/config/seo"
 
 export default function MetaWrapper({ children }: any) {
   return (
     <React.Fragment>
+      <DefaultSeo {...defaultSEO} />
       <Head>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
