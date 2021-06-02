@@ -2,7 +2,6 @@ import { CenteredColumn, Page } from "~/components/layout"
 import { currentBook, pastBooks } from "~/data/books"
 
 import BookList from "~/components/books/BookList"
-import RecoBox from "~/components/books/RecoBox"
 
 export default function BooksPage() {
   const { title, author, url } = currentBook
@@ -29,7 +28,6 @@ export default function BooksPage() {
             </p>
           </div>
 
-          <RecoBox />
           <BookList label="📚 Past Books" books={pastBooks} />
         </div>
       </CenteredColumn>

@@ -29,4 +29,19 @@ export const pastBooks = [
     wouldRecommend: true,
     url: "https://jamesclear.com/atomic-habits",
   },
+  {
+    title: "The Gifts of Imperfection",
+    author: "Brené Brown",
+    takeaway:
+      "What resonated most with me was Brown's notion that one can not selectively numb their feelings. When we take the edge off, in whatever fashion that may be, it not only dulls the negative feelings but the positive ones just as much.",
+    wouldRecommend: true,
+    url: "https://brenebrown.com/thegifts-hub/",
+  },
+  {
+    title: "Getting Things Done",
+    author: "David Allen",
+    takeaway: `Allen's "Two Minute Rule" has been one of the most useful tools I've incorporated in my daily life. The rule states that if the action required to complete a task can be performed in two minutes or less, you do it right away regardless of urgency or priority. The amount of time is arbitrary and you can adjust it to what would work best for you.`,
+    wouldRecommend: true,
+    url: "https://gettingthingsdone.com/",
+  },
 ]

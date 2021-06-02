@@ -1,7 +1,7 @@
 ---
 name: Momento
 image: momento.png
-description: A mobile application designed to help people create lasting video memories to be shared with loved ones.
+description: Create unique, lasting video memories for loved ones.
 webUrl: https://getmomento.netlify.app/
 platforms:
   ios:
@@ -31,4 +31,4 @@ stack:
     - netlify
 ---
 
-This is simply a placeholder paragraph that will eventually be replaced by my thoughts, intentions, motivations and the story behind the project. It's going to take a little time to hammer out those words so in the interim this will have to suffice. Hopefully it is less jarring than a lorem ipsum block to folks who stumble upon it. A project's story will hopefully be an interesting read for those who visit the website so I'd prefer not to rush things and put up a scatter-brained wall of text that will leave readers in a state of discomboulation.
+Momento is a mobile app that allows you to create unique, long-lasting video memories with the intention that they be shared with loved ones. Collaborate with friends by collecting videos from them and then once you have all the videos you want, you can create a Momento. A Momento is the final video that stitches all the videos you've collected into one seamless video. You can flex your creative muscles by adding background music, transitions between videos and re-arranging the videos into the order you think will be most impactful. Once you've created your ideal Momento video then it's time to share it with that special person.
