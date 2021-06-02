@@ -1,10 +1,9 @@
 const baseUrl = "https://adamjnavarro.com"
-const baseEmail = "adamjnavarro@icloud.com"
 
 export const defaultSEO = {
   title: "Adam Navarro",
   description:
-    "Software builder, writer, musician and fitness enthusiast. Living in Milwaukee, WI. Currently working on Expo and Momento.",
+    "Software builder, musician and fitness enthusiast. Currently working on Expo and Momento.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -12,7 +11,7 @@ export const defaultSEO = {
     site_name: "Adam Navarro",
     images: [
       {
-        url: `${baseUrl}/images/`,
+        url: `${baseUrl}/og-image.png`,
         alt: "Adam Navarro",
       },
     ],
