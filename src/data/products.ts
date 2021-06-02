@@ -139,6 +139,11 @@ export const products = [
     image: "typeorm.png",
     url: "https://typeorm.io/#/",
   },
+  {
+    name: "Plausible",
+    image: "plausible.png",
+    url: "https://plausible.io/",
+  },
 ]
 
 export type ProductName =
@@ -168,3 +173,4 @@ export type ProductName =
   | "react navigation"
   | "tailwind css"
   | "typeorm"
+  | "plausible"
