@@ -22,7 +22,7 @@
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
-    "@types/node": "^15.6.2",
+    "@types/node": "^15.9.0",
     "@types/react": "^17.0.9",
     "autoprefixer": "^10.2.6",
     "postcss": "^8.3.0",
