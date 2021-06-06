@@ -9,7 +9,7 @@ const email = "adamjnavarro@icloud.com"
 const platforms = [
   {
     name: "Instagram",
-    url: "https://www.instagram.com/adam_nav/",
+    url: "https://www.instagram.com/adamjnavarro/",
     icon: FiInstagram,
   },
   {
