@@ -10,7 +10,6 @@ const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64")
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`
 
 const getAccessToken = async () => {
-  console.log("SPOTIFY CLI ID", client_id)
   const response = await fetch(TOKEN_ENDPOINT, {
     method: "POST",
     headers: {
@@ -30,7 +29,6 @@ const TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/tracks`
 /// item[x].track.[artists, name]
 export const getLastLikedTracks = async () => {
   const { access_token } = await getAccessToken()
-  console.log("acc tok:", access_token)
   return fetch(`${TRACKS_ENDPOINT}?limit=3`, {
     headers: {
       Authorization: `Bearer ${access_token}`,
