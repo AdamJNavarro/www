@@ -49,20 +49,16 @@ export default function RecoBox() {
   }
 
   return (
-    <div className="p-7 space-y-4 border-4 -mx-2 border-gray-300 border-double dark:border-gray-700">
+    <div className="p-5 space-y-3 border-4  border-gray-300 border-double dark:border-gray-700">
       <div className="prose">
-        <p className="flex items-center font-bold">Know of a book I should read?</p>
-        <p>
-          If you have a book in mind that you think I would enjoy, please let me
-          know!
-        </p>
+        <p className="flex items-center font-bold">Got a recommendation?</p>
       </div>
 
       <form onSubmit={handleSubmit} className="items-stretch space-y-4">
         <Textarea
           value={book}
           onChange={onChange}
-          placeholder="Book title and author"
+          placeholder="Title and Author"
           name="recommendation"
           disabled={serverState.submitted && !serverState.error}
         />

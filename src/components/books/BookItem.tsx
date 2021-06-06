@@ -19,7 +19,7 @@ const BookItem = ({ title, author, takeaway, url }: any) => {
         <>
           <p>{showFull ? takeaway : takeaway.slice(0, 300) + "..."}</p>
           <span
-            className="text-purple-300 font-normal"
+            className="text-purple-500 dark:text-purple-300 font-normal"
             onClick={() => setShowFull(!showFull)}
           >
             {showFull ? "Show Less" : "Read More"}
