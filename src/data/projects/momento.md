@@ -2,7 +2,7 @@
 name: Momento
 image: momento.png
 description: Create unique, lasting video memories for loved ones.
-webUrl: https://getmomento.netlify.app/
+webUrl: https://momento.vercel.app/
 platforms:
   ios:
     url: https://apps.apple.com/us/app/momento/id1522386529
