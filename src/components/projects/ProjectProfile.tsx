@@ -34,6 +34,7 @@ const ProjectProfile = ({
                 className="rounded-3xl"
                 src={`/images/projects/${image}`}
                 alt={`${name} icon`}
+                priority
               />
             </a>
             <div className="flex flex-col items-center mt-10 space-y-2">
