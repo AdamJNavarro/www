@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+
 import querystring from "querystring"
 
 const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID
@@ -25,17 +27,23 @@ const getAccessToken = async () => {
   return response.json()
 }
 
-export const getLastLikedTracks = async () => {
-  const { access_token } = await getAccessToken()
-  return fetch(`${TRACKS_ENDPOINT}?limit=5`, {
+export const getLastLikedTracks = async (access_token) => {
+  const response = await fetch(`${TRACKS_ENDPOINT}?limit=5`, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
   })
+  const { items } = await response.json()
+  const tracks = items.map((item) => ({
+    artist: item.track.artists.map((_artist) => _artist.name).join(", "),
+    songUrl: item.track.external_urls.spotify,
+    title: item.track.name,
+    image: item.track.album.images[item.track.album.images.length - 1],
+  }))
+  return tracks
 }
 
-export const getSpotifyArtists = async () => {
-  const { access_token } = await getAccessToken()
+export const getSpotifyArtists = async (access_token) => {
   const response = await fetch(`${ARTISTS_ENDPOINT}`, {
     headers: {
       Authorization: `Bearer ${access_token}`,
@@ -50,4 +58,26 @@ export const getSpotifyArtists = async () => {
     url: item.external_urls.spotify,
   }))
   return artists
+}
+
+export const getSpotifyData = () => {
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState("")
+  const [artists, setArtists] = useState([])
+  const [tracks, setTracks] = useState([])
+
+  useEffect(() => {
+    getData()
+  }, [])
+
+  const getData = async () => {
+    const { access_token } = await getAccessToken()
+    const tracks = await getLastLikedTracks(access_token)
+    setTracks(tracks)
+    const artists = await getSpotifyArtists(access_token)
+    setArtists(artists)
+    setLoading(false)
+  }
+
+  return { loading, error, tracks, artists }
 }

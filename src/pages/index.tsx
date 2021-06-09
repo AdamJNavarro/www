@@ -55,9 +55,12 @@ export default function Home() {
               <Link href="/stack" passHref>
                 <a>Tech Stack</a>
               </Link>{" "}
-              . Some of my other passions include playing guitar and piano, dancing,
-              working out, and helping others in whatever way that I can. If you want
-              to talk about something, don't hesitate to shoot me an{" "}
+              . Some of my other passions include playing guitar and piano, dancing,{" "}
+              <Link href="/music" passHref>
+                <a>music</a>
+              </Link>
+              , working out, and helping others in whatever way that I can. If you
+              want to talk about something, don't hesitate to shoot me an{" "}
               <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
                 email
               </a>
