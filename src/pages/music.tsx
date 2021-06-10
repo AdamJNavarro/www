@@ -3,17 +3,25 @@ import { CenteredColumn, Page, PageHeader } from "~/components/layout"
 import Image from "next/image"
 import { getSpotifyData } from "~/helpers/spotify"
 
+const spotifyProfileUrl = "https://open.spotify.com/user/adamjosephnavarro"
+
 export default function MusicPage() {
   const { loading, error, tracks, artists } = getSpotifyData()
 
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-10">
-          <PageHeader
-            title="Music"
-            subtitle="A glimpse into my taste in music from Spotify."
-          />
+        <div className="space-y-12">
+          <div className="space-y-1">
+            <h1 className="font-sans text-2xl font-black md:text-4xl text-black dark:text-gray-100">
+              Music
+            </h1>
+            <p className="prose font-sans text-lg md:text-xl text-gray-800 dark:text-gray-200">
+              A glimpse into my taste in music from{" "}
+              <a href={spotifyProfileUrl}>Spotify</a>.
+            </p>
+          </div>
+
           {loading ? (
             <h1 className="text-gray-400 dark:text-gray-500">Loading...</h1>
           ) : (
@@ -44,8 +52,8 @@ const ArtistsList = ({ artists, label }) => {
             >
               <Image
                 src={artist.image}
-                width={64}
-                height={64}
+                width={56}
+                height={56}
                 layout="fixed"
                 alt={`spotify artist icon`}
                 className="border border-gray-100 rounded-xl dark:border-gray-900 flex-0"
@@ -80,8 +88,8 @@ const TracksList = ({ tracks, label }) => {
             >
               <Image
                 src={track.image.url}
-                width={64}
-                height={64}
+                width={56}
+                height={56}
                 layout="fixed"
                 alt={`spotify track icon`}
                 className="border border-gray-100 rounded-xl dark:border-gray-900 flex-0"
@@ -89,7 +97,7 @@ const TracksList = ({ tracks, label }) => {
 
               <div className="justify-center flex-1 col-span-3 pl-5 space-y-2 ">
                 <div className="space-y-1 ">
-                  <p className="mt-2 font-medium text-black dark:text-gray-100">
+                  <p className="mt-0.5 font-medium text-black dark:text-gray-100">
                     {track.title}
                   </p>
                   <p className="text-base font-normal leading-snug text-gray-900 dark:text-gray-300">

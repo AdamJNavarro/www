@@ -23,6 +23,14 @@ const routes = {
     label: "Stack",
     path: "/stack",
   },
+  dancing: {
+    label: "Dancing",
+    path: "/dancing",
+  },
+  music: {
+    label: "Music",
+    path: "/music",
+  },
 }
 
 export default routes

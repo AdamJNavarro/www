@@ -55,7 +55,11 @@ export default function Home() {
               <Link href="/stack" passHref>
                 <a>Tech Stack</a>
               </Link>{" "}
-              . Some of my other passions include playing guitar and piano, dancing,{" "}
+              . Some of my other passions include playing guitar and piano,{" "}
+              <Link href="/dancing" passHref>
+                <a>dancing</a>
+              </Link>
+              ,{" "}
               <Link href="/music" passHref>
                 <a>music</a>
               </Link>

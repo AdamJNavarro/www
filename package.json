@@ -10,6 +10,7 @@
     "open-browser": "open http://localhost:3000 https://nextjs.org/docs/getting-started https://tailwindcss.com/docs && xcrun simctl openurl booted http://localhost:3000"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "gray-matter": "^4.0.3",
     "next": "^10.2.3",
