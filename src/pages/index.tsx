@@ -71,7 +71,7 @@ export default function Home() {
               .
             </p>
           </div>
-          <div className="flex flex-row space-x-10">
+          <div className="flex flex-row space-x-10 justify-center">
             {platforms.map((platform) => {
               const { name, url, icon: Icon } = platform
               return (
