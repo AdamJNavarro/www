@@ -13,7 +13,7 @@
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "gray-matter": "^4.0.3",
-    "next": "^10.2.3",
+    "next": "^11.0.0",
     "next-mdx-remote": "^3.0.2",
     "next-plausible": "^1.6.1",
     "next-seo": "^4.24.0",
