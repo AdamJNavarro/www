@@ -1,6 +1,5 @@
 import { CenteredColumn, Page, PageHeader } from "~/components/layout"
-
-import { dances } from "~/data/dances"
+import { DancePerformance, dances } from "~/data/dances"
 
 export default function DancingPage() {
   return (
@@ -17,20 +16,30 @@ export default function DancingPage() {
               Performances
             </h3>
             <div className="space-y-12">
-              {dances.map((dance) => {
+              {dances.map((dance: DancePerformance) => {
+                const {
+                  song,
+                  videoUrl,
+                  posterUrl,
+                  choreographer,
+                  choreographerUrl,
+                  spotifyUrl,
+                } = dance
                 return (
-                  <div key={dance.song} className="aspect-w-16 aspect-h-9">
-                    <video
-                      playsInline
-                      controls
-                      controlsList="nodownload nofullscreen"
-                      disablePictureInPicture
-                      disableRemotePlayback
-                      key={`${dance.song}-video`}
-                      poster={dance.posterUrl}
-                    >
-                      <source src={dance.videoUrl} type="video/mp4" />
-                    </video>
+                  <div key={song}>
+                    <div className="aspect-w-16 aspect-h-9">
+                      <video
+                        playsInline
+                        controls
+                        controlsList="nodownload nofullscreen"
+                        disablePictureInPicture
+                        disableRemotePlayback
+                        key={`${song}-video`}
+                        poster={posterUrl}
+                      >
+                        <source src={videoUrl} type="video/mp4" />
+                      </video>
+                    </div>
                   </div>
                 )
               })}
