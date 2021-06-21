@@ -15,7 +15,7 @@
     "gray-matter": "^4.0.3",
     "next": "^11.0.0",
     "next-mdx-remote": "^3.0.2",
-    "next-plausible": "^1.6.2",
+    "next-plausible": "^1.7.0",
     "next-seo": "^4.25.1",
     "querystring": "^0.2.1",
     "react": "^17.0.2",
