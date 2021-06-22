@@ -12,17 +12,17 @@ function MissingPage() {
       <CenteredColumn>
         <div className="flex mb-20 justify-center">
           <Image
-            src="/images/missing.svg"
             alt={"404 Missing page cartoon icon"}
-            layout="intrinsic"
-            width="250"
             height="250"
+            layout="intrinsic"
+            src="/images/missing.svg"
+            width="250"
           />
         </div>
         <div className="space-y-10">
           <PageHeader
-            title="Uh Oh"
             subtitle="Unfortunately this page doesn’t exist. Sorry about that."
+            title="Uh Oh"
           />
           <div>
             <Link href="/" passHref>

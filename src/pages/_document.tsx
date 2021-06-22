@@ -32,9 +32,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html
-        lang="en"
-        //className="text-base antialiased bg-gray-300 bg-opacity-5 dark:bg-gray-1000 dark:bg-opacity-100"
         className="dark:bg-black dark:bg-opacity-100"
+        //className="text-base antialiased bg-gray-300 bg-opacity-5 dark:bg-gray-1000 dark:bg-opacity-100"
+        lang="en"
       >
         <Head></Head>
 

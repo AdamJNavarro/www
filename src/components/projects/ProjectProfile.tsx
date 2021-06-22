@@ -28,13 +28,13 @@ const ProjectProfile = ({
           <div className="flex flex-col items-center">
             <a href={webUrl}>
               <Image
-                width={200}
+                alt={`${name} icon`}
+                className="rounded-3xl"
                 height={200}
                 layout="fixed"
-                className="rounded-3xl"
-                src={`/images/projects/${image}`}
-                alt={`${name} icon`}
                 priority
+                src={`/images/projects/${image}`}
+                width={200}
               />
             </a>
             <div className="flex flex-col items-center mt-10 space-y-2">

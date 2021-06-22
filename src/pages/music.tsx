@@ -1,4 +1,4 @@
-import { CenteredColumn, Page, PageHeader } from "~/components/layout"
+import { CenteredColumn, Page } from "~/components/layout"
 
 import Image from "next/image"
 import { getSpotifyData } from "~/helpers/spotify"
@@ -27,7 +27,7 @@ export default function MusicPage() {
   )
 }
 
-const SpotifyContent = ({}) => {
+const SpotifyContent = () => {
   const { loading, error, tracks, artists } = getSpotifyData()
 
   if (loading)
@@ -37,7 +37,7 @@ const SpotifyContent = ({}) => {
 
   return (
     <>
-      <TracksList tracks={tracks} label="Recently Liked Songs" />
+      <TracksList label="Recently Liked Songs" tracks={tracks} />
       <ArtistsList artists={artists} label="Favorite Artists" />
     </>
   )
@@ -53,17 +53,17 @@ const ArtistsList = ({ artists, label }) => {
         {artists.map((artist) => {
           return (
             <a
-              key={artist.name}
               className="flex py-2 bg-gray-400 bg-opacity-0 rounded md:-mx-4 sm:p-4 sm:hover:bg-opacity-5 sm:dark:hover:bg-gray-900 sm:dark:hover:bg-opacity-100"
               href={artist.url}
+              key={artist.name}
             >
               <Image
-                src={artist.image}
-                width={56}
-                height={56}
-                layout="fixed"
                 alt={`spotify artist icon`}
                 className="border border-gray-100 rounded-xl dark:border-gray-900 flex-0"
+                height={56}
+                layout="fixed"
+                src={artist.image}
+                width={56}
               />
 
               <div className="flex flex-1  pl-5  items-center  ">
@@ -89,17 +89,17 @@ const TracksList = ({ tracks, label }) => {
         {tracks.map((track) => {
           return (
             <a
-              key={track.title}
               className="flex py-2 bg-gray-400 bg-opacity-0 rounded md:-mx-4 sm:p-4 sm:hover:bg-opacity-5 sm:dark:hover:bg-gray-900 sm:dark:hover:bg-opacity-100"
               href={track.songUrl}
+              key={track.title}
             >
               <Image
-                src={track.image.url}
-                width={56}
-                height={56}
-                layout="fixed"
                 alt={`spotify track icon`}
                 className="border border-gray-100 rounded-xl dark:border-gray-900 flex-0"
+                height={56}
+                layout="fixed"
+                src={track.image.url}
+                width={56}
               />
 
               <div className="justify-center flex-1 col-span-3 pl-5 space-y-2 ">

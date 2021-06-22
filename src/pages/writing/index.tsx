@@ -9,15 +9,15 @@ export default function WritingPage({ posts }: any) {
       <CenteredColumn>
         <div className="space-y-10">
           <PageHeader
-            title="Writing"
             subtitle="A collection of my thoughts put to words."
+            title="Writing"
           />
         </div>
 
         <div className="prose">
           {posts.map((post) => {
             return (
-              <div key={post.slug} className="space-y-1">
+              <div className="space-y-1" key={post.slug}>
                 <h3>
                   <Link href={`/writing/${post.slug}`} passHref>
                     <a>{post.title}</a>
@@ -39,8 +39,8 @@ export async function getStaticProps() {
     props: {
       posts: allPosts.map(({ data, content, slug }) => ({
         ...data,
-        date: data.date,
         content,
+        date: data.date,
         slug,
       })),
     },

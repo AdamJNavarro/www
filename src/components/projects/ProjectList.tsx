@@ -22,16 +22,16 @@ const ProjectItem = ({ name, slug, description, image, platforms }) => {
   return (
     <Link href={`/projects/${slug}`} passHref>
       <a
-        key={name}
         className="flex py-4 bg-gray-400 bg-opacity-0 rounded md:-mx-4 sm:p-4 sm:hover:bg-opacity-5 sm:dark:hover:bg-gray-900 sm:dark:hover:bg-opacity-100"
+        key={name}
       >
         <Image
-          src={`/images/projects/${image}`}
-          width={64}
-          height={64}
-          layout="fixed"
           alt={`${name} icon`}
           className="border border-gray-100 rounded-xl dark:border-gray-900 flex-0"
+          height={64}
+          layout="fixed"
+          src={`/images/projects/${image}`}
+          width={64}
         />
 
         <div className="justify-center flex-1 col-span-3 pl-5 space-y-3.5">

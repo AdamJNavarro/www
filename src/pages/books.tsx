@@ -18,10 +18,10 @@ export default function BooksPage() {
               What I've read recently with my main takeaway and thoughts from each
               book. Currently reading{" "}
               <a
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="italic"
+                href={url}
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 {title}
               </a>{" "}
@@ -29,7 +29,7 @@ export default function BooksPage() {
             </p>
           </div>
           <RecoBox />
-          <BookList label="📚 Past Books" books={pastBooks} />
+          <BookList books={pastBooks} label="📚 Past Books" />
         </div>
       </CenteredColumn>
     </Page>

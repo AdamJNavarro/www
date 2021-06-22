@@ -10,8 +10,8 @@ export default function WordsPage() {
       <CenteredColumn>
         <div className="space-y-10">
           <PageHeader
-            title="Words"
             subtitle="An ever-growing list, beginning from mid-2018, of words I've encountered and did not know."
+            title="Words"
           />
           <div className="prose">
             {alphabetizedWords.map((word: any) => {
@@ -19,12 +19,12 @@ export default function WordsPage() {
               return (
                 <p key={term}>
                   <a
+                    className="capitalize"
                     href={`https://www.merriam-webster.com/dictionary/${encodeURIComponent(
                       term
                     )}`}
-                    target="_blank"
                     rel="noopener noreferrer"
-                    className="capitalize"
+                    target="_blank"
                   >
                     {term}
                   </a>{" "}

@@ -9,8 +9,8 @@ export default function StackPage() {
       <CenteredColumn>
         <div className="space-y-10">
           <PageHeader
-            title="My Stack"
             subtitle="A list of technologies I have experience using or am familiar with."
+            title="My Stack"
           />
           <LanguageList />
 

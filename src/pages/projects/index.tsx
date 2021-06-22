@@ -9,8 +9,8 @@ export default function ProjectsPage({ projects }: any) {
       <CenteredColumn>
         <div className="space-y-10">
           <PageHeader
-            title="Projects"
             subtitle="Various things I've created or worked on."
+            title="Projects"
           />
 
           <div className="space-y-12 md:space-y-16">

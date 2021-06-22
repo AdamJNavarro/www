@@ -5,7 +5,7 @@ import { MDXRemote } from "next-mdx-remote"
 import getAllPosts from "~/helpers/getAllPosts"
 import { serialize } from "next-mdx-remote/serialize"
 
-function PostPage({ title, date, content }: any) {
+function PostPage({ title, content }: any) {
   return (
     <Page>
       <CenteredColumn>

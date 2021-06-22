@@ -1,10 +1,9 @@
 import * as React from "react"
 
-import { ProductName, products as allProducts } from "~/data/products"
-
 import { GridItemStyle } from "../grid/GridItem"
 import GridList from "../grid/GridList"
 import Image from "next/image"
+import { products as allProducts } from "~/data/products"
 
 type ProductListProps = { label: string; products: any }
 
@@ -25,19 +24,19 @@ const ProductList = ({ label, products }: ProductListProps) => {
             const { name, image, url } = product
             return (
               <a
-                key={name}
                 className={`${GridItemStyle} ${
                   index % 2 == 0 ? "md:-ml-4" : "md:-mr-4"
                 }`}
                 href={url}
+                key={name}
               >
                 <Image
-                  src={`/images/products/${image}`}
-                  width={48}
-                  height={48}
-                  layout="fixed"
                   alt={`${name} icon`}
                   className="border border-gray-100 rounded-xl dark:border-gray-900 flex-0"
+                  height={48}
+                  layout="fixed"
+                  src={`/images/products/${image}`}
+                  width={48}
                 />
 
                 <div className="items-center flex flex-1 pl-2 sm:pl-4 ">

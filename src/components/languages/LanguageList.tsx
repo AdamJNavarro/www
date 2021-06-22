@@ -4,7 +4,7 @@ import GridList from "../grid/GridList"
 import Image from "next/image"
 import { languages } from "~/data/languages"
 
-const LanguageList = ({}) => {
+const LanguageList = () => {
   return (
     <div className="space-y-6">
       <h4 className="font-sans text-xl font-bold md:text-2xl text-gray-900 dark:text-gray-300">
@@ -15,18 +15,18 @@ const LanguageList = ({}) => {
           const { name, image } = language
           return (
             <div
-              key={`langkey-${name}`}
               className={`flex py-4 bg-gray-400 bg-opacity-0 rounded md:-mx-4 sm:p-4 ${
                 index % 2 == 0 ? "md:-ml-4" : "md:-mr-4"
               }`}
+              key={`langkey-${name}`}
             >
               <Image
-                src={`/images/languages/${image}`}
-                width={48}
-                height={48}
-                layout="fixed"
                 alt={`${name} logo`}
                 className="border border-gray-100 rounded-xl dark:border-gray-900 flex-0"
+                height={48}
+                layout="fixed"
+                src={`/images/languages/${image}`}
+                width={48}
               />
 
               <div className="items-center flex flex-1 pl-2 sm:pl-4 ">
