@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "types": [
+            "cypress",
+            "@testing-library/cypress"
+        ]
+    },
+    "include": [
+        "**/*.ts",
+        "plugins/index.js",
+        "support/index.js",
+        "support/commands.js"
+    ]
+}
