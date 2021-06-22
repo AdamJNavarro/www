@@ -31,13 +31,13 @@ export default function Home() {
         <div className="space-y-10">
           <div className="flex my-10 justify-center">
             <Image
-              src="/images/adam.jpg"
               alt={"A photo of me"}
-              layout="intrinsic"
-              width="300"
-              height="300"
               className="rounded-full"
+              height="300"
+              layout="intrinsic"
               priority={true}
+              src="/images/adam.jpg"
+              width="300"
             />
           </div>
           <div className="space-y-6 md:items-center prose">
@@ -65,7 +65,7 @@ export default function Home() {
               </Link>
               , working out, and helping others in whatever way that I can. If you
               want to talk about something, don't hesitate to shoot me an{" "}
-              <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
+              <a href={`mailto:${email}`} rel="noopener noreferrer" target="_blank">
                 email
               </a>
               .
@@ -76,9 +76,9 @@ export default function Home() {
               const { name, url, icon: Icon } = platform
               return (
                 <a
-                  key={name}
                   className="text-3xl no-underline text-purple-500 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-400"
                   href={url}
+                  key={name}
                 >
                   <Icon />
                 </a>

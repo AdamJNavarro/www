@@ -1,11 +1,5 @@
 import { CenteredColumn, Page, PageHeader } from "~/components/layout"
 
-type Movement = {
-  name: string
-  url: string
-  targetMuscle: string
-}
-
 const supplements = [
   {
     name: "PreJYM High-Performance Pre-Workout",
@@ -21,40 +15,19 @@ const supplements = [
   },
 ]
 
-const videoSource =
-  "https://res.cloudinary.com/dkddfip9j/video/upload/v1623791903/videos/fitness/pole-challenge.mp4"
-
 export default function FitnessPage() {
   return (
     <Page>
       <CenteredColumn>
         <div className="space-y-10">
           <PageHeader
-            title="Fitness"
             subtitle="My favorite movements, supplements, etc."
+            title="Fitness"
           />
           <SupplementList />
         </div>
       </CenteredColumn>
     </Page>
-  )
-}
-
-const FitnessFeaturedVideo = () => {
-  return (
-    <div className="aspect-w-9 aspect-h-16">
-      <video
-        playsInline
-        controls
-        controlsList="nodownload nofullscreen"
-        disablePictureInPicture
-        disableRemotePlayback
-        key={`fitness-video`}
-        //poster={dance.posterUrl}
-      >
-        <source src={videoSource} type="video/mp4" />
-      </video>
-    </div>
   )
 }
 

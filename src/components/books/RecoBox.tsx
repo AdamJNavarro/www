@@ -1,6 +1,6 @@
-import { ErrorAlert, SuccessAlert } from "../alerts"
 import React, { useState } from "react"
 
+import { ErrorAlert } from "../alerts"
 import PrimaryButton from "../buttons/PrimaryButton"
 import { Textarea } from "../inputs"
 
@@ -54,19 +54,19 @@ export default function RecoBox() {
         <p className="flex items-center font-bold">Got a recommendation?</p>
       </div>
 
-      <form onSubmit={handleSubmit} className="items-stretch space-y-4">
+      <form className="items-stretch space-y-4" onSubmit={handleSubmit}>
         <Textarea
-          value={book}
+          disabled={serverState.submitted && !serverState.error}
+          name="recommendation"
           onChange={onChange}
           placeholder="Title and Author"
-          name="recommendation"
-          disabled={serverState.submitted && !serverState.error}
+          value={book}
         />
         <div className="flex justify-center">
           <PrimaryButton
+            className="w-1/2"
             disabled={serverState.submitting || serverState.submitted || !book}
             type="submit"
-            className="w-1/2"
           >
             {serverState.submitted && !serverState.error ? "Thank You!" : "Submit"}
           </PrimaryButton>

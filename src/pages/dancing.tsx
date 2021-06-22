@@ -7,8 +7,8 @@ export default function DancingPage() {
       <CenteredColumn>
         <div className="space-y-10">
           <PageHeader
-            title="Dancing"
             subtitle="If there's a dance floor, you'll find me on it."
+            title="Dancing"
           />
 
           <div className="space-y-6">
@@ -17,24 +17,17 @@ export default function DancingPage() {
             </h3>
             <div className="space-y-12">
               {dances.map((dance: DancePerformance) => {
-                const {
-                  song,
-                  videoUrl,
-                  posterUrl,
-                  choreographer,
-                  choreographerUrl,
-                  spotifyUrl,
-                } = dance
+                const { song, videoUrl, posterUrl } = dance
                 return (
                   <div key={song}>
                     <div className="aspect-w-16 aspect-h-9">
                       <video
-                        playsInline
                         controls
                         controlsList="nodownload nofullscreen"
                         disablePictureInPicture
                         disableRemotePlayback
                         key={`${song}-video`}
+                        playsInline
                         poster={posterUrl}
                       >
                         <source src={videoUrl} type="video/mp4" />

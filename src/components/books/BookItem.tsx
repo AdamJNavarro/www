@@ -8,9 +8,9 @@ const BookItem = ({ title, author, takeaway, url }: any) => {
   const isMobile = useMediaQuery(640)
 
   return (
-    <div key={title} className="space-y-1">
+    <div className="space-y-1" key={title}>
       <p>
-        <a href={url} target="_blank" rel="noopener noreferrer" className="italic">
+        <a className="italic" href={url} rel="noopener noreferrer" target="_blank">
           {title}
         </a>{" "}
         by {author}
