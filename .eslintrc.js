@@ -17,6 +17,6 @@ module.exports = {
         ignoreCase: false,
       },
     ],
-    "sort-keys": ["warn", "asc", { caseSensitive: false, natural: false }],
+    //"sort-keys": ["error", "asc", { caseSensitive: false, natural: false }],
   },
 }
