@@ -9,7 +9,7 @@ export default function BooksPage() {
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-12">
+        <div className="space-y-10">
           <div className="space-y-1">
             <h1 className="font-sans text-2xl font-black md:text-4xl text-black dark:text-gray-100">
               Books

@@ -71,12 +71,17 @@ export const getSpotifyData = () => {
   }, [])
 
   const getData = async () => {
-    const { access_token } = await getAccessToken()
-    const tracks = await getLastLikedTracks(access_token)
-    setTracks(tracks)
-    const artists = await getSpotifyArtists(access_token)
-    setArtists(artists)
-    setLoading(false)
+    try {
+      const { access_token } = await getAccessToken()
+      const tracks = await getLastLikedTracks(access_token)
+      setTracks(tracks)
+      const artists = await getSpotifyArtists(access_token)
+      setArtists(artists)
+      setLoading(false)
+    } catch (e) {
+      setError("An error occurred getting data from Spotify.")
+      setLoading(false)
+    }
   }
 
   return { loading, error, tracks, artists }

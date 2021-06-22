@@ -5,7 +5,7 @@ export default function DancingPage() {
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-12">
+        <div className="space-y-10">
           <PageHeader
             title="Dancing"
             subtitle="If there's a dance floor, you'll find me on it."

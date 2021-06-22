@@ -19,7 +19,7 @@ function MissingPage() {
             height="250"
           />
         </div>
-        <div className="space-y-12">
+        <div className="space-y-10">
           <PageHeader
             title="Uh Oh"
             subtitle="Unfortunately this page doesn’t exist. Sorry about that."

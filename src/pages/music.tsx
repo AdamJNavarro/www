@@ -6,12 +6,10 @@ import { getSpotifyData } from "~/helpers/spotify"
 const spotifyProfileUrl = "https://open.spotify.com/user/adamjosephnavarro"
 
 export default function MusicPage() {
-  const { loading, error, tracks, artists } = getSpotifyData()
-
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-12">
+        <div className="space-y-10">
           <div className="space-y-1">
             <h1 className="font-sans text-2xl font-black md:text-4xl text-black dark:text-gray-100">
               Music
@@ -22,17 +20,26 @@ export default function MusicPage() {
             </p>
           </div>
 
-          {loading ? (
-            <h1 className="text-gray-400 dark:text-gray-500">Loading...</h1>
-          ) : (
-            <>
-              <TracksList tracks={tracks} label="Recently Liked Songs" />
-              <ArtistsList artists={artists} label="Favorite Artists" />
-            </>
-          )}
+          <SpotifyContent />
         </div>
       </CenteredColumn>
     </Page>
+  )
+}
+
+const SpotifyContent = ({}) => {
+  const { loading, error, tracks, artists } = getSpotifyData()
+
+  if (loading)
+    return <h1 className="text-gray-400 dark:text-gray-500">Loading...</h1>
+  if (error)
+    return <h1 className="text-red-600 dark:text-red-500">An error occurred.</h1>
+
+  return (
+    <>
+      <TracksList tracks={tracks} label="Recently Liked Songs" />
+      <ArtistsList artists={artists} label="Favorite Artists" />
+    </>
   )
 }
 

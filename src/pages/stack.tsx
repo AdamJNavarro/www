@@ -7,7 +7,7 @@ export default function StackPage() {
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-12">
+        <div className="space-y-10">
           <PageHeader
             title="My Stack"
             subtitle="A list of technologies I have experience using or am familiar with."

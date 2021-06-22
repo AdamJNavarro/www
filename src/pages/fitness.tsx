@@ -1,5 +1,11 @@
 import { CenteredColumn, Page, PageHeader } from "~/components/layout"
 
+type Movement = {
+  name: string
+  url: string
+  targetMuscle: string
+}
+
 const supplements = [
   {
     name: "PreJYM High-Performance Pre-Workout",
@@ -22,7 +28,7 @@ export default function FitnessPage() {
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-12">
+        <div className="space-y-10">
           <PageHeader
             title="Fitness"
             subtitle="My favorite movements, supplements, etc."

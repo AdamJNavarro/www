@@ -7,7 +7,7 @@ export default function ProjectsPage({ projects }: any) {
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-12">
+        <div className="space-y-10">
           <PageHeader
             title="Projects"
             subtitle="Various things I've created or worked on."

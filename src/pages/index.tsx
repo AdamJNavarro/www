@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-12">
+        <div className="space-y-10">
           <div className="flex my-10 justify-center">
             <Image
               src="/images/adam.jpg"
@@ -54,7 +54,7 @@ export default function Home() {
               . If you're interested in what technologies I use you can check out my{" "}
               <Link href="/stack" passHref>
                 <a>Tech Stack</a>
-              </Link>{" "}
+              </Link>
               . Some of my other passions include playing guitar and piano,{" "}
               <Link href="/dancing" passHref>
                 <a>dancing</a>
