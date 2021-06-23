@@ -26,8 +26,8 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   return {
+    fallback: false,
     paths: getAllProjects().map((project) => ({
-      fallback: false,
       params: {
         slug: project.slug,
       },
