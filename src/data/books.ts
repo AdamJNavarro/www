@@ -10,7 +10,7 @@ export const currentBook = {
   author: "Ichiro Kishimi & Fumitake Koga",
   title: "The Courage to Be Disliked",
   url: "https://www.goodreads.com/book/show/43306206-the-courage-to-be-disliked",
-}
+};
 
 export const pastBooks = [
   {
@@ -40,4 +40,4 @@ export const pastBooks = [
     title: "Getting Things Done",
     url: "https://gettingthingsdone.com/",
   },
-]
+];

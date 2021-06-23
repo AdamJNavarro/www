@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-type ProjectListProps = { label: string; projects: any[] }
+type ProjectListProps = { label: string; projects: any[] };
 
 const ProjectList = ({ label, projects }: ProjectListProps) => {
   return (
@@ -11,12 +11,12 @@ const ProjectList = ({ label, projects }: ProjectListProps) => {
       </h4>
       <div className="space-y-8">
         {projects.map((project) => {
-          return <ProjectItem key={project.slug} {...project} />
+          return <ProjectItem key={project.slug} {...project} />;
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
 const ProjectItem = ({ name, slug, description, image, platforms }) => {
   return (
@@ -60,7 +60,7 @@ const ProjectItem = ({ name, slug, description, image, platforms }) => {
         </div>
       </a>
     </Link>
-  )
-}
+  );
+};
 
-export default ProjectList
+export default ProjectList;

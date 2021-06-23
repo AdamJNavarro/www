@@ -1,10 +1,10 @@
-import * as React from "react"
+import * as React from "react";
 
-import { FiMenu as Menu, FiX as X } from "react-icons/fi"
+import { FiMenu as Menu, FiX as X } from "react-icons/fi";
 
-import Link from "next/link"
-import routes from "../../config/routes"
-import { useRouter } from "next/router"
+import Link from "next/link";
+import routes from "../../config/routes";
+import { useRouter } from "next/router";
 
 const defaultRoutes = [
   routes.about,
@@ -12,7 +12,7 @@ const defaultRoutes = [
   routes.books,
   routes.words,
   routes.writing,
-]
+];
 
 const HeaderContainer = ({
   baseClasses,
@@ -24,20 +24,20 @@ const HeaderContainer = ({
     <div className={`${baseClasses} ${breakpointClasses} ${darkClasses}`}>
       {children}
     </div>
-  )
-}
+  );
+};
 
 export default function Header() {
-  const [isExpanded, setIsExpanded] = React.useState(false)
-  const router = useRouter()
-  const currPathName = router.pathname
-  const routesAsArr = Object.keys(routes).map((r) => routes[r])
+  const [isExpanded, setIsExpanded] = React.useState(false);
+  const router = useRouter();
+  const currPathName = router.pathname;
+  const routesAsArr = Object.keys(routes).map((r) => routes[r]);
   const mobileTitle =
     currPathName === "/"
       ? "About"
       : routesAsArr
           .filter((r) => r.path !== "/")
-          .find((r) => currPathName.includes(r.path))?.label
+          .find((r) => currPathName.includes(r.path))?.label;
 
   return (
     <HeaderContainer
@@ -63,9 +63,9 @@ export default function Header() {
         )}
         {isExpanded &&
           defaultRoutes.map((route) => {
-            const isActive = route.path === router.pathname
+            const isActive = route.path === router.pathname;
 
-            const defaultClasses = `flex font-sans items-center pl-12 py-4 font-semibold dark:text-white`
+            const defaultClasses = `flex font-sans items-center pl-12 py-4 font-semibold dark:text-white`;
 
             return (
               <Link href={route.path} key={route.path}>
@@ -77,7 +77,7 @@ export default function Header() {
                   {route.label}
                 </a>
               </Link>
-            )
+            );
           })}
       </div>
       {/* End mobile nav */}
@@ -85,9 +85,9 @@ export default function Header() {
       {/* Desktop nav */}
       <div className="hidden max-w-screen-md grid-cols-5 gap-2.5 mx-auto md:grid">
         {defaultRoutes.map((route) => {
-          const defaultClasses = `font-sans font-semibold flex rounded items-center text-opacity-40 justify-center py-2 text-sm dark:text-white`
-          const activeClasses = `bg-gray-600 bg-opacity-10 filter-saturate filter-blur dark:bg-white dark:text-opacity-100`
-          const inactiveClasses = `text-gray-900 hover:bg-gray-600 filter-saturate hover:text-black hover:bg-opacity-10  dark:hover:bg-white dark:text-opacity-70 dark:hover:text-gray-100 `
+          const defaultClasses = `font-sans font-semibold flex rounded items-center text-opacity-40 justify-center py-2 text-sm dark:text-white`;
+          const activeClasses = `bg-gray-600 bg-opacity-10 filter-saturate filter-blur dark:bg-white dark:text-opacity-100`;
+          const inactiveClasses = `text-gray-900 hover:bg-gray-600 filter-saturate hover:text-black hover:bg-opacity-10  dark:hover:bg-white dark:text-opacity-70 dark:hover:text-gray-100 `;
           return (
             <Link href={route.path} key={route.path}>
               <a
@@ -98,10 +98,10 @@ export default function Header() {
                 {route.label}
               </a>
             </Link>
-          )
+          );
         })}
         {/* End desktop nav */}
       </div>
     </HeaderContainer>
-  )
+  );
 }

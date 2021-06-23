@@ -31,6 +31,6 @@ const routes = {
     label: "Writing",
     path: "/writing",
   },
-}
+};
 
-export default routes
+export default routes;

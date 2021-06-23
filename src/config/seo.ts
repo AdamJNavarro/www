@@ -1,4 +1,4 @@
-const baseUrl = "https://adamjnavarro.com"
+const baseUrl = "https://adamjnavarro.com";
 
 export const defaultSEO = {
   description:
@@ -21,4 +21,4 @@ export const defaultSEO = {
     handle: "@adamjnavarro",
     site: "@adamjnavarro",
   },
-}
+};

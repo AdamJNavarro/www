@@ -1,9 +1,9 @@
-import { CenteredColumn, Page } from "../layout"
-import React, { useEffect, useState } from "react"
-import { isAndroid, isIOS } from "~/helpers/window"
+import { CenteredColumn, Page } from "../layout";
+import React, { useEffect, useState } from "react";
+import { isAndroid, isIOS } from "~/helpers/window";
 
-import Image from "next/image"
-import ProductList from "../products/ProductList"
+import Image from "next/image";
+import ProductList from "../products/ProductList";
 
 const ProjectProfile = ({
   name,
@@ -13,13 +13,13 @@ const ProjectProfile = ({
   webUrl,
   children,
 }: any) => {
-  const [showIOS, setShowIOS] = useState(true)
-  const [showAndroid, setShowAndroid] = useState(true)
+  const [showIOS, setShowIOS] = useState(true);
+  const [showAndroid, setShowAndroid] = useState(true);
 
   useEffect(() => {
-    if (isIOS()) setShowAndroid(false)
-    if (isAndroid()) setShowIOS(false)
-  }, [])
+    if (isIOS()) setShowAndroid(false);
+    if (isAndroid()) setShowIOS(false);
+  }, []);
 
   return (
     <Page>
@@ -82,7 +82,7 @@ const ProjectProfile = ({
                       label={section[0]}
                       products={section[1]}
                     />
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -90,7 +90,7 @@ const ProjectProfile = ({
         </div>
       </CenteredColumn>
     </Page>
-  )
-}
+  );
+};
 
-export default ProjectProfile
+export default ProjectProfile;

@@ -1,10 +1,10 @@
-import * as React from "react"
+import * as React from "react";
 
-import { CenteredColumn, Page, PageHeader } from "~/components/layout"
+import { CenteredColumn, Page, PageHeader } from "~/components/layout";
 
-import Image from "next/image"
-import Link from "next/link"
-import PrimaryButton from "~/components/buttons/PrimaryButton"
+import Image from "next/image";
+import Link from "next/link";
+import PrimaryButton from "~/components/buttons/PrimaryButton";
 
 function MissingPage() {
   return (
@@ -34,7 +34,7 @@ function MissingPage() {
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }
 
-export default MissingPage
+export default MissingPage;

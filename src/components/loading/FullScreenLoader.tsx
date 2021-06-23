@@ -22,5 +22,5 @@ export default function FullScreenLoader() {
         ></path>
       </svg>
     </div>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import * as React from "react"
+import * as React from "react";
 
-import { DefaultSeo } from "next-seo"
-import Head from "next/head"
-import { defaultSEO } from "~/config/seo"
+import { DefaultSeo } from "next-seo";
+import Head from "next/head";
+import { defaultSEO } from "~/config/seo";
 
 export default function MetaWrapper({ children }: any) {
   return (
@@ -18,5 +18,5 @@ export default function MetaWrapper({ children }: any) {
       </Head>
       {children}
     </React.Fragment>
-  )
+  );
 }

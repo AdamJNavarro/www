@@ -1,7 +1,7 @@
-import { CenteredColumn, Page, PageHeader } from "~/components/layout"
+import { CenteredColumn, Page, PageHeader } from "~/components/layout";
 
-import Link from "next/link"
-import getAllPosts from "~/helpers/getAllPosts"
+import Link from "next/link";
+import getAllPosts from "~/helpers/getAllPosts";
 
 export default function WritingPage({ posts }: any) {
   return (
@@ -25,16 +25,16 @@ export default function WritingPage({ posts }: any) {
                 </h3>
                 <p>{post.synopsis}</p>
               </div>
-            )
+            );
           })}
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts()
+  const allPosts = getAllPosts();
   return {
     props: {
       posts: allPosts.map(({ data, content, slug }) => ({
@@ -44,5 +44,5 @@ export async function getStaticProps() {
         slug,
       })),
     },
-  }
+  };
 }

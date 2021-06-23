@@ -1,4 +1,4 @@
-import { CenteredColumn, Page, PageHeader } from "~/components/layout"
+import { CenteredColumn, Page, PageHeader } from "~/components/layout";
 
 const supplements = [
   {
@@ -13,7 +13,7 @@ const supplements = [
     name: "BSN TRUE-MASS Mass Gainer",
     url: "https://www.gobsn.com/en-us/product/truemass",
   },
-]
+];
 
 export default function FitnessPage() {
   return (
@@ -28,7 +28,7 @@ export default function FitnessPage() {
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }
 
 const SupplementList = () => {
@@ -46,9 +46,9 @@ const SupplementList = () => {
             >
               <a href={supplement.url}>{supplement.name}</a>
             </li>
-          )
+          );
         })}
       </ul>
     </div>
-  )
-}
+  );
+};

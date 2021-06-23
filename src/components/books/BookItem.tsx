@@ -1,11 +1,11 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
-import useMediaQuery from "~/helpers/useMediaQuery"
+import useMediaQuery from "~/helpers/useMediaQuery";
 
 const BookItem = ({ title, author, takeaway, url }: any) => {
-  const [showFull, setShowFull] = useState(false)
+  const [showFull, setShowFull] = useState(false);
 
-  const isMobile = useMediaQuery(640)
+  const isMobile = useMediaQuery(640);
 
   return (
     <div className="space-y-1" key={title}>
@@ -29,7 +29,7 @@ const BookItem = ({ title, author, takeaway, url }: any) => {
         <p>{takeaway}</p>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default BookItem
+export default BookItem;

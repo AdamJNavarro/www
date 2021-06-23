@@ -38,5 +38,47 @@
     "prettier": "^2.3.1",
     "tailwindcss": "^2.2.2",
     "typescript": "^4.3.4"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "singleQuote": false,
+    "printWidth": 85
+  },
+  "eslintConfig": {
+    "root": true,
+    "ignorePatterns": [
+      "node_modules/",
+      "*.config.js"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@next/next/recommended"
+    ],
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "react/jsx-sort-props": [
+        "error",
+        {
+          "ignoreCase": false
+        }
+      ],
+      "sort-keys": [
+        "error",
+        "asc",
+        {
+          "caseSensitive": false,
+          "natural": false
+        }
+      ]
+    }
   }
 }

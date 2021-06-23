@@ -1,4 +1,4 @@
-import { CenteredColumn } from "../layout"
+import { CenteredColumn } from "../layout";
 
 const Post = ({ post }: any) => {
   return (
@@ -13,7 +13,7 @@ const Post = ({ post }: any) => {
       </div>
       <div className="mt-8 prose">{post.html}</div>
     </CenteredColumn>
-  )
-}
+  );
+};
 
-export default Post
+export default Post;

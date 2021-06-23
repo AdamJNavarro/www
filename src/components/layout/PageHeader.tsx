@@ -10,7 +10,7 @@ const PageHeader = ({ title, subtitle }: any) => {
         {subtitle}
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default PageHeader
+export default PageHeader;

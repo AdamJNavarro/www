@@ -1,12 +1,12 @@
 export type DancePerformance = {
-  song: string
-  videoUrl: string
-  posterUrl: string
-  spotifyUrl?: string
-  choreographer: string
-  choreographerUrl: string
-  location?: string
-}
+  song: string;
+  videoUrl: string;
+  posterUrl: string;
+  spotifyUrl?: string;
+  choreographer: string;
+  choreographerUrl: string;
+  location?: string;
+};
 
 export const dances = [
   {
@@ -42,4 +42,4 @@ export const dances = [
     videoUrl:
       "https://res.cloudinary.com/dkddfip9j/video/upload/v1623861991/videos/hiphop/latch.mp4",
   },
-]
+];

@@ -1,7 +1,7 @@
-import { CenteredColumn, Page, PageHeader } from "~/components/layout"
+import { CenteredColumn, Page, PageHeader } from "~/components/layout";
 
-import { ProjectList } from "~/components/projects"
-import getAllProjects from "~/helpers/getAllProjects"
+import { ProjectList } from "~/components/projects";
+import getAllProjects from "~/helpers/getAllProjects";
 
 export default function ProjectsPage({ projects }: any) {
   return (
@@ -26,11 +26,11 @@ export default function ProjectsPage({ projects }: any) {
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const allProjects = getAllProjects()
+  const allProjects = getAllProjects();
   return {
     props: {
       projects: allProjects.map(({ data, content, slug }) => ({
@@ -39,5 +39,5 @@ export async function getStaticProps() {
         slug,
       })),
     },
-  }
+  };
 }

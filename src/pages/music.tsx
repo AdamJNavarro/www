@@ -1,9 +1,9 @@
-import { CenteredColumn, Page } from "~/components/layout"
+import { CenteredColumn, Page } from "~/components/layout";
 
-import Image from "next/image"
-import { getSpotifyData } from "~/helpers/spotify"
+import Image from "next/image";
+import { getSpotifyData } from "~/helpers/spotify";
 
-const spotifyProfileUrl = "https://open.spotify.com/user/adamjosephnavarro"
+const spotifyProfileUrl = "https://open.spotify.com/user/adamjosephnavarro";
 
 export default function MusicPage() {
   return (
@@ -24,24 +24,24 @@ export default function MusicPage() {
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }
 
 const SpotifyContent = () => {
-  const { loading, error, tracks, artists } = getSpotifyData()
+  const { loading, error, tracks, artists } = getSpotifyData();
 
   if (loading)
-    return <h1 className="text-gray-400 dark:text-gray-500">Loading...</h1>
+    return <h1 className="text-gray-400 dark:text-gray-500">Loading...</h1>;
   if (error)
-    return <h1 className="text-red-600 dark:text-red-500">An error occurred.</h1>
+    return <h1 className="text-red-600 dark:text-red-500">An error occurred.</h1>;
 
   return (
     <>
       <TracksList label="Recently Liked Songs" tracks={tracks} />
       <ArtistsList artists={artists} label="Favorite Artists" />
     </>
-  )
-}
+  );
+};
 
 const ArtistsList = ({ artists, label }) => {
   return (
@@ -72,12 +72,12 @@ const ArtistsList = ({ artists, label }) => {
                 </p>
               </div>
             </a>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
 const TracksList = ({ tracks, label }) => {
   return (
@@ -113,9 +113,9 @@ const TracksList = ({ tracks, label }) => {
                 </div>
               </div>
             </a>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};

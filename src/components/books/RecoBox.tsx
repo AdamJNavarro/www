@@ -1,25 +1,25 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
-import { ErrorAlert } from "../alerts"
-import PrimaryButton from "../buttons/PrimaryButton"
-import { Textarea } from "../inputs"
+import { ErrorAlert } from "../alerts";
+import PrimaryButton from "../buttons/PrimaryButton";
+import { Textarea } from "../inputs";
 
 export default function RecoBox() {
-  const [book, setBook] = useState("")
+  const [book, setBook] = useState("");
   const [serverState, setServerState] = React.useState({
     error: false,
     submitted: false,
     submitting: false,
-  })
+  });
 
   function onChange(e) {
-    return setBook(e.target.value)
+    return setBook(e.target.value);
   }
 
   function handleSubmit(e) {
-    e.preventDefault()
-    const form = e.target
-    setServerState({ error: false, submitted: true, submitting: false })
+    e.preventDefault();
+    const form = e.target;
+    setServerState({ error: false, submitted: true, submitting: false });
 
     fetch("https://formspree.io/f/mvodknev", {
       body: new FormData(form),
@@ -33,7 +33,7 @@ export default function RecoBox() {
           error: false,
           submitted: true,
           submitting: false,
-        })
+        });
         //form.reset()
         //setBook("")
       } else {
@@ -42,10 +42,10 @@ export default function RecoBox() {
             error: data.error,
             submitted: true,
             submitting: false,
-          })
-        })
+          });
+        });
       }
-    })
+    });
   }
 
   return (
@@ -76,5 +76,5 @@ export default function RecoBox() {
         )}
       </form>
     </div>
-  )
+  );
 }

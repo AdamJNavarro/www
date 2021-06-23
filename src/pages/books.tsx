@@ -1,11 +1,11 @@
-import { CenteredColumn, Page } from "~/components/layout"
-import { currentBook, pastBooks } from "~/data/books"
+import { CenteredColumn, Page } from "~/components/layout";
+import { currentBook, pastBooks } from "~/data/books";
 
-import BookList from "~/components/books/BookList"
-import RecoBox from "~/components/books/RecoBox"
+import BookList from "~/components/books/BookList";
+import RecoBox from "~/components/books/RecoBox";
 
 export default function BooksPage() {
-  const { title, author, url } = currentBook
+  const { title, author, url } = currentBook;
   return (
     <Page>
       <CenteredColumn>
@@ -33,5 +33,5 @@ export default function BooksPage() {
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }

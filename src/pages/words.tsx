@@ -1,9 +1,9 @@
-import { CenteredColumn, Page, PageHeader } from "~/components/layout"
+import { CenteredColumn, Page, PageHeader } from "~/components/layout";
 
-import words from "~/data/words"
+import words from "~/data/words";
 
 export default function WordsPage() {
-  const alphabetizedWords = words.sort((a, b) => (a.term > b.term ? 1 : -1))
+  const alphabetizedWords = words.sort((a, b) => (a.term > b.term ? 1 : -1));
   //const orderedWords = words.sort((a, b) => (a.year > b.year ? 1 : -1))
   return (
     <Page>
@@ -15,7 +15,7 @@ export default function WordsPage() {
           />
           <div className="prose">
             {alphabetizedWords.map((word: any) => {
-              const { term, definition } = word
+              const { term, definition } = word;
               return (
                 <p key={term}>
                   <a
@@ -30,11 +30,11 @@ export default function WordsPage() {
                   </a>{" "}
                   - {definition}.
                 </p>
-              )
+              );
             })}
           </div>
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }

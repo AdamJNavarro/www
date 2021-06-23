@@ -1,6 +1,6 @@
-import BookItem from "./BookItem"
+import BookItem from "./BookItem";
 
-type BookListProps = { label: string; books: any[] }
+type BookListProps = { label: string; books: any[] };
 
 const BookList = ({ label, books }: BookListProps) => {
   return (
@@ -10,11 +10,11 @@ const BookList = ({ label, books }: BookListProps) => {
       </h4>
       <div className="prose space-y-8">
         {books.map((book) => {
-          return <BookItem {...book} />
+          return <BookItem {...book} />;
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BookList
+export default BookList;

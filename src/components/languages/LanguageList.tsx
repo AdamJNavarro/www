@@ -1,8 +1,8 @@
-import * as React from "react"
+import * as React from "react";
 
-import GridList from "../grid/GridList"
-import Image from "next/image"
-import { languages } from "~/data/languages"
+import GridList from "../grid/GridList";
+import Image from "next/image";
+import { languages } from "~/data/languages";
 
 const LanguageList = () => {
   return (
@@ -12,7 +12,7 @@ const LanguageList = () => {
       </h4>
       <GridList>
         {languages.map((language, index) => {
-          const { name, image } = language
+          const { name, image } = language;
           return (
             <div
               className={`flex py-4 bg-gray-400 bg-opacity-0 rounded md:-mx-4 sm:p-4 ${
@@ -35,11 +35,11 @@ const LanguageList = () => {
                 </p>
               </div>
             </div>
-          )
+          );
         })}
       </GridList>
     </div>
-  )
-}
+  );
+};
 
-export default LanguageList
+export default LanguageList;

@@ -1,7 +1,7 @@
-import { CenteredColumn, Page, PageHeader } from "~/components/layout"
+import { CenteredColumn, Page, PageHeader } from "~/components/layout";
 
-import LanguageList from "~/components/languages/LanguageList"
-import ProductList from "~/components/products/ProductList"
+import LanguageList from "~/components/languages/LanguageList";
+import ProductList from "~/components/products/ProductList";
 
 export default function StackPage() {
   return (
@@ -22,5 +22,5 @@ export default function StackPage() {
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }

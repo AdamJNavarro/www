@@ -1,5 +1,5 @@
-import Header from "./Header"
-import React from "react"
+import Header from "./Header";
+import React from "react";
 
 export default function Page({ children }: any) {
   return (
@@ -7,5 +7,5 @@ export default function Page({ children }: any) {
       <Header />
       <div className="px-4 py-24 md:py-32 lg:px-0">{children}</div>
     </>
-  )
+  );
 }

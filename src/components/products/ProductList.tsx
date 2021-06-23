@@ -1,16 +1,16 @@
-import * as React from "react"
+import * as React from "react";
 
-import { GridItemStyle } from "../grid/GridItem"
-import GridList from "../grid/GridList"
-import Image from "next/image"
-import { products as allProducts } from "~/data/products"
+import { GridItemStyle } from "../grid/GridItem";
+import GridList from "../grid/GridList";
+import Image from "next/image";
+import { products as allProducts } from "~/data/products";
 
-type ProductListProps = { label: string; products: any }
+type ProductListProps = { label: string; products: any };
 
 const ProductList = ({ label, products }: ProductListProps) => {
   const finalProducts = allProducts.filter((product: any) =>
     products.includes(product.name.toLowerCase())
-  )
+  );
 
   return (
     <div className="space-y-6">
@@ -21,7 +21,7 @@ const ProductList = ({ label, products }: ProductListProps) => {
         {finalProducts
           .sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1))
           .map((product, index) => {
-            const { name, image, url } = product
+            const { name, image, url } = product;
             return (
               <a
                 className={`${GridItemStyle} ${
@@ -45,11 +45,11 @@ const ProductList = ({ label, products }: ProductListProps) => {
                   </p>
                 </div>
               </a>
-            )
+            );
           })}
       </GridList>
     </div>
-  )
-}
+  );
+};
 
-export default ProductList
+export default ProductList;

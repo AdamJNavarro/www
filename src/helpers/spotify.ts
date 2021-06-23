@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
-import querystring from "querystring"
+import querystring from "querystring";
 
-const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID
-const client_secret = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET
-const refresh_token = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN
+const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
+const client_secret = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET;
+const refresh_token = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
 
-const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64")
-const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`
-const TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/tracks`
-const ARTISTS_ENDPOINT = `https://api.spotify.com/v1/me/following?type=artist`
+const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
+const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
+const TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/tracks`;
+const ARTISTS_ENDPOINT = `https://api.spotify.com/v1/me/following?type=artist`;
 
 const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
@@ -22,67 +22,67 @@ const getAccessToken = async () => {
       "Content-Type": "application/x-www-form-urlencoded",
     },
     method: "POST",
-  })
+  });
 
-  return response.json()
-}
+  return response.json();
+};
 
 export const getLastLikedTracks = async (access_token) => {
   const response = await fetch(`${TRACKS_ENDPOINT}?limit=5`, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
-  })
-  const { items } = await response.json()
+  });
+  const { items } = await response.json();
   const tracks = items.map((item) => ({
     artist: item.track.artists.map((_artist) => _artist.name).join(", "),
     image: item.track.album.images[item.track.album.images.length - 1],
     songUrl: item.track.external_urls.spotify,
     title: item.track.name,
-  }))
-  return tracks
-}
+  }));
+  return tracks;
+};
 
 export const getSpotifyArtists = async (access_token) => {
   const response = await fetch(`${ARTISTS_ENDPOINT}`, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
-  })
+  });
   const {
     artists: { items },
-  } = await response.json()
+  } = await response.json();
   const artists = items.map((item) => ({
     image: item.images[item.images.length - 1].url,
     name: item.name,
     url: item.external_urls.spotify,
-  }))
-  return artists
-}
+  }));
+  return artists;
+};
 
 export const getSpotifyData = () => {
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState("")
-  const [artists, setArtists] = useState([])
-  const [tracks, setTracks] = useState([])
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [artists, setArtists] = useState([]);
+  const [tracks, setTracks] = useState([]);
 
   useEffect(() => {
-    getData()
-  }, [])
+    getData();
+  }, []);
 
   const getData = async () => {
     try {
-      const { access_token } = await getAccessToken()
-      const tracks = await getLastLikedTracks(access_token)
-      setTracks(tracks)
-      const artists = await getSpotifyArtists(access_token)
-      setArtists(artists)
-      setLoading(false)
+      const { access_token } = await getAccessToken();
+      const tracks = await getLastLikedTracks(access_token);
+      setTracks(tracks);
+      const artists = await getSpotifyArtists(access_token);
+      setArtists(artists);
+      setLoading(false);
     } catch (e) {
-      setError("An error occurred getting data from Spotify.")
-      setLoading(false)
+      setError("An error occurred getting data from Spotify.");
+      setLoading(false);
     }
-  }
+  };
 
-  return { artists, error, loading, tracks }
-}
+  return { artists, error, loading, tracks };
+};

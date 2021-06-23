@@ -1,10 +1,10 @@
-import { CenteredColumn, Page } from "~/components/layout"
-import { FiGithub, FiInstagram, FiTwitter } from "react-icons/fi"
+import { CenteredColumn, Page } from "~/components/layout";
+import { FiGithub, FiInstagram, FiTwitter } from "react-icons/fi";
 
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-const email = "adamjnavarro@icloud.com"
+const email = "adamjnavarro@icloud.com";
 
 const platforms = [
   {
@@ -22,7 +22,7 @@ const platforms = [
     name: "Github",
     url: "https://github.com/AdamJNavarro",
   },
-]
+];
 
 export default function Home() {
   return (
@@ -73,7 +73,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row space-x-10 justify-center">
             {platforms.map((platform) => {
-              const { name, url, icon: Icon } = platform
+              const { name, url, icon: Icon } = platform;
               return (
                 <a
                   className="text-3xl no-underline text-purple-500 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-400"
@@ -82,11 +82,11 @@ export default function Home() {
                 >
                   <Icon />
                 </a>
-              )
+              );
             })}
           </div>
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }

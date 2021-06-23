@@ -1,9 +1,9 @@
-import { CenteredColumn, Page } from "~/components/layout"
+import { CenteredColumn, Page } from "~/components/layout";
 
-import Link from "next/link"
-import { MDXRemote } from "next-mdx-remote"
-import getAllPosts from "~/helpers/getAllPosts"
-import { serialize } from "next-mdx-remote/serialize"
+import Link from "next/link";
+import { MDXRemote } from "next-mdx-remote";
+import getAllPosts from "~/helpers/getAllPosts";
+import { serialize } from "next-mdx-remote/serialize";
 
 function PostPage({ title, content }: any) {
   return (
@@ -27,14 +27,14 @@ function PostPage({ title, content }: any) {
         </div>
       </CenteredColumn>
     </Page>
-  )
+  );
 }
 
 export async function getStaticProps(context) {
-  const { params } = context
-  const allPosts = getAllPosts()
-  const { data, content } = allPosts.find((item) => item.slug === params.slug)
-  const mdxSource = await serialize(content)
+  const { params } = context;
+  const allPosts = getAllPosts();
+  const { data, content } = allPosts.find((item) => item.slug === params.slug);
+  const mdxSource = await serialize(content);
 
   return {
     props: {
@@ -42,7 +42,7 @@ export async function getStaticProps(context) {
       content: mdxSource,
       date: data.date,
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
@@ -53,7 +53,7 @@ export async function getStaticPaths() {
         slug: post.slug,
       },
     })),
-  }
+  };
 }
 
-export default PostPage
+export default PostPage;
