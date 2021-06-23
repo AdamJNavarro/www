@@ -18,8 +18,8 @@ export async function getStaticProps(context) {
   const mdxSource = await serialize(content)
   return {
     props: {
-      project: data,
       content: mdxSource,
+      project: data,
     },
   }
 }
@@ -27,11 +27,11 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   return {
     paths: getAllProjects().map((project) => ({
+      fallback: false,
       params: {
         slug: project.slug,
       },
     })),
-    fallback: false,
   }
 }
 

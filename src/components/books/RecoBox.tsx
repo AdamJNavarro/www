@@ -7,9 +7,9 @@ import { Textarea } from "../inputs"
 export default function RecoBox() {
   const [book, setBook] = useState("")
   const [serverState, setServerState] = React.useState({
-    submitting: false,
-    submitted: false,
     error: false,
+    submitted: false,
+    submitting: false,
   })
 
   function onChange(e) {
@@ -19,29 +19,29 @@ export default function RecoBox() {
   function handleSubmit(e) {
     e.preventDefault()
     const form = e.target
-    setServerState({ submitting: true, submitted: false, error: false })
+    setServerState({ error: false, submitted: true, submitting: false })
 
     fetch("https://formspree.io/f/mvodknev", {
-      method: "POST",
       body: new FormData(form),
       headers: {
         Accept: "application/json",
       },
+      method: "POST",
     }).then((response) => {
       if (response.ok) {
         setServerState({
-          submitting: false,
-          submitted: true,
           error: false,
+          submitted: true,
+          submitting: false,
         })
         //form.reset()
         //setBook("")
       } else {
         response.json().then((data) => {
           setServerState({
-            submitting: false,
-            submitted: true,
             error: data.error,
+            submitted: true,
+            submitting: false,
           })
         })
       }

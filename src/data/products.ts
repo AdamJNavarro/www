@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /*
 {
         name: "",
@@ -12,7 +14,6 @@ export const products = [
     name: "Next.js",
     image: "nextjs.png",
     url: "https://nextjs.org/",
-    openSource: true,
   },
   {
     name: "1Password",
@@ -33,13 +34,11 @@ export const products = [
     name: "Apollo Client",
     image: "apollo.png",
     url: "https://www.apollographql.com/",
-    openSource: true,
   },
   {
     name: "Apollo Server",
     image: "apollo.png",
     url: "https://www.apollographql.com/",
-    openSource: true,
   },
   {
     name: "Render",
@@ -60,19 +59,16 @@ export const products = [
     name: "Expo",
     image: "expo.png",
     url: "https://expo.io/",
-    openSource: true,
   },
   {
     name: "React",
     image: "react.png",
     url: "https://reactjs.org/",
-    openSource: true,
   },
   {
     name: "React Native",
     image: "react.png",
     url: "https://reactnative.dev/",
-    openSource: true,
   },
   {
     name: "Branch",

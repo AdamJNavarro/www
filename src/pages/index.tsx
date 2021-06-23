@@ -8,19 +8,19 @@ const email = "adamjnavarro@icloud.com"
 
 const platforms = [
   {
+    icon: FiInstagram,
     name: "Instagram",
     url: "https://www.instagram.com/adamjnavarro/",
-    icon: FiInstagram,
   },
   {
+    icon: FiTwitter,
     name: "Twitter",
     url: "https://twitter.com/AdamJNavarro",
-    icon: FiTwitter,
   },
   {
+    icon: FiGithub,
     name: "Github",
     url: "https://github.com/AdamJNavarro",
-    icon: FiGithub,
   },
 ]
 

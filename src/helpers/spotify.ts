@@ -13,15 +13,15 @@ const ARTISTS_ENDPOINT = `https://api.spotify.com/v1/me/following?type=artist`
 
 const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
-    method: "POST",
-    headers: {
-      Authorization: `Basic ${basic}`,
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
     body: querystring.stringify({
       grant_type: "refresh_token",
       refresh_token,
     }),
+    headers: {
+      Authorization: `Basic ${basic}`,
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    method: "POST",
   })
 
   return response.json()
@@ -36,9 +36,9 @@ export const getLastLikedTracks = async (access_token) => {
   const { items } = await response.json()
   const tracks = items.map((item) => ({
     artist: item.track.artists.map((_artist) => _artist.name).join(", "),
+    image: item.track.album.images[item.track.album.images.length - 1],
     songUrl: item.track.external_urls.spotify,
     title: item.track.name,
-    image: item.track.album.images[item.track.album.images.length - 1],
   }))
   return tracks
 }
@@ -53,8 +53,8 @@ export const getSpotifyArtists = async (access_token) => {
     artists: { items },
   } = await response.json()
   const artists = items.map((item) => ({
-    name: item.name,
     image: item.images[item.images.length - 1].url,
+    name: item.name,
     url: item.external_urls.spotify,
   }))
   return artists
@@ -84,5 +84,5 @@ export const getSpotifyData = () => {
     }
   }
 
-  return { loading, error, tracks, artists }
+  return { artists, error, loading, tracks }
 }

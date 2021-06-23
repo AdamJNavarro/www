@@ -16,8 +16,8 @@ export default function getAllPosts() {
     const { data, content } = matter(fileContents)
 
     return {
-      data,
       content,
+      data,
       slug,
     }
   })

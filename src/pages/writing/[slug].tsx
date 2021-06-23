@@ -39,8 +39,8 @@ export async function getStaticProps(context) {
   return {
     props: {
       ...data,
-      date: data.date,
       content: mdxSource,
+      date: data.date,
     },
   }
 }
@@ -48,11 +48,11 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   return {
     paths: getAllPosts().map((post) => ({
+      fallback: false,
       params: {
         slug: post.slug,
       },
     })),
-    fallback: false,
   }
 }
 

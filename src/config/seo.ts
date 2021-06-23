@@ -1,24 +1,24 @@
 const baseUrl = "https://adamjnavarro.com"
 
 export const defaultSEO = {
-  title: "Adam Navarro",
   description:
     "Software builder, musician and fitness enthusiast. Currently working on Expo and Momento.",
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: baseUrl,
-    site_name: "Adam Navarro",
     images: [
       {
-        url: `${baseUrl}/og-image.png`,
         alt: "Adam Navarro",
+        url: `${baseUrl}/og-image.png`,
       },
     ],
+    locale: "en_US",
+    site_name: "Adam Navarro",
+    type: "website",
+    url: baseUrl,
   },
+  title: "Adam Navarro",
   twitter: {
+    cardType: "summary_large_image",
     handle: "@adamjnavarro",
     site: "@adamjnavarro",
-    cardType: "summary_large_image",
   },
 }

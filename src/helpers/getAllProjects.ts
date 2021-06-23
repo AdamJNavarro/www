@@ -16,8 +16,8 @@ export default function getAllProjects() {
     const { data, content } = matter(fileContents)
 
     return {
-      data,
       content,
+      data,
       slug,
     }
   })

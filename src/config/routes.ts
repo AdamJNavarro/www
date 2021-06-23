@@ -3,25 +3,9 @@ const routes = {
     label: "About",
     path: "/",
   },
-  projects: {
-    label: "Projects",
-    path: "/projects",
-  },
   books: {
     label: "Books",
     path: "/books",
-  },
-  writing: {
-    label: "Writing",
-    path: "/writing",
-  },
-  words: {
-    label: "Words",
-    path: "/words",
-  },
-  stack: {
-    label: "Stack",
-    path: "/stack",
   },
   dancing: {
     label: "Dancing",
@@ -30,6 +14,22 @@ const routes = {
   music: {
     label: "Music",
     path: "/music",
+  },
+  projects: {
+    label: "Projects",
+    path: "/projects",
+  },
+  stack: {
+    label: "Stack",
+    path: "/stack",
+  },
+  words: {
+    label: "Words",
+    path: "/words",
+  },
+  writing: {
+    label: "Writing",
+    path: "/writing",
   },
 }
 
