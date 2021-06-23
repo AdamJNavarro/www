@@ -1,8 +1,8 @@
 module.exports = {
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   images: {
     domains: ["i.scdn.co", "res.cloudinary.com"],
   },
-}
+};
