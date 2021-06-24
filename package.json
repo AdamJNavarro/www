@@ -56,7 +56,8 @@
     "root": true,
     "ignorePatterns": [
       "node_modules/",
-      "*.config.js"
+      "*.config.js",
+      "cypress/"
     ],
     "parser": "@typescript-eslint/parser",
     "plugins": [

@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <Page>
       <CenteredColumn>
-        <div className="space-y-10">
+        <div className="space-y-10" data-cy="about-page">
           <div className="flex my-10 justify-center">
             <Image
               alt={"A photo of me"}
