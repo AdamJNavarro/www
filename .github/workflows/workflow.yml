@@ -37,3 +37,10 @@ jobs:
             "state": "failure",
             "description": "Cypress tests failed"
           }'
+  automerge:
+    needs: Cypress
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fastify/github-action-merge-dependabot@v2.1.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

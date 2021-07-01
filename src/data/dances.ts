@@ -10,6 +10,17 @@ export type DancePerformance = {
 
 export const dances = [
   {
+    choreographer: "Sophie Sullivan",
+    choreographerUrl: "https://www.instagram.com/sophie_sullivan/",
+    posterUrl:
+      "https://res.cloudinary.com/dkddfip9j/video/upload/so_0.0/v1625167040/videos/hiphop/lean-with-it.jpg",
+    song: "Lean with it, Rock with it by Dem Franchize Boyz",
+    spotifyUrl:
+      "https://open.spotify.com/track/7cVmKBwzPsh4Fmb6SplfEm?si=b7ee4090fc054f09",
+    videoUrl:
+      "https://res.cloudinary.com/dkddfip9j/video/upload/v1625167040/videos/hiphop/lean-with-it.mp4",
+  },
+  {
     choreographer: "Chris Delica",
     choreographerUrl: "https://www.instagram.com/chris_delica/",
     posterUrl:
