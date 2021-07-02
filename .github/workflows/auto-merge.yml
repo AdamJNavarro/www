@@ -1,4 +1,4 @@
-name: dependabot auto-merge
+name: auto-merge
 on:
   pull_request_target:
 jobs:
@@ -10,4 +10,4 @@ jobs:
       - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
           target: minor
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PAT }}
