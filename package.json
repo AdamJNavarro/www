@@ -1,16 +1,8 @@
 {
   "name": "www",
   "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "lint": "eslint . --ext js,ts,tsx",
-    "test": "cypress run",
-    "suite": "code . && open -a Simulator && echo launching sim... && sleep 30 && yarn open-browser && next dev",
-    "build": "next build",
-    "start": "next start",
-    "open-browser": "open http://localhost:3000 https://nextjs.org/docs/getting-started https://tailwindcss.com/docs && xcrun simctl openurl booted http://localhost:3000",
-    "prepare": "husky install"
+  "commitlint": {
+    "extends": "@commitlint/config-conventional"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.1",
@@ -46,20 +38,6 @@
     "prettier": "^2.3.2",
     "tailwindcss": "^2.2.4",
     "typescript": "^4.3.5"
-  },
-  "prettier": {
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "singleQuote": true,
-    "printWidth": 85
-  },
-  "commitlint": {
-    "extends": "@commitlint/config-conventional"
-  },
-  "lint-staged": {
-    "*.+(ts|tsx)": [
-      "eslint --fix"
-    ]
   },
   "eslintConfig": {
     "root": true,
@@ -97,5 +75,25 @@
         }
       ]
     }
+  },
+  "lint-staged": {
+    "*.+(ts|tsx)": [
+      "eslint --fix"
+    ]
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "singleQuote": true,
+    "printWidth": 85
+  },
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "eslint . --ext js,ts,tsx",
+    "prepare": "husky install",
+    "start": "next start",
+    "test": "cypress run"
   }
 }
