@@ -7,5 +7,9 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.wrapTabs": true,
     "workbench.colorTheme": "In Bed by 7pm",
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.fontSize": 15.75,
+      "customizeUI.fontSizeMap": {
+        "13px": "16px"
+      }
   }
