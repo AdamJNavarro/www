@@ -23,7 +23,7 @@
     "@commitlint/config-conventional": "^12.1.4",
     "@cypress/react": "^5.9.2",
     "@testing-library/cypress": "^8.0.0",
-    "@types/node": "^16.4.0",
+    "@types/node": "^16.4.1",
     "@types/react": "^17.0.14",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
