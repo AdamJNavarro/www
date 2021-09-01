@@ -1,12 +1,10 @@
-const functions = require('firebase-functions');
-
-// The Firebase Admin SDK to access Firestore.
+import * as functions from 'firebase-functions';
 const admin = require('firebase-admin');
 admin.initializeApp();
 
 const twit = require('twit');
 
-function capitalize(s) {
+function capitalize(s: string): string {
   if (typeof s !== 'string') return '';
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
@@ -35,7 +33,7 @@ exports.wordAdded = functions.firestore
     Twitter.post(
       'statuses/update',
       { status: tweet },
-      function (err, data, response) {
+      function (err: any, data: any, response: any) {
         if (err) {
           console.log('err posting tweet', err);
         } else {
