@@ -8,6 +8,8 @@
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
+    "firebase-admin": "^9.11.1",
+    "firebase-functions": "^3.15.4",
     "gray-matter": "^4.0.3",
     "next": "^11.1.2",
     "next-mdx-remote": "^3.0.4",
@@ -45,7 +47,8 @@
     "ignorePatterns": [
       "node_modules/",
       "*.config.js",
-      "cypress/"
+      "cypress/",
+      "firebase/"
     ],
     "parser": "@typescript-eslint/parser",
     "plugins": [
