@@ -1,10 +1,10 @@
-import * as functions from 'firebase-functions';
-import * as admin from 'firebase-admin';
+const functions = require('firebase-functions');
+const admin = require('firebase-admin');
 admin.initializeApp();
 
 const twit = require('twit');
 
-function capitalize(s: string): string {
+function capitalize(s) {
   if (typeof s !== 'string') return '';
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
@@ -33,7 +33,7 @@ exports.wordAdded = functions.firestore
     Twitter.post(
       'statuses/update',
       { status: tweet },
-      function (err: any, data: any, response: any) {
+      function (err, data, response) {
         if (err) {
           console.log('err posting tweet', err);
         } else {

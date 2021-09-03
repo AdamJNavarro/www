@@ -46,8 +46,7 @@
     "ignorePatterns": [
       "node_modules/",
       "*.config.js",
-      "cypress/",
-      "firebase/"
+      "cypress/"
     ],
     "parser": "@typescript-eslint/parser",
     "plugins": [
