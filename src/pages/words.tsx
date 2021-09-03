@@ -1,10 +1,28 @@
-import { CenteredColumn, Page, PageHeader } from "~/components/layout";
+import { useEffect, useState } from 'react';
+import { CenteredColumn, Page, PageHeader } from '~/components/layout';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore/lite';
 
-import words from "~/data/words";
+import { firestore } from '~/firebase';
 
 export default function WordsPage() {
-  const alphabetizedWords = words.sort((a, b) => (a.term > b.term ? 1 : -1));
-  //const orderedWords = words.sort((a, b) => (a.year > b.year ? 1 : -1))
+  const [words, setWords] = useState([]);
+
+  useEffect(() => {
+    fetchWords();
+  }, []);
+
+  const fetchWords = async () => {
+    try {
+      const queryData = await getDocs(
+        query(collection(firestore, 'words'), orderBy('term'))
+      );
+      const words = queryData.docs.map((doc) => doc.data());
+      setWords(words);
+    } catch (error) {
+      console.log('err', error);
+    }
+  };
+
   return (
     <Page>
       <CenteredColumn>
@@ -13,26 +31,28 @@ export default function WordsPage() {
             subtitle="An ever-growing list, beginning from mid-2018, of words I've encountered and did not know."
             title="Words"
           />
-          <div className="prose">
-            {alphabetizedWords.map((word: any) => {
-              const { term, definition } = word;
-              return (
-                <p key={term}>
-                  <a
-                    className="capitalize"
-                    href={`https://www.merriam-webster.com/dictionary/${encodeURIComponent(
-                      term
-                    )}`}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {term}
-                  </a>{" "}
-                  - {definition}.
-                </p>
-              );
-            })}
-          </div>
+          {words.length && (
+            <div className="prose">
+              {words.map((word: any) => {
+                const { term, definition } = word;
+                return (
+                  <p key={term}>
+                    <a
+                      className="capitalize"
+                      href={`https://www.merriam-webster.com/dictionary/${encodeURIComponent(
+                        term
+                      )}`}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      {term}
+                    </a>{' '}
+                    - {definition}.
+                  </p>
+                );
+              })}
+            </div>
+          )}
         </div>
       </CenteredColumn>
     </Page>
