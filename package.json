@@ -20,7 +20,7 @@
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
+    "@commitlint/cli": "^13.2.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@cypress/react": "^5.10.0",
     "@testing-library/cypress": "^8.0.1",
