@@ -21,7 +21,7 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
-    "@cypress/react": "^5.10.3",
+    "@cypress/react": "^5.11.0",
     "@testing-library/cypress": "^8.0.2",
     "@types/node": "^16.11.13",
     "@types/react": "^17.0.37",
