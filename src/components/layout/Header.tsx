@@ -1,10 +1,10 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { FiMenu as Menu, FiX as X } from "react-icons/fi";
+import { FiMenu as Menu, FiX as X } from 'react-icons/fi';
 
-import Link from "next/link";
-import routes from "../../config/routes";
-import { useRouter } from "next/router";
+import Link from 'next/link';
+import routes from '../../config/routes';
+import { useRouter } from 'next/router';
 
 const defaultRoutes = [
   routes.about,
@@ -33,10 +33,10 @@ export default function Header() {
   const currPathName = router.pathname;
   const routesAsArr = Object.keys(routes).map((r) => routes[r]);
   const mobileTitle =
-    currPathName === "/"
-      ? "About"
+    currPathName === '/'
+      ? 'About'
       : routesAsArr
-          .filter((r) => r.path !== "/")
+          .filter((r) => r.path !== '/')
           .find((r) => currPathName.includes(r.path))?.label;
 
   return (
@@ -86,8 +86,8 @@ export default function Header() {
       <div className="hidden max-w-screen-md grid-cols-5 gap-2.5 mx-auto md:grid">
         {defaultRoutes.map((route) => {
           const defaultClasses = `font-sans font-semibold flex rounded items-center text-opacity-40 justify-center py-2 text-sm dark:text-white`;
-          const activeClasses = `bg-gray-600 bg-opacity-10 filter-saturate filter-blur dark:bg-white dark:text-opacity-100`;
-          const inactiveClasses = `text-gray-900 hover:bg-gray-600 filter-saturate hover:text-black hover:bg-opacity-10  dark:hover:bg-white dark:text-opacity-70 dark:hover:text-gray-100 `;
+          const activeClasses = `bg-gray-600 bg-opacity-10 filter-saturate filter-blur  dark:text-opacity-100`;
+          const inactiveClasses = `text-gray-900 hover:bg-gray-600 filter-saturate hover:text-black hover:bg-opacity-10  dark:text-opacity-70 dark:hover:text-gray-100 `;
           return (
             <Link href={route.path} key={route.path}>
               <a

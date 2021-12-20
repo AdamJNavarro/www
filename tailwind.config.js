@@ -1,22 +1,25 @@
-const colors = require("tailwindcss/colors")
+const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: {
-    content: ["./src/**/*.{ts,tsx}"],
-    options: {
-      safelist: [/blue$/, "rounded-md", "bg-purple-700"],
+  content: ['./src/**/*.{ts,tsx}'],
+
+  safelist: [
+    'rounded-md',
+    'bg-purple-700',
+    {
+      pattern: /blue$/,
     },
-  },
-  darkMode: "media",
+  ],
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
-        white: "#fff",
-        gray: colors.trueGray,
-        "gray-1000": "#050505",
+        white: '#fff',
+        gray: colors.neutral,
+        'gray-1000': '#050505',
       },
       opacity: {
-        15: "0.15",
+        15: '0.15',
       },
     },
   },
@@ -24,7 +27,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/aspect-ratio"),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
   ],
-}
+};
