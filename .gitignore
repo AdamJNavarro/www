@@ -38,3 +38,6 @@ yarn-error.log*
 
 # File from changing macOS folder color
 Icon?
+
+# eslint
+.eslintcache
