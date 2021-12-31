@@ -1,8 +1,7 @@
 /// <reference types="cypress" />
 
-const injectDevServer = require('@cypress/react/plugins/next')
-
 module.exports = (on, config) => {
-  injectDevServer(on, config)
-  return config
-}
+  require('@cypress/code-coverage/task')(on, config);
+  require('@cypress/react/plugins/next')(on, config);
+  return config;
+};

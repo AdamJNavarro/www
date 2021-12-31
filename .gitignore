@@ -45,3 +45,7 @@ Icon?
 # code coverage
 coverage
 *.lcov
+.nyc_output
+coverage
+cypress-coverage
+jest-coverage

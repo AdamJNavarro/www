@@ -21,13 +21,17 @@
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
+    "@cypress/code-coverage": "^3.9.12",
     "@cypress/react": "^5.12.0",
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@testing-library/cypress": "^8.0.2",
     "@types/node": "^17.0.5",
     "@types/react": "^17.0.38",
+    "@types/testing-library__cypress": "^5.0.9",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
     "autoprefixer": "^10.4.1",
+    "babel-plugin-istanbul": "^6.1.1",
     "cypress": "^9.2.0",
     "eslint": "^8.5.0",
     "eslint-config-next": "^12.0.7",
@@ -35,6 +39,7 @@
     "eslint-plugin-react": "^7.28.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.4",
+    "nyc": "^15.1.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "tailwindcss": "^3.0.8",
@@ -46,7 +51,8 @@
       "node_modules/",
       "*.config.js",
       "cypress/",
-      "firebase/"
+      "firebase/",
+      "src/pages/api/__coverage__.js"
     ],
     "parser": "@typescript-eslint/parser",
     "plugins": [
@@ -83,6 +89,14 @@
       "eslint --cache --fix"
     ]
   },
+  "nyc": {
+    "extends": "./.nycrc.json",
+    "report-dir": "coverage",
+    "reporter": [
+      "json",
+      "lcov"
+    ]
+  },
   "prettier": {
     "trailingComma": "es5",
     "tabWidth": 2,
@@ -92,6 +106,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "coverage:show": "open ./coverage/lcov-report/index.html",
     "dev": "next dev",
     "lint": "eslint . --ext js,ts,tsx",
     "prepare": "husky install",
