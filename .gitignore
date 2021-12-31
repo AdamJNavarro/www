@@ -41,3 +41,7 @@ Icon?
 
 # eslint
 .eslintcache
+
+# code coverage
+coverage
+*.lcov
