@@ -1,6 +1,10 @@
 {
   "name": "www",
   "description": "My personal website.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdamJNavarro/www.git"
+  },
   "version": "0.1.0",
   "commitlint": {
     "extends": "@commitlint/config-conventional"
