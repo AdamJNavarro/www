@@ -5,6 +5,9 @@
     "type": "git",
     "url": "https://github.com/AdamJNavarro/www.git"
   },
+  "bugs": {
+    "url": "https://linear.app/adamjnavarro"
+  },
   "version": "0.1.0",
   "commitlint": {
     "extends": "@commitlint/config-conventional"
