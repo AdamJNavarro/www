@@ -1,26 +1,26 @@
-import { CenteredColumn, Page } from "~/components/layout";
-import { FiGithub, FiInstagram, FiTwitter } from "react-icons/fi";
+import { CenteredColumn, Page } from '~/components/layout';
+import { FiGithub, FiInstagram, FiTwitter } from 'react-icons/fi';
 
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
-const email = "adamjnavarro@icloud.com";
+const email = 'adamjnav@gmail.com';
 
 const platforms = [
   {
     icon: FiInstagram,
-    name: "Instagram",
-    url: "https://www.instagram.com/adamjnavarro/",
+    name: 'Instagram',
+    url: 'https://www.instagram.com/adamjnavarro/',
   },
   {
     icon: FiTwitter,
-    name: "Twitter",
-    url: "https://twitter.com/AdamJNavarro",
+    name: 'Twitter',
+    url: 'https://twitter.com/AdamJNavarro',
   },
   {
     icon: FiGithub,
-    name: "Github",
-    url: "https://github.com/AdamJNavarro",
+    name: 'Github',
+    url: 'https://github.com/AdamJNavarro',
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Home() {
         <div className="space-y-10" data-cy="about-page">
           <div className="flex my-10 justify-center">
             <Image
-              alt={"A photo of me"}
+              alt={'A photo of me'}
               className="rounded-full"
               height="300"
               layout="intrinsic"
@@ -43,28 +43,24 @@ export default function Home() {
           <div className="space-y-6 md:items-center prose">
             <p>
               Hey there, I'm Adam. I enjoy building things and am currently working
-              on{" "}
+              on{' '}
               <Link href="/projects/expo" passHref>
                 <a>Expo</a>
-              </Link>{" "}
-              and{" "}
-              <Link href="/projects/momento" passHref>
-                <a>Momento</a>
               </Link>
-              . If you're interested in what technologies I use you can check out my{" "}
+              . If you're interested in what technologies I use you can check out my{' '}
               <Link href="/stack" passHref>
                 <a>Tech Stack</a>
               </Link>
-              . Some of my other passions include playing guitar and piano,{" "}
+              . Some of my other passions include playing guitar and piano,{' '}
               <Link href="/dancing" passHref>
                 <a>dancing</a>
               </Link>
-              ,{" "}
+              ,{' '}
               <Link href="/music" passHref>
                 <a>music</a>
               </Link>
               , working out, and helping others in whatever way that I can. If you
-              want to talk about something, don't hesitate to shoot me an{" "}
+              want to talk about something, don't hesitate to shoot me an{' '}
               <a href={`mailto:${email}`} rel="noopener noreferrer" target="_blank">
                 email
               </a>
