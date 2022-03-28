@@ -140,6 +140,12 @@ export const techStack: TechStackItem[] = [
   },
   {
     experience: 0,
+    name: 'Railway',
+    strength: 0,
+    url: 'https://railway.app/',
+  },
+  {
+    experience: 0,
     name: 'React',
     strength: 0,
     url: 'https://reactjs.org/',
