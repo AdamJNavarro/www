@@ -44,6 +44,16 @@ type PersonalStackItem = {
 export const languageStack: BaseStackItem[] = [
   {
     experience: 0,
+    name: 'AppleScript',
+    strength: 0,
+  },
+  {
+    experience: 0,
+    name: 'Bash',
+    strength: 0,
+  },
+  {
+    experience: 0,
     name: 'GraphQL',
     strength: 0,
   },
