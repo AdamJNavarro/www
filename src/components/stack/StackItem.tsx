@@ -2,11 +2,16 @@ import Image from 'next/image';
 import { GridItemStyle } from '../grid/GridItem';
 
 type StackItemProps = {
-  item: any;
+  name: string;
+  url?: string;
+};
+
+type StackItemArgs = {
+  item: StackItemProps;
   index: number;
 };
 
-const StackItem = ({ item, index }: StackItemProps) => {
+const StackItem = ({ item, index }: StackItemArgs) => {
   const { name, url } = item;
   const assetName = name.replaceAll(' ', '-').replaceAll('.', '');
   const imageSrc = `/images/stack/${assetName}.png`;
