@@ -13,7 +13,8 @@ type StackItemArgs = {
 
 const StackItem = ({ item, index }: StackItemArgs) => {
   const { name, url } = item;
-  const assetName = name.replaceAll(' ', '-').replaceAll('.', '');
+  const fixedAssetName = name.replaceAll(' ', '-');
+  const assetName = fixedAssetName.replaceAll('.', '');
   const imageSrc = `/images/stack/${assetName}.png`;
   return (
     <a
