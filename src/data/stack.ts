@@ -242,6 +242,10 @@ export const personalStack: PersonalStackItem[] = [
     url: 'https://discord.com/',
   },
   {
+    name: 'Discourse',
+    url: 'https://www.discourse.org/',
+  },
+  {
     name: 'Fantastical',
     url: 'https://flexibits.com/fantastical',
   },
@@ -300,5 +304,9 @@ export const personalStack: PersonalStackItem[] = [
   {
     name: 'Things',
     url: 'https://culturedcode.com/things/',
+  },
+  {
+    name: 'Udemy',
+    url: 'https://www.udemy.com/',
   },
 ];
