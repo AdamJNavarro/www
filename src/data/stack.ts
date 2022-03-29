@@ -41,7 +41,7 @@ type PersonalStackItem = {
   url?: string;
 };
 
-export const languages: BaseStackItem[] = [
+export const languageStack: BaseStackItem[] = [
   {
     experience: 0,
     name: 'GraphQL',

@@ -1,7 +1,6 @@
-import { CenteredColumn, Page, PageHeader } from "~/components/layout";
+import { CenteredColumn, Page, PageHeader } from '~/components/layout';
 
-import LanguageList from "~/components/languages/LanguageList";
-import ProductList from "~/components/products/ProductList";
+import LanguageStack from '~/components/stack/LanguageStack';
 
 export default function StackPage() {
   return (
@@ -12,13 +11,7 @@ export default function StackPage() {
             subtitle="A list of technologies I have experience using or am familiar with."
             title="My Stack"
           />
-          <LanguageList />
-
-          <ProductList
-            label="Front-End"
-            products={["apollo", "expo", "react native", "next.js"]}
-          />
-          <ProductList label="Back End" products={["node.js", "postgresql"]} />
+          <LanguageStack />
         </div>
       </CenteredColumn>
     </Page>

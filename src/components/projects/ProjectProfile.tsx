@@ -1,9 +1,8 @@
-import { CenteredColumn, Page } from "../layout";
-import React, { useEffect, useState } from "react";
-import { isAndroid, isIOS } from "~/helpers/window";
+import { CenteredColumn, Page } from '../layout';
+import React, { useEffect, useState } from 'react';
+import { isAndroid, isIOS } from '~/helpers/window';
 
-import Image from "next/image";
-import ProductList from "../products/ProductList";
+import Image from 'next/image';
 
 const ProjectProfile = ({
   name,
@@ -68,25 +67,6 @@ const ProjectProfile = ({
           )}
 
           <div className="mt-10 prose lg:prose-lg">{children}</div>
-
-          {stack && (
-            <div className="space-y-8">
-              <h3 className="font-sans text-xl font-black md:text-3xl text-black dark:text-gray-200">
-                Tech Stack
-              </h3>
-              <div className="space-y-10">
-                {Object.entries(stack).map((section) => {
-                  return (
-                    <ProductList
-                      key={`${section[0]}-stack-list`}
-                      label={section[0]}
-                      products={section[1]}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          )}
         </div>
       </CenteredColumn>
     </Page>
