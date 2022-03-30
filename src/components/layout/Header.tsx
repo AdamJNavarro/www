@@ -11,7 +11,7 @@ const defaultRoutes = [
   routes.projects,
   routes.books,
   routes.words,
-  routes.writing,
+  //routes.writing,
 ];
 
 const HeaderContainer = ({
