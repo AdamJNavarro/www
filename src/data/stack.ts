@@ -108,6 +108,12 @@ export const techStack: TechStackItem[] = [
   },
   {
     experience: 0,
+    name: 'Discourse',
+    strength: 0,
+    url: 'https://www.discourse.org/',
+  },
+  {
+    experience: 0,
     name: 'Expo',
     strength: 0,
     url: 'https://expo.dev/',
@@ -250,10 +256,6 @@ export const personalStack: PersonalStackItem[] = [
   {
     name: 'Discord',
     url: 'https://discord.com/',
-  },
-  {
-    name: 'Discourse',
-    url: 'https://www.discourse.org/',
   },
   {
     name: 'Fantastical',

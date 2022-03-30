@@ -23,6 +23,10 @@ const routes = {
     label: 'Stack',
     path: '/stack',
   },
+  uses: {
+    label: 'Uses',
+    path: '/uses',
+  },
   words: {
     label: 'Words',
     path: '/words',
