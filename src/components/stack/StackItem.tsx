@@ -11,9 +11,15 @@ type StackItemArgs = {
   index: number;
 };
 
+if (typeof String.prototype.replaceAll === 'undefined') {
+  String.prototype.replaceAll = function (match, replace) {
+    return this.replace(new RegExp(match, 'g'), () => replace);
+  };
+}
+
 const StackItem = ({ item, index }: StackItemArgs) => {
   const { name, url } = item;
-  const assetName = name.toString().replaceAll(' ', '-').replaceAll('.', '');
+  const assetName = name.replaceAll(' ', '-').replaceAll('.', '');
   const imageSrc = `/images/stack/${assetName}.png`;
   return (
     <a
