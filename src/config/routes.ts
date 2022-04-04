@@ -31,10 +31,6 @@ const routes = {
     label: 'Words',
     path: '/words',
   },
-  /*  writing: {
-    label: "Writing",
-    path: "/writing",
-  }, */
 };
 
 export default routes;

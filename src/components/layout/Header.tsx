@@ -6,13 +6,7 @@ import Link from 'next/link';
 import routes from '../../config/routes';
 import { useRouter } from 'next/router';
 
-const defaultRoutes = [
-  routes.about,
-  routes.projects,
-  routes.books,
-  routes.words,
-  //routes.writing,
-];
+const defaultRoutes = [routes.about, routes.projects, routes.books, routes.words];
 
 const HeaderContainer = ({
   baseClasses,
