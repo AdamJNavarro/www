@@ -19,10 +19,6 @@ const routes = {
     label: 'Projects',
     path: '/projects',
   },
-  stack: {
-    label: 'Stack',
-    path: '/stack',
-  },
   uses: {
     label: 'Uses',
     path: '/uses',
