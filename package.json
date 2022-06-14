@@ -29,7 +29,7 @@
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
     "@cypress/code-coverage": "^3.10.0",
-    "@cypress/react": "^5.12.5",
+    "@cypress/react": "^6.0.0",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@testing-library/cypress": "^8.0.3",
     "@types/node": "^17.0.41",
