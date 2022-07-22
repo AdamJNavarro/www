@@ -3,6 +3,8 @@ import { SpotifyArtist, SpotifyPodcast, SpotifyTrack } from './Spotify.types';
 const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
 const client_secret = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET;
 const refresh_token = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
+const scopes =
+  'playlist-read-private, user-library-read, user-follow-read, user-read-currently-playing, user-read-recently-played, user-top-read';
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 const SPOTIFY_TOKEN_URL = 'https://accounts.spotify.com/api/token';
