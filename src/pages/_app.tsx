@@ -1,14 +1,26 @@
-import '~/styles/tailwind.css';
-import '~/styles/prose.css';
+import { GetServerSidePropsContext } from 'next';
+import { AppProps } from 'next/app';
+import { getCookie } from 'cookies-next';
+import { ColorScheme } from '@mantine/core';
 
-import MetaWrapper from '~/components/layout/MetaWrapper';
+import { Providers } from '~/components/Providers';
+import SiteLayout from '~/components/Layouts/SiteLayout';
 
-function MyApp({ Component, pageProps }) {
+export default function App(props: AppProps & { colorScheme: ColorScheme }) {
+  const { Component, pageProps } = props;
+
   return (
-    <MetaWrapper>
-      <Component {...pageProps} />
-    </MetaWrapper>
+    <>
+      <Providers props={props}>
+        <SiteLayout>
+          <Component {...pageProps} />
+        </SiteLayout>
+      </Providers>
+    </>
   );
 }
 
-export default MyApp;
+App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
+  // @ts-ignore
+  colorScheme: getCookie('mantine-color-scheme', ctx) || 'dark',
+});

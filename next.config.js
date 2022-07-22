@@ -1,8 +1,10 @@
 module.exports = {
+  swcMinify: true,
+  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ['i.scdn.co', 'res.cloudinary.com'],
+    domains: ['image.tmdb.org', 'assets.literal.club'],
   },
 };
