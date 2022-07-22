@@ -1,9 +1,0 @@
-{
-  "extension": [".js", ".jsx", ".ts", ".tsx"],
-  "extends": "@istanbuljs/nyc-config-typescript",
-  "include": ["src/pages/**/*"],
-  "exclude": ["src/pages/api/__coverage__.js"],
-  "all": true,
-  "sourceMap": true,
-  "instrument": true
-}
