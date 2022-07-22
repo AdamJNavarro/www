@@ -6,8 +6,10 @@ import {
   BrandInstagram,
   BrandReddit,
   BrandSpotify,
+  BrandTwitch,
   BrandTwitter,
   DeviceTvOld,
+  LetterC,
   Mail,
   Movie,
   School,
@@ -15,6 +17,7 @@ import {
 import { SocialPlatformProps } from './Social.types';
 
 const SocialProfiles = {
+  centered: 'centered.app/u/adamjnavarro',
   email: 'mailto:adamjnav@gmail.com',
   facebook: 'facebook.com/adamjosephnavarro',
   figma: 'figma.com/@adamjnavarro',
@@ -26,6 +29,7 @@ const SocialProfiles = {
   reddit: 'reddit.com/user/adamjnav',
   spotify: 'open.spotify.com/user/adamjosephnavarro',
   trakt: 'trakt.tv/users/adamjnavarro',
+  twitch: 'twitch.tv/adamjnavarro',
   twitter: 'twitter.com/AdamJNavarro',
   udemy: 'udemy.com/user/adamjnavarro',
   youtube: 'youtube.com/channel/UCWiK8RcF4i56z2ZEMjJmMXw',
@@ -59,6 +63,12 @@ const SocialPlatforms: SocialPlatformProps[] = [
     href: SocialProfiles.twitter,
     label: 'Twitter',
     important: true,
+    logo: '',
+  },
+  {
+    icon: LetterC,
+    href: SocialProfiles.centered,
+    label: 'Centered',
     logo: '',
   },
   {
@@ -101,6 +111,12 @@ const SocialPlatforms: SocialPlatformProps[] = [
     icon: DeviceTvOld,
     href: SocialProfiles.trakt,
     label: 'Trakt.tv',
+    logo: '',
+  },
+  {
+    icon: BrandTwitch,
+    href: SocialProfiles.twitch,
+    label: 'Twitch',
     logo: '',
   },
   {
