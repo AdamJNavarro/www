@@ -1,6 +1,6 @@
 import { ScrollArea, Table, Text } from '@mantine/core';
 import { DataTable } from '../common/Table';
-import { getPartOfSpeechColor } from './helpers';
+import { getPartOfSpeechColor } from './Words.utils';
 import { WordProps } from './Words.types';
 
 function TableEntry({ spelling, definition, partOfSpeech, dateLearned }: WordProps) {

@@ -1,7 +1,7 @@
 import { Group } from '@mantine/core';
 import { useState } from 'react';
 import { DataGrid } from '../common/Grid';
-import { sortWords } from './helpers';
+import { sortWords } from './Words.utils';
 import WordCard from './WordCard';
 import { wordBank } from './Words.data';
 import { WordDisplayMode, WordProps, WordSortingMode } from './Words.types';

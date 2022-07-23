@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { SpotifyPodcast } from './Spotify.types';
 import SpotifyGrid from './SpotifyGrid';
 import SpotifyItem from './SpotifyItem';
-import { getSpotifyPodcasts } from './helpers';
+import { getSpotifyPodcasts } from './Spotify.utils';
 
 export default function FavoritePodcasts({ access_token }: any) {
   const [loading, setLoading] = useState<boolean>(true);

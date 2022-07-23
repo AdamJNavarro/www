@@ -1,7 +1,7 @@
 import { Badge, Group, Text } from '@mantine/core';
 import { Surface } from '../common';
 import { LinkText } from '../common/Typography';
-import { buildMerriamWebsterUrl, getPartOfSpeechColor } from './helpers';
+import { buildMerriamWebsterUrl, getPartOfSpeechColor } from './Words.utils';
 import { WordProps } from './Words.types';
 
 export default function WordCard({ partOfSpeech, spelling, definition }: WordProps) {

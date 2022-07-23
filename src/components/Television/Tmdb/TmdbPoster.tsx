@@ -1,6 +1,6 @@
 import { Image } from '@mantine/core';
 import { useEffect, useState } from 'react';
-import { getTmdbPosterUrl } from './helpers';
+import { getTmdbPosterUrl } from './Tmdb.utils';
 
 export default function TmdbPoster({ posterId, posterConfig }: any) {
   const posterSize = posterConfig.sizes.sm;

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { SpotifyArtist } from './Spotify.types';
 import SpotifyGrid from './SpotifyGrid';
 import SpotifyItem from './SpotifyItem';
-import { getSpotifyArtists } from './helpers';
+import { getSpotifyArtists } from './Spotify.utils';
 
 function nFormatter(num: number, digits: number) {
   const si = [

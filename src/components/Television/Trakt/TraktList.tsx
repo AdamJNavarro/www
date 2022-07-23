@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getTraktListData } from './helpers';
+import { getTraktListData } from './Trakt.utils';
 import { TraktShow } from './Trakt.types';
 import TraktItem from './TraktItem';
 import { DataGrid } from '~/components/common/Grid';

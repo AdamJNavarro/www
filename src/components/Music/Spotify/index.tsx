@@ -2,7 +2,7 @@ import { Loader, Title } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import { Section } from '~/components/common';
 import FavoriteArtists from './Artists';
-import { getSpotifyAccessToken } from './helpers';
+import { getSpotifyAccessToken } from './Spotify.utils';
 import FavoritePodcasts from './Podcasts';
 import RecentlyLikedTracks from './Tracks';
 

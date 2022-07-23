@@ -10,7 +10,7 @@ import {
 import { Hourglass, Movie, Video } from 'tabler-icons-react';
 import { useEffect, useState } from 'react';
 import { TraktStat, TraktStatTotals } from './Trakt.types';
-import { traktFetch, traktUrls } from './helpers';
+import { traktFetch, traktUrls } from './Trakt.utils';
 
 async function getTraktStats(access_token: string): Promise<TraktStatTotals> {
   const { episodes, shows } = await traktFetch(traktUrls.stats, access_token);

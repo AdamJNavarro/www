@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { SpotifyTrack } from './Spotify.types';
 import SpotifyGrid from './SpotifyGrid';
 import SpotifyItem from './SpotifyItem';
-import { getLastLikedTracks, SPOTIFY_NUM_OF_TRACKS } from './helpers';
+import { getLastLikedTracks, SPOTIFY_NUM_OF_TRACKS } from './Spotify.utils';
 
 export default function RecentlyLikedTracks({ access_token }: any) {
   const [loading, setLoading] = useState<boolean>(true);

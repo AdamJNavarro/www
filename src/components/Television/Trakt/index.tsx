@@ -1,8 +1,8 @@
 import { Title } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import { Section } from '~/components/common';
-import { getTmdbImageConfig } from '../Tmdb/helpers';
-import { traktUrls } from './helpers';
+import { getTmdbImageConfig } from '../Tmdb/Tmdb.utils';
+import { traktUrls } from './Trakt.utils';
 import LifetimeStats from './LifetimeStats';
 import TraktList from './TraktList';
 
