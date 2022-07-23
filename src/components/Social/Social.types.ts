@@ -3,7 +3,7 @@ type SocialPlatformProps = {
   href: string;
   label: string;
   important?: boolean;
-  logo?: string;
+  show: boolean;
 };
 
 export type { SocialPlatformProps };
