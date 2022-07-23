@@ -30,6 +30,7 @@ export default function NavGrid({ items }: { items: NavLinkProps[] }) {
           key={item.label}
           component={Surface.Card}
           href={item.href}
+          isExternal={item.isExternal}
           className={classes.item}
         >
           <item.icon color={theme.colors[theme.primaryColor][6]} size={32} />

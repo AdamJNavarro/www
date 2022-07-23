@@ -1,5 +1,6 @@
 import {
   Books,
+  BrandDiscord,
   BrandFacebook,
   BrandFigma,
   BrandGithub,
@@ -18,6 +19,7 @@ import { SocialPlatformProps } from './Social.types';
 
 const SocialProfiles = {
   centered: 'centered.app/u/adamjnavarro',
+  discord: 'discordapp.com/users/862719697422254100',
   email: 'mailto:adamjnav@gmail.com',
   facebook: 'facebook.com/adamjosephnavarro',
   figma: 'figma.com/@adamjnavarro',
@@ -34,7 +36,6 @@ const SocialProfiles = {
   udemy: 'udemy.com/user/adamjnavarro',
   youtube: 'youtube.com/channel/UCWiK8RcF4i56z2ZEMjJmMXw',
 };
-// Discord, Medium
 
 const SocialPlatforms: SocialPlatformProps[] = [
   {
@@ -70,6 +71,11 @@ const SocialPlatforms: SocialPlatformProps[] = [
     href: SocialProfiles.centered,
     label: 'Centered',
     logo: '',
+  },
+  {
+    icon: BrandDiscord,
+    href: SocialProfiles.discord,
+    label: 'Discord',
   },
   {
     icon: BrandFacebook,
