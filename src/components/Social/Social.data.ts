@@ -5,6 +5,7 @@ import {
   BrandFigma,
   BrandGithub,
   BrandInstagram,
+  BrandMedium,
   BrandReddit,
   BrandSpotify,
   BrandTwitch,
@@ -27,6 +28,7 @@ const SocialUrls = {
   instagram: 'https://instagram.com/adamjnavarro',
   letterboxd: 'https://letterboxd.com/adamjnavarro',
   literal: 'https://literal.club/adamjnavarro',
+  medium: 'https://medium.com/@adamjnav',
   rawg: 'https://rawg.io/@adamjnavarro',
   reddit: 'https://reddit.com/user/adamjnav',
   spotify: 'https://open.spotify.com/user/adamjosephnavarro',
@@ -100,6 +102,12 @@ const SocialPlatforms: SocialPlatformProps[] = [
     icon: Books,
     href: SocialUrls.literal,
     label: 'Literal',
+    show: true,
+  },
+  {
+    icon: BrandMedium,
+    href: SocialUrls.medium,
+    label: 'Medium',
     show: true,
   },
   {
