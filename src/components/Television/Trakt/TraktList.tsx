@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
-import { getTraktListData } from './Trakt.utils';
-import { TraktShow } from './Trakt.types';
+import { useTraktListFetch } from './Trakt.utils';
+
 import TraktItem from './TraktItem';
 import { DataGrid } from '~/components/common/Grid';
 
@@ -19,23 +18,21 @@ export default function TraktList({
   posterConfig,
   itemLimit,
 }: TraktListProps) {
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string>('');
-  const [shows, setShows] = useState<TraktShow[]>([]);
-
-  const getData = async () => {
-    try {
-      setShows(await getTraktListData(accessToken, url, itemLimit));
-      setLoading(false);
-    } catch (e) {
-      setError('An error occurred getting data from Spotify.');
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+  const {
+    loading,
+    error,
+    data = [],
+  } = useTraktListFetch({
+    opts: {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    },
+    vars: {
+      url,
+      limit: itemLimit,
+    },
+  });
 
   return (
     <DataGrid
@@ -55,7 +52,7 @@ export default function TraktList({
       placeholder={<div />}
       placeholderCount={placeholderCount}
     >
-      {shows.map((show) => (
+      {data.map((show) => (
         <TraktItem posterConfig={posterConfig} {...show} />
       ))}
     </DataGrid>

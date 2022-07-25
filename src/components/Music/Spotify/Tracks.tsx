@@ -1,28 +1,22 @@
-import { useEffect, useState } from 'react';
-import { SpotifyTrack } from './Spotify.types';
 import SpotifyGrid from './SpotifyGrid';
 import SpotifyItem from './SpotifyItem';
-import { getLastLikedTracks, SPOTIFY_NUM_OF_TRACKS } from './Spotify.utils';
+import { SPOTIFY_NUM_OF_TRACKS, useSpotifyTracksFetch } from './Spotify.utils';
 
 export default function RecentlyLikedTracks({ access_token }: any) {
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string>('');
-  const [tracks, setTracks] = useState<SpotifyTrack[]>([]);
-
-  const getData = async () => {
-    try {
-      //throw new Error('TESTING ERROR');
-      setTracks(await getLastLikedTracks(access_token));
-      setLoading(false);
-    } catch (e) {
-      setError('An error occurred getting data from Spotify.');
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+  const {
+    loading,
+    error,
+    data = [],
+  } = useSpotifyTracksFetch({
+    opts: {
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+      },
+    },
+    vars: {
+      num: 8,
+    },
+  });
 
   return (
     <SpotifyGrid
@@ -30,7 +24,7 @@ export default function RecentlyLikedTracks({ access_token }: any) {
       error={error}
       placeholderCount={SPOTIFY_NUM_OF_TRACKS}
     >
-      {tracks.map((track) => {
+      {data.map((track) => {
         const { artist, id, image, name, url } = track;
         return (
           <SpotifyItem

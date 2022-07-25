@@ -1,3 +1,4 @@
+import useFetch, { IncomingOptions } from 'use-http';
 import { localStorageKeys } from '~/utils/Storage';
 
 const TMDB_API_KEY = process.env.NEXT_PUBLIC_TMDB_KEY;
@@ -33,6 +34,11 @@ export async function getTmdbPosterUrl(
   );
   const { posters } = await response.json();
   return `${baseUrl}${posterSize}${posters[0].file_path}`;
+}
+
+interface TmdbConfig {
+  images: any;
+  change_keys: string[];
 }
 
 export async function getTmdbConfig(): Promise<any> {

@@ -1,3 +1,5 @@
+import { IncomingOptions } from 'use-http';
+
 interface GoFetchArgs {
   url: string;
   config: RequestInit;
@@ -31,4 +33,9 @@ export async function goFetch({
       error: e,
     };
   }
+}
+
+export interface CustomFetchArgs<TVars = any> {
+  opts?: IncomingOptions;
+  vars?: TVars;
 }

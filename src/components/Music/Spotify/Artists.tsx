@@ -1,8 +1,6 @@
-import { useEffect, useState } from 'react';
-import { SpotifyArtist } from './Spotify.types';
 import SpotifyGrid from './SpotifyGrid';
 import SpotifyItem from './SpotifyItem';
-import { getSpotifyArtists } from './Spotify.utils';
+import { useSpotifyArtistsFetch } from './Spotify.utils';
 
 function nFormatter(num: number, digits: number) {
   const si = [
@@ -26,27 +24,21 @@ function nFormatter(num: number, digits: number) {
 }
 
 export default function FavoriteArtists({ access_token }: any) {
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string>('');
-  const [artists, setArtists] = useState<SpotifyArtist[]>([]);
-
-  const getData = async () => {
-    try {
-      setArtists(await getSpotifyArtists(access_token));
-      setLoading(false);
-    } catch (e) {
-      setError('An error occurred getting data from Spotify.');
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+  const {
+    loading,
+    error,
+    data = [],
+  } = useSpotifyArtistsFetch({
+    opts: {
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+      },
+    },
+  });
 
   return (
     <SpotifyGrid loading={loading} error={error} placeholderCount={10}>
-      {artists.map((artist) => {
+      {data.map((artist) => {
         const { followers, id, image, name, url } = artist;
 
         return (

@@ -1,4 +1,7 @@
-import { TraktListEntry, TraktShow } from './Trakt.types';
+import useFetch, { IncomingOptions } from 'use-http';
+
+import { CustomFetchArgs } from '~/utils';
+import { TraktListEntry, TraktShow, TraktStatTotals } from './Trakt.types';
 
 const TRAKT_CLIENT_ID = process.env.NEXT_PUBLIC_TRAKT_CLIENT_ID;
 const TRAKT_CLIENT_SECRET = process.env.NEXT_PUBLIC_TRAKT_CLIENT_SECRET;
@@ -36,48 +39,78 @@ export async function getTraktAccessToken() {
   return tokenData;
 }
 
-export async function traktFetch(url: string, access_token: string) {
-  try {
-    const resp = await fetch(url, {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${access_token}`,
-        'Content-Type': 'application/json',
-        'trakt-api-key': TRAKT_CLIENT_ID,
-        // @ts-ignore
-        'trakt-api-version': 2,
-      },
-    });
+const defaultFetchOpts = {
+  headers: {
+    'Content-Type': 'application/json',
+    'trakt-api-key': TRAKT_CLIENT_ID,
+    'trakt-api-version': '2',
+  },
+};
 
-    const isJson = resp.headers.get('content-type')?.includes('application/json');
-    const data = isJson ? await resp.json() : null;
-
-    if (!resp.ok) {
-      // get error message from body or default to resp status
-      const error = (data && data.message) || resp.status;
-      throw error;
-    }
-
-    return data;
-  } catch (e) {
-    return e;
-  }
+function buildFetchOpts(opts: IncomingOptions): IncomingOptions {
+  return {
+    ...defaultFetchOpts,
+    ...opts,
+    headers: {
+      ...defaultFetchOpts.headers,
+      ...opts.headers,
+    },
+  };
 }
 
-export async function getTraktListData(
-  access_token: string,
-  url: string,
-  limit?: number
-): Promise<TraktShow[]> {
-  const data = await traktFetch(url, access_token);
-  return data.slice(0, limit || data.length).map((item: TraktListEntry) => {
-    const { ids, title, year } = item.show;
-    return {
-      id: item.id,
-      traktUrl: `https://trakt.tv/shows/${ids.slug}`,
-      title,
-      posterId: ids.tmdb,
-      year,
-    };
-  });
+export function useTraktStatsFetch({ opts }: CustomFetchArgs) {
+  const options = buildFetchOpts(opts);
+  return useFetch<TraktStatTotals>(
+    traktUrls.stats,
+    {
+      ...options,
+      interceptors: {
+        response: async ({ response }) => {
+          const { shows, episodes } = response.data;
+          response.data = {
+            shows: shows.watched,
+            episodes: episodes.watched,
+            minutes: episodes.minutes,
+          };
+          return response;
+        },
+      },
+    },
+    []
+  );
+}
+interface TraktListFetchVars {
+  url: string;
+  limit?: number;
+}
+
+export function useTraktListFetch({
+  opts,
+  vars,
+}: CustomFetchArgs<TraktListFetchVars>) {
+  const options = buildFetchOpts(opts);
+  return useFetch<TraktShow[]>(
+    vars.url,
+    {
+      ...options,
+      interceptors: {
+        response: async ({ response }) => {
+          response.data = response.data
+            .slice(0, vars.limit || response.data.length)
+            .map((item: TraktListEntry) => {
+              const { ids, title, year } = item.show;
+              return {
+                id: item.id,
+                traktUrl: `https://trakt.tv/shows/${ids.slug}`,
+                title,
+                posterId: ids.tmdb,
+                year,
+              };
+            });
+          return response;
+        },
+      },
+    },
+    []
+  );
 }

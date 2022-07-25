@@ -1,3 +1,5 @@
+import useFetch from 'use-http';
+import { CustomFetchArgs } from '~/utils';
 import { SpotifyArtist, SpotifyPodcast, SpotifyTrack } from './Spotify.types';
 
 const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
@@ -31,70 +33,87 @@ export async function getSpotifyAccessToken() {
   return payload;
 }
 
-export async function getSpotifyArtists(
-  access_token: string
-): Promise<SpotifyArtist[]> {
-  const response = await fetch(`${SPOTIFY_ARTISTS_URL}`, {
-    headers: {
-      Authorization: `Bearer ${access_token}`,
-    },
-  });
-
-  return (await response.json()).artists.items.map((item: any) => {
-    const { followers, genres, id, images, external_urls, name } = item;
-    return {
-      followers: followers.total,
-      genres,
-      id,
-      image: images[images.length - 1].url,
-      name,
-      url: external_urls.spotify,
-    };
-  });
-}
-
-export async function getSpotifyPodcasts(
-  access_token: string
-): Promise<SpotifyPodcast[]> {
-  const response = await fetch(`${SPOTIFY_PODCASTS_URL}`, {
-    headers: {
-      Authorization: `Bearer ${access_token}`,
-    },
-  });
-
-  return (await response.json()).items.map((item: any) => {
-    const { id, images, name, external_urls, total_episodes, publisher } = item.show;
-    return {
-      id,
-      image: images[0].url,
-      name,
-      publisher,
-      total_episodes,
-      url: external_urls.spotify,
-    };
-  });
-}
-
-export async function getLastLikedTracks(
-  access_token: string
-): Promise<SpotifyTrack[]> {
-  const response = await fetch(
-    `${SPOTIFY_TRACKS_URL}?limit=${SPOTIFY_NUM_OF_TRACKS}`,
+export function useSpotifyArtistsFetch({ opts }: CustomFetchArgs) {
+  return useFetch<SpotifyArtist[]>(
+    SPOTIFY_ARTISTS_URL,
     {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
+      ...opts,
+      interceptors: {
+        response: async ({ response }) => {
+          response.data = response.data.artists.items.map((item: any) => {
+            const { followers, genres, id, images, external_urls, name } = item;
+            return {
+              followers: followers.total,
+              genres,
+              id,
+              image: images[images.length - 1].url,
+              name,
+              url: external_urls.spotify,
+            };
+          });
+          return response;
+        },
       },
-    }
+    },
+    []
   );
+}
 
-  return (await response.json()).items.map((item: any) => {
-    const { artists, album, id, name, external_urls } = item.track;
-    return {
-      artist: artists.map((_artist: any) => _artist.name).join(', '),
-      id,
-      image: album.images[0].url,
-      name,
-      url: external_urls.spotify,
-    };
-  });
+export function useSpotifyPodcastsFetch({ opts }: CustomFetchArgs) {
+  return useFetch<SpotifyPodcast[]>(
+    SPOTIFY_PODCASTS_URL,
+    {
+      ...opts,
+      interceptors: {
+        response: async ({ response }) => {
+          response.data = response.data.items.map((item: any) => {
+            const { id, images, name, external_urls, total_episodes, publisher } =
+              item.show;
+            return {
+              id,
+              image: images[0].url,
+              name,
+              publisher,
+              total_episodes,
+              url: external_urls.spotify,
+            };
+          });
+          return response;
+        },
+      },
+    },
+    []
+  );
+}
+
+interface SpotifyTracksVars {
+  num: number;
+}
+
+export function useSpotifyTracksFetch({
+  opts,
+  vars,
+}: CustomFetchArgs<SpotifyTracksVars>) {
+  return useFetch<SpotifyTrack[]>(
+    `${SPOTIFY_TRACKS_URL}?limit=${vars.num}`,
+    {
+      ...opts,
+      interceptors: {
+        response: async ({ response }) => {
+          response.data = response.data.items.map((item: any) => {
+            const { artists, album, id, name, external_urls } = item.track;
+            return {
+              artist: artists.map((_artist: any) => _artist.name).join(', '),
+              id,
+              image: album.images[0].url,
+              name,
+              url: external_urls.spotify,
+            };
+          });
+          return response;
+        },
+      },
+    },
+    []
+  );
 }
