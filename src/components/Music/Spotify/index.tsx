@@ -29,16 +29,14 @@ export default function SpotifyContent() {
 
   const getToken = async () => {
     try {
-      const data = await getSpotifyAccessToken();
-      if (data.access_token) {
-        setToken(data.access_token);
-        setLoading(false);
-      } else {
-        throw data.error;
+      const res = await getSpotifyAccessToken();
+      if (res.error) throw res.error;
+      if (res.data.access_token) {
+        setToken(res.data.access_token);
       }
     } catch (e) {
-      //console.log('SPOT TOKEN ERR', e);
       setError('An error occurred getting data from Spotify.');
+    } finally {
       setLoading(false);
     }
   };

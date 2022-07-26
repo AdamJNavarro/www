@@ -8,60 +8,43 @@ import {
   Skeleton,
 } from '@mantine/core';
 import { Hourglass, Movie, Video } from 'tabler-icons-react';
-import { useEffect, useState } from 'react';
-import { TraktStat, TraktStatTotals } from './Trakt.types';
-import { traktFetch, traktUrls } from './Trakt.utils';
-
-async function getTraktStats(access_token: string): Promise<TraktStatTotals> {
-  const { episodes, shows } = await traktFetch(traktUrls.stats, access_token);
-
-  return {
-    shows: shows.watched,
-    episodes: episodes.watched,
-    hours: Math.floor(episodes.minutes / 60),
-  };
-}
+import { TraktStat } from './Trakt.types';
+import { useTraktStatsFetch } from './Trakt.utils';
 
 export default function LifetimeStats({ accessToken }: { accessToken: string }) {
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string>('');
-  const [totals, setTotals] = useState<TraktStatTotals>({
-    shows: 0,
-    episodes: 0,
-    hours: 0,
+  const {
+    loading,
+    error,
+    data = {
+      shows: 0,
+      episodes: 0,
+      minutes: 0,
+    },
+  } = useTraktStatsFetch({
+    opts: {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    },
   });
 
   const stats: TraktStat[] = [
     {
       icon: Movie,
       label: 'Shows',
-      value: totals.shows,
+      value: data.shows,
     },
     {
       icon: Video,
       label: 'Episodes',
-      value: totals.episodes,
+      value: data.episodes,
     },
     {
       icon: Hourglass,
       label: 'Hours',
-      value: totals.hours,
+      value: Math.floor(data.minutes / 60),
     },
   ];
-
-  const getData = async () => {
-    try {
-      setTotals(await getTraktStats(accessToken));
-      setLoading(false);
-    } catch (e) {
-      setError('An error occurred getting data from Spotify.');
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
 
   if (error) return null;
 

@@ -35,8 +35,12 @@ export async function getTmdbPosterUrl(
   return `${baseUrl}${posterSize}${posters[0].file_path}`;
 }
 
+interface TmdbConfig {
+  images: any;
+  change_keys: string[];
+}
+
 export async function getTmdbConfig(): Promise<any> {
-  // https://www.robinwieruch.de/local-storage-react/
   const resp = await fetch(TMBD_CONFIG_URL, {
     method: 'GET',
     headers: {

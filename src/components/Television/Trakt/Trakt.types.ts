@@ -29,14 +29,24 @@ interface TraktShow {
 interface TraktStatTotals {
   shows: number;
   episodes: number;
-  hours: number;
+  minutes: number;
 }
 
 interface TraktStat {
   label: string;
   value: number;
-  //color: string;
   icon: any;
 }
 
-export type { TraktListEntry, TraktShow, TraktStat, TraktStatTotals };
+interface TraktListFetchVars {
+  url: string;
+  limit?: number;
+}
+
+export type {
+  TraktListEntry,
+  TraktListFetchVars,
+  TraktShow,
+  TraktStat,
+  TraktStatTotals,
+};
