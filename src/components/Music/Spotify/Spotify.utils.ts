@@ -1,12 +1,12 @@
 import useFetch from 'use-http';
-import { CustomFetchArgs } from '~/utils';
+import { CustomFetchArgs, goFetch } from '~/utils';
 import { SpotifyArtist, SpotifyPodcast, SpotifyTrack } from './Spotify.types';
 
 const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
 const client_secret = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET;
 const refresh_token = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
-const scopes =
-  'playlist-read-private, user-library-read, user-follow-read, user-read-currently-playing, user-read-recently-played, user-top-read';
+// Token Scopes:
+// 'playlist-read-private, user-library-read, user-follow-read, user-read-currently-playing, user-read-recently-played, user-top-read';
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 const SPOTIFY_TOKEN_URL = 'https://accounts.spotify.com/api/token';
@@ -14,23 +14,22 @@ const SPOTIFY_USER_BASE_URL = 'https://api.spotify.com/v1/me';
 const SPOTIFY_ARTISTS_URL = `${SPOTIFY_USER_BASE_URL}/following?type=artist`;
 const SPOTIFY_PODCASTS_URL = `${SPOTIFY_USER_BASE_URL}/shows`;
 const SPOTIFY_TRACKS_URL = `${SPOTIFY_USER_BASE_URL}/tracks`;
-export const SPOTIFY_NUM_OF_TRACKS = 6;
 
-export async function getSpotifyAccessToken() {
-  const response = await fetch(SPOTIFY_TOKEN_URL, {
-    method: 'POST',
-    headers: {
-      Authorization: `Basic ${basic}`,
-      'Content-Type': 'application/x-www-form-urlencoded',
+export function getSpotifyAccessToken() {
+  return goFetch({
+    url: SPOTIFY_TOKEN_URL,
+    config: {
+      method: 'POST',
+      headers: {
+        Authorization: `Basic ${basic}`,
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams({
+        grant_type: 'refresh_token',
+        refresh_token,
+      }),
     },
-    body: new URLSearchParams({
-      grant_type: 'refresh_token',
-      refresh_token,
-    }),
   });
-
-  const payload = await response.json();
-  return payload;
 }
 
 export function useSpotifyArtistsFetch({ opts }: CustomFetchArgs) {
@@ -86,14 +85,12 @@ export function useSpotifyPodcastsFetch({ opts }: CustomFetchArgs) {
   );
 }
 
-interface SpotifyTracksVars {
-  num: number;
-}
-
 export function useSpotifyTracksFetch({
   opts,
   vars,
-}: CustomFetchArgs<SpotifyTracksVars>) {
+}: CustomFetchArgs<{
+  num: number;
+}>) {
   return useFetch<SpotifyTrack[]>(
     `${SPOTIFY_TRACKS_URL}?limit=${vars.num}`,
     {

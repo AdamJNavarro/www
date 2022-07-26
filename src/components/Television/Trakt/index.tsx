@@ -16,20 +16,16 @@ export default function TraktContent() {
 
   const getToken = async () => {
     try {
-      /* const data = await getAccessToken();
-      if (data.access_token) {
-        setToken(data.access_token);
-        setLoading(false);
-      } else {
-        throw data.error;
-      } */
-
+      /* const res = await getTraktAccessToken();
+      if (res.error) throw res.error;
+      if (res.data.access_token) {
+        setToken(res.data.access_token);
+      }*/
       setToken(TRAKT_ACCESS_TOKEN);
       setPosterConfig(getTmdbImageConfig());
-      setLoading(false);
     } catch (e) {
-      //console.log('SPOT TOKEN ERR', e);
-      setError('An error occurred getting data from Spotify.');
+      setError('An error occurred getting data from Trakt.');
+    } finally {
       setLoading(false);
     }
   };

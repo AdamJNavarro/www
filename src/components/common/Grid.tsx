@@ -15,35 +15,17 @@ interface SimpleGridConfig {
 
 export interface DataGridProps {
   config?: SimpleGridConfig;
-  error: string | ApolloError | any;
+  error: string | ApolloError | Error;
   loading: boolean;
   placeholder?: any;
   placeholderCount: number;
   children: any;
 }
 
-function GridLoading({ config, placeholder, placeholderCount }: DataGridProps) {
-  const placeholders = Array.from(Array(placeholderCount).keys());
-
-  return (
-    <SimpleGrid {...config}>
-      {placeholders.map((holder) => (
-        <Skeleton key={holder} radius="md">
-          {placeholder}
-        </Skeleton>
-      ))}
-    </SimpleGrid>
-  );
-}
-
 export function DataGrid({ ...props }: DataGridProps) {
   const { children, config, loading, error, placeholder, placeholderCount } = props;
 
-  //if (loading) return <GridLoading {...props} />;
-
-  const placeholders = Array.from(Array(placeholderCount).keys());
-
-  const placers = placeholders.map((holder) => (
+  const placeholders = Array.from(Array(placeholderCount).keys()).map((holder) => (
     <Skeleton key={holder} radius="md">
       {placeholder}
     </Skeleton>
@@ -57,5 +39,5 @@ export function DataGrid({ ...props }: DataGridProps) {
     );
   }
 
-  return <SimpleGrid {...config}>{loading ? placers : children}</SimpleGrid>;
+  return <SimpleGrid {...config}>{loading ? placeholders : children}</SimpleGrid>;
 }

@@ -38,4 +38,15 @@ interface TraktStat {
   icon: any;
 }
 
-export type { TraktListEntry, TraktShow, TraktStat, TraktStatTotals };
+interface TraktListFetchVars {
+  url: string;
+  limit?: number;
+}
+
+export type {
+  TraktListEntry,
+  TraktListFetchVars,
+  TraktShow,
+  TraktStat,
+  TraktStatTotals,
+};

@@ -1,4 +1,3 @@
-import useFetch, { IncomingOptions } from 'use-http';
 import { localStorageKeys } from '~/utils/Storage';
 
 const TMDB_API_KEY = process.env.NEXT_PUBLIC_TMDB_KEY;
@@ -42,7 +41,6 @@ interface TmdbConfig {
 }
 
 export async function getTmdbConfig(): Promise<any> {
-  // https://www.robinwieruch.de/local-storage-react/
   const resp = await fetch(TMBD_CONFIG_URL, {
     method: 'GET',
     headers: {

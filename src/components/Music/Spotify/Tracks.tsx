@@ -1,6 +1,8 @@
 import SpotifyGrid from './SpotifyGrid';
 import SpotifyItem from './SpotifyItem';
-import { SPOTIFY_NUM_OF_TRACKS, useSpotifyTracksFetch } from './Spotify.utils';
+import { useSpotifyTracksFetch } from './Spotify.utils';
+
+const SPOTIFY_NUM_OF_TRACKS = 6;
 
 export default function RecentlyLikedTracks({ access_token }: any) {
   const {
@@ -14,7 +16,7 @@ export default function RecentlyLikedTracks({ access_token }: any) {
       },
     },
     vars: {
-      num: 8,
+      num: SPOTIFY_NUM_OF_TRACKS,
     },
   });
 
