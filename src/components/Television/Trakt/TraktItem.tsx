@@ -4,7 +4,6 @@ import TmdbPoster from '../Tmdb/TmdbPoster';
 import { TraktShow } from './Trakt.types';
 
 export default function TraktItem({
-  id,
   traktUrl,
   title,
   posterConfig,
@@ -13,7 +12,6 @@ export default function TraktItem({
 }: TraktShow & { posterConfig: any }) {
   return (
     <ProductItem
-      key={id}
       label={
         <Text lineClamp={2} weight={500} size="lg">
           {title}

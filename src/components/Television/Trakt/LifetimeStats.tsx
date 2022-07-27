@@ -53,8 +53,8 @@ export default function LifetimeStats({ accessToken }: { accessToken: string }) 
       {stats.map((stat) => {
         const Icon = stat.icon;
         return (
-          <Skeleton visible={loading}>
-            <Paper withBorder radius="md" p="xs" key={stat.label}>
+          <Skeleton key={stat.label} visible={loading}>
+            <Paper withBorder radius="md" p="xs">
               <Group>
                 <RingProgress
                   size={80}

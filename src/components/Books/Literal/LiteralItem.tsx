@@ -7,11 +7,10 @@ const LITERAL_BOOK_ENDPOINT = 'https://literal.club/book';
 
 type LiteralItemProps = LiteralReadingState & { children?: any };
 
-export default function LiteralItem({ id, book, children }: LiteralItemProps) {
+export default function LiteralItem({ book, children }: LiteralItemProps) {
   const { authors, cover, slug, title } = book;
   return (
     <ProductItem
-      key={id}
       label={
         <Text lineClamp={2} weight={500} size="lg">
           {title}

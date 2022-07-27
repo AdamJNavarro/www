@@ -20,7 +20,7 @@ export default function CurrentReading({
       <Section.Content>
         <LiteralList>
           {entries.map((entry) => (
-            <LiteralItem {...entry} />
+            <LiteralItem key={entry.id} {...entry} />
           ))}
         </LiteralList>
       </Section.Content>

@@ -22,7 +22,7 @@ export default function DancingPerformances() {
   return (
     <SimpleGrid cols={1}>
       {youtubeVideos.map((video) => (
-        <YoutubeVideo {...video} />
+        <YoutubeVideo key={video.videoId} {...video} />
       ))}
     </SimpleGrid>
   );

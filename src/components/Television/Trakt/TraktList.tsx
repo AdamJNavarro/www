@@ -52,8 +52,12 @@ export default function TraktList({
       placeholder={<div />}
       placeholderCount={placeholderCount}
     >
-      {data.map((show) => (
-        <TraktItem posterConfig={posterConfig} {...show} />
+      {data.map((show, index) => (
+        <TraktItem
+          key={`${show.id}-${index}`}
+          posterConfig={posterConfig}
+          {...show}
+        />
       ))}
     </DataGrid>
   );
