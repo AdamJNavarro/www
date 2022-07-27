@@ -32,21 +32,9 @@ interface TraktStatTotals {
   minutes: number;
 }
 
-interface TraktStat {
-  label: string;
-  value: number;
-  icon: any;
-}
-
 interface TraktListFetchVars {
   url: string;
   limit?: number;
 }
 
-export type {
-  TraktListEntry,
-  TraktListFetchVars,
-  TraktShow,
-  TraktStat,
-  TraktStatTotals,
-};
+export type { TraktListEntry, TraktListFetchVars, TraktShow, TraktStatTotals };

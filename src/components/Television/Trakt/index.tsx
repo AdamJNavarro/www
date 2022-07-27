@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Section } from '~/components/common';
 import { getTmdbImageConfig } from '../Tmdb/Tmdb.utils';
 import { traktUrls } from './Trakt.utils';
-import LifetimeStats from './LifetimeStats';
+import TraktStats from './TraktStats';
 import TraktList from './TraktList';
 
 const TRAKT_ACCESS_TOKEN = process.env.NEXT_PUBLIC_TRAKT_ACCESS_TOKEN;
@@ -45,7 +45,7 @@ export default function TraktContent() {
           <Section.Title>Lifetime Stats</Section.Title>
         </Section.Header>
         <Section.Content>
-          <LifetimeStats accessToken={token} />
+          <TraktStats accessToken={token} />
         </Section.Content>
       </Section.Container>
       <Section.Container>
