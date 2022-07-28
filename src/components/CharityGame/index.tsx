@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { Page } from '../common';
 import TitleBar from '../Navigation/TitleBar';
 import CharitiesList from './CharitiesList';
+import CharityGameDescription from './CharityGameDescription';
 import CharityStats from './CharityStats';
 
 export default function CharityGame() {
@@ -24,6 +25,7 @@ export default function CharityGame() {
           </Page.Description>
         </Page.Header>
         <CharityStats />
+        <CharityGameDescription />
         <CharitiesList />
       </Page.Content>
     </Page.Container>
