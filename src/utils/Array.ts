@@ -5,10 +5,10 @@ export function sortByPropertyExistence(data: any[], key: string): any[] {
 interface orderByArgs {
   data: any[];
   key: string;
-  reverse: boolean;
+  reverse?: boolean;
 }
 
-export function sortByAbc({ data, key, reverse }: orderByArgs): any[] {
+export function sortByAbc({ data, key, reverse = false }: orderByArgs): any[] {
   return [...data].sort((a, b) => {
     if (reverse) {
       return b[key].normalize().localeCompare(a[key].normalize());

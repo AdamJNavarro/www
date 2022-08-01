@@ -6,12 +6,25 @@ import {
   Quote,
   Shoe,
   Typography,
+  Gift,
 } from 'tabler-icons-react';
 
 import NavGrid from '../Navigation/NavGrid';
 import { NavLinkProps } from '../Navigation/Navigation.types';
 
 const interests: NavLinkProps[] = [
+  {
+    icon: Books,
+    label: 'Books',
+    href: '/books',
+    isExternal: false,
+  },
+  {
+    icon: Gift,
+    label: 'Charity',
+    href: '/charity-game',
+    isExternal: false,
+  },
   {
     icon: Shoe,
     label: 'Dancing',
@@ -25,15 +38,9 @@ const interests: NavLinkProps[] = [
     isExternal: false,
   },
   {
-    icon: Typography,
-    label: 'Words',
-    href: '/words',
-    isExternal: false,
-  },
-  {
-    icon: Books,
-    label: 'Books',
-    href: '/books',
+    icon: Quote,
+    label: 'Quotes',
+    href: '/quotes',
     isExternal: false,
   },
   {
@@ -43,9 +50,9 @@ const interests: NavLinkProps[] = [
     isExternal: false,
   },
   {
-    icon: Quote,
-    label: 'Quotes',
-    href: '/quotes',
+    icon: Typography,
+    label: 'Words',
+    href: '/words',
     isExternal: false,
   },
 ];
