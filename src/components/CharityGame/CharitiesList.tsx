@@ -14,13 +14,8 @@ export default function CharitiesList() {
       <Section.Content>
         <List spacing="lg" size="lg" center>
           {sortByAbc({ data: charities, key: 'label' }).map((item) => (
-            <List.Item>
-              <LinkElement
-                key={item.label}
-                href={item.href}
-                isExternal
-                className={classes.text}
-              >
+            <List.Item key={item.label}>
+              <LinkElement href={item.href} isExternal className={classes.text}>
                 {item.label}
               </LinkElement>
             </List.Item>
