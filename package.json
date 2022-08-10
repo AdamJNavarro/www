@@ -17,7 +17,7 @@
     "@mantine/core": "^5.0.2",
     "@mantine/dates": "^5.1.1",
     "@mantine/hooks": "^5.0.2",
-    "@mantine/next": "^5.1.0",
+    "@mantine/next": "^5.1.1",
     "cookies-next": "^2.1.1",
     "dayjs": "^1.11.3",
     "graphql": "^16.5.0",
