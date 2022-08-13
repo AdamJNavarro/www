@@ -5,6 +5,11 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ['image.tmdb.org', 'assets.literal.club'],
+    domains: [
+      'image.tmdb.org',
+      'assets.literal.club',
+      'i.scdn.co',
+      'res.cloudinary.com',
+    ],
   },
 };
