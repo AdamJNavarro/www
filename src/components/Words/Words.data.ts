@@ -478,6 +478,42 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1658500886,
   },
+  {
+    spelling: 'chignon',
+    definition: 'a knot of hair worn near the neck',
+    partOfSpeech: 'noun',
+    dateLearned: 1659717384,
+  },
+  {
+    spelling: 'crepitus',
+    definition: 'the grating sound from friction between bone and cartilage',
+    partOfSpeech: 'noun',
+    dateLearned: 1659990984,
+  },
+  {
+    spelling: 'pallor',
+    definition: 'paleness of the face',
+    partOfSpeech: 'noun',
+    dateLearned: 1659990996,
+  },
+  {
+    spelling: 'macadam',
+    definition: 'roadway or pavement with a binder',
+    partOfSpeech: 'noun',
+    dateLearned: 1659994584,
+  },
+  {
+    spelling: 'suborn',
+    definition: 'to bribe someone to commit an unlawful deed',
+    partOfSpeech: 'verb',
+    dateLearned: 1660422984,
+  },
+  {
+    spelling: 'emoluments',
+    definition: 'a salary or fee from employment or office',
+    partOfSpeech: 'noun',
+    dateLearned: 1660422991,
+  },
 ];
 
 export { wordBank };
