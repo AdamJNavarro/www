@@ -1,8 +1,10 @@
-import { Badge, Group, Image, SimpleGrid, Text } from '@mantine/core';
-import ProductItem from '../Products/ProductItem';
+import { Badge, Group, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
+import Image from 'next/image';
+import { Surface } from '../common';
 import { stackBank } from './Stack.data';
 
 export default function StackList() {
+  const theme = useMantineTheme();
   return (
     <SimpleGrid
       cols={2}
@@ -16,37 +18,58 @@ export default function StackList() {
       ]}
     >
       {stackBank.map((item) => (
-        <ProductItem
-          key={item.name}
-          label={
-            <Text lineClamp={1} weight={600} size="md" transform="capitalize">
-              {item.name}
-            </Text>
-          }
-          subLabel={
-            <Text color="dimmed" lineClamp={1}>
-              {item.preview}
-            </Text>
-          }
-          url={item.href}
-          leadElement={
-            <Image
-              src={item.logo}
-              height={80}
-              width={80}
-              fit="contain"
-              radius="sm"
-            />
-          }
-        >
-          <Group spacing="md" mt="xs">
-            {item.tags.map((tag) => (
-              <Badge size="sm" variant="outline">
-                {tag}
-              </Badge>
-            ))}
-          </Group>
-        </ProductItem>
+        <Surface.Container key={item.name}>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-block' }}
+            >
+              <Image
+                src={item.logo}
+                width={64}
+                height={64}
+                layout="fixed"
+                alt={`${item.name} icon`}
+              />
+            </a>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                marginLeft: theme.spacing.xl,
+              }}
+            >
+              <Text
+                weight={500}
+                size={theme.fontSizes.xl * 1.125}
+                transform="capitalize"
+              >
+                {item.name}
+              </Text>
+              {item.tags && (
+                <>
+                  <Group spacing="md" style={{ marginTop: theme.spacing.xs / 2 }}>
+                    {item.tags.map((tag) => (
+                      <Badge size="sm" variant="outline">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </Group>
+                </>
+              )}
+            </div>
+          </div>
+          {/* <Text size="md" weight={500} mt="md" ml="xs">
+            {item.preview}
+          </Text> */}
+        </Surface.Container>
       ))}
     </SimpleGrid>
   );
