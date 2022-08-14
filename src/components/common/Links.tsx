@@ -1,5 +1,5 @@
 import { createStyles } from '@mantine/core';
-import Link from 'next/link';
+import { NextLink } from '@mantine/next';
 
 export interface LinkElementProps {
   href: string;
@@ -19,18 +19,32 @@ export function LinkElement({
   children,
 }: LinkElementProps) {
   const Element = component;
-  return (
-    <Link href={href} passHref>
+
+  if (isExternal) {
+    return (
       <Element
         component="a"
-        target={isExternal ? '_blank' : undefined}
-        rel={isExternal ? 'noopener noreferrer' : undefined}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
         style={style || undefined}
         className={className || undefined}
       >
         {children}
       </Element>
-    </Link>
+    );
+  }
+
+  return (
+    <Element
+      component={NextLink}
+      href={href}
+      passHref
+      style={style || undefined}
+      className={className || undefined}
+    >
+      {children}
+    </Element>
   );
 }
 
