@@ -11,6 +11,7 @@ const refresh_token = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 const SPOTIFY_TOKEN_URL = 'https://accounts.spotify.com/api/token';
 const SPOTIFY_USER_BASE_URL = 'https://api.spotify.com/v1/me';
+const SPOTIFY_CURRENTLY_PLAYING_URL = `${SPOTIFY_USER_BASE_URL}/player/currently-playing`;
 const SPOTIFY_ARTISTS_URL = `${SPOTIFY_USER_BASE_URL}/following?type=artist`;
 const SPOTIFY_PODCASTS_URL = `${SPOTIFY_USER_BASE_URL}/shows`;
 const SPOTIFY_TRACKS_URL = `${SPOTIFY_USER_BASE_URL}/tracks`;
@@ -28,6 +29,17 @@ export function getSpotifyAccessToken() {
         grant_type: 'refresh_token',
         refresh_token,
       }),
+    },
+  });
+}
+
+export function getSpotifyCurrentlyPlaying(access_token: string) {
+  return goFetch({
+    url: SPOTIFY_CURRENTLY_PLAYING_URL,
+    config: {
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+      },
     },
   });
 }
