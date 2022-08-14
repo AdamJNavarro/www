@@ -34,4 +34,17 @@
 		  "},"
 		]
 	  },
+	"Add Stack Item": {
+		"scope": "typescript",
+		"prefix": "asi",
+		"body": [
+		  "{",
+		  "\tname: \"$1\",",
+		  "\thref: \"$2\",",
+		  "\tlogo: \"$CLIPBOARD\",",
+		  "\tpreview: \"$3\",",
+		  "\t$4",
+		  "},"
+		]
+	  },
 }
