@@ -71,6 +71,26 @@ const stackBank: StackProduct[] = [
     preview: '',
     tags: [Tag.Macos],
   },
+  {
+    name: 'ableton live',
+    href: 'https://www.ableton.com/en/live/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660512416/logos/ableton.png',
+    preview: '',
+  },
+  {
+    name: 'cardhop',
+    href: 'https://flexibits.com/cardhop',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660512393/logos/cardhop.png',
+    preview: '',
+    tags: [Tag.Ios, Tag.Macos],
+  },
+  {
+    name: 'bartender',
+    href: 'https://www.macbartender.com/Bartender4/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660512336/logos/bartender.png',
+    preview: '',
+    tags: [Tag.Macos],
+  },
 ];
 
 export { stackBank };

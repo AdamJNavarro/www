@@ -1,5 +1,6 @@
 import { Badge, Group, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
 import Image from 'next/image';
+import { sortByAbc } from '~/utils';
 import { Surface } from '../common';
 import { stackBank } from './Stack.data';
 
@@ -17,7 +18,7 @@ export default function StackList() {
         { maxWidth: 'xs', cols: 1, spacing: 'md' },
       ]}
     >
-      {stackBank.map((item) => (
+      {sortByAbc({ data: stackBank, key: 'name' }).map((item) => (
         <Surface.Container key={item.name}>
           <div
             style={{
@@ -57,7 +58,11 @@ export default function StackList() {
                 <>
                   <Group spacing="md" style={{ marginTop: theme.spacing.xs / 2 }}>
                     {item.tags.map((tag) => (
-                      <Badge size="sm" variant="outline">
+                      <Badge
+                        key={`${item.name}-tag-${tag}`}
+                        size="sm"
+                        variant="outline"
+                      >
                         {tag}
                       </Badge>
                     ))}
