@@ -1,46 +1,49 @@
-import { Title } from '@mantine/core';
-import { useEffect, useState } from 'react';
-import { getSpotifyCurrentlyPlaying } from './Spotify.utils';
+import { createStyles, Group, MediaQuery, Text } from '@mantine/core';
+import { BrandSpotify } from 'tabler-icons-react';
+import { useSpotifyCurrentlyPlaying } from './Spotify.utils';
+
+const useStyles = createStyles((theme) => ({
+  title: {
+    fontSize: 24,
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: 18,
+    },
+  },
+}));
 
 export default function CurrentlyPlaying({ access_token }: any) {
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string>('');
-  const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const [playingItem, setPlayingItem] = useState(null);
-
-  const getData = async () => {
-    try {
-      const res = await getSpotifyCurrentlyPlaying(access_token);
-      if (res.error) throw res.error;
-      if (res.data) {
-        const { currently_playing_type, item } = res.data;
-        setIsPlaying(true);
-        if (currently_playing_type === 'track') {
-          const { artists, album, name, external_urls } = item;
-          setPlayingItem({
-            label: name,
-            subLabel: artists.map((_artist: any) => _artist.name).join(', '),
-            image: album.images[0].url,
-            href: external_urls.spotify,
-          });
-        } else {
-          setPlayingItem(item);
-        }
-      }
-    } catch (e) {
-      setError('An error occurred getting data from Spotify.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+  const { classes } = useStyles();
+  const {
+    loading,
+    error,
+    data = { isActive: false, playingItem: null },
+  } = useSpotifyCurrentlyPlaying({
+    opts: {
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+      },
+    },
+  });
 
   if (loading) return null;
 
-  if (error) return <Title>ERROR</Title>;
+  if (error) return null;
 
-  return <Title>Currently Playing:</Title>;
+  return (
+    <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
+      <Group noWrap>
+        <Group spacing="xs" noWrap>
+          <BrandSpotify size={36} color="#1ED760" />
+          <Text weight={500} className={classes.title}>
+            {data.isActive ? 'Now Playing - ' : 'Not playing currently.'}
+          </Text>
+          {data.playingItem && (
+            <Text className={classes.title} color="dimmed" lineClamp={1}>
+              {data.playingItem.title}
+            </Text>
+          )}
+        </Group>
+      </Group>
+    </MediaQuery>
+  );
 }

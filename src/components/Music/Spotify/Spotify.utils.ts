@@ -1,6 +1,11 @@
 import useFetch from 'use-http';
 import { CustomFetchArgs, goFetch } from '~/utils';
-import { SpotifyArtist, SpotifyPodcast, SpotifyTrack } from './Spotify.types';
+import {
+  SpotifyArtist,
+  SpotifyCurrentlyPlaying,
+  SpotifyPodcast,
+  SpotifyTrack,
+} from './Spotify.types';
 
 const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
 const client_secret = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET;
@@ -33,15 +38,38 @@ export function getSpotifyAccessToken() {
   });
 }
 
-export function getSpotifyCurrentlyPlaying(access_token: string) {
-  return goFetch({
-    url: SPOTIFY_CURRENTLY_PLAYING_URL,
-    config: {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
+export function useSpotifyCurrentlyPlaying({ opts }: CustomFetchArgs) {
+  return useFetch<SpotifyCurrentlyPlaying>(
+    SPOTIFY_CURRENTLY_PLAYING_URL,
+    {
+      ...opts,
+      interceptors: {
+        response: async ({ response }) => {
+          if (!response.data) {
+            response.data = { isActive: false, playingItem: null };
+          }
+          const { currently_playing_type, item } = response.data;
+          if (currently_playing_type === 'episode') {
+            response.data = { isActive: false, playingItem: null };
+          }
+
+          if (currently_playing_type === 'track') {
+            const { artists, name, external_urls } = item;
+            const playingItem = {
+              title: `${name} by ${artists
+                .map((_artist: any) => _artist.name)
+                .join(', ')}`,
+              href: external_urls.spotify,
+            };
+            response.data = { isActive: true, playingItem };
+          }
+
+          return response;
+        },
       },
     },
-  });
+    []
+  );
 }
 
 export function useSpotifyArtistsFetch({ opts }: CustomFetchArgs) {

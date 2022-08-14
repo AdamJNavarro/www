@@ -24,4 +24,12 @@ interface SpotifyTrack {
   url: string;
 }
 
-export type { SpotifyArtist, SpotifyPodcast, SpotifyTrack };
+interface SpotifyCurrentlyPlaying {
+  isActive: boolean;
+  playingItem?: {
+    title: string;
+    href: string;
+  };
+}
+
+export type { SpotifyArtist, SpotifyCurrentlyPlaying, SpotifyPodcast, SpotifyTrack };
