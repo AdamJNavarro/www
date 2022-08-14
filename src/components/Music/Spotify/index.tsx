@@ -5,6 +5,7 @@ import FavoriteArtists from './Artists';
 import { getSpotifyAccessToken } from './Spotify.utils';
 import FavoritePodcasts from './Podcasts';
 import RecentlyLikedTracks from './Tracks';
+import CurrentlyPlaying from './CurrentlyPlaying';
 
 function ContentLoading() {
   return (
@@ -51,6 +52,7 @@ export default function SpotifyContent() {
 
   return (
     <>
+      <CurrentlyPlaying access_token={token} />
       <Section.Container>
         <Section.Header>
           <Section.Title>Recently Liked Tracks</Section.Title>

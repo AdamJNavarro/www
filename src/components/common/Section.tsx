@@ -14,7 +14,6 @@ const useStyles = createStyles((theme) => ({
   sectionTitle: {
     fontSize: 28,
     fontWeight: 600,
-    //marginBottom: theme.spacing.lg,
     [theme.fn.smallerThan('sm')]: {
       fontSize: 24,
       fontWeight: 500,

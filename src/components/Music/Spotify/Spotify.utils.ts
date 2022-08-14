@@ -1,6 +1,11 @@
 import useFetch from 'use-http';
 import { CustomFetchArgs, goFetch } from '~/utils';
-import { SpotifyArtist, SpotifyPodcast, SpotifyTrack } from './Spotify.types';
+import {
+  SpotifyArtist,
+  SpotifyCurrentlyPlaying,
+  SpotifyPodcast,
+  SpotifyTrack,
+} from './Spotify.types';
 
 const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
 const client_secret = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET;
@@ -11,6 +16,7 @@ const refresh_token = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 const SPOTIFY_TOKEN_URL = 'https://accounts.spotify.com/api/token';
 const SPOTIFY_USER_BASE_URL = 'https://api.spotify.com/v1/me';
+const SPOTIFY_CURRENTLY_PLAYING_URL = `${SPOTIFY_USER_BASE_URL}/player/currently-playing`;
 const SPOTIFY_ARTISTS_URL = `${SPOTIFY_USER_BASE_URL}/following?type=artist`;
 const SPOTIFY_PODCASTS_URL = `${SPOTIFY_USER_BASE_URL}/shows`;
 const SPOTIFY_TRACKS_URL = `${SPOTIFY_USER_BASE_URL}/tracks`;
@@ -30,6 +36,40 @@ export function getSpotifyAccessToken() {
       }),
     },
   });
+}
+
+export function useSpotifyCurrentlyPlaying({ opts }: CustomFetchArgs) {
+  return useFetch<SpotifyCurrentlyPlaying>(
+    SPOTIFY_CURRENTLY_PLAYING_URL,
+    {
+      ...opts,
+      interceptors: {
+        response: async ({ response }) => {
+          if (!response.data) {
+            response.data = { isActive: false, playingItem: null };
+          }
+          const { currently_playing_type, item } = response.data;
+          if (currently_playing_type === 'episode') {
+            response.data = { isActive: false, playingItem: null };
+          }
+
+          if (currently_playing_type === 'track') {
+            const { artists, name, external_urls } = item;
+            const playingItem = {
+              title: `${name} by ${artists
+                .map((_artist: any) => _artist.name)
+                .join(', ')}`,
+              href: external_urls.spotify,
+            };
+            response.data = { isActive: true, playingItem };
+          }
+
+          return response;
+        },
+      },
+    },
+    []
+  );
 }
 
 export function useSpotifyArtistsFetch({ opts }: CustomFetchArgs) {
