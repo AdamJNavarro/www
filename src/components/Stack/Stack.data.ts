@@ -187,6 +187,18 @@ const stackBank: StackProduct[] = [
     logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660581793/logos/vudu.png',
     preview: '',
   },
+  {
+    name: 'Udemy',
+    href: 'https://www.udemy.com/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660582591/logos/udemy.png',
+    preview: '',
+  },
+  {
+    name: 'Endel',
+    href: 'https://endel.io/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660582673/logos/endel.png',
+    preview: '',
+  },
 ];
 
 export { stackBank };
