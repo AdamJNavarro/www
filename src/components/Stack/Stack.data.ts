@@ -143,6 +143,38 @@ const stackBank: StackProduct[] = [
     logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660523822/logos/cloudflare-warp.png',
     preview: '',
   },
+  {
+    name: 'Literal',
+    href: 'https://literal.club/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660527872/logos/literal.png',
+    preview: '',
+  },
+  {
+    name: 'Trakt',
+    href: 'https://trakt.tv/dashboard',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660527885/logos/trakt.png',
+    preview: '',
+  },
+  {
+    name: 'Inshot',
+    href: 'https://inshot.com/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660527854/logos/inshot.png',
+    preview: '',
+    tags: [Tag.Mobile],
+  },
+  {
+    name: 'Pillow',
+    href: 'https://pillow.app/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660527879/logos/pillow.png',
+    preview: '',
+    tags: [Tag.Ios],
+  },
+  {
+    name: 'Letterboxd',
+    href: 'https://letterboxd.com/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660527863/logos/letterboxd.png',
+    preview: '',
+  },
 ];
 
 export { stackBank };
