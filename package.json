@@ -19,7 +19,7 @@
     "@mantine/hooks": "^5.0.2",
     "@mantine/next": "^5.1.3",
     "cookies-next": "^2.1.1",
-    "dayjs": "^1.11.3",
+    "dayjs": "^1.11.5",
     "graphql": "^16.5.0",
     "next": "^12.2.5",
     "next-seo": "^5.5.0",
