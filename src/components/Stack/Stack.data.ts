@@ -175,6 +175,18 @@ const stackBank: StackProduct[] = [
     logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660527863/logos/letterboxd.png',
     preview: '',
   },
+  {
+    name: 'Gametime',
+    href: 'https://gametime.co/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660581785/logos/gametime.png',
+    preview: '',
+  },
+  {
+    name: 'VUDU',
+    href: 'https://vudu.com/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660581793/logos/vudu.png',
+    preview: '',
+  },
 ];
 
 export { stackBank };
