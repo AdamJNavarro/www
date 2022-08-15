@@ -1,19 +1,19 @@
 import { Avatar, Box, Text } from '@mantine/core';
-import { MoodHappy, Social, Tools } from 'tabler-icons-react';
+import { MoodHappy, Social, Stack2 } from 'tabler-icons-react';
 import NavGrid from '../Navigation/NavGrid';
 import { NavLinkProps } from '../Navigation/Navigation.types';
 
 const items: NavLinkProps[] = [
   {
-    icon: Tools,
-    label: 'Projects',
-    href: '/coding#projects',
-    isExternal: false,
-  },
-  {
     icon: MoodHappy,
     label: 'Interests',
     href: '/about#interests',
+    isExternal: false,
+  },
+  {
+    icon: Stack2,
+    label: 'Stack',
+    href: '/stack',
     isExternal: false,
   },
   {
