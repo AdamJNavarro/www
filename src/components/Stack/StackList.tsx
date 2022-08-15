@@ -34,8 +34,8 @@ export default function StackList() {
             >
               <Image
                 src={item.logo}
-                width={64}
-                height={64}
+                width={56}
+                height={56}
                 layout="fixed"
                 alt={`${item.name} icon`}
               />
@@ -44,23 +44,19 @@ export default function StackList() {
               style={{
                 display: 'flex',
                 flexDirection: 'column',
-                marginLeft: theme.spacing.xl,
+                marginLeft: theme.spacing.sm,
               }}
             >
-              <Text
-                weight={500}
-                size={theme.fontSizes.xl * 1.125}
-                transform="capitalize"
-              >
+              <Text weight={500} size={theme.fontSizes.xl}>
                 {item.name}
               </Text>
               {item.tags && (
                 <>
-                  <Group spacing="md" style={{ marginTop: theme.spacing.xs / 2 }}>
+                  <Group spacing="sm" style={{ marginTop: theme.spacing.xs / 2 }}>
                     {item.tags.map((tag) => (
                       <Badge
                         key={`${item.name}-tag-${tag}`}
-                        size="sm"
+                        size="xs"
                         variant="outline"
                       >
                         {tag}

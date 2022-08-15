@@ -13,6 +13,7 @@ const useStyles = createStyles((theme) => ({
 function Container(props) {
   return (
     <MantineCard
+      p="sm"
       radius="md"
       sx={(theme) => ({
         backgroundColor:
