@@ -58,6 +58,7 @@ export default function StackList() {
                         key={`${item.name}-tag-${tag}`}
                         size="xs"
                         variant="outline"
+                        style={{ textTransform: 'none' }}
                       >
                         {tag}
                       </Badge>
