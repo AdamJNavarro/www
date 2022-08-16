@@ -204,6 +204,7 @@ const stackItems: StackProduct[] = [
     href: 'https://support.apple.com/en-nz/guide/shortcuts/welcome/ios',
     logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660659562/logos/shortcuts.png',
     preview: '',
+    tags: [Tag.Ios, Tag.Macos],
   },
   {
     name: 'Private Photo Vault',
@@ -211,6 +212,62 @@ const stackItems: StackProduct[] = [
     logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660660018/logos/private-photo-vault.png',
     preview: '',
     tags: [Tag.Mobile],
+  },
+];
+
+const codingStack: StackProduct[] = [
+  {
+    name: 'iTerm',
+    href: 'https://iterm2.com/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660583859/logos/iterm.png',
+    preview: '',
+    tags: [Tag.Macos],
+  },
+  {
+    name: 'Fig',
+    href: 'https://fig.io/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660510567/logos/fig.png',
+    preview: '',
+  },
+  {
+    name: 'Android Studio',
+    href: 'https://developer.android.com/studio',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660677183/logos/android-studio.png',
+    preview: '',
+  },
+  {
+    name: 'VSCode',
+    href: 'https://code.visualstudio.com/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660677350/logos/visual-studio-code.png',
+    preview: '',
+  },
+  {
+    name: 'Xcode',
+    href: 'https://developer.apple.com/xcode/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660678883/logos/xcode.png',
+    preview: '',
+    tags: [Tag.Macos],
+  },
+  {
+    name: 'Postgres.app',
+    href: 'https://postgresapp.com/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660679336/logos/postgres.png',
+    preview: '',
+    tags: [Tag.Macos],
+  },
+  {
+    name: 'Expo Go',
+    href: 'https://expo.dev/client',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660679666/logos/expo-go.png',
+    preview: '',
+    tags: [Tag.Mobile],
+  },
+  {
+    name: 'TestFlight',
+    href: 'https://developer.apple.com/testflight/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660680098/logos/testflight.png',
+    preview: '',
+    tags: [Tag.Macos, Tag.Ios],
   },
 ];
 
