@@ -13,11 +13,11 @@ const useStyles = createStyles((theme) => ({
 function Container(props) {
   return (
     <MantineCard
-      p="sm"
+      p="md"
       radius="md"
       sx={(theme) => ({
         backgroundColor:
-          theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+          theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[0],
       })}
       {...props}
     />
@@ -27,6 +27,7 @@ function Container(props) {
 function Card(props) {
   return (
     <MantineCard
+      p="sm"
       radius="md"
       sx={(theme) => ({
         backgroundColor:

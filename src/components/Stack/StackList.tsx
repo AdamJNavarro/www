@@ -2,7 +2,8 @@ import { Badge, Group, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
 import Image from 'next/image';
 import { sortByAbc } from '~/utils';
 import { Surface } from '../common';
-import { stackBank } from './Stack.data';
+import { LinkElement } from '../common/Links';
+import { stackItems } from './Stack.data';
 
 export default function StackList() {
   const theme = useMantineTheme();
@@ -18,61 +19,63 @@ export default function StackList() {
         { maxWidth: 'xs', cols: 1, spacing: 'md' },
       ]}
     >
-      {sortByAbc({ data: stackBank, key: 'name' }).map((item) => (
-        <Surface.Container key={item.name}>
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-            }}
+      {sortByAbc({ data: stackItems, key: 'name' }).map((item) => {
+        const { name, href, logo, tags } = item;
+        return (
+          <LinkElement
+            key={name}
+            component={Surface.Card}
+            href={href}
+            isExternal
+            style={{ display: 'flex' }}
           >
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ display: 'inline-block' }}
-            >
-              <Image
-                src={item.logo}
-                width={56}
-                height={56}
-                layout="fixed"
-                alt={`${item.name} icon`}
-              />
-            </a>
             <div
               style={{
                 display: 'flex',
-                flexDirection: 'column',
-                marginLeft: theme.spacing.sm,
+                alignItems: 'center',
               }}
             >
-              <Text weight={500} size={theme.fontSizes.xl}>
-                {item.name}
-              </Text>
-              {item.tags && (
-                <>
-                  <Group spacing="sm" style={{ marginTop: theme.spacing.xs / 2 }}>
-                    {item.tags.map((tag) => (
-                      <Badge
-                        key={`${item.name}-tag-${tag}`}
-                        size="xs"
-                        variant="outline"
-                        style={{ textTransform: 'none' }}
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
-                  </Group>
-                </>
-              )}
+              <Image
+                src={logo}
+                width={56}
+                height={56}
+                layout="fixed"
+                alt={`${name} icon`}
+              />
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  marginLeft: theme.spacing.md,
+                }}
+              >
+                <Text weight={500} size={theme.fontSizes.lg}>
+                  {name}
+                </Text>
+                {tags && (
+                  <>
+                    <Group spacing="sm" mt={theme.spacing.xs / 2}>
+                      {tags.map((tag) => (
+                        <Badge
+                          key={`${name}-tag-${tag}`}
+                          size="xs"
+                          variant="outline"
+                          style={{ textTransform: 'none' }}
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
+                    </Group>
+                  </>
+                )}
+              </div>
             </div>
-          </div>
-          {/* <Text size="md" weight={500} mt="md" ml="xs">
-            {item.preview}
-          </Text> */}
-        </Surface.Container>
-      ))}
+            {/* <Text size="md" weight={500} mt="md" ml="xs">
+              {preview}
+            </Text> */}
+          </LinkElement>
+        );
+      })}
     </SimpleGrid>
   );
 }

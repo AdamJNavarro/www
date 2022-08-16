@@ -16,7 +16,7 @@ interface StackProduct {
   noLongerUse?: boolean;
 }
 
-const stackBank: StackProduct[] = [
+const stackItems: StackProduct[] = [
   {
     name: 'Brave Browser',
     href: 'https://brave.com/',
@@ -214,4 +214,4 @@ const stackBank: StackProduct[] = [
   },
 ];
 
-export { stackBank };
+export { stackItems };
