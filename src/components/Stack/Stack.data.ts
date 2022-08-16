@@ -199,6 +199,19 @@ const stackBank: StackProduct[] = [
     logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660582673/logos/endel.png',
     preview: '',
   },
+  {
+    name: 'Shortcuts',
+    href: 'https://support.apple.com/en-nz/guide/shortcuts/welcome/ios',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660659562/logos/shortcuts.png',
+    preview: '',
+  },
+  {
+    name: 'Private Photo Vault',
+    href: 'https://privatephotovault.com/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660660018/logos/private-photo-vault.png',
+    preview: '',
+    tags: [Tag.Mobile],
+  },
 ];
 
 export { stackBank };
