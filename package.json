@@ -25,7 +25,6 @@
     "next-seo": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-youtube": "^9.0.3",
     "tabler-icons-react": "^1.54.0",
     "use-http": "^1.0.26"
   },

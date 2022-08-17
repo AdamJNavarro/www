@@ -1,14 +1,17 @@
 import { Card as MantineCard, createStyles } from '@mantine/core';
 
-const useStyles = createStyles((theme) => ({
-  hoverConfig: {
-    transition: 'box-shadow 150ms ease, transform 100ms ease',
-    '&:hover': {
-      boxShadow: `${theme.shadows.md} !important`,
-      transform: 'scale(1.02)',
+const useStyles = createStyles((theme) => {
+  const { colors, colorScheme } = theme;
+  return {
+    hoverConfig: {
+      transition: 'transform 200ms ease',
+      '&:hover': {
+        backgroundColor: colorScheme === 'dark' ? colors.dark[4] : colors.gray[0],
+        transform: 'scale(1.025)',
+      },
     },
-  },
-}));
+  };
+});
 
 function Container(props) {
   return (
