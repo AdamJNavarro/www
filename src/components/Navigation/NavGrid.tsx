@@ -3,38 +3,55 @@ import { Surface } from '../common';
 import { LinkElement } from '../common/Links';
 import { NavLinkProps } from './Navigation.types';
 
-const useStyles = createStyles((theme) => ({
-  item: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-    height: 90,
-    transition: 'box-shadow 150ms ease, transform 100ms ease',
-
-    '&:hover': {
-      boxShadow: `${theme.shadows.md} !important`,
-      transform: 'scale(1.025)',
+const useStyles = createStyles((theme, _params, getRef) => {
+  const icon = getRef('icon');
+  const textColor =
+    theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7];
+  const iconColor =
+    theme.colorScheme === 'dark'
+      ? theme.colors[theme.primaryColor][5]
+      : theme.primaryColor;
+  return {
+    item: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textAlign: 'center',
+      height: 90,
+      color: textColor,
+      fontWeight: 500,
+      fontSize: theme.fontSizes.md,
+      '&:hover': {
+        color: theme.fn.lighten(textColor, 1),
+        [`& .${icon}`]: {
+          color: theme.colors[theme.primaryColor][3],
+        },
+      },
     },
-  },
-}));
+
+    linkIcon: {
+      ref: icon,
+      color: iconColor,
+    },
+  };
+});
 
 export default function NavGrid({ items }: { items: NavLinkProps[] }) {
-  const { classes, theme } = useStyles();
+  const { classes } = useStyles();
 
   return (
     <SimpleGrid cols={3}>
       {items.map((item) => (
         <LinkElement
           key={item.label}
-          component={Surface.Card}
+          component={Surface.HoverCard}
           href={item.href}
           isExternal={item.isExternal}
           className={classes.item}
         >
-          <item.icon color={theme.colors[theme.primaryColor][6]} size={32} />
-          <Text size="sm" weight={500} mt={8}>
+          <item.icon className={classes.linkIcon} size={32} />
+          <Text inherit mt={8}>
             {item.label}
           </Text>
         </LinkElement>

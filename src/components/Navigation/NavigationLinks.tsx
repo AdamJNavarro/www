@@ -37,7 +37,7 @@ const useStyles = createStyles((theme, _params, getRef) => {
     linkIcon: {
       ref: icon,
       color:
-        theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[6],
+        theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[6],
       marginRight: theme.spacing.sm,
     },
 

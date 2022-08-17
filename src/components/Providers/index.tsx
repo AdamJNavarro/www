@@ -51,6 +51,8 @@ export function Providers({ children, props }: ProvidersProps) {
         <MantineProvider
           theme={{
             colorScheme,
+            primaryColor: 'violet',
+            primaryShade: 8,
           }}
           withGlobalStyles
           withNormalizeCSS
