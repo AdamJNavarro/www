@@ -43,7 +43,7 @@ export default function CodingLanguages() {
   const { classes } = useStyles();
 
   return (
-    <Surface.Container>
+    <Surface.Card>
       {languages
         .sort((a, b) => b.strength - a.strength)
         .map((language) => {
@@ -66,6 +66,6 @@ export default function CodingLanguages() {
             </div>
           );
         })}
-    </Surface.Container>
+    </Surface.Card>
   );
 }

@@ -1,31 +1,4 @@
-import { Card as MantineCard, createStyles } from '@mantine/core';
-
-const useStyles = createStyles((theme) => {
-  const { colors, colorScheme } = theme;
-  return {
-    hoverConfig: {
-      transition: 'transform 200ms ease',
-      '&:hover': {
-        backgroundColor: colorScheme === 'dark' ? colors.dark[4] : colors.gray[0],
-        transform: 'scale(1.025)',
-      },
-    },
-  };
-});
-
-function Container(props) {
-  return (
-    <MantineCard
-      p="md"
-      radius="md"
-      sx={(theme) => ({
-        backgroundColor:
-          theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[0],
-      })}
-      {...props}
-    />
-  );
-}
+import { Card as MantineCard } from '@mantine/core';
 
 function Card(props) {
   return (
@@ -34,7 +7,25 @@ function Card(props) {
       radius="md"
       sx={(theme) => ({
         backgroundColor:
-          theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[0],
+          theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+      })}
+      {...props}
+    />
+  );
+}
+
+function HoverCard(props) {
+  return (
+    <Card
+      sx={(theme) => ({
+        transition: 'transform 200ms ease',
+        '&:hover': {
+          backgroundColor:
+            theme.colorScheme === 'dark'
+              ? theme.colors.dark[5]
+              : theme.colors.gray[0],
+          transform: 'scale(1.025)',
+        },
       })}
       {...props}
     />
@@ -42,8 +33,8 @@ function Card(props) {
 }
 
 const Surface = {
-  Container,
   Card,
+  HoverCard,
 };
 
 export default Surface;

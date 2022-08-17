@@ -24,7 +24,7 @@ export default function StackList() {
         return (
           <LinkElement
             key={name}
-            component={Surface.Card}
+            component={Surface.HoverCard}
             href={href}
             isExternal
             style={{ display: 'flex' }}

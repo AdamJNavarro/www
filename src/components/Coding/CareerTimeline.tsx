@@ -3,7 +3,7 @@ import { Surface } from '../common';
 
 export default function CareerTimeline() {
   return (
-    <Surface.Container>
+    <Surface.Card>
       <Timeline active={1} bulletSize={30} lineWidth={2}>
         <Timeline.Item title="Expo">
           <Text size="sm" mt={4}>
@@ -17,6 +17,6 @@ export default function CareerTimeline() {
           </Text>
         </Timeline.Item>
       </Timeline>
-    </Surface.Container>
+    </Surface.Card>
   );
 }
