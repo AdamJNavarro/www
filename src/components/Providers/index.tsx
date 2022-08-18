@@ -4,7 +4,12 @@ import { ApolloProvider } from '@apollo/client';
 import * as React from 'react';
 import { setCookies } from 'cookies-next';
 
-import { MantineProvider, ColorScheme, ColorSchemeProvider } from '@mantine/core';
+import {
+  MantineProvider,
+  ColorScheme,
+  ColorSchemeProvider,
+  Global,
+} from '@mantine/core';
 import { client } from '~/libs/Apollo';
 import SiteConfig from './SiteConfig';
 
@@ -19,6 +24,32 @@ const globalNavigationContext = {
 };
 
 export const GlobalNavigationContext = React.createContext(globalNavigationContext);
+
+function GlobalStyles() {
+  return (
+    <Global
+      styles={(theme) => ({
+        html: {
+          maxHeight: '100vh',
+          overflow: 'hidden',
+        },
+
+        body: {
+          ':after': {
+            content: '""',
+            position: 'fixed',
+            top: '-50%',
+            right: '-50%',
+            bottom: '-50%',
+            left: '-50%',
+            zIndex: -1,
+            backgroundColor: theme.colors.dark[7],
+          },
+        },
+      })}
+    />
+  );
+}
 
 export function Providers({ children, props }: ProvidersProps) {
   const [colorScheme, setColorScheme] = React.useState<ColorScheme>(
@@ -57,6 +88,7 @@ export function Providers({ children, props }: ProvidersProps) {
           withGlobalStyles
           withNormalizeCSS
         >
+          <GlobalStyles />
           <ApolloProvider client={client}>
             <GlobalNavigationContext.Provider value={state}>
               {children}
