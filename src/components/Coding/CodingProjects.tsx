@@ -64,9 +64,9 @@ function ProjectItem({ name, desc, platforms, url }: CodingProject) {
           </Group>
         </div>
       </div>
-      <Text size="md" weight={500} mt="md">
+      {/* <Text size="md" weight={500} mt="md">
         {desc}
-      </Text>
+      </Text> */}
     </div>
   );
 }
