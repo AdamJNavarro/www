@@ -24,6 +24,7 @@ export default function TraktContent() {
       setToken(TRAKT_ACCESS_TOKEN);
       setPosterConfig(getTmdbImageConfig());
     } catch (e) {
+      console.log('TRAKT ERR', e);
       setError('An error occurred getting data from Trakt.');
     } finally {
       setLoading(false);
