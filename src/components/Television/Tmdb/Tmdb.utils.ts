@@ -19,7 +19,7 @@ async function getTmdbConfig(): Promise<any> {
     return error;
   }
 
-  // localStorage.setItem(localStorageKeys.tmdbConfig, JSON.stringify(data.images));
+  localStorage.setItem(localStorageKeys.tmdbConfig, JSON.stringify(data.images));
 
   return data;
 }
