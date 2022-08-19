@@ -3,8 +3,33 @@ import { localStorageKeys } from '~/utils/Storage';
 const TMDB_API_KEY = process.env.NEXT_PUBLIC_TMDB_KEY;
 const TMBD_CONFIG_URL = `https://api.themoviedb.org/3/configuration?api_key=${TMDB_API_KEY}`;
 
-export function getTmdbImageConfig() {
+async function getTmdbConfig(): Promise<any> {
+  const resp = await fetch(TMBD_CONFIG_URL, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8',
+    },
+  });
+
+  const isJson = resp.headers.get('content-type')?.includes('application/json');
+  const data = isJson ? await resp.json() : null;
+
+  if (!resp.ok) {
+    const error = (data && data.message) || resp.status;
+    return error;
+  }
+
+  // localStorage.setItem(localStorageKeys.tmdbConfig, JSON.stringify(data.images));
+
+  return data;
+}
+
+export async function getTmdbImageConfig() {
   const config = JSON.parse(localStorage.getItem(localStorageKeys.tmdbConfig));
+  if (!config) {
+    await getTmdbConfig();
+    getTmdbImageConfig();
+  }
 
   const { secure_base_url, poster_sizes } = config;
   return {
@@ -38,25 +63,4 @@ export async function getTmdbPosterUrl(
 interface TmdbConfig {
   images: any;
   change_keys: string[];
-}
-
-export async function getTmdbConfig(): Promise<any> {
-  const resp = await fetch(TMBD_CONFIG_URL, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8',
-    },
-  });
-
-  const isJson = resp.headers.get('content-type')?.includes('application/json');
-  const data = isJson ? await resp.json() : null;
-
-  if (!resp.ok) {
-    const error = (data && data.message) || resp.status;
-    return error;
-  }
-
-  // localStorage.setItem(localStorageKeys.tmdbConfig, JSON.stringify(data.images));
-
-  return data;
 }
