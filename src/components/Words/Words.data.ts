@@ -514,6 +514,18 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1660422991,
   },
+  {
+    spelling: 'oeuvre',
+    definition: 'the works of an artists regarded collectively',
+    partOfSpeech: 'noun',
+    dateLearned: 1661595986,
+  },
+  {
+    spelling: 'manacle',
+    definition: 'a shackle for the wrist, used as a restraint',
+    partOfSpeech: 'noun',
+    dateLearned: 1661801297,
+  },
 ];
 
 export { wordBank };
