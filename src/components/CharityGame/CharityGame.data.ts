@@ -15,7 +15,7 @@ const charityGameStats: Stat[] = [
   {
     icon: DeviceGamepad,
     label: 'Games Played', // Games Won: 23,
-    value: 40,
+    value: 41,
   },
 ];
 
