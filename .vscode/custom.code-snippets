@@ -30,7 +30,7 @@
 		  "\tspelling: \"$1\",",
 		  "\tdefinition: \"$2\",",
 		  "\tpartOfSpeech: \"$3\",",
-		  "\tdateLearned: $4,",
+		  "\tdateLearned: $CLIPBOARD,",
 		  "},"
 		]
 	  },

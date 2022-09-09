@@ -526,6 +526,24 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1661801297,
   },
+  {
+    spelling: 'cordon',
+    definition: 'a line of people or objects preventing passage',
+    partOfSpeech: 'noun',
+    dateLearned: 1661880538,
+  },
+  {
+    spelling: 'anechoic',
+    definition: 'free from echo or reverb',
+    partOfSpeech: 'adjective',
+    dateLearned: 1661966938,
+  },
+  {
+    spelling: 'abrogate',
+    definition: 'to abolish via action by an authority',
+    partOfSpeech: 'verb',
+    dateLearned: 1662398938,
+  },
 ];
 
 export { wordBank };
