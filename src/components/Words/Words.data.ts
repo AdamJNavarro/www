@@ -544,6 +544,12 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'verb',
     dateLearned: 1662398938,
   },
+  {
+    spelling: 'petrichor',
+    definition: 'a pleasant aroma from the first rain following a dry period',
+    partOfSpeech: 'noun',
+    dateLearned: 1663059577,
+  },
 ];
 
 export { wordBank };
