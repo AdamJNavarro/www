@@ -1,3 +1,3 @@
 # My Personal Website
 
-Source code for [adamjnavarro.com](https://adamjnavarro.com)
+Source code for [adamjnavarro.com](https://www.adamjnavarro.com)
