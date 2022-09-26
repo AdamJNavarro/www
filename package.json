@@ -17,7 +17,7 @@
     "@emotion/react": "^11.10.4",
     "@emotion/server": "^11.10.0",
     "@mantine/core": "^5.4.1",
-    "@mantine/dates": "^5.4.0",
+    "@mantine/dates": "^5.4.1",
     "@mantine/hooks": "^5.3.1",
     "@mantine/next": "^5.4.0",
     "cookies-next": "^2.1.1",
