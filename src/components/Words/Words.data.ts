@@ -550,6 +550,18 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1663059577,
   },
+  {
+    spelling: 'irasicble',
+    definition: 'hot-tempered or easily angered',
+    partOfSpeech: 'adjective',
+    dateLearned: 1663777110,
+  },
+  {
+    spelling: 'tussock',
+    definition: 'a compact tuft of grass or sedge',
+    partOfSpeech: 'noun',
+    dateLearned: 1663949910,
+  },
 ];
 
 export { wordBank };
