@@ -5,7 +5,6 @@ import { getTmdbImageConfig } from '../Tmdb/Tmdb.utils';
 import { traktUrls } from './Trakt.utils';
 import TraktStats from './TraktStats';
 import TraktList from './TraktList';
-import { getLocalStorage, localStorageKeys } from '~/utils/Storage';
 
 export default function TraktContent() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -13,7 +12,6 @@ export default function TraktContent() {
   const [posterConfig, setPosterConfig] = useState<any>(null);
 
   const getConfig = async () => {
-    console.log('TRAKT CREDS', getLocalStorage(localStorageKeys.traktCreds));
     try {
       setPosterConfig(await getTmdbImageConfig());
     } catch (e) {
@@ -57,7 +55,7 @@ export default function TraktContent() {
           />
         </Section.Content>
       </Section.Container>
-      <Section.Container>
+      {/*  <Section.Container>
         <Section.Header>
           <Section.Title>Recently Watched</Section.Title>
         </Section.Header>
@@ -81,7 +79,7 @@ export default function TraktContent() {
             url={traktUrls.favorites}
           />
         </Section.Content>
-      </Section.Container>
+      </Section.Container> */}
     </>
   );
 }

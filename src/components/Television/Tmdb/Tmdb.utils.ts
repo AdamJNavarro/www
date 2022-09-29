@@ -56,8 +56,11 @@ export async function getTmdbPosterUrl(
       },
     }
   );
-  const { posters } = await response.json();
-  return `${baseUrl}${posterSize}${posters[0].file_path}`;
+  const data = await response.json();
+  if (data.posters && data.posters.length) {
+    return `${baseUrl}${posterSize}${data.posters[0].file_path}`;
+  }
+  return '';
 }
 
 interface TmdbConfig {
