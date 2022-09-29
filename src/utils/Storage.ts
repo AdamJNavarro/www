@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 const localStorageKeys = {
   tmdbConfig: 'tmdb-config',
   spotifyCreds: 'spotify-creds',
+  traktCreds: 'trakt-creds',
 };
 
 function setLocalStorage(key: string, value: any) {

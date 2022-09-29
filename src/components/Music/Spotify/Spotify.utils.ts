@@ -71,7 +71,6 @@ const defaultFetchOpts: IncomingOptions = {
     request: async ({ options }) => {
       const creds = await getSpotifyCreds();
 
-      // eslint-disable-next-line no-param-reassign
       options.headers = {
         ...options.headers,
         Authorization: `Bearer ${creds.accessToken}`,

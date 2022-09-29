@@ -4,7 +4,6 @@ import TraktItem from './TraktItem';
 import { DataGrid } from '~/components/common/Grid';
 
 interface TraktListProps {
-  accessToken: string;
   url: string;
   placeholderCount: number;
   posterConfig: any;
@@ -12,7 +11,6 @@ interface TraktListProps {
 }
 
 export default function TraktList({
-  accessToken,
   url,
   placeholderCount,
   posterConfig,
@@ -23,11 +21,7 @@ export default function TraktList({
     error,
     data = [],
   } = useTraktListFetch({
-    opts: {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    },
+    opts: {},
     vars: {
       url,
       limit: itemLimit,

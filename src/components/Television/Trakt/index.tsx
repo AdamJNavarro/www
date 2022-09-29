@@ -6,37 +6,28 @@ import { traktUrls } from './Trakt.utils';
 import TraktStats from './TraktStats';
 import TraktList from './TraktList';
 
-const TRAKT_ACCESS_TOKEN = process.env.NEXT_PUBLIC_TRAKT_ACCESS_TOKEN;
-
 export default function TraktContent() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>('');
-  const [token, setToken] = useState<string>('');
   const [posterConfig, setPosterConfig] = useState<any>(null);
 
-  const getToken = async () => {
+  const getConfig = async () => {
     try {
-      /* const res = await getTraktAccessToken();
-      if (res.error) throw res.error;
-      if (res.data.access_token) {
-        setToken(res.data.access_token);
-      }*/
-      setToken(TRAKT_ACCESS_TOKEN);
       setPosterConfig(await getTmdbImageConfig());
     } catch (e) {
-      setError('An error occurred getting data from Trakt.');
+      setError('An error occurred getting Tmdb Config.');
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    getToken();
+    getConfig();
   }, []);
 
-  if (error) return <Title>Trakt Error</Title>;
+  if (error) return <Title>TMDB Error</Title>;
 
-  if (loading) return <Title>Trakt Loading</Title>;
+  if (loading) return <Title>TMDB Loading</Title>;
 
   return (
     <>
@@ -45,7 +36,7 @@ export default function TraktContent() {
           <Section.Title>Lifetime Stats</Section.Title>
         </Section.Header>
         <Section.Content>
-          <TraktStats accessToken={token} />
+          <TraktStats />
         </Section.Content>
       </Section.Container>
       <Section.Container>
@@ -58,7 +49,6 @@ export default function TraktContent() {
         </Section.Header>
         <Section.Content>
           <TraktList
-            accessToken={token}
             posterConfig={posterConfig}
             placeholderCount={2}
             url={traktUrls.currentlyWatching}
@@ -71,7 +61,6 @@ export default function TraktContent() {
         </Section.Header>
         <Section.Content>
           <TraktList
-            accessToken={token}
             posterConfig={posterConfig}
             placeholderCount={3}
             url={traktUrls.recentlyWatched}
@@ -85,7 +74,6 @@ export default function TraktContent() {
         </Section.Header>
         <Section.Content>
           <TraktList
-            accessToken={token}
             posterConfig={posterConfig}
             placeholderCount={3}
             url={traktUrls.favorites}
