@@ -23,18 +23,8 @@ function nFormatter(num: number, digits: number) {
   return (num / si[i].value).toFixed(digits).replace(rx, '$1') + si[i].symbol;
 }
 
-export default function FavoriteArtists({ access_token }: any) {
-  const {
-    loading,
-    error,
-    data = [],
-  } = useSpotifyArtistsFetch({
-    opts: {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
-      },
-    },
-  });
+export default function FavoriteArtists() {
+  const { loading, error, data = [] } = useSpotifyArtistsFetch({});
 
   return (
     <SpotifyGrid loading={loading} error={error} placeholderCount={10}>

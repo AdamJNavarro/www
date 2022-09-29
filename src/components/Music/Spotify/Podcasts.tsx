@@ -2,18 +2,8 @@ import SpotifyGrid from './SpotifyGrid';
 import SpotifyItem from './SpotifyItem';
 import { useSpotifyPodcastsFetch } from './Spotify.utils';
 
-export default function FavoritePodcasts({ access_token }: any) {
-  const {
-    loading,
-    error,
-    data = [],
-  } = useSpotifyPodcastsFetch({
-    opts: {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
-      },
-    },
-  });
+export default function FavoritePodcasts() {
+  const { loading, error, data = [] } = useSpotifyPodcastsFetch({});
 
   return (
     <SpotifyGrid loading={loading} error={error} placeholderCount={4}>

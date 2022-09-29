@@ -4,17 +4,12 @@ import { useSpotifyTracksFetch } from './Spotify.utils';
 
 const SPOTIFY_NUM_OF_TRACKS = 6;
 
-export default function RecentlyLikedTracks({ access_token }: any) {
+export default function RecentlyLikedTracks() {
   const {
     loading,
     error,
     data = [],
   } = useSpotifyTracksFetch({
-    opts: {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
-      },
-    },
     vars: {
       num: SPOTIFY_NUM_OF_TRACKS,
     },
