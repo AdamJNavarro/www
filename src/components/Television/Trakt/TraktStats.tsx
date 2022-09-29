@@ -3,7 +3,7 @@ import { Hourglass, Movie, Video } from 'tabler-icons-react';
 import { Stat, StatCard } from '~/components/common/Stats';
 import { useTraktStatsFetch } from './Trakt.utils';
 
-export default function TraktStats({ accessToken }: { accessToken: string }) {
+export default function TraktStats() {
   const {
     loading,
     error,
@@ -13,11 +13,7 @@ export default function TraktStats({ accessToken }: { accessToken: string }) {
       minutes: 0,
     },
   } = useTraktStatsFetch({
-    opts: {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    },
+    opts: {},
   });
 
   const stats: Stat[] = [

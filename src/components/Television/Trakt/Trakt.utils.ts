@@ -1,6 +1,14 @@
+/* eslint-disable no-param-reassign */
 import useFetch, { IncomingOptions } from 'use-http';
 
-import { buildUseFetchOpts, CustomFetchArgs, goFetch } from '~/utils';
+import { CustomFetchArgs, goFetch } from '~/utils';
+import {
+  areCredsExpired,
+  getLocalStorage,
+  LocalCreds,
+  localStorageKeys,
+  storeLocalCreds,
+} from '~/utils/Storage';
 import {
   TraktListEntry,
   TraktListFetchVars,
@@ -24,8 +32,8 @@ export const traktUrls = {
   stats: `${TRAKT_USER_BASE_URL}/stats`,
 };
 
-export function getTraktAccessToken() {
-  return goFetch({
+async function generateTraktCreds(refresh_token: string): Promise<LocalCreds> {
+  const res = await goFetch({
     url: TRAKT_TOKEN_URL,
     config: {
       method: 'POST',
@@ -37,27 +45,58 @@ export function getTraktAccessToken() {
         client_secret: TRAKT_CLIENT_SECRET,
         redirect_uri: 'http://localhost:3000',
         grant_type: 'refresh_token',
-        refresh_token: TRAKT_REFRESH_TOKEN,
+        refresh_token,
       }),
     },
   });
+
+  //if (res.error) return;
+  const creds = storeLocalCreds({
+    storageKey: localStorageKeys.traktCreds,
+    accessToken: res.data.access_token,
+    expiresIn: res.data.expires_in,
+    refreshToken: res.data.refresh_token,
+  });
+
+  return creds;
+}
+
+async function getTraktCreds(): Promise<LocalCreds> {
+  const creds = getLocalStorage(localStorageKeys.traktCreds);
+  if (!creds) {
+    return generateTraktCreds(TRAKT_REFRESH_TOKEN);
+  }
+
+  if (areCredsExpired(creds)) {
+    return generateTraktCreds(creds.refreshToken);
+  }
+  return creds;
 }
 
 const defaultFetchOpts: IncomingOptions = {
-  headers: {
-    'Content-Type': 'application/json',
-    'trakt-api-key': TRAKT_CLIENT_ID,
-    'trakt-api-version': '2',
+  interceptors: {
+    request: async ({ options }) => {
+      const creds = await getTraktCreds();
+
+      options.headers = {
+        ...options.headers,
+        Authorization: `Bearer ${creds.accessToken}`,
+        'Content-Type': 'application/json',
+        'trakt-api-key': TRAKT_CLIENT_ID,
+        'trakt-api-version': '2',
+      };
+      return options;
+    },
   },
 };
 
 export function useTraktStatsFetch({ opts }: CustomFetchArgs) {
-  const options = buildUseFetchOpts(opts, defaultFetchOpts);
   return useFetch<TraktStatTotals>(
     traktUrls.stats,
     {
-      ...options,
+      ...opts,
       interceptors: {
+        ...defaultFetchOpts.interceptors,
         response: async ({ response }) => {
           const { shows, episodes } = response.data;
           response.data = {
@@ -77,12 +116,12 @@ export function useTraktListFetch({
   opts,
   vars,
 }: CustomFetchArgs<TraktListFetchVars>) {
-  const options = buildUseFetchOpts(opts, defaultFetchOpts);
   return useFetch<TraktShow[]>(
     vars.url,
     {
-      ...options,
+      ...opts,
       interceptors: {
+        ...defaultFetchOpts.interceptors,
         response: async ({ response }) => {
           response.data = response.data
             .slice(0, vars.limit || response.data.length)
