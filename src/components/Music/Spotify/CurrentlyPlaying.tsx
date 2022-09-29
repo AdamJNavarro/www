@@ -11,19 +11,13 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export default function CurrentlyPlaying({ access_token }: any) {
+export default function CurrentlyPlaying() {
   const { classes } = useStyles();
   const {
     loading,
     error,
     data = { isActive: false, playingItem: null },
-  } = useSpotifyCurrentlyPlaying({
-    opts: {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
-      },
-    },
-  });
+  } = useSpotifyCurrentlyPlaying({});
 
   if (loading) return null;
 

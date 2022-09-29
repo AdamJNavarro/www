@@ -1,5 +1,13 @@
-import useFetch from 'use-http';
+/* eslint-disable no-param-reassign */
+import useFetch, { IncomingOptions } from 'use-http';
 import { CustomFetchArgs, goFetch } from '~/utils';
+import {
+  areCredsExpired,
+  getLocalStorage,
+  LocalCreds,
+  localStorageKeys,
+  storeLocalCreds,
+} from '~/utils/Storage';
 import {
   SpotifyArtist,
   SpotifyCurrentlyPlaying,
@@ -21,8 +29,8 @@ const SPOTIFY_ARTISTS_URL = `${SPOTIFY_USER_BASE_URL}/following?type=artist`;
 const SPOTIFY_PODCASTS_URL = `${SPOTIFY_USER_BASE_URL}/shows`;
 const SPOTIFY_TRACKS_URL = `${SPOTIFY_USER_BASE_URL}/tracks`;
 
-export function getSpotifyAccessToken() {
-  return goFetch({
+async function generateSpotifyCreds(): Promise<LocalCreds> {
+  const res = await goFetch({
     url: SPOTIFY_TOKEN_URL,
     config: {
       method: 'POST',
@@ -36,7 +44,42 @@ export function getSpotifyAccessToken() {
       }),
     },
   });
+  //if (res.error) return;
+  const creds = storeLocalCreds({
+    storageKey: localStorageKeys.spotifyCreds,
+    accessToken: res.data.access_token,
+    expiresIn: res.data.expires_in,
+  });
+
+  return creds;
 }
+
+async function getSpotifyCreds(): Promise<LocalCreds> {
+  const creds = getLocalStorage(localStorageKeys.spotifyCreds);
+  if (!creds) {
+    return generateSpotifyCreds();
+  }
+
+  if (areCredsExpired(creds)) {
+    return generateSpotifyCreds();
+  }
+  return creds;
+}
+
+const defaultFetchOpts: IncomingOptions = {
+  interceptors: {
+    request: async ({ options }) => {
+      const creds = await getSpotifyCreds();
+
+      // eslint-disable-next-line no-param-reassign
+      options.headers = {
+        ...options.headers,
+        Authorization: `Bearer ${creds.accessToken}`,
+      };
+      return options;
+    },
+  },
+};
 
 export function useSpotifyCurrentlyPlaying({ opts }: CustomFetchArgs) {
   return useFetch<SpotifyCurrentlyPlaying>(
@@ -78,6 +121,7 @@ export function useSpotifyArtistsFetch({ opts }: CustomFetchArgs) {
     {
       ...opts,
       interceptors: {
+        ...defaultFetchOpts.interceptors,
         response: async ({ response }) => {
           response.data = response.data.artists.items.map((item: any) => {
             const { followers, genres, id, images, external_urls, name } = item;
@@ -104,6 +148,7 @@ export function useSpotifyPodcastsFetch({ opts }: CustomFetchArgs) {
     {
       ...opts,
       interceptors: {
+        ...defaultFetchOpts.interceptors,
         response: async ({ response }) => {
           response.data = response.data.items.map((item: any) => {
             const { id, images, name, external_urls, total_episodes, publisher } =
@@ -136,6 +181,7 @@ export function useSpotifyTracksFetch({
     {
       ...opts,
       interceptors: {
+        ...defaultFetchOpts.interceptors,
         response: async ({ response }) => {
           response.data = response.data.items.map((item: any) => {
             const { artists, album, id, name, external_urls } = item.track;
