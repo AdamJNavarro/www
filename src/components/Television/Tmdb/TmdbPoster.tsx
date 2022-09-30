@@ -1,16 +1,19 @@
-import { Image } from '@mantine/core';
-import { useEffect, useState } from 'react';
-import { getTmdbPosterUrl } from './Tmdb.utils';
+import Image from 'next/image';
 
-export default function TmdbPoster({ posterId, posterConfig }: any) {
-  const posterSize = posterConfig.sizes.sm;
+import { useEffect, useState } from 'react';
+import { getTvPoster } from './Tmdb.utils';
+
+interface TmdbPosterProps {
+  posterId: number;
+  title: string;
+}
+
+export default function TmdbPoster({ posterId, title }: TmdbPosterProps) {
   const [posterUrl, setPosterUrl] = useState<string>('');
 
   useEffect(() => {
     (async () => {
-      setPosterUrl(
-        await getTmdbPosterUrl(posterId, posterSize, posterConfig.baseUrl)
-      );
+      setPosterUrl(await getTvPoster(posterId));
     })();
   }, []);
 
@@ -19,9 +22,10 @@ export default function TmdbPoster({ posterId, posterConfig }: any) {
       style={{
         width: 64,
         height: 64 * 1.5,
+        position: 'relative',
       }}
     >
-      <Image src={posterUrl} fit="cover" radius="sm" />
+      <Image src={posterUrl} layout="fill" alt={`${title}-poster`} />
     </div>
   );
 }

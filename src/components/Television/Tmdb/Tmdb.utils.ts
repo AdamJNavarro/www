@@ -1,69 +1,22 @@
-import { localStorageKeys } from '~/utils/Storage';
+import { MovieDb } from 'moviedb-promise';
 
 const TMDB_API_KEY = process.env.NEXT_PUBLIC_TMDB_KEY;
-const TMBD_CONFIG_URL = `https://api.themoviedb.org/3/configuration?api_key=${TMDB_API_KEY}`;
+const moviedb = new MovieDb(TMDB_API_KEY);
+const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p';
 
-async function getTmdbConfig(): Promise<any> {
-  const resp = await fetch(TMBD_CONFIG_URL, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8',
-    },
-  });
-
-  const isJson = resp.headers.get('content-type')?.includes('application/json');
-  const data = isJson ? await resp.json() : null;
-
-  if (!resp.ok) {
-    const error = (data && data.message) || resp.status;
-    return error;
+export async function getMovieConfig() {
+  try {
+    const res = await moviedb.configuration();
+    return res;
+  } catch (e) {
+    return e;
   }
-
-  localStorage.setItem(localStorageKeys.tmdbConfig, JSON.stringify(data.images));
-
-  return data;
 }
 
-export async function getTmdbImageConfig() {
-  const config = JSON.parse(localStorage.getItem(localStorageKeys.tmdbConfig));
-  if (!config) {
-    await getTmdbConfig();
-    getTmdbImageConfig();
-  }
-
-  const { secure_base_url, poster_sizes } = config;
-  return {
-    baseUrl: `${secure_base_url}w`,
-    sizes: {
-      sm: poster_sizes[0].substring(1),
-      md: poster_sizes[1].substring(1),
-      lg: poster_sizes[2].substring(1),
-    },
-  };
-}
-
-export async function getTmdbPosterUrl(
-  posterId: any,
-  posterSize: number,
-  baseUrl: string
-): Promise<string> {
-  const response = await fetch(
-    `https://api.themoviedb.org/3/tv/${posterId}/images?api_key=${TMDB_API_KEY}&language=en`,
-    {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-    }
-  );
-  const data = await response.json();
+export async function getTvPoster(id: number): Promise<string> {
+  const data = await moviedb.tvImages({ id });
   if (data.posters && data.posters.length) {
-    return `${baseUrl}${posterSize}${data.posters[0].file_path}`;
+    return `${TMDB_IMAGE_BASE_URL}/original${data.posters[0].file_path}`;
   }
   return '';
-}
-
-interface TmdbConfig {
-  images: any;
-  change_keys: string[];
 }
