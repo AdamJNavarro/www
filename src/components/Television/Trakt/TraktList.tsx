@@ -6,14 +6,12 @@ import { DataGrid } from '~/components/common/Grid';
 interface TraktListProps {
   url: string;
   placeholderCount: number;
-  posterConfig: any;
   itemLimit?: number;
 }
 
 export default function TraktList({
   url,
   placeholderCount,
-  posterConfig,
   itemLimit,
 }: TraktListProps) {
   const {
@@ -47,11 +45,7 @@ export default function TraktList({
       placeholderCount={placeholderCount}
     >
       {data.map((show, index) => (
-        <TraktItem
-          key={`${show.id}-${index}`}
-          posterConfig={posterConfig}
-          {...show}
-        />
+        <TraktItem key={`${show.id}-${index}`} {...show} />
       ))}
     </DataGrid>
   );

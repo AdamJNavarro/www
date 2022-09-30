@@ -3,13 +3,7 @@ import ProductItem from '~/components/Products/ProductItem';
 import TmdbPoster from '../Tmdb/TmdbPoster';
 import { TraktShow } from './Trakt.types';
 
-export default function TraktItem({
-  traktUrl,
-  title,
-  posterConfig,
-  posterId,
-  year,
-}: TraktShow & { posterConfig: any }) {
+export default function TraktItem({ traktUrl, title, posterId, year }: TraktShow) {
   return (
     <ProductItem
       label={
@@ -23,7 +17,7 @@ export default function TraktItem({
         </Text>
       }
       url={traktUrl}
-      leadElement={<TmdbPoster posterId={posterId} posterConfig={posterConfig} />}
+      leadElement={<TmdbPoster posterId={posterId} title={title} />}
     />
   );
 }
