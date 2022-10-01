@@ -8,6 +8,7 @@ import {
   BrandMedium,
   BrandReddit,
   BrandSpotify,
+  BrandStrava,
   BrandTwitch,
   BrandTwitter,
   DeviceTvOld,
@@ -32,6 +33,7 @@ const SocialUrls = {
   rawg: 'https://rawg.io/@adamjnavarro',
   reddit: 'https://reddit.com/user/adamjnav',
   spotify: 'https://open.spotify.com/user/adamjosephnavarro',
+  strava: `https://www.strava.com/athletes/${process.env.NEXT_PUBLIC_STRAVA_ATHLETE_ID}`,
   trakt: 'https://trakt.tv/users/adamjnavarro',
   twitch: 'https://twitch.tv/adamjnavarro',
   twitter: 'https://twitter.com/AdamJNavarro',
@@ -115,6 +117,12 @@ const SocialPlatforms: SocialPlatformProps[] = [
     href: SocialUrls.reddit,
     label: 'Reddit',
     show: false,
+  },
+  {
+    icon: BrandStrava,
+    href: SocialUrls.strava,
+    label: 'Strava',
+    show: true,
   },
   {
     icon: BrandSpotify,
