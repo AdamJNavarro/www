@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import useFetch, { IncomingOptions } from 'use-http';
-import { CustomFetchArgs, goFetch } from '~/utils';
+import { buildNamesString, CustomFetchArgs, goFetch } from '~/utils';
 import {
   areCredsExpired,
   getLocalStorage,
@@ -98,9 +98,7 @@ export function useSpotifyCurrentlyPlaying({ opts }: CustomFetchArgs) {
           if (currently_playing_type === 'track') {
             const { artists, name, external_urls } = item;
             const playingItem = {
-              title: `${name} by ${artists
-                .map((_artist: any) => _artist.name)
-                .join(', ')}`,
+              title: `${name} by ${buildNamesString(artists, 'name')}`,
               href: external_urls.spotify,
             };
             response.data = { isActive: true, playingItem };
@@ -185,7 +183,7 @@ export function useSpotifyTracksFetch({
           response.data = response.data.items.map((item: any) => {
             const { artists, album, id, name, external_urls } = item.track;
             return {
-              artist: artists.map((_artist: any) => _artist.name).join(', '),
+              artist: buildNamesString(artists, 'name'),
               id,
               image: album.images[0].url,
               name,

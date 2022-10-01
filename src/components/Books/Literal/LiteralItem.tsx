@@ -1,9 +1,9 @@
 import { Text, Image } from '@mantine/core';
 import ProductItem from '~/components/Products/ProductItem';
+import { buildNamesString } from '~/utils';
 
 import { LiteralReadingState } from './Literal.types';
-
-const LITERAL_BOOK_ENDPOINT = 'https://literal.club/book';
+import { buildLiteralUrl } from './Literal.utils';
 
 type LiteralItemProps = LiteralReadingState & { children?: any };
 
@@ -18,10 +18,10 @@ export default function LiteralItem({ book, children }: LiteralItemProps) {
       }
       subLabel={
         <Text color="dimmed" lineClamp={2} weight={500} size="md">
-          {authors.map((_artist: any) => _artist.name).join(', ')}
+          {buildNamesString(authors, 'name')}
         </Text>
       }
-      url={`${LITERAL_BOOK_ENDPOINT}/${slug}`}
+      url={buildLiteralUrl(slug)}
       leadElement={
         <Image src={cover} height={64 * 1.5} width={64} fit="contain" radius="sm" />
       }
