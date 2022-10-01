@@ -30,8 +30,18 @@ interface GetBooksData {
   myReadingStates: LiteralReadingState[];
 }
 
+interface GetLastReadBookData {
+  booksByReadingStateAndProfile: LiteralBook[];
+}
+
 interface GetHighlightData {
   momentsByHandleAndBookId: any;
 }
 
-export type { LiteralStatus, LiteralReadingState, GetBooksData, GetHighlightData };
+export type {
+  LiteralStatus,
+  LiteralReadingState,
+  GetBooksData,
+  GetLastReadBookData,
+  GetHighlightData,
+};
