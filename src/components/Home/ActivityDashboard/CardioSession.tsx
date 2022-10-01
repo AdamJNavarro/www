@@ -1,18 +1,13 @@
-import { Text, useMantineTheme } from '@mantine/core';
 import dayjs from 'dayjs';
-
-import DashboardCard from './DashboardCard';
+import { buildStravaUrl } from '~/components/Fitness/Fitness.utils';
+import Dashboard from './Dashboard';
 
 const session = {
-  distance: 24931.4,
-  elapsed_time: 4500,
-  type: 'Ride',
-  sport_type: 'MountainBikeRide',
-  id: 154504250376823,
-  start_date: '2018-05-02T12:15:09Z',
-  start_date_local: '2018-05-02T05:15:09Z',
-  timezone: '(GMT-08:00) America/Los_Angeles',
-  utc_offset: -25200,
+  distance: 1629.4,
+  elapsed_time: 544,
+  sport_type: 'Run',
+  id: 7896652231,
+  start_date: '2022-10-01T21:32:05Z',
 };
 
 function getSessionType(type: string): string {
@@ -53,22 +48,19 @@ function getSessionDate(date: any): string {
 }
 
 export default function CardioSession() {
-  const theme = useMantineTheme();
-
   return (
-    <DashboardCard
+    <Dashboard.Card
       label="Cardio Session"
-      href="/"
+      href={buildStravaUrl(session.id)}
       loading={false}
       logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1664650740/logos/strava.png"
     >
-      <Text weight={500} size={theme.fontSizes.lg}>
-        {getSessionType(session.sport_type)}
-      </Text>
-      <Text size="md" weight={500}>
-        {getSessionDistance(session.distance)} | {getSessionDuration(4536)} |{' '}
+      <Dashboard.Title>{getSessionType(session.sport_type)}</Dashboard.Title>
+      <Dashboard.Details>
+        {getSessionDistance(session.distance)} |{' '}
+        {getSessionDuration(session.elapsed_time)} |{' '}
         {getSessionDate(session.start_date)}
-      </Text>
-    </DashboardCard>
+      </Dashboard.Details>
+    </Dashboard.Card>
   );
 }

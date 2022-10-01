@@ -9,6 +9,10 @@ const STRAVA_TOKEN_URL = 'https://www.strava.com/api/v3/oauth/token';
 const STRAVA_STATS_URL = `https://www.strava.com/api/v3/athletes/${STRAVA_ATHLETE_ID}/stats`;
 const STRAVA_ACTIVITIES_URL = 'https://www.strava.com/api/v3/athlete/activities';
 
+export function buildStravaUrl(id: number): string {
+  return `https://www.strava.com/activities/${id}`;
+}
+
 export function getStravaAccessToken() {
   return goFetch({
     url: STRAVA_TOKEN_URL,

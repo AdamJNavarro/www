@@ -1,5 +1,6 @@
+import { Space } from '@mantine/core';
 import { useRef } from 'react';
-import { Page } from '../common';
+import { Page, Section } from '../common';
 import TitleBar from '../Navigation/TitleBar';
 import ActivityDashboard from './ActivityDashboard';
 import HomeShowcase from './HomeShowcase';
@@ -14,8 +15,19 @@ export default function Home() {
       {/* Keep this div to trigger the magic scroll */}
       <div style={{ padding: '1rem' }} ref={titleRef} />
       <Page.Content>
-        {/* <HomeShowcase /> */}
-        <ActivityDashboard />
+        <HomeShowcase />
+        <Space h={75} />
+        <Section.Container>
+          <Section.Header>
+            <Section.Title style={{ textAlign: 'center' }}>
+              Latest Activity
+            </Section.Title>
+          </Section.Header>
+          <Section.Content>
+            <ActivityDashboard />
+          </Section.Content>
+        </Section.Container>
+        {/* <ActivityDashboard /> */}
       </Page.Content>
     </Page.Container>
   );
