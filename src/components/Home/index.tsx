@@ -11,7 +11,7 @@ export default function Home() {
   const scrollRef = useRef(null);
   const titleRef = useRef(null);
 
-  /* const { data, error } = useSWR('/api/spotify/liked-tracks?limit=5', fetcher);
+  /* const { data, error } = useSWR('/api/trakt/favorites', fetcher);
   console.log('DATA', data); */
 
   return (

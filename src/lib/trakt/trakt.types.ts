@@ -37,4 +37,12 @@ interface TraktListFetchVars {
   limit?: number;
 }
 
-export type { TraktListEntry, TraktListFetchVars, TraktShow, TraktStatTotals };
+type TraktListEndpoints = 'currently-watching' | 'favorites' | 'watched';
+
+export type {
+  TraktListEndpoints,
+  TraktListEntry,
+  TraktListFetchVars,
+  TraktShow,
+  TraktStatTotals,
+};

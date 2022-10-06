@@ -1,5 +1,4 @@
 import { Section } from '~/components/common';
-import { traktUrls } from './Trakt.utils';
 import TraktStats from './TraktStats';
 import TraktList from './TraktList';
 
@@ -23,7 +22,7 @@ export default function TraktContent() {
           </Section.Description>
         </Section.Header>
         <Section.Content>
-          <TraktList placeholderCount={4} url={traktUrls.currentlyWatching} />
+          <TraktList placeholderCount={4} listId="currently-watching" />
         </Section.Content>
       </Section.Container>
       <Section.Container>
@@ -31,11 +30,7 @@ export default function TraktContent() {
           <Section.Title>Recently Watched</Section.Title>
         </Section.Header>
         <Section.Content>
-          <TraktList
-            placeholderCount={3}
-            url={traktUrls.recentlyWatched}
-            itemLimit={3}
-          />
+          <TraktList placeholderCount={3} listId="watched" itemLimit={3} />
         </Section.Content>
       </Section.Container>
       <Section.Container>
@@ -43,7 +38,7 @@ export default function TraktContent() {
           <Section.Title>My Favorites</Section.Title>
         </Section.Header>
         <Section.Content>
-          <TraktList placeholderCount={5} url={traktUrls.favorites} />
+          <TraktList placeholderCount={5} listId="favorites" />
         </Section.Content>
       </Section.Container>
     </>

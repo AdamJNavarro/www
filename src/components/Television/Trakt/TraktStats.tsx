@@ -1,20 +1,10 @@
 import { SimpleGrid, Skeleton } from '@mantine/core';
 import { Hourglass, Movie, Video } from 'tabler-icons-react';
 import { Stat, StatCard } from '~/components/common/Stats';
-import { useTraktStatsFetch } from './Trakt.utils';
+import { useTraktStats } from '~/lib/trakt';
 
 export default function TraktStats() {
-  const {
-    loading,
-    error,
-    data = {
-      shows: 0,
-      episodes: 0,
-      minutes: 0,
-    },
-  } = useTraktStatsFetch({
-    opts: {},
-  });
+  const { error, data } = useTraktStats();
 
   const stats: Stat[] = [
     {
@@ -39,7 +29,7 @@ export default function TraktStats() {
   return (
     <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
       {stats.map((stat) => (
-        <Skeleton key={stat.label} visible={loading} radius="md">
+        <Skeleton key={stat.label} visible={data.shows === 0} radius="md">
           <StatCard {...stat} />
         </Skeleton>
       ))}

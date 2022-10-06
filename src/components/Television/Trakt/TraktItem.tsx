@@ -1,7 +1,7 @@
 import { Text } from '@mantine/core';
 import ProductItem from '~/components/Products/ProductItem';
+import { TraktShow } from '~/lib/trakt/trakt.types';
 import TraktPoster from './TraktPoster';
-import { TraktShow } from './Trakt.types';
 
 export default function TraktItem({ traktUrl, title, posterId, year }: TraktShow) {
   return (
