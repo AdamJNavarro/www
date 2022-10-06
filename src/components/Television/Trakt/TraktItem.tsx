@@ -1,6 +1,6 @@
 import { Text } from '@mantine/core';
 import ProductItem from '~/components/Products/ProductItem';
-import TmdbPoster from '../Tmdb/TmdbPoster';
+import TraktPoster from './TraktPoster';
 import { TraktShow } from './Trakt.types';
 
 export default function TraktItem({ traktUrl, title, posterId, year }: TraktShow) {
@@ -17,7 +17,7 @@ export default function TraktItem({ traktUrl, title, posterId, year }: TraktShow
         </Text>
       }
       url={traktUrl}
-      leadElement={<TmdbPoster posterId={posterId} title={title} />}
+      leadElement={<TraktPoster posterId={posterId} title={title} />}
     />
   );
 }
