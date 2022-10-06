@@ -1,6 +1,5 @@
 import { createStyles, Group, MediaQuery, Text } from '@mantine/core';
 import { BrandSpotify } from 'tabler-icons-react';
-import { useSpotifyCurrentlyPlaying } from './Spotify.utils';
 
 const useStyles = createStyles((theme) => ({
   title: {
@@ -13,15 +12,8 @@ const useStyles = createStyles((theme) => ({
 
 export default function CurrentlyPlaying() {
   const { classes } = useStyles();
-  const {
-    loading,
-    error,
-    data = { isActive: false, playingItem: null },
-  } = useSpotifyCurrentlyPlaying({});
 
-  if (loading) return null;
-
-  if (error) return null;
+  const data = { isActive: false, playingItem: null };
 
   return (
     <MediaQuery smallerThan="md" styles={{ display: 'none' }}>

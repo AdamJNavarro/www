@@ -1,29 +1,19 @@
-import { useSpotifyTracksFetch } from '~/components/Music/Spotify/Spotify.utils';
+import { useSpotifyTracks } from '~/lib/spotify';
 import Dashboard from './Dashboard';
 
 export default function SongLiked() {
-  const {
-    loading,
-    error,
-    data = [],
-  } = useSpotifyTracksFetch({
-    vars: {
-      num: 1,
-    },
-  });
+  const { data, error } = useSpotifyTracks({ limit: 1 });
 
   return (
     <Dashboard.Card
       label="Song Liked"
-      href={data.length === 0 ? '/' : `${data[0].url}`}
-      loading={loading}
+      href={!data ? '/' : `${data[0].url}`}
+      loading={!data}
       logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1660509695/logos/spotify.png"
     >
-      <Dashboard.Title>
-        {data.length === 0 ? 'Now' : `${data[0].name}`}
-      </Dashboard.Title>
+      <Dashboard.Title>{!data ? 'Now' : `${data[0].name}`}</Dashboard.Title>
       <Dashboard.Details>
-        {data.length === 0 ? 'Loading...' : `${data[0].artist}`}
+        {!data ? 'Loading...' : `${data[0].artist}`}
       </Dashboard.Details>
     </Dashboard.Card>
   );
