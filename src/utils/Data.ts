@@ -1,5 +1,3 @@
-import { IncomingOptions } from 'use-http';
-
 interface GoFetchArgs {
   url: string;
   config: RequestInit;
@@ -8,11 +6,6 @@ interface GoFetchArgs {
 interface GoFetchPayload {
   data?: any;
   error?: Error;
-}
-
-export interface CustomFetchArgs<TVars = any> {
-  opts?: IncomingOptions;
-  vars?: TVars;
 }
 
 function makeError(name: string | number, message: string) {
@@ -39,24 +32,6 @@ export async function goFetch({
 
   return {
     data,
-  };
-}
-
-export function buildUseFetchOpts(
-  opts: IncomingOptions,
-  defaultOpts?: IncomingOptions
-): IncomingOptions {
-  return {
-    ...defaultOpts,
-    ...opts,
-    headers: {
-      ...defaultOpts.headers,
-      ...opts.headers,
-    },
-    interceptors: {
-      ...defaultOpts.interceptors,
-      ...opts.interceptors,
-    },
   };
 }
 
