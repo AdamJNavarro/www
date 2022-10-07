@@ -13,7 +13,7 @@ const refresh_token = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
 // Token Scopes:
 // 'playlist-read-private, user-library-read, user-follow-read, user-read-currently-playing, user-read-recently-played, user-top-read';
 
-const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
+const basic = btoa(`${client_id}:${client_secret}`);
 const SPOTIFY_TOKEN_URL = 'https://accounts.spotify.com/api/token';
 
 export async function getSpotifyAccessToken(): Promise<any> {
