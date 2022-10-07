@@ -7,12 +7,16 @@ export default function SongLiked() {
   return (
     <Dashboard.Card
       label="Song Liked"
-      href={!data ? '/' : '/'}
-      loading={!data}
+      href={data.tracks.length === 0 ? '/' : `${data.tracks[0].url}`}
+      loading={data.tracks.length === 0}
       logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1660509695/logos/spotify.png"
     >
-      <Dashboard.Title>{!data ? 'Now' : '/'}</Dashboard.Title>
-      <Dashboard.Details>{!data ? 'Loading...' : '/'}</Dashboard.Details>
+      <Dashboard.Title>
+        {data.tracks.length === 0 ? 'Now' : `${data.tracks[0].name}`}
+      </Dashboard.Title>
+      <Dashboard.Details>
+        {data.tracks.length === 0 ? 'Loading...' : `${data.tracks[0].artist}`}
+      </Dashboard.Details>
     </Dashboard.Card>
   );
 }
