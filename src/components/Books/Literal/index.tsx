@@ -1,8 +1,8 @@
 import { useQuery } from '@apollo/client';
 import { useState } from 'react';
-import { GET_BOOKS_QUERY } from '~/gql/queries/literal';
+import { GET_BOOKS_QUERY } from '~/lib/literal/gql/queries';
+import { GetBooksData, LiteralReadingState } from '~/lib/literal/literal.types';
 import CurrentReading from './CurrentReading';
-import { GetBooksData, LiteralReadingState } from './Literal.types';
 import PastReading from './PastReading';
 
 export default function LiteralContent() {

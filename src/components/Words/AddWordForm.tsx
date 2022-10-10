@@ -1,4 +1,3 @@
-import { useMutation } from '@apollo/client';
 import {
   Button,
   NativeSelect,
@@ -8,15 +7,12 @@ import {
   TextInput,
 } from '@mantine/core';
 import { useState } from 'react';
-import { CREATE_WORD_MUTATION } from '~/gql/queries/words';
 
 export default function AddWordForm() {
   const [spelling, setSpelling] = useState<string>('');
   const [definition, setDefinition] = useState<string>('');
   const [partOfSpeech, setPartOfSpeech] = useState<string>('');
   const [adminKey, setAdminKey] = useState<string>('');
-
-  const [createWord, { error, loading }] = useMutation(CREATE_WORD_MUTATION);
 
   return (
     <Stack justify="center" spacing="lg">

@@ -1,5 +1,5 @@
 import { Section } from '~/components/common';
-import { LiteralReadingState } from './Literal.types';
+import { LiteralReadingState } from '~/lib/literal/literal.types';
 import LiteralItem from './LiteralItem';
 import LiteralList from './LiteralList';
 

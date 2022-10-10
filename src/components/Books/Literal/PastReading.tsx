@@ -1,6 +1,6 @@
 import { Badge } from '@mantine/core';
 import { Section } from '~/components/common';
-import { LiteralReadingState, LiteralStatus } from './Literal.types';
+import { LiteralReadingState, LiteralStatus } from '~/lib/literal/literal.types';
 import LiteralItem from './LiteralItem';
 import LiteralList from './LiteralList';
 

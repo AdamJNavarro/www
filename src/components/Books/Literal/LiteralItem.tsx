@@ -1,9 +1,8 @@
 import { Text, Image } from '@mantine/core';
 import ProductItem from '~/components/Products/ProductItem';
+import { buildLiteralUrl } from '~/lib/literal';
+import { LiteralReadingState } from '~/lib/literal/literal.types';
 import { buildNamesString } from '~/utils';
-
-import { LiteralReadingState } from './Literal.types';
-import { buildLiteralUrl } from './Literal.utils';
 
 type LiteralItemProps = LiteralReadingState & { children?: any };
 

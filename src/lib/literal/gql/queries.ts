@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import { BookPartsFragment, ReadingStatesFragment } from '../fragments/literal';
+import { BookPartsFragment, ReadingStatesFragment } from './fragments';
 
 const GET_BOOKS_QUERY = gql`
   query myReadingStates {
