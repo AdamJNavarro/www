@@ -10,7 +10,7 @@ import {
   ColorSchemeProvider,
   Global,
 } from '@mantine/core';
-import { client } from '~/libs/Apollo';
+import { client } from '~/lib/apollo';
 import SiteConfig from './SiteConfig';
 
 interface ProvidersProps {

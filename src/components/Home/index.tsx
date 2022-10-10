@@ -1,5 +1,6 @@
 import { Space } from '@mantine/core';
 import { useRef } from 'react';
+
 import { Page, Section } from '../common';
 import TitleBar from '../Navigation/TitleBar';
 import ActivityDashboard from './ActivityDashboard';

@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
 import { useEffect, useState } from 'react';
-import { getTvPoster } from './Tmdb.utils';
+import { getTvPoster } from '~/lib/tmdb';
 
-interface TmdbPosterProps {
+interface TraktPosterProps {
   posterId: number;
   title: string;
 }
 
-export default function TmdbPoster({ posterId, title }: TmdbPosterProps) {
+export default function TraktPoster({ posterId, title }: TraktPosterProps) {
   const [posterUrl, setPosterUrl] = useState<string>('');
 
   useEffect(() => {

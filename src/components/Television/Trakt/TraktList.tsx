@@ -1,29 +1,22 @@
-import { useTraktListFetch } from './Trakt.utils';
-
 import TraktItem from './TraktItem';
 import { DataGrid } from '~/components/common/Grid';
+import { useTraktList } from '~/lib/trakt';
+import { TraktListEndpoints } from '~/lib/trakt/trakt.types';
 
 interface TraktListProps {
-  url: string;
+  listId: TraktListEndpoints;
   placeholderCount: number;
   itemLimit?: number;
 }
 
 export default function TraktList({
-  url,
+  listId,
   placeholderCount,
   itemLimit,
 }: TraktListProps) {
-  const {
-    loading,
-    error,
-    data = [],
-  } = useTraktListFetch({
-    opts: {},
-    vars: {
-      url,
-      limit: itemLimit,
-    },
+  const { error, data } = useTraktList({
+    listId,
+    limit: itemLimit,
   });
 
   return (
@@ -40,11 +33,11 @@ export default function TraktList({
         ],
       }}
       error={error}
-      loading={loading}
+      loading={!data}
       placeholder={<div />}
       placeholderCount={placeholderCount}
     >
-      {data.map((show, index) => (
+      {data.shows.map((show, index) => (
         <TraktItem key={`${show.id}-${index}`} {...show} />
       ))}
     </DataGrid>

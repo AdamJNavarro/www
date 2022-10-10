@@ -1,5 +1,4 @@
-import useFetch from 'use-http';
-import { CustomFetchArgs, goFetch } from '~/utils';
+import { goFetch } from '~/utils';
 
 const STRAVA_CLIENT_ID = process.env.NEXT_PUBLIC_STRAVA_CLIENT_ID;
 const STRAVA_CLIENT_SECRET = process.env.NEXT_PUBLIC_STRAVA_CLIENT_SECRET;
@@ -32,16 +31,6 @@ export function getStravaAccessToken() {
   });
 }
 
-export function useStravaStatsFetch({ opts }: CustomFetchArgs) {
-  return useFetch<any>(
-    STRAVA_STATS_URL,
-    {
-      ...opts,
-    },
-    []
-  );
-}
-
 type StravaSport = 'Ride' | 'Run' | 'Walk';
 
 interface StravaActivity {
@@ -51,24 +40,4 @@ interface StravaActivity {
   elapsed_time: number;
   sport_type: StravaSport;
   start_date: string;
-}
-
-export function useStravaActivitiesFetch({ opts }: CustomFetchArgs) {
-  return useFetch<StravaActivity[]>(
-    STRAVA_ACTIVITIES_URL,
-    {
-      ...opts,
-    },
-    []
-  );
-}
-
-export function useStravaRecentActivityFetch({ opts }: CustomFetchArgs) {
-  return useFetch<StravaActivity[]>(
-    `${STRAVA_ACTIVITIES_URL}?per_page=1`,
-    {
-      ...opts,
-    },
-    []
-  );
 }

@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { buildStravaUrl } from '~/components/Fitness/Fitness.utils';
+import { buildStravaUrl } from '~/lib/strava';
 import Dashboard from './Dashboard';
 
 const session = {
