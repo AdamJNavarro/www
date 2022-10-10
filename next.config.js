@@ -12,8 +12,4 @@ module.exports = {
       'res.cloudinary.com',
     ],
   },
-  experimental: {
-    legacyBrowsers: false,
-    browsersListForSwc: true,
-  },
 };
