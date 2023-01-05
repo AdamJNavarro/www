@@ -38,6 +38,7 @@ export function LinkElement({
   return (
     <Element
       component={NextLink}
+      legacyBehavior
       href={href}
       passHref
       style={style || undefined}

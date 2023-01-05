@@ -78,16 +78,20 @@ function SidebarLink({
   const { setIsOpen } = useContext(GlobalNavigationContext);
 
   return (
-    <Link href={href} passHref>
+    <Link
+      legacyBehavior
+      href={href}
+      passHref
+      onClick={() => {
+        setIsOpen(false);
+      }}
+    >
       <a
         className={cx(classes.link, {
           [classes.linkActive]: isActive,
         })}
         target={isExternal ? '_blank' : undefined}
         rel={isExternal ? 'noopener noreferrer' : undefined}
-        onClick={() => {
-          setIsOpen(false);
-        }}
       >
         <Icon className={classes.linkIcon} />
         <span style={{ flex: 1 }}>{label}</span>

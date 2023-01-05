@@ -150,7 +150,7 @@ export default function TitleBar({
           )}
 
           {backBtn && (
-            <Link href={backBtnHref} passHref>
+            <Link href={backBtnHref} passHref legacyBehavior>
               <MediaQuery largerThan="md" styles={{ display: 'none' }}>
                 <a>
                   <ActionIcon size="sm">

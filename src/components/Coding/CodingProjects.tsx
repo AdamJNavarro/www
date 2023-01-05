@@ -40,17 +40,17 @@ function ProjectItem({ name, desc, platforms, url }: CodingProject) {
   return (
     <div className={classes.container}>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Link href={url}>
-          <a style={{ display: 'inline-block' }}>
-            <Image
-              src={imageSrc}
-              width={72}
-              height={72}
-              layout="fixed"
-              alt={`${name} icon`}
-              //className={'rounded-2xl'}
-            />
-          </a>
+        <Link href={url} style={{ display: 'inline-block' }}>
+
+          <Image
+            src={imageSrc}
+            width={72}
+            height={72}
+            layout="fixed"
+            alt={`${name} icon`}
+            //className={'rounded-2xl'}
+          />
+
         </Link>
         <div className={classes.nameContainer}>
           <Text weight={600} size="xl">
