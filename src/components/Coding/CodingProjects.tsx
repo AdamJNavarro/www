@@ -1,6 +1,6 @@
 import { Text, createStyles, Group, Space } from '@mantine/core';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { PlatformBadge, ProductPlatform } from '../common/Badges';
 
 type CodingProject = {

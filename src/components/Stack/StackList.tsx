@@ -1,5 +1,5 @@
 import { Badge, Group, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { sortByAbc } from '~/utils';
 import { Surface } from '../common';
 import { LinkElement } from '../common/Links';

@@ -1,5 +1,5 @@
 import { Box, createStyles, Group, Skeleton, Text } from '@mantine/core';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { ExternalLink } from 'tabler-icons-react';
 import { Surface } from '~/components/common';
 import { LinkText } from '~/components/common/Typography';
