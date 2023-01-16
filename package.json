@@ -32,7 +32,7 @@
     "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.1",
+    "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@next/eslint-plugin-next": "^12.3.1",
     "@types/node": "^18.11.18",
