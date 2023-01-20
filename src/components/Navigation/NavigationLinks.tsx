@@ -79,28 +79,23 @@ function SidebarLink({
 
   return (
     <Link
-      legacyBehavior
       href={href}
-      passHref
       onClick={() => {
         setIsOpen(false);
       }}
+      className={cx(classes.link, {
+        [classes.linkActive]: isActive,
+      })}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
     >
-      <a
-        className={cx(classes.link, {
-          [classes.linkActive]: isActive,
-        })}
-        target={isExternal ? '_blank' : undefined}
-        rel={isExternal ? 'noopener noreferrer' : undefined}
-      >
-        <Icon className={classes.linkIcon} />
-        <span style={{ flex: 1 }}>{label}</span>
-        {isExternal && (
-          <span className={classes.trailingIcon}>
-            <ExternalLink />
-          </span>
-        )}
-      </a>
+      <Icon className={classes.linkIcon} />
+      <span style={{ flex: 1 }}>{label}</span>
+      {isExternal && (
+        <span className={classes.trailingIcon}>
+          <ExternalLink />
+        </span>
+      )}
     </Link>
   );
 }
