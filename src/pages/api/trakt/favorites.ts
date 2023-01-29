@@ -2,7 +2,7 @@ import type { NextRequest } from 'next/server';
 import { traktFetch, TRAKT_FAVORITES_URL } from '~/lib/trakt';
 
 export const config = {
-  runtime: 'experimental-edge',
+  runtime: 'edge',
 };
 export default async function handler(req: NextRequest) {
   const response = await traktFetch(TRAKT_FAVORITES_URL);
