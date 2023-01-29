@@ -562,6 +562,49 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1663949910,
   },
+  {
+    spelling: 'diffident',
+    definition: 'shy due to a lack of self-confidence',
+    partOfSpeech: 'adjective',
+    dateLearned: 1665753056,
+  },
+  {
+    spelling: 'treacle',
+    definition: 'a think, dark syrup made from refined sugar; mainly British',
+    partOfSpeech: 'noun',
+    dateLearned: 1667316656,
+  },
+  {
+    spelling: 'frontispiece',
+    definition: 'an illustration that faces the title page of a book',
+    partOfSpeech: 'noun',
+    dateLearned: 1668612656,
+  },
+  {
+    spelling: 'inculcate',
+    definition: 'to instill via frequent instruction and repition',
+    partOfSpeech: 'verb',
+    dateLearned: 1671291056,
+  },
+  {
+    spelling: 'anisette',
+    definition: 'a colorless sweet liequeur made from aniseed',
+    partOfSpeech: 'noun',
+    dateLearned: 1673451056,
+  },
+  {
+    spelling: 'ablutions',
+    definition:
+      'the building on a military base that contains bathing and toilet facilities',
+    partOfSpeech: 'noun',
+    dateLearned: 1673537456,
+  },
+  {
+    spelling: 'jodhpur',
+    definition: 'an ankle-high boot that is buckled at the side',
+    partOfSpeech: 'noun',
+    dateLearned: 1674574256,
+  },
 ];
 
 export { wordBank };
