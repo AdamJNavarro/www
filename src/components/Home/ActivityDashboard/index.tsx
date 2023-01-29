@@ -1,6 +1,5 @@
 import { SimpleGrid } from '@mantine/core';
 import BookRead from './BookRead';
-import CardioSession from './CardioSession';
 import SongLiked from './SongLiked';
 import WordLearned from './WordLearned';
 
@@ -18,7 +17,6 @@ export default function ActivityDashboard() {
       ]}
     >
       <BookRead />
-      <CardioSession />
       <SongLiked />
       <WordLearned />
     </SimpleGrid>

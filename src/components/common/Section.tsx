@@ -30,7 +30,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   sectionContent: {
-    paddingTop: theme.spacing.xl * 2,
+    paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl * 2,
     //backgroundColor: 'purple',
   },

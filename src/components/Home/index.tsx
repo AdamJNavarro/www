@@ -1,8 +1,10 @@
 import { useRef } from 'react';
 
-import { Page } from '../common';
+import { Space } from '@mantine/core';
+import { Page, Section } from '../common';
 import TitleBar from '../Navigation/TitleBar';
 import HomeShowcase from './HomeShowcase';
+import ActivityDashboard from './ActivityDashboard';
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -15,6 +17,17 @@ export default function Home() {
       <div style={{ padding: '1rem' }} ref={titleRef} />
       <Page.Content>
         <HomeShowcase />
+        <Space h={50} />
+        <Section.Container>
+          <Section.Header>
+            <Section.Title style={{ textAlign: 'center' }}>
+              Latest Activity
+            </Section.Title>
+          </Section.Header>
+          <Section.Content>
+            <ActivityDashboard />
+          </Section.Content>
+        </Section.Container>
       </Page.Content>
     </Page.Container>
   );
