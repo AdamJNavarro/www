@@ -605,6 +605,139 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1674574256,
   },
+  {
+    spelling: 'mellifluous',
+    definition: 'having a smooth flow',
+    partOfSpeech: 'adjective',
+    dateLearned: 1675978531,
+  },
+  {
+    spelling: 'cognoscenti',
+    definition: 'one with expert knowledge in a subject or field',
+    partOfSpeech: 'noun',
+    dateLearned: 1675978591,
+  },
+  {
+    spelling: 'parvenu',
+    definition:
+      'one that has suddenly attained a position of power or wealth but has not earned the associated respect or dignity',
+    partOfSpeech: 'noun',
+    dateLearned: 1675978651,
+  },
+  {
+    spelling: 'garrulous',
+    definition: 'prone to rambling; annoyingly talkative',
+    partOfSpeech: 'adjective',
+    dateLearned: 1675978711,
+  },
+  {
+    spelling: 'crepuscular',
+    definition: 'occurring during twilight',
+    partOfSpeech: 'adjective',
+    dateLearned: 1675978771,
+  },
+  {
+    spelling: 'chortens',
+    definition: 'a Tibetan Buddhist monument',
+    partOfSpeech: 'noun',
+    dateLearned: 1675978831,
+  },
+  {
+    spelling: 'brocade',
+    definition: 'a fabric containing raised designs; typically in silver and gold',
+    partOfSpeech: 'noun',
+    dateLearned: 1675978891,
+  },
+  {
+    spelling: 'antipodal',
+    definition: 'situated at the opposite side of the earth',
+    partOfSpeech: 'adjective',
+    dateLearned: 1675978951,
+  },
+  {
+    spelling: 'surfeit',
+    definition: 'an overabundant supply',
+    partOfSpeech: 'noun',
+    dateLearned: 1675979011,
+  },
+  {
+    spelling: 'suppurate',
+    definition: 'to form or discharge pus',
+    partOfSpeech: 'verb',
+    dateLearned: 1675979071,
+  },
+  {
+    spelling: 'peripatetic',
+    definition: 'moving or traveling from place to place',
+    partOfSpeech: 'adjective',
+    dateLearned: 1675979131,
+  },
+  {
+    spelling: 'harangue',
+    definition: 'a ranting speech',
+    partOfSpeech: 'noun',
+    dateLearned: 1676065231,
+  },
+  {
+    spelling: 'paucity',
+    definition: 'smallness of quantity',
+    partOfSpeech: 'noun',
+    dateLearned: 1676065291,
+  },
+  {
+    spelling: 'impecunious',
+    definition: 'habitually having little to no money',
+    partOfSpeech: 'adjective',
+    dateLearned: 1676065351,
+  },
+  {
+    spelling: 'incipient',
+    definition: 'to become apparent',
+    partOfSpeech: 'adjective',
+    dateLearned: 1676065411,
+  },
+  {
+    spelling: 'hosannas',
+    definition: 'cries of acclamation or adoration',
+    partOfSpeech: 'interjection',
+    dateLearned: 1676151811,
+  },
+  {
+    spelling: 'massif',
+    definition: 'a principal mountain pass',
+    partOfSpeech: 'noun',
+    dateLearned: 1676151812,
+  },
+  {
+    spelling: 'augur',
+    definition: 'to foretell events usually via omens',
+    partOfSpeech: 'verb',
+    dateLearned: 1676151931,
+  },
+  /*  {
+    spelling: 'mirabile visu',
+    definition: 'wonderful to behold (latin)',
+    partOfSpeech: 'phrase',
+    dateLearned: 1676151991,
+  }, */
+  {
+    spelling: 'hors de combat',
+    definition: 'out of combat; disabled',
+    partOfSpeech: 'adjective',
+    dateLearned: 1676152051,
+  },
+  {
+    spelling: 'fecundity',
+    definition: 'the ability to produce ample offspring or ideas',
+    partOfSpeech: 'noun',
+    dateLearned: 1676152171,
+  },
+  {
+    spelling: 'penumbra',
+    definition: 'something that covers or obscures',
+    partOfSpeech: 'noun',
+    dateLearned: 1676152231,
+  },
 ];
 
 export { wordBank };
