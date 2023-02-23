@@ -738,6 +738,13 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1676152231,
   },
+  {
+    spelling: 'orrery',
+    definition:
+      'an apparatus displaying the relative positions and motions of bodies in a solar system via clockwork',
+    partOfSpeech: 'noun',
+    dateLearned: 1677130381,
+  },
 ];
 
 export { wordBank };
