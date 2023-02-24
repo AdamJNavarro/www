@@ -15,7 +15,7 @@ const useStyles = createStyles((theme) => ({
   contentContainer: {
     width: '100%',
     paddingTop: theme.spacing.xl * 2,
-    paddingBottom: theme.spacing.xl * 2,
+    paddingBottom: theme.spacing.xl * 4,
     paddingLeft: theme.spacing.xl * 3,
     paddingRight: theme.spacing.xl * 3,
     [theme.fn.smallerThan('sm')]: {
