@@ -32,9 +32,9 @@ export default function BookRead() {
       loading={loading}
       logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1660527872/logos/literal.png"
     >
-      <Dashboard.Title>{loading ? 'Now' : book.title}</Dashboard.Title>
+      <Dashboard.Title lineClamp={1}>{loading ? 'Now' : book.title}</Dashboard.Title>
 
-      <Dashboard.Details>
+      <Dashboard.Details lineClamp={1}>
         {loading ? 'Loading...' : buildNamesString(book.authors, 'name')}
       </Dashboard.Details>
     </Dashboard.Card>

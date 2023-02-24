@@ -11,10 +11,10 @@ export default function SongLiked() {
       loading={data.tracks.length === 0}
       logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1660509695/logos/spotify.png"
     >
-      <Dashboard.Title>
+      <Dashboard.Title lineClamp={1}>
         {data.tracks.length === 0 ? 'Now' : `${data.tracks[0].name}`}
       </Dashboard.Title>
-      <Dashboard.Details>
+      <Dashboard.Details lineClamp={1}>
         {data.tracks.length === 0 ? 'Loading...' : `${data.tracks[0].artist}`}
       </Dashboard.Details>
     </Dashboard.Card>
