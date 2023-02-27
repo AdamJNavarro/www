@@ -16,7 +16,7 @@
     "@apollo/client": "^3.7.9",
     "@emotion/react": "^11.10.6",
     "@emotion/server": "^11.10.0",
-    "@mantine/core": "^5.9.4",
+    "@mantine/core": "^5.10.5",
     "@mantine/dates": "^5.10.4",
     "@mantine/hooks": "^5.3.1",
     "@mantine/next": "^5.10.5",
