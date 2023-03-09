@@ -50,7 +50,7 @@ export default function NavGrid({ items }: { items: NavLinkProps[] }) {
           isExternal={item.isExternal}
           className={classes.item}
         >
-          <item.icon className={classes.linkIcon} size={32} />
+          <item.icon className={classes.linkIcon} size={32} stroke={2} />
           <Text inherit mt={8}>
             {item.label}
           </Text>

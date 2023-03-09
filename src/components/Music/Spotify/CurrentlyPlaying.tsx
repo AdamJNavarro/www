@@ -1,5 +1,5 @@
 import { createStyles, Group, MediaQuery, Text } from '@mantine/core';
-import { BrandSpotify } from 'tabler-icons-react';
+import { IconBrandSpotify } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
   title: {
@@ -19,7 +19,7 @@ export default function CurrentlyPlaying() {
     <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
       <Group noWrap>
         <Group spacing="xs" noWrap>
-          <BrandSpotify size={36} color="#1ED760" />
+          <IconBrandSpotify size={36} color="#1ED760" />
           <Text weight={500} className={classes.title}>
             {data.isActive ? 'Now Playing - ' : 'Not playing currently.'}
           </Text>

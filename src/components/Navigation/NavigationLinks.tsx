@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useContext } from 'react';
 import { createStyles, getStylesRef } from '@mantine/core';
-import { ExternalLink } from 'tabler-icons-react';
+import { IconExternalLink } from '@tabler/icons-react';
 import Link from 'next/link';
 import { GlobalNavigationContext } from '../Providers';
 import { SidebarLinkProps } from './Navigation.types';
@@ -93,7 +93,7 @@ function SidebarLink({
       <span style={{ flex: 1 }}>{label}</span>
       {isExternal && (
         <span className={classes.trailingIcon}>
-          <ExternalLink />
+          <IconExternalLink />
         </span>
       )}
     </Link>

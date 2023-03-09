@@ -1,6 +1,6 @@
 import { Box, createStyles, Group, Skeleton, Text } from '@mantine/core';
 import Image from 'next/legacy/image';
-import { ExternalLink } from 'tabler-icons-react';
+import { IconExternalLink } from '@tabler/icons-react';
 import { Surface } from '~/components/common';
 import { LinkText } from '~/components/common/Typography';
 
@@ -50,7 +50,7 @@ function Card({ href, label, loading, logo, children }: DashboardCardProps) {
               {label}
             </LinkText>
           </Group>
-          <ExternalLink size={20} />
+          <IconExternalLink size={20} />
         </Group>
 
         <Box

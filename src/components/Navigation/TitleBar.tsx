@@ -8,7 +8,7 @@ import {
 } from '@mantine/core';
 import Link from 'next/link';
 import React, { useState, useEffect, useCallback, useContext, useRef } from 'react';
-import { ArrowLeft } from 'tabler-icons-react';
+import { IconArrowLeft } from '@tabler/icons-react';
 import { GlobalNavigationContext } from '../Providers';
 
 interface TitleBarProps {
@@ -153,7 +153,7 @@ export default function TitleBar({
             <MediaQuery largerThan="md" styles={{ display: 'none' }}>
               <Link href={backBtnHref}>
                 <ActionIcon size="sm">
-                  <ArrowLeft />
+                  <IconArrowLeft />
                 </ActionIcon>
               </Link>
             </MediaQuery>

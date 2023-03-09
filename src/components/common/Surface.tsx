@@ -3,7 +3,7 @@ import { Card as MantineCard } from '@mantine/core';
 function Card(props) {
   return (
     <MantineCard
-      p="sm"
+      padding="sm"
       radius="md"
       sx={(theme) => ({
         backgroundColor:
