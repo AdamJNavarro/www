@@ -40,9 +40,9 @@ export default function HomeShowcase() {
       <Avatar src="/img/home-photo.jpg" radius={192 / 2} size={192} mx="auto" />
       <Text
         sx={(theme) => ({
-          fontSize: theme.fontSizes.xl * 1.5,
-          marginTop: theme.spacing.xl * 1.5,
-          marginBottom: -theme.spacing.xs / 1.5,
+          fontSize: `calc(${theme.spacing.xl} * 1.5)`,
+          marginTop: `calc(${theme.spacing.xl} * 1.5)`,
+          marginBottom: `calc(calc(${theme.spacing.xl} / 1.5) * -1)`,
         })}
       >
         Adam Navarro
@@ -51,7 +51,7 @@ export default function HomeShowcase() {
         color="dimmed"
         sx={(theme) => ({
           fontSize: theme.fontSizes.xl,
-          marginBottom: theme.spacing.xl * 2,
+          marginBottom: `calc(${theme.spacing.xl} * 2)`,
         })}
       >
         Find Passion. Foster Passion.

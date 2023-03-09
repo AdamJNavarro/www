@@ -21,7 +21,7 @@ const codingProjects: CodingProject[] = [
 
 const useStyles = createStyles((theme) => ({
   container: {
-    marginBottom: theme.spacing.xl * 2.5,
+    marginBottom: `calc(${theme.spacing.xl} * 2.5)`,
   },
 
   nameContainer: {
@@ -41,7 +41,6 @@ function ProjectItem({ name, desc, platforms, url }: CodingProject) {
     <div className={classes.container}>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <Link href={url} style={{ display: 'inline-block' }}>
-
           <Image
             src={imageSrc}
             width={72}
@@ -50,7 +49,6 @@ function ProjectItem({ name, desc, platforms, url }: CodingProject) {
             alt={`${name} icon`}
             //className={'rounded-2xl'}
           />
-
         </Link>
         <div className={classes.nameContainer}>
           <Text weight={600} size="xl">

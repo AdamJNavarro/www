@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useContext } from 'react';
-import { createStyles } from '@mantine/core';
+import { createStyles, getStylesRef } from '@mantine/core';
 import { ExternalLink } from 'tabler-icons-react';
 import Link from 'next/link';
 import { GlobalNavigationContext } from '../Providers';
 import { SidebarLinkProps } from './Navigation.types';
 
-const useStyles = createStyles((theme, _params, getRef) => {
-  const icon = getRef('icon');
+const useStyles = createStyles((theme, _params) => {
+  const icon = getStylesRef('icon');
   return {
     link: {
       ...theme.fn.focusStyles(),
@@ -18,7 +18,7 @@ const useStyles = createStyles((theme, _params, getRef) => {
       fontSize: theme.fontSizes.md,
       color:
         theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7],
-      padding: `${theme.spacing.xs}px`,
+      padding: `${theme.spacing.xs}`,
       marginTop: theme.spacing.xs,
       borderRadius: theme.radius.md,
       fontWeight: 500,

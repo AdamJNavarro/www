@@ -30,17 +30,17 @@ const useStyles = createStyles((theme) => ({
       zIndex: 'auto',
       transform: 'translateX(0px)',
     },
-    [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
+    [`@media (max-width: ${theme.breakpoints.lg})`]: {
       width: '14rem',
     },
-    [`@media (max-width: ${theme.breakpoints.md}px)`]: {
+    [`@media (max-width: ${theme.breakpoints.md})`]: {
       width: '33%',
     },
-    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+    [`@media (max-width: ${theme.breakpoints.sm})`]: {
       width: '50%',
       paddingBottom: 0,
     },
-    [`@media (max-width: ${theme.breakpoints.xs}px)`]: {
+    [`@media (max-width: ${theme.breakpoints.xs})`]: {
       width: '75%',
       paddingBottom: 0,
     },

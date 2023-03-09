@@ -1,10 +1,10 @@
-import { createStyles, Text, SimpleGrid } from '@mantine/core';
+import { createStyles, getStylesRef, Text, SimpleGrid } from '@mantine/core';
 import { Surface } from '../common';
 import { LinkElement } from '../common/Links';
 import { NavLinkProps } from './Navigation.types';
 
-const useStyles = createStyles((theme, _params, getRef) => {
-  const icon = getRef('icon');
+const useStyles = createStyles((theme, _params) => {
+  const icon = getStylesRef('icon');
   const textColor =
     theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7];
   const iconColor =

@@ -19,7 +19,7 @@ export default function WordsList() {
       <Group
         position="apart"
         sx={(theme) => ({
-          marginTop: theme.spacing.xl * 2,
+          marginTop: `calc(${theme.spacing.xl} * 2)`,
           marginBottom: theme.spacing.xl,
         })}
       >
