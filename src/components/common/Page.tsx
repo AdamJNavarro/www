@@ -1,4 +1,4 @@
-import { createStyles, Loader, Text } from '@mantine/core';
+import { createStyles, Loader, rem, Text } from '@mantine/core';
 import * as React from 'react';
 
 const useStyles = createStyles((theme) => ({
@@ -49,7 +49,7 @@ const useStyles = createStyles((theme) => ({
 
   contentSeparator: {
     width: '4.5rem',
-    height: '1px',
+    height: rem('1px'),
     borderRadius: '0.25rem',
     backgroundColor: theme.colors.dark[4],
   },

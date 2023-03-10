@@ -1,4 +1,4 @@
-import { createStyles, getStylesRef, Text, SimpleGrid } from '@mantine/core';
+import { createStyles, getStylesRef, Text, SimpleGrid, rem } from '@mantine/core';
 import { Surface } from '../common';
 import { LinkElement } from '../common/Links';
 import { NavLinkProps } from './Navigation.types';
@@ -18,7 +18,7 @@ const useStyles = createStyles((theme, _params) => {
       alignItems: 'center',
       justifyContent: 'center',
       textAlign: 'center',
-      height: 90,
+      height: rem(90),
       color: textColor,
       fontWeight: 500,
       fontSize: theme.fontSizes.md,
@@ -50,7 +50,7 @@ export default function NavGrid({ items }: { items: NavLinkProps[] }) {
           isExternal={item.isExternal}
           className={classes.item}
         >
-          <item.icon className={classes.linkIcon} size={32} stroke={2} />
+          <item.icon className={classes.linkIcon} size={32} />
           <Text inherit mt={8}>
             {item.label}
           </Text>

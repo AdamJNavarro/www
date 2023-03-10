@@ -1,4 +1,4 @@
-import { Group } from '@mantine/core';
+import { Group, rem } from '@mantine/core';
 import { useState } from 'react';
 import { DataGrid } from '../common/Grid';
 import { sortWords } from './Words.utils';
@@ -53,7 +53,7 @@ export default function WordsList() {
         }}
         error={undefined}
         loading={false}
-        placeholder={<div style={{ height: 100, width: '100%' }} />}
+        placeholder={<div style={{ height: rem(100), width: '100%' }} />}
         placeholderCount={8}
       >
         {sortedWords.map((word) => (

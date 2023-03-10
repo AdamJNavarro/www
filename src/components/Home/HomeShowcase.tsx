@@ -32,7 +32,7 @@ export default function HomeShowcase() {
         marginRight: 'auto',
         textAlign: 'center',
         width: '75%',
-        [`@media (max-width: ${theme.breakpoints.xs}px)`]: {
+        [`@media (max-width: ${theme.breakpoints.xs})`]: {
           width: '100%',
         },
       })}
@@ -42,7 +42,7 @@ export default function HomeShowcase() {
         sx={(theme) => ({
           fontSize: `calc(${theme.spacing.xl} * 1.5)`,
           marginTop: `calc(${theme.spacing.xl} * 1.5)`,
-          marginBottom: `calc(calc(${theme.spacing.xl} / 1.5) * -1)`,
+          marginBottom: `calc(${theme.spacing.xs} * -1)`,
         })}
       >
         Adam Navarro

@@ -4,6 +4,7 @@ import {
   createStyles,
   Group,
   MediaQuery,
+  rem,
   Text,
 } from '@mantine/core';
 import Link from 'next/link';
@@ -131,7 +132,7 @@ export default function TitleBar({
             : currentScrollOffset + 0.8
         })`,
         boxShadow: `0 1px 3px rgba(0,0,0,${currentScrollOffset})`,
-        minHeight: '48px',
+        minHeight: rem('48px'),
       }}
     >
       <div
