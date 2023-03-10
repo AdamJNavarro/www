@@ -26,7 +26,6 @@ const useStyles = createStyles((theme) => ({
     fontSize: theme.fontSizes.md,
     fontWeight: 600,
     paddingTop: theme.spacing.xl,
-    paddingBottom: theme.spacing.xs,
     paddingLeft: theme.spacing.xs,
     paddingRight: theme.spacing.xs,
   },

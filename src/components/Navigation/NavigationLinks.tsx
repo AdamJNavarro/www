@@ -15,10 +15,10 @@ const useStyles = createStyles((theme, _params) => {
       display: 'flex',
       alignItems: 'center',
       textDecoration: 'none',
-      fontSize: theme.fontSizes.md,
+      fontSize: theme.fontSizes.sm,
       color:
         theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7],
-      padding: `${theme.spacing.xs}`,
+      padding: theme.spacing.xs,
       marginTop: theme.spacing.xs,
       borderRadius: theme.radius.md,
       fontWeight: 500,

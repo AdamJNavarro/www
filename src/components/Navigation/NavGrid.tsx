@@ -18,7 +18,7 @@ const useStyles = createStyles((theme, _params) => {
       alignItems: 'center',
       justifyContent: 'center',
       textAlign: 'center',
-      height: rem(90),
+      height: rem(80),
       color: textColor,
       fontWeight: 500,
       fontSize: theme.fontSizes.md,
@@ -50,8 +50,8 @@ export default function NavGrid({ items }: { items: NavLinkProps[] }) {
           isExternal={item.isExternal}
           className={classes.item}
         >
-          <item.icon className={classes.linkIcon} size={32} />
-          <Text inherit mt={8}>
+          <item.icon className={classes.linkIcon} size={30} />
+          <Text inherit mt={4}>
             {item.label}
           </Text>
         </LinkElement>

@@ -40,7 +40,7 @@ export default function HomeShowcase() {
       <Avatar src="/img/home-photo.jpg" radius={192 / 2} size={192} mx="auto" />
       <Text
         sx={(theme) => ({
-          fontSize: `calc(${theme.spacing.xl} * 1.5)`,
+          fontSize: `calc(${theme.spacing.xl} * 1.25)`,
           marginTop: `calc(${theme.spacing.xl} * 1.5)`,
           marginBottom: `calc(${theme.spacing.xs} * -1)`,
         })}

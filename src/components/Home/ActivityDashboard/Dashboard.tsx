@@ -6,18 +6,18 @@ import { LinkText } from '~/components/common/Typography';
 
 const useStyles = createStyles((theme) => ({
   label: {
-    fontSize: theme.fontSizes.xl,
+    fontSize: theme.fontSizes.lg,
     fontWeight: 400,
     color: theme.colors.gray[2],
   },
 
   title: {
-    fontSize: theme.fontSizes.lg,
+    fontSize: theme.fontSizes.md,
     color: theme.colors.gray[4],
   },
 
   details: {
-    fontSize: theme.fontSizes.md,
+    fontSize: theme.fontSizes.sm,
     color: theme.colors.gray[5],
   },
 }));

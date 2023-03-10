@@ -39,7 +39,7 @@ const useStyles = createStyles((theme) => ({
 
   title: {
     textDecoration: 'none',
-    fontSize: theme.fontSizes.md,
+    fontSize: theme.fontSizes.sm,
     fontWeight: 'bold',
   },
 }));
