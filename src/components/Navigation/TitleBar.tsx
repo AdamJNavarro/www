@@ -4,11 +4,12 @@ import {
   createStyles,
   Group,
   MediaQuery,
+  rem,
   Text,
 } from '@mantine/core';
 import Link from 'next/link';
 import React, { useState, useEffect, useCallback, useContext, useRef } from 'react';
-import { ArrowLeft } from 'tabler-icons-react';
+import { IconArrowLeft } from '@tabler/icons-react';
 import { GlobalNavigationContext } from '../Providers';
 
 interface TitleBarProps {
@@ -38,7 +39,7 @@ const useStyles = createStyles((theme) => ({
 
   title: {
     textDecoration: 'none',
-    fontSize: theme.fontSizes.md,
+    fontSize: theme.fontSizes.sm,
     fontWeight: 'bold',
   },
 }));
@@ -131,7 +132,7 @@ export default function TitleBar({
             : currentScrollOffset + 0.8
         })`,
         boxShadow: `0 1px 3px rgba(0,0,0,${currentScrollOffset})`,
-        minHeight: '48px',
+        minHeight: rem('48px'),
       }}
     >
       <div
@@ -153,7 +154,7 @@ export default function TitleBar({
             <MediaQuery largerThan="md" styles={{ display: 'none' }}>
               <Link href={backBtnHref}>
                 <ActionIcon size="sm">
-                  <ArrowLeft />
+                  <IconArrowLeft />
                 </ActionIcon>
               </Link>
             </MediaQuery>

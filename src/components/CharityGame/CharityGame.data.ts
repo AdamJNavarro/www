@@ -1,19 +1,23 @@
-import { CurrencyDollar, DeviceGamepad, Gift } from 'tabler-icons-react';
+import {
+  IconCurrencyDollar,
+  IconDeviceGamepad,
+  IconGift,
+} from '@tabler/icons-react';
 import { Stat } from '../common/Stats';
 
 const charityGameStats: Stat[] = [
   {
-    icon: CurrencyDollar,
+    icon: IconCurrencyDollar,
     label: 'Total Donations (USD)',
     value: 335,
   },
   {
-    icon: Gift,
+    icon: IconGift,
     label: 'Charities Impacted',
     value: 20,
   },
   {
-    icon: DeviceGamepad,
+    icon: IconDeviceGamepad,
     label: 'Games Played', // Games Won: 23,
     value: 41,
   },

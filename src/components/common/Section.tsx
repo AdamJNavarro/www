@@ -1,9 +1,9 @@
-import { createStyles, Text } from '@mantine/core';
+import { createStyles, rem, Text } from '@mantine/core';
 import * as React from 'react';
 
 const useStyles = createStyles((theme) => ({
   sectionContainer: {
-    paddingTop: theme.spacing.xl * 2,
+    paddingTop: `calc(${theme.spacing.xl} * 2)`,
     //backgroundColor: 'red',
   },
 
@@ -31,13 +31,13 @@ const useStyles = createStyles((theme) => ({
 
   sectionContent: {
     paddingTop: theme.spacing.xl,
-    paddingBottom: theme.spacing.xl * 2,
+    paddingBottom: `calc(${theme.spacing.xl} * 2)`,
     //backgroundColor: 'purple',
   },
 
   sectionSeparator: {
     width: '4.5rem',
-    height: '1px',
+    height: rem('1px'),
     borderRadius: '0.25rem',
     backgroundColor: theme.colors.dark[4],
   },

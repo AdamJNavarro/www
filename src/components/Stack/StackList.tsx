@@ -54,7 +54,12 @@ export default function StackList() {
                 </Text>
                 {tags && (
                   <>
-                    <Group spacing="sm" mt={theme.spacing.xs / 2}>
+                    <Group
+                      spacing="sm"
+                      sx={() => ({
+                        marginTop: `calc(${theme.spacing.xs} / 2)`,
+                      })}
+                    >
                       {tags.map((tag) => (
                         <Badge
                           key={`${name}-tag-${tag}`}

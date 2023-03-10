@@ -1,15 +1,15 @@
 import { createStyles, Text } from '@mantine/core';
 import { useRouter } from 'next/router';
 import {
-  Code,
-  Home2,
-  UserCircle,
-  BrandGithub,
-  BrandInstagram,
-  BrandTwitter,
-  Mail,
-  Social,
-} from 'tabler-icons-react';
+  IconCode,
+  IconHome2,
+  IconUserCircle,
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandTwitter,
+  IconMail,
+  IconSocial,
+} from '@tabler/icons-react';
 import { SidebarSectionProps } from '../Navigation.types';
 import { SidebarLink } from '../NavigationLinks';
 
@@ -26,7 +26,6 @@ const useStyles = createStyles((theme) => ({
     fontSize: theme.fontSizes.md,
     fontWeight: 600,
     paddingTop: theme.spacing.xl,
-    paddingBottom: theme.spacing.xs,
     paddingLeft: theme.spacing.xs,
     paddingRight: theme.spacing.xs,
   },
@@ -41,21 +40,21 @@ export default function SidebarContents() {
       label: null,
       items: [
         {
-          icon: Home2,
+          icon: IconHome2,
           label: 'Home',
           href: '/',
           isActive: router.asPath === '/',
           isExternal: false,
         },
         {
-          icon: Code,
+          icon: IconCode,
           label: 'Coding',
           href: '/coding',
           isActive: router.asPath.indexOf('/coding') >= 0,
           isExternal: false,
         },
         {
-          icon: UserCircle,
+          icon: IconUserCircle,
           label: 'About',
           href: '/about',
           isActive: router.asPath.indexOf('/about') >= 0,
@@ -67,35 +66,35 @@ export default function SidebarContents() {
       label: 'Social',
       items: [
         {
-          icon: BrandGithub,
+          icon: IconBrandGithub,
           label: 'Github',
           href: 'https://github.com/AdamJNavarro',
           isActive: false,
           isExternal: true,
         },
         {
-          icon: BrandInstagram,
+          icon: IconBrandInstagram,
           label: 'Instagram',
           href: 'https://www.instagram.com/adamjnavarro',
           isActive: false,
           isExternal: true,
         },
         {
-          icon: BrandTwitter,
+          icon: IconBrandTwitter,
           label: 'Twitter',
           href: 'https://twitter.com/AdamJNavarro',
           isActive: false,
           isExternal: true,
         },
         {
-          icon: Mail,
+          icon: IconMail,
           label: 'Email',
           href: 'mailto:adamjnav@gmail.com',
           isActive: false,
           isExternal: true,
         },
         {
-          icon: Social,
+          icon: IconSocial,
           label: 'All Platforms',
           href: '/social',
           isActive: router.asPath.indexOf('/social') >= 0,

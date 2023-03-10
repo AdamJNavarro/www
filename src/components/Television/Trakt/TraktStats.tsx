@@ -1,5 +1,5 @@
 import { SimpleGrid, Skeleton } from '@mantine/core';
-import { Hourglass, Movie, Video } from 'tabler-icons-react';
+import { IconHourglass, IconMovie, IconVideo } from '@tabler/icons-react';
 import { Stat, StatCard } from '~/components/common/Stats';
 import { useTraktStats } from '~/lib/trakt';
 
@@ -8,17 +8,17 @@ export default function TraktStats() {
 
   const stats: Stat[] = [
     {
-      icon: Movie,
+      icon: IconMovie,
       label: 'Shows',
       value: data.shows,
     },
     {
-      icon: Video,
+      icon: IconVideo,
       label: 'Episodes',
       value: data.episodes,
     },
     {
-      icon: Hourglass,
+      icon: IconHourglass,
       label: 'Hours',
       value: Math.floor(data.minutes / 60),
     },

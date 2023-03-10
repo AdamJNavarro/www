@@ -1,5 +1,5 @@
 import { createStyles } from '@mantine/core';
-import { NextLink } from '@mantine/next';
+import Link from 'next/link';
 
 export interface LinkElementProps {
   href: string;
@@ -37,10 +37,8 @@ export function LinkElement({
 
   return (
     <Element
-      component={NextLink}
-      legacyBehavior
+      component={Link}
       href={href}
-      passHref
       style={style || undefined}
       className={className || undefined}
     >

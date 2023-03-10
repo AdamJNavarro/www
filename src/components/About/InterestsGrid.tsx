@@ -1,56 +1,56 @@
 import React from 'react';
 import {
-  Music,
-  Books,
-  DeviceTvOld,
-  Quote,
-  Shoe,
-  Typography,
-  Gift,
-} from 'tabler-icons-react';
+  IconMusic,
+  IconBooks,
+  IconDeviceTvOld,
+  IconQuote,
+  IconShoe,
+  IconTypography,
+  IconGift,
+} from '@tabler/icons-react';
 
 import NavGrid from '../Navigation/NavGrid';
 import { NavLinkProps } from '../Navigation/Navigation.types';
 
 const interests: NavLinkProps[] = [
   {
-    icon: Books,
+    icon: IconBooks,
     label: 'Books',
     href: '/books',
     isExternal: false,
   },
   {
-    icon: Gift,
+    icon: IconGift,
     label: 'Charity',
     href: '/charity-game',
     isExternal: false,
   },
   {
-    icon: Shoe,
+    icon: IconShoe,
     label: 'Dancing',
     href: '/dancing',
     isExternal: false,
   },
   {
-    icon: Music,
+    icon: IconMusic,
     label: 'Music',
     href: '/music',
     isExternal: false,
   },
   {
-    icon: Quote,
+    icon: IconQuote,
     label: 'Quotes',
     href: '/quotes',
     isExternal: false,
   },
   {
-    icon: DeviceTvOld,
+    icon: IconDeviceTvOld,
     label: 'TV',
     href: '/tv',
     isExternal: false,
   },
   {
-    icon: Typography,
+    icon: IconTypography,
     label: 'Words',
     href: '/words',
     isExternal: false,

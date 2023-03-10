@@ -1,23 +1,23 @@
 import { Box, createStyles, Group, Skeleton, Text } from '@mantine/core';
 import Image from 'next/legacy/image';
-import { ExternalLink } from 'tabler-icons-react';
+import { IconExternalLink } from '@tabler/icons-react';
 import { Surface } from '~/components/common';
 import { LinkText } from '~/components/common/Typography';
 
 const useStyles = createStyles((theme) => ({
   label: {
-    fontSize: theme.fontSizes.xl,
+    fontSize: theme.fontSizes.lg,
     fontWeight: 400,
     color: theme.colors.gray[2],
   },
 
   title: {
-    fontSize: theme.fontSizes.lg,
+    fontSize: theme.fontSizes.md,
     color: theme.colors.gray[4],
   },
 
   details: {
-    fontSize: theme.fontSizes.md,
+    fontSize: theme.fontSizes.sm,
     color: theme.colors.gray[5],
   },
 }));
@@ -50,7 +50,7 @@ function Card({ href, label, loading, logo, children }: DashboardCardProps) {
               {label}
             </LinkText>
           </Group>
-          <ExternalLink size={20} />
+          <IconExternalLink size={20} />
         </Group>
 
         <Box

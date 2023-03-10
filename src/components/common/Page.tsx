@@ -1,4 +1,4 @@
-import { createStyles, Loader, Text } from '@mantine/core';
+import { createStyles, Loader, rem, Text } from '@mantine/core';
 import * as React from 'react';
 
 const useStyles = createStyles((theme) => ({
@@ -14,10 +14,10 @@ const useStyles = createStyles((theme) => ({
 
   contentContainer: {
     width: '100%',
-    paddingTop: theme.spacing.xl * 2,
-    paddingBottom: theme.spacing.xl * 4,
-    paddingLeft: theme.spacing.xl * 3,
-    paddingRight: theme.spacing.xl * 3,
+    paddingTop: `calc(${theme.spacing.xl} * 2)`,
+    paddingBottom: `calc(${theme.spacing.xl} * 4)`,
+    paddingLeft: `calc(${theme.spacing.xl} * 3)`,
+    paddingRight: `calc(${theme.spacing.xl} * 3)`,
     [theme.fn.smallerThan('sm')]: {
       paddingLeft: theme.spacing.xl,
       paddingRight: theme.spacing.xl,
@@ -26,7 +26,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   header: {
-    paddingBottom: theme.spacing.xl * 2,
+    paddingBottom: `calc(${theme.spacing.xl} * 2)`,
     //backgroundColor: 'green',
   },
 
@@ -49,7 +49,7 @@ const useStyles = createStyles((theme) => ({
 
   contentSeparator: {
     width: '4.5rem',
-    height: '1px',
+    height: rem('1px'),
     borderRadius: '0.25rem',
     backgroundColor: theme.colors.dark[4],
   },

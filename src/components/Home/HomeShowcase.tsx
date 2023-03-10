@@ -1,23 +1,23 @@
 import { Avatar, Box, Text } from '@mantine/core';
-import { MoodHappy, Social, Stack2 } from 'tabler-icons-react';
+import { IconMoodHappy, IconSocial, IconStack2 } from '@tabler/icons-react';
 import NavGrid from '../Navigation/NavGrid';
 import { NavLinkProps } from '../Navigation/Navigation.types';
 
 const items: NavLinkProps[] = [
   {
-    icon: MoodHappy,
+    icon: IconMoodHappy,
     label: 'Interests',
     href: '/about#interests',
     isExternal: false,
   },
   {
-    icon: Stack2,
+    icon: IconStack2,
     label: 'Stack',
     href: '/stack',
     isExternal: false,
   },
   {
-    icon: Social,
+    icon: IconSocial,
     label: 'Social',
     href: '/social',
     isExternal: false,
@@ -32,7 +32,7 @@ export default function HomeShowcase() {
         marginRight: 'auto',
         textAlign: 'center',
         width: '75%',
-        [`@media (max-width: ${theme.breakpoints.xs}px)`]: {
+        [`@media (max-width: ${theme.breakpoints.xs})`]: {
           width: '100%',
         },
       })}
@@ -40,9 +40,9 @@ export default function HomeShowcase() {
       <Avatar src="/img/home-photo.jpg" radius={192 / 2} size={192} mx="auto" />
       <Text
         sx={(theme) => ({
-          fontSize: theme.fontSizes.xl * 1.5,
-          marginTop: theme.spacing.xl * 1.5,
-          marginBottom: -theme.spacing.xs / 1.5,
+          fontSize: `calc(${theme.spacing.xl} * 1.25)`,
+          marginTop: `calc(${theme.spacing.xl} * 1.5)`,
+          marginBottom: `calc(${theme.spacing.xs} * -1)`,
         })}
       >
         Adam Navarro
@@ -51,7 +51,7 @@ export default function HomeShowcase() {
         color="dimmed"
         sx={(theme) => ({
           fontSize: theme.fontSizes.xl,
-          marginBottom: theme.spacing.xl * 2,
+          marginBottom: `calc(${theme.spacing.xl} * 2)`,
         })}
       >
         Find Passion. Foster Passion.

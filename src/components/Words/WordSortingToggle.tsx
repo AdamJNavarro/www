@@ -1,11 +1,11 @@
 import { Center, SegmentedControl } from '@mantine/core';
 import {
-  Clock,
-  GridDots,
-  List,
-  SortAscendingLetters,
-  SortDescendingLetters,
-} from 'tabler-icons-react';
+  IconClock,
+  IconGridDots,
+  IconList,
+  IconSortAscendingLetters,
+  IconSortDescendingLetters,
+} from '@tabler/icons-react';
 
 export default function WordSortingToggle({ ...rest }: any) {
   return (
@@ -15,7 +15,7 @@ export default function WordSortingToggle({ ...rest }: any) {
           value: 'recent',
           label: (
             <Center>
-              <Clock size={20} />
+              <IconClock size={20} />
             </Center>
           ),
         },
@@ -23,7 +23,7 @@ export default function WordSortingToggle({ ...rest }: any) {
           value: 'abc',
           label: (
             <Center>
-              <SortAscendingLetters size={20} />
+              <IconSortAscendingLetters size={20} />
             </Center>
           ),
         },
@@ -31,7 +31,7 @@ export default function WordSortingToggle({ ...rest }: any) {
           value: 'reverse-abc',
           label: (
             <Center>
-              <SortDescendingLetters size={20} />
+              <IconSortDescendingLetters size={20} />
             </Center>
           ),
         },
@@ -49,7 +49,7 @@ export function WordsDisplayToggle({ ...rest }: any) {
           value: 'grid',
           label: (
             <Center>
-              <GridDots size={20} />
+              <IconGridDots size={20} />
             </Center>
           ),
         },
@@ -57,7 +57,7 @@ export function WordsDisplayToggle({ ...rest }: any) {
           value: 'table',
           label: (
             <Center>
-              <List size={20} />
+              <IconList size={20} />
             </Center>
           ),
         },

@@ -1,5 +1,5 @@
 import { Alert, AlertProps, createStyles } from '@mantine/core';
-import { AlertCircle } from 'tabler-icons-react';
+import { IconAlertCircle } from '@tabler/icons-react';
 
 type AlertBannerMode = 'default' | 'error' | 'success';
 
@@ -34,7 +34,7 @@ export function AlertBanner({
 
   return (
     <Alert
-      icon={<AlertCircle size={24} />}
+      icon={<IconAlertCircle size={24} />}
       title={title}
       color={getAlertColor(mode)}
       className={classes.alert}
