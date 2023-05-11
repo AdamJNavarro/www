@@ -1,4 +1,7 @@
 module.exports = {
+  experimental: {
+    appDir: false,
+  },
   swcMinify: true,
   reactStrictMode: true,
   eslint: {
