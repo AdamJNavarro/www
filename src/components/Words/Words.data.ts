@@ -745,6 +745,30 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1677130381,
   },
+  {
+    spelling: 'inchoate',
+    definition: 'not fully formed or developed',
+    partOfSpeech: 'adjective',
+    dateLearned: 1679951407,
+  },
+  {
+    spelling: 'epistolary',
+    definition: 'in the form of letters (literary works)',
+    partOfSpeech: 'adjective',
+    dateLearned: 1680372607,
+  },
+  {
+    spelling: 'parturition',
+    definition: 'the act of giving birth to young',
+    partOfSpeech: 'noun',
+    dateLearned: 1681755007,
+  },
+  {
+    spelling: 'frond',
+    definition: 'the leaflike part of a palm or fern',
+    partOfSpeech: 'noun',
+    dateLearned: 1682449807,
+  },
 ];
 
 export { wordBank };
