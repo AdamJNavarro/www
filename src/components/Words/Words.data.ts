@@ -769,6 +769,31 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1682449807,
   },
+  {
+    spelling: 'extirpate',
+    definition: 'to destroy or remove completely',
+    partOfSpeech: 'verb',
+    dateLearned: 1683666607,
+  },
+  {
+    spelling: 'stentorian',
+    definition: 'loud and powerful; relating to the voice',
+    partOfSpeech: 'adjective',
+    dateLearned: 1683670207,
+  },
+  {
+    spelling: 'redolent',
+    definition: 'strongly reminiscent or suggestive of something',
+    partOfSpeech: 'adjective',
+    dateLearned: 1683745807,
+  },
+  {
+    spelling: 'lorgnette',
+    definition:
+      'a pair of glasses held in front of the eyes via a long handle to one side',
+    partOfSpeech: 'noun',
+    dateLearned: 1683749407,
+  },
 ];
 
 export { wordBank };
