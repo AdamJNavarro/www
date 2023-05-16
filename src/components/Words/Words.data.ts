@@ -794,6 +794,38 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1683749407,
   },
+  {
+    spelling: 'atavistic',
+    definition: 'relating to something ancient or ancestral',
+    partOfSpeech: 'adjective',
+    dateLearned: 1684173049,
+  },
+  {
+    spelling: 'lassitude',
+    definition: 'physical or mental weariness',
+    partOfSpeech: 'noun',
+    dateLearned: 1684176649,
+  },
+  {
+    spelling: 'alluvium',
+    definition:
+      'a deposit of sendiment left by flowing water; usually results in fertile soil',
+    partOfSpeech: 'noun',
+    dateLearned: 1684180249,
+  },
+  {
+    spelling: 'trunnion',
+    definition: 'a point on which something can be rotated or tilted',
+    partOfSpeech: 'noun',
+    dateLearned: 1684183849,
+  },
+  {
+    spelling: 'passerine',
+    definition:
+      'a bird of the order Passeriformes, commonly known as perching birds',
+    partOfSpeech: 'noun',
+    dateLearned: 1684187449,
+  },
 ];
 
 export { wordBank };
