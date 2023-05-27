@@ -826,6 +826,24 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1684187449,
   },
+  {
+    spelling: 'filigree',
+    definition: 'ornamental work of fine wire, usually gold or silver',
+    partOfSpeech: 'noun',
+    dateLearned: 1684395380,
+  },
+  {
+    spelling: 'coruscating',
+    definition: 'flashing or sparkling',
+    partOfSpeech: 'adjective',
+    dateLearned: 1684481780,
+  },
+  {
+    spelling: 'anhedonia',
+    definition: 'the inability to feel pleasure',
+    partOfSpeech: 'noun',
+    dateLearned: 1684827380,
+  },
 ];
 
 export { wordBank };
