@@ -844,6 +844,12 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1684827380,
   },
+  {
+    spelling: 'indigent',
+    definition: 'poor; needy',
+    partOfSpeech: 'adjective',
+    dateLearned: 1686017706,
+  },
 ];
 
 export { wordBank };
