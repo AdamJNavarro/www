@@ -19,7 +19,7 @@
     "@mantine/core": "^6.0.10",
     "@mantine/dates": "^6.0.13",
     "@mantine/hooks": "^6.0.10",
-    "@mantine/next": "^6.0.13",
+    "@mantine/next": "^6.0.14",
     "@tabler/icons-react": "^2.22.0",
     "cookies-next": "^2.1.2",
     "dayjs": "^1.11.8",
