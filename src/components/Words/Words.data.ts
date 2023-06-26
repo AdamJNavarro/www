@@ -850,6 +850,19 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'adjective',
     dateLearned: 1686017706,
   },
+  {
+    spelling: 'excoriate',
+    definition:
+      'to censure or criticize (formal); to damage or remove part of the skin (medicine)',
+    partOfSpeech: 'verb',
+    dateLearned: 1686860459,
+  },
+  {
+    spelling: 'hirsute',
+    definition: 'hairy',
+    partOfSpeech: 'adjective',
+    dateLearned: 1687206059,
+  },
 ];
 
 export { wordBank };
