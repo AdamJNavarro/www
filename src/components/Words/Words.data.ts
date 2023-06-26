@@ -863,6 +863,19 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'adjective',
     dateLearned: 1687206059,
   },
+  {
+    spelling: 'cavalcade',
+    definition:
+      'a formal procession of people walking, riding horses or in vehicles',
+    partOfSpeech: 'noun',
+    dateLearned: 1687282570,
+  },
+  {
+    spelling: 'bucolic',
+    definition: 'relating to the pleasant characteristics of the countryside',
+    partOfSpeech: 'adjective',
+    dateLearned: 1687368970,
+  },
 ];
 
 export { wordBank };
