@@ -876,6 +876,12 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'adjective',
     dateLearned: 1687368970,
   },
+  {
+    spelling: 'menarche',
+    definition: 'the first occurrence of menstruation',
+    partOfSpeech: 'noun',
+    dateLearned: 1686860644,
+  },
 ];
 
 export { wordBank };
