@@ -882,6 +882,19 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1686860644,
   },
+  {
+    spelling: 'docent',
+    definition: 'a person who acts as a guide, usually on a voluntary basis',
+    partOfSpeech: 'noun',
+    dateLearned: 1688244822,
+  },
+  {
+    spelling: 'suppletion',
+    definition:
+      'the occurrence of an unrelated form to fill a gap in conjugation; such as went as the past tense to gold',
+    partOfSpeech: 'noun',
+    dateLearned: 1688676822,
+  },
 ];
 
 export { wordBank };
