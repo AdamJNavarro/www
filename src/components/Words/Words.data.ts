@@ -895,6 +895,87 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1688676822,
   },
+  {
+    spelling: 'abjure',
+    definition: 'to solemnly renounce a belief or cause',
+    partOfSpeech: 'verb',
+    dateLearned: 1688681455,
+  },
+  {
+    spelling: 'poultice',
+    definition:
+      'a soft, moist mass of material applied to the body to alleviate soreness and inflammation; usually plant or flour based',
+    partOfSpeech: 'noun',
+    dateLearned: 1688681515,
+  },
+  {
+    spelling: 'extemporize',
+    definition:
+      'to compose, perform or produce something without preparation; improvise',
+    partOfSpeech: 'verb',
+    dateLearned: 1688681575,
+  },
+  {
+    spelling: 'philter',
+    definition: 'a love potion',
+    partOfSpeech: 'noun',
+    dateLearned: 1688681695,
+  },
+  {
+    spelling: 'morass',
+    definition: 'an area of muddy ground',
+    partOfSpeech: 'noun',
+    dateLearned: 1688681815,
+  },
+  {
+    spelling: 'bellicosity',
+    definition: 'a natural disposition towards violence and fighting',
+    partOfSpeech: 'noun',
+    dateLearned: 1688768215,
+  },
+  {
+    spelling: 'conviviality',
+    definition: 'the quality of being friendly and full of life',
+    partOfSpeech: 'noun',
+    dateLearned: 1688854615,
+  },
+  {
+    spelling: 'defalcation',
+    definition:
+      'the act of embezzling or failture to meet a promise or an expectation',
+    partOfSpeech: 'noun',
+    dateLearned: 1688854735,
+  },
+  {
+    spelling: 'mien',
+    definition: "someone's look or manner",
+    partOfSpeech: 'noun',
+    dateLearned: 1688941135,
+  },
+  {
+    spelling: 'bailiwick',
+    definition: "one's area of interest or sphere of operations",
+    partOfSpeech: 'noun',
+    dateLearned: 1689027535,
+  },
+  {
+    spelling: 'ribald',
+    definition: 'referring to sexual matters in an irreverent way',
+    partOfSpeech: 'adjective',
+    dateLearned: 1689031135,
+  },
+  {
+    spelling: 'expurgated',
+    definition: 'having had objectionable matter removed from a text or an account',
+    partOfSpeech: 'adjective',
+    dateLearned: 1689034735,
+  },
+  {
+    spelling: 'carom',
+    definition: 'to strike and rebound',
+    partOfSpeech: 'verb',
+    dateLearned: 1689038335,
+  },
 ];
 
 export { wordBank };
