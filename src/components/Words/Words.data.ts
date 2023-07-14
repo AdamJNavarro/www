@@ -976,6 +976,25 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'verb',
     dateLearned: 1689038335,
   },
+  {
+    spelling: 'panoply',
+    definition: 'a splendid display and or collection of things',
+    partOfSpeech: 'noun',
+    dateLearned: 1689106245,
+  },
+  {
+    spelling: 'mandamus',
+    definition: 'a judicial writ serving as a command to an inferior court',
+    partOfSpeech: 'noun',
+    dateLearned: 1689109845,
+  },
+  {
+    spelling: 'metaplasm',
+    definition:
+      'the alteration of regular verbal, grammatical or rhetorical structure via transposition of letters or syllables',
+    partOfSpeech: 'noun',
+    dateLearned: 1689117045,
+  },
 ];
 
 export { wordBank };
