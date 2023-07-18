@@ -995,6 +995,42 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1689117045,
   },
+  {
+    spelling: 'desultory',
+    definition: 'lacking a plan, purpose or enthusiasm',
+    partOfSpeech: 'adjective',
+    dateLearned: 1689199088,
+  },
+  {
+    spelling: 'elide',
+    definition: 'to omit a sound or syllable when speaking',
+    partOfSpeech: 'verb',
+    dateLearned: 1689285488,
+  },
+  {
+    spelling: 'garret',
+    definition: 'a top-floor or attic room; typically small and dismal',
+    partOfSpeech: 'noun',
+    dateLearned: 1689289088,
+  },
+  {
+    spelling: 'plenary',
+    definition: 'unqualified yet absolute; in reference to powers',
+    partOfSpeech: 'adjective',
+    dateLearned: 1689461888,
+  },
+  {
+    spelling: 'florid',
+    definition: 'having a red or flushed complexion',
+    partOfSpeech: 'adjective',
+    dateLearned: 1689465488,
+  },
+  {
+    spelling: 'moribund',
+    definition: 'at the point of death',
+    partOfSpeech: 'adjective',
+    dateLearned: 1689551888,
+  },
 ];
 
 export { wordBank };
