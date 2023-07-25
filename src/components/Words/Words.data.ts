@@ -1031,6 +1031,30 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'adjective',
     dateLearned: 1689551888,
   },
+  {
+    spelling: 'susurration',
+    definition: 'whispering or rustling',
+    partOfSpeech: 'noun',
+    dateLearned: 1689798545,
+  },
+  {
+    spelling: 'bole',
+    definition: 'the trunk of a tree',
+    partOfSpeech: 'noun',
+    dateLearned: 1689884945,
+  },
+  {
+    spelling: 'stodgy',
+    definition: 'dull and uninspired',
+    partOfSpeech: 'adjective',
+    dateLearned: 1690230545,
+  },
+  {
+    spelling: 'mottle',
+    definition: 'to mark with spots or smears of color',
+    partOfSpeech: 'verb',
+    dateLearned: 1690295345,
+  },
 ];
 
 export { wordBank };
