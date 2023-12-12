@@ -22,7 +22,7 @@
     "@mantine/next": "^6.0.19",
     "@tabler/icons-react": "^2.41.0",
     "cookies-next": "^2.1.2",
-    "dayjs": "^1.11.9",
+    "dayjs": "^1.11.10",
     "graphql": "^16.7.1",
     "moviedb-promise": "^3.4.1",
     "next": "^13.3.1",
