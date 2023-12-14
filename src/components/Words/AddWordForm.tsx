@@ -30,7 +30,7 @@ export default function AddWordForm() {
       />
       <NativeSelect
         data={['Noun', 'Verb', 'Adjective']}
-        placeholder="Pick one"
+        //placeholder="Pick one"
         label="Part of Speech"
         value={partOfSpeech}
         onChange={(event) => setPartOfSpeech(event.currentTarget.value)}
