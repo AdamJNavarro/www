@@ -1055,6 +1055,259 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'verb',
     dateLearned: 1690295345,
   },
+  {
+    spelling: 'libation',
+    definition: 'a drink poured as an offering to a higher being',
+    partOfSpeech: 'noun',
+    dateLearned: 1695074953,
+  },
+  {
+    spelling: 'verdigris',
+    definition: 'a green/bluish deposit formed on copper, brass or bronze surfaces',
+    partOfSpeech: 'noun',
+    dateLearned: 1695593353,
+  },
+  {
+    spelling: 'cubit',
+    definition:
+      'an ancient measure of length; approximately the length of a forearm',
+    partOfSpeech: 'noun',
+    dateLearned: 1695604153,
+  },
+  {
+    spelling: 'seneschal',
+    definition: 'the steward of a medieval great house',
+    partOfSpeech: 'noun',
+    dateLearned: 1695607753,
+  },
+  {
+    spelling: 'baldric',
+    definition: 'a belt for a sword or weapon; worn over the shoulder',
+    partOfSpeech: 'noun',
+    dateLearned: 1695611353,
+  },
+  {
+    spelling: 'coracle',
+    definition:
+      'a small, round boat made of wickerwork and covered with a watertight material',
+    partOfSpeech: 'noun',
+    dateLearned: 1695870553,
+  },
+  {
+    spelling: 'limpets',
+    definition:
+      'a group of aquatic snails with a conical shell and a strong, muscular foot',
+    partOfSpeech: 'noun',
+    dateLearned: 1695870554,
+  },
+  {
+    spelling: 'merlon',
+    definition: 'the solid part of an embattled parapet between two embrasures',
+    partOfSpeech: 'noun',
+    dateLearned: 1696388953,
+  },
+  {
+    spelling: 'alembic',
+    definition: 'a distilling apparatus',
+    partOfSpeech: 'noun',
+    dateLearned: 1696475353,
+  },
+  {
+    spelling: 'bier',
+    definition:
+      'a movable frame that a coffin or corpse is placed upon prior to a burial or cremation',
+    partOfSpeech: 'noun',
+    dateLearned: 1696475413,
+  },
+  {
+    spelling: 'pennon',
+    definition: 'a long, triangular streamer attached to the head of a lance',
+    partOfSpeech: 'noun',
+    dateLearned: 1696871413,
+  },
+  {
+    spelling: 'quintain',
+    definition: 'a post set up as a mark in tilting with a lance',
+    partOfSpeech: 'noun',
+    dateLearned: 1697044213,
+  },
+  {
+    spelling: 'ensorcell',
+    definition: 'to enchant or fascinate',
+    partOfSpeech: 'verb',
+    dateLearned: 1697389813,
+  },
+  {
+    spelling: 'caparison',
+    definition: "an ornamental covering on a horse's saddle or harness",
+    partOfSpeech: 'noun',
+    dateLearned: 1697393413,
+  },
+  {
+    spelling: 'gelid',
+    definition: 'extremely cold',
+    partOfSpeech: 'adjective',
+    dateLearned: 1697739013,
+  },
+  {
+    spelling: 'paroxysm',
+    definition: 'a sudden attack/expression of a particular emotion',
+    partOfSpeech: 'noun',
+    dateLearned: 1697998213,
+  },
+  {
+    spelling: 'ponass',
+    definition: 'to cook fish over a fire with minimal equipment; usually trout',
+    partOfSpeech: 'verb',
+    dateLearned: 1697998213,
+  },
+  {
+    spelling: 'gobbet',
+    definition: 'a piece or lump of flesh',
+    partOfSpeech: 'noun',
+    dateLearned: 1698343813,
+  },
+  {
+    spelling: 'gravid',
+    definition: 'full of meaning or a specified quality',
+    partOfSpeech: 'adjective',
+    dateLearned: 1698347413,
+  },
+  {
+    spelling: 'tessellate',
+    definition: 'to decorate or cover with a pattern of repeated shapes',
+    partOfSpeech: 'verb',
+    dateLearned: 1698599413,
+  },
+  {
+    spelling: 'doff',
+    definition: "to take off one's hat as a greeting and show of respect",
+    partOfSpeech: 'verb',
+    dateLearned: 1698772213,
+  },
+  {
+    spelling: 'serried',
+    definition: 'standing close together',
+    partOfSpeech: 'adjective',
+    dateLearned: 1699467013,
+  },
+  {
+    spelling: 'charnel',
+    definition: 'associated with death',
+    partOfSpeech: 'adjective',
+    dateLearned: 1699553413,
+  },
+  {
+    spelling: 'harridan',
+    definition: 'a strict, bossy old woman',
+    partOfSpeech: 'noun',
+    dateLearned: 1699557013,
+  },
+  {
+    spelling: 'mendicant',
+    definition: 'a beggar',
+    partOfSpeech: 'noun',
+    dateLearned: 1699729813,
+  },
+  {
+    spelling: 'tonsure',
+    definition: "to shave the hair on top of a monk's head",
+    partOfSpeech: 'verb',
+    dateLearned: 1699733413,
+  },
+  {
+    spelling: 'weal',
+    definition: 'a red, swollen mark left on the flesh as a result of a blow',
+    partOfSpeech: 'noun',
+    dateLearned: 1700165413,
+  },
+  {
+    spelling: 'cozen',
+    definition: 'to trick or deceive',
+    partOfSpeech: 'verb',
+    dateLearned: 1700424613,
+  },
+  {
+    spelling: 'hostler',
+    definition:
+      'someone employed to look after the horses of people staying at an inn',
+    partOfSpeech: 'noun',
+    dateLearned: 1700511013,
+  },
+  {
+    spelling: 'lissome',
+    definition: 'thin, supple and graceful',
+    partOfSpeech: 'adjective',
+    dateLearned: 1700514613,
+  },
+  {
+    spelling: 'slattern',
+    definition: 'a dirty, untidy woman',
+    partOfSpeech: 'noun',
+    dateLearned: 1700590213,
+  },
+  {
+    spelling: 'lambent',
+    definition: 'glowing or flickering with a soft radiance',
+    partOfSpeech: 'adjective',
+    dateLearned: 1700763013,
+  },
+  {
+    spelling: 'tureen',
+    definition: 'a deep and covered bowl used for serving foods',
+    partOfSpeech: 'noun',
+    dateLearned: 1700766613,
+  },
+  {
+    spelling: 'inimical',
+    definition: 'unfriendly; hostile',
+    partOfSpeech: 'adjective',
+    dateLearned: 1701717013,
+  },
+  {
+    spelling: 'baluster',
+    definition:
+      'an upright support, often a vertical moulded shaft found in stairways',
+    partOfSpeech: 'noun',
+    dateLearned: 1701889813,
+  },
+  {
+    spelling: 'pellucid',
+    definition: 'translucently clear',
+    partOfSpeech: 'adjective',
+    dateLearned: 1701976213,
+  },
+  {
+    spelling: 'mawkish',
+    definition: 'sentimental in a feeble way',
+    partOfSpeech: 'adjective',
+    dateLearned: 1701979813,
+  },
+  {
+    spelling: 'crenellations',
+    definition: 'the battlements of a castle',
+    partOfSpeech: 'noun',
+    dateLearned: 1701983413,
+  },
+  {
+    spelling: 'obeisance',
+    definition: 'a gesture of deferential respect such as a bow or curtsy',
+    partOfSpeech: 'noun',
+    dateLearned: 1702145413,
+  },
+  {
+    spelling: 'caisson',
+    definition: 'a large watertight chamber that is open at the bottom',
+    partOfSpeech: 'noun',
+    dateLearned: 1702149013,
+  },
+  {
+    spelling: 'catafalque',
+    definition:
+      'a decorated wooden framework supporting a coffin of a distinguished person',
+    partOfSpeech: 'noun',
+    dateLearned: 1702152613,
+  },
 ];
 
 export { wordBank };
