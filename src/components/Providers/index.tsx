@@ -2,7 +2,7 @@
 
 import { ApolloProvider } from '@apollo/client';
 import * as React from 'react';
-import { setCookies } from 'cookies-next';
+import { setCookie } from 'cookies-next';
 
 import {
   MantineProvider,
@@ -58,7 +58,7 @@ export function Providers({ children, props }: ProvidersProps) {
   const toggleColorScheme = (value?: ColorScheme) => {
     const nextColorScheme = value || (colorScheme === 'dark' ? 'light' : 'dark');
     setColorScheme(nextColorScheme);
-    setCookies('mantine-color-scheme', nextColorScheme, {
+    setCookie('mantine-color-scheme', nextColorScheme, {
       maxAge: 60 * 60 * 24 * 30,
     });
   };
