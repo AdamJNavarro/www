@@ -24,7 +24,7 @@
     "cookies-next": "^2.1.2",
     "dayjs": "^1.11.10",
     "graphql": "^16.8.1",
-    "moviedb-promise": "^3.4.1",
+    "moviedb-promise": "^4.0.3",
     "next": "^14.0.4",
     "next-seo": "^6.4.0",
     "react": "^18.2.0",
