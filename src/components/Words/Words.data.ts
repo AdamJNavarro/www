@@ -1308,6 +1308,19 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1702152613,
   },
+  {
+    spelling: 'caliphate',
+    definition:
+      'an institution under the leadership of an Islamic steward who is considered as a successor to the Islamic prophet Muhammad and the leader of the Muslim world',
+    partOfSpeech: 'noun',
+    dateLearned: 1702957066,
+  },
+  {
+    spelling: 'japery',
+    definition: 'the act of acting foolish and mocking',
+    partOfSpeech: 'noun',
+    dateLearned: 1703043466,
+  },
 ];
 
 export { wordBank };
