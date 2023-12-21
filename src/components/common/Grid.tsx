@@ -15,7 +15,7 @@ interface SimpleGridConfig {
 
 export interface DataGridProps {
   config?: SimpleGridConfig;
-  error: string | ApolloError | Error;
+  error?: string | ApolloError | Error;
   loading: boolean;
   placeholder?: any;
   placeholderCount: number;

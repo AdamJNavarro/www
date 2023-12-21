@@ -1,5 +1,5 @@
 import { createStyles, Text } from '@mantine/core';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import {
   IconCode,
   IconHome2,
@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
 
 export default function SidebarContents() {
   const { classes } = useStyles();
-  const router = useRouter();
+  const pathName = usePathname();
 
   const sections: SidebarSectionProps[] = [
     {
@@ -43,21 +43,21 @@ export default function SidebarContents() {
           icon: IconHome2,
           label: 'Home',
           href: '/',
-          isActive: router.asPath === '/',
+          isActive: pathName === '/',
           isExternal: false,
         },
         {
           icon: IconCode,
           label: 'Coding',
           href: '/coding',
-          isActive: router.asPath.indexOf('/coding') >= 0,
+          isActive: pathName != null && pathName.indexOf('/coding') >= 0,
           isExternal: false,
         },
         {
           icon: IconUserCircle,
           label: 'About',
           href: '/about',
-          isActive: router.asPath.indexOf('/about') >= 0,
+          isActive: pathName != null && pathName.indexOf('/about') >= 0,
           isExternal: false,
         },
       ],
@@ -97,7 +97,7 @@ export default function SidebarContents() {
           icon: IconSocial,
           label: 'All Platforms',
           href: '/social',
-          isActive: router.asPath.indexOf('/social') >= 0,
+          isActive: pathName != null && pathName.indexOf('/social') >= 0,
           isExternal: false,
         },
       ],
