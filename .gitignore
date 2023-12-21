@@ -51,3 +51,4 @@ coverage
 coverage
 cypress-coverage
 jest-coverage
+.env*.local
