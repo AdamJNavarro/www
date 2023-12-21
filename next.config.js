@@ -1,15 +1,26 @@
 module.exports = {
-  swcMinify: true,
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: [
-      'image.tmdb.org',
-      'assets.literal.club',
-      'i.scdn.co',
-      'res.cloudinary.com',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'image.tmdb.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.literal.club',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.scdn.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
     ],
   },
 };
