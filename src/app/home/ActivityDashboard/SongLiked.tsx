@@ -4,6 +4,8 @@ import Dashboard from './Dashboard';
 export default function SongLiked() {
   const { data, error } = useSpotifyTracks({ limit: 1 });
 
+  if (!data) return null;
+
   return (
     <Dashboard.Card
       label="Song Liked"

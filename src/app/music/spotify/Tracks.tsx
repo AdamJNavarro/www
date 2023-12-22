@@ -13,6 +13,7 @@ export default function RecentlyLikedTracks() {
       error={error}
       placeholderCount={SPOTIFY_NUM_OF_TRACKS}
     >
+      {/* @ts-ignore */}
       {data.tracks.map((track) => {
         const { artist, id, image, name, url } = track;
         return (

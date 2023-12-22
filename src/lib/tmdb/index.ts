@@ -1,5 +1,5 @@
 import { MovieDb } from 'moviedb-promise';
-
+// @ts-ignore
 const moviedb = new MovieDb(process.env.NEXT_PUBLIC_TMDB_KEY);
 
 export async function getTvPoster(id: number): Promise<string> {

@@ -28,6 +28,7 @@ export default function FavoriteArtists() {
 
   return (
     <SpotifyGrid loading={!data} error={error} placeholderCount={10}>
+      {/* @ts-ignore */}
       {data.artists.map((artist) => {
         const { followers, id, image, name, url } = artist;
 

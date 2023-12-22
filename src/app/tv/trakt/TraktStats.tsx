@@ -6,6 +6,8 @@ import { useTraktStats } from '~/lib/trakt';
 export default function TraktStats() {
   const { error, data } = useTraktStats();
 
+  if (error || !data) return null;
+
   const stats: Stat[] = [
     {
       icon: IconMovie,
@@ -23,8 +25,6 @@ export default function TraktStats() {
       value: Math.floor(data.minutes / 60),
     },
   ];
-
-  if (error) return null;
 
   return (
     <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
