@@ -13,11 +13,6 @@ import {
 import { client } from '~/lib/apollo';
 import SiteConfig from './SiteConfig';
 
-interface ProvidersProps {
-  children: any;
-  props: any;
-}
-
 const globalNavigationContext = {
   isOpen: false,
   setIsOpen: (val: boolean) => {},
@@ -51,10 +46,8 @@ function GlobalStyles() {
   );
 }
 
-export function Providers({ children, props }: ProvidersProps) {
-  const [colorScheme, setColorScheme] = React.useState<ColorScheme>(
-    props.colorScheme
-  );
+export function Providers({ children }: any) {
+  const [colorScheme, setColorScheme] = React.useState<ColorScheme>('dark');
   const toggleColorScheme = (value?: ColorScheme) => {
     const nextColorScheme = value || (colorScheme === 'dark' ? 'light' : 'dark');
     setColorScheme(nextColorScheme);

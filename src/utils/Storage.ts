@@ -11,6 +11,7 @@ function setLocalStorage(key: string, value: any) {
 }
 
 function getLocalStorage(key: string) {
+  // @ts-ignore
   return JSON.parse(localStorage.getItem(key));
 }
 

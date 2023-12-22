@@ -14,12 +14,12 @@ import { GlobalNavigationContext } from '../Providers';
 
 interface TitleBarProps {
   title: string;
-  titleRef?: React.MutableRefObject<HTMLParagraphElement>;
+  titleRef?: React.MutableRefObject<HTMLParagraphElement | null>;
   magicTitle?: boolean;
   globalMenu?: boolean;
   backBtn?: boolean;
   backBtnHref?: string;
-  scrollRef?: React.MutableRefObject<HTMLDivElement>;
+  scrollRef?: React.MutableRefObject<HTMLDivElement | null>;
   children?: any;
 }
 
@@ -46,11 +46,13 @@ const useStyles = createStyles((theme) => ({
 
 export default function TitleBar({
   title,
+  // @ts-ignore
   titleRef = null,
   magicTitle = false,
   globalMenu = true,
   backBtn = false,
   backBtnHref,
+  // @ts-ignore
   scrollRef = null,
   children,
 }: TitleBarProps) {
@@ -85,6 +87,7 @@ export default function TitleBar({
   };
 
   const handler = useCallback(() => {
+    // @ts-ignore
     const shadowOpacity = scrollRef.current.scrollTop / 200;
     handleCurrentScrollOffset(shadowOpacity > 0.12 ? 0.12 : shadowOpacity);
 
@@ -128,8 +131,8 @@ export default function TitleBar({
           currentScrollOffset === 0
             ? currentScrollOffset
             : darkMode
-            ? currentScrollOffset + 0.5
-            : currentScrollOffset + 0.8
+              ? currentScrollOffset + 0.5
+              : currentScrollOffset + 0.8
         })`,
         boxShadow: `0 1px 3px rgba(0,0,0,${currentScrollOffset})`,
         minHeight: rem('48px'),
@@ -150,7 +153,7 @@ export default function TitleBar({
             </MediaQuery>
           )}
 
-          {backBtn && (
+          {backBtn && backBtnHref && (
             <MediaQuery largerThan="md" styles={{ display: 'none' }}>
               <Link href={backBtnHref}>
                 <ActionIcon size="sm">

@@ -29,6 +29,7 @@ async function generateTraktCreds(): Promise<any> {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
+      // @ts-ignore
       body: new URLSearchParams({
         client_id: TRAKT_CLIENT_ID,
         client_secret: TRAKT_CLIENT_SECRET,
@@ -47,6 +48,7 @@ async function generateTraktCreds(): Promise<any> {
 
 export async function traktFetch(url: string) {
   return fetch(url, {
+    // @ts-ignore
     headers: {
       Authorization: `Bearer ${TRAKT_ACCESS_TOKEN}`,
       'Content-Type': 'application/json',
@@ -92,6 +94,6 @@ export function useTraktList({ listId, limit }: UseTraktListArgs) {
       fallbackData: { shows: [] },
     }
   );
-
+  // @ts-ignore
   return { data: { shows: buildTraktItems(data.shows, limit) }, error };
 }

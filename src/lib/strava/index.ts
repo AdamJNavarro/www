@@ -20,6 +20,7 @@ export function getStravaAccessToken() {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
+      // @ts-ignore
       body: new URLSearchParams({
         client_id: STRAVA_CLIENT_ID,
         client_secret: STRAVA_CLIENT_SECRET,

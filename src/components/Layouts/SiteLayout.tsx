@@ -1,3 +1,5 @@
+'use client';
+
 import NavSidebar from '../Navigation/NavSidebar';
 
 export default function SiteLayout({ children }: any) {
