@@ -1,0 +1,83 @@
+.navbar {
+  background-color: var(--mantine-color-dark-6);
+  z-index: 30;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 15rem;
+  overflow-y: auto;
+  padding-bottom: 2.5rem;
+  border-right: rem(1px) solid var(--mantine-color-dark-4);
+  transition: transform 200ms ease-in-out;
+  @mixin larger-than $mantine-breakpoint-lg {
+    position: relative;
+    z-index: auto;
+    transform: translateX(0px);
+  }
+  @media (max-width: $mantine-breakpoint-lg) {
+    width: 14rem;
+  }
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 33%;
+  }
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: 50%;
+    padding-bottom: 0;
+  }
+  @media (max-width: $mantine-breakpoint-xs) {
+    width: 75%;
+    padding-bottom: 0;
+  }
+}
+
+.opened {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  transform: translateX(0px);
+}
+
+.closed {
+  position: absolute;
+  transform: translateX(-100%);
+}
+
+.container {
+  flex: 1;
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  padding-top: var(--mantine-spacing-lg);
+  padding-bottom: var(--mantine-spacing-lg);
+}
+
+.sectionLabel {
+  font-size: var(--mantine-font-size-md);
+  font-weight: 600;
+  padding-left: var(--mantine-spacing-xs);
+  padding-right: var(--mantine-spacing-xs);
+  padding-top: var(--mantine-spacing-xl);
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlayOpened {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlayClosed {
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,22 +1,12 @@
-import { Alert, AlertProps, createStyles } from '@mantine/core';
+import { Alert, AlertProps } from '@mantine/core';
 import { IconAlertCircle } from '@tabler/icons-react';
+import classes from './Common.module.css';
 
 type AlertBannerMode = 'default' | 'error' | 'success';
 
 type AlertBannerProps = AlertProps & {
   mode: AlertBannerMode;
 };
-
-const useStyles = createStyles((theme) => ({
-  alert: {
-    display: 'flex',
-    borderRadius: theme.radius.md,
-    padding: theme.spacing.md,
-    [theme.fn.largerThan('xs')]: {
-      width: '50%',
-    },
-  },
-}));
 
 function getAlertColor(mode: AlertBannerMode) {
   if (mode === 'error') return 'red';
@@ -30,8 +20,6 @@ export function AlertBanner({
   children,
   ...rest
 }: AlertBannerProps) {
-  const { classes } = useStyles();
-
   return (
     <Alert
       icon={<IconAlertCircle size={24} />}

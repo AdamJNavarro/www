@@ -1,35 +1,13 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import { createStyles, Transition } from '@mantine/core';
+import { Transition } from '@mantine/core';
+import cx from 'clsx';
 import { useContext } from 'react';
 import { GlobalNavigationContext } from '~/components/Providers';
-
-const useStyles = createStyles(() => ({
-  overlay: {
-    position: 'fixed',
-    top: '0px',
-    right: '0px',
-    bottom: '0px',
-    left: '0px',
-    zIndex: 20,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  },
-
-  opened: {
-    opacity: 1,
-    pointerEvents: 'auto',
-  },
-
-  closed: {
-    opacity: 0,
-    pointerEvents: 'none',
-  },
-}));
+import classes from './Sidebar.module.css';
 
 export default function SidebarOverlay() {
   const { isOpen, setIsOpen } = useContext(GlobalNavigationContext);
-
-  const { classes, cx } = useStyles();
 
   return (
     <Transition
@@ -41,8 +19,8 @@ export default function SidebarOverlay() {
       {(styles) => (
         <div
           className={cx(classes.overlay, {
-            [classes.opened]: isOpen,
-            [classes.closed]: !isOpen,
+            [classes.overlayOpened]: isOpen,
+            [classes.overlayClosed]: !isOpen,
           })}
           style={styles}
           onClick={() => setIsOpen(false)}

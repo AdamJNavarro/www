@@ -1,34 +1,20 @@
 import { Badge, Group, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
 import Image from 'next/legacy/image';
 import { sortByAbc } from '~/utils';
-import { Surface } from '~/components/common';
-import { LinkElement } from '~/components/common/Links';
 import { stackItems } from './Stack.data';
+import Navigation from '~/components/common/Navigation';
 
 export default function StackList() {
   const theme = useMantineTheme();
   return (
     <SimpleGrid
-      cols={2}
-      spacing="xl"
-      breakpoints={[
-        { maxWidth: 'xl', cols: 2, spacing: 'xl' },
-        { maxWidth: 'lg', cols: 2, spacing: 'xl' },
-        { maxWidth: 'md', cols: 2, spacing: 'lg' },
-        { maxWidth: 'sm', cols: 1, spacing: 'lg' },
-        { maxWidth: 'xs', cols: 1, spacing: 'md' },
-      ]}
+      cols={{ base: 1, md: 2 }}
+      spacing={{ base: 'md', sm: 'lg', lg: 'xl' }}
     >
       {sortByAbc({ data: stackItems, key: 'name' }).map((item) => {
         const { name, href, logo, tags } = item;
         return (
-          <LinkElement
-            key={name}
-            component={Surface.HoverCard}
-            href={href}
-            isExternal
-            style={{ display: 'flex' }}
-          >
+          <Navigation.Card key={name} href={href} isExternal>
             <div
               style={{
                 display: 'flex',
@@ -49,16 +35,14 @@ export default function StackList() {
                   marginLeft: theme.spacing.md,
                 }}
               >
-                <Text weight={500} size={theme.fontSizes.lg}>
+                <Text fw={500} size={theme.fontSizes.lg}>
                   {name}
                 </Text>
                 {tags && (
                   <>
                     <Group
-                      spacing="sm"
-                      sx={() => ({
-                        marginTop: `calc(${theme.spacing.xs} / 2)`,
-                      })}
+                      gap="sm"
+                      style={{ marginTop: 'calc(var(--mantine-spacing-xs) / 2)' }}
                     >
                       {tags.map((tag) => (
                         <Badge
@@ -75,10 +59,7 @@ export default function StackList() {
                 )}
               </div>
             </div>
-            {/* <Text size="md" weight={500} mt="md" ml="xs">
-              {preview}
-            </Text> */}
-          </LinkElement>
+          </Navigation.Card>
         );
       })}
     </SimpleGrid>

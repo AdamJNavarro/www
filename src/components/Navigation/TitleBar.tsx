@@ -1,16 +1,9 @@
-import {
-  ActionIcon,
-  Burger,
-  createStyles,
-  Group,
-  MediaQuery,
-  rem,
-  Text,
-} from '@mantine/core';
+import { ActionIcon, Burger, Group, rem, Text } from '@mantine/core';
 import Link from 'next/link';
 import React, { useState, useEffect, useCallback, useContext, useRef } from 'react';
 import { IconArrowLeft } from '@tabler/icons-react';
 import { GlobalNavigationContext } from '../Providers';
+import classes from './TitleBar.module.css';
 
 interface TitleBarProps {
   title: string;
@@ -22,27 +15,6 @@ interface TitleBarProps {
   scrollRef?: React.MutableRefObject<HTMLDivElement | null>;
   children?: any;
 }
-
-const useStyles = createStyles((theme) => ({
-  titleBar: {
-    position: 'sticky',
-    top: '0px',
-    zIndex: 10,
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    paddingLeft: theme.spacing.md,
-    paddingRight: theme.spacing.md,
-    paddingTop: theme.spacing.sm,
-    paddingBottom: theme.spacing.sm,
-  },
-
-  title: {
-    textDecoration: 'none',
-    fontSize: theme.fontSizes.sm,
-    fontWeight: 'bold',
-  },
-}));
 
 export default function TitleBar({
   title,
@@ -56,7 +28,6 @@ export default function TitleBar({
   scrollRef = null,
   children,
 }: TitleBarProps) {
-  const { classes } = useStyles();
   const { isOpen, setIsOpen } = useContext(GlobalNavigationContext);
   const darkMode = true;
   const [offset, setOffset] = useState<number>(200);
@@ -125,7 +96,7 @@ export default function TitleBar({
 
   return (
     <div
-      className={classes.titleBar}
+      className={classes.container}
       style={{
         background: `rgba(${darkMode ? '50,50,50' : '255,255,255'},${
           currentScrollOffset === 0
@@ -146,21 +117,22 @@ export default function TitleBar({
           justifyContent: 'space-between',
         }}
       >
-        <Group align="center" spacing="md">
+        <Group align="center" gap="md">
           {globalMenu && (
-            <MediaQuery largerThan="lg" styles={{ display: 'none' }}>
-              <Burger opened={isOpen} onClick={() => setIsOpen(!isOpen)} size="sm" />
-            </MediaQuery>
+            <Burger
+              hiddenFrom="lg"
+              opened={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
+              size="sm"
+            />
           )}
 
           {backBtn && backBtnHref && (
-            <MediaQuery largerThan="md" styles={{ display: 'none' }}>
-              <Link href={backBtnHref}>
-                <ActionIcon size="sm">
-                  <IconArrowLeft />
-                </ActionIcon>
-              </Link>
-            </MediaQuery>
+            <Link href={backBtnHref}>
+              <ActionIcon hiddenFrom="md" size="sm">
+                <IconArrowLeft />
+              </ActionIcon>
+            </Link>
           )}
 
           <Text

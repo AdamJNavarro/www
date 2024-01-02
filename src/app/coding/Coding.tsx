@@ -43,14 +43,6 @@ export default function Coding() {
             <CodingLanguages />
           </Section.Content>
         </Section.Container>
-        <Section.Container id="projects">
-          <Section.Header>
-            <Section.Title>Projects</Section.Title>
-          </Section.Header>
-          <Section.Content>
-            <CodingProjects />
-          </Section.Content>
-        </Section.Container>
       </Page.Content>
     </Page.Container>
   );

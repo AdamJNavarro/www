@@ -27,7 +27,7 @@ export default function TraktStats() {
   ];
 
   return (
-    <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+    <SimpleGrid cols={{ base: 1, sm: 3 }}>
       {stats.map((stat) => (
         <Skeleton key={stat.label} visible={data.shows === 0} radius="md">
           <StatCard {...stat} />

@@ -1,4 +1,4 @@
-import { createStyles, Text } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { usePathname } from 'next/navigation';
 import {
   IconCode,
@@ -12,27 +12,9 @@ import {
 } from '@tabler/icons-react';
 import { SidebarSectionProps } from '../Navigation.types';
 import { SidebarLink } from '../NavigationLinks';
-
-const useStyles = createStyles((theme) => ({
-  container: {
-    flex: 1,
-    paddingLeft: theme.spacing.md,
-    paddingRight: theme.spacing.md,
-    paddingTop: theme.spacing.lg,
-    paddingBottom: theme.spacing.lg,
-  },
-
-  sectionLabel: {
-    fontSize: theme.fontSizes.md,
-    fontWeight: 600,
-    paddingTop: theme.spacing.xl,
-    paddingLeft: theme.spacing.xs,
-    paddingRight: theme.spacing.xs,
-  },
-}));
+import classes from './Sidebar.module.css';
 
 export default function SidebarContents() {
-  const { classes } = useStyles();
   const pathName = usePathname();
 
   const sections: SidebarSectionProps[] = [

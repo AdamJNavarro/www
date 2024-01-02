@@ -1,7 +1,8 @@
-import { Text, createStyles, Group, Space } from '@mantine/core';
+import { Text, Group, Space } from '@mantine/core';
 import Link from 'next/link';
 import Image from 'next/legacy/image';
 import { PlatformBadge, ProductPlatform } from '~/components/common/Badges';
+import classes from './CodingProjects.module.css';
 
 type CodingProject = {
   name: string;
@@ -19,21 +20,7 @@ const codingProjects: CodingProject[] = [
   },
 ];
 
-const useStyles = createStyles((theme) => ({
-  container: {
-    marginBottom: `calc(${theme.spacing.xl} * 2.5)`,
-  },
-
-  nameContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginLeft: theme.spacing.xl,
-  },
-}));
-
 function ProjectItem({ name, desc, platforms, url }: CodingProject) {
-  const { classes } = useStyles();
-
   const assetName = name.replaceAll(' ', '-').replaceAll('.', '');
   const imageSrc = `/img/logos/${assetName}.png`;
 
@@ -51,11 +38,11 @@ function ProjectItem({ name, desc, platforms, url }: CodingProject) {
           />
         </Link>
         <div className={classes.nameContainer}>
-          <Text weight={600} size="xl">
+          <Text fw={600} size="xl">
             {name}
           </Text>
           <Space h="sm" />
-          <Group spacing="md">
+          <Group gap="md">
             {platforms.map((platform) => (
               <PlatformBadge key={`${name}-${platform}`} name={platform} />
             ))}

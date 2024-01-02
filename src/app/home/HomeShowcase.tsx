@@ -2,6 +2,7 @@ import { Avatar, Box, Text } from '@mantine/core';
 import { IconMoodHappy, IconSocial, IconStack2 } from '@tabler/icons-react';
 import NavGrid from '~/components/Navigation/NavGrid';
 import { NavLinkProps } from '~/components/Navigation/Navigation.types';
+import classes from './Showcase.module.css';
 
 const items: NavLinkProps[] = [
   {
@@ -26,34 +27,10 @@ const items: NavLinkProps[] = [
 
 export default function HomeShowcase() {
   return (
-    <Box
-      sx={(theme) => ({
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        textAlign: 'center',
-        width: '75%',
-        [`@media (max-width: ${theme.breakpoints.xs})`]: {
-          width: '100%',
-        },
-      })}
-    >
+    <Box className={classes.container}>
       <Avatar src="/img/home-photo.jpg" radius={192 / 2} size={192} mx="auto" />
-      <Text
-        sx={(theme) => ({
-          fontSize: `calc(${theme.spacing.xl} * 1.25)`,
-          marginTop: `calc(${theme.spacing.xl} * 1.5)`,
-          marginBottom: `calc(${theme.spacing.xs} * -1)`,
-        })}
-      >
-        Adam Navarro
-      </Text>
-      <Text
-        color="dimmed"
-        sx={(theme) => ({
-          fontSize: theme.fontSizes.xl,
-          marginBottom: `calc(${theme.spacing.xl} * 2)`,
-        })}
-      >
+      <Text className={classes.title}>Adam Navarro</Text>
+      <Text c="dimmed" className={classes.motto}>
         Find Passion. Foster Passion.
       </Text>
       <NavGrid items={items} />

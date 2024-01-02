@@ -1,47 +1,6 @@
-import { createStyles, rem, Text } from '@mantine/core';
+import { Text } from '@mantine/core';
 import * as React from 'react';
-
-const useStyles = createStyles((theme) => ({
-  sectionContainer: {
-    paddingTop: `calc(${theme.spacing.xl} * 2)`,
-    //backgroundColor: 'red',
-  },
-
-  sectionHeader: {
-    //backgroundColor: 'pink
-  },
-
-  sectionTitle: {
-    fontSize: 28,
-    fontWeight: 600,
-    [theme.fn.smallerThan('sm')]: {
-      fontSize: 24,
-      fontWeight: 500,
-    },
-  },
-
-  sectionDescription: {
-    fontSize: 22,
-    fontWeight: 500,
-    [theme.fn.smallerThan('sm')]: {
-      fontSize: 18,
-      fontWeight: 400,
-    },
-  },
-
-  sectionContent: {
-    paddingTop: theme.spacing.xl,
-    paddingBottom: `calc(${theme.spacing.xl} * 2)`,
-    //backgroundColor: 'purple',
-  },
-
-  sectionSeparator: {
-    width: '4.5rem',
-    height: rem('1px'),
-    borderRadius: '0.25rem',
-    backgroundColor: theme.colors.dark[4],
-  },
-}));
+import classes from './Section.module.css';
 
 interface SectionContainerProps {
   id?: string;
@@ -49,32 +8,23 @@ interface SectionContainerProps {
 }
 
 const Container = React.forwardRef<HTMLDivElement, SectionContainerProps>(
-  (props, ref) => {
-    const { classes } = useStyles();
-    return (
-      <div id={props.id} ref={ref} className={classes.sectionContainer} {...props} />
-    );
-  }
+  (props, ref) => (
+    <div id={props.id} ref={ref} className={classes.container} {...props} />
+  )
 );
 
 function Header(props) {
-  const { classes } = useStyles();
-  return <div className={classes.sectionHeader} {...props} />;
+  return <div {...props} />;
 }
 
-const Title = (props) => {
-  const { classes } = useStyles();
-  return <Text id={props.id} className={classes.sectionTitle} {...props} />;
-};
+const Title = (props) => <Text id={props.id} className={classes.title} {...props} />;
 
-const Description = (props) => {
-  const { classes } = useStyles();
-  return <Text className={classes.sectionDescription} color="dimmed" {...props} />;
-};
+const Description = (props) => (
+  <Text className={classes.description} c="dimmed" {...props} />
+);
 
 function Content(props) {
-  const { classes } = useStyles();
-  return <div className={classes.sectionContent} {...props} />;
+  return <div className={classes.content} {...props} />;
 }
 
 const Section = {
