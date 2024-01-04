@@ -1321,6 +1321,18 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1703043466,
   },
+  {
+    spelling: 'unguent',
+    definition: 'a soft, viscous substance used as an ointment or lubricant',
+    partOfSpeech: 'noun',
+    dateLearned: 1704243531,
+  },
+  {
+    spelling: 'nostrum',
+    definition: 'an ineffective medicine prepared by an unqualified individual',
+    partOfSpeech: 'noun',
+    dateLearned: 1704416331,
+  },
 ];
 
 export { wordBank };
