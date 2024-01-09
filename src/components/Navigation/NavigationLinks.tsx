@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useContext } from 'react';
-import cx from 'clsx';
 import { IconExternalLink } from '@tabler/icons-react';
 import Link from 'next/link';
 import { GlobalNavigationContext } from '../Providers';
@@ -24,15 +23,15 @@ function SidebarLink({
         setIsOpen(false);
       }}
       className={classes.link}
-      data-active={isActive}
+      data-active={isActive || undefined}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}
     >
       <Icon className={classes.icon} />
       <span style={{ flex: 1 }}>{label}</span>
       {isExternal && (
-        <span className={classes.trailingIcon}>
-          <IconExternalLink />
+        <span className={classes.externalIcon}>
+          <IconExternalLink size={20} />
         </span>
       )}
     </Link>
