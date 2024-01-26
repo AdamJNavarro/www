@@ -21,7 +21,6 @@ export default function Words() {
             {wordBank.length + 1} words.
           </Page.Description>
         </Page.Header>
-        <WordsDisclaimer />
         <WordsList />
       </Page.Content>
     </Page.Container>

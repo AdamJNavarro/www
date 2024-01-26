@@ -41,15 +41,8 @@ export default function WordsList() {
       </Group>
       <DataGrid
         config={{
-          cols: 3,
-          spacing: 'xl',
-          breakpoints: [
-            { maxWidth: 'xl', cols: 3, spacing: 'xl' },
-            { maxWidth: 'lg', cols: 3, spacing: 'lg' },
-            { maxWidth: 'md', cols: 2, spacing: 'md' },
-            { maxWidth: 'sm', cols: 1, spacing: 'sm' },
-            { maxWidth: 'xs', cols: 1, spacing: 'xs' },
-          ],
+          cols: { base: 1, md: 2 },
+          spacing: { base: 'md', sm: 'lg', lg: 'xl' },
         }}
         error={undefined}
         loading={false}

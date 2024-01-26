@@ -3,8 +3,7 @@ import { SimpleGrid, Skeleton } from '@mantine/core';
 import { AlertBanner } from './Feedback';
 
 interface SimpleGridConfig {
-  breakpoints: any[];
-  cols: number;
+  cols: any;
   spacing: any;
 }
 
