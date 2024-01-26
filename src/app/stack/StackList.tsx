@@ -40,10 +40,7 @@ export default function StackList() {
                 </Text>
                 {tags && (
                   <>
-                    <Group
-                      gap="sm"
-                      style={{ marginTop: 'calc(var(--mantine-spacing-xs) / 2)' }}
-                    >
+                    <Group gap="sm" mt={8}>
                       {tags.map((tag) => (
                         <Badge
                           key={`${name}-tag-${tag}`}

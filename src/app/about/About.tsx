@@ -3,7 +3,6 @@
 import { useRef } from 'react';
 import { Page, Section } from '~/components/common';
 
-import TitleBar from '~/components/Navigation/TitleBar';
 import Biography from './Biography';
 import InterestsGrid from './InterestsGrid';
 
@@ -13,7 +12,6 @@ export default function About() {
 
   return (
     <Page.Container ref={scrollRef}>
-      <TitleBar title="About" titleRef={titleRef} magicTitle scrollRef={scrollRef} />
       <Page.Content>
         <Page.Header>
           <Page.Title ref={titleRef}>About Me</Page.Title>

@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import { Page } from '~/components/common';
-import TitleBar from '~/components/Navigation/TitleBar';
 import CharitiesList from './CharitiesList';
 import CharityGameDescription from './CharityGameDescription';
 import CharityStats from './CharityStats';
@@ -13,12 +12,6 @@ export default function CharityGame() {
 
   return (
     <Page.Container ref={scrollRef}>
-      <TitleBar
-        title="Charity Game"
-        titleRef={titleRef}
-        magicTitle
-        scrollRef={scrollRef}
-      />
       <Page.Content>
         <Page.Header>
           <Page.Title ref={titleRef}>Charity Game</Page.Title>

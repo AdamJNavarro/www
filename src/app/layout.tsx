@@ -3,7 +3,7 @@
 import '@mantine/core/styles.css';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Providers } from '~/components/Providers';
-import SiteLayout from '~/components/Layouts/SiteLayout';
+import Shell from '~/components/Layouts/Shell';
 
 export default function App({ children }: { children: any }) {
   return (
@@ -22,7 +22,7 @@ export default function App({ children }: { children: any }) {
           theme={{ primaryColor: 'violet', primaryShade: 8 }}
         >
           <Providers>
-            <SiteLayout>{children}</SiteLayout>
+            <Shell>{children}</Shell>
           </Providers>
         </MantineProvider>
       </body>

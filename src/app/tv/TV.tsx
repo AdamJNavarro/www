@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import { Page } from '~/components/common';
-import TitleBar from '~/components/Navigation/TitleBar';
 import Trakt from './trakt';
 
 export default function Television() {
@@ -11,12 +10,6 @@ export default function Television() {
 
   return (
     <Page.Container ref={scrollRef}>
-      <TitleBar
-        title="Television"
-        titleRef={titleRef}
-        magicTitle
-        scrollRef={scrollRef}
-      />
       <Page.Content>
         <Page.Header>
           <Page.Title ref={titleRef}>Television</Page.Title>

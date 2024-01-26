@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import { Page } from '~/components/common';
-import TitleBar from '~/components/Navigation/TitleBar';
 import SocialShowcase from './SocialShowcase';
 
 export default function Social() {
@@ -11,12 +10,6 @@ export default function Social() {
 
   return (
     <Page.Container ref={scrollRef}>
-      <TitleBar
-        title="Social"
-        titleRef={titleRef}
-        magicTitle
-        scrollRef={scrollRef}
-      />
       <Page.Content>
         <Page.Header>
           <Page.Title ref={titleRef}>Social Presence</Page.Title>
