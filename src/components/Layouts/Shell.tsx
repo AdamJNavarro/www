@@ -20,7 +20,7 @@ export default function Shell({ children }: any) {
   const [mobileOpened, { toggle: toggleMobile, close: closeMobile }] =
     useDisclosure();
   const [desktopOpened, { toggle: toggleDesktop, close: closeDesktop }] =
-    useDisclosure(true);
+    useDisclosure();
 
   const pathName = usePathname();
 
@@ -102,7 +102,7 @@ export default function Shell({ children }: any) {
         collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
       }}
       padding="md"
-      transitionDuration={500}
+      transitionDuration={400}
       transitionTimingFunction="ease"
     >
       <AppShell.Header>
