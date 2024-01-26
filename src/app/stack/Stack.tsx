@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import { Page } from '~/components/common';
-import TitleBar from '~/components/Navigation/TitleBar';
 import StackList from './StackList';
 
 export default function Stack() {
@@ -11,7 +10,6 @@ export default function Stack() {
 
   return (
     <Page.Container ref={scrollRef}>
-      <TitleBar title="Stack" titleRef={titleRef} magicTitle scrollRef={scrollRef} />
       <Page.Content>
         <Page.Header>
           <Page.Title ref={titleRef}>Stack</Page.Title>

@@ -1,35 +1,14 @@
 import { Card as MantineCard } from '@mantine/core';
+import classes from './Surface.module.css';
 
 function Card(props) {
   return (
-    <MantineCard
-      padding="sm"
-      radius="md"
-      sx={(theme) => ({
-        backgroundColor:
-          theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
-      })}
-      {...props}
-    />
+    <MantineCard padding="sm" radius="md" className={classes.card} {...props} />
   );
 }
 
 function HoverCard(props) {
-  return (
-    <Card
-      sx={(theme) => ({
-        transition: 'transform 200ms ease',
-        '&:hover': {
-          backgroundColor:
-            theme.colorScheme === 'dark'
-              ? theme.colors.dark[5]
-              : theme.colors.gray[0],
-          transform: 'scale(1.025)',
-        },
-      })}
-      {...props}
-    />
-  );
+  return <Card className={classes.hoverCard} {...props} />;
 }
 
 const Surface = {

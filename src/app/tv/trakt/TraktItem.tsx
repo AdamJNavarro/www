@@ -7,12 +7,12 @@ export default function TraktItem({ traktUrl, title, posterId, year }: TraktShow
   return (
     <ProductItem
       label={
-        <Text lineClamp={2} weight={500} size="lg">
+        <Text lineClamp={2} fw={500} size="lg">
           {title}
         </Text>
       }
       subLabel={
-        <Text color="dimmed" lineClamp={2} weight={500} size="md">
+        <Text c="dimmed" lineClamp={2} fw={300} size="md">
           {year}
         </Text>
       }

@@ -1,4 +1,3 @@
-import { createStyles } from '@mantine/core';
 import Link from 'next/link';
 
 export interface LinkElementProps {
@@ -46,16 +45,3 @@ export function LinkElement({
     </Element>
   );
 }
-
-export const linkStyles = createStyles((theme) => ({
-  text: {
-    ...theme.fn.focusStyles(),
-    textDecoration: 'none',
-    color:
-      theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7],
-
-    '&:hover': {
-      color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    },
-  },
-}));

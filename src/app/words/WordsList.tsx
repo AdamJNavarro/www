@@ -17,11 +17,11 @@ export default function WordsList() {
   return (
     <div>
       <Group
-        position="apart"
-        sx={(theme) => ({
-          marginTop: `calc(${theme.spacing.xl} * 2)`,
-          marginBottom: theme.spacing.xl,
-        })}
+        justify="space-between"
+        style={{
+          marginTop: 'calc(var(--mantine-spacing-xl) * 2)',
+          marginBottom: 'var(--mantine-spacing-xl)',
+        }}
       >
         <WordSortingToggle
           onChange={(value: WordSortingMode) => {

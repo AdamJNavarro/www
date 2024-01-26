@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, createStyles, Group, Progress } from '@mantine/core';
+import { Text, Group, Progress } from '@mantine/core';
 import { Surface } from '~/components/common';
+import classes from './CodingLanguage.module.css';
 
 type CodingLanguage = {
   name: string;
@@ -26,13 +27,6 @@ const languages: CodingLanguage[] = [
   },
 ];
 
-const useStyles = createStyles((theme) => ({
-  languageItem: {
-    paddingTop: theme.spacing.sm,
-    paddingBottom: theme.spacing.sm,
-  },
-}));
-
 function getColorByStrength(strength: number): string {
   if (strength >= 67) return 'green';
   if (strength >= 33) return 'yellow';
@@ -40,8 +34,6 @@ function getColorByStrength(strength: number): string {
 }
 
 export default function CodingLanguages() {
-  const { classes } = useStyles();
-
   return (
     <Surface.Card>
       {languages
@@ -49,9 +41,9 @@ export default function CodingLanguages() {
         .map((language) => {
           const { name, strength } = language;
           return (
-            <div key={name} className={classes.languageItem}>
-              <Group position="apart">
-                <Text weight={700} size="lg">
+            <div key={name} className={classes.item}>
+              <Group justify="space-between">
+                <Text fw={700} size="lg">
                   {name}
                 </Text>
               </Group>

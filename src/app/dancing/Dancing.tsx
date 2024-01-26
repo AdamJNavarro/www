@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import { Page, Section } from '~/components/common';
-import TitleBar from '~/components/Navigation/TitleBar';
 import DancingPerformances from './DancingPerformances';
 
 export default function Dancing() {
@@ -11,12 +10,6 @@ export default function Dancing() {
 
   return (
     <Page.Container ref={scrollRef}>
-      <TitleBar
-        title="Dancing"
-        titleRef={titleRef}
-        magicTitle
-        scrollRef={scrollRef}
-      />
       <Page.Content>
         <Page.Header>
           <Page.Title ref={titleRef}>Dancing</Page.Title>

@@ -1,12 +1,15 @@
 'use client';
 
+import '@mantine/core/styles.css';
+import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Providers } from '~/components/Providers';
-import SiteLayout from '~/components/Layouts/SiteLayout';
+import Shell from '~/components/Layouts/Shell';
 
 export default function App({ children }: { children: any }) {
   return (
     <html lang="en">
       <head>
+        <ColorSchemeScript forceColorScheme="dark" />
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta
           name="viewport"
@@ -14,9 +17,14 @@ export default function App({ children }: { children: any }) {
         />
       </head>
       <body>
-        <Providers>
-          <SiteLayout>{children}</SiteLayout>
-        </Providers>
+        <MantineProvider
+          forceColorScheme="dark"
+          theme={{ primaryColor: 'violet', primaryShade: 8 }}
+        >
+          <Providers>
+            <Shell>{children}</Shell>
+          </Providers>
+        </MantineProvider>
       </body>
     </html>
   );

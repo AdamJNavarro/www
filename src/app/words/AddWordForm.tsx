@@ -15,7 +15,7 @@ export default function AddWordForm() {
   const [adminKey, setAdminKey] = useState<string>('');
 
   return (
-    <Stack justify="center" spacing="lg">
+    <Stack justify="center" gap="lg">
       <TextInput
         placeholder="Enter word..."
         label="New Word"

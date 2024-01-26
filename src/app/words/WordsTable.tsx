@@ -7,22 +7,18 @@ function TableEntry({ spelling, definition, partOfSpeech, dateLearned }: WordPro
   return (
     <tr key={spelling}>
       <td>
-        <Text size="sm" weight={600} transform="capitalize">
+        <Text size="sm" fw={600} tt="capitalize">
           {spelling}
         </Text>
       </td>
       <td>2022</td>
       <td>
-        <Text
-          size="sm"
-          color={getPartOfSpeechColor(partOfSpeech)}
-          transform="capitalize"
-        >
+        <Text size="sm" c={getPartOfSpeechColor(partOfSpeech)} tt="capitalize">
           {partOfSpeech}
         </Text>
       </td>
       <td>
-        <Text size="sm" weight={500}>
+        <Text size="sm" fw={500}>
           {definition}.
         </Text>
       </td>
@@ -58,7 +54,7 @@ export default function WordsTable({
 
   return (
     <ScrollArea>
-      <Table sx={{ minWidth: 800 }} verticalSpacing="xs">
+      <Table miw={800} verticalSpacing="xs">
         <thead>
           <tr>
             <th>Term</th>

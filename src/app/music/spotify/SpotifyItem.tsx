@@ -17,12 +17,12 @@ export default function SpotifyItem({
   return (
     <ProductItem
       label={
-        <Text lineClamp={1} weight={600} size="md">
+        <Text lineClamp={1} fw={600} size="md">
           {label}
         </Text>
       }
       subLabel={
-        <Text color="dimmed" lineClamp={1}>
+        <Text c="dimmed" lineClamp={1}>
           {subLabel}
         </Text>
       }

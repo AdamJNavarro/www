@@ -4,7 +4,7 @@ import { charityGameStats } from './CharityGame.data';
 
 export default function CharityStats() {
   return (
-    <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+    <SimpleGrid cols={{ base: 1, sm: 3 }}>
       {charityGameStats.map((stat) => (
         <StatCard key={stat.label} {...stat} />
       ))}

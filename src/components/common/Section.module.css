@@ -1,0 +1,33 @@
+.container {
+  padding-top: calc(var(--mantine-spacing-xl) * 2);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.description {
+  font-size: 22px;
+  font-weight: 500;
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.content {
+  padding-top: var(--mantine-spacing-xl);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+}
+
+.separator {
+  width: 4.5rem;
+  height: rem(1px);
+  border-radius: 0.25rem;
+  background-color: var(--mantine-color-dark-4);
+}

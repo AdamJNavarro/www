@@ -1,4 +1,5 @@
-import { createStyles, SimpleGrid } from '@mantine/core';
+import { SimpleGrid } from '@mantine/core';
+import classes from './DancingPerformance.module.css';
 
 interface YoutubeEmbedProps {
   videoId: string;
@@ -22,24 +23,11 @@ const performanceVideos = [
   },
 ];
 
-const useStyles = createStyles((theme) => ({
-  iframe: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    border: 0,
-    borderRadius: theme.radius.md,
-  },
-}));
-
 function buildYoutubeURL(videoId, config) {
   return `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&start=${config.start}&end=${config.end}`;
 }
 
 function YoutubeEmbed({ videoId, config }: YoutubeEmbedProps) {
-  const { classes } = useStyles();
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%' }}>

@@ -1,6 +1,6 @@
 import { Box } from '@mantine/core';
-import { Surface } from '~/components/common';
-import { LinkElement } from '~/components/common/Links';
+
+import Navigation from '../common/Navigation';
 
 interface ProductItemProps {
   leadElement: React.ReactElement;
@@ -18,26 +18,27 @@ export default function ProductItem({
   leadElement,
 }: ProductItemProps) {
   return (
-    <LinkElement
-      component={Surface.Card}
-      href={url}
-      isExternal
-      style={{ display: 'flex' }}
-    >
-      {leadElement}
-      <Box
-        sx={(theme) => ({
+    <Navigation.Card href={url} isExternal>
+      <div
+        style={{
           display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          marginLeft: theme.spacing.md,
-        })}
+        }}
       >
-        {label}
-        {subLabel}
+        {leadElement}
+        <Box
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            marginLeft: 'var(--mantine-spacing-md)',
+          }}
+        >
+          {label}
+          {subLabel}
 
-        {children}
-      </Box>
-    </LinkElement>
+          {children}
+        </Box>
+      </div>
+    </Navigation.Card>
   );
 }

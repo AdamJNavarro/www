@@ -23,10 +23,10 @@ export function StatCard({ label, value, icon: Icon }: Stat) {
         />
 
         <div>
-          <Text color="dimmed" size="xs" transform="uppercase" weight={700}>
+          <Text c="dimmed" size="xs" tt="uppercase" fw={700}>
             {label}
           </Text>
-          <Text weight={700} size="xl">
+          <Text fw={700} size="xl">
             {value}
           </Text>
         </div>

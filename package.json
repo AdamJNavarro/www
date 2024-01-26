@@ -16,9 +16,9 @@
     "@apollo/client": "^3.8.10",
     "@emotion/react": "^11.11.3",
     "@emotion/server": "^11.11.0",
-    "@mantine/core": "^6.0.10",
-    "@mantine/dates": "^6.0.19",
-    "@mantine/hooks": "^6.0.10",
+    "@mantine/core": "^7.4.2",
+    "@mantine/dates": "^7.4.2",
+    "@mantine/hooks": "^7.4.2",
     "@mantine/next": "^6.0.21",
     "@tabler/icons-react": "^2.46.0",
     "cookies-next": "^4.1.0",
@@ -32,6 +32,7 @@
     "swr": "^2.2.4"
   },
   "devDependencies": {
+
     "@commitlint/cli": "^18.6.0",
     "@commitlint/config-conventional": "^18.6.0",
     "@next/eslint-plugin-next": "^14.0.4",
@@ -51,6 +52,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
+    "postcss": "^8.4.33",
+    "postcss-preset-mantine": "^1.12.3",
+    "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.2.4",
     "typescript": "^5.1.6"
   },
@@ -59,6 +63,7 @@
     "ignorePatterns": [
       "node_modules/",
       "*.config.js",
+      "*.config.cjs",
       "cypress/"
     ],
     "parser": "@typescript-eslint/parser",

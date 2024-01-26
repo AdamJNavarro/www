@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import { Page } from '~/components/common';
-import TitleBar from '~/components/Navigation/TitleBar';
 import Spotify from './spotify';
 
 export default function Music() {
@@ -11,7 +10,6 @@ export default function Music() {
 
   return (
     <Page.Container ref={scrollRef}>
-      <TitleBar title="Music" titleRef={titleRef} magicTitle scrollRef={scrollRef} />
       <Page.Content>
         <Page.Header>
           <Page.Title ref={titleRef}>Music</Page.Title>

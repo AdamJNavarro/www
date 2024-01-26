@@ -1,16 +1,11 @@
 import { ApolloError } from '@apollo/client';
-import {
-  MantineNumberSize,
-  SimpleGrid,
-  SimpleGridBreakpoint,
-  Skeleton,
-} from '@mantine/core';
+import { SimpleGrid, Skeleton } from '@mantine/core';
 import { AlertBanner } from './Feedback';
 
 interface SimpleGridConfig {
-  breakpoints: SimpleGridBreakpoint[];
+  breakpoints: any[];
   cols: number;
-  spacing: MantineNumberSize;
+  spacing: any;
 }
 
 export interface DataGridProps {

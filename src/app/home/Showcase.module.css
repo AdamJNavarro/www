@@ -1,0 +1,20 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 75%;
+  @media (max-width: $mantine-breakpoint-xs) {
+    width: 100%;
+  }
+}
+
+.title {
+  font-size: calc(var(--mantine-font-size-xl) * 1.5);
+  margin-top: calc(var(--mantine-spacing-xl) * 1.5);
+  margin-bottom: calc(var(--mantine-spacing-xs) * -1);
+}
+
+.motto {
+  font-size: var(--mantine-font-size-xl);
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
+}
