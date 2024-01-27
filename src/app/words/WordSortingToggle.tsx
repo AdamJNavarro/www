@@ -10,6 +10,7 @@ import {
 export default function WordSortingToggle({ ...rest }: any) {
   return (
     <SegmentedControl
+      color="violet.7"
       data={[
         {
           value: 'recent',
