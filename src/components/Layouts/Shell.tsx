@@ -102,7 +102,7 @@ export default function Shell({ children }: any) {
         collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
       }}
       padding="md"
-      transitionDuration={400}
+      transitionDuration={200}
       transitionTimingFunction="ease"
     >
       <AppShell.Header>
@@ -112,12 +112,14 @@ export default function Shell({ children }: any) {
             onClick={toggleMobile}
             hiddenFrom="sm"
             size="sm"
+            transitionDuration={200}
           />
           <Burger
             opened={desktopOpened}
             onClick={toggleDesktop}
             visibleFrom="sm"
             size="sm"
+            transitionDuration={200}
           />
           <Text fw={800} size="md" td="none">
             Adam Navarro
