@@ -8,7 +8,7 @@ export default function SpotifyGrid(props: DataGridProps) {
         cols: { base: 1, md: 2 },
         spacing: { base: 'md', sm: 'lg', lg: 'xl' },
       }}
-      placeholder={<SpotifyItem image={null} label="X" subLabel="x" url="/" />}
+      placeholder={<SpotifyItem image="" label="X" subLabel="x" url="/" />}
       {...props}
     />
   );
