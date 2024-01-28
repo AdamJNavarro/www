@@ -14,7 +14,16 @@ function PastBook({ entry }: { entry: LiteralReadingState }) {
   return (
     <LiteralItem {...entry}>
       <div>
-        <Badge color={getBadgeColor(entry.status)} size="md" variant="dot">
+        <Badge
+          color={getBadgeColor(entry.status)}
+          size="xs"
+          variant="dot"
+          styles={{
+            label: {
+              fontWeight: 500,
+            },
+          }}
+        >
           {entry.status}
         </Badge>
       </div>

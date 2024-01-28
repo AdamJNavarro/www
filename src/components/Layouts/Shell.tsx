@@ -104,26 +104,39 @@ export default function Shell({ children }: any) {
       padding="md"
       transitionDuration={200}
       transitionTimingFunction="ease"
+      styles={{
+        root: {
+          backgroundColor: 'var(--mantine-color-dark-8)',
+        },
+        navbar: {
+          backgroundColor: 'var(--mantine-color-dark-7)',
+        },
+      }}
     >
       <AppShell.Header>
-        <Group h="100%" px="md">
-          <Burger
-            opened={mobileOpened}
-            onClick={toggleMobile}
-            hiddenFrom="sm"
-            size="sm"
-            transitionDuration={200}
-          />
-          <Burger
-            opened={desktopOpened}
-            onClick={toggleDesktop}
-            visibleFrom="sm"
-            size="sm"
-            transitionDuration={200}
-          />
-          <Text fw={800} size="md" td="none">
-            Adam Navarro
-          </Text>
+        <Group h="100%" px="md" justify="space-between">
+          <Group>
+            <Burger
+              opened={mobileOpened}
+              onClick={toggleMobile}
+              hiddenFrom="sm"
+              size="sm"
+              transitionDuration={200}
+            />
+            <Burger
+              opened={desktopOpened}
+              onClick={toggleDesktop}
+              visibleFrom="sm"
+              size="sm"
+              transitionDuration={200}
+            />
+            <Text fw={800} size="md" td="none" visibleFrom="sm">
+              Adam Navarro
+            </Text>
+            <Text fw={800} size="md" tt="capitalize" hiddenFrom="sm">
+              {pathName?.substring(1)}
+            </Text>
+          </Group>
         </Group>
       </AppShell.Header>
       <AppShell.Navbar px="xs" py="md">

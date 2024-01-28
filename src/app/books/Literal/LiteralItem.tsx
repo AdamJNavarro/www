@@ -11,12 +11,12 @@ export default function LiteralItem({ book, children }: LiteralItemProps) {
   return (
     <ProductItem
       label={
-        <Text lineClamp={2} fw={500} size="lg">
+        <Text lineClamp={2} fw={500} size="md" mb={-2}>
           {title}
         </Text>
       }
       subLabel={
-        <Text c="dimmed" lineClamp={2} fw={500} size="md">
+        <Text c="dimmed" lineClamp={2} fw={500} size="sm">
           {buildNamesString(authors, 'name')}
         </Text>
       }
