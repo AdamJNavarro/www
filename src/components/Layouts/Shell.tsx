@@ -16,6 +16,12 @@ import {
 import { SidebarSectionProps } from '../Navigation/Navigation.types';
 import classes from '../Navigation/NavigationLinks.module.css';
 
+function getPathLabel(pathName: string | null): string {
+  if (!pathName) return '';
+  if (pathName === '/') return 'Adam Navarro';
+  return pathName?.substring(1);
+}
+
 export default function Shell({ children }: any) {
   const [mobileOpened, { toggle: toggleMobile, close: closeMobile }] =
     useDisclosure();
@@ -134,7 +140,7 @@ export default function Shell({ children }: any) {
               Adam Navarro
             </Text>
             <Text fw={800} size="md" tt="capitalize" hiddenFrom="sm">
-              {pathName?.substring(1)}
+              {getPathLabel(pathName)}
             </Text>
           </Group>
         </Group>

@@ -1,8 +1,9 @@
-import { Image, Text } from '@mantine/core';
+import { Text } from '@mantine/core';
+import Image from 'next/image';
 import ProductItem from '~/components/Products/ProductItem';
 
 interface SpotifyItemProps {
-  image: string | null;
+  image: string;
   label: string;
   subLabel: string;
   url: string;
@@ -28,7 +29,13 @@ export default function SpotifyItem({
       }
       url={url}
       leadElement={
-        <Image src={image} height={64} width={64} fit="contain" radius="sm" />
+        <Image
+          src={image}
+          height={64}
+          width={64}
+          alt={`${label}-spotify-cover-art`}
+          style={{ borderRadius: 4 }}
+        />
       }
     />
   );

@@ -1,5 +1,5 @@
 import { Badge, Group, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import { sortByAbc } from '~/utils';
 import { stackItems } from './Stack.data';
 import Navigation from '~/components/common/Navigation';
@@ -21,13 +21,7 @@ export default function StackList() {
                 alignItems: 'center',
               }}
             >
-              <Image
-                src={logo}
-                width={56}
-                height={56}
-                layout="fixed"
-                alt={`${name} icon`}
-              />
+              <Image src={logo} width={56} height={56} alt={`${name} icon`} />
               <div
                 style={{
                   display: 'flex',
@@ -35,7 +29,7 @@ export default function StackList() {
                   marginLeft: theme.spacing.md,
                 }}
               >
-                <Text fw={500} size={theme.fontSizes.lg}>
+                <Text fw={500} size={theme.fontSizes.md}>
                   {name}
                 </Text>
                 {tags && (

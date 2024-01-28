@@ -1,5 +1,5 @@
 import { Skeleton } from '@mantine/core';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 
 import { useEffect, useState } from 'react';
 import { getTvPoster } from '~/lib/tmdb';
@@ -32,7 +32,7 @@ export default function TraktPoster({ posterId, title }: TraktPosterProps) {
         position: 'relative',
       }}
     >
-      <Image src={posterUrl} layout="fill" alt={`${title}-poster`} />
+      <Image src={posterUrl} fill alt={`${title}-poster`} />
     </div>
   );
 }

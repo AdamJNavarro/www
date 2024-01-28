@@ -1,6 +1,6 @@
 import { Text, Group, Space } from '@mantine/core';
 import Link from 'next/link';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import { PlatformBadge, ProductPlatform } from '~/components/common/Badges';
 import classes from './CodingProjects.module.css';
 
@@ -32,7 +32,6 @@ function ProjectItem({ name, desc, platforms, url }: CodingProject) {
             src={imageSrc}
             width={72}
             height={72}
-            layout="fixed"
             alt={`${name} icon`}
             //className={'rounded-2xl'}
           />

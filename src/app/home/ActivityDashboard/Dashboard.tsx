@@ -1,5 +1,5 @@
 import { Box, Group, Skeleton, Text } from '@mantine/core';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import classes from './Dashboard.module.css';
 import Navigation from '~/components/common/Navigation';
 
@@ -21,7 +21,6 @@ function Card({ href, label, loading, logo, children }: DashboardCardProps) {
               src={logo}
               width={26}
               height={26}
-              layout="fixed"
               alt={`dashboard ${label} icon`}
             />
 
