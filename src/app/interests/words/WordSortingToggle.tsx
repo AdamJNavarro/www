@@ -11,6 +11,7 @@ export default function WordSortingToggle({ ...rest }: any) {
   return (
     <SegmentedControl
       color="violet.7"
+      bg="dark.9"
       transitionDuration={200}
       transitionTimingFunction="linear"
       data={[
