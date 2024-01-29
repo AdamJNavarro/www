@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  IconCode,
   IconMusic,
   IconBooks,
   IconDeviceTvOld,
@@ -16,43 +17,49 @@ const interests: NavLinkProps[] = [
   {
     icon: IconBooks,
     label: 'Books',
-    href: '/books',
+    href: 'interests/books',
     isExternal: false,
   },
   {
     icon: IconGift,
     label: 'Charity',
-    href: '/charity',
+    href: 'interests/charity',
+    isExternal: false,
+  },
+  {
+    icon: IconCode,
+    label: 'Coding',
+    href: 'interests/coding',
     isExternal: false,
   },
   {
     icon: IconShoe,
     label: 'Dancing',
-    href: '/dancing',
+    href: 'interests/dancing',
     isExternal: false,
   },
   {
     icon: IconMusic,
     label: 'Music',
-    href: '/music',
+    href: 'interests/music',
     isExternal: false,
   },
   {
     icon: IconQuote,
     label: 'Quotes',
-    href: '/quotes',
+    href: 'interests/quotes',
     isExternal: false,
   },
   {
     icon: IconDeviceTvOld,
     label: 'TV',
-    href: '/tv',
+    href: 'interests/tv',
     isExternal: false,
   },
   {
     icon: IconTypography,
     label: 'Words',
-    href: '/words',
+    href: 'interests/words',
     isExternal: false,
   },
 ];

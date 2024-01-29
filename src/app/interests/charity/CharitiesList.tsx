@@ -1,6 +1,6 @@
 import { List } from '@mantine/core';
 import { sortByAbc } from '~/utils';
-import { Section } from '../../components/common';
+import { Section } from '../../../components/common';
 import { charities } from './CharityGame.data';
 
 export default function CharitiesList() {

@@ -1,6 +1,6 @@
 import { Group, rem } from '@mantine/core';
 import { useState } from 'react';
-import { DataGrid } from '../../components/common/Grid';
+import { DataGrid } from '../../../components/common/Grid';
 import { sortWords } from './Words.utils';
 import WordCard from './WordCard';
 import { wordBank } from './Words.data';

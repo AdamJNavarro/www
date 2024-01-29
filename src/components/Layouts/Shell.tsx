@@ -3,15 +3,15 @@ import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  IconCode,
   IconExternalLink,
   IconHome2,
-  IconUserCircle,
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandTwitter,
   IconMail,
   IconSocial,
+  IconMoodHappy,
+  IconStack2,
 } from '@tabler/icons-react';
 import { SidebarSectionProps } from '../Navigation/Navigation.types';
 import classes from '../Navigation/NavigationLinks.module.css';
@@ -19,7 +19,7 @@ import classes from '../Navigation/NavigationLinks.module.css';
 function getPathLabel(pathName: string | null): string {
   if (!pathName) return '';
   if (pathName === '/') return 'Adam Navarro';
-  return pathName?.substring(1);
+  return pathName?.substring(pathName.lastIndexOf('/') + 1);
 }
 
 export default function Shell({ children }: any) {
@@ -42,17 +42,17 @@ export default function Shell({ children }: any) {
           isExternal: false,
         },
         {
-          icon: IconCode,
-          label: 'Coding',
-          href: '/coding',
-          isActive: pathName != null && pathName.indexOf('/coding') >= 0,
+          icon: IconMoodHappy,
+          label: 'Interests',
+          href: '/interests',
+          isActive: pathName != null && pathName.indexOf('/interests') >= 0,
           isExternal: false,
         },
         {
-          icon: IconUserCircle,
-          label: 'About',
-          href: '/about',
-          isActive: pathName != null && pathName.indexOf('/about') >= 0,
+          icon: IconStack2,
+          label: 'Stack',
+          href: '/stack',
+          isActive: pathName != null && pathName.indexOf('/stack') >= 0,
           isExternal: false,
         },
       ],

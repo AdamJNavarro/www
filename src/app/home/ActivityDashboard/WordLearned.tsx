@@ -1,7 +1,10 @@
 import { useState } from 'react';
-import { wordBank } from '~/app/words/Words.data';
-import { WordProps } from '~/app/words/Words.types';
-import { buildMerriamWebsterUrl, sortWords } from '~/app/words/Words.utils';
+import { wordBank } from '~/app/interests/words/Words.data';
+import { WordProps } from '~/app/interests/words/Words.types';
+import {
+  buildMerriamWebsterUrl,
+  sortWords,
+} from '~/app/interests/words/Words.utils';
 import Dashboard from './Dashboard';
 
 export default function WordLearned() {

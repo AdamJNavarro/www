@@ -1,5 +1,5 @@
 import { ScrollArea, Table, Text } from '@mantine/core';
-import { DataTable } from '../../components/common/Table';
+import { DataTable } from '../../../components/common/Table';
 import { getPartOfSpeechColor } from './Words.utils';
 import { WordProps } from './Words.types';
 
