@@ -1333,6 +1333,12 @@ const wordBank: WordProps[] = [
     partOfSpeech: 'noun',
     dateLearned: 1704416331,
   },
+  {
+    spelling: 'caterwauling',
+    definition: 'to make a shrill howling or wailing noise',
+    partOfSpeech: 'verb',
+    dateLearned: 1705452398,
+  },
 ];
 
 export { wordBank };
