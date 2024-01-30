@@ -8,13 +8,13 @@ export interface Stat {
 
 export function StatCard({ label, value, icon: Icon }: Stat) {
   return (
-    <Paper withBorder radius="md" p="xs">
+    <Paper withBorder radius="md" p="xs" bg="dark.8">
       <Group>
         <RingProgress
           size={80}
           roundCaps
           thickness={6}
-          sections={[{ value: 100, color: 'purple' }]}
+          sections={[{ value: 100, color: 'violet.7' }]}
           label={
             <Center>
               <Icon size={22} />

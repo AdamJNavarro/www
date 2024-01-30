@@ -112,10 +112,13 @@ export default function Shell({ children }: any) {
       transitionTimingFunction="ease"
       styles={{
         root: {
-          backgroundColor: 'var(--mantine-color-dark-8)',
+          backgroundColor: 'var(--mantine-color-dark-9)',
         },
         navbar: {
-          backgroundColor: 'var(--mantine-color-dark-7)',
+          backgroundColor: 'var(--mantine-color-dark-8)',
+        },
+        header: {
+          backgroundColor: 'var(--mantine-color-dark-8)',
         },
       }}
     >
