@@ -19,8 +19,8 @@ function Card({ href, label, loading, logo, children }: DashboardCardProps) {
           <Group>
             <Image
               src={logo}
-              width={26}
-              height={26}
+              width={30}
+              height={30}
               alt={`dashboard ${label} icon`}
             />
 
