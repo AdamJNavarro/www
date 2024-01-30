@@ -8,7 +8,7 @@ const items: NavLinkProps[] = [
   {
     icon: IconMoodHappy,
     label: 'Interests',
-    href: '/about#interests',
+    href: '/interests',
     isExternal: false,
   },
   {
