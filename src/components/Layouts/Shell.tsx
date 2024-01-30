@@ -3,7 +3,7 @@ import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  IconExternalLink,
+  IconArrowUpRight,
   IconHome2,
   IconBrandGithub,
   IconBrandInstagram,
@@ -173,7 +173,7 @@ export default function Shell({ children }: any) {
                       <span style={{ flex: 1 }}>{item.label}</span>
                       {item.isExternal && (
                         <span className={classes.externalIcon}>
-                          <IconExternalLink size={20} />
+                          <IconArrowUpRight size={20} />
                         </span>
                       )}
                     </Link>

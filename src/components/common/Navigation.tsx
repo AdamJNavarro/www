@@ -1,7 +1,7 @@
 import { Card as MantineCard, Text } from '@mantine/core';
 import Link from 'next/link';
 import cx from 'clsx';
-import { IconExternalLink } from '@tabler/icons-react';
+import { IconArrowUpRight } from '@tabler/icons-react';
 import classes from './Navigation.module.css';
 
 type NavigationCardProps = {
@@ -27,7 +27,7 @@ function Card(props: NavigationCardProps) {
     >
       {props.children}
       {props.isExternal && (
-        <IconExternalLink size={20} className={classes.externalIcon} />
+        <IconArrowUpRight size={20} className={classes.externalIcon} />
       )}
     </MantineCard>
   );
