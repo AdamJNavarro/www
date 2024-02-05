@@ -55,7 +55,7 @@
     "postcss": "^8.4.33",
     "postcss-preset-mantine": "^1.13.0",
     "postcss-simple-vars": "^7.0.1",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "typescript": "^5.1.6"
   },
   "eslintConfig": {
