@@ -1,13 +1,24 @@
+import { Anchor, Group } from '@mantine/core';
+import Link from 'next/link';
 import { Section } from '~/components/common';
 import TraktStats from './TraktStats';
 import TraktList from './TraktList';
+
+const TRAKT_STATS_URL = 'https://trakt.tv/users/adamjnavarro/year/all';
+const TRAKT_HISTORY_URL =
+  'https://trakt.tv/users/adamjnavarro/history/shows/added/asc';
 
 export default function TraktContent() {
   return (
     <>
       <Section.Container>
         <Section.Header>
-          <Section.Title>Lifetime Stats</Section.Title>
+          <Group justify="space-between">
+            <Section.Title>Lifetime Stats</Section.Title>
+            <Anchor component={Link} href={TRAKT_STATS_URL} target="_blank">
+              View Breakdown
+            </Anchor>
+          </Group>
         </Section.Header>
         <Section.Content>
           <TraktStats />
@@ -27,7 +38,12 @@ export default function TraktContent() {
       </Section.Container>
       <Section.Container>
         <Section.Header>
-          <Section.Title>Recently Watched</Section.Title>
+          <Group justify="space-between">
+            <Section.Title>Recently Watched</Section.Title>
+            <Anchor component={Link} href={TRAKT_HISTORY_URL} target="_blank">
+              View All
+            </Anchor>
+          </Group>
         </Section.Header>
         <Section.Content>
           <TraktList placeholderCount={3} listId="watched" itemLimit={3} />
