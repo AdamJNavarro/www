@@ -3,6 +3,7 @@ import BookRead from './BookRead';
 import SongLiked from './SongLiked';
 import WordLearned from './WordLearned';
 import ShowWatched from './ShowWatched';
+import MovieWatched from './MovieWatched';
 
 export default function ActivityDashboard() {
   return (
@@ -10,9 +11,10 @@ export default function ActivityDashboard() {
       cols={{ base: 1, md: 2 }}
       spacing={{ base: 'md', sm: 'lg', lg: 'xl' }}
     >
+      <WordLearned />
+      <MovieWatched />
       <BookRead />
       <SongLiked />
-      <WordLearned />
       <ShowWatched />
     </SimpleGrid>
   );
