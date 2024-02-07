@@ -6,7 +6,7 @@ export default function FavoritePodcasts() {
   const { data, error } = useSpotifyPodcasts();
 
   return (
-    <SpotifyGrid loading={!data} error={error} placeholderCount={4}>
+    <SpotifyGrid loading={!data?.podcasts.length} error={error} placeholderCount={4}>
       {/* @ts-ignore */}
       {data.podcasts.map((podcast) => {
         const { id, image, name, url, publisher } = podcast;

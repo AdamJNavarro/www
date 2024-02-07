@@ -6,10 +6,9 @@ const SPOTIFY_NUM_OF_TRACKS = 6;
 
 export default function RecentlyLikedTracks() {
   const { data, error } = useSpotifyTracks({ limit: SPOTIFY_NUM_OF_TRACKS });
-
   return (
     <SpotifyGrid
-      loading={!data}
+      loading={!data?.tracks.length}
       error={error}
       placeholderCount={SPOTIFY_NUM_OF_TRACKS}
     >
