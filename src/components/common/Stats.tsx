@@ -1,4 +1,11 @@
-import { RingProgress, Text, Paper, Center, Group } from '@mantine/core';
+import {
+  RingProgress,
+  Text,
+  Paper,
+  Center,
+  Group,
+  NumberFormatter,
+} from '@mantine/core';
 
 export interface Stat {
   label: string;
@@ -27,7 +34,7 @@ export function StatCard({ label, value, icon: Icon }: Stat) {
             {label}
           </Text>
           <Text fw={700} size="xl">
-            {value}
+            <NumberFormatter value={value} thousandSeparator />
           </Text>
         </div>
       </Group>

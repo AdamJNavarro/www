@@ -9,6 +9,7 @@ import { lastUpdated } from './letterboxd/letterboxd.data';
 import LetterboxdWatchlist from './letterboxd/LetterboxdWatchlist';
 import LetterboxdWatched from './letterboxd/LetterboxdWatched';
 import LetterboxdFavorites from './letterboxd/LetterboxdFavorites';
+import LetterboxdStats from './letterboxd/LetterboxdStats';
 
 export default function Movies() {
   const scrollRef = useRef(null);
@@ -27,6 +28,7 @@ export default function Movies() {
             . (Last updated: {lastUpdated})
           </Page.Description>
         </Page.Header>
+        <LetterboxdStats />
         <LetterboxdWatched />
         <LetterboxdWatchlist />
         <LetterboxdFavorites />
