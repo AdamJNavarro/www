@@ -1,11 +1,4 @@
-import {
-  RingProgress,
-  Text,
-  Paper,
-  Center,
-  Group,
-  NumberFormatter,
-} from '@mantine/core';
+import { Text, Paper, Group, NumberFormatter, ThemeIcon } from '@mantine/core';
 
 export interface Stat {
   label: string;
@@ -17,17 +10,14 @@ export function StatCard({ label, value, icon: Icon }: Stat) {
   return (
     <Paper withBorder radius="md" p="xs" bg="dark.8">
       <Group>
-        <RingProgress
-          size={80}
-          roundCaps
-          thickness={6}
-          sections={[{ value: 100, color: 'violet.7' }]}
-          label={
-            <Center>
-              <Icon size={22} />
-            </Center>
-          }
-        />
+        <ThemeIcon
+          variant="gradient"
+          radius="xl"
+          size="xl"
+          gradient={{ from: 'violet.7', to: 'violet.9' }}
+        >
+          <Icon style={{ width: '50%', height: '50%' }} />
+        </ThemeIcon>
 
         <div>
           <Text c="dimmed" size="xs" tt="uppercase" fw={700}>
