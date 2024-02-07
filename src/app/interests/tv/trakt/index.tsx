@@ -5,8 +5,9 @@ import TraktStats from './TraktStats';
 import TraktList from './TraktList';
 
 const TRAKT_STATS_URL = 'https://trakt.tv/users/adamjnavarro/year/all';
-const TRAKT_HISTORY_URL =
-  'https://trakt.tv/users/adamjnavarro/history/shows/added/asc';
+
+const TRAKT_FULL_WATCHLIST_URL =
+  'https://trakt.tv/users/adamjnavarro/watchlist?sort=popularity,asc';
 
 export default function TraktContent() {
   return (
@@ -27,10 +28,6 @@ export default function TraktContent() {
       <Section.Container>
         <Section.Header>
           <Section.Title>Currently Watching</Section.Title>
-          <Section.Description>
-            I try and only watch two series at a time. Typically one live-action and
-            the other anime.
-          </Section.Description>
         </Section.Header>
         <Section.Content>
           <TraktList placeholderCount={4} listId="currently-watching" />
@@ -38,15 +35,29 @@ export default function TraktContent() {
       </Section.Container>
       <Section.Container>
         <Section.Header>
-          <Group justify="space-between">
-            <Section.Title>Recently Watched</Section.Title>
-            <Anchor component={Link} href={TRAKT_HISTORY_URL} target="_blank">
-              View All
-            </Anchor>
-          </Group>
+          <Section.Title>Recently Watched</Section.Title>
         </Section.Header>
         <Section.Content>
-          <TraktList placeholderCount={3} listId="watched" itemLimit={3} />
+          <TraktList placeholderCount={4} listId="watched" itemLimit={4} />
+        </Section.Content>
+      </Section.Container>
+      <Section.Container>
+        <Section.Header>
+          <Section.Header>
+            <Group justify="space-between">
+              <Section.Title>Want to Watch</Section.Title>
+              <Anchor
+                component={Link}
+                href={TRAKT_FULL_WATCHLIST_URL}
+                target="_blank"
+              >
+                View All
+              </Anchor>
+            </Group>
+          </Section.Header>
+        </Section.Header>
+        <Section.Content>
+          <TraktList placeholderCount={4} listId="watchlist" itemLimit={4} />
         </Section.Content>
       </Section.Container>
       <Section.Container>

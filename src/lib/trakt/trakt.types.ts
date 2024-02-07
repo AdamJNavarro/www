@@ -37,7 +37,11 @@ interface TraktListFetchVars {
   limit?: number;
 }
 
-type TraktListEndpoints = 'currently-watching' | 'favorites' | 'watched';
+type TraktListEndpoints =
+  | 'currently-watching'
+  | 'favorites'
+  | 'watched'
+  | 'watchlist';
 
 export type {
   TraktListEndpoints,

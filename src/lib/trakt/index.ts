@@ -20,6 +20,7 @@ export const TRAKT_STATS_URL = `${TRAKT_USER_BASE_URL}/stats`;
 export const TRAKT_WATCHED_URL = `${TRAKT_USER_BASE_URL}/watched/shows?extended=noseasons`;
 export const TRAKT_CURRENTLY_WATCHING_URL = `${TRAKT_USER_BASE_URL}/lists/currently-watching/items/show`;
 export const TRAKT_FAVORITES_URL = `${TRAKT_USER_BASE_URL}/lists/favorite-tv/items/show`;
+export const TRAKT_WATCHLIST_URL = `${TRAKT_USER_BASE_URL}/watchlist/shows`;
 
 async function generateTraktCreds(): Promise<any> {
   const res = await goFetch({
