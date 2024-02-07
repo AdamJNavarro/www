@@ -8,6 +8,7 @@ import {
   IconShoe,
   IconTypography,
   IconGift,
+  IconMovie,
 } from '@tabler/icons-react';
 
 import NavGrid from '~/components/Navigation/NavGrid';
@@ -36,6 +37,12 @@ const interests: NavLinkProps[] = [
     icon: IconShoe,
     label: 'Dancing',
     href: 'interests/dancing',
+    isExternal: false,
+  },
+  {
+    icon: IconMovie,
+    label: 'Movies',
+    href: 'interests/movies',
     isExternal: false,
   },
   {
