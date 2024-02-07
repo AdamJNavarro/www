@@ -4,8 +4,10 @@ import { useRef } from 'react';
 import { Anchor } from '@mantine/core';
 import Link from 'next/link';
 import { Page } from '~/components/common';
-import Literal from './Literal';
 import { SocialUrls } from '~/app/social/Social.data';
+import WantToReadList from './Literal/WantToReadList';
+import CurrentReadingList from './Literal/CurrentReadingList';
+import PastReadingList from './Literal/PastReadingList';
 
 export default function Books() {
   const scrollRef = useRef(null);
@@ -24,7 +26,9 @@ export default function Books() {
             .
           </Page.Description>
         </Page.Header>
-        <Literal />
+        <CurrentReadingList />
+        <WantToReadList />
+        <PastReadingList />
       </Page.Content>
     </Page.Container>
   );

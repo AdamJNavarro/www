@@ -1,13 +1,18 @@
 import { Text, Image } from '@mantine/core';
 import ProductItem from '~/components/Products/ProductItem';
 import { buildLiteralUrl } from '~/lib/literal';
-import { LiteralReadingState } from '~/lib/literal/literal.types';
+import { LiteralBook } from '~/lib/literal/literal.types';
 import { buildNamesString } from '~/utils';
 
-type LiteralItemProps = LiteralReadingState & { children?: any };
+type LiteralItemProps = LiteralBook & { children?: any };
 
-export default function LiteralItem({ book, children }: LiteralItemProps) {
-  const { authors, cover, slug, title } = book;
+export default function LiteralItem({
+  authors,
+  cover,
+  slug,
+  title,
+  children,
+}: LiteralItemProps) {
   return (
     <ProductItem
       label={

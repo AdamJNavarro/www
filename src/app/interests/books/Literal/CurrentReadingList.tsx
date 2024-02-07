@@ -1,13 +1,7 @@
 import { Section } from '~/components/common';
-import { LiteralReadingState } from '~/lib/literal/literal.types';
-import LiteralItem from './LiteralItem';
 import LiteralList from './LiteralList';
 
-export default function CurrentReading({
-  entries,
-}: {
-  entries: LiteralReadingState[];
-}) {
+export default function CurrentReadingList() {
   return (
     <Section.Container>
       <Section.Header>
@@ -18,11 +12,7 @@ export default function CurrentReading({
         </Section.Description>
       </Section.Header>
       <Section.Content>
-        <LiteralList>
-          {entries.map((entry) => (
-            <LiteralItem key={entry.id} {...entry} />
-          ))}
-        </LiteralList>
+        <LiteralList readingStatus="IS_READING" placeholderCount={2} itemLimit={2} />
       </Section.Content>
     </Section.Container>
   );

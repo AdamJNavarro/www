@@ -39,6 +39,7 @@ interface GetHighlightData {
 }
 
 export type {
+  LiteralBook,
   LiteralStatus,
   LiteralReadingState,
   GetBooksData,
