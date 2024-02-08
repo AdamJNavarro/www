@@ -1,6 +1,7 @@
 'use client';
 
 import '@mantine/core/styles.css';
+import '@mantine/code-highlight/styles.css';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Providers } from '~/components/Providers';
 import Shell from '~/components/Layouts/Shell';

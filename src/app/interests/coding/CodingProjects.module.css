@@ -1,9 +1,0 @@
-.container {
-  margin-bottom: calc(var(--mantine-spacing-xl) * 2.5);
-}
-
-.nameContainer {
-  display: flex;
-  flex-direction: column;
-  margin-left: var(--matine-spacing-xl);
-}
