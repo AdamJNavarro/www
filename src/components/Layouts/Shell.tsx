@@ -1,6 +1,14 @@
 'use client';
 
-import { AppShell, Box, Burger, Group, ScrollArea, Text } from '@mantine/core';
+import {
+  AppShell,
+  Box,
+  Burger,
+  Group,
+  ScrollArea,
+  Text,
+  useMantineTheme,
+} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -27,10 +35,9 @@ function getPathLabel(pathName: string | null): string {
 }
 
 export default function Shell({ children }: any) {
-  const [mobileOpened, { toggle: toggleMobile, close: closeMobile }] =
-    useDisclosure();
-  const [desktopOpened, { toggle: toggleDesktop, close: closeDesktop }] =
-    useDisclosure();
+  const theme = useMantineTheme();
+  const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
+  const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure();
 
   const pathName = usePathname();
 
@@ -116,14 +123,11 @@ export default function Shell({ children }: any) {
         transitionDuration={200}
         transitionTimingFunction="ease"
         styles={{
-          root: {
-            backgroundColor: 'var(--mantine-color-dark-9)',
-          },
           navbar: {
-            backgroundColor: 'var(--mantine-color-dark-8)',
+            backgroundColor: theme.other.colors.shellSurfaces,
           },
           header: {
-            backgroundColor: 'var(--mantine-color-dark-8)',
+            backgroundColor: theme.other.colors.shellSurfaces,
           },
         }}
       >

@@ -3,6 +3,7 @@ import '@mantine/code-highlight/styles.css';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Metadata, Viewport } from 'next';
 import Shell from '~/components/Layouts/Shell';
+import { theme } from './config/theme';
 
 const baseUrl = new URL('https://adamjnavarro.com');
 
@@ -39,20 +40,17 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
-  themeColor: '#141414',
+  themeColor: theme.other.colors.root,
 };
 
 export default function App({ children }: { children: any }) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ backgroundColor: theme.other.colors.root }}>
       <head>
         <ColorSchemeScript forceColorScheme="dark" />
       </head>
-      <body>
-        <MantineProvider
-          forceColorScheme="dark"
-          theme={{ primaryColor: 'violet', primaryShade: 8 }}
-        >
+      <body style={{ backgroundColor: 'transparent' }}>
+        <MantineProvider forceColorScheme="dark" theme={theme}>
           <Shell>{children}</Shell>
         </MantineProvider>
       </body>
