@@ -1,3 +1,5 @@
+'use client';
+
 import { AppShell, Box, Burger, Group, ScrollArea, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
@@ -13,8 +15,10 @@ import {
   IconMoodHappy,
   IconStack2,
 } from '@tabler/icons-react';
+import { ApolloProvider } from '@apollo/client';
 import { SidebarSectionProps } from '../Navigation/Navigation.types';
 import classes from '../Navigation/NavigationLinks.module.css';
+import { client } from '~/lib/apollo';
 
 function getPathLabel(pathName: string | null): string {
   if (!pathName) return '';
@@ -100,94 +104,96 @@ export default function Shell({ children }: any) {
   ];
 
   return (
-    <AppShell
-      header={{ height: 60 }}
-      navbar={{
-        width: 250,
-        breakpoint: 'sm',
-        collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
-      }}
-      padding="md"
-      transitionDuration={200}
-      transitionTimingFunction="ease"
-      styles={{
-        root: {
-          backgroundColor: 'var(--mantine-color-dark-9)',
-        },
-        navbar: {
-          backgroundColor: 'var(--mantine-color-dark-8)',
-        },
-        header: {
-          backgroundColor: 'var(--mantine-color-dark-8)',
-        },
-      }}
-    >
-      <AppShell.Header>
-        <Group h="100%" px="md" justify="space-between">
-          <Group>
-            <Burger
-              opened={mobileOpened}
-              onClick={toggleMobile}
-              hiddenFrom="sm"
-              size="sm"
-              transitionDuration={200}
-            />
-            <Burger
-              opened={desktopOpened}
-              onClick={toggleDesktop}
-              visibleFrom="sm"
-              size="sm"
-              transitionDuration={200}
-            />
-            <Text fw={800} size="md" td="none" visibleFrom="sm">
-              Adam Navarro
-            </Text>
-            <Text fw={800} size="md" tt="capitalize" hiddenFrom="sm">
-              {getPathLabel(pathName)}
-            </Text>
+    <ApolloProvider client={client}>
+      <AppShell
+        header={{ height: 60 }}
+        navbar={{
+          width: 250,
+          breakpoint: 'sm',
+          collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
+        }}
+        padding="md"
+        transitionDuration={200}
+        transitionTimingFunction="ease"
+        styles={{
+          root: {
+            backgroundColor: 'var(--mantine-color-dark-9)',
+          },
+          navbar: {
+            backgroundColor: 'var(--mantine-color-dark-8)',
+          },
+          header: {
+            backgroundColor: 'var(--mantine-color-dark-8)',
+          },
+        }}
+      >
+        <AppShell.Header>
+          <Group h="100%" px="md" justify="space-between">
+            <Group>
+              <Burger
+                opened={mobileOpened}
+                onClick={toggleMobile}
+                hiddenFrom="sm"
+                size="sm"
+                transitionDuration={200}
+              />
+              <Burger
+                opened={desktopOpened}
+                onClick={toggleDesktop}
+                visibleFrom="sm"
+                size="sm"
+                transitionDuration={200}
+              />
+              <Text fw={800} size="md" td="none" visibleFrom="sm">
+                Adam Navarro
+              </Text>
+              <Text fw={800} size="md" tt="capitalize" hiddenFrom="sm">
+                {getPathLabel(pathName)}
+              </Text>
+            </Group>
           </Group>
-        </Group>
-      </AppShell.Header>
-      <AppShell.Navbar px="xs" py="md">
-        <AppShell.Section grow component={ScrollArea} scrollbarSize="0.2rem">
-          <Box mr="xl">
-            {sections.map((section, i) => {
-              const { label, items } = section;
-              return (
-                <div key={i}>
-                  {label && (
-                    <Text key={i} size="md" fw={600} px="xs" mt="xl">
-                      {label}
-                    </Text>
-                  )}
-                  {items.map((item) => (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      onClick={() => {
-                        toggleMobile();
-                      }}
-                      className={classes.link}
-                      data-active={item.isActive || undefined}
-                      target={item.isExternal ? '_blank' : undefined}
-                      rel={item.isExternal ? 'noopener noreferrer' : undefined}
-                    >
-                      <item.icon className={classes.icon} />
-                      <span style={{ flex: 1 }}>{item.label}</span>
-                      {item.isExternal && (
-                        <span className={classes.externalIcon}>
-                          <IconArrowUpRight size={20} />
-                        </span>
-                      )}
-                    </Link>
-                  ))}
-                </div>
-              );
-            })}
-          </Box>
-        </AppShell.Section>
-      </AppShell.Navbar>
-      <AppShell.Main>{children}</AppShell.Main>
-    </AppShell>
+        </AppShell.Header>
+        <AppShell.Navbar px="xs" py="md">
+          <AppShell.Section grow component={ScrollArea} scrollbarSize="0.2rem">
+            <Box mr="xl">
+              {sections.map((section, i) => {
+                const { label, items } = section;
+                return (
+                  <div key={i}>
+                    {label && (
+                      <Text key={i} size="md" fw={600} px="xs" mt="xl">
+                        {label}
+                      </Text>
+                    )}
+                    {items.map((item) => (
+                      <Link
+                        key={item.label}
+                        href={item.href}
+                        onClick={() => {
+                          toggleMobile();
+                        }}
+                        className={classes.link}
+                        data-active={item.isActive || undefined}
+                        target={item.isExternal ? '_blank' : undefined}
+                        rel={item.isExternal ? 'noopener noreferrer' : undefined}
+                      >
+                        <item.icon className={classes.icon} />
+                        <span style={{ flex: 1 }}>{item.label}</span>
+                        {item.isExternal && (
+                          <span className={classes.externalIcon}>
+                            <IconArrowUpRight size={20} />
+                          </span>
+                        )}
+                      </Link>
+                    ))}
+                  </div>
+                );
+              })}
+            </Box>
+          </AppShell.Section>
+        </AppShell.Navbar>
+        <AppShell.Main>{children}</AppShell.Main>
+      </AppShell>
+    </ApolloProvider>
   );
 }
