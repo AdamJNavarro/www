@@ -1,8 +1,15 @@
-import { Card as MantineCard, Text } from '@mantine/core';
+import { Card as MantineCard, SimpleGrid, Text } from '@mantine/core';
 import Link from 'next/link';
 import cx from 'clsx';
 import { IconArrowUpRight } from '@tabler/icons-react';
 import classes from './Navigation.module.css';
+
+type NavigationLinkProps = {
+  icon: any;
+  label: string;
+  href: string;
+  isExternal?: boolean;
+};
 
 type NavigationCardProps = {
   href: string;
@@ -46,9 +53,26 @@ function Tile(props: NavigationTileProps) {
   );
 }
 
+function Grid({ items }: { items: NavigationLinkProps[] }) {
+  return (
+    <SimpleGrid cols={3}>
+      {items.map((item) => (
+        <Navigation.Tile
+          key={item.label}
+          href={item.href}
+          isExternal={item.isExternal}
+          icon={item.icon}
+          label={item.label}
+        />
+      ))}
+    </SimpleGrid>
+  );
+}
+
 const Navigation = {
   Card,
   Tile,
+  Grid,
 };
 
 export default Navigation;
