@@ -1,7 +1,7 @@
 import '@mantine/core/styles.css';
 import '@mantine/code-highlight/styles.css';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 import Shell from '~/components/Layouts/Shell';
 
 const baseUrl = new URL('https://adamjnavarro.com');
@@ -35,6 +35,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+};
+
+export const viewport: Viewport = {
+  colorScheme: 'dark',
+  themeColor: '#141414',
 };
 
 export default function App({ children }: { children: any }) {

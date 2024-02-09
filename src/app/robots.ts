@@ -5,7 +5,6 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
     },
-    sitemap: 'https://adamjnavarro.com/sitemap.xml',
     host: 'https://adamjnavarro.com',
   };
 }
