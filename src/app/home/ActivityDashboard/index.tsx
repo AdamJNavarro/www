@@ -4,6 +4,7 @@ import SongLiked from './SongLiked';
 import WordLearned from './WordLearned';
 import ShowWatched from './ShowWatched';
 import MovieWatched from './MovieWatched';
+import StarredRepo from './StarredRepo';
 
 export default function ActivityDashboard() {
   return (
@@ -13,6 +14,7 @@ export default function ActivityDashboard() {
     >
       <WordLearned />
       <MovieWatched />
+      <StarredRepo />
       <BookRead />
       <SongLiked />
       <ShowWatched />

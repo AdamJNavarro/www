@@ -88,7 +88,7 @@ interface UseTraktListArgs {
 }
 
 export function useTraktList({ listId, limit }: UseTraktListArgs) {
-  const { data, error } = useSWR<{ shows: TraktShow[] }>(
+  const { data, isLoading, error } = useSWR<{ shows: TraktShow[] }>(
     `/api/trakt/${listId}`,
     fetcher,
     {
@@ -96,5 +96,5 @@ export function useTraktList({ listId, limit }: UseTraktListArgs) {
     }
   );
   // @ts-ignore
-  return { data: { shows: buildTraktItems(data.shows, limit) }, error };
+  return { data: { shows: buildTraktItems(data.shows, limit) }, isLoading, error };
 }

@@ -25,17 +25,18 @@ export default function BookRead() {
 
   const loading = book === null;
 
+  if (loading) return <Dashboard.Loading />;
+
   return (
     <Dashboard.Card
       label="Book Read"
-      href={loading ? '' : `https://literal.club/book/${book.slug}`}
-      loading={loading}
+      href={`https://literal.club/book/${book.slug}`}
       logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1660527872/logos/literal.png"
     >
-      <Dashboard.Title lineClamp={1}>{loading ? 'Now' : book.title}</Dashboard.Title>
+      <Dashboard.Title lineClamp={1}>{book.title}</Dashboard.Title>
 
       <Dashboard.Details lineClamp={1}>
-        {loading ? 'Loading...' : buildNamesString(book.authors, 'name')}
+        {buildNamesString(book.authors, 'name')}
       </Dashboard.Details>
     </Dashboard.Card>
   );

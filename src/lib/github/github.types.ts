@@ -6,4 +6,12 @@ interface GithubRepoLanguages {
   }[];
 }
 
-export type { GithubRepoLanguages };
+interface GithubStarredRepo {
+  id: number;
+  name: string;
+  description: string;
+  href: string;
+  stars: number;
+}
+
+export type { GithubRepoLanguages, GithubStarredRepo };

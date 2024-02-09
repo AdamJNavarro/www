@@ -8,7 +8,6 @@ export default function MovieWatched() {
     <Dashboard.Card
       label="Movie Watched"
       href={film.url}
-      loading={false}
       logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1664659090/logos/letterboxd.png"
     >
       <Dashboard.Title tt="capitalize">{film.name}</Dashboard.Title>

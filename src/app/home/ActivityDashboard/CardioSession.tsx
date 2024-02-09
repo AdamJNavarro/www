@@ -52,7 +52,6 @@ export default function CardioSession() {
     <Dashboard.Card
       label="Cardio Session"
       href={buildStravaUrl(session.id)}
-      loading={false}
       logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1664650740/logos/strava.png"
     >
       <Dashboard.Title>{getSessionType(session.sport_type)}</Dashboard.Title>

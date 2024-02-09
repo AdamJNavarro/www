@@ -2,43 +2,43 @@ import { Box, Group, Skeleton, Text } from '@mantine/core';
 import Image from 'next/image';
 import classes from './Dashboard.module.css';
 import Navigation from '~/components/common/Navigation';
+import { Surface } from '~/components/common';
 
 interface DashboardCardProps {
   href: string;
   label: string;
-  loading: boolean;
   logo: string;
   children: any;
 }
 
-function Card({ href, label, loading, logo, children }: DashboardCardProps) {
+const logoSize = 30;
+
+function Card({ href, label, logo, children }: DashboardCardProps) {
   return (
-    <Skeleton visible={loading}>
-      <Navigation.Card href={href} isExternal>
-        <Group justify="space-between" mb="sm">
-          <Group>
-            <Image
-              src={logo}
-              width={30}
-              height={30}
-              alt={`dashboard ${label} icon`}
-            />
+    <Navigation.Card href={href} isExternal>
+      <Group justify="space-between" mb="sm">
+        <Group>
+          <Image
+            src={logo}
+            width={logoSize}
+            height={logoSize}
+            alt={`dashboard ${label} icon`}
+          />
 
-            <Text className={classes.label}>{label}</Text>
-          </Group>
+          <Text className={classes.label}>{label}</Text>
         </Group>
+      </Group>
 
-        <Box
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-          }}
-        >
-          {children}
-        </Box>
-      </Navigation.Card>
-    </Skeleton>
+      <Box
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+        }}
+      >
+        {children}
+      </Box>
+    </Navigation.Card>
   );
 }
 
@@ -50,10 +50,37 @@ function Details(props) {
   return <Text className={classes.details} {...props} />;
 }
 
+function Loading() {
+  return (
+    <Skeleton radius="md">
+      <Surface.Card>
+        <Group justify="space-between" mb="sm">
+          <Group>
+            <Box w={logoSize} h={logoSize} />
+
+            <Text className={classes.label}>Label</Text>
+          </Group>
+        </Group>
+        <Box
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+          }}
+        >
+          <Dashboard.Title>Loading</Dashboard.Title>
+          <Dashboard.Details>Content</Dashboard.Details>
+        </Box>
+      </Surface.Card>
+    </Skeleton>
+  );
+}
+
 const Dashboard = {
   Card,
   Title,
   Details,
+  Loading,
 };
 
 export default Dashboard;
