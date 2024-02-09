@@ -11,7 +11,7 @@ interface DashboardCardProps {
   children: any;
 }
 
-const logoSize = 30;
+const logoSize = 36;
 
 function Card({ href, label, logo, children }: DashboardCardProps) {
   return (

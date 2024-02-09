@@ -10,7 +10,7 @@ export default function ShowWatched() {
     <Dashboard.Card
       label="Show Watched"
       href={data.shows[0].traktUrl}
-      logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1660509695/logos/trakt.png"
+      logo="/img/logos/trakt.svg"
     >
       <Dashboard.Title lineClamp={1}>{data.shows[0].title}</Dashboard.Title>
       <Dashboard.Details lineClamp={1}>{data.shows[0].year}</Dashboard.Details>

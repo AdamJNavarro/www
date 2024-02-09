@@ -1,4 +1,6 @@
-import { goFetch } from '~/utils';
+import useSWR from 'swr';
+import { fetcher, goFetch } from '~/utils';
+import { StravaActivity } from './strava.types';
 
 const STRAVA_CLIENT_ID = process.env.NEXT_PUBLIC_STRAVA_CLIENT_ID;
 const STRAVA_CLIENT_SECRET = process.env.NEXT_PUBLIC_STRAVA_CLIENT_SECRET;
@@ -12,8 +14,8 @@ export function buildStravaUrl(id: number): string {
   return `https://www.strava.com/activities/${id}`;
 }
 
-export function getStravaAccessToken() {
-  return goFetch({
+export async function getStravaAccessToken() {
+  const res = await goFetch({
     url: STRAVA_TOKEN_URL,
     config: {
       method: 'POST',
@@ -30,15 +32,10 @@ export function getStravaAccessToken() {
       }),
     },
   });
+
+  return res.data.access_token;
 }
 
-type StravaSport = 'Ride' | 'Run' | 'Walk';
-
-interface StravaActivity {
-  id: number;
-  distance: number;
-  moving_time: number;
-  elapsed_time: number;
-  sport_type: StravaSport;
-  start_date: string;
+export function useStravaActivities() {
+  return useSWR<{ activities: StravaActivity[] }>('/api/strava/activities', fetcher);
 }

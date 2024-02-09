@@ -1,18 +1,12 @@
 import dayjs from 'dayjs';
-import { buildStravaUrl } from '~/lib/strava';
+import { Group } from '@mantine/core';
+import { buildStravaUrl, useStravaActivities } from '~/lib/strava';
 import Dashboard from './Dashboard';
-
-const session = {
-  distance: 1629.4,
-  elapsed_time: 544,
-  sport_type: 'Run',
-  id: 7896652231,
-  start_date: '2022-10-01T21:32:05Z',
-};
 
 function getSessionType(type: string): string {
   if (type.includes('Bike')) return 'Bike Ride';
   if (type.includes('Run')) return 'Run';
+  if (type.includes('WeightTraining')) return 'Weight Lifting';
   return 'Walk';
 }
 
@@ -47,19 +41,27 @@ function getSessionDate(date: any): string {
   return `${dayjs(date).format('M/D/YY')}`;
 }
 
-export default function CardioSession() {
+export default function StravaSession() {
+  const { data, isLoading } = useStravaActivities();
+
+  if (!data || isLoading) return <Dashboard.Loading />;
+
+  const { id, distance, totalDuration, sport, date } = data.activities[0];
+
   return (
     <Dashboard.Card
-      label="Cardio Session"
-      href={buildStravaUrl(session.id)}
-      logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1664650740/logos/strava.png"
+      label="Workout"
+      href={buildStravaUrl(id)}
+      logo="/img/logos/strava.svg"
     >
-      <Dashboard.Title>{getSessionType(session.sport_type)}</Dashboard.Title>
-      <Dashboard.Details>
-        {getSessionDistance(session.distance)} |{' '}
-        {getSessionDuration(session.elapsed_time)} |{' '}
-        {getSessionDate(session.start_date)}
-      </Dashboard.Details>
+      <Dashboard.Title>{getSessionType(sport)}</Dashboard.Title>
+      <Group gap="sm">
+        <Dashboard.Details>{getSessionDate(date)}</Dashboard.Details>
+        <Dashboard.Details>{getSessionDuration(totalDuration)}</Dashboard.Details>
+        {sport !== 'WeightTraining' && (
+          <Dashboard.Details>{getSessionDistance(distance)}</Dashboard.Details>
+        )}
+      </Group>
     </Dashboard.Card>
   );
 }
