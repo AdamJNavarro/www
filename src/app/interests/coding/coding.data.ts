@@ -1,5 +1,7 @@
 import * as wwwSnippets from '../../projects/coding/snippets/personal-website';
 
+type CodingStackIDs = 'React' | 'Next.js' | 'Vercel' | 'Mantine' | 'Cypress';
+
 type CodingProject = {
   slug: string;
   name: string;
@@ -8,7 +10,7 @@ type CodingProject = {
     repo: string;
   };
   snippets: any;
-  stack: string[];
+  stack: CodingStackIDs[];
 };
 
 const codingProjects: CodingProject[] = [
@@ -23,11 +25,17 @@ const codingProjects: CodingProject[] = [
       deps: wwwSnippets.deps,
       devDeps: wwwSnippets.devDeps,
     },
-    stack: ['Mantine', 'Vercel'],
+    stack: ['React', 'Mantine', 'Next.js', 'Vercel', 'Cypress'],
   },
 ];
 
-const codingStack = [
+type CodingStackItem = {
+  id: CodingStackIDs;
+  href: string;
+  logo: string;
+};
+
+const codingStack: CodingStackItem[] = [
   {
     id: 'Mantine',
     href: 'https://mantine.dev/',
@@ -42,6 +50,16 @@ const codingStack = [
     id: 'Vercel',
     href: 'https://vercel.com/',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg',
+  },
+  {
+    id: 'React',
+    href: 'https://react.dev/',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+  },
+  {
+    id: 'Cypress',
+    href: 'https://www.cypress.io/',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg',
   },
 ];
 
