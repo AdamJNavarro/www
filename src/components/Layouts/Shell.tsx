@@ -12,26 +12,30 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import {
-  IconArrowUpRight,
-  IconHome2,
-  IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandTwitter,
-  IconMail,
-  IconSocial,
-  IconMoodHappy,
-  IconStack2,
-} from '@tabler/icons-react';
-import { ApolloProvider } from '@apollo/client';
-import { SidebarSectionProps } from '../Navigation/Navigation.types';
-import classes from '../Navigation/NavigationLinks.module.css';
-import { client } from '~/lib/apollo';
 
-function getPathLabel(pathName: string | null): string {
-  if (!pathName) return '';
-  if (pathName === '/') return 'Adam Navarro';
-  return pathName?.substring(pathName.lastIndexOf('/') + 1);
+import { ApolloProvider } from '@apollo/client';
+import classes from '../common/Navigation.module.css';
+import { client } from '~/lib/apollo';
+import { navbarRoutes } from '~/app/config/routes';
+
+function useActivePath(): (href: string) => boolean {
+  const pathname = usePathname();
+  const checkActivePath = (href: string) => {
+    if (!pathname) return false;
+    if (href === '/' && pathname !== href) {
+      return false;
+    }
+    return pathname.startsWith(href);
+  };
+
+  return checkActivePath;
+}
+
+function useActiveRouteLabel(): string {
+  const pathname = usePathname();
+  if (!pathname) return '';
+  if (pathname === '/') return 'Adam Navarro';
+  return pathname?.substring(pathname.lastIndexOf('/') + 1);
 }
 
 export default function Shell({ children }: any) {
@@ -39,76 +43,8 @@ export default function Shell({ children }: any) {
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
   const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure();
 
-  const pathName = usePathname();
-
-  const sections: SidebarSectionProps[] = [
-    {
-      label: null,
-      items: [
-        {
-          icon: IconHome2,
-          label: 'Home',
-          href: '/',
-          isActive: pathName === '/',
-          isExternal: false,
-        },
-        {
-          icon: IconMoodHappy,
-          label: 'Interests',
-          href: '/interests',
-          isActive: pathName != null && pathName.indexOf('/interests') >= 0,
-          isExternal: false,
-        },
-        {
-          icon: IconStack2,
-          label: 'Stack',
-          href: '/stack',
-          isActive: pathName != null && pathName.indexOf('/stack') >= 0,
-          isExternal: false,
-        },
-      ],
-    },
-    {
-      label: 'Social',
-      items: [
-        {
-          icon: IconBrandGithub,
-          label: 'Github',
-          href: 'https://github.com/AdamJNavarro',
-          isActive: false,
-          isExternal: true,
-        },
-        {
-          icon: IconBrandInstagram,
-          label: 'Instagram',
-          href: 'https://www.instagram.com/adamjnavarro',
-          isActive: false,
-          isExternal: true,
-        },
-        {
-          icon: IconBrandTwitter,
-          label: 'Twitter',
-          href: 'https://twitter.com/AdamJNavarro',
-          isActive: false,
-          isExternal: true,
-        },
-        {
-          icon: IconMail,
-          label: 'Email',
-          href: 'mailto:adamjnav@gmail.com',
-          isActive: false,
-          isExternal: true,
-        },
-        {
-          icon: IconSocial,
-          label: 'All Platforms',
-          href: '/social',
-          isActive: pathName != null && pathName.indexOf('/social') >= 0,
-          isExternal: false,
-        },
-      ],
-    },
-  ];
+  const headerTitle = useActiveRouteLabel();
+  const checkActivePath = useActivePath();
 
   return (
     <ApolloProvider client={client}>
@@ -152,7 +88,7 @@ export default function Shell({ children }: any) {
                 Adam Navarro
               </Text>
               <Text fw={800} size="md" tt="capitalize" hiddenFrom="sm">
-                {getPathLabel(pathName)}
+                {headerTitle}
               </Text>
             </Group>
           </Group>
@@ -160,37 +96,21 @@ export default function Shell({ children }: any) {
         <AppShell.Navbar px="xs" py="md">
           <AppShell.Section grow component={ScrollArea} scrollbarSize="0.2rem">
             <Box mr="xl">
-              {sections.map((section, i) => {
-                const { label, items } = section;
+              {navbarRoutes.map((item) => {
+                const isActive = checkActivePath(item.href);
                 return (
-                  <div key={i}>
-                    {label && (
-                      <Text key={i} size="md" fw={600} px="xs" mt="xl">
-                        {label}
-                      </Text>
-                    )}
-                    {items.map((item) => (
-                      <Link
-                        key={item.label}
-                        href={item.href}
-                        onClick={() => {
-                          toggleMobile();
-                        }}
-                        className={classes.link}
-                        data-active={item.isActive || undefined}
-                        target={item.isExternal ? '_blank' : undefined}
-                        rel={item.isExternal ? 'noopener noreferrer' : undefined}
-                      >
-                        <item.icon className={classes.icon} />
-                        <span style={{ flex: 1 }}>{item.label}</span>
-                        {item.isExternal && (
-                          <span className={classes.externalIcon}>
-                            <IconArrowUpRight size={20} />
-                          </span>
-                        )}
-                      </Link>
-                    ))}
-                  </div>
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => {
+                      toggleMobile();
+                    }}
+                    className={classes.navbarLink}
+                    data-active={isActive || undefined}
+                  >
+                    <item.icon className={classes.navbarIcon} />
+                    <span style={{ flex: 1 }}>{item.label}</span>
+                  </Link>
                 );
               })}
             </Box>

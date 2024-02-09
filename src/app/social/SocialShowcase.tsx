@@ -1,9 +1,9 @@
-import NavGrid from '~/components/Navigation/NavGrid';
+import Navigation from '~/components/common/Navigation';
 import { SocialPlatforms } from './Social.data';
 
 export default function SocialShowcase() {
   return (
-    <NavGrid
+    <Navigation.Grid
       items={SocialPlatforms.filter((platform) => platform.show).map((item) => ({
         ...item,
         isExternal: true,
