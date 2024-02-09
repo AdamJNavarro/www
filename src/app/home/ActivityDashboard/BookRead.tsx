@@ -31,7 +31,7 @@ export default function BookRead() {
     <Dashboard.Card
       label="Book Read"
       href={`https://literal.club/book/${book.slug}`}
-      logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1660527872/logos/literal.png"
+      logo="/img/logos/literal.svg"
     >
       <Dashboard.Title lineClamp={1}>{book.title}</Dashboard.Title>
 

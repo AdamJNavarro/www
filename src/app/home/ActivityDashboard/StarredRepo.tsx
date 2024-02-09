@@ -10,7 +10,7 @@ export default function StarredRepo() {
     <Dashboard.Card
       label="Repo Starred"
       href={data.href}
-      logo="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+      logo="/img/logos/github.svg"
     >
       <Dashboard.Title lineClamp={1}>{data.name}</Dashboard.Title>
       <Dashboard.Details lineClamp={1}>{data.description}</Dashboard.Details>

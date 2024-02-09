@@ -14,7 +14,7 @@ export default function WordLearned() {
     <Dashboard.Card
       label="Word Learned"
       href={buildMerriamWebsterUrl(word.spelling)}
-      logo="https://res.cloudinary.com/dkddfip9j/image/upload/v1664659090/logos/merriam-webster.png"
+      logo="/img/logos/merriam-webster.svg"
     >
       <Dashboard.Title tt="capitalize">{word.spelling}</Dashboard.Title>
 
