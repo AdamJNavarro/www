@@ -1,18 +1,22 @@
-import { Badge, Group, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
+import { Badge, Flex, Group, SimpleGrid, Text } from '@mantine/core';
 import Image from 'next/image';
-import { sortByAbc } from '~/utils';
-import { stackItems } from './Stack.data';
+import { makeKebabCase, sortByAbc } from '~/utils';
+import { UsesItem } from './uses.data';
 import Navigation from '~/components/common/Navigation';
 
-export default function StackList() {
-  const theme = useMantineTheme();
+function getLogoPath(name: string): string {
+  const fixedName = makeKebabCase(name);
+  return `/img/logos/${fixedName}.svg`;
+}
+
+export default function UsesList({ items }: { items: UsesItem[] }) {
   return (
     <SimpleGrid
       cols={{ base: 1, md: 2 }}
       spacing={{ base: 'md', sm: 'lg', lg: 'xl' }}
     >
-      {sortByAbc({ data: stackItems, key: 'name' }).map((item) => {
-        const { name, href, logo, tags } = item;
+      {sortByAbc({ data: items, key: 'name' }).map((item) => {
+        const { name, details, href, logo, tags } = item;
         return (
           <Navigation.Card key={name} href={href} isExternal>
             <div
@@ -21,26 +25,26 @@ export default function StackList() {
                 alignItems: 'center',
               }}
             >
-              <Image src={logo} width={56} height={56} alt={`${name} icon`} />
-              <div
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  marginLeft: theme.spacing.md,
-                }}
-              >
-                <Text fw={500} size={theme.fontSizes.md}>
+              <Image
+                src={logo || getLogoPath(name)}
+                width={56}
+                height={56}
+                alt={`${name} icon`}
+              />
+              <Flex direction="column" ml="md">
+                <Text fw={500} fz="md">
                   {name}
                 </Text>
+                <Text fz="xs">{details}</Text>
                 {tags && (
                   <>
                     <Group gap="sm" mt={8}>
                       {tags.map((tag) => (
                         <Badge
                           key={`${name}-tag-${tag}`}
-                          size="xs"
+                          //size="xs"
                           variant="outline"
-                          style={{ textTransform: 'none' }}
+                          style={{ textTransform: 'none', fontSize: 10, height: 16 }}
                         >
                           {tag}
                         </Badge>
@@ -48,7 +52,7 @@ export default function StackList() {
                     </Group>
                   </>
                 )}
-              </div>
+              </Flex>
             </div>
           </Navigation.Card>
         );
