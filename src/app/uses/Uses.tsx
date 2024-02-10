@@ -2,9 +2,10 @@
 
 import { useRef } from 'react';
 import { Page } from '~/components/common';
-import StackList from './StackList';
+import MiscUsesList from './MiscUsesList';
+import ComputerUsesList from './ComputerUsesList';
 
-export default function Stack() {
+export default function Uses() {
   const scrollRef = useRef(null);
   const titleRef = useRef(null);
 
@@ -12,10 +13,11 @@ export default function Stack() {
     <Page.Container ref={scrollRef}>
       <Page.Content>
         <Page.Header>
-          <Page.Title ref={titleRef}>Stack</Page.Title>
+          <Page.Title ref={titleRef}>Uses</Page.Title>
           <Page.Description>A collection of products I use.</Page.Description>
         </Page.Header>
-        <StackList />
+        <ComputerUsesList />
+        <MiscUsesList />
       </Page.Content>
     </Page.Container>
   );

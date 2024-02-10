@@ -4,7 +4,7 @@ import classes from './Showcase.module.css';
 import routes from '../config/routes';
 import Navigation from '~/components/common/Navigation';
 
-const items = [routes.interests, routes.stack, routes.social];
+const items = [routes.interests, routes.uses, routes.social];
 
 export default function HomeShowcase() {
   return (

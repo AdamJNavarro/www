@@ -114,15 +114,6 @@ const routes: RouteConfig = {
       description: 'Where you can find me online.',
     },
   },
-  stack: {
-    icon: IconStack2,
-    label: 'Stack',
-    href: '/stack',
-    metadata: {
-      title: 'Stack',
-      description: 'A collection of products I use.',
-    },
-  },
   tv: {
     icon: IconDeviceTvOld,
     label: 'TV',
@@ -130,6 +121,15 @@ const routes: RouteConfig = {
     metadata: {
       title: 'TV',
       description: 'A look into my tastes in television.',
+    },
+  },
+  uses: {
+    icon: IconStack2,
+    label: 'Uses',
+    href: '/uses',
+    metadata: {
+      title: 'Uses',
+      description: 'A collection of products I use.',
     },
   },
   words: {
@@ -146,7 +146,7 @@ const routes: RouteConfig = {
 export const navbarRoutes = [
   routes.home,
   routes.interests,
-  routes.stack,
+  routes.uses,
   routes.social,
 ];
 
