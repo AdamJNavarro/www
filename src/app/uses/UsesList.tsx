@@ -1,13 +1,8 @@
 import { Badge, Flex, Group, SimpleGrid, Text } from '@mantine/core';
 import Image from 'next/image';
-import { makeKebabCase, sortByAbc } from '~/utils';
+import { getLogoPath, sortByAbc } from '~/utils';
 import { UsesItem } from './uses.data';
 import Navigation from '~/components/common/Navigation';
-
-function getLogoPath(name: string): string {
-  const fixedName = makeKebabCase(name);
-  return `/img/logos/${fixedName}.svg`;
-}
 
 export default function UsesList({ items }: { items: UsesItem[] }) {
   return (

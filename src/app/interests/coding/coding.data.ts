@@ -63,4 +63,88 @@ const codingStack: CodingStackItem[] = [
   },
 ];
 
-export { codingProjects, codingStack };
+const codingFrameworkItems = [
+  {
+    name: 'Mantine',
+    href: 'https://mantine.dev/',
+  },
+  {
+    name: 'Next.js',
+    href: 'https://nextjs.org/',
+  },
+  {
+    name: 'React',
+    href: 'https://react.dev/',
+  },
+  {
+    name: 'Cypress',
+    href: 'https://www.cypress.io/',
+  },
+];
+
+// to-add: expo go, android studio, xcode, testflight
+
+const codingEnvItems = [
+  {
+    name: 'VSCode',
+    href: 'https://code.visualstudio.com/',
+  },
+  {
+    name: 'iTerm',
+    href: 'https://iterm2.com/',
+  },
+  {
+    name: 'CodeWhisperer',
+    href: 'https://aws.amazon.com/codewhisperer/',
+  },
+  {
+    name: 'Oh My Zsh',
+    href: 'https://ohmyz.sh/',
+  },
+  {
+    name: 'Postgres.app',
+    href: 'https://postgresapp.com/',
+    logo: 'https://res.cloudinary.com/dkddfip9j/image/upload/v1660679336/logos/postgres.png',
+  },
+];
+
+// to add: EAS, Sentry, Twilio, Branch
+
+const codingServicesItems = [
+  {
+    name: 'Cloudinary',
+    href: 'https://cloudinary.com/',
+  },
+  {
+    name: 'Vercel',
+    href: 'https://vercel.com/',
+  },
+  {
+    name: 'Github',
+    href: 'https://github.com/',
+  },
+  {
+    name: 'AWS IAM',
+    href: 'https://aws.amazon.com/iam',
+  },
+  {
+    name: 'AWS Lambda',
+    href: 'https://aws.amazon.com/lambda',
+  },
+  {
+    name: 'AWS Simple Email Service',
+    href: 'https://aws.amazon.com/ses',
+  },
+  {
+    name: 'AWS API Gateway',
+    href: 'https://aws.amazon.com/api-gateway',
+  },
+];
+
+export {
+  codingProjects,
+  codingStack,
+  codingEnvItems,
+  codingServicesItems,
+  codingFrameworkItems,
+};

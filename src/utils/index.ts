@@ -6,5 +6,10 @@ export function buildNamesString(persons: any[], key: string): string {
 }
 
 export function makeKebabCase(str: string): string {
-  return str.replaceAll(' ', '-').toLowerCase();
+  return str.replaceAll(' ', '-').replaceAll('.', '-').toLowerCase();
+}
+
+export function getLogoPath(name: string): string {
+  const fixedName = makeKebabCase(name);
+  return `/img/logos/${fixedName}.svg`;
 }
