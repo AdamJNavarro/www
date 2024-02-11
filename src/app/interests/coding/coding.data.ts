@@ -1,6 +1,15 @@
 import * as wwwSnippets from '../../projects/coding/snippets/personal-website';
 
-type CodingStackIDs = 'React' | 'Next.js' | 'Vercel' | 'Mantine' | 'Cypress';
+type CodingStackItem = {
+  name: string;
+  href: string;
+  logo?: string;
+};
+
+type CodingProjectStack = {
+  frameworks: FrameworkNames[];
+  services: ServicesNames[];
+};
 
 type CodingProject = {
   slug: string;
@@ -10,7 +19,7 @@ type CodingProject = {
     repo: string;
   };
   snippets: any;
-  stack: CodingStackIDs[];
+  stack: CodingProjectStack;
 };
 
 const codingProjects: CodingProject[] = [
@@ -25,62 +34,68 @@ const codingProjects: CodingProject[] = [
       deps: wwwSnippets.deps,
       devDeps: wwwSnippets.devDeps,
     },
-    stack: ['React', 'Mantine', 'Next.js', 'Vercel', 'Cypress'],
+    stack: {
+      frameworks: ['Next.js', 'React', 'Cypress'],
+      services: ['Vercel'],
+    },
   },
 ];
 
-type CodingStackItem = {
-  id: CodingStackIDs;
-  href: string;
-  logo: string;
-};
-
-const codingStack: CodingStackItem[] = [
+const codingFrameworkItems: CodingStackItem[] = [
   {
-    id: 'Mantine',
+    name: 'Mantine' as const,
     href: 'https://mantine.dev/',
-    logo: '/img/logos/mantine.svg',
   },
   {
-    id: 'Next.js',
+    name: 'Next.js' as const,
     href: 'https://nextjs.org/',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
   },
   {
-    id: 'Vercel',
+    name: 'React' as const,
+    href: 'https://react.dev/',
+  },
+  {
+    name: 'Cypress' as const,
+    href: 'https://www.cypress.io/',
+  },
+];
+
+type FrameworkNames = (typeof codingFrameworkItems)[number]['name'];
+
+// to add: EAS, Sentry, Twilio, Branch
+
+const codingServicesItems: CodingStackItem[] = [
+  {
+    name: 'Cloudinary' as const,
+    href: 'https://cloudinary.com/',
+  },
+  {
+    name: 'Vercel' as const,
     href: 'https://vercel.com/',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg',
   },
   {
-    id: 'React',
-    href: 'https://react.dev/',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+    name: 'Github' as const,
+    href: 'https://github.com/',
   },
   {
-    id: 'Cypress',
-    href: 'https://www.cypress.io/',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg',
+    name: 'AWS IAM' as const,
+    href: 'https://aws.amazon.com/iam',
+  },
+  {
+    name: 'AWS Lambda' as const,
+    href: 'https://aws.amazon.com/lambda',
+  },
+  {
+    name: 'AWS Simple Email Service' as const,
+    href: 'https://aws.amazon.com/ses',
+  },
+  {
+    name: 'AWS API Gateway' as const,
+    href: 'https://aws.amazon.com/api-gateway',
   },
 ];
 
-const codingFrameworkItems = [
-  {
-    name: 'Mantine',
-    href: 'https://mantine.dev/',
-  },
-  {
-    name: 'Next.js',
-    href: 'https://nextjs.org/',
-  },
-  {
-    name: 'React',
-    href: 'https://react.dev/',
-  },
-  {
-    name: 'Cypress',
-    href: 'https://www.cypress.io/',
-  },
-];
+type ServicesNames = (typeof codingServicesItems)[number]['name'];
 
 // to-add: expo go, android studio, xcode, testflight
 
@@ -108,43 +123,4 @@ const codingEnvItems = [
   },
 ];
 
-// to add: EAS, Sentry, Twilio, Branch
-
-const codingServicesItems = [
-  {
-    name: 'Cloudinary',
-    href: 'https://cloudinary.com/',
-  },
-  {
-    name: 'Vercel',
-    href: 'https://vercel.com/',
-  },
-  {
-    name: 'Github',
-    href: 'https://github.com/',
-  },
-  {
-    name: 'AWS IAM',
-    href: 'https://aws.amazon.com/iam',
-  },
-  {
-    name: 'AWS Lambda',
-    href: 'https://aws.amazon.com/lambda',
-  },
-  {
-    name: 'AWS Simple Email Service',
-    href: 'https://aws.amazon.com/ses',
-  },
-  {
-    name: 'AWS API Gateway',
-    href: 'https://aws.amazon.com/api-gateway',
-  },
-];
-
-export {
-  codingProjects,
-  codingStack,
-  codingEnvItems,
-  codingServicesItems,
-  codingFrameworkItems,
-};
+export { codingProjects, codingEnvItems, codingServicesItems, codingFrameworkItems };

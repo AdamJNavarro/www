@@ -1,30 +1,41 @@
 import { Box, SimpleGrid, Text } from '@mantine/core';
 import Image from 'next/image';
 import Navigation from '~/components/common/Navigation';
-import { codingStack } from './coding.data';
+import { codingFrameworkItems, codingServicesItems } from './coding.data';
+import { getLogoPath } from '~/utils';
 
 export default function CodingProjectStackList({ project }: any) {
-  const items = codingStack.filter((obj) => project.stack.includes(obj.id));
+  const frameworks = codingFrameworkItems.filter((obj) =>
+    project.stack.frameworks.includes(obj.name)
+  );
+  const services = codingServicesItems.filter((obj) =>
+    project.stack.services.includes(obj.name)
+  );
 
   return (
     <SimpleGrid
       cols={{ base: 1, md: 2 }}
       spacing={{ base: 'md', sm: 'lg', lg: 'xl' }}
     >
-      {items.map((item) => {
-        const { id, href, logo } = item;
+      {[...frameworks, ...services].map((item) => {
+        const { name, href, logo } = item;
         return (
-          <Navigation.Card key={id} href={href} isExternal>
+          <Navigation.Card key={name} href={href} isExternal>
             <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
               }}
             >
-              <Image src={logo} width={56} height={56} alt={`${id} icon`} />
+              <Image
+                src={logo || getLogoPath(name)}
+                width={56}
+                height={56}
+                alt={`${name} icon`}
+              />
               <Box display="flex" ml="md">
                 <Text fw={500} fz="md">
-                  {id}
+                  {name}
                 </Text>
               </Box>
             </div>
