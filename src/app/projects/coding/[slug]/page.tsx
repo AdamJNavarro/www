@@ -23,7 +23,10 @@ export default function CodingProject({ params }: any) {
         </Page.Header>
         <Section.Container>
           <Section.Header>
-            <Section.Title>Built With</Section.Title>
+            <Section.Title>Tech Stack</Section.Title>
+            <Section.Description>
+              The frameworks and services used.
+            </Section.Description>
           </Section.Header>
           <Section.Content>
             <CodingProjectStackList project={project} />
@@ -33,31 +36,43 @@ export default function CodingProject({ params }: any) {
         <Section.Container>
           <Section.Header>
             <Section.Title>Written In</Section.Title>
+            <Section.Description>
+              A breakdown of the languages used according to Github.
+            </Section.Description>
           </Section.Header>
           <Section.Content>
             <GithubRepoLangs project={project} />
           </Section.Content>
         </Section.Container>
 
-        <CodeHighlightTabs
-          withCopyButton={false}
-          withExpandButton
-          defaultExpanded={false}
-          expandCodeLabel="Show full"
-          collapseCodeLabel="Show less"
-          code={[
-            {
-              fileName: 'dependencies.json',
-              code: project.snippets.deps,
-              language: 'json',
-            },
-            {
-              fileName: 'devDependencies.json',
-              code: project.snippets.devDeps,
-              language: 'json',
-            },
-          ]}
-        />
+        <Section.Container>
+          <Section.Header>
+            <Section.Title>Under the Hood</Section.Title>
+            <Section.Description>Here are the packages used.</Section.Description>
+          </Section.Header>
+          <Section.Content>
+            <CodeHighlightTabs
+              withCopyButton={false}
+              code={[
+                {
+                  fileName: 'dependencies',
+                  code: project.snippets.deps,
+                  language: 'json',
+                },
+                {
+                  fileName: 'devDependencies',
+                  code: project.snippets.devDeps,
+                  language: 'json',
+                },
+              ]}
+              styles={{
+                root: {
+                  borderRadius: 'var(--mantine-radius-md)',
+                },
+              }}
+            />
+          </Section.Content>
+        </Section.Container>
       </Page.Content>
     </Page.Container>
   );
