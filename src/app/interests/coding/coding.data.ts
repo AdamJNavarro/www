@@ -14,6 +14,7 @@ type CodingProjectStack = {
 type CodingProject = {
   slug: string;
   name: string;
+  description: string;
   github: {
     owner: string;
     repo: string;
@@ -26,6 +27,7 @@ const codingProjects: CodingProject[] = [
   {
     slug: 'personal-website',
     name: 'Personal Website',
+    description: 'The very website you are currently on.',
     github: {
       owner: 'adamjnavarro',
       repo: 'www',

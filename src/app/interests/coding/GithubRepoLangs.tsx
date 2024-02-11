@@ -1,5 +1,6 @@
 import {
   Box,
+  Flex,
   Group,
   Progress,
   ScrollAreaAutosize,
@@ -27,6 +28,14 @@ function generateProgressData(data: any): GithubLanguagesProgressItem[] {
   return arr;
 }
 
+function MainContainer({ children }: any) {
+  return (
+    <Flex direction="column" w={{ base: '100%', xs: '50%' }}>
+      {children}
+    </Flex>
+  );
+}
+
 function LanguageListItemPlaceholder() {
   return (
     <Group wrap="nowrap">
@@ -46,7 +55,7 @@ function ProgressContainer({ children }: any) {
 
 function LoadingPlaceholder() {
   return (
-    <>
+    <MainContainer>
       <ProgressContainer>
         <Progress.Section value={100} animated color="dark.6" />
       </ProgressContainer>
@@ -56,12 +65,12 @@ function LoadingPlaceholder() {
         <LanguageListItemPlaceholder />
         <LanguageListItemPlaceholder />
       </Stack>
-    </>
+    </MainContainer>
   );
 }
 
 export default function GithubRepoLangs({ project }) {
-  const { data, error } = useGithubRepoLangs({
+  const { data } = useGithubRepoLangs({
     owner: project.github.owner,
     repo: project.github.repo,
   });
@@ -71,7 +80,7 @@ export default function GithubRepoLangs({ project }) {
   const progressData = generateProgressData(data);
 
   return (
-    <>
+    <MainContainer>
       <ProgressContainer>
         {progressData.map((item) => (
           <Progress.Section
@@ -94,6 +103,6 @@ export default function GithubRepoLangs({ project }) {
           ))}
         </Stack>
       </ScrollAreaAutosize>
-    </>
+    </MainContainer>
   );
 }

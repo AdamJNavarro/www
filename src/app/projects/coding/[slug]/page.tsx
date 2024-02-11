@@ -20,6 +20,7 @@ export default function CodingProject({ params }: any) {
       <Page.Content>
         <Page.Header>
           <Page.Title ref={titleRef}>{project.name}</Page.Title>
+          <Page.Description>{project.description}</Page.Description>
         </Page.Header>
         <Section.Container>
           <Section.Header>
