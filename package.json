@@ -22,6 +22,7 @@
     "@mantine/hooks": "^7.4.2",
     "@mantine/next": "^6.0.21",
     "@tabler/icons-react": "^2.47.0",
+    "@vercel/postgres": "^0.7.2",
     "dayjs": "^1.11.10",
     "graphql": "^16.8.1",
     "moviedb-promise": "^4.0.3",
