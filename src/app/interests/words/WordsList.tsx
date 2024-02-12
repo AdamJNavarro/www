@@ -3,15 +3,13 @@ import { useState } from 'react';
 import { DataGrid } from '../../../components/common/Grid';
 import { sortWords } from './Words.utils';
 import WordCard from './WordCard';
-import { wordBank } from './Words.data';
-import { WordDisplayMode, WordProps, WordSortingMode } from './Words.types';
-import WordSortingToggle, { WordsDisplayToggle } from './WordSortingToggle';
+import { WordProps, WordSortingMode } from './Words.types';
+import WordSortingToggle from './WordSortingToggle';
 
-export default function WordsList() {
-  //const [displayMode, setDisplayMode] = useState<WordDisplayMode>('grid');
+export default function WordsList({ data }: any) {
   const [sortMode, setSortMode] = useState<WordSortingMode>('recent');
   const [sortedWords, setSortedWords] = useState<WordProps[]>(
-    sortWords(wordBank, sortMode)
+    sortWords(data, sortMode)
   );
 
   return (
@@ -30,14 +28,6 @@ export default function WordsList() {
           }}
           value={sortMode}
         />
-        {/*  <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
-          <WordsDisplayToggle
-            onChange={(value: WordDisplayMode) => {
-              setDisplayMode(value);
-            }}
-            value={displayMode}
-          />
-        </MediaQuery> */}
       </Group>
       <DataGrid
         config={{

@@ -7,7 +7,7 @@ import { Page, Section } from '~/components/common';
 import HomeShowcase from './HomeShowcase';
 import ActivityDashboard from './ActivityDashboard';
 
-export default function Home() {
+export default function Home({ data }: any) {
   const scrollRef = useRef(null);
 
   return (
@@ -22,7 +22,7 @@ export default function Home() {
             </Section.Title>
           </Section.Header>
           <Section.Content>
-            <ActivityDashboard />
+            <ActivityDashboard data={data} />
           </Section.Content>
         </Section.Container>
       </Page.Content>
