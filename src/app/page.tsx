@@ -1,5 +1,7 @@
+import { getLatestWord } from './db/queries';
 import Home from './home';
 
 export default async function Page() {
-  return <Home />;
+  const latestWord = await getLatestWord();
+  return <Home data={{ latestWord }} />;
 }

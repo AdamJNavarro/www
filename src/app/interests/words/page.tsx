@@ -5,16 +5,10 @@ import { getWords } from '~/app/db/queries';
 export const { metadata } = routes.words;
 
 export default async function Page() {
+  const words = await getWords();
   return (
     <>
-      <Words />
-      <WordBank />
+      <Words data={words} />
     </>
   );
-}
-
-async function WordBank() {
-  const words = await getWords();
-  console.log('WORDS::', words);
-  return <div />;
 }

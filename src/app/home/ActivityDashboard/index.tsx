@@ -7,13 +7,13 @@ import MovieWatched from './MovieWatched';
 import StarredRepo from './StarredRepo';
 import StravaSession from './StravaSession';
 
-export default function ActivityDashboard() {
+export default function ActivityDashboard({ data }: any) {
   return (
     <SimpleGrid
       cols={{ base: 1, md: 2 }}
       spacing={{ base: 'md', sm: 'lg', lg: 'xl' }}
     >
-      <WordLearned />
+      <WordLearned data={data.latestWord} />
       <MovieWatched />
       <StravaSession />
       <StarredRepo />
