@@ -1,8 +1,6 @@
 import { Center, SegmentedControl } from '@mantine/core';
 import {
   IconClock,
-  IconGridDots,
-  IconList,
   IconSortAscendingLetters,
   IconSortDescendingLetters,
 } from '@tabler/icons-react';
@@ -36,32 +34,6 @@ export default function WordSortingToggle({ ...rest }: any) {
           label: (
             <Center>
               <IconSortDescendingLetters size={20} />
-            </Center>
-          ),
-        },
-      ]}
-      {...rest}
-    />
-  );
-}
-
-export function WordsDisplayToggle({ ...rest }: any) {
-  return (
-    <SegmentedControl
-      data={[
-        {
-          value: 'grid',
-          label: (
-            <Center>
-              <IconGridDots size={20} />
-            </Center>
-          ),
-        },
-        {
-          value: 'table',
-          label: (
-            <Center>
-              <IconList size={20} />
             </Center>
           ),
         },

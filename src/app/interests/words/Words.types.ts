@@ -1,7 +1,5 @@
 type WordSortingMode = 'abc' | 'reverse-abc' | 'recent';
 
-type WordDisplayMode = 'grid' | 'table';
-
 type WordPart =
   | 'adjective'
   | 'adverb'
@@ -17,7 +15,6 @@ interface WordProps {
   definition: string;
   partOfSpeech: WordPart;
   spelling: string;
-  //id: any;
 }
 
-export type { WordSortingMode, WordDisplayMode, WordPart, WordProps };
+export type { WordSortingMode, WordPart, WordProps };
