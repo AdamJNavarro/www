@@ -8,17 +8,17 @@ const letterboxdStats: Stat[] = [
   {
     icon: IconMovie,
     label: 'Films',
-    value: 1521,
+    value: 1522,
   },
   {
     icon: IconHourglass,
     label: 'Hours',
-    value: 2854,
+    value: 2856,
   },
   {
     icon: IconChairDirector,
     label: 'Directors',
-    value: 832,
+    value: 833,
   },
 ];
 
