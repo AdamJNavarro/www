@@ -2,6 +2,7 @@ import '@mantine/core/styles.css';
 import '@mantine/code-highlight/styles.css';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Metadata, Viewport } from 'next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Shell from '~/components/Layouts/Shell';
 import { theme } from './config/theme';
 
@@ -53,6 +54,7 @@ export default function App({ children }: { children: any }) {
         <MantineProvider forceColorScheme="dark" theme={theme}>
           <Shell>{children}</Shell>
         </MantineProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
