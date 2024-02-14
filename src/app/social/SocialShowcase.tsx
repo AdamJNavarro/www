@@ -1,3 +1,5 @@
+'use client';
+
 import Navigation from '~/components/common/Navigation';
 import { SocialPlatforms } from './Social.data';
 

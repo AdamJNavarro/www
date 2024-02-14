@@ -1,6 +1,5 @@
 import SpotifyGrid from './SpotifyGrid';
 import SpotifyItem from './SpotifyItem';
-import { useSpotifyArtists } from '~/lib/spotify';
 
 function nFormatter(num: number, digits: number) {
   const si = [
@@ -23,13 +22,11 @@ function nFormatter(num: number, digits: number) {
   return (num / si[i].value).toFixed(digits).replace(rx, '$1') + si[i].symbol;
 }
 
-export default function FavoriteArtists() {
-  const { error, data } = useSpotifyArtists();
-
+export default function FavoriteArtists({ data }) {
   return (
-    <SpotifyGrid loading={!data?.artists.length} error={error} placeholderCount={10}>
+    <SpotifyGrid loading={!data} error={undefined} placeholderCount={10}>
       {/* @ts-ignore */}
-      {data.artists.map((artist) => {
+      {data.map((artist) => {
         const { followers, id, image, name, url } = artist;
 
         return (

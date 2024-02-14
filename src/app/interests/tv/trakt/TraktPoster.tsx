@@ -1,8 +1,10 @@
+'use client';
+
 import { Skeleton } from '@mantine/core';
 import Image from 'next/image';
 
 import { useEffect, useState } from 'react';
-import { getTvPoster } from '~/lib/tmdb';
+import { getTmdbPoster } from '~/app/data/tmdb';
 
 interface TraktPosterProps {
   posterId: number;
@@ -14,7 +16,7 @@ export default function TraktPoster({ posterId, title }: TraktPosterProps) {
 
   useEffect(() => {
     (async () => {
-      setPosterUrl(await getTvPoster(posterId));
+      setPosterUrl(await getTmdbPoster(posterId));
     })();
   }, []);
 

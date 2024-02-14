@@ -1,3 +1,5 @@
+'use client';
+
 import { Group, rem } from '@mantine/core';
 import { useState } from 'react';
 import { DataGrid } from '../../../components/common/Grid';

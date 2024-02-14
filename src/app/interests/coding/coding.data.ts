@@ -1,5 +1,3 @@
-import * as wwwSnippets from '../../projects/coding/snippets/personal-website';
-
 type CodingStackItem = {
   name: string;
   href: string;
@@ -19,7 +17,6 @@ type CodingProject = {
     owner: string;
     repo: string;
   };
-  snippets: any;
   stack: CodingProjectStack;
 };
 
@@ -31,10 +28,6 @@ const codingProjects: CodingProject[] = [
     github: {
       owner: 'adamjnavarro',
       repo: 'www',
-    },
-    snippets: {
-      deps: wwwSnippets.deps,
-      devDeps: wwwSnippets.devDeps,
     },
     stack: {
       frameworks: ['Next.js', 'React', 'Cypress'],

@@ -1,25 +1,25 @@
-'use client';
-
-import { useRef } from 'react';
 import { CodeHighlightTabs } from '@mantine/code-highlight';
-import GithubRepoLangs from '~/app/interests/coding/GithubRepoLangs';
+import { Suspense } from 'react';
 import { codingProjects } from '~/app/interests/coding/coding.data';
 import { Page, Section } from '~/components/common';
-import CodingProjectStackList from '~/app/interests/coding/CodingProjectStackList';
+import CodingProjectStackList from '../CodingProjectStackList';
+import {
+  getGithubRepoDependencies,
+  getGithubRepoLanguages,
+} from '~/app/data/github';
+import GithubRepoLanguages from '../GithubRepoLanguages';
+import { LoadingSpinner } from '~/components/common/pure-html';
 
 export default function CodingProject({ params }: any) {
-  const scrollRef = useRef(null);
-  const titleRef = useRef(null);
-
   const project = codingProjects.find((proj) => proj.slug === params.slug);
 
   if (!project) return <p>Project not found...</p>;
 
   return (
-    <Page.Container ref={scrollRef}>
+    <Page.Container>
       <Page.Content>
         <Page.Header>
-          <Page.Title ref={titleRef}>{project.name}</Page.Title>
+          <Page.Title>{project.name}</Page.Title>
           <Page.Description>{project.description}</Page.Description>
         </Page.Header>
         <Section.Container>
@@ -34,47 +34,70 @@ export default function CodingProject({ params }: any) {
           </Section.Content>
         </Section.Container>
 
-        <Section.Container>
-          <Section.Header>
-            <Section.Title>Written In</Section.Title>
-            <Section.Description>
-              A breakdown of the languages used according to Github.
-            </Section.Description>
-          </Section.Header>
-          <Section.Content>
-            <GithubRepoLangs project={project} />
-          </Section.Content>
-        </Section.Container>
-
-        <Section.Container>
-          <Section.Header>
-            <Section.Title>Under the Hood</Section.Title>
-            <Section.Description>Here are the packages used.</Section.Description>
-          </Section.Header>
-          <Section.Content>
-            <CodeHighlightTabs
-              withCopyButton={false}
-              code={[
-                {
-                  fileName: 'dependencies',
-                  code: project.snippets.deps,
-                  language: 'json',
-                },
-                {
-                  fileName: 'devDependencies',
-                  code: project.snippets.devDeps,
-                  language: 'json',
-                },
-              ]}
-              styles={{
-                root: {
-                  borderRadius: 'var(--mantine-radius-md)',
-                },
-              }}
-            />
-          </Section.Content>
-        </Section.Container>
+        <Suspense fallback={<LoadingSpinner />}>
+          <LanguagesSection github={project.github} />
+          <DependenciesSection github={project.github} />
+        </Suspense>
       </Page.Content>
     </Page.Container>
+  );
+}
+
+async function LanguagesSection({ github }: any) {
+  const data = await getGithubRepoLanguages({
+    owner: github.owner,
+    repo: github.repo,
+  });
+
+  return (
+    <Section.Container>
+      <Section.Header>
+        <Section.Title>Written In</Section.Title>
+        <Section.Description>
+          A breakdown of the languages used according to Github.
+        </Section.Description>
+      </Section.Header>
+      <Section.Content>
+        <GithubRepoLanguages data={data} />
+      </Section.Content>
+    </Section.Container>
+  );
+}
+
+async function DependenciesSection({ github }: any) {
+  const data = await getGithubRepoDependencies({
+    owner: github.owner,
+    repo: github.repo,
+  });
+
+  return (
+    <Section.Container>
+      <Section.Header>
+        <Section.Title>Under the Hood</Section.Title>
+        <Section.Description>Here are the packages used.</Section.Description>
+      </Section.Header>
+      <Section.Content>
+        <CodeHighlightTabs
+          withCopyButton={false}
+          code={[
+            {
+              fileName: 'dependencies',
+              code: data.deps,
+              language: 'json',
+            },
+            {
+              fileName: 'devDependencies',
+              code: data.devDeps,
+              language: 'json',
+            },
+          ]}
+          styles={{
+            root: {
+              borderRadius: 'var(--mantine-radius-md)',
+            },
+          }}
+        />
+      </Section.Content>
+    </Section.Container>
   );
 }

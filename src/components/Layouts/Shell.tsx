@@ -15,7 +15,7 @@ import { usePathname } from 'next/navigation';
 
 import { ApolloProvider } from '@apollo/client';
 import classes from '../common/Navigation.module.css';
-import { client } from '~/lib/apollo';
+import { client } from '~/app/data/apollo';
 import { navbarRoutes } from '~/app/config/routes';
 
 function useActivePath(): (href: string) => boolean {
