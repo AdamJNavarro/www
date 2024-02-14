@@ -1,8 +1,18 @@
 import { Badge, Flex, Group, SimpleGrid, Text } from '@mantine/core';
 import Image from 'next/image';
 import { getLogoPath, sortByAbc } from '~/utils';
-import { UsesItem } from './uses.data';
+import { Tag, UsesItem } from './uses.data';
 import Navigation from '~/components/common/Navigation';
+
+function getUsesBadgeColor(tag: Tag): string {
+  if (tag === Tag.Ios) return 'blue.6';
+  if (tag === Tag.Macos) return 'blue.8';
+  if (tag === Tag.Free) return 'green.5';
+  if (tag === Tag.Freemium) return 'green.6';
+  if (tag === Tag.Subscription) return 'green.7';
+  if (tag === Tag.OTP) return 'green.8';
+  return 'violet.7';
+}
 
 export default function UsesList({ items }: { items: UsesItem[] }) {
   return (
@@ -37,8 +47,8 @@ export default function UsesList({ items }: { items: UsesItem[] }) {
                       {tags.map((tag) => (
                         <Badge
                           key={`${name}-tag-${tag}`}
-                          //size="xs"
-                          variant="outline"
+                          color={getUsesBadgeColor(tag)}
+                          variant="light"
                           style={{ textTransform: 'none', fontSize: 10, height: 16 }}
                         >
                           {tag}

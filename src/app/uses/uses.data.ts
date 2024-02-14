@@ -1,9 +1,7 @@
-enum Tag {
+export enum Tag {
   Mobile = 'mobile',
   Ios = 'iOS',
   Macos = 'macOS',
-  Apple = 'apple',
-  Web = 'web',
   Free = 'free',
   Freemium = 'freemium',
   Subscription = 'subscription',
