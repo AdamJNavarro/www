@@ -3,10 +3,12 @@
 import { goFetch } from '~/utils';
 import { TraktListEntry, TraktListIds } from './trakt.types';
 
-const TRAKT_CLIENT_ID = process.env.NEXT_PUBLIC_TRAKT_CLIENT_ID;
-const TRAKT_CLIENT_SECRET = process.env.NEXT_PUBLIC_TRAKT_CLIENT_SECRET;
-const TRAKT_ACCESS_TOKEN = process.env.NEXT_PUBLIC_TRAKT_ACCESS_TOKEN;
-const TRAKT_REFRESH_TOKEN = process.env.NEXT_PUBLIC_TRAKT_REFRESH_TOKEN;
+const {
+  TRAKT_CLIENT_ID,
+  TRAKT_CLIENT_SECRET,
+  TRAKT_ACCESS_TOKEN,
+  TRAKT_REFRESH_TOKEN,
+} = process.env;
 
 const TRAKT_USERNAME = 'adamjnavarro';
 const TRAKT_TOKEN_URL = 'https://api.trakt.tv/oauth/token';

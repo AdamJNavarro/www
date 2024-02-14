@@ -2,9 +2,8 @@
 
 import { goFetch } from '~/utils';
 
-const STRAVA_CLIENT_ID = process.env.NEXT_PUBLIC_STRAVA_CLIENT_ID;
-const STRAVA_CLIENT_SECRET = process.env.NEXT_PUBLIC_STRAVA_CLIENT_SECRET;
-const STRAVA_REFRESH_TOKEN = process.env.NEXT_PUBLIC_STRAVA_REFRESH_TOKEN;
+const { STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN } = process.env;
+
 const STRAVA_TOKEN_URL = 'https://www.strava.com/api/v3/oauth/token';
 
 async function getStravaAccessToken() {

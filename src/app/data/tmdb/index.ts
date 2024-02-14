@@ -2,7 +2,7 @@
 
 import { MovieDb } from 'moviedb-promise';
 
-const moviedb = new MovieDb(process.env.NEXT_PUBLIC_TMDB_KEY as string);
+const moviedb = new MovieDb(process.env.TMDB_KEY as string);
 
 export async function getTmdbPoster(id: number): Promise<string> {
   const data = await moviedb.tvImages({ id });

@@ -2,7 +2,7 @@
 
 import { Octokit } from 'octokit';
 
-const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+const token = process.env.GITHUB_PERSONAL_ACCESS_TOKEN;
 
 const octokit = new Octokit({ auth: token });
 

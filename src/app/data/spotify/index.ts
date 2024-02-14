@@ -4,9 +4,9 @@ import { SpotifyApi } from '@spotify/web-api-ts-sdk';
 import { buildNamesString, goFetch } from '~/utils';
 import { SpotifyArtist, SpotifyPodcast, SpotifyTrack } from './spotify.types';
 
-const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID as string;
-const client_secret = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET;
-const refresh_token = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
+const client_id = process.env.SPOTIFY_CLIENT_ID as string;
+const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
+const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
 // Token Scopes:
 // 'playlist-read-private, user-library-read, user-follow-read, user-read-currently-playing, user-read-recently-played, user-top-read';
 
