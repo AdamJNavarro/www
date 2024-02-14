@@ -1,13 +1,8 @@
 import { SimpleGrid, Skeleton } from '@mantine/core';
 import { IconHourglass, IconMovie, IconVideo } from '@tabler/icons-react';
 import { Stat, StatCard } from '~/components/common/Stats';
-import { useTraktStats } from '~/lib/trakt';
 
-export default function TraktStats() {
-  const { error, data } = useTraktStats();
-
-  if (error || !data) return null;
-
+export default function TraktStats({ data }) {
   const stats: Stat[] = [
     {
       icon: IconMovie,

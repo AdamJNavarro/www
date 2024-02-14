@@ -1,11 +1,6 @@
-import { useGithubStarredRepos } from '~/lib/github';
 import Dashboard from './Dashboard';
 
-export default function StarredRepo() {
-  const { data, isLoading } = useGithubStarredRepos();
-
-  if (isLoading || !data) return <Dashboard.Loading />;
-
+export default function StarredRepo({ data }) {
   return (
     <Dashboard.Card
       label="Repo Starred"

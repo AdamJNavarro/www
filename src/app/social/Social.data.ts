@@ -17,7 +17,14 @@ import {
   IconMovie,
   IconSchool,
 } from '@tabler/icons-react';
-import { SocialPlatformProps } from './Social.types';
+
+type SocialPlatformProps = {
+  icon: any;
+  href: string;
+  label: string;
+  important?: boolean;
+  show: boolean;
+};
 
 const SocialUrls = {
   email: 'mailto:adamjnav@gmail.com',

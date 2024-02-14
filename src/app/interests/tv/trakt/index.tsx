@@ -1,15 +1,32 @@
 import { Anchor, Group } from '@mantine/core';
 import Link from 'next/link';
+import { Suspense } from 'react';
 import { Section } from '~/components/common';
 import TraktStats from './TraktStats';
 import TraktList from './TraktList';
+import { getTraktListItems, getTraktStats } from '~/app/data/trakt';
+import { LoadingSpinner } from '~/components/common/pure-html';
 
 const TRAKT_STATS_URL = 'https://trakt.tv/users/adamjnavarro/year/all';
 
 const TRAKT_FULL_WATCHLIST_URL =
   'https://trakt.tv/users/adamjnavarro/watchlist?sort=popularity,asc';
 
-export default function TraktContent() {
+async function TraktData() {
+  const statsData = getTraktStats();
+  const watchingData = getTraktListItems({ listId: 'watching' });
+  const watchedData = getTraktListItems({ listId: 'watched' });
+  const watchlistData = getTraktListItems({ listId: 'watchlist', limit: 4 });
+  const favoritesData = getTraktListItems({ listId: 'favorites' });
+
+  const [stats, watching, watched, watchlist, favorites] = await Promise.all([
+    statsData,
+    watchingData,
+    watchedData,
+    watchlistData,
+    favoritesData,
+  ]);
+
   return (
     <>
       <Section.Container>
@@ -22,7 +39,7 @@ export default function TraktContent() {
           </Group>
         </Section.Header>
         <Section.Content>
-          <TraktStats />
+          <TraktStats data={stats} />
         </Section.Content>
       </Section.Container>
       <Section.Container>
@@ -30,7 +47,7 @@ export default function TraktContent() {
           <Section.Title>Currently Watching</Section.Title>
         </Section.Header>
         <Section.Content>
-          <TraktList placeholderCount={4} listId="currently-watching" />
+          <TraktList data={watching} />
         </Section.Content>
       </Section.Container>
       <Section.Container>
@@ -38,7 +55,7 @@ export default function TraktContent() {
           <Section.Title>Recently Watched</Section.Title>
         </Section.Header>
         <Section.Content>
-          <TraktList placeholderCount={4} listId="watched" itemLimit={4} />
+          <TraktList data={watched.slice(0, 6)} />
         </Section.Content>
       </Section.Container>
       <Section.Container>
@@ -57,7 +74,7 @@ export default function TraktContent() {
           </Section.Header>
         </Section.Header>
         <Section.Content>
-          <TraktList placeholderCount={4} listId="watchlist" itemLimit={4} />
+          <TraktList data={watchlist} />
         </Section.Content>
       </Section.Container>
       <Section.Container>
@@ -65,9 +82,17 @@ export default function TraktContent() {
           <Section.Title>My Favorites</Section.Title>
         </Section.Header>
         <Section.Content>
-          <TraktList placeholderCount={5} listId="favorites" />
+          <TraktList data={favorites} />
         </Section.Content>
       </Section.Container>
     </>
+  );
+}
+
+export default function Trakt() {
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <TraktData />
+    </Suspense>
   );
 }

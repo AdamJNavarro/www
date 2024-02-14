@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 import { SimpleGrid } from '@mantine/core';
-import { GET_BOOKS_BY_STATE_QUERY } from '~/lib/literal/gql/queries';
-import { LiteralStatus } from '~/lib/literal/literal.types';
+import { GET_BOOKS_BY_STATE_QUERY } from '~/app/data/literal/queries';
+import { LiteralStatus } from '~/app/data/literal/literal.types';
 import LiteralItem from './LiteralItem';
 
 interface LiteralListProps {

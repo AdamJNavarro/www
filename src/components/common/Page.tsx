@@ -1,33 +1,8 @@
-import { Loader, Text } from '@mantine/core';
-import * as React from 'react';
+/* eslint-disable jsx-a11y/heading-has-content */
 import classes from './Page.module.css';
 
-interface PageContainerProps {
-  children: React.ReactNode;
-}
-
-const Container = React.forwardRef<HTMLDivElement, PageContainerProps>(
-  (props, ref) => (
-    <div ref={ref} id="main" className={classes.container} {...props} />
-  )
-);
-
-function Loading() {
-  return (
-    <Container>
-      <div
-        style={{
-          display: 'flex',
-          flex: 1,
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Loader size="xl" />
-      </div>
-    </Container>
-  );
+function Container(props) {
+  return <div id="main" className={classes.container} {...props} />;
 }
 
 function Content(props) {
@@ -38,23 +13,14 @@ function Header(props) {
   return <div className={classes.header} {...props} />;
 }
 
-interface TitleProps {
-  children: React.ReactNode;
-}
+const Title = (props) => <h1 className={classes.title} {...props} />;
 
-const Title = React.forwardRef<HTMLHeadingElement, TitleProps>((props, ref) => (
-  <Text className={classes.title} ref={ref} {...props} />
-));
-
-const Description = (props) => (
-  <Text className={classes.description} c="dimmed" {...props} />
-);
+const Description = (props) => <p className={classes.description} {...props} />;
 
 const ContentSeparator = () => <div className={classes.contentSeparator} />;
 
 const Page = {
   Container,
-  Loading,
   Content,
   Header,
   Title,

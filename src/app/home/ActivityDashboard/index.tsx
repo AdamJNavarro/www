@@ -1,3 +1,5 @@
+'use client';
+
 import { SimpleGrid } from '@mantine/core';
 import BookRead from './BookRead';
 import SongLiked from './SongLiked';
@@ -6,20 +8,50 @@ import ShowWatched from './ShowWatched';
 import MovieWatched from './MovieWatched';
 import StarredRepo from './StarredRepo';
 import StravaSession from './StravaSession';
+import { WordProps } from '~/app/interests/words/Words.types';
+import Dashboard from './Dashboard';
 
-export default function ActivityDashboard({ data }: any) {
+export type ActivityDashboardData = {
+  word: WordProps;
+  strava: any;
+  song: any;
+  show: any;
+  repo: any;
+};
+
+export default function ActivityDashboard({
+  data,
+}: {
+  data: ActivityDashboardData;
+}) {
   return (
     <SimpleGrid
       cols={{ base: 1, md: 2 }}
       spacing={{ base: 'md', sm: 'lg', lg: 'xl' }}
     >
-      <WordLearned data={data.latestWord} />
+      <WordLearned data={data.word} />
       <MovieWatched />
-      <StravaSession />
-      <StarredRepo />
+      <StravaSession data={data.strava} />
+      <StarredRepo data={data.repo} />
       <BookRead />
-      <SongLiked />
-      <ShowWatched />
+      <SongLiked data={data.song} />
+      <ShowWatched data={data.show} />
+    </SimpleGrid>
+  );
+}
+
+export function ActivityDashboardLoading() {
+  return (
+    <SimpleGrid
+      cols={{ base: 1, md: 2 }}
+      spacing={{ base: 'md', sm: 'lg', lg: 'xl' }}
+    >
+      <Dashboard.Loading />
+      <Dashboard.Loading />
+      <Dashboard.Loading />
+      <Dashboard.Loading />
+      <Dashboard.Loading />
+      <Dashboard.Loading />
     </SimpleGrid>
   );
 }

@@ -1,7 +1,7 @@
 import { Text, Image } from '@mantine/core';
 import ProductItem from '~/components/Products/ProductItem';
-import { buildLiteralUrl } from '~/lib/literal';
-import { LiteralBook } from '~/lib/literal/literal.types';
+import { buildLiteralUrl } from '~/app/data/literal';
+import { LiteralBook } from '~/app/data/literal/literal.types';
 import { buildNamesString } from '~/utils';
 
 type LiteralItemProps = LiteralBook & { children?: any };

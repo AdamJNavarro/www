@@ -3,7 +3,7 @@
 import { Button, NativeSelect, Stack, Textarea, TextInput } from '@mantine/core';
 import { DateTimePicker } from '@mantine/dates';
 import { useForm } from '@mantine/form';
-import { addWord } from '../db/actions';
+import { addWord } from '../data/db/actions';
 
 export default function AddWord() {
   const form = useForm({

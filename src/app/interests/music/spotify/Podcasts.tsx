@@ -1,14 +1,11 @@
 import SpotifyGrid from './SpotifyGrid';
 import SpotifyItem from './SpotifyItem';
-import { useSpotifyPodcasts } from '~/lib/spotify';
 
-export default function FavoritePodcasts() {
-  const { data, error } = useSpotifyPodcasts();
-
+export default function FavoritePodcasts({ data }) {
   return (
-    <SpotifyGrid loading={!data?.podcasts.length} error={error} placeholderCount={4}>
+    <SpotifyGrid loading={!data} error={undefined} placeholderCount={4}>
       {/* @ts-ignore */}
-      {data.podcasts.map((podcast) => {
+      {data.map((podcast) => {
         const { id, image, name, url, publisher } = podcast;
         return (
           <SpotifyItem

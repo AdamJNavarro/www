@@ -1,7 +1,10 @@
 import dayjs from 'dayjs';
 import { Group } from '@mantine/core';
-import { buildStravaUrl, useStravaActivities } from '~/lib/strava';
 import Dashboard from './Dashboard';
+
+function buildStravaUrl(id: number): string {
+  return `https://www.strava.com/activities/${id}`;
+}
 
 function getSessionType(type: string): string {
   if (type.includes('Bike')) return 'Bike Ride';
@@ -41,12 +44,8 @@ function getSessionDate(date: any): string {
   return `${dayjs(date).format('M/D/YY')}`;
 }
 
-export default function StravaSession() {
-  const { data, isLoading } = useStravaActivities();
-
-  if (!data || isLoading) return <Dashboard.Loading />;
-
-  const { id, distance, totalDuration, sport, date } = data.activities[0];
+export default function StravaSession({ data }) {
+  const { id, distance, totalDuration, sport, date } = data;
 
   return (
     <Dashboard.Card

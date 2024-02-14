@@ -1,14 +1,35 @@
+import { Suspense } from 'react';
 import routes from '~/app/config/routes';
-import Words from './Words';
-import { getWords } from '~/app/db/queries';
+import { getWords } from '~/app/data/db/queries';
+import { Page } from '~/components/common';
+import WordsList from './WordsList';
+import { LoadingSpinner } from '~/components/common/pure-html';
 
 export const { metadata } = routes.words;
 
-export default async function Page() {
-  const words = await getWords();
+export default async function WordsPage() {
   return (
-    <>
-      <Words data={words} />
-    </>
+    <Page.Container>
+      <Page.Content>
+        <Page.Header>
+          <Page.Title>Words</Page.Title>
+          <Page.Description>
+            An ever-growing list of words I encountered and did not know. I began
+            logging mid-2018.
+          </Page.Description>
+        </Page.Header>
+        <WordBank />
+      </Page.Content>
+    </Page.Container>
+  );
+}
+
+async function WordBank() {
+  const words = await getWords();
+
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <WordsList data={words} />
+    </Suspense>
   );
 }

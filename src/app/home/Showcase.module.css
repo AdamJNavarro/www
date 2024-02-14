@@ -3,6 +3,7 @@
   margin-right: auto;
   text-align: center;
   width: 75%;
+  margin-bottom: calc(var(--mantine-spacing-xl) * 3);
   @media (max-width: $mantine-breakpoint-xs) {
     width: 100%;
   }

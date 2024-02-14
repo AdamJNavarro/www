@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 import { useState } from 'react';
-import { GET_BOOKS_BY_STATE_QUERY } from '~/lib/literal/gql/queries';
-import { GetLastReadBookData } from '~/lib/literal/literal.types';
+import { GET_BOOKS_BY_STATE_QUERY } from '~/app/data/literal/queries';
+import { GetLastReadBookData } from '~/app/data/literal/literal.types';
 
 import { buildNamesString } from '~/utils';
 import Dashboard from './Dashboard';

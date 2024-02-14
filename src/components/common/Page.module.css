@@ -32,6 +32,7 @@
 }
 
 .description {
+  color: var(--mantine-color-dimmed);
   font-size: 24px;
   @media (max-width: $mantine-breakpoint-sm) {
     font-size: 20px;
