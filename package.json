@@ -66,6 +66,7 @@
       "node_modules/",
       "*.config.js",
       "*.config.cjs",
+      "*.config.mjs",
       "cypress/"
     ],
     "parser": "@typescript-eslint/parser",

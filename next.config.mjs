@@ -1,5 +1,11 @@
-module.exports = {
-  reactStrictMode: true,
+/**
+ * @type {import('next').NextConfig}
+ */
+
+const nextConfig = {
+  experimental: {
+    optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -24,3 +30,5 @@ module.exports = {
     ],
   },
 };
+
+export default nextConfig;
