@@ -6,6 +6,7 @@ import TraktStats from './TraktStats';
 import TraktList from './TraktList';
 import { getTraktListItems, getTraktStats } from '~/app/data/trakt';
 import { LoadingSpinner } from '~/components/common/pure-html';
+import TraktGenres from './TraktGenres';
 
 const TRAKT_STATS_URL = 'https://trakt.tv/users/adamjnavarro/year/all';
 
@@ -85,6 +86,7 @@ async function TraktData() {
           <TraktList data={favorites} />
         </Section.Content>
       </Section.Container>
+      <TraktGenres />
     </>
   );
 }
