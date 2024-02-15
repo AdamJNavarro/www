@@ -40,7 +40,7 @@ const SocialUrls = {
   rawg: 'https://rawg.io/@adamjnavarro',
   reddit: 'https://reddit.com/user/adamjnav',
   spotify: 'https://open.spotify.com/user/adamjosephnavarro',
-  strava: `https://www.strava.com/athletes/${process.env.NEXT_PUBLIC_STRAVA_ATHLETE_ID}`,
+  strava: 'https://www.strava.com/athletes/107447599',
   trakt: 'https://trakt.tv/users/adamjnavarro',
   twitch: 'https://twitch.tv/adamjnavarro',
   twitter: 'https://twitter.com/AdamJNavarro',
@@ -75,13 +75,13 @@ const SocialPlatforms: SocialPlatformProps[] = [
     href: SocialUrls.twitter,
     label: 'Twitter',
     important: true,
-    show: true,
+    show: false,
   },
   {
     icon: IconLetterC,
     href: SocialUrls.centered,
     label: 'Centered',
-    show: true,
+    show: false,
   },
   {
     icon: IconBrandDiscord,
@@ -93,7 +93,7 @@ const SocialPlatforms: SocialPlatformProps[] = [
     icon: IconBrandFacebook,
     href: SocialUrls.facebook,
     label: 'Facebook',
-    show: true,
+    show: false,
   },
   {
     icon: IconBrandFigma,
@@ -117,7 +117,7 @@ const SocialPlatforms: SocialPlatformProps[] = [
     icon: IconBrandMedium,
     href: SocialUrls.medium,
     label: 'Medium',
-    show: true,
+    show: false,
   },
   {
     icon: IconBrandReddit,
@@ -129,7 +129,7 @@ const SocialPlatforms: SocialPlatformProps[] = [
     icon: IconBrandStrava,
     href: SocialUrls.strava,
     label: 'Strava',
-    show: true,
+    show: false,
   },
   {
     icon: IconBrandSpotify,
@@ -140,7 +140,7 @@ const SocialPlatforms: SocialPlatformProps[] = [
   {
     icon: IconDeviceTvOld,
     href: SocialUrls.trakt,
-    label: 'Trakt.tv',
+    label: 'Trakt',
     show: true,
   },
   {
