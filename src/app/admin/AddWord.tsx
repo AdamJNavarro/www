@@ -12,7 +12,6 @@ export default function AddWord() {
       definition: '',
       partOfSpeech: 'Noun',
       dateLearned: new Date(),
-      adminKey: '',
     },
 
     // functions will be used to validate values at corresponding key
@@ -22,7 +21,6 @@ export default function AddWord() {
       definition: (value) =>
         value.length < 5 ? 'Definition must have at least 5 letters' : null,
       partOfSpeech: (value) => (value.length < 1 ? 'Select part of speech' : null),
-      adminKey: (value) => (value.length < 1 ? 'Enter Admin Key' : null),
     },
     transformValues: (values) => ({
       ...values,
@@ -65,11 +63,7 @@ export default function AddWord() {
           placeholder="Pick date and time"
           {...form.getInputProps('dateLearned')}
         />
-        <TextInput
-          placeholder="Enter key..."
-          label="Admin Key"
-          {...form.getInputProps('adminKey')}
-        />
+
         <Button type="submit">Submit</Button>
       </Stack>
     </form>
