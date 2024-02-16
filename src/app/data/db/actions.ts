@@ -3,18 +3,29 @@
 'use server';
 
 import { sql } from '@vercel/postgres';
+import { type Session } from 'next-auth';
 import { unstable_noStore as noStore, revalidatePath } from 'next/cache';
+import { auth } from '~/app/auth';
 
-const ADMIN_KEY = 'Monkey25';
+async function getSession(): Promise<Session> {
+  const session = await auth();
+  if (!session || !session.user) {
+    throw new Error('Unauthorized');
+  }
+
+  return session;
+}
 
 export async function addWord(formData: any) {
   if (!process.env.POSTGRES_URL) {
     return [];
   }
 
-  if (formData.adminKey !== ADMIN_KEY) {
-    // Prevent others from being able to write to database until I can properly impl auth
-    return false;
+  const session = await getSession();
+  const email = session.user?.email as string;
+
+  if (email !== 'adamjnav@gmail.com') {
+    throw new Error('Unauthorized');
   }
 
   const { spelling, definition, partOfSpeech, dateLearned } = formData;
