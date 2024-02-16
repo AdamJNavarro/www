@@ -1,6 +1,5 @@
 import { ApolloError } from '@apollo/client';
 import { SimpleGrid, Skeleton } from '@mantine/core';
-import { AlertBanner } from './Feedback';
 
 interface SimpleGridConfig {
   cols: any;
@@ -26,11 +25,7 @@ export function DataGrid({ ...props }: DataGridProps) {
   ));
 
   if (error) {
-    return (
-      <AlertBanner mode="error" title="An Error Occurred">
-        There was a problem fetching the data. Sorry about that!
-      </AlertBanner>
-    );
+    return <p>An error occurred.</p>;
   }
 
   return <SimpleGrid {...config}>{loading ? placeholders : children}</SimpleGrid>;

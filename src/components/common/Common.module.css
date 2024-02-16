@@ -1,6 +1,0 @@
-.alert {
-  display: flex;
-  border-radius: var(--mantine-radius-md);
-  padding: var(--mantine-spacing-md);
-  width: 50%;
-}
