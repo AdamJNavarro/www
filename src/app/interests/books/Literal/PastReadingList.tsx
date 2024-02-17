@@ -19,7 +19,7 @@ export default function PastReadingList() {
         </Group>
       </Section.Header>
       <Section.Content>
-        <LiteralList readingStatus="FINISHED" placeholderCount={8} itemLimit={8} />
+        <LiteralList readingStatus="FINISHED" itemLimit={8} />
       </Section.Content>
     </Section.Container>
   );

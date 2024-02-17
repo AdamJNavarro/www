@@ -1,43 +1,16 @@
-import { useQuery } from '@apollo/client';
-import { useState } from 'react';
-import { GET_BOOKS_BY_STATE_QUERY } from '~/app/data/literal/queries';
-import { GetLastReadBookData } from '~/app/data/literal/literal.types';
-
-import { buildNamesString } from '~/utils';
 import Dashboard from './Dashboard';
+import { lastBookFinished } from '~/app/data/literal';
 
 export default function BookRead() {
-  const [book, setBook] = useState<any>(null);
-  useQuery<GetLastReadBookData>(GET_BOOKS_BY_STATE_QUERY, {
-    context: {
-      serviceName: 'literal',
-    },
-    variables: {
-      limit: 1,
-      offset: 0,
-      readingStatus: 'FINISHED',
-      profileId: 'cl2jedoby6210890hxe5ct6ugc7',
-    },
-    onCompleted(data) {
-      setBook(data.booksByReadingStateAndProfile[0]);
-    },
-  });
+  const book = lastBookFinished;
 
-  const loading = book === null;
-
-  if (loading) return <Dashboard.Loading />;
+  if (!book) return <div />;
 
   return (
-    <Dashboard.Card
-      label="Book Read"
-      href={`https://literal.club/book/${book.slug}`}
-      logo="/img/logos/literal.svg"
-    >
+    <Dashboard.Card label="Book Read" href={book.url} logo="/img/logos/literal.svg">
       <Dashboard.Title lineClamp={1}>{book.title}</Dashboard.Title>
 
-      <Dashboard.Details lineClamp={1}>
-        {buildNamesString(book.authors, 'name')}
-      </Dashboard.Details>
+      <Dashboard.Details lineClamp={1}>{book.authors}</Dashboard.Details>
     </Dashboard.Card>
   );
 }
