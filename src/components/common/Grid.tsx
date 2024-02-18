@@ -1,4 +1,3 @@
-import { ApolloError } from '@apollo/client';
 import { SimpleGrid, Skeleton } from '@mantine/core';
 
 interface SimpleGridConfig {
@@ -8,7 +7,7 @@ interface SimpleGridConfig {
 
 export interface DataGridProps {
   config?: SimpleGridConfig;
-  error?: string | ApolloError | Error;
+  error?: string | Error;
   loading: boolean;
   placeholder?: any;
   placeholderCount: number;
