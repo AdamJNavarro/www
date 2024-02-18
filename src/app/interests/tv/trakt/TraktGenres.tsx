@@ -1,98 +1,10 @@
 'use client';
 
 import { Box, Group, Progress, SimpleGrid, Text } from '@mantine/core';
+import { traktData } from '~/app/data/trakt';
 import { Section } from '~/components/common';
 
-const data = [
-  {
-    genre: 'drama',
-    total: 114,
-  },
-  {
-    genre: 'action',
-    total: 80,
-  },
-  {
-    genre: 'adventure',
-    total: 68,
-  },
-  {
-    genre: 'fantasy',
-    total: 66,
-  },
-  {
-    genre: 'science fiction',
-    total: 49,
-  },
-  {
-    genre: 'mystery',
-    total: 45,
-  },
-  {
-    genre: 'anime',
-    total: 44,
-  },
-  {
-    genre: 'comedy',
-    total: 34,
-  },
-  {
-    genre: 'crime',
-    total: 33,
-  },
-  {
-    genre: 'horror',
-    total: 15,
-  },
-  {
-    genre: 'superhero',
-    total: 12,
-  },
-  {
-    genre: 'animation',
-    total: 9,
-  },
-  {
-    genre: 'thriller',
-    total: 7,
-  },
-  {
-    genre: 'romance',
-    total: 5,
-  },
-  {
-    genre: 'history',
-    total: 3,
-  },
-  {
-    genre: 'suspense',
-    total: 3,
-  },
-  {
-    genre: 'children',
-    total: 3,
-  },
-  {
-    genre: 'family',
-    total: 2,
-  },
-  {
-    genre: 'war',
-    total: 1,
-  },
-  {
-    genre: 'donghua',
-    total: 1,
-  },
-  {
-    genre: 'documentary',
-    total: 1,
-  },
-  {
-    genre: 'western',
-    total: 1,
-  },
-];
+const data = traktData.genres;
 
 const breakpoint = 30;
 const fixedValue = 4;

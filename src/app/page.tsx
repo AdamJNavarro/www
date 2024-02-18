@@ -8,7 +8,6 @@ import ActivityDashboard, {
 import { getLatestStarredRepo } from './data/github';
 import { getLatestStravaActivity } from './data/strava';
 import { getLatestLikedSongs } from './data/spotify';
-import { getTraktListItems } from './data/trakt';
 
 export default async function HomePage() {
   return (
@@ -37,15 +36,13 @@ async function LatestActivities() {
   const repoData = getLatestStarredRepo();
   const stravaData = getLatestStravaActivity();
   const spotifyData = getLatestLikedSongs({ limit: 1 });
-  const traktData = getTraktListItems({ listId: 'history', limit: 1 });
 
-  const [word, repo, strava, song, show] = await Promise.all([
+  const [word, repo, strava, song] = await Promise.all([
     wordData,
     repoData,
     stravaData,
     spotifyData,
-    traktData,
   ]);
 
-  return <ActivityDashboard data={{ word, repo, strava, song, show: show[0] }} />;
+  return <ActivityDashboard data={{ word, repo, strava, song }} />;
 }

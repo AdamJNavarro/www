@@ -15,7 +15,6 @@ export type ActivityDashboardData = {
   word: WordProps;
   strava: any;
   song: any;
-  show: any;
   repo: any;
 };
 
@@ -35,7 +34,7 @@ export default function ActivityDashboard({
       <StarredRepo data={data.repo} />
       <BookRead />
       <SongLiked data={data.song} />
-      <ShowWatched data={data.show} />
+      <ShowWatched />
     </SimpleGrid>
   );
 }

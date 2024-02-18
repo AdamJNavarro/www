@@ -114,6 +114,7 @@
     "typecheck": "tsc --noEmit",
     "export": "next build && next export",
     "gen:literal": "tsx ./scripts/gen-literal-data.ts",
+    "gen:trakt": "tsx ./scripts/gen-trakt-data.ts",
     "lint": "eslint . --ext js,ts,tsx",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
