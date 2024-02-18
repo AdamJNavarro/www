@@ -12,7 +12,7 @@ export default function CurrentReadingList() {
         </Section.Description>
       </Section.Header>
       <Section.Content>
-        <LiteralList readingStatus="IS_READING" placeholderCount={2} itemLimit={2} />
+        <LiteralList readingStatus="IS_READING" itemLimit={2} />
       </Section.Content>
     </Section.Container>
   );

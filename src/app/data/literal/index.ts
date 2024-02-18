@@ -1,6 +1,36 @@
-const LITERAL_BASE_URL = 'https://literal.club';
-const LITERAL_BOOK_URL = `${LITERAL_BASE_URL}/book`;
+import data from './data.json';
 
-export function buildLiteralUrl(slug: string): string {
-  return `${LITERAL_BOOK_URL}/${slug}`;
+export type LiteralStatus =
+  | 'WANTS_TO_READ'
+  | 'IS_READING'
+  | 'FINISHED'
+  | 'DROPPED'
+  | 'NONE';
+
+export type LiteralBook = {
+  status: LiteralStatus;
+  createdAt: any;
+  id: string;
+  url: string;
+  title: string;
+  isbn: string;
+  cover: string;
+  authors: string;
+};
+
+export const literalData = data as {
+  books: LiteralBook[];
+  updatedAt: any;
+};
+
+export function getLiteralBooksByStatus(
+  status: LiteralStatus,
+  limit: number
+): LiteralBook[] {
+  const matchingBooks = literalData.books.filter((book) => book.status === status);
+  return matchingBooks.slice(-limit);
 }
+
+export const lastBookFinished = literalData.books.findLast(
+  ({ status }) => status === 'FINISHED'
+);

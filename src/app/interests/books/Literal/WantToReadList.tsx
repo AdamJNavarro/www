@@ -19,11 +19,7 @@ export default function WantToReadList() {
         </Group>
       </Section.Header>
       <Section.Content>
-        <LiteralList
-          readingStatus="WANTS_TO_READ"
-          placeholderCount={4}
-          itemLimit={4}
-        />
+        <LiteralList readingStatus="WANTS_TO_READ" itemLimit={4} />
       </Section.Content>
     </Section.Container>
   );
