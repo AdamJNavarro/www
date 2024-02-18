@@ -1,0 +1,4508 @@
+{
+  "stats": {
+    "shows": 172,
+    "episodes": 9452,
+    "minutes": 329672
+  },
+  "favorites": [
+    {
+      "id": 696434767,
+      "rank": 1,
+      "dateAdded": "2022-05-18T17:32:27.000Z",
+      "showIds": {
+        "trakt": 4583,
+        "slug": "lost-2004",
+        "tvdb": 73739,
+        "imdb": "tt0411008",
+        "tmdb": 4607,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/lost-2004",
+      "title": "Lost",
+      "year": 2004,
+      "overview": "Stripped of everything, the survivors of a horrific plane crash  must work together to stay alive. But the island holds many secrets.",
+      "status": "ended",
+      "genres": [
+        "mystery",
+        "adventure",
+        "action",
+        "drama"
+      ]
+    },
+    {
+      "id": 696434786,
+      "rank": 2,
+      "dateAdded": "2022-05-18T17:32:38.000Z",
+      "showIds": {
+        "trakt": 4532,
+        "slug": "scrubs",
+        "tvdb": 76156,
+        "imdb": "tt0285403",
+        "tmdb": 4556,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/scrubs",
+      "title": "Scrubs",
+      "year": 2001,
+      "overview": "In the unreal world of Sacred Heart Hospital, John \"J.D.\" Dorian learns the ways of medicine, friendship and life.",
+      "status": "canceled",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 696434880,
+      "rank": 3,
+      "dateAdded": "2022-05-18T17:33:08.000Z",
+      "showIds": {
+        "trakt": 1388,
+        "slug": "breaking-bad",
+        "tvdb": 81189,
+        "imdb": "tt0903747",
+        "tmdb": 1396,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/breaking-bad",
+      "title": "Breaking Bad",
+      "year": 2008,
+      "overview": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime",
+        "thriller"
+      ]
+    },
+    {
+      "id": 719687403,
+      "rank": 4,
+      "dateAdded": "2022-07-20T02:37:18.000Z",
+      "showIds": {
+        "trakt": 4580,
+        "slug": "smallville",
+        "tvdb": 72218,
+        "imdb": "tt0279600",
+        "tmdb": 4604,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/smallville",
+      "title": "Smallville",
+      "year": 2001,
+      "overview": "The origins of the world’s greatest hero–from Krypton refugee Kal-el’s arrival on Earth through his tumultuous teen years to Clark Kent’s final steps toward embracing his destiny as the Man of Steel.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "superhero"
+      ]
+    },
+    {
+      "id": 744695742,
+      "rank": 5,
+      "dateAdded": "2022-09-26T20:06:24.000Z",
+      "showIds": {
+        "trakt": 1438,
+        "slug": "psych",
+        "tvdb": 79335,
+        "imdb": "tt0491738",
+        "tmdb": 1447,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/psych",
+      "title": "Psych",
+      "year": 2006,
+      "overview": "Thanks to his police officer father's efforts, Shawn Spencer spent his childhood developing a keen eye for detail (and a lasting dislike of his dad). Years later, Shawn's frequent tips to the police lead to him being falsely accused of a crime he solved.\n\nNow, Shawn has no choice but to use his abilities to perpetuate his cover story: psychic crime-solving powers, all the while dragging his best friend, his dad, and the police along for the ride.",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "drama",
+        "mystery",
+        "crime"
+      ]
+    }
+  ],
+  "watching": [
+    {
+      "id": 949238069,
+      "rank": 1,
+      "dateAdded": "2023-12-20T23:03:51.000Z",
+      "showIds": {
+        "trakt": 99188,
+        "slug": "alone",
+        "tvdb": 295936,
+        "imdb": "tt4803766",
+        "tmdb": 63726,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/alone",
+      "title": "Alone",
+      "year": 2015,
+      "overview": "Hardcore survivalists are put by themselves in the Vancouver Island wilderness, without camera crews, teams, or producers – on a single mission to stay alive for as long as possible.",
+      "status": "returning series",
+      "genres": [
+        "reality"
+      ]
+    },
+    {
+      "id": 949238091,
+      "rank": 2,
+      "dateAdded": "2023-12-20T23:04:09.000Z",
+      "showIds": {
+        "trakt": 41522,
+        "slug": "banshee",
+        "tvdb": 259765,
+        "imdb": "tt2017109",
+        "tmdb": 41727,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/banshee",
+      "title": "Banshee",
+      "year": 2013,
+      "overview": "Banshee is an American drama television series set in a small town in Pennsylvania Amish country and features an enigmatic ex-con posing as a murdered sheriff who imposes his own brand of justice while also cooking up plans that serve his own interests.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime"
+      ]
+    },
+    {
+      "id": 976429196,
+      "rank": 3,
+      "dateAdded": "2024-02-07T12:12:06.000Z",
+      "showIds": {
+        "trakt": 193023,
+        "slug": "solo-leveling",
+        "tvdb": 389597,
+        "imdb": "tt21209876",
+        "tmdb": 127532,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/solo-leveling",
+      "title": "Solo Leveling",
+      "year": 2024,
+      "overview": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 976430029,
+      "rank": 4,
+      "dateAdded": "2024-02-07T12:15:20.000Z",
+      "showIds": {
+        "trakt": 46375,
+        "slug": "true-detective",
+        "tvdb": 270633,
+        "imdb": "tt2356777",
+        "tmdb": 46648,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/true-detective",
+      "title": "True Detective",
+      "year": 2014,
+      "overview": "An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
+      "status": "returning series",
+      "genres": [
+        "drama"
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "id": 693554208,
+      "rank": 1,
+      "dateAdded": "2022-05-09T21:09:17.000Z",
+      "showIds": {
+        "trakt": 123775,
+        "slug": "dark",
+        "tvdb": 334824,
+        "imdb": "tt5753856",
+        "tmdb": 70523,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/dark",
+      "title": "Dark",
+      "year": 2017,
+      "overview": "A missing child causes four families to help each other for answers. What they could not imagine is that this mystery would be connected to innumerable other secrets of the small town.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 693553930,
+      "rank": 2,
+      "dateAdded": "2022-05-09T21:05:19.000Z",
+      "showIds": {
+        "trakt": 113835,
+        "slug": "the-oa",
+        "tvdb": 321060,
+        "imdb": "tt4635282",
+        "tmdb": 69061,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-oa",
+      "title": "The OA",
+      "year": 2016,
+      "overview": "Prairie Johnson, blind as a child, comes home to the community she grew up in with her sight restored. Some hail her a miracle, others a dangerous mystery, but Prairie won’t talk with the FBI or her parents about the seven years she went missing.",
+      "status": "canceled",
+      "genres": [
+        "drama",
+        "mystery",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 693554680,
+      "rank": 3,
+      "dateAdded": "2022-05-09T21:12:03.000Z",
+      "showIds": {
+        "trakt": 125479,
+        "slug": "succession",
+        "tvdb": 338186,
+        "imdb": "tt7660850",
+        "tmdb": 76331,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/succession",
+      "title": "Succession",
+      "year": 2018,
+      "overview": "Follow the lives of the Roy family as they contemplate their future once their aging father begins to step back from the media and entertainment conglomerate they control.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "comedy"
+      ]
+    },
+    {
+      "id": 693552897,
+      "rank": 4,
+      "dateAdded": "2022-05-09T20:50:17.000Z",
+      "showIds": {
+        "trakt": 173337,
+        "slug": "1883",
+        "tvdb": 396390,
+        "imdb": "tt13991232",
+        "tmdb": 118357,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/1883",
+      "title": "1883",
+      "year": 2021,
+      "overview": "Follow the Dutton family as they embark on a journey west through the Great Plains toward the last bastion of untamed America. A stark retelling of Western expansion, and an intense study of one family fleeing poverty to seek a better future in America’s promised land — Montana.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "western"
+      ]
+    },
+    {
+      "id": 693554761,
+      "rank": 5,
+      "dateAdded": "2022-05-09T21:13:11.000Z",
+      "showIds": {
+        "trakt": 126995,
+        "slug": "yellowstone-2018",
+        "tvdb": 341164,
+        "imdb": "tt4236770",
+        "tmdb": 73586,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/yellowstone-2018",
+      "title": "Yellowstone",
+      "year": 2018,
+      "overview": "Follow the violent world of the Dutton family, who controls the largest contiguous ranch in the United States. Led by their patriarch John Dutton, the family defends their property against constant attack by land developers, an Indian reservation, and America’s first National Park.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "western"
+      ]
+    },
+    {
+      "id": 693554898,
+      "rank": 6,
+      "dateAdded": "2022-05-09T21:15:26.000Z",
+      "showIds": {
+        "trakt": 4589,
+        "slug": "band-of-brothers",
+        "tvdb": 74205,
+        "imdb": "tt0185906",
+        "tmdb": 4613,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/band-of-brothers",
+      "title": "Band of Brothers",
+      "year": 2001,
+      "overview": "Drawn from interviews with survivors of Easy Company, as well as their journals and letters, Band of Brothers chronicles the experiences of these men from paratrooper training in Georgia through the end of the war. As an elite rifle company parachuting into Normandy early on D-Day morning, participants in the Battle of the Bulge, and witness to the horrors of war, the men of Easy knew extraordinary bravery and extraordinary fear - and became the stuff of legend. Based on Stephen E. Ambrose's acclaimed book of the same name.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "war"
+      ]
+    },
+    {
+      "id": 693554903,
+      "rank": 7,
+      "dateAdded": "2022-05-09T21:15:29.000Z",
+      "showIds": {
+        "trakt": 1429,
+        "slug": "the-wire",
+        "tvdb": 79126,
+        "imdb": "tt0306414",
+        "tmdb": 1438,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-wire",
+      "title": "The Wire",
+      "year": 2002,
+      "overview": "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime"
+      ]
+    },
+    {
+      "id": 694060113,
+      "rank": 8,
+      "dateAdded": "2022-05-12T01:55:22.000Z",
+      "showIds": {
+        "trakt": 1389,
+        "slug": "the-sopranos",
+        "tvdb": 75299,
+        "imdb": "tt0141842",
+        "tmdb": 1398,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-sopranos",
+      "title": "The Sopranos",
+      "year": 1999,
+      "overview": "The story of New Jersey-based Italian-American mobster Tony Soprano and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads. Those difficulties are often highlighted through his ongoing professional relationship with psychiatrist Jennifer Melfi. The show features Tony's family members and Mafia associates in prominent roles and story arcs, most notably his wife Carmela and his cousin and protégé Christopher Moltisanti.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 719989389,
+      "rank": 9,
+      "dateAdded": "2022-07-21T02:49:47.000Z",
+      "showIds": {
+        "trakt": 119913,
+        "slug": "ozark",
+        "tvdb": 329089,
+        "imdb": "tt5071412",
+        "tmdb": 69740,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/ozark",
+      "title": "Ozark",
+      "year": 2017,
+      "overview": "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime"
+      ]
+    },
+    {
+      "id": 717198322,
+      "rank": 10,
+      "dateAdded": "2022-07-13T02:42:07.000Z",
+      "showIds": {
+        "trakt": 93720,
+        "slug": "mr-robot",
+        "tvdb": 289590,
+        "imdb": "tt4158110",
+        "tmdb": 62560,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/mr-robot",
+      "title": "Mr. Robot",
+      "year": 2015,
+      "overview": "A contemporary and culturally resonant drama about a young programmer, Elliot, who suffers from a debilitating anti-social disorder and decides that he can only connect to people by hacking them. He wields his skills as a weapon to protect the people that he cares about. Elliot will find himself in the intersection between a cybersecurity firm he works for and the underworld organizations that are recruiting him to bring down corporate America.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime"
+      ]
+    },
+    {
+      "id": 719989413,
+      "rank": 11,
+      "dateAdded": "2022-07-21T02:50:17.000Z",
+      "showIds": {
+        "trakt": 144629,
+        "slug": "euphoria-2019",
+        "tvdb": 360261,
+        "imdb": "tt8772296",
+        "tmdb": 85552,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/euphoria-2019",
+      "title": "Euphoria",
+      "year": 2019,
+      "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+      "status": "returning series",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 737410989,
+      "rank": 12,
+      "dateAdded": "2022-09-07T03:08:26.000Z",
+      "showIds": {
+        "trakt": 180817,
+        "slug": "black-bird",
+        "tvdb": 401998,
+        "imdb": "tt4301160",
+        "tmdb": 155537,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/black-bird",
+      "title": "Black Bird",
+      "year": 2022,
+      "overview": "As Jimmy Keene begins a 10-year prison sentence, he gets an incredible offer: If he can elicit a confession from suspected killer Larry Hall, Jimmy will be freed. Completing this mission becomes the challenge of a lifetime.",
+      "status": "ended",
+      "genres": [
+        "crime",
+        "drama"
+      ]
+    },
+    {
+      "id": 760409701,
+      "rank": 13,
+      "dateAdded": "2022-11-03T03:01:58.000Z",
+      "showIds": {
+        "trakt": 154997,
+        "slug": "severance",
+        "tvdb": 371980,
+        "imdb": "tt11280740",
+        "tmdb": 95396,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/severance",
+      "title": "Severance",
+      "year": 2022,
+      "overview": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+      "status": "returning series",
+      "genres": [
+        "science-fiction",
+        "mystery",
+        "drama"
+      ]
+    },
+    {
+      "id": 779580222,
+      "rank": 14,
+      "dateAdded": "2023-01-09T03:20:36.000Z",
+      "showIds": {
+        "trakt": 70384,
+        "slug": "sense8",
+        "tvdb": 268156,
+        "imdb": "tt2431438",
+        "tmdb": 61664,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/sense8",
+      "title": "Sense8",
+      "year": 2015,
+      "overview": "One gunshot, one death, one moment out of time that irrevocably links eight minds in disparate parts of the world, putting them in each other's lives, each other's secrets, and in terrible danger. Ordinary people suddenly reborn as \"Sensates.\"",
+      "status": "canceled",
+      "genres": [
+        "drama",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 971598908,
+      "rank": 15,
+      "dateAdded": "2024-01-30T23:08:25.000Z",
+      "showIds": {
+        "trakt": 170054,
+        "slug": "shogun-2024",
+        "tvdb": 392573,
+        "imdb": "tt2788316",
+        "tmdb": 126308,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/shogun-2024",
+      "title": "Shōgun",
+      "year": 2024,
+      "overview": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
+      "status": "in production",
+      "genres": [
+        "drama"
+      ]
+    }
+  ],
+  "watched": [
+    {
+      "id": 104465,
+      "dateAdded": "2024-02-15T03:33:30.000Z",
+      "showIds": {
+        "trakt": 104465,
+        "slug": "love",
+        "tvdb": 305378,
+        "imdb": "tt4061080",
+        "tmdb": 53606,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/love",
+      "title": "Love",
+      "year": 2016,
+      "overview": "Rebellious Mickey and good-natured Gus navigate the thrills and agonies of modern relationships.",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "drama",
+        "romance"
+      ]
+    },
+    {
+      "id": 102203,
+      "dateAdded": "2024-02-05T00:14:46.000Z",
+      "showIds": {
+        "trakt": 102203,
+        "slug": "ajin",
+        "tvdb": 300835,
+        "imdb": "tt5537534",
+        "tmdb": 65292,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/ajin",
+      "title": "Ajin",
+      "year": 2016,
+      "overview": "17 years ago, immortals first appeared on the battlefields of Africa. Later, rare, unknown new immortal lifeforms began appearing among humans, and they became known as \"Ajin\" (demi-humans). Just before summer vacation, a Japanese high school student is instantly killed in a traffic accident on his way home from school. However, he is revived, and a price is placed on his head. Thus begins a boy's life on the run from all of humankind.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "mystery",
+        "adventure"
+      ]
+    },
+    {
+      "id": 204694,
+      "dateAdded": "2024-01-30T23:07:27.000Z",
+      "showIds": {
+        "trakt": 204694,
+        "slug": "blue-eye-samurai",
+        "tvdb": 434151,
+        "imdb": "tt13309742",
+        "tmdb": 225180,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/blue-eye-samurai",
+      "title": "BLUE EYE SAMURAI",
+      "year": 2023,
+      "overview": "Driven by a dream of revenge against those who made her an outcast in Edo-period Japan, a young warrior cuts a bloody path toward her destiny.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "adventure",
+        "animation",
+        "drama"
+      ]
+    },
+    {
+      "id": 183346,
+      "dateAdded": "2024-01-27T23:51:34.000Z",
+      "showIds": {
+        "trakt": 183346,
+        "slug": "love-death",
+        "tvdb": 402181,
+        "imdb": "tt14586350",
+        "tmdb": 124800,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/love-death",
+      "title": "Love & Death",
+      "year": 2023,
+      "overview": "Candy and Pat Montgomery and Betty and Allan Gore — two churchgoing couples — enjoy their small town Texas life… until an extramarital affair leads somebody to pick up an axe.",
+      "status": "ended",
+      "genres": [
+        "crime",
+        "drama"
+      ]
+    },
+    {
+      "id": 158594,
+      "dateAdded": "2024-01-23T04:49:37.000Z",
+      "showIds": {
+        "trakt": 158594,
+        "slug": "jujutsu-kaisen",
+        "tvdb": 377543,
+        "imdb": "tt12343534",
+        "tmdb": 95479,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/jujutsu-kaisen",
+      "title": "Jujutsu Kaisen",
+      "year": 2020,
+      "overview": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "fantasy",
+        "action",
+        "drama"
+      ]
+    },
+    {
+      "id": 155536,
+      "dateAdded": "2024-01-23T04:47:46.000Z",
+      "showIds": {
+        "trakt": 155536,
+        "slug": "reacher",
+        "tvdb": 366924,
+        "imdb": "tt9288030",
+        "tmdb": 108978,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/reacher",
+      "title": "Reacher",
+      "year": 2022,
+      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "adventure",
+        "crime",
+        "drama"
+      ]
+    },
+    {
+      "id": 158032,
+      "dateAdded": "2024-01-23T04:47:06.000Z",
+      "showIds": {
+        "trakt": 158032,
+        "slug": "tower-of-god",
+        "tvdb": 376729,
+        "imdb": "tt12057106",
+        "tmdb": 97860,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/tower-of-god",
+      "title": "Tower of God",
+      "year": 2020,
+      "overview": "Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy",
+        "drama",
+        "mystery"
+      ]
+    },
+    {
+      "id": 104307,
+      "dateAdded": "2024-01-19T00:52:45.000Z",
+      "showIds": {
+        "trakt": 104307,
+        "slug": "bungo-stray-dogs",
+        "tvdb": 305075,
+        "imdb": "tt5679720",
+        "tmdb": 65931,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/bungo-stray-dogs",
+      "title": "Bungo Stray Dogs",
+      "year": 2016,
+      "overview": "Atsushi Nakajima was kicked out of his orphanage, and now he has no place to go and no food. While he is standing by a river, on the brink of starvation, he rescues a man whimsically attempting suicide. That man is Osamu Dazai, and he and his partner Kunikida are members of a very special detective agency. They have supernatural powers and deal with cases that are too dangerous for the police or the military. They're tracking down a tiger that has appeared in the area recently, around the time Atsushi came to the area. The tiger seems to have a connection to Atsushi, and by the time the case is solved, it is clear that Atsushi's future will involve much more of Dazai and the rest of the detectives!",
+      "status": "in production",
+      "genres": [
+        "anime",
+        "comedy",
+        "crime",
+        "mystery",
+        "action",
+        "fantasy",
+        "drama"
+      ]
+    },
+    {
+      "id": 195644,
+      "dateAdded": "2024-01-18T01:22:13.000Z",
+      "showIds": {
+        "trakt": 195644,
+        "slug": "monarch-legacy-of-monsters",
+        "tvdb": 422598,
+        "imdb": "tt17220216",
+        "tmdb": 202411,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/monarch-legacy-of-monsters",
+      "title": "Monarch: Legacy of Monsters",
+      "year": 2023,
+      "overview": "After surviving Godzilla's attack on San Francisco, Cate is shaken yet again by a shocking secret. Amid monstrous threats, she embarks on a globetrotting adventure to learn the truth about her family—and the mysterious organization known as Monarch.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "fantasy",
+        "science-fiction",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 140100,
+      "dateAdded": "2024-01-04T19:32:35.000Z",
+      "showIds": {
+        "trakt": 140100,
+        "slug": "the-wheel-of-time",
+        "tvdb": 355730,
+        "imdb": "tt7462410",
+        "tmdb": 71914,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-wheel-of-time",
+      "title": "The Wheel of Time",
+      "year": 2021,
+      "overview": "Follow Moiraine, a member of the shadowy and influential all-female organization called the “Aes Sedai” as she embarks on a dangerous, world-spanning journey with five young men and women. Moiraine believes one of them might be the reincarnation of an incredibly powerful individual, whom prophecies say will either save humanity or destroy it.",
+      "status": "returning series",
+      "genres": [
+        "fantasy",
+        "drama",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 176276,
+      "dateAdded": "2023-12-20T23:03:03.000Z",
+      "showIds": {
+        "trakt": 176276,
+        "slug": "yellowjackets",
+        "tvdb": 399731,
+        "imdb": "tt11041332",
+        "tmdb": 117488,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/yellowjackets",
+      "title": "Yellowjackets",
+      "year": 2021,
+      "overview": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "mystery",
+        "horror"
+      ]
+    },
+    {
+      "id": 37313,
+      "dateAdded": "2023-12-20T23:02:33.000Z",
+      "showIds": {
+        "trakt": 37313,
+        "slug": "nura-rise-of-the-yokai-clan",
+        "tvdb": 171731,
+        "imdb": "tt2716982",
+        "tmdb": 37471,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/nura-rise-of-the-yokai-clan",
+      "title": "Nura: Rise of the Yokai Clan",
+      "year": 2010,
+      "overview": "Rikuo Nura, is 3 parts human and a quarter Demon, lives in a house of spirits with his grandfather, The current clan head of the Nura youkai. Rikou is set to be the next clan head, despit the fact he dilikes his demon side. He soon come to terms with his demon blood and decides to take his position as young master of the Nura house. However there are those who will certainly not allow it to be easy.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 41522,
+      "dateAdded": "2023-12-20T23:02:01.000Z",
+      "showIds": {
+        "trakt": 41522,
+        "slug": "banshee",
+        "tvdb": 259765,
+        "imdb": "tt2017109",
+        "tmdb": 41727,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/banshee",
+      "title": "Banshee",
+      "year": 2013,
+      "overview": "Banshee is an American drama television series set in a small town in Pennsylvania Amish country and features an enigmatic ex-con posing as a murdered sheriff who imposes his own brand of justice while also cooking up plans that serve his own interests.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime"
+      ]
+    },
+    {
+      "id": 147842,
+      "dateAdded": "2023-12-20T23:01:19.000Z",
+      "showIds": {
+        "trakt": 147842,
+        "slug": "primal",
+        "tvdb": 364007,
+        "imdb": "tt10332508",
+        "tmdb": 89456,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/primal",
+      "title": "Primal",
+      "year": 2019,
+      "overview": "A caveman forms a bond with a dinosaur as they struggle to survive in a hostile world.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "adventure",
+        "animation",
+        "drama"
+      ]
+    },
+    {
+      "id": 181120,
+      "dateAdded": "2023-12-20T23:01:00.000Z",
+      "showIds": {
+        "trakt": 181120,
+        "slug": "hell-s-paradise",
+        "tvdb": 402474,
+        "imdb": "tt13911284",
+        "tmdb": 117465,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/hell-s-paradise",
+      "title": "Hell's Paradise",
+      "year": 2023,
+      "overview": "Gabimaru reigns as the strongest and most ruthless assassin in his village. But now finds himself on death row—with only one way out: retrieve the Elixir of Life from a sinister island. Longing for freedom, he accepts the challenge. But with fellow convicts vying for the same prize and demonic beasts lurking, how will Gabimaru survive this harrowing quest?",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy",
+        "history"
+      ]
+    },
+    {
+      "id": 137154,
+      "dateAdded": "2023-12-20T23:00:43.000Z",
+      "showIds": {
+        "trakt": 137154,
+        "slug": "the-rising-of-the-shield-hero",
+        "tvdb": 353712,
+        "imdb": "tt9529546",
+        "tmdb": 83095,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-rising-of-the-shield-hero",
+      "title": "The Rising of the Shield Hero",
+      "year": 2019,
+      "overview": "Iwatani Naofumi, a run-of-the-mill otaku, finds a book in the library that summons him to another world. He is tasked with joining the sword, spear, and bow as one of the Four Cardinal Heroes and fighting the Waves of Catastrophe as the Shield Hero. Excited by the prospect of a grand adventure, Naofumi sets off with his party. However, merely a few days later, he is betrayed and loses all his money, dignity, and respect. Unable to trust anyone anymore, he employs a slave named Raphtalia and takes on the Waves and the world. But will he really find a way to overturn this desperate situation?",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "drama",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 79279,
+      "dateAdded": "2023-12-20T23:00:23.000Z",
+      "showIds": {
+        "trakt": 79279,
+        "slug": "yona-of-the-dawn",
+        "tvdb": 283942,
+        "imdb": "tt3957196",
+        "tmdb": 61461,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/yona-of-the-dawn",
+      "title": "Yona of the Dawn",
+      "year": 2014,
+      "overview": "The legend of the Four Dragons and the origin of the land has been passed down for generations in the land of Kouka. Currently, Hiryuu Palace has no one else next in line for the throne other than the fifteen year old princess, Yona, who had been raised with care.\n\nFinally, the night of her sixteenth birthday arrives. She expects it to be a wonderful day spent with her peace-loving father, Il, her servant and friend Hak, and her cousin Soo-won, who she had feelings for... However... That night, Yona goes to visit her father to tell him how she really feels, because he opposes to her getting married to Soo-won. However, when she gets to her room, she encounters a shocking truth. The destinies of Yona and the Four Dragons entwine in this period drama fantasy romance!",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "adventure",
+        "fantasy",
+        "drama",
+        "anime",
+        "action",
+        "science-fiction",
+        "romance"
+      ]
+    },
+    {
+      "id": 183474,
+      "dateAdded": "2023-12-20T23:00:06.000Z",
+      "showIds": {
+        "trakt": 183474,
+        "slug": "baki-hanma",
+        "tvdb": 406152,
+        "imdb": "tt13357140",
+        "tmdb": 129600,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/baki-hanma",
+      "title": "Baki Hanma",
+      "year": 2021,
+      "overview": "To gain the skills he needs to surpass his powerful father, Baki enters Arizona State Prison to take on the notorious inmate known as Mr. Unchained.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 132339,
+      "dateAdded": "2023-12-20T23:00:02.000Z",
+      "showIds": {
+        "trakt": 132339,
+        "slug": "baki",
+        "tvdb": 348742,
+        "imdb": "tt6357658",
+        "tmdb": 80623,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/baki",
+      "title": "Baki",
+      "year": 2018,
+      "overview": "While martial arts champion Baki Hanma trains hard to surpass his legendary father, five violent death row inmates descend upon Tokyo to take him on.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "drama"
+      ]
+    },
+    {
+      "id": 138247,
+      "dateAdded": "2023-12-20T22:59:26.000Z",
+      "showIds": {
+        "trakt": 138247,
+        "slug": "kengan-ashura",
+        "tvdb": 354179,
+        "imdb": "tt9058134",
+        "tmdb": 90660,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/kengan-ashura",
+      "title": "Kengan Ashura",
+      "year": 2019,
+      "overview": "Since the Edo periods of Japan, gladiator arenas exist in certain areas. In these arenas, wealthy business owners and merchants hire gladiators to fight in unarmed combat where winner takes all. Toki Taouma, nicknamed \"Ashura,\" joins these arenas and devastates his opponents. His spectacular ability to crush his enemies catches the attention of the big business owners, including the Nogi Group chairman, Nogi Hideki.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "anime",
+        "adventure"
+      ]
+    },
+    {
+      "id": 181978,
+      "dateAdded": "2023-12-20T22:59:18.000Z",
+      "showIds": {
+        "trakt": 181978,
+        "slug": "castlevania-nocturne",
+        "tvdb": 421113,
+        "imdb": "tt14833612",
+        "tmdb": 123548,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/castlevania-nocturne",
+      "title": "Castlevania: Nocturne",
+      "year": 2023,
+      "overview": "In the thick of the French Revolution, members of the so-called lower classes are rising up to fight inequality. Meanwhile, Richter Belmont senses a far grimmer and greater danger. He's picked up his family's long-held tradition of vampire hunting, a vocation that goes back almost as long as a vampiric life span (in other words, forever) but he's never seen anything quite like what he's witnessing now.",
+      "status": "returning series",
+      "genres": [
+        "fantasy",
+        "science-fiction",
+        "animation",
+        "drama"
+      ]
+    },
+    {
+      "id": 207683,
+      "dateAdded": "2023-12-20T22:59:01.000Z",
+      "showIds": {
+        "trakt": 207683,
+        "slug": "good-night-world",
+        "tvdb": 437799,
+        "imdb": "tt28521881",
+        "tmdb": 231677,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/good-night-world",
+      "title": "GOOD NIGHT WORLD",
+      "year": 2023,
+      "overview": "Four miserable members of a dysfunctional household have no idea that they've formed a happy family unit in an immersive VR game — with each other.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "fantasy",
+        "science-fiction",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 189388,
+      "dateAdded": "2023-12-20T22:58:47.000Z",
+      "showIds": {
+        "trakt": 189388,
+        "slug": "the-fall-of-the-house-of-usher",
+        "tvdb": 411021,
+        "imdb": "tt15567174",
+        "tmdb": 157065,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-fall-of-the-house-of-usher",
+      "title": "The Fall of the House of Usher",
+      "year": 2023,
+      "overview": "Ruthless siblings Roderick and Madeline Usher have built Fortunato Pharmaceuticals into an empire of wealth, privilege and power. But past secrets come to light when the heirs to the Usher dynasty start dying at the hands of a mysterious woman from their youth.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "horror",
+        "crime",
+        "mystery"
+      ]
+    },
+    {
+      "id": 173886,
+      "dateAdded": "2023-12-20T22:58:31.000Z",
+      "showIds": {
+        "trakt": 173886,
+        "slug": "dota-dragon-s-blood",
+        "tvdb": 396983,
+        "imdb": "tt14069590",
+        "tmdb": 118956,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/dota-dragon-s-blood",
+      "title": "DOTA: Dragon's Blood",
+      "year": 2021,
+      "overview": "After encounters with a dragon and a princess on her own mission, a Dragon Knight becomes embroiled in events larger than he could have ever imagined.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "adventure",
+        "animation",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 198903,
+      "dateAdded": "2023-12-20T22:58:10.000Z",
+      "showIds": {
+        "trakt": 198903,
+        "slug": "onmyoji",
+        "tvdb": 425298,
+        "imdb": "tt22264252",
+        "tmdb": 210946,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/onmyoji",
+      "title": "Onmyoji",
+      "year": 2023,
+      "overview": "In the gilded enclave of the imperial court, Minamoto Hiromasa befriends the mystic Abe Seimei, solving tricky cases rising from the demonic realm.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "drama",
+        "fantasy",
+        "science-fiction",
+        "mystery"
+      ]
+    },
+    {
+      "id": 126125,
+      "dateAdded": "2023-12-20T22:56:42.000Z",
+      "showIds": {
+        "trakt": 126125,
+        "slug": "b-the-beginning",
+        "tvdb": 339353,
+        "imdb": "tt7944664",
+        "tmdb": 77529,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/b-the-beginning",
+      "title": "B: The Beginning",
+      "year": 2018,
+      "overview": "In a world powered by advanced technology, crime and action unfold in the archipelagic nation of Cremona. Genius investigator Keith Flick rejoins the royal police force just as serial killer “B” emerges. Mysterious youth Koku may be an ally, or a target.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "fantasy",
+        "science-fiction",
+        "action",
+        "adventure",
+        "drama",
+        "crime",
+        "mystery"
+      ]
+    },
+    {
+      "id": 124381,
+      "dateAdded": "2023-12-20T19:50:56.000Z",
+      "showIds": {
+        "trakt": 124381,
+        "slug": "tom-clancy-s-jack-ryan",
+        "tvdb": 336261,
+        "imdb": "tt5057054",
+        "tmdb": 73375,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/tom-clancy-s-jack-ryan",
+      "title": "Tom Clancy's Jack Ryan",
+      "year": 2018,
+      "overview": "When CIA analyst Jack Ryan stumbles upon a suspicious series of bank transfers his search for answers pulls him from the safety of his desk job and catapults him into a deadly game of cat and mouse throughout Europe and the Middle East, with a rising terrorist figurehead preparing for a massive attack against the US and her allies.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "drama",
+        "adventure",
+        "war"
+      ]
+    },
+    {
+      "id": 193213,
+      "dateAdded": "2023-12-20T19:50:46.000Z",
+      "showIds": {
+        "trakt": 193213,
+        "slug": "bastard-heavy-metal-dark-fantasy",
+        "tvdb": 415677,
+        "imdb": "tt17736234",
+        "tmdb": 156898,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/bastard-heavy-metal-dark-fantasy",
+      "title": "BASTARD‼ -Heavy Metal, Dark Fantasy-",
+      "year": 2022,
+      "overview": "When evil forces threaten to resurrect Anthrasax, the God of Destruction, the Kingdom of Meta-llicana calls on a volatile dark wizard for help.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "comedy",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 196336,
+      "dateAdded": "2023-06-05T02:51:11.000Z",
+      "showIds": {
+        "trakt": 196336,
+        "slug": "daisy-jones-the-six",
+        "tvdb": 416580,
+        "imdb": "tt8749198",
+        "tmdb": 95555,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/daisy-jones-the-six",
+      "title": "Daisy Jones & the Six",
+      "year": 2023,
+      "overview": "In 1977, Daisy Jones & The Six were on top of the world. Fronted by two charismatic lead singers — Daisy Jones and Billy Dunne — the band had risen from obscurity to fame. And then, after a sold-out show at Chicago's Soldier Field, they called it quits. Now, decades later, the band members finally agree to reveal the truth.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 35780,
+      "dateAdded": "2023-04-01T17:37:35.000Z",
+      "showIds": {
+        "trakt": 35780,
+        "slug": "berserk",
+        "tvdb": 73752,
+        "imdb": "tt0318871",
+        "tmdb": 35935,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/berserk",
+      "title": "Berserk",
+      "year": 1997,
+      "overview": "Guts, a man who calls himself \"The Black Swordsman\", looks back upon his days serving as a member of a group of mercenaries. Led by an ambitious, ruthless, and intelligent man named Griffith, together they battle their way into the royal court, and are forced into a fate that changes their lives.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "anime",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 124764,
+      "dateAdded": "2023-04-01T17:37:24.000Z",
+      "showIds": {
+        "trakt": 124764,
+        "slug": "you",
+        "tvdb": 336924,
+        "imdb": "tt7335184",
+        "tmdb": 78191,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/you",
+      "title": "You",
+      "year": 2018,
+      "overview": "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "thriller"
+      ]
+    },
+    {
+      "id": 158947,
+      "dateAdded": "2023-04-01T17:37:09.000Z",
+      "showIds": {
+        "trakt": 158947,
+        "slug": "the-last-of-us",
+        "tvdb": 392256,
+        "imdb": "tt3581920",
+        "tmdb": 100088,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-last-of-us",
+      "title": "The Last of Us",
+      "year": 2023,
+      "overview": "Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival.",
+      "status": "returning series",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 64409,
+      "dateAdded": "2023-04-01T17:37:00.000Z",
+      "showIds": {
+        "trakt": 64409,
+        "slug": "hunter-x-hunter-2011",
+        "tvdb": 252322,
+        "imdb": "tt2098220",
+        "tmdb": 46298,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/hunter-x-hunter-2011",
+      "title": "Hunter x Hunter",
+      "year": 2011,
+      "overview": "Twelve-year-old Gon Freecss one day discovers that the father he had always been told was dead was alive. His Father, Ging, is a Hunter — a member of society's elite with a license to go anywhere or do almost anything. Gon, determined to follow in his father's footsteps, decides to take the Hunter Examination and eventually find his father to prove himself as a Hunter in his own right. But on the way, he learns that there is more to becoming a Hunter than previously thought, and the challenges that he must face are considered the toughest in the world.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "anime",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 163643,
+      "dateAdded": "2023-02-14T22:03:19.000Z",
+      "showIds": {
+        "trakt": 163643,
+        "slug": "1899",
+        "tvdb": 384429,
+        "imdb": "tt9319668",
+        "tmdb": 90669,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/1899",
+      "title": "1899",
+      "year": 2022,
+      "overview": "Passengers on an immigrant ship traveling to the new continent get caught in a mysterious riddle when they find a second vessel adrift on the open sea.",
+      "status": "canceled",
+      "genres": [
+        "mystery",
+        "drama"
+      ]
+    },
+    {
+      "id": 189509,
+      "dateAdded": "2023-01-29T04:13:28.000Z",
+      "showIds": {
+        "trakt": 189509,
+        "slug": "that-90s-show",
+        "tvdb": 411173,
+        "imdb": "tt15591076",
+        "tmdb": 135959,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/that-90s-show",
+      "title": "That '90s Show",
+      "year": 2023,
+      "overview": "Hello, Wisconsin! It's 1995 and Leia Forman, daughter of Eric and Donna, is visiting her grandparents for the summer where she bonds with a new generation of Point Place kids under the watchful eye of Kitty and the stern glare of Red. Sex, drugs and rock 'n roll never dies, it just changes clothes.",
+      "status": "returning series",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 93786,
+      "dateAdded": "2023-01-20T00:58:58.000Z",
+      "showIds": {
+        "trakt": 93786,
+        "slug": "death-parade",
+        "tvdb": 289177,
+        "imdb": "tt4279012",
+        "tmdb": 61901,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/death-parade",
+      "title": "Death Parade",
+      "year": 2015,
+      "overview": "There is a place after death that’s neither heaven nor hell. A bar that serves you one chance to win. You cannot leave until the game is over, and when it is, your life may be too.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery",
+        "anime"
+      ]
+    },
+    {
+      "id": 120748,
+      "dateAdded": "2023-01-15T23:42:44.000Z",
+      "showIds": {
+        "trakt": 120748,
+        "slug": "classroom-of-the-elite",
+        "tvdb": 329822,
+        "imdb": "tt7263328",
+        "tmdb": 72517,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/classroom-of-the-elite",
+      "title": "Classroom of the Elite",
+      "year": 2017,
+      "overview": "Kiyotaka Ayanokoji has just enrolled at Tokyo Koudo Ikusei Senior High School, where it's said that 100% of students go on to college or find employment. But he ends up in Class 1-D, which is full of all the school's problem children.\n\nWhat's more, every month, the school awards students points with a cash value of 100,000 yen, and the classes employ a laissez-faire policy in which talking, sleeping, and even sabotage are permitted during class.\n\nOne month later, Ayanokoji, Horikita, and the students of Class D learn the truth of the system in place within their school...",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "anime"
+      ]
+    },
+    {
+      "id": 150900,
+      "dateAdded": "2023-01-05T23:12:55.000Z",
+      "showIds": {
+        "trakt": 150900,
+        "slug": "the-lord-of-the-rings-the-rings-of-power",
+        "tvdb": 367506,
+        "imdb": "tt7631058",
+        "tmdb": 84773,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-lord-of-the-rings-the-rings-of-power",
+      "title": "The Lord of the Rings: The Rings of Power",
+      "year": 2022,
+      "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
+      "status": "returning series",
+      "genres": [
+        "fantasy",
+        "action",
+        "adventure",
+        "drama"
+      ]
+    },
+    {
+      "id": 173241,
+      "dateAdded": "2023-01-05T23:11:48.000Z",
+      "showIds": {
+        "trakt": 173241,
+        "slug": "chainsaw-man",
+        "tvdb": 397934,
+        "imdb": "tt13616990",
+        "tmdb": 114410,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/chainsaw-man",
+      "title": "Chainsaw Man",
+      "year": 2022,
+      "overview": "Denji has a simple dream—to live a happy and peaceful life, spending time with a girl he likes. This is a far cry from reality, however, as Denji is forced by the yakuza into killing devils in order to pay off his crushing debts. Using his pet devil Pochita as a weapon, he is ready to do anything for a bit of cash.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 168471,
+      "dateAdded": "2023-01-05T23:10:53.000Z",
+      "showIds": {
+        "trakt": 168471,
+        "slug": "the-white-lotus",
+        "tvdb": 390430,
+        "imdb": "tt13406094",
+        "tmdb": 111803,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-white-lotus",
+      "title": "The White Lotus",
+      "year": 2021,
+      "overview": "Follow the exploits of various guests and employees at an exclusive tropical resort over the span of a week as with each passing day, a darker complexity emerges in these picture-perfect travelers, the hotel’s cheerful employees and the idyllic locale itself.",
+      "status": "returning series",
+      "genres": [
+        "comedy",
+        "drama",
+        "mystery"
+      ]
+    },
+    {
+      "id": 163668,
+      "dateAdded": "2023-01-05T23:10:25.000Z",
+      "showIds": {
+        "trakt": 163668,
+        "slug": "yashahime-princess-half-demon",
+        "tvdb": 384485,
+        "imdb": "tt12287748",
+        "tmdb": 103254,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/yashahime-princess-half-demon",
+      "title": "Yashahime: Princess Half-Demon",
+      "year": 2020,
+      "overview": "In feudal Japan, half-demon twins Towa and Setsuna are separated from each other during a forest fire. While desperately searching for her younger sister, Towa wanders into a mysterious tunnel that sends her into present-day Japan, where she is found and raised by Kagome Higurashi’s brother, Sota, and his family. Ten years later, the tunnel that connects the two eras has reopened, allowing Towa to be reunited with Setsuna, who is now a demon slayer working for Kohaku. But to Towa’s shock, Setsuna appears to have lost all memories of her older sister",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 164920,
+      "dateAdded": "2023-01-03T01:34:42.000Z",
+      "showIds": {
+        "trakt": 164920,
+        "slug": "the-witcher-blood-origin",
+        "tvdb": 399987,
+        "imdb": "tt12785720",
+        "tmdb": 106541,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-witcher-blood-origin",
+      "title": "The Witcher: Blood Origin",
+      "year": 2022,
+      "overview": "More than a thousand years before the world of The Witcher, seven outcasts in the elven world unite in a blood quest against an unstoppable power.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 173996,
+      "dateAdded": "2022-12-23T04:41:39.000Z",
+      "showIds": {
+        "trakt": 173996,
+        "slug": "wednesday",
+        "tvdb": 397060,
+        "imdb": "tt13443470",
+        "tmdb": 119051,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/wednesday",
+      "title": "Wednesday",
+      "year": 2022,
+      "overview": "Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her psychic powers, stop a monstrous killing spree of the town citizens, and solve the supernatural mystery that affected her family 25 years ago — all while navigating her new relationships.",
+      "status": "returning series",
+      "genres": [
+        "fantasy",
+        "mystery",
+        "comedy"
+      ]
+    },
+    {
+      "id": 182138,
+      "dateAdded": "2022-11-14T04:54:08.000Z",
+      "showIds": {
+        "trakt": 182138,
+        "slug": "the-watcher-2022",
+        "tvdb": 404833,
+        "imdb": "tt14852808",
+        "tmdb": 210232,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-watcher-2022",
+      "title": "The Watcher",
+      "year": 2022,
+      "overview": "A family moves into their suburban dream home, only to discover they've inherited a nightmare.",
+      "status": "returning series",
+      "genres": [
+        "mystery",
+        "drama"
+      ]
+    },
+    {
+      "id": 43623,
+      "dateAdded": "2022-11-10T01:41:52.000Z",
+      "showIds": {
+        "trakt": 43623,
+        "slug": "psycho-pass",
+        "tvdb": 262090,
+        "imdb": "tt2379308",
+        "tmdb": 43865,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/psycho-pass",
+      "title": "Psycho-Pass",
+      "year": 2012,
+      "overview": "Psycho-Pass is set in a futuristic era in Japan where the Sibyl System, a powerful network of psychometric scanners, actively measures the biometrics of its citizens' minds. The resulting assessment is called a Psycho-Pass. When the calculated likelihood of an individual committing a crime, measured by the Crime Coefficient index, exceeds an accepted threshold, he or she is pursued, apprehended, and either arrested or decomposed by the field officers of the Crime Investigation Department of the Public Safety Bureau.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "anime",
+        "crime"
+      ]
+    },
+    {
+      "id": 190673,
+      "dateAdded": "2022-10-31T22:18:10.000Z",
+      "showIds": {
+        "trakt": 190673,
+        "slug": "guillermo-del-toro-s-cabinet-of-curiosities",
+        "tvdb": 409559,
+        "imdb": "tt8415836",
+        "tmdb": 83659,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/guillermo-del-toro-s-cabinet-of-curiosities",
+      "title": "Guillermo del Toro's Cabinet of Curiosities",
+      "year": 2022,
+      "overview": "Bizarre nightmares unfold in eight tales of terror in this visually stunning, spine-tingling horror collection curated by Guillermo del Toro.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "mystery",
+        "horror"
+      ]
+    },
+    {
+      "id": 152639,
+      "dateAdded": "2022-10-26T22:13:06.000Z",
+      "showIds": {
+        "trakt": 152639,
+        "slug": "jupiters-legacy",
+        "tvdb": 368388,
+        "imdb": "tt5774002",
+        "tmdb": 93484,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/jupiters-legacy",
+      "title": "Jupiters Legacy",
+      "year": 2021,
+      "overview": "As the world's first generation of superheroes (who received their powers in the 1930s) become the revered elder guard in the present, their superpowered children struggle to live up to the legendary feats of their parents.",
+      "status": "canceled",
+      "genres": [
+        "action",
+        "fantasy",
+        "adventure",
+        "science-fiction",
+        "superhero",
+        "drama",
+        "mystery"
+      ]
+    },
+    {
+      "id": 154574,
+      "dateAdded": "2022-10-26T22:12:03.000Z",
+      "showIds": {
+        "trakt": 154574,
+        "slug": "house-of-the-dragon",
+        "tvdb": 371572,
+        "imdb": "tt11198330",
+        "tmdb": 94997,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/house-of-the-dragon",
+      "title": "House of the Dragon",
+      "year": 2022,
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 125963,
+      "dateAdded": "2022-10-25T03:08:25.000Z",
+      "showIds": {
+        "trakt": 125963,
+        "slug": "sword-gai-the-animation",
+        "tvdb": 339072,
+        "imdb": "tt7415066",
+        "tmdb": 78239,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/sword-gai-the-animation",
+      "title": "SWORD GAI: The Animation",
+      "year": 2018,
+      "overview": "The swordsmith Amon accidentally comes across an infant and its dead mother in the forest. Although he is initially overwhelmed by the situation, he finally decides to take the boy with him and thus save him from certain death. Ten years after this fateful encounter, the boy from that time, Gai, is apprenticed to Amon. While making a sword, however, there is a tragic accident in which Gai loses his right arm. Amon then decides to use a sword called Shiryuu to make an artificial arm for Gai. Thus, it begins…",
+      "status": "ended",
+      "genres": [
+        "action",
+        "anime",
+        "fantasy",
+        "science-fiction",
+        "adventure"
+      ]
+    },
+    {
+      "id": 161830,
+      "dateAdded": "2022-10-18T05:26:39.000Z",
+      "showIds": {
+        "trakt": 161830,
+        "slug": "the-midnight-club",
+        "tvdb": 381909,
+        "imdb": "tt13444912",
+        "tmdb": 126254,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-midnight-club",
+      "title": "The Midnight Club",
+      "year": 2022,
+      "overview": "At a manor with a mysterious history, the 8 members of the Midnight Club meet each night at midnight to tell sinister stories – and to look for signs of the supernatural from the beyond.",
+      "status": "canceled",
+      "genres": [
+        "mystery",
+        "drama"
+      ]
+    },
+    {
+      "id": 151854,
+      "dateAdded": "2022-10-13T17:50:39.000Z",
+      "showIds": {
+        "trakt": 151854,
+        "slug": "she-hulk-attorney-at-law",
+        "tvdb": 368613,
+        "imdb": "tt10857160",
+        "tmdb": 92783,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/she-hulk-attorney-at-law",
+      "title": "She-Hulk: Attorney at Law",
+      "year": 2022,
+      "overview": "Jennifer Walters navigates the complicated life of a single, 30-something attorney who also happens to be a green 6-foot-7-inch superpowered hulk.",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "superhero",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 12522,
+      "dateAdded": "2022-10-11T23:16:52.000Z",
+      "showIds": {
+        "trakt": 12522,
+        "slug": "devil-may-cry",
+        "tvdb": 80224,
+        "imdb": "tt1048049",
+        "tmdb": 12577,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/devil-may-cry",
+      "title": "Devil May Cry",
+      "year": 2007,
+      "overview": "The adventures of the demon hunter Dante who himself is half demon and half human.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "anime"
+      ]
+    },
+    {
+      "id": 16759,
+      "dateAdded": "2022-10-08T23:50:40.000Z",
+      "showIds": {
+        "trakt": 16759,
+        "slug": "hellsing",
+        "tvdb": 71278,
+        "imdb": "tt0325547",
+        "tmdb": 16830,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/hellsing",
+      "title": "Hellsing",
+      "year": 2001,
+      "overview": "Vampires exist. It is the duty of Hellsing, an organization sponsored by the British government, to hide that frightening fact and protect the blissfully unaware populace. Along with its own personal army, Hellsing also has a few secret weapons. Alucard, an incredibly powerful vampire, has been controlled by Hellsing for years. Although he dislikes being a servant to the Hellsing family, he certainly enjoys his job as Hellsing’s vampire exterminator. Seras is a fledgling vampire and a former police woman. Although reluctant to embrace her new self, she is still a valuable member of the organization. Integra Hellsing, the current leader, is usually fully capable of fulfilling her duty, but lately, vampire activity has been on the rise. Unfortunately, the cause is more alarming than anything she could have imagined...",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "horror",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 183616,
+      "dateAdded": "2022-10-08T00:48:06.000Z",
+      "showIds": {
+        "trakt": 183616,
+        "slug": "echoes",
+        "tvdb": 405793,
+        "imdb": "tt14954498",
+        "tmdb": 129612,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/echoes",
+      "title": "Echoes",
+      "year": 2022,
+      "overview": "Identical twins Leni and Gina have secretly switched places for years. But when one sister disappears, both of their lives start to fall apart.",
+      "status": "ended",
+      "genres": [
+        "mystery",
+        "drama"
+      ]
+    },
+    {
+      "id": 60731,
+      "dateAdded": "2022-10-02T06:12:48.000Z",
+      "showIds": {
+        "trakt": 60731,
+        "slug": "akame-ga-kill",
+        "tvdb": 280329,
+        "imdb": "tt3742982",
+        "tmdb": 61223,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/akame-ga-kill",
+      "title": "Akame ga Kill!",
+      "year": 2014,
+      "overview": "Young Tatsumi travels to the capital of the Empire in order to earn money for his starving people and encounters a world of unimaginable depravity, dominated by the ruthless Prime Minister who controls the child Emperor. Tatsumi is recruited by Night Raid, a group of assassins dedicated to eliminating corruption by mercilessly killing officials and privileged nobles.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "anime",
+        "drama",
+        "horror"
+      ]
+    },
+    {
+      "id": 125481,
+      "dateAdded": "2022-09-24T19:14:38.000Z",
+      "showIds": {
+        "trakt": 125481,
+        "slug": "devilman-crybaby",
+        "tvdb": 338192,
+        "imdb": "tt6660498",
+        "tmdb": 75208,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/devilman-crybaby",
+      "title": "Devilman Crybaby",
+      "year": 2018,
+      "overview": "Akira Fudo learns from his best friend Ryo Asuka that demons will revive and reclaim the world from humans. With humans hopeless against this threat, Ryo suggests combining with a demon. With this, Akira becomes Devilman, a being with the power of demon but with a human heart.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "fantasy",
+        "action",
+        "adventure",
+        "horror"
+      ]
+    },
+    {
+      "id": 145411,
+      "dateAdded": "2022-09-20T00:44:14.000Z",
+      "showIds": {
+        "trakt": 145411,
+        "slug": "blood-of-zeus",
+        "tvdb": 361140,
+        "imdb": "tt10009170",
+        "tmdb": 111111,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/blood-of-zeus",
+      "title": "Blood of Zeus",
+      "year": 2020,
+      "overview": "In a brewing war between the gods of Olympus and the titans, Heron, a commoner living on the outskirts of ancient Greece, becomes mankind's best hope of surviving an evil demon army, when he discovers the secrets of his past.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "animation",
+        "adventure",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 162712,
+      "dateAdded": "2022-09-11T16:46:13.000Z",
+      "showIds": {
+        "trakt": 162712,
+        "slug": "squid-game",
+        "tvdb": 383275,
+        "imdb": "tt10919420",
+        "tmdb": 93405,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/squid-game",
+      "title": "Squid Game",
+      "year": 2021,
+      "overview": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "mystery",
+        "suspense",
+        "thriller"
+      ]
+    },
+    {
+      "id": 188024,
+      "dateAdded": "2022-09-06T00:22:15.000Z",
+      "showIds": {
+        "trakt": 188024,
+        "slug": "devil-in-ohio",
+        "tvdb": 410037,
+        "imdb": "tt15432016",
+        "tmdb": 133700,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/devil-in-ohio",
+      "title": "Devil in Ohio",
+      "year": 2022,
+      "overview": "Determined to protect a young patient who escaped a mysterious cult, a psychiatrist takes the girl in, putting her own family — and life — in danger.",
+      "status": "ended",
+      "genres": [
+        "crime",
+        "drama",
+        "mystery"
+      ]
+    },
+    {
+      "id": 117930,
+      "dateAdded": "2022-08-29T23:48:41.000Z",
+      "showIds": {
+        "trakt": 117930,
+        "slug": "the-king-s-avatar",
+        "tvdb": 326270,
+        "imdb": "tt6859260",
+        "tmdb": 71194,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-king-s-avatar",
+      "title": "The King's Avatar",
+      "year": 2017,
+      "overview": "In the multiplayer online game Glory, Ye Xiu is regarded as a textbook and a top-tier pro-player. However, due to a myriad of reasons, he is kicked from the team. After leaving the pro scene, he finds work in an Internet Cafe as a manager. When Glory launches its tenth server, he throws himself in to the game once more. Possessing ten years of experience, the memories of his past, and an incomplete, self-made weapon, his return along the road to the summit begins!",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "adventure",
+        "donghua"
+      ]
+    },
+    {
+      "id": 116965,
+      "dateAdded": "2022-08-26T23:02:46.000Z",
+      "showIds": {
+        "trakt": 116965,
+        "slug": "mindhunter",
+        "tvdb": 328708,
+        "imdb": "tt5290382",
+        "tmdb": 67744,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/mindhunter",
+      "title": "Mindhunter",
+      "year": 2017,
+      "overview": "An agent in the FBI's Elite Serial Crime Unit develops profiling techniques as he pursues notorious serial killers and rapists.",
+      "status": "canceled",
+      "genres": [
+        "drama",
+        "crime"
+      ]
+    },
+    {
+      "id": 885,
+      "dateAdded": "2022-08-23T19:26:00.000Z",
+      "showIds": {
+        "trakt": 885,
+        "slug": "neon-genesis-evangelion",
+        "tvdb": 70350,
+        "imdb": "tt0112159",
+        "tmdb": 890,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/neon-genesis-evangelion",
+      "title": "Neon Genesis Evangelion",
+      "year": 1995,
+      "overview": "At the turn of the century, the Angels returned to Earth, seeking to wipe out humanity in an apocalyptic fury. Devastated, mankind's last remnants moved underground to wait for the day when the Angels would come back to finish the job. Fifteen years later, that day has come... but this time, humanity is ready to fight back with terrifying bio-mechanical weapons known as the Evangelions. Watch as Shinji, Rei, Asuka and the rest of the mysterious shadow agency Nerv battle to save earth from total annihilation.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "drama",
+        "science-fiction",
+        "suspense"
+      ]
+    },
+    {
+      "id": 19453,
+      "dateAdded": "2022-08-13T00:27:48.000Z",
+      "showIds": {
+        "trakt": 19453,
+        "slug": "afro-samurai",
+        "tvdb": 79755,
+        "imdb": "tt0465316",
+        "tmdb": 19544,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/afro-samurai",
+      "title": "Afro Samurai",
+      "year": 2007,
+      "overview": "In a futuristic Japan where conflicts are settled by the sword, Afro Samurai must avenge his father's murder by challenging a powerful warrior.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "animation",
+        "drama"
+      ]
+    },
+    {
+      "id": 149786,
+      "dateAdded": "2022-08-08T00:25:51.000Z",
+      "showIds": {
+        "trakt": 149786,
+        "slug": "the-sandman",
+        "tvdb": 366211,
+        "imdb": "tt1751634",
+        "tmdb": 90802,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-sandman",
+      "title": "The Sandman",
+      "year": 2022,
+      "overview": "After years of imprisonment, Morpheus — the King of Dreams — embarks on a journey across worlds to find what was stolen from him and restore his power.",
+      "status": "returning series",
+      "genres": [
+        "fantasy",
+        "drama"
+      ]
+    },
+    {
+      "id": 108124,
+      "dateAdded": "2022-07-31T22:01:43.000Z",
+      "showIds": {
+        "trakt": 108124,
+        "slug": "drifters-2016",
+        "tvdb": 312559,
+        "imdb": "tt5225764",
+        "tmdb": 68103,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/drifters-2016",
+      "title": "Drifters",
+      "year": 2016,
+      "overview": "Shimazu Toyohisa is a real-life samurai who fought in the pivotal Battle of Sekigahara. In his dying moments, Shimazu is transported to a world of magic with other famous warriors throughout history. These warriors are forced to fight each other in an endless battle.",
+      "status": "ended",
+      "genres": [
+        "fantasy",
+        "science-fiction",
+        "anime",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 142611,
+      "dateAdded": "2022-07-22T03:59:26.000Z",
+      "showIds": {
+        "trakt": 142611,
+        "slug": "love-death-robots",
+        "tvdb": 357888,
+        "imdb": "tt9561862",
+        "tmdb": 86831,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/love-death-robots",
+      "title": "Love, Death & Robots",
+      "year": 2019,
+      "overview": "Terrifying creatures, wicked surprises and dark comedy converge in this NSFW anthology of animated stories presented by Tim Miller and David Fincher.",
+      "status": "returning series",
+      "genres": [
+        "animation",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 145186,
+      "dateAdded": "2022-07-20T14:10:44.000Z",
+      "showIds": {
+        "trakt": 145186,
+        "slug": "chernobyl",
+        "tvdb": 360893,
+        "imdb": "tt7366338",
+        "tmdb": 87108,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/chernobyl",
+      "title": "Chernobyl",
+      "year": 2019,
+      "overview": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 104439,
+      "dateAdded": "2022-07-18T02:53:16.000Z",
+      "showIds": {
+        "trakt": 104439,
+        "slug": "stranger-things",
+        "tvdb": 305288,
+        "imdb": "tt4574334",
+        "tmdb": 66732,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/stranger-things",
+      "title": "Stranger Things",
+      "year": 2016,
+      "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "fantasy",
+        "science-fiction",
+        "mystery",
+        "horror"
+      ]
+    },
+    {
+      "id": 119887,
+      "dateAdded": "2022-07-12T02:20:14.000Z",
+      "showIds": {
+        "trakt": 119887,
+        "slug": "castlevania",
+        "tvdb": 329065,
+        "imdb": "tt6517102",
+        "tmdb": 71024,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/castlevania",
+      "title": "Castlevania",
+      "year": 2017,
+      "overview": "A dark medieval fantasy following the last surviving member of the disgraced Belmont clan, trying to save Eastern Europe from extinction at the hand of Vlad Dracula Tepe himself. Inspired by the classic video game series.",
+      "status": "ended",
+      "genres": [
+        "animation",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 38304,
+      "dateAdded": "2022-07-06T22:48:10.000Z",
+      "showIds": {
+        "trakt": 38304,
+        "slug": "blue-exorcist",
+        "tvdb": 248035,
+        "imdb": "tt1799631",
+        "tmdb": 38464,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/blue-exorcist",
+      "title": "Blue Exorcist",
+      "year": 2011,
+      "overview": "Humans live in the world of Assiah, demons in Gehenna. The two dimensions are not meant to interfere with each other, but demons still possess creatures in Assiah in spite of this. The humans who can fight these demons are known as exorcists. Rin Okumura is a boy who bears the curse of being Satan's illegitimate son. His foster father sacrificed himself to save him from demons. To avenge his foster father's death as well as to prove himself, Rin decides to follow the path of an exorcist and defeat his own father, Satan. To hone his raw skills, Rin enters True Cross Academy to train with other exorcist candidates.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 169967,
+      "dateAdded": "2022-07-06T00:34:50.000Z",
+      "showIds": {
+        "trakt": 169967,
+        "slug": "obi-wan-kenobi",
+        "tvdb": 393199,
+        "imdb": "tt8466564",
+        "tmdb": 92830,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/obi-wan-kenobi",
+      "title": "Obi-Wan Kenobi",
+      "year": 2022,
+      "overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
+      "status": "ended",
+      "genres": [
+        "fantasy",
+        "science-fiction",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 148714,
+      "dateAdded": "2022-07-05T22:21:16.000Z",
+      "showIds": {
+        "trakt": 148714,
+        "slug": "carnival-row",
+        "tvdb": 365026,
+        "imdb": "tt0489974",
+        "tmdb": 90027,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/carnival-row",
+      "title": "Carnival Row",
+      "year": 2019,
+      "overview": "In a mystical and dark city filled with humans, fairies and other creatures, a police detective investigates a series of gruesome murders leveled against the fairy population. During his investigation, the detective becomes the prime suspect and must find the real killer to clear his name.",
+      "status": "ended",
+      "genres": [
+        "fantasy",
+        "drama"
+      ]
+    },
+    {
+      "id": 138218,
+      "dateAdded": "2022-06-13T00:01:13.000Z",
+      "showIds": {
+        "trakt": 138218,
+        "slug": "dororo-2019",
+        "tvdb": 354167,
+        "imdb": "tt9458304",
+        "tmdb": 83100,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/dororo-2019",
+      "title": "Dororo",
+      "year": 2019,
+      "overview": "A samurai lord has bartered away his newborn son's organs to forty-eight demons in exchange for dominance on the battlefield. Yet, the abandoned infant survives thanks to a medicine man who equips him with primitive prosthetics—lethal ones with which the wronged son will use to hunt down the multitude of demons to reclaim his body one piece at a time, before confronting his father. On his journeys the young hero encounters an orphan who claims to be the greatest thief in Japan.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "anime"
+      ]
+    },
+    {
+      "id": 46397,
+      "dateAdded": "2022-06-08T03:57:10.000Z",
+      "showIds": {
+        "trakt": 46397,
+        "slug": "the-future-diary",
+        "tvdb": 249827,
+        "imdb": "tt2069441",
+        "tmdb": 46671,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-future-diary",
+      "title": "The Future Diary",
+      "year": 2011,
+      "overview": "Reality quickly unravels when antisocial Yukiteru is called into a death match against 11 other mentally scarred individuals. Each player has a prophetic device tuned to their personality, giving them control over their future—and the fate of their foes.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "anime",
+        "mystery"
+      ]
+    },
+    {
+      "id": 77558,
+      "dateAdded": "2022-05-20T23:13:48.000Z",
+      "showIds": {
+        "trakt": 77558,
+        "slug": "tokyo-ghoul",
+        "tvdb": 281249,
+        "imdb": "tt3741634",
+        "tmdb": 61374,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/tokyo-ghoul",
+      "title": "Tokyo Ghoul",
+      "year": 2014,
+      "overview": "Ken Kaneki is a bookworm college student who meets a girl names Rize at a cafe he frequents. They're the same age and have the same interests, so they quickly become close. Little does Kaneki know that Rize is a ghoul – a kind of monster that lives by hunting and devouring human flesh. When part of her special organ – \"the red child\" – is transplanted into Kaneki, he becomes a ghoul himself, trapped in a warped world where humans are not the top of the food chain.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "anime",
+        "horror"
+      ]
+    },
+    {
+      "id": 4564,
+      "dateAdded": "2022-05-18T15:54:25.000Z",
+      "showIds": {
+        "trakt": 4564,
+        "slug": "er",
+        "tvdb": 70761,
+        "imdb": "tt0108757",
+        "tmdb": 4588,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/er",
+      "title": "ER",
+      "year": 1994,
+      "overview": "ER explores the inner workings of an urban teaching hospital and the critical issues faced by the dedicated physicians and staff of its overburdened emergency room.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 511,
+      "dateAdded": "2022-05-12T01:56:39.000Z",
+      "showIds": {
+        "trakt": 511,
+        "slug": "third-watch",
+        "tvdb": 73107,
+        "imdb": "tt0197182",
+        "tmdb": 512,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/third-watch",
+      "title": "Third Watch",
+      "year": 1999,
+      "overview": "The exploits of a group of men and women who serve the City of New York as police officers, firemen, and paramedics, all working the same fictional 55th precinct during the 3pm to 11pm shift - the 'Third Watch'.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "documentary"
+      ]
+    },
+    {
+      "id": 139960,
+      "dateAdded": "2022-05-09T21:21:01.000Z",
+      "showIds": {
+        "trakt": 139960,
+        "slug": "the-boys-2019",
+        "tvdb": 355567,
+        "imdb": "tt1190634",
+        "tmdb": 76479,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-boys-2019",
+      "title": "The Boys",
+      "year": 2019,
+      "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "superhero",
+        "fantasy",
+        "science-fiction",
+        "adventure"
+      ]
+    },
+    {
+      "id": 2673,
+      "dateAdded": "2022-05-09T21:18:44.000Z",
+      "showIds": {
+        "trakt": 2673,
+        "slug": "two-and-a-half-men",
+        "tvdb": 72227,
+        "imdb": "tt0369179",
+        "tmdb": 2691,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/two-and-a-half-men",
+      "title": "Two and a Half Men",
+      "year": 2003,
+      "overview": "A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "drama",
+        "family"
+      ]
+    },
+    {
+      "id": 7313,
+      "dateAdded": "2022-05-09T21:17:06.000Z",
+      "showIds": {
+        "trakt": 7313,
+        "slug": "harper-s-island",
+        "tvdb": 84084,
+        "imdb": "tt1232320",
+        "tmdb": 7354,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/harper-s-island",
+      "title": "Harper's Island",
+      "year": 2009,
+      "overview": "A group of family and friends travels to a secluded island for a destination wedding. They've come to laugh... to love... and, though they don't know it... to die. As the wedding festivities begin, friendships are tested and secrets exposed as a murderer claims victims, one by one, transforming the wedding week of fun and celebration into a terrifying struggle for survival.",
+      "status": "ended",
+      "genres": [
+        "mystery",
+        "drama"
+      ]
+    },
+    {
+      "id": 7276,
+      "dateAdded": "2022-05-09T21:16:25.000Z",
+      "showIds": {
+        "trakt": 7276,
+        "slug": "the-inbetweeners",
+        "tvdb": 81950,
+        "imdb": "tt1220617",
+        "tmdb": 7317,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-inbetweeners",
+      "title": "The Inbetweeners",
+      "year": 2008,
+      "overview": "Welcome to a world of futile crushes, sibling brawls, getting drunk too quickly and casting constant aspersions about your friends' sexuality.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 8312,
+      "dateAdded": "2022-05-09T21:15:58.000Z",
+      "showIds": {
+        "trakt": 8312,
+        "slug": "lie-to-me",
+        "tvdb": 83602,
+        "imdb": "tt1235099",
+        "tmdb": 8358,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/lie-to-me",
+      "title": "Lie to Me",
+      "year": 2009,
+      "overview": "The world's leading deception researcher, Dr. Cal Lightman, studies facial expression, body language and tone of voice to determine when a person is lying and why, which helps law enforcement and government agencies uncover the truth. But his skills also make it easier for him to deceive others.",
+      "status": "canceled",
+      "genres": [
+        "crime",
+        "drama",
+        "mystery"
+      ]
+    },
+    {
+      "id": 1960,
+      "dateAdded": "2022-05-09T21:15:38.000Z",
+      "showIds": {
+        "trakt": 1960,
+        "slug": "24",
+        "tvdb": 76290,
+        "imdb": "tt0285331",
+        "tmdb": 1973,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/24",
+      "title": "24",
+      "year": 2001,
+      "overview": "Counterterrorism agent Jack Bauer fights the bad guys of the world, a day at a time. With each week's episode unfolding in real-time, \"24\" covers a single day in the life of Bauer each season.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "crime"
+      ]
+    },
+    {
+      "id": 1209,
+      "dateAdded": "2022-05-09T21:15:33.000Z",
+      "showIds": {
+        "trakt": 1209,
+        "slug": "californication",
+        "tvdb": 80349,
+        "imdb": "tt0904208",
+        "tmdb": 1215,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/californication",
+      "title": "Californication",
+      "year": 2007,
+      "overview": "A self-loathing, alcoholic writer attempts to repair his damaged relationships with his daughter and her mother while combating sex addiction, a budding drug problem, and the seeming inability to avoid making bad decisions.",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "drama"
+      ]
+    },
+    {
+      "id": 1396,
+      "dateAdded": "2022-05-09T21:15:16.000Z",
+      "showIds": {
+        "trakt": 1396,
+        "slug": "dexter",
+        "tvdb": 79349,
+        "imdb": "tt0773262",
+        "tmdb": 1405,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/dexter",
+      "title": "Dexter",
+      "year": 2006,
+      "overview": "Dexter Morgan, a blood spatter pattern analyst for the Miami Metro Police also leads a secret life as a serial killer, hunting down criminals who have slipped through the cracks of justice.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery",
+        "crime"
+      ]
+    },
+    {
+      "id": 58540,
+      "dateAdded": "2022-05-09T21:13:33.000Z",
+      "showIds": {
+        "trakt": 58540,
+        "slug": "dracula",
+        "tvdb": 263724,
+        "imdb": "tt2296682",
+        "tmdb": 58928,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/dracula",
+      "title": "Dracula",
+      "year": 2013,
+      "overview": "It's the late 19th century, and the mysterious Dracula has arrived in London, posing as an American entrepreneur who wants to bring modern science to Victorian society. He's especially interested in the new technology of electricity, which promises to brighten the night - useful for someone who avoids the sun. But he has another reason for his travels: he hopes to take revenge on those who cursed him with immortality centuries earlier. Everything seems to be going according to plan... until he becomes infatuated with a woman who appears to be a reincarnation of his dead wife.",
+      "status": "canceled",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 31801,
+      "dateAdded": "2022-05-09T21:12:19.000Z",
+      "showIds": {
+        "trakt": 31801,
+        "slug": "blue-mountain-state",
+        "tvdb": 134511,
+        "imdb": "tt1344204",
+        "tmdb": 31941,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/blue-mountain-state",
+      "title": "Blue Mountain State",
+      "year": 2010,
+      "overview": "Three incoming freshman in a big-time, Midwestern college football program have to juggle football, girls, class and nonstop hazing.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 60307,
+      "dateAdded": "2022-05-09T21:11:34.000Z",
+      "showIds": {
+        "trakt": 60307,
+        "slug": "constantine",
+        "tvdb": 273690,
+        "imdb": "tt3489184",
+        "tmdb": 60743,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/constantine",
+      "title": "Constantine",
+      "year": 2014,
+      "overview": "A man struggling with his faith is haunted by the sins of his past but is suddenly thrust into the role of defending humanity from the gathering forces of darkness.",
+      "status": "canceled",
+      "genres": [
+        "crime",
+        "drama",
+        "fantasy",
+        "horror",
+        "thriller"
+      ]
+    },
+    {
+      "id": 50503,
+      "dateAdded": "2022-05-09T21:11:08.000Z",
+      "showIds": {
+        "trakt": 50503,
+        "slug": "sleepy-hollow",
+        "tvdb": 269578,
+        "imdb": "tt2647544",
+        "tmdb": 50825,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/sleepy-hollow",
+      "title": "Sleepy Hollow",
+      "year": 2013,
+      "overview": "Ichabod Crane is resurrected and pulled two and a half centuries through time to unravel a mystery that dates all the way back to the founding fathers.",
+      "status": "canceled",
+      "genres": [
+        "fantasy",
+        "drama",
+        "mystery",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 1401,
+      "dateAdded": "2022-05-09T21:10:48.000Z",
+      "showIds": {
+        "trakt": 1401,
+        "slug": "revolution",
+        "tvdb": 258823,
+        "imdb": "tt2070791",
+        "tmdb": 1410,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/revolution",
+      "title": "Revolution",
+      "year": 2012,
+      "overview": "One day, electricity just stopped working and the world was suddenly thrust back into the dark ages. Now, 15 years later, a young woman's life is dramatically changed when a local militia arrives and kills her father, who mysteriously—and unbeknownst to her—had something to do with the blackout. An unlikely group sets out off on a daring journey to find answers about the past in the hopes of reclaiming the future.",
+      "status": "canceled",
+      "genres": [
+        "action",
+        "adventure",
+        "drama",
+        "science-fiction",
+        "thriller"
+      ]
+    },
+    {
+      "id": 1393,
+      "dateAdded": "2022-05-09T21:10:11.000Z",
+      "showIds": {
+        "trakt": 1393,
+        "slug": "the-walking-dead",
+        "tvdb": 153021,
+        "imdb": "tt1520211",
+        "tmdb": 1402,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-walking-dead",
+      "title": "The Walking Dead",
+      "year": 2010,
+      "overview": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "adventure",
+        "horror",
+        "thriller",
+        "action"
+      ]
+    },
+    {
+      "id": 123775,
+      "dateAdded": "2022-05-09T21:09:12.000Z",
+      "showIds": {
+        "trakt": 123775,
+        "slug": "dark",
+        "tvdb": 334824,
+        "imdb": "tt5753856",
+        "tmdb": 70523,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/dark",
+      "title": "Dark",
+      "year": 2017,
+      "overview": "A missing child causes four families to help each other for answers. What they could not imagine is that this mystery would be connected to innumerable other secrets of the small town.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 31882,
+      "dateAdded": "2022-05-09T21:06:26.000Z",
+      "showIds": {
+        "trakt": 31882,
+        "slug": "being-human-us",
+        "tvdb": 196921,
+        "imdb": "tt1595680",
+        "tmdb": 32022,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/being-human-us",
+      "title": "Being Human (US)",
+      "year": 2011,
+      "overview": "Three paranormal roommates, a ghost, a vampire, and a werewolf, struggle to keep their dark secrets from the world, while helping each other navigate the complexities of living double lives.",
+      "status": "canceled",
+      "genres": [
+        "drama",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 145026,
+      "dateAdded": "2022-05-09T21:05:39.000Z",
+      "showIds": {
+        "trakt": 145026,
+        "slug": "watchmen",
+        "tvdb": 360733,
+        "imdb": "tt7049682",
+        "tmdb": 79788,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/watchmen",
+      "title": "Watchmen",
+      "year": 2019,
+      "overview": "Set in an alternate history where “superheroes” are treated as outlaws, “Watchmen” embraces the nostalgia of the original groundbreaking graphic novel while attempting to break new ground of its own.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime",
+        "action",
+        "science-fiction",
+        "superhero",
+        "mystery"
+      ]
+    },
+    {
+      "id": 68319,
+      "dateAdded": "2022-05-09T21:04:42.000Z",
+      "showIds": {
+        "trakt": 68319,
+        "slug": "the-man-in-the-high-castle",
+        "tvdb": 295829,
+        "imdb": "tt1740299",
+        "tmdb": 62017,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-man-in-the-high-castle",
+      "title": "The Man in the High Castle",
+      "year": 2015,
+      "overview": "Explore what it would be like if the Allied Powers had lost WWII, and Japan and Germany ruled the United States. Based on Philip K. Dick's award-winning novel.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 15556,
+      "dateAdded": "2022-05-09T21:03:44.000Z",
+      "showIds": {
+        "trakt": 15556,
+        "slug": "the-newsroom",
+        "tvdb": 256227,
+        "imdb": "tt1870479",
+        "tmdb": 15621,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-newsroom",
+      "title": "The Newsroom",
+      "year": 2012,
+      "overview": "A behind-the-scenes look at the people who make a nightly cable-news program. Focusing on a network anchor, his new executive producer, the newsroom staff and their boss, the series tracks their quixotic mission to do the news well in the face of corporate and commercial obstacles-not to mention their own personal entanglements.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 46038,
+      "dateAdded": "2022-05-09T21:02:49.000Z",
+      "showIds": {
+        "trakt": 46038,
+        "slug": "spartacus",
+        "tvdb": 129261,
+        "imdb": "tt1442449",
+        "tmdb": 46296,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/spartacus",
+      "title": "Spartacus",
+      "year": 2010,
+      "overview": "Torn from his homeland and the woman he loves, Spartacus is condemned to the brutal world of the arena where blood and death are primetime entertainment.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 1416,
+      "dateAdded": "2022-05-09T21:01:53.000Z",
+      "showIds": {
+        "trakt": 1416,
+        "slug": "house-of-cards",
+        "tvdb": 262980,
+        "imdb": "tt1856010",
+        "tmdb": 1425,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/house-of-cards",
+      "title": "House of Cards",
+      "year": 2013,
+      "overview": "Set in present day Washington, D.C., House of Cards is the story of Frank Underwood, a ruthless and cunning politician, and his wife Claire who will stop at nothing to conquer everything. This wicked political drama penetrates the shadowy world of greed, sex and corruption in modern D.C.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 99046,
+      "dateAdded": "2022-05-09T21:00:29.000Z",
+      "showIds": {
+        "trakt": 99046,
+        "slug": "supergirl",
+        "tvdb": 295759,
+        "imdb": "tt4016454",
+        "tmdb": 62688,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/supergirl",
+      "title": "Supergirl",
+      "year": 2015,
+      "overview": "Twenty-four-year-old Kara Zor-El, who was taken in by the Danvers family when she was 13 after being sent away from Krypton, must learn to embrace her powers after previously hiding them. The Danvers teach her to be careful with her powers, until she has to reveal them during an unexpected disaster, setting her on her journey of heroism.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "science-fiction",
+        "drama",
+        "superhero",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 60278,
+      "dateAdded": "2022-05-09T20:58:13.000Z",
+      "showIds": {
+        "trakt": 60278,
+        "slug": "gotham",
+        "tvdb": 274431,
+        "imdb": "tt3749900",
+        "tmdb": 60708,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/gotham",
+      "title": "Gotham",
+      "year": 2014,
+      "overview": "Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world's most iconic villains? And what circumstances created them – the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?",
+      "status": "ended",
+      "genres": [
+        "action",
+        "crime",
+        "drama",
+        "mystery",
+        "science-fiction",
+        "suspense"
+      ]
+    },
+    {
+      "id": 60300,
+      "dateAdded": "2022-05-09T20:57:34.000Z",
+      "showIds": {
+        "trakt": 60300,
+        "slug": "the-flash-2014",
+        "tvdb": 279121,
+        "imdb": "tt3107288",
+        "tmdb": 60735,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-flash-2014",
+      "title": "The Flash",
+      "year": 2014,
+      "overview": "After being struck by lightning, CSI investigator Barry Allen awakens from a nine-month coma to discover he has been  granted the gift of super speed.  Teaming up with S.T.A.R. Labs, Barry takes on the persona of The Flash, the Fastest  Man Alive, to protect his city.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "drama",
+        "science-fiction",
+        "superhero"
+      ]
+    },
+    {
+      "id": 153534,
+      "dateAdded": "2022-05-09T20:51:09.000Z",
+      "showIds": {
+        "trakt": 153534,
+        "slug": "defending-jacob",
+        "tvdb": 368122,
+        "imdb": "tt2304589",
+        "tmdb": 87784,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/defending-jacob",
+      "title": "Defending Jacob",
+      "year": 2020,
+      "overview": "A family's lives are irreparably disrupted when the 14-year-old son is accused of murdering a fellow classmate.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery",
+        "crime"
+      ]
+    },
+    {
+      "id": 165792,
+      "dateAdded": "2022-05-09T20:51:03.000Z",
+      "showIds": {
+        "trakt": 165792,
+        "slug": "the-queen-s-gambit",
+        "tvdb": 387115,
+        "imdb": "tt10048342",
+        "tmdb": 87739,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-queen-s-gambit",
+      "title": "The Queen's Gambit",
+      "year": 2020,
+      "overview": "In a Kentucky orphanage in the 1950s, a young girl discovers an astonishing talent for chess while struggling with addiction.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 146535,
+      "dateAdded": "2022-05-09T20:50:57.000Z",
+      "showIds": {
+        "trakt": 146535,
+        "slug": "loki",
+        "tvdb": 362472,
+        "imdb": "tt9140554",
+        "tmdb": 84958,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/loki",
+      "title": "Loki",
+      "year": 2021,
+      "overview": "After stealing the Tesseract during the events of “Avengers: Endgame,” an alternate version of Loki is brought to the mysterious Time Variance Authority, a bureaucratic organization that exists outside of time and space and monitors the timeline. They give Loki a choice: face being erased from existence due to being a “time variant” or help fix the timeline and stop a greater threat.",
+      "status": "ended",
+      "genres": [
+        "fantasy",
+        "science-fiction",
+        "drama",
+        "superhero"
+      ]
+    },
+    {
+      "id": 897,
+      "dateAdded": "2022-05-09T20:47:39.000Z",
+      "showIds": {
+        "trakt": 897,
+        "slug": "yu-gi-oh-duel-monsters",
+        "tvdb": 76894,
+        "imdb": "tt0247902",
+        "tmdb": 902,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/yu-gi-oh-duel-monsters",
+      "title": "Yu-Gi-Oh! Duel Monsters",
+      "year": 2000,
+      "overview": "Bullies often target someone frail and weak—someone exactly like Yûgi Muto. He treasures his Millennium Puzzle, an ancient Egyptian artifact that was brought into his grandfather's game shop. Believing that solving the puzzle will grant him his wish, he completes the puzzle, unleashing a new personality within him, the soul of the \"King of Games.\" The new personality named Yami Yûgi is the exact opposite of Yûgi. Upon any injustice toward him, Yami Yûgi takes over Yûgi's body and forces the opponent into a \"Shadow Game\".",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "adventure",
+        "children"
+      ]
+    },
+    {
+      "id": 60156,
+      "dateAdded": "2022-05-09T20:46:12.000Z",
+      "showIds": {
+        "trakt": 60156,
+        "slug": "pokemon-1997",
+        "tvdb": 76703,
+        "imdb": "tt0168366",
+        "tmdb": 60572,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/pokemon-1997",
+      "title": "Pokémon",
+      "year": 1997,
+      "overview": "Join Ash accompanied by his partner Pikachu, as he travels through many regions, meets new friends and faces new challenges on his quest to become a Pokémon Master.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "comedy",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 31517,
+      "dateAdded": "2022-05-09T20:44:28.000Z",
+      "showIds": {
+        "trakt": 31517,
+        "slug": "digimon-digital-monsters",
+        "tvdb": 72241,
+        "imdb": "tt0210418",
+        "tmdb": 31654,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/digimon-digital-monsters",
+      "title": "Digimon: Digital Monsters",
+      "year": 1999,
+      "overview": "While at summer camp, seven kids are transported to a strange digital world. In this new world they make friends with creatures that call themselves Digimon who were born to defend their world from various evil forces.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "children"
+      ]
+    },
+    {
+      "id": 44751,
+      "dateAdded": "2022-05-09T20:43:08.000Z",
+      "showIds": {
+        "trakt": 44751,
+        "slug": "zoids-new-century",
+        "tvdb": 84040,
+        "imdb": "tt0214354",
+        "tmdb": 29540,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/zoids-new-century",
+      "title": "Zoids: New Century",
+      "year": 2001,
+      "overview": "New Century Zero takes place a long time after the events of Zoids: Chaotic Century. Zoids are no longer used for warfare; instead, the combative natures of both Zoids and humans are focused and contained by a series of battle-competitions and tournaments, run by the Zoid Battle Commission.\n\nThe series focuses on the Blitz Team, in particular the actions of the Liger Zero and Bit Cloud. The series charts the rise of the Blitz Team through various competitions of the Zoid Battle Commission, and the team's efforts to avoid conflict with the criminal organization known as the Backdraft Group.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "comedy",
+        "science-fiction",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 62163,
+      "dateAdded": "2022-05-09T20:42:01.000Z",
+      "showIds": {
+        "trakt": 62163,
+        "slug": "beyblade",
+        "tvdb": 70799,
+        "imdb": "tt0328733",
+        "tmdb": 54728,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/beyblade",
+      "title": "Beyblade",
+      "year": 2001,
+      "overview": "Thirteen-year-old Tyson Granger (Takao Kinomiya), along with his fellow teammates, Kai Hiwatari, Max Tate (Max Mizuhura), and Ray Kon (Rei Kon), strive to become the greatest Beybladers in the world. With the technical help of the team's resident genius, Kenny (Kyouju), and with the powerful strength of their BitBeasts, the Bladebreakers armed with their tops (AKA: Blades) attempt to reach their goal.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "comedy",
+        "science-fiction",
+        "children"
+      ]
+    },
+    {
+      "id": 1398,
+      "dateAdded": "2022-05-09T20:41:39.000Z",
+      "showIds": {
+        "trakt": 1398,
+        "slug": "homeland",
+        "tvdb": 247897,
+        "imdb": "tt1796960",
+        "tmdb": 1407,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/homeland",
+      "title": "Homeland",
+      "year": 2011,
+      "overview": "CIA officer Carrie Mathison is tops in her field despite being bipolar, which makes her volatile and unpredictable. With the help of her long-time mentor Saul Berenson, Carrie fearlessly risks everything, including her personal well-being and even sanity, at every turn.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "crime",
+        "drama",
+        "mystery",
+        "thriller"
+      ]
+    },
+    {
+      "id": 46676,
+      "dateAdded": "2022-05-09T20:41:24.000Z",
+      "showIds": {
+        "trakt": 46676,
+        "slug": "the-blacklist",
+        "tvdb": 266189,
+        "imdb": "tt2741602",
+        "tmdb": 46952,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-blacklist",
+      "title": "The Blacklist",
+      "year": 2013,
+      "overview": "Raymond \"Red\" Reddington, one of the FBI's most wanted fugitives, surrenders in person at FBI Headquarters in Washington, D.C. He claims that he and the FBI have the same interests: bringing down dangerous criminals and terrorists. In the last two decades, he's made a list of criminals and terrorists that matter the most but the FBI cannot find because it does not know they exist. Reddington calls this \"The Blacklist\". Reddington will co-operate, but insists that he will speak only to Elizabeth Keen, a rookie FBI profiler.",
+      "status": "ended",
+      "genres": [
+        "crime",
+        "drama",
+        "mystery"
+      ]
+    },
+    {
+      "id": 145783,
+      "dateAdded": "2022-05-09T20:38:30.000Z",
+      "showIds": {
+        "trakt": 145783,
+        "slug": "the-morning-show",
+        "tvdb": 361563,
+        "imdb": "tt7203552",
+        "tmdb": 90282,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-morning-show",
+      "title": "The Morning Show",
+      "year": 2019,
+      "overview": "A behind-the-scenes look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
+      "status": "returning series",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 162639,
+      "dateAdded": "2022-05-09T20:38:02.000Z",
+      "showIds": {
+        "trakt": 162639,
+        "slug": "ted-lasso",
+        "tvdb": 383203,
+        "imdb": "tt10986410",
+        "tmdb": 97546,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/ted-lasso",
+      "title": "Ted Lasso",
+      "year": 2020,
+      "overview": "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "status": "returning series",
+      "genres": [
+        "comedy",
+        "drama"
+      ]
+    },
+    {
+      "id": 44846,
+      "dateAdded": "2022-05-09T20:36:40.000Z",
+      "showIds": {
+        "trakt": 44846,
+        "slug": "the-following",
+        "tvdb": 258744,
+        "imdb": "tt2071645",
+        "tmdb": 45094,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-following",
+      "title": "The Following",
+      "year": 2013,
+      "overview": "Notorious serial killer Joe Carroll, after being found guilty of murdering 14 female students on the Virginia college campus where he taught literature, escapes from death row. The FBI calls former agent Ryan Hardy to consult on the case, as he was the one responsible for Carroll’s capture in 2003. Ryan, working closely with an FBI team, including Mike Weston and FBI Specialist Debra Parker, piece together the ever-growing web of murders orchestrated by the devious Carroll.",
+      "status": "canceled",
+      "genres": [
+        "drama",
+        "crime"
+      ]
+    },
+    {
+      "id": 39825,
+      "dateAdded": "2022-05-09T20:35:57.000Z",
+      "showIds": {
+        "trakt": 39825,
+        "slug": "hannibal",
+        "tvdb": 259063,
+        "imdb": "tt2243973",
+        "tmdb": 40008,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/hannibal",
+      "title": "Hannibal",
+      "year": 2013,
+      "overview": "Both a gift and a curse, Graham has the extraordinary ability to think like his prey—he sees what they see, feels what they feel. But while Graham is pursuing an especially troubling, cannibalistic murderer, Special Agent Jack Crawford teams him with a highly respected psychiatrist – a man with a taste for the criminal minded – Dr. Hannibal Lecter.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime",
+        "horror"
+      ]
+    },
+    {
+      "id": 60158,
+      "dateAdded": "2022-05-04T23:13:32.000Z",
+      "showIds": {
+        "trakt": 60158,
+        "slug": "peaky-blinders",
+        "tvdb": 270915,
+        "imdb": "tt2442560",
+        "tmdb": 60574,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/peaky-blinders",
+      "title": "Peaky Blinders",
+      "year": 2013,
+      "overview": "A gangster family epic set in 1919 Birmingham, England and centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby, who means to move up in the world.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime"
+      ]
+    },
+    {
+      "id": 1693,
+      "dateAdded": "2022-05-04T23:13:10.000Z",
+      "showIds": {
+        "trakt": 1693,
+        "slug": "fringe",
+        "tvdb": 82066,
+        "imdb": "tt1119644",
+        "tmdb": 1705,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/fringe",
+      "title": "Fringe",
+      "year": 2008,
+      "overview": "FBI Special Agent Olivia Dunham, brilliant but formerly institutionalized scientist Walter Bishop and his scheming, reluctant son Peter uncover a deadly mystery involving a series of unbelievable events and realize they may be a part of a larger, more disturbing pattern that blurs the line between science fiction and technology.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery",
+        "science-fiction",
+        "crime"
+      ]
+    },
+    {
+      "id": 30535,
+      "dateAdded": "2022-05-04T03:44:17.000Z",
+      "showIds": {
+        "trakt": 30535,
+        "slug": "yu-yu-hakusho",
+        "tvdb": 76665,
+        "imdb": "tt0185133",
+        "tmdb": 30669,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/yu-yu-hakusho",
+      "title": "Yu Yu Hakusho",
+      "year": 1992,
+      "overview": "One day, 14-year-old Yusuke Urameshi suddenly finds himself dead, having died pushing a child out of the way of oncoming traffic. Since he has such a bad personality, even the Spirit World was caught by surprise that he would sacrifice himself. Yusuke soon finds out he wasn't supposed to die and has a chance for resurrection and bringing his body back to life. After being resurrected, Yusuke becomes a Spirit Detective, along with his comrades, and one adventure after another happens, whether it be an investigation or a fighting tournament.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "comedy",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 60942,
+      "dateAdded": "2022-05-04T03:43:45.000Z",
+      "showIds": {
+        "trakt": 60942,
+        "slug": "inuyasha",
+        "tvdb": 71361,
+        "imdb": "tt0290223",
+        "tmdb": 35610,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/inuyasha",
+      "title": "InuYasha",
+      "year": 2000,
+      "overview": "Kagome Higurashi is a modern day young girl who lives with her family by the old Higure shrine. Unbeknownst to Kagome, she is the reincarnation of priestess Kikyo and posseses the \"Jewel of Four Souls\" (the Shikon jewel). One ill-fated day, Kagome locates an ancient well near her home and is abruptly transported through the well and into a feudal Japan, inhabited by demons. There, she encounters Inuyasha, son of a powerful demon father and a human mother, who is pinned to a tree by an enchanted arrow.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "comedy",
+        "fantasy",
+        "history",
+        "romance"
+      ]
+    },
+    {
+      "id": 60958,
+      "dateAdded": "2022-05-04T03:43:27.000Z",
+      "showIds": {
+        "trakt": 60958,
+        "slug": "rurouni-kenshin",
+        "tvdb": 70863,
+        "imdb": "tt0182629",
+        "tmdb": 28136,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/rurouni-kenshin",
+      "title": "Rurouni Kenshin",
+      "year": 1996,
+      "overview": "The Meiji Era was one of great renewal for Japan, where swords and killing were outlawed. However, many survivors from the time of Revolution still live, lurking in the shadows and waiting for a chance to use their killing blades again. Only Kenshin Himura, formerly one of the most brutal of killers, hopes to keep his swordsman's honor and still live in the new era.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "comedy",
+        "anime",
+        "romance"
+      ]
+    },
+    {
+      "id": 60936,
+      "dateAdded": "2022-05-04T03:43:15.000Z",
+      "showIds": {
+        "trakt": 60936,
+        "slug": "parasyte-the-maxim",
+        "tvdb": 279831,
+        "imdb": "tt3358020",
+        "tmdb": 61459,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/parasyte-the-maxim",
+      "title": "Parasyte -the maxim-",
+      "year": 2014,
+      "overview": "A species of parasitic aliens descends on Earth and quickly infiltrates humanity by entering the brains of vulnerable targets; insatiable beings that gain total control of their host and are capable of transforming themselves to feed on unsuspecting prey. High school student Shinichi Izumi falls victim to one of these parasites, but the creature fails to take over his brain and ends up in his right hand.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "fantasy",
+        "science-fiction",
+        "anime",
+        "action",
+        "adventure",
+        "romance"
+      ]
+    },
+    {
+      "id": 4591,
+      "dateAdded": "2022-05-04T03:28:06.000Z",
+      "showIds": {
+        "trakt": 4591,
+        "slug": "hercules-the-legendary-journeys",
+        "tvdb": 72497,
+        "imdb": "tt0111999",
+        "tmdb": 4615,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/hercules-the-legendary-journeys",
+      "title": "Hercules: The Legendary Journeys",
+      "year": 1995,
+      "overview": "The legendary son of Zeus journeys across the earth fighting monsters and helping people.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 32613,
+      "dateAdded": "2022-05-04T03:27:13.000Z",
+      "showIds": {
+        "trakt": 32613,
+        "slug": "terra-nova",
+        "tvdb": 164091,
+        "imdb": "tt1641349",
+        "tmdb": 32754,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/terra-nova",
+      "title": "Terra Nova",
+      "year": 2011,
+      "overview": "In the year 2149, the world is dying. The planet is overdeveloped and overcrowded, with the majority of plant and animal life extinct. The future of mankind is in jeopardy, and its only hope for survival is in the distant past. An ordinary family goes on an extraordinary journey back in time to prehistoric Earth as a part of a massive expedition to save the human race.",
+      "status": "canceled",
+      "genres": [
+        "mystery",
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 152990,
+      "dateAdded": "2022-05-04T03:24:31.000Z",
+      "showIds": {
+        "trakt": 152990,
+        "slug": "30-coins",
+        "tvdb": 369414,
+        "imdb": "tt9764386",
+        "tmdb": 89844,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/30-coins",
+      "title": "30 Coins",
+      "year": 2020,
+      "overview": "Father Vergara—an exorcist, boxer and ex-convict—lives in a remote village in Spain. Hoping to be lost and forgotten, Vergara’s demons catch up to him.",
+      "status": "returning series",
+      "genres": [
+        "crime",
+        "mystery",
+        "drama"
+      ]
+    },
+    {
+      "id": 10494,
+      "dateAdded": "2022-05-04T03:24:21.000Z",
+      "showIds": {
+        "trakt": 10494,
+        "slug": "true-blood",
+        "tvdb": 82283,
+        "imdb": "tt0844441",
+        "tmdb": 10545,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/true-blood",
+      "title": "True Blood",
+      "year": 2008,
+      "overview": "Thanks to a Japanese scientist's invention of synthetic, blood vampires have progressed from legendary monsters to fellow citizens overnight. And while humans have been safely removed from the menu, many remain apprehensive about these creatures \"coming out of the coffin.\" Religious leaders, government officials, and vampire fundamentalists around the world have chosen their sides, but in the small Louisiana town of Bon Temps, the jury is still out.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "fantasy",
+        "science-fiction",
+        "mystery"
+      ]
+    },
+    {
+      "id": 169891,
+      "dateAdded": "2022-05-04T01:41:02.000Z",
+      "showIds": {
+        "trakt": 169891,
+        "slug": "the-haunting-of-bly-manor",
+        "tvdb": null,
+        "imdb": "tt10970552",
+        "tmdb": 109958,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-haunting-of-bly-manor",
+      "title": "The Haunting of Bly Manor",
+      "year": 2020,
+      "overview": "After an au pair’s tragic death, Henry Wingrave hires a young American nanny to care for his orphaned niece and nephew who reside at Bly Manor with the estate’s chef Owen, groundskeeper Jamie and housekeeper, Mrs. Grose. But all is not as it seems at the manor, and centuries of dark secrets of love and loss are waiting to be unearthed in this chilling tale.",
+      "status": "ended",
+      "genres": [
+        "mystery",
+        "drama"
+      ]
+    },
+    {
+      "id": 134526,
+      "dateAdded": "2022-05-04T01:40:58.000Z",
+      "showIds": {
+        "trakt": 134526,
+        "slug": "the-haunting-of-hill-house",
+        "tvdb": 345246,
+        "imdb": "tt6763664",
+        "tmdb": 72844,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-haunting-of-hill-house",
+      "title": "The Haunting of Hill House",
+      "year": 2018,
+      "overview": "The Crains, a fractured family, confront haunting memories of their old home and the terrifying events that drove them from it.",
+      "status": "ended",
+      "genres": [
+        "mystery",
+        "drama",
+        "horror"
+      ]
+    },
+    {
+      "id": 1420,
+      "dateAdded": "2022-05-04T01:37:56.000Z",
+      "showIds": {
+        "trakt": 1420,
+        "slug": "attack-on-titan",
+        "tvdb": 267440,
+        "imdb": "tt2560140",
+        "tmdb": 1429,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/attack-on-titan",
+      "title": "Attack on Titan",
+      "year": 2013,
+      "overview": "Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest Titans. Flash forward to the present and the city has not seen a Titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a Colossal Titan that appears out of thin air. As the smaller Titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single Titan and take revenge for all of mankind.",
+      "status": "ended",
+      "genres": [
+        "fantasy",
+        "anime",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 60157,
+      "dateAdded": "2022-05-04T01:37:50.000Z",
+      "showIds": {
+        "trakt": 60157,
+        "slug": "silicon-valley",
+        "tvdb": 277165,
+        "imdb": "tt2575988",
+        "tmdb": 60573,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/silicon-valley",
+      "title": "Silicon Valley",
+      "year": 2014,
+      "overview": "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. Partially inspired by Mike Judge’s own experiences as a Silicon Valley engineer in the late ‘80s, Silicon Valley is an American sitcom that centers around six programmers who are living together and trying to make it big in the Silicon Valley.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 1403,
+      "dateAdded": "2022-05-04T01:37:45.000Z",
+      "showIds": {
+        "trakt": 1403,
+        "slug": "arrow",
+        "tvdb": 257655,
+        "imdb": "tt2193021",
+        "tmdb": 1412,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/arrow",
+      "title": "Arrow",
+      "year": 2012,
+      "overview": "Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with a bow.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "action",
+        "crime",
+        "superhero",
+        "adventure"
+      ]
+    },
+    {
+      "id": 18265,
+      "dateAdded": "2022-05-04T01:36:52.000Z",
+      "showIds": {
+        "trakt": 18265,
+        "slug": "community",
+        "tvdb": 94571,
+        "imdb": "tt1439629",
+        "tmdb": 18347,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/community",
+      "title": "Community",
+      "year": 2009,
+      "overview": "Follow the lives of a group of students at what is possibly the world’s worst community college in the fictional locale of Greendale, Colorado.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 112663,
+      "dateAdded": "2022-05-04T01:34:43.000Z",
+      "showIds": {
+        "trakt": 112663,
+        "slug": "marvel-s-the-punisher",
+        "tvdb": 331980,
+        "imdb": "tt5675620",
+        "tmdb": 67178,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/marvel-s-the-punisher",
+      "title": "Marvel's The Punisher",
+      "year": 2017,
+      "overview": "A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
+      "status": "canceled",
+      "genres": [
+        "crime",
+        "drama",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 77938,
+      "dateAdded": "2022-05-04T01:34:34.000Z",
+      "showIds": {
+        "trakt": 77938,
+        "slug": "marvel-s-daredevil",
+        "tvdb": 281662,
+        "imdb": "tt3322312",
+        "tmdb": 61889,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/marvel-s-daredevil",
+      "title": "Marvel's Daredevil",
+      "year": 2015,
+      "overview": "Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil.",
+      "status": "canceled",
+      "genres": [
+        "action",
+        "crime",
+        "superhero",
+        "drama",
+        "adventure"
+      ]
+    },
+    {
+      "id": 157085,
+      "dateAdded": "2022-05-04T01:21:28.000Z",
+      "showIds": {
+        "trakt": 157085,
+        "slug": "midnight-mass",
+        "tvdb": 367226,
+        "imdb": "tt10574558",
+        "tmdb": 97400,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/midnight-mass",
+      "title": "Midnight Mass",
+      "year": 2021,
+      "overview": "An unsettling omen washes ashore in the wake of the storm. Later, when the locals gather for a potluck, tragedy strikes – and a miracle occurs.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery",
+        "fantasy",
+        "horror"
+      ]
+    },
+    {
+      "id": 169009,
+      "dateAdded": "2022-05-04T01:21:24.000Z",
+      "showIds": {
+        "trakt": 169009,
+        "slug": "peacemaker-2022",
+        "tvdb": 391153,
+        "imdb": "tt13146488",
+        "tmdb": 110492,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/peacemaker-2022",
+      "title": "Peacemaker",
+      "year": 2022,
+      "overview": "The continuing story of Peacemaker – a compellingly vainglorious man who believes in peace at any cost, no matter how many people he has to kill to get it – in the aftermath of the events of “The Suicide Squad.”",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "adventure",
+        "superhero",
+        "fantasy",
+        "science-fiction",
+        "drama"
+      ]
+    },
+    {
+      "id": 95966,
+      "dateAdded": "2022-05-04T01:21:19.000Z",
+      "showIds": {
+        "trakt": 95966,
+        "slug": "colony",
+        "tvdb": 284210,
+        "imdb": "tt4209256",
+        "tmdb": 62858,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/colony",
+      "title": "Colony",
+      "year": 2016,
+      "overview": "In the near future a family must make difficult decisions as they balance staying together with trying to survive. They live in Los Angeles, which has been occupied by a force of outside intruders.  While some people have chosen to collaborate with the authorities and benefit from the new order, others have rebelled — and suffer the consequences.",
+      "status": "canceled",
+      "genres": [
+        "drama",
+        "science-fiction",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 31360,
+      "dateAdded": "2022-05-04T01:21:16.000Z",
+      "showIds": {
+        "trakt": 31360,
+        "slug": "the-league",
+        "tvdb": 114701,
+        "imdb": "tt1480684",
+        "tmdb": 31497,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-league",
+      "title": "The League",
+      "year": 2009,
+      "overview": "The League is an American sitcom and semi-improvised comedy about a about a fantasy football league and its members and their everyday lives.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 2900,
+      "dateAdded": "2022-05-04T01:21:03.000Z",
+      "showIds": {
+        "trakt": 2900,
+        "slug": "burn-notice",
+        "tvdb": 80270,
+        "imdb": "tt0810788",
+        "tmdb": 2919,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/burn-notice",
+      "title": "Burn Notice",
+      "year": 2007,
+      "overview": "A formerly blacklisted spy uses his unique skills and training to help people in desperate situations.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "crime"
+      ]
+    },
+    {
+      "id": 34818,
+      "dateAdded": "2022-05-04T01:20:53.000Z",
+      "showIds": {
+        "trakt": 34818,
+        "slug": "falling-skies",
+        "tvdb": 205281,
+        "imdb": "tt1462059",
+        "tmdb": 34967,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/falling-skies",
+      "title": "Falling Skies",
+      "year": 2011,
+      "overview": "Falling Skies opens in the chaotic aftermath of an alien attack that has left most of the world completely incapacitated. In the six months since the initial invasion, the few survivors have banded together outside major cities to begin the difficult task of fighting back. Each day is a test of survival as citizen soldiers work to protect the people in their care while also engaging in an insurgency campaign against the occupying alien force.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "science-fiction",
+        "drama"
+      ]
+    },
+    {
+      "id": 152779,
+      "dateAdded": "2022-05-04T01:20:28.000Z",
+      "showIds": {
+        "trakt": 152779,
+        "slug": "servant",
+        "tvdb": 368126,
+        "imdb": "tt8068860",
+        "tmdb": 88055,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/servant",
+      "title": "Servant",
+      "year": 2019,
+      "overview": "A Philadelphia couple are in mourning after an unspeakable tragedy creates a rift in their marriage and opens the door for a mysterious force to enter their home.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery",
+        "horror"
+      ]
+    },
+    {
+      "id": 4214,
+      "dateAdded": "2022-05-04T01:20:18.000Z",
+      "showIds": {
+        "trakt": 4214,
+        "slug": "the-king-of-queens",
+        "tvdb": 73641,
+        "imdb": "tt0165581",
+        "tmdb": 4238,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-king-of-queens",
+      "title": "The King of Queens",
+      "year": 1998,
+      "overview": "Life’s good for deliveryman Doug Heffernan, until his newly widowed father-in-law, Arthur, moves in with him and his wife Carrie. Doug is no longer the king of his domain, and instead of having a big screen television in his recently renovated basement, he now has a crazy old man.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 131598,
+      "dateAdded": "2022-05-04T01:20:02.000Z",
+      "showIds": {
+        "trakt": 131598,
+        "slug": "demon-slayer-kimetsu-no-yaiba",
+        "tvdb": 348545,
+        "imdb": "tt9335498",
+        "tmdb": 85937,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/demon-slayer-kimetsu-no-yaiba",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "year": 2019,
+      "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "fantasy",
+        "history"
+      ]
+    },
+    {
+      "id": 1927,
+      "dateAdded": "2022-05-04T01:19:50.000Z",
+      "showIds": {
+        "trakt": 1927,
+        "slug": "entourage",
+        "tvdb": 74543,
+        "imdb": "tt0387199",
+        "tmdb": 1940,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/entourage",
+      "title": "Entourage",
+      "year": 2004,
+      "overview": "Film star Vince Chase navigates the vapid terrain of Los Angeles with a close circle of friends and his trusty agent.",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "drama"
+      ]
+    },
+    {
+      "id": 1411,
+      "dateAdded": "2022-05-04T01:19:39.000Z",
+      "showIds": {
+        "trakt": 1411,
+        "slug": "new-girl",
+        "tvdb": 248682,
+        "imdb": "tt1826940",
+        "tmdb": 1420,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/new-girl",
+      "title": "New Girl",
+      "year": 2011,
+      "overview": "Jessica Day is an offbeat and adorable girl in her late 20s who, after a bad breakup, moves in with three single guys. Goofy, positive, vulnerable and honest to a fault, Jess has faith in people, even when she shouldn't. Although she's dorky and awkward, she's comfortable in her own skin. More prone to friendships with women, she's not used to hanging with the boys—especially at home.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 52,
+      "dateAdded": "2022-05-04T01:19:16.000Z",
+      "showIds": {
+        "trakt": 52,
+        "slug": "that-70s-show",
+        "tvdb": 73787,
+        "imdb": "tt0165598",
+        "tmdb": 52,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/that-70s-show",
+      "title": "That '70s Show",
+      "year": 1998,
+      "overview": "Crank up the 8-track and flash back to a time when platform shoes and puka shells were all the rage in this hilarious retro-sitcom. For Eric, Kelso, Jackie, Hyde, Donna and Fez, a group of high school teens who spend most of their time hanging out in Eric’s basement, life in the ‘70s isn’t always so groovy. But between trying to figure out the meaning of life, avoiding their parents, and dealing with out-of-control hormones, they’ve learned one thing for sure: they’ll always get by with a little help from their friends.",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "family",
+        "drama"
+      ]
+    },
+    {
+      "id": 21410,
+      "dateAdded": "2022-05-04T01:19:11.000Z",
+      "showIds": {
+        "trakt": 21410,
+        "slug": "white-collar",
+        "tvdb": 108611,
+        "imdb": "tt1358522",
+        "tmdb": 21510,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/white-collar",
+      "title": "White Collar",
+      "year": 2009,
+      "overview": "In exchange for his freedom, charming con artist Neal Caffrey provides his expertise to help straight-man FBI agent Peter Burke catch elusive white-collar criminals.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime",
+        "mystery"
+      ]
+    },
+    {
+      "id": 138163,
+      "dateAdded": "2022-05-04T01:19:09.000Z",
+      "showIds": {
+        "trakt": 138163,
+        "slug": "the-witcher-2019",
+        "tvdb": 362696,
+        "imdb": "tt5180504",
+        "tmdb": 71912,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-witcher-2019",
+      "title": "The Witcher",
+      "year": 2019,
+      "overview": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 98990,
+      "dateAdded": "2022-05-04T01:19:08.000Z",
+      "showIds": {
+        "trakt": 98990,
+        "slug": "lucifer",
+        "tvdb": 295685,
+        "imdb": "tt4052886",
+        "tmdb": 63174,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/lucifer",
+      "title": "Lucifer",
+      "year": 2016,
+      "overview": "Bored and unhappy as the Lord of Hell, Lucifer Morningstar abandoned his throne and retired to Los Angeles, where he has teamed up with LAPD detective Chloe Decker to take down criminals. But the longer he's away from the underworld, the greater the threat that the worst of humanity could escape.",
+      "status": "ended",
+      "genres": [
+        "crime",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 1438,
+      "dateAdded": "2022-05-04T01:18:47.000Z",
+      "showIds": {
+        "trakt": 1438,
+        "slug": "psych",
+        "tvdb": 79335,
+        "imdb": "tt0491738",
+        "tmdb": 1447,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/psych",
+      "title": "Psych",
+      "year": 2006,
+      "overview": "Thanks to his police officer father's efforts, Shawn Spencer spent his childhood developing a keen eye for detail (and a lasting dislike of his dad). Years later, Shawn's frequent tips to the police lead to him being falsely accused of a crime he solved.\n\nNow, Shawn has no choice but to use his abilities to perpetuate his cover story: psychic crime-solving powers, all the while dragging his best friend, his dad, and the police along for the ride.",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "drama",
+        "mystery",
+        "crime"
+      ]
+    },
+    {
+      "id": 1395,
+      "dateAdded": "2022-05-04T01:18:45.000Z",
+      "showIds": {
+        "trakt": 1395,
+        "slug": "chuck",
+        "tvdb": 80348,
+        "imdb": "tt0934814",
+        "tmdb": 1404,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/chuck",
+      "title": "Chuck",
+      "year": 2007,
+      "overview": "When Buy More computer geek Chuck Bartowski unwittingly downloads a database of government information and deadly fighting skills into his head, he becomes the CIA's most vital secret. This sets Chuck on a path to become a full-fledged spy.",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "drama",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 99718,
+      "dateAdded": "2022-05-04T01:18:40.000Z",
+      "showIds": {
+        "trakt": 99718,
+        "slug": "westworld",
+        "tvdb": 296762,
+        "imdb": "tt0475784",
+        "tmdb": 63247,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/westworld",
+      "title": "Westworld",
+      "year": 2016,
+      "overview": "A dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite, no matter how noble or depraved, can be indulged.",
+      "status": "canceled",
+      "genres": [
+        "western",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 137178,
+      "dateAdded": "2022-05-04T01:18:09.000Z",
+      "showIds": {
+        "trakt": 137178,
+        "slug": "the-mandalorian",
+        "tvdb": 361753,
+        "imdb": "tt8111088",
+        "tmdb": 82856,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-mandalorian",
+      "title": "The Mandalorian",
+      "year": 2019,
+      "overview": "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+      "status": "returning series",
+      "genres": [
+        "fantasy",
+        "science-fiction",
+        "action",
+        "adventure",
+        "drama"
+      ]
+    },
+    {
+      "id": 1391,
+      "dateAdded": "2022-05-04T01:17:49.000Z",
+      "showIds": {
+        "trakt": 1391,
+        "slug": "seinfeld",
+        "tvdb": 79169,
+        "imdb": "tt0098904",
+        "tmdb": 1400,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/seinfeld",
+      "title": "Seinfeld",
+      "year": 1989,
+      "overview": "A stand-up comedian and his three offbeat friends weather the pitfalls and payoffs of life in New York City in the '90s. It's a show about nothing.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 37522,
+      "dateAdded": "2022-05-04T01:17:34.000Z",
+      "showIds": {
+        "trakt": 37522,
+        "slug": "suits",
+        "tvdb": 247808,
+        "imdb": "tt1632701",
+        "tmdb": 37680,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/suits",
+      "title": "Suits",
+      "year": 2011,
+      "overview": "While running from a drug deal gone bad, Mike Ross, a brilliant young college-dropout, slips into a job interview with one of New York City's best legal closers, Harvey Specter. Tired of cookie-cutter law school grads, Harvey takes a gamble by hiring Mike on the spot after he recognizes his raw talent and photographic memory.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 150109,
+      "dateAdded": "2022-05-04T01:17:01.000Z",
+      "showIds": {
+        "trakt": 150109,
+        "slug": "halo",
+        "tvdb": 366524,
+        "imdb": "tt2934286",
+        "tmdb": 52814,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/halo",
+      "title": "Halo",
+      "year": 2022,
+      "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "science-fiction",
+        "adventure",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 77692,
+      "dateAdded": "2022-05-04T01:07:41.000Z",
+      "showIds": {
+        "trakt": 77692,
+        "slug": "billions",
+        "tvdb": 279536,
+        "imdb": "tt4270492",
+        "tmdb": 62852,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/billions",
+      "title": "Billions",
+      "year": 2016,
+      "overview": "A complex drama about power politics in the world of New York high finance. \n\nShrewd, savvy U.S. Attorney Chuck Rhoades and the brilliant, ambitious hedge fund king Bobby \"Axe\" Axelrod are on an explosive collision course, with each using all of his considerable smarts, power and influence to outmaneuver the other. The stakes are in the billions in this timely, provocative series.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 46375,
+      "dateAdded": "2022-05-04T01:04:41.000Z",
+      "showIds": {
+        "trakt": 46375,
+        "slug": "true-detective",
+        "tvdb": 270633,
+        "imdb": "tt2356777",
+        "tmdb": 46648,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/true-detective",
+      "title": "True Detective",
+      "year": 2014,
+      "overview": "An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
+      "status": "returning series",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 154221,
+      "dateAdded": "2022-05-04T01:04:33.000Z",
+      "showIds": {
+        "trakt": 154221,
+        "slug": "the-outsider-2020",
+        "tvdb": 365480,
+        "imdb": "tt8550800",
+        "tmdb": 84661,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-outsider-2020",
+      "title": "The Outsider",
+      "year": 2020,
+      "overview": "When an insidious supernatural force edges its way into a seemingly straightforward investigation into the gruesome murder of a young boy, it leads a seasoned cop and an unorthodox investigator to question everything they believe in.",
+      "status": "ended",
+      "genres": [
+        "crime",
+        "mystery",
+        "drama"
+      ]
+    },
+    {
+      "id": 1628,
+      "dateAdded": "2022-05-04T01:04:21.000Z",
+      "showIds": {
+        "trakt": 1628,
+        "slug": "heroes",
+        "tvdb": 79501,
+        "imdb": "tt0813715",
+        "tmdb": 1639,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/heroes",
+      "title": "Heroes",
+      "year": 2006,
+      "overview": "Common people discover that they have super powers. Their lives intertwine as a devastating event must be prevented.",
+      "status": "canceled",
+      "genres": [
+        "drama",
+        "fantasy",
+        "science-fiction",
+        "superhero"
+      ]
+    },
+    {
+      "id": 1095,
+      "dateAdded": "2022-05-04T01:04:15.000Z",
+      "showIds": {
+        "trakt": 1095,
+        "slug": "how-i-met-your-mother",
+        "tvdb": 75760,
+        "imdb": "tt0460649",
+        "tmdb": 1100,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/how-i-met-your-mother",
+      "title": "How I Met Your Mother",
+      "year": 2005,
+      "overview": "A father recounts to his children - through a series of flashbacks - the journey he and his four best friends took leading up to him meeting their mother.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 4583,
+      "dateAdded": "2022-05-04T01:03:09.000Z",
+      "showIds": {
+        "trakt": 4583,
+        "slug": "lost-2004",
+        "tvdb": 73739,
+        "imdb": "tt0411008",
+        "tmdb": 4607,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/lost-2004",
+      "title": "Lost",
+      "year": 2004,
+      "overview": "Stripped of everything, the survivors of a horrific plane crash  must work together to stay alive. But the island holds many secrets.",
+      "status": "ended",
+      "genres": [
+        "mystery",
+        "adventure",
+        "action",
+        "drama"
+      ]
+    },
+    {
+      "id": 4532,
+      "dateAdded": "2022-05-04T01:03:01.000Z",
+      "showIds": {
+        "trakt": 4532,
+        "slug": "scrubs",
+        "tvdb": 76156,
+        "imdb": "tt0285403",
+        "tmdb": 4556,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/scrubs",
+      "title": "Scrubs",
+      "year": 2001,
+      "overview": "In the unreal world of Sacred Heart Hospital, John \"J.D.\" Dorian learns the ways of medicine, friendship and life.",
+      "status": "canceled",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 4580,
+      "dateAdded": "2022-05-04T01:02:48.000Z",
+      "showIds": {
+        "trakt": 4580,
+        "slug": "smallville",
+        "tvdb": 72218,
+        "imdb": "tt0279600",
+        "tmdb": 4604,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/smallville",
+      "title": "Smallville",
+      "year": 2001,
+      "overview": "The origins of the world’s greatest hero–from Krypton refugee Kal-el’s arrival on Earth through his tumultuous teen years to Clark Kent’s final steps toward embracing his destiny as the Man of Steel.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "superhero"
+      ]
+    },
+    {
+      "id": 4254,
+      "dateAdded": "2022-05-04T01:02:38.000Z",
+      "showIds": {
+        "trakt": 4254,
+        "slug": "friday-night-lights",
+        "tvdb": 79337,
+        "imdb": "tt0758745",
+        "tmdb": 4278,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/friday-night-lights",
+      "title": "Friday Night Lights",
+      "year": 2006,
+      "overview": "The trials and triumphs of life in the small town of Dillon, Texas, where high school football is everything.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
+    },
+    {
+      "id": 1399,
+      "dateAdded": "2022-05-04T00:36:19.000Z",
+      "showIds": {
+        "trakt": 1399,
+        "slug": "house",
+        "tvdb": 73255,
+        "imdb": "tt0412142",
+        "tmdb": 1408,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/house",
+      "title": "House",
+      "year": 2004,
+      "overview": "Dr. Gregory House, a drug-addicted, unconventional, misanthropic medical genius, leads a team of diagnosticians at the fictional Princeton–Plainsboro Teaching Hospital in New Jersey.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery"
+      ]
+    },
+    {
+      "id": 2177,
+      "dateAdded": "2022-05-04T00:36:03.000Z",
+      "showIds": {
+        "trakt": 2177,
+        "slug": "south-park",
+        "tvdb": 75897,
+        "imdb": "tt0121955",
+        "tmdb": 2190,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/south-park",
+      "title": "South Park",
+      "year": 1997,
+      "overview": "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+      "status": "returning series",
+      "genres": [
+        "animation",
+        "comedy"
+      ]
+    },
+    {
+      "id": 1611,
+      "dateAdded": "2022-05-04T00:35:52.000Z",
+      "showIds": {
+        "trakt": 1611,
+        "slug": "supernatural",
+        "tvdb": 78901,
+        "imdb": "tt0460681",
+        "tmdb": 1622,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/supernatural",
+      "title": "Supernatural",
+      "year": 2005,
+      "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "mystery",
+        "fantasy",
+        "horror"
+      ]
+    },
+    {
+      "id": 1657,
+      "dateAdded": "2022-05-04T00:34:39.000Z",
+      "showIds": {
+        "trakt": 1657,
+        "slug": "friends",
+        "tvdb": 79168,
+        "imdb": "tt0108778",
+        "tmdb": 1668,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/friends",
+      "title": "Friends",
+      "year": 1994,
+      "overview": "Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 2302,
+      "dateAdded": "2022-05-04T00:34:30.000Z",
+      "showIds": {
+        "trakt": 2302,
+        "slug": "the-office",
+        "tvdb": 73244,
+        "imdb": "tt0386676",
+        "tmdb": 2316,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-office",
+      "title": "The Office",
+      "year": 2005,
+      "overview": "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
+      "status": "ended",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 1388,
+      "dateAdded": "2022-05-04T00:33:15.000Z",
+      "showIds": {
+        "trakt": 1388,
+        "slug": "breaking-bad",
+        "tvdb": 81189,
+        "imdb": "tt0903747",
+        "tmdb": 1396,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/breaking-bad",
+      "title": "Breaking Bad",
+      "year": 2008,
+      "overview": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime",
+        "thriller"
+      ]
+    },
+    {
+      "id": 1390,
+      "dateAdded": "2022-05-04T00:33:11.000Z",
+      "showIds": {
+        "trakt": 1390,
+        "slug": "game-of-thrones",
+        "tvdb": 121361,
+        "imdb": "tt0944947",
+        "tmdb": 1399,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/game-of-thrones",
+      "title": "Game of Thrones",
+      "year": 2011,
+      "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+      "status": "ended",
+      "genres": [
+        "fantasy",
+        "drama",
+        "action",
+        "adventure"
+      ]
+    },
+    {
+      "id": 152473,
+      "dateAdded": "2020-11-30T04:07:00.000Z",
+      "showIds": {
+        "trakt": 152473,
+        "slug": "the-undoing",
+        "tvdb": 369307,
+        "imdb": "tt8134470",
+        "tmdb": 83851,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-undoing",
+      "title": "The Undoing",
+      "year": 2020,
+      "overview": "Grace and Jonathan Fraser are living the only lives they ever wanted. Overnight a chasm opens in their lives: a violent death and a chain of terrible revelations. Left behind in the wake of a spreading and very public disaster, Grace must dismantle one life and create another for her child and her family.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "crime",
+        "mystery"
+      ]
+    }
+  ],
+  "genres": [
+    {
+      "genre": "drama",
+      "total": 114
+    },
+    {
+      "genre": "action",
+      "total": 80
+    },
+    {
+      "genre": "adventure",
+      "total": 68
+    },
+    {
+      "genre": "fantasy",
+      "total": 66
+    },
+    {
+      "genre": "science fiction",
+      "total": 49
+    },
+    {
+      "genre": "mystery",
+      "total": 45
+    },
+    {
+      "genre": "anime",
+      "total": 44
+    },
+    {
+      "genre": "comedy",
+      "total": 34
+    },
+    {
+      "genre": "crime",
+      "total": 33
+    },
+    {
+      "genre": "horror",
+      "total": 15
+    },
+    {
+      "genre": "superhero",
+      "total": 12
+    },
+    {
+      "genre": "animation",
+      "total": 9
+    },
+    {
+      "genre": "thriller",
+      "total": 7
+    },
+    {
+      "genre": "romance",
+      "total": 5
+    },
+    {
+      "genre": "history",
+      "total": 3
+    },
+    {
+      "genre": "suspense",
+      "total": 3
+    },
+    {
+      "genre": "children",
+      "total": 3
+    },
+    {
+      "genre": "family",
+      "total": 2
+    },
+    {
+      "genre": "war",
+      "total": 1
+    },
+    {
+      "genre": "donghua",
+      "total": 1
+    },
+    {
+      "genre": "documentary",
+      "total": 1
+    },
+    {
+      "genre": "western",
+      "total": 1
+    }
+  ],
+  "updatedAt": "2024-02-18T01:06:39.643Z"
+}

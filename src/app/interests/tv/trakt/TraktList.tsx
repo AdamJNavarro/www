@@ -1,21 +1,32 @@
-import TraktItem from './TraktItem';
-import { DataGrid } from '~/components/common/Grid';
+import { Text, SimpleGrid } from '@mantine/core';
+import ProductItem from '~/components/Products/ProductItem';
+import TraktPoster from './TraktPoster';
 
 export default function TraktList({ data }) {
   return (
-    <DataGrid
-      config={{
-        cols: { base: 1, md: 2 },
-        spacing: { base: 'md', sm: 'lg', lg: 'xl' },
-      }}
-      error={undefined}
-      loading={!data}
-      placeholder={<div />}
-      placeholderCount={4}
+    <SimpleGrid
+      cols={{ base: 1, md: 2 }}
+      spacing={{ base: 'md', sm: 'lg', lg: 'xl' }}
     >
       {data.map((show, index) => (
-        <TraktItem key={`${show.title}-${index}`} {...show} />
+        <ProductItem
+          key={`${show}-${index}`}
+          label={
+            <Text lineClamp={2} fw={500} size="lg">
+              {show.title}
+            </Text>
+          }
+          subLabel={
+            <Text c="dimmed" lineClamp={2} fw={300} size="md">
+              {show.year}
+            </Text>
+          }
+          url={show.url}
+          leadElement={
+            <TraktPoster posterId={show.showIds.tmdb} title={show.title} />
+          }
+        />
       ))}
-    </DataGrid>
+    </SimpleGrid>
   );
 }

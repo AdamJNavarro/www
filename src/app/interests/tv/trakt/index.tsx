@@ -1,11 +1,9 @@
 import { Anchor, Group } from '@mantine/core';
 import Link from 'next/link';
-import { Suspense } from 'react';
 import { Section } from '~/components/common';
 import TraktStats from './TraktStats';
 import TraktList from './TraktList';
-import { getTraktListItems, getTraktStats } from '~/app/data/trakt';
-import { LoadingSpinner } from '~/components/common/pure-html';
+import { traktData } from '~/app/data/trakt';
 import TraktGenres from './TraktGenres';
 
 const TRAKT_STATS_URL = 'https://trakt.tv/users/adamjnavarro/year/all';
@@ -13,20 +11,8 @@ const TRAKT_STATS_URL = 'https://trakt.tv/users/adamjnavarro/year/all';
 const TRAKT_FULL_WATCHLIST_URL =
   'https://trakt.tv/users/adamjnavarro/watchlist?sort=popularity,asc';
 
-async function TraktData() {
-  const statsData = getTraktStats();
-  const watchingData = getTraktListItems({ listId: 'watching' });
-  const watchedData = getTraktListItems({ listId: 'watched' });
-  const watchlistData = getTraktListItems({ listId: 'watchlist', limit: 4 });
-  const favoritesData = getTraktListItems({ listId: 'favorites' });
-
-  const [stats, watching, watched, watchlist, favorites] = await Promise.all([
-    statsData,
-    watchingData,
-    watchedData,
-    watchlistData,
-    favoritesData,
-  ]);
+export default function Trakt() {
+  const { stats, watching, watched, watchlist, favorites } = traktData;
 
   return (
     <>
@@ -75,7 +61,7 @@ async function TraktData() {
           </Section.Header>
         </Section.Header>
         <Section.Content>
-          <TraktList data={watchlist} />
+          <TraktList data={watchlist.slice(0, 6)} />
         </Section.Content>
       </Section.Container>
       <Section.Container>
@@ -88,13 +74,5 @@ async function TraktData() {
       </Section.Container>
       <TraktGenres />
     </>
-  );
-}
-
-export default function Trakt() {
-  return (
-    <Suspense fallback={<LoadingSpinner />}>
-      <TraktData />
-    </Suspense>
   );
 }
