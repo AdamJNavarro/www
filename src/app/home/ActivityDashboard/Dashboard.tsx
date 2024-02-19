@@ -57,7 +57,6 @@ function Loading() {
         <Group justify="space-between" mb="sm">
           <Group>
             <Box w={logoSize} h={logoSize} />
-
             <Text className={classes.label}>Label</Text>
           </Group>
         </Group>

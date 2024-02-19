@@ -8,6 +8,11 @@ interface GoFetchPayload {
   error?: Error;
 }
 
+export type CustomServerActionError = {
+  code: number;
+  message: string;
+};
+
 function makeError(name: string | number, message: string) {
   const error = new Error(message);
   error.name = `${name}`;

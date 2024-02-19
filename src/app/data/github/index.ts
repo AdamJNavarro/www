@@ -7,20 +7,33 @@ const token = process.env.GITHUB_PERSONAL_ACCESS_TOKEN;
 const octokit = new Octokit({ auth: token });
 
 export async function getLatestStarredRepo() {
-  const resp = await octokit.request('GET /user/starred', {
-    per_page: 1,
-    page: 1,
-  });
+  try {
+    const resp = await octokit.request('GET /user/starred', {
+      per_page: 1,
+      page: 1,
+    });
 
-  const { id, name, description, html_url, stargazers_count } = resp.data[0];
+    const { id, name, description, html_url, stargazers_count } = resp.data[0];
 
-  return {
-    id,
-    name,
-    description,
-    href: html_url,
-    stars: stargazers_count,
-  };
+    return {
+      data: {
+        id,
+        name,
+        description,
+        href: html_url,
+        stars: stargazers_count,
+      },
+      error: null,
+    };
+  } catch (error) {
+    return {
+      data: null,
+      error: {
+        statusCode: error.response.status,
+        message: error.response.data.message,
+      },
+    };
+  }
 }
 
 export async function getGithubRepoLanguages({

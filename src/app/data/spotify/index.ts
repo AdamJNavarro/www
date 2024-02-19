@@ -1,7 +1,7 @@
 'use server';
 
 import { SpotifyApi } from '@spotify/web-api-ts-sdk';
-import { buildNamesString, goFetch } from '~/utils';
+import { CustomServerActionError, buildNamesString, goFetch } from '~/utils';
 import { SpotifyArtist, SpotifyPodcast, SpotifyTrack } from './spotify.types';
 
 const client_id = process.env.SPOTIFY_CLIENT_ID as string;
@@ -33,23 +33,41 @@ async function getAccessToken(): Promise<any> {
   return res.data;
 }
 
+type GetLatestLikedSongsResponse = {
+  data: SpotifyTrack[] | SpotifyTrack | null;
+  error: CustomServerActionError | null;
+};
+
 export async function getLatestLikedSongs({
   limit,
-}): Promise<SpotifyTrack | SpotifyTrack[]> {
-  const token = await getAccessToken();
-  const api = SpotifyApi.withAccessToken(client_id, token);
-  const { items } = await api.currentUser.tracks.savedTracks(limit);
-  const data = items.map((item: any) => {
-    const { artists, album, id, name, external_urls } = item.track;
+}): Promise<GetLatestLikedSongsResponse> {
+  try {
+    const token = await getAccessToken();
+    const api = SpotifyApi.withAccessToken(client_id, token);
+    const { items } = await api.currentUser.tracks.savedTracks(limit);
+    const data = items.map((item: any) => {
+      const { artists, album, id, name, external_urls } = item.track;
+      return {
+        artist: buildNamesString(artists, 'name'),
+        id,
+        image: album.images[0].url,
+        name,
+        url: external_urls.spotify,
+      };
+    });
     return {
-      artist: buildNamesString(artists, 'name'),
-      id,
-      image: album.images[0].url,
-      name,
-      url: external_urls.spotify,
+      data: limit === 1 ? data[0] : data,
+      error: null,
     };
-  });
-  return limit === 1 ? data[0] : data;
+  } catch (error) {
+    return {
+      data: null,
+      error: {
+        code: 500,
+        message: 'A server error occurred.',
+      },
+    };
+  }
 }
 
 export async function getSpotifyArtists(): Promise<SpotifyArtist[]> {

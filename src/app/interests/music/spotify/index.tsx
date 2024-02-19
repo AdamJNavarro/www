@@ -35,7 +35,7 @@ async function SpotifyData() {
           <Section.Title>Recently Liked Tracks</Section.Title>
         </Section.Header>
         <Section.Content>
-          <RecentlyLikedTracks data={tracks} />
+          <RecentlyLikedTracks data={tracks.data} />
         </Section.Content>
       </Section.Container>
 
