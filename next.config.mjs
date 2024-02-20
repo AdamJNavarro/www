@@ -20,6 +20,9 @@ const nextConfig = {
         hostname: 'assets.literal.club',
       },
       {
+        hostname: 'books.google.com',
+      },
+      {
         protocol: 'https',
         hostname: 'i.scdn.co',
       },

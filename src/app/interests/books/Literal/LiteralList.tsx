@@ -1,4 +1,6 @@
-import { Image, Text, SimpleGrid } from '@mantine/core';
+import { Text, SimpleGrid } from '@mantine/core';
+import Image from 'next/image';
+
 import { getLiteralBooksByStatus, LiteralStatus } from '~/app/data/literal';
 import ProductItem from '~/components/Products/ProductItem';
 
@@ -30,13 +32,15 @@ export default function LiteralList({ readingStatus, itemLimit }: LiteralListPro
           }
           url={entry.url}
           leadElement={
-            <Image
-              src={entry.cover}
-              height={64 * 1.5}
-              width={64}
-              fit="contain"
-              radius="sm"
-            />
+            <div
+              style={{
+                width: 64,
+                height: 64 * 1.5,
+                position: 'relative',
+              }}
+            >
+              <Image src={entry.cover} fill alt={`${entry.title}-book-cover`} />
+            </div>
           }
         />
       ))}
