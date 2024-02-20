@@ -1,7 +1,12 @@
 'use server';
 
 import { SpotifyApi } from '@spotify/web-api-ts-sdk';
-import { buildNamesString, goFetch } from '~/utils';
+import {
+  ServerActionPayload,
+  buildNamesString,
+  goFetch,
+  handleServerActionError,
+} from '~/utils';
 import { SpotifyArtist, SpotifyPodcast, SpotifyTrack } from './spotify.types';
 
 const client_id = process.env.SPOTIFY_CLIENT_ID as string;
@@ -35,57 +40,80 @@ async function getAccessToken(): Promise<any> {
 
 export async function getLatestLikedSongs({
   limit,
-}): Promise<SpotifyTrack | SpotifyTrack[]> {
-  const token = await getAccessToken();
-  const api = SpotifyApi.withAccessToken(client_id, token);
-  const { items } = await api.currentUser.tracks.savedTracks(limit);
-  const data = items.map((item: any) => {
-    const { artists, album, id, name, external_urls } = item.track;
+}): Promise<ServerActionPayload<SpotifyTrack[] | SpotifyTrack>> {
+  try {
+    const token = await getAccessToken();
+    const api = SpotifyApi.withAccessToken(client_id, token);
+    const { items } = await api.currentUser.tracks.savedTracks(limit);
+    const data = items.map((item: any) => {
+      const { artists, album, id, name, external_urls } = item.track;
+      return {
+        artist: buildNamesString(artists, 'name'),
+        id,
+        image: album.images[0].url,
+        name,
+        url: external_urls.spotify,
+      };
+    });
     return {
-      artist: buildNamesString(artists, 'name'),
-      id,
-      image: album.images[0].url,
-      name,
-      url: external_urls.spotify,
+      data: limit === 1 ? data[0] : data,
+      error: null,
     };
-  });
-  return limit === 1 ? data[0] : data;
+  } catch (error) {
+    return handleServerActionError();
+  }
 }
 
-export async function getSpotifyArtists(): Promise<SpotifyArtist[]> {
-  const token = await getAccessToken();
-  const api = SpotifyApi.withAccessToken(client_id, token);
-  const { artists } = await api.currentUser.followedArtists();
+export async function getSpotifyArtists(): Promise<
+  ServerActionPayload<SpotifyArtist[]>
+> {
+  try {
+    const token = await getAccessToken();
+    const api = SpotifyApi.withAccessToken(client_id, token);
+    const { artists } = await api.currentUser.followedArtists();
 
-  const data = artists.items.map((item: any) => {
-    const { followers, genres, id, images, external_urls, name } = item;
+    const data = artists.items.map((item: any) => {
+      const { followers, genres, id, images, external_urls, name } = item;
+      return {
+        followers: followers.total,
+        genres,
+        id,
+        image: images[images.length - 1].url,
+        name,
+        url: external_urls.spotify,
+      };
+    });
     return {
-      followers: followers.total,
-      genres,
-      id,
-      image: images[images.length - 1].url,
-      name,
-      url: external_urls.spotify,
+      data,
+      error: null,
     };
-  });
-  return data;
+  } catch (error) {
+    return handleServerActionError();
+  }
 }
 
-export async function getSpotifyPodcasts(): Promise<SpotifyPodcast[]> {
-  const token = await getAccessToken();
-  const api = SpotifyApi.withAccessToken(client_id, token);
-  const { items } = await api.currentUser.shows.savedShows();
+export async function getSpotifyPodcasts(): Promise<
+  ServerActionPayload<SpotifyPodcast[]>
+> {
+  try {
+    const token = await getAccessToken();
+    const api = SpotifyApi.withAccessToken(client_id, token);
+    const { items } = await api.currentUser.shows.savedShows();
 
-  const data = items.map((item: any) => {
-    const { id, images, name, external_urls, total_episodes, publisher } = item.show;
-    return {
-      id,
-      image: images[0].url,
-      name,
-      publisher,
-      total_episodes,
-      url: external_urls.spotify,
-    };
-  });
-  return data;
+    const data = items.map((item: any) => {
+      const { id, images, name, external_urls, total_episodes, publisher } =
+        item.show;
+      return {
+        id,
+        image: images[0].url,
+        name,
+        publisher,
+        total_episodes,
+        url: external_urls.spotify,
+      };
+    });
+    return { data, error: null };
+  } catch (error) {
+    return handleServerActionError();
+  }
 }

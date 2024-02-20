@@ -25,11 +25,13 @@ export default async function WordsPage() {
 }
 
 async function WordBank() {
-  const words = await getWords();
+  const { data, error } = await getWords();
+
+  if (error) return null;
 
   return (
     <Suspense fallback={<LoadingSpinner />}>
-      <WordsList data={words} />
+      <WordsList data={data} />
     </Suspense>
   );
 }

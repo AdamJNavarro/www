@@ -8,6 +8,29 @@ interface GoFetchPayload {
   error?: Error;
 }
 
+export type CustomServerActionError = {
+  code: number;
+  message: string;
+};
+
+export function handleServerActionError(): {
+  data: null;
+  error: CustomServerActionError;
+} {
+  return {
+    data: null,
+    error: {
+      code: 500,
+      message: 'A server error occurred.',
+    },
+  };
+}
+
+export type ServerActionPayload<T> = {
+  data: T | null;
+  error: CustomServerActionError | null;
+};
+
 function makeError(name: string | number, message: string) {
   const error = new Error(message);
   error.name = `${name}`;

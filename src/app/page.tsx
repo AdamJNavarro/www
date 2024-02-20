@@ -46,24 +46,33 @@ export default async function HomePage() {
 }
 
 async function LatestWord() {
-  const wordData = await getLatestWord();
+  const { data, error } = await getLatestWord();
 
-  return <WordLearned data={wordData} />;
+  if (error) return null;
+
+  return <WordLearned data={data} />;
 }
 
 async function LatestStrava() {
-  const stravaData = await getLatestStravaActivity();
+  const { data, error } = await getLatestStravaActivity();
 
-  return <StravaSession data={stravaData} />;
+  if (error) return null;
+
+  return <StravaSession data={data} />;
 }
 
 async function LatestGithubRepoStarred() {
-  const repoData = await getLatestStarredRepo();
+  const { data, error } = await getLatestStarredRepo();
 
-  return <StarredRepo data={repoData} />;
+  if (error) return null;
+
+  return <StarredRepo data={data} />;
 }
 
 async function LatestSpotifyTrack() {
-  const data = await getLatestLikedSongs({ limit: 1 });
+  const { data, error } = await getLatestLikedSongs({ limit: 1 });
+
+  if (error) return null;
+
   return <SongLiked data={data} />;
 }

@@ -44,10 +44,12 @@ export default function CodingProject({ params }: any) {
 }
 
 async function LanguagesSection({ github }: any) {
-  const data = await getGithubRepoLanguages({
+  const { data, error } = await getGithubRepoLanguages({
     owner: github.owner,
     repo: github.repo,
   });
+
+  if (error) return null;
 
   return (
     <Section.Container>
@@ -65,10 +67,12 @@ async function LanguagesSection({ github }: any) {
 }
 
 async function DependenciesSection({ github }: any) {
-  const data = await getGithubRepoDependencies({
+  const { data, error } = await getGithubRepoDependencies({
     owner: github.owner,
     repo: github.repo,
   });
+
+  if (error) return null;
 
   return (
     <Section.Container>

@@ -1,6 +1,6 @@
 'use server';
 
-import { goFetch } from '~/utils';
+import { goFetch, handleServerActionError } from '~/utils';
 
 const { STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN } = process.env;
 
@@ -29,29 +29,37 @@ async function getStravaAccessToken() {
 }
 
 export async function getLatestStravaActivity() {
-  const token = await getStravaAccessToken();
-  const response = await fetch(
-    'https://www.strava.com/api/v3/athlete/activities?page=1&per_page=1',
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }
-  );
+  try {
+    const token = await getStravaAccessToken();
+    const response = await fetch(
+      'https://www.strava.com/api/v3/athlete/activities?page=1&per_page=1',
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
 
-  const data = await response.json();
+    const data = await response.json();
 
-  const activity = data.map((obj) => {
-    const { id, distance, moving_time, elapsed_time, sport_type, start_date } = obj;
+    const activity = data.map((obj) => {
+      const { id, distance, moving_time, elapsed_time, sport_type, start_date } =
+        obj;
+      return {
+        id,
+        distance,
+        totalDuration: elapsed_time,
+        movingDuration: moving_time,
+        sport: sport_type,
+        date: start_date,
+      };
+    })[0];
+
     return {
-      id,
-      distance,
-      totalDuration: elapsed_time,
-      movingDuration: moving_time,
-      sport: sport_type,
-      date: start_date,
+      data: activity,
+      error: null,
     };
-  })[0];
-
-  return activity;
+  } catch (error) {
+    return handleServerActionError();
+  }
 }
