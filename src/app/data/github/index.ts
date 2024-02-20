@@ -1,6 +1,7 @@
 'use server';
 
 import { Octokit } from 'octokit';
+import { handleServerActionError } from '~/utils';
 
 const token = process.env.GITHUB_PERSONAL_ACCESS_TOKEN;
 
@@ -26,13 +27,7 @@ export async function getLatestStarredRepo() {
       error: null,
     };
   } catch (error) {
-    return {
-      data: null,
-      error: {
-        statusCode: error.response.status,
-        message: error.response.data.message,
-      },
-    };
+    return handleServerActionError();
   }
 }
 
@@ -43,21 +38,28 @@ export async function getGithubRepoLanguages({
   owner: string;
   repo: string;
 }) {
-  const resp = await octokit.rest.repos.listLanguages({
-    owner,
-    repo,
-  });
+  try {
+    const resp = await octokit.rest.repos.listLanguages({
+      owner,
+      repo,
+    });
 
-  const totalBytes = Object.values(resp.data).reduce((a, b) => a + b, 0);
-  const items = Object.keys(resp.data).map((key) => ({
-    language: key,
-    bytes: resp.data[key],
-  }));
+    const totalBytes = Object.values(resp.data).reduce((a, b) => a + b, 0);
+    const items = Object.keys(resp.data).map((key) => ({
+      language: key,
+      bytes: resp.data[key],
+    }));
 
-  return {
-    totalBytes,
-    items,
-  };
+    return {
+      data: {
+        totalBytes,
+        items,
+      },
+      error: null,
+    };
+  } catch (error) {
+    return handleServerActionError();
+  }
 }
 
 export async function getGithubRepoDependencies({
@@ -67,22 +69,29 @@ export async function getGithubRepoDependencies({
   owner: string;
   repo: string;
 }) {
-  const resp = await octokit.rest.repos.getContent({
-    owner,
-    repo,
-    path: 'package.json',
-    headers: {
-      accept: 'application/vnd.github+json',
-    },
-  });
-  //console.log('RESP', resp);
-  const { dependencies, devDependencies } = JSON.parse(
-    // @ts-ignore
-    Buffer.from(resp.data.content, resp.data.encoding).toString()
-  );
+  try {
+    const resp = await octokit.rest.repos.getContent({
+      owner,
+      repo,
+      path: 'package.json',
+      headers: {
+        accept: 'application/vnd.github+json',
+      },
+    });
+    //console.log('RESP', resp);
+    const { dependencies, devDependencies } = JSON.parse(
+      // @ts-ignore
+      Buffer.from(resp.data.content, resp.data.encoding).toString()
+    );
 
-  return {
-    deps: JSON.stringify(dependencies, null, ' '),
-    devDeps: JSON.stringify(devDependencies, null, ' '),
-  };
+    return {
+      data: {
+        deps: JSON.stringify(dependencies, null, ' '),
+        devDeps: JSON.stringify(devDependencies, null, ' '),
+      },
+      error: null,
+    };
+  } catch (error) {
+    return handleServerActionError();
+  }
 }

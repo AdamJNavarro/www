@@ -1,6 +1,6 @@
 'use server';
 
-import { goFetch } from '~/utils';
+import { goFetch, handleServerActionError } from '~/utils';
 
 const { STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN } = process.env;
 
@@ -60,12 +60,6 @@ export async function getLatestStravaActivity() {
       error: null,
     };
   } catch (error) {
-    return {
-      data: null,
-      error: {
-        code: 500,
-        message: 'A server error occurred.',
-      },
-    };
+    return handleServerActionError();
   }
 }

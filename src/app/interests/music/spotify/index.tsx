@@ -44,7 +44,7 @@ async function SpotifyData() {
           <Section.Title>Favorite Artists</Section.Title>
         </Section.Header>
         <Section.Content>
-          <FavoriteArtists data={artists} />
+          <FavoriteArtists data={artists.data} />
         </Section.Content>
       </Section.Container>
 
@@ -53,7 +53,7 @@ async function SpotifyData() {
           <Section.Title>Favorite Podcasts</Section.Title>
         </Section.Header>
         <Section.Content>
-          <FavoritePodcasts data={podcasts} />
+          <FavoritePodcasts data={podcasts.data} />
         </Section.Content>
       </Section.Container>
     </>
