@@ -110,13 +110,13 @@ async function generateTraktData() {
   const genres = generateGenresData(watched);
   const completeData = JSON.stringify(
     {
+      updatedAt: new Date(),
       stats,
-      favorites,
       watching,
       watchlist,
       watched,
+      favorites,
       genres,
-      updatedAt: new Date(),
     },
     null,
     2
