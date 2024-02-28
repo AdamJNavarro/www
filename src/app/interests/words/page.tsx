@@ -4,6 +4,7 @@ import { getWords } from '~/app/data/db/queries';
 import { Page } from '~/components/common';
 import WordsList from './WordsList';
 import { LoadingSpinner } from '~/components/common/pure-html';
+import { auth } from '~/app/auth';
 
 export const { metadata } = routes.words;
 
@@ -25,13 +26,17 @@ export default async function WordsPage() {
 }
 
 async function WordBank() {
+  const session = await auth();
   const { data, error } = await getWords();
 
   if (error) return null;
 
   return (
     <Suspense fallback={<LoadingSpinner />}>
-      <WordsList data={data} />
+      <WordsList
+        data={data}
+        showAddButton={session && session?.user?.email === 'adamjnav@gmail.com'}
+      />
     </Suspense>
   );
 }

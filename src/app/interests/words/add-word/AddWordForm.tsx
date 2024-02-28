@@ -3,9 +3,9 @@
 import { Button, NativeSelect, Stack, Textarea, TextInput } from '@mantine/core';
 import { DateTimePicker } from '@mantine/dates';
 import { useForm } from '@mantine/form';
-import { addWord } from '../data/db/actions';
+import { addWord } from '~/app/data/db/actions';
 
-export default function AddWord() {
+export default function AddWordForm() {
   const form = useForm({
     initialValues: {
       spelling: '',

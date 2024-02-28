@@ -1,14 +1,15 @@
 'use client';
 
-import { Group, rem } from '@mantine/core';
+import { Button, Group, rem } from '@mantine/core';
 import { useState } from 'react';
+import Link from 'next/link';
 import { DataGrid } from '../../../components/common/Grid';
 import { sortWords } from './Words.utils';
 import WordCard from './WordCard';
 import { WordProps, WordSortingMode } from './Words.types';
 import WordSortingToggle from './WordSortingToggle';
 
-export default function WordsList({ data }: any) {
+export default function WordsList({ data, showAddButton }: any) {
   const [sortMode, setSortMode] = useState<WordSortingMode>('recent');
   const [sortedWords, setSortedWords] = useState<WordProps[]>(
     sortWords(data, sortMode)
@@ -30,6 +31,16 @@ export default function WordsList({ data }: any) {
           }}
           value={sortMode}
         />
+        {showAddButton && (
+          <Button
+            component={Link}
+            href="/interests/words/add-word"
+            size="compact-sm"
+            variant="light"
+          >
+            Add Word
+          </Button>
+        )}
       </Group>
       <DataGrid
         config={{

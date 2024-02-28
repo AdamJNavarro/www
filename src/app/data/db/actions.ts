@@ -5,6 +5,7 @@
 import { sql } from '@vercel/postgres';
 import { type Session } from 'next-auth';
 import { unstable_noStore as noStore, revalidatePath } from 'next/cache';
+import { redirect } from 'next/navigation';
 import { auth } from '~/app/auth';
 
 async function getSession(): Promise<Session> {
@@ -33,5 +34,5 @@ export async function addWord(formData: any) {
   noStore();
 
   await sql`INSERT INTO words (spelling, definition, part_of_speech, date_learned) VALUES (${spelling}, ${definition}, ${partOfSpeech}, ${dateLearned});`;
-  revalidatePath('/admin');
+  redirect('/interests/words');
 }
