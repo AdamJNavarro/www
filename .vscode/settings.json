@@ -6,10 +6,8 @@
     },
     "workbench.editor.enablePreview": false,
     "workbench.editor.wrapTabs": true,
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.preferredDarkColorTheme": "Codemos Modern (Dark)",
+    "workbench.preferredLightColorTheme": "Codemos Modern (Light)",
     "typescript.tsdk": "node_modules/typescript/lib",
-    "editor.fontSize": 15.75,
-      "customizeUI.fontSizeMap": {
-        "13px": "16px"
-      }
+    "workbench.colorTheme": "Codemos Modern (Dark)",
   }
