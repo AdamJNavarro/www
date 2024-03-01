@@ -9,5 +9,5 @@
     "workbench.preferredDarkColorTheme": "Codemos Modern (Dark)",
     "workbench.preferredLightColorTheme": "Codemos Modern (Light)",
     "typescript.tsdk": "node_modules/typescript/lib",
-    "workbench.colorTheme": "Codemos Modern (Dark)",
+    "workbench.colorTheme": "Codemos Modern (Light)",
   }
