@@ -1,10 +1,7 @@
-import '@mantine/core/styles.css';
-import '@mantine/code-highlight/styles.css';
-import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+import './global.css';
 import { Metadata, Viewport } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import Shell from '~/components/Layouts/Shell';
-import { theme } from './config/theme';
+import SiteLayout from '~/components/Layouts/SiteLayout';
 
 const baseUrl = new URL('https://adamjnavarro.com');
 
@@ -41,19 +38,15 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
-  themeColor: theme.other.colors.root,
+  //themeColor: theme.other.colors.root,
 };
 
 export default function App({ children }: { children: any }) {
   return (
-    <html lang="en" style={{ backgroundColor: theme.other.colors.root }}>
-      <head>
-        <ColorSchemeScript forceColorScheme="dark" />
-      </head>
-      <body style={{ backgroundColor: 'transparent' }}>
-        <MantineProvider forceColorScheme="dark" theme={theme}>
-          <Shell>{children}</Shell>
-        </MantineProvider>
+    <html lang="en">
+      <head></head>
+      <body>
+        <SiteLayout>{children}</SiteLayout>
         <SpeedInsights />
       </body>
     </html>
