@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { twJoin } from 'tailwind-merge';
 import { navbarRoutes } from '~/app/config/routes';
 import { useDisclosure } from '~/utils';
+import ThemeToggle from './ThemeToggle';
 
 function useActivePath(): (href: string) => boolean {
   const pathname = usePathname();
@@ -59,28 +60,29 @@ export default function SiteLayout({ children }: any) {
   const checkActivePath = useActivePath();
 
   return (
-    <div className="grid min-h-screen grid-rows-header bg-black">
+    <div className="grid min-h-screen grid-rows-header bg-white dark:bg-black">
       <div>
         <header className="bg-slate-900 flex w-full fixed z-[200] h-16">
-          <div className="h-100 px-4 flex flex-row items-center justify-between gap-4">
+          <div className="h-100 px-4 flex flex-1 flex-row items-center justify-between gap-4">
             <div className="flex flex-row items-center justify-start gap-4">
               <BurgerButton
                 isOpen={mobileOpened}
                 onClick={toggleMobile}
-                customClass="block md:hidden"
+                customClass="block sm:hidden"
               />
               <BurgerButton
                 isOpen={desktopOpened}
                 onClick={toggleDesktop}
-                customClass="hidden md:block"
+                customClass="hidden sm:block"
               />
-              <p className="text-white font-bold text-lg block md:hidden">
+              <p className="text-white font-bold text-lg block sm:hidden">
                 {headerTitle}
               </p>
-              <p className="text-white font-bold text-lg hidden md:block">
+              <p className="text-white font-bold text-lg hidden sm:block">
                 Adam Navarro
               </p>
             </div>
+            <ThemeToggle />
           </div>
         </header>
       </div>

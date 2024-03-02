@@ -2,6 +2,7 @@ import './global.css';
 import { Metadata, Viewport } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import SiteLayout from '~/components/Layouts/SiteLayout';
+import ThemeWrapper from '~/components/Layouts/ThemeProvider';
 
 const baseUrl = new URL('https://adamjnavarro.com');
 
@@ -43,12 +44,14 @@ export const viewport: Viewport = {
 
 export default function App({ children }: { children: any }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head></head>
-      <body>
-        <SiteLayout>{children}</SiteLayout>
-        <SpeedInsights />
-      </body>
+      <ThemeWrapper>
+        <body>
+          <SiteLayout>{children}</SiteLayout>
+          <SpeedInsights />
+        </body>
+      </ThemeWrapper>
     </html>
   );
 }
