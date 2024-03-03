@@ -47,7 +47,7 @@ export default function App({ children }: { children: any }) {
     <html lang="en" suppressHydrationWarning>
       <head></head>
       <ThemeWrapper>
-        <body>
+        <body className="antialiased">
           <SiteLayout>{children}</SiteLayout>
           <SpeedInsights />
         </body>

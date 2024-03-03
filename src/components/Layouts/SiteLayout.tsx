@@ -33,19 +33,19 @@ const BurgerButton = ({ customClass, isOpen, onClick }: any) => (
     <div className="sr-only">{isOpen ? 'Close menu' : 'Open menu'}</div>
     <div
       aria-hidden="true"
-      className={`absolute h-0.5 w-5 bg-current transition duration-300 ease-in-out ${
+      className={`absolute h-0.5 w-5 bg-black dark:bg-white transition duration-300 ease-in-out ${
         isOpen ? 'rotate-45' : '-translate-y-1.5'
       }`}
     />
     <div
       aria-hidden="true"
-      className={`absolute h-0.5 w-5 bg-current transition duration-300 ease-in-out ${
+      className={`absolute h-0.5 w-5 bg-black dark:bg-white transition duration-300 ease-in-out ${
         isOpen ? 'opacity-0' : 'opacity-100'
       }`}
     />
     <div
       aria-hidden="true"
-      className={`absolute h-0.5 w-5 bg-current transition duration-300 ease-in-out ${
+      className={`absolute h-0.5 w-5 bg-black dark:bg-white transition duration-300 ease-in-out ${
         isOpen ? '-rotate-45' : 'translate-y-1.5'
       }`}
     />
@@ -53,16 +53,16 @@ const BurgerButton = ({ customClass, isOpen, onClick }: any) => (
 );
 
 export default function SiteLayout({ children }: any) {
-  const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure(true);
+  const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure(false);
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
 
   const headerTitle = useActiveRouteLabel();
   const checkActivePath = useActivePath();
 
   return (
-    <div className="grid min-h-screen grid-rows-header bg-white dark:bg-black">
+    <main className="grid min-h-screen grid-rows-header bg-white dark:bg-black">
       <div>
-        <header className="bg-slate-900 flex w-full fixed z-[200] h-16">
+        <header className="bg-zinc-50 border-b border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-[#050505] flex w-full fixed z-[200] h-16">
           <div className="h-100 px-4 flex flex-1 flex-row items-center justify-between gap-4">
             <div className="flex flex-row items-center justify-start gap-4">
               <BurgerButton
@@ -75,10 +75,10 @@ export default function SiteLayout({ children }: any) {
                 onClick={toggleDesktop}
                 customClass="hidden sm:block"
               />
-              <p className="text-white font-bold text-lg block sm:hidden">
+              <p className="text-black dark:text-white font-bold text-lg block sm:hidden">
                 {headerTitle}
               </p>
-              <p className="text-white font-bold text-lg hidden sm:block">
+              <p className="text-black dark:text-white font-bold text-lg hidden sm:block">
                 Adam Navarro
               </p>
             </div>
@@ -97,7 +97,8 @@ export default function SiteLayout({ children }: any) {
           <nav
             className={classNames({
               'flex flex-col py-4 px-2': true, // layout
-              'bg-slate-800': true, // colors
+              'bg-zinc-50 border-r border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-[#080808]':
+                true, // colors
               'top-16 z-[200] fixed': true, // positioning
               'h-[calc(100dvh_-_96px)] w-[300px]': true, // for height and width
               'transition-transform .3s ease-in-out': true, //animations
@@ -117,14 +118,14 @@ export default function SiteLayout({ children }: any) {
                           toggleMobile();
                         }}
                         className={classNames({
-                          'relative flex items-center p-2 mt-4 rounded-md font-medium':
+                          'relative flex items-center p-2 mt-4 rounded-md font-medium text-md':
                             true,
-                          'bg-transparent hover:bg-slate-400 text-white hover:text-purple-600':
+                          'text-zinc-800 dark:text-white hover:text-violet-700 dark:hover:text-violet-400':
                             true,
+                          'text-violet-700 dark:text-violet-400': isActive,
                         })}
-                        data-active={isActive || undefined}
                       >
-                        <item.icon className="mr-2" />
+                        <item.icon className="mr-4" />
                         <span className="flex-1">{item.label}</span>
                       </Link>
                     );
@@ -134,8 +135,10 @@ export default function SiteLayout({ children }: any) {
             </div>
           </nav>
         </div>
-        {children}
+        <div className="flex relative overflow-y-auto flex-col w-100">
+          <div className="w-100 pt-12 pb-16 px-8 sm:px-6 sm:pt-16">{children}</div>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }

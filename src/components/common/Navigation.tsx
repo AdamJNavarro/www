@@ -17,7 +17,8 @@ type NavigationCardProps = {
   children?: any;
 };
 
-type NavigationTileProps = NavigationCardProps & {
+type NavigationTileProps = {
+  href: string;
   icon: any;
   label: string;
 };
@@ -42,14 +43,12 @@ function Card(props: NavigationCardProps) {
 
 function Tile(props: NavigationTileProps) {
   return (
-    <Card {...props}>
-      <div className={classes.content}>
-        <props.icon className={classes.icon} size={30} />
-        <Text inherit mt={4}>
-          {props.label}
-        </Text>
+    <Link href={props.href} className="rounded-md p-4 bg-zinc-900">
+      <div className="flex flex-col items-center justify-center text-center h-20 text-md">
+        <props.icon className="text-violet-500 h-7 w-7" size={28} />
+        <div className="mt-2">{props.label}</div>
       </div>
-    </Card>
+    </Link>
   );
 }
 
@@ -60,7 +59,7 @@ function Grid({ items }: { items: NavigationLinkProps[] }) {
         <Navigation.Tile
           key={item.label}
           href={item.href}
-          isExternal={item.isExternal}
+          //isExternal={item.isExternal}
           icon={item.icon}
           label={item.label}
         />

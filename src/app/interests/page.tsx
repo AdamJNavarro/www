@@ -1,19 +1,34 @@
-import { Page } from '~/components/common';
+import Navigation from '~/components/common/Navigation';
 import routes from '../config/routes';
-import InterestsGrid from './InterestsGrid';
 
 export const { metadata } = routes.interests;
 
+const items = [
+  routes.books,
+  routes.charity,
+  routes.coding,
+  routes.dancing,
+  routes.movies,
+  routes.music,
+  routes.quotes,
+  routes.tv,
+  routes.words,
+];
+
 export default async function InterestsPage() {
   return (
-    <Page.Container>
-      <Page.Content>
-        <Page.Header>
-          <Page.Title>Interests</Page.Title>
-          <Page.Description>Learn more about what I enjoy.</Page.Description>
-        </Page.Header>
-        <InterestsGrid />
-      </Page.Content>
-    </Page.Container>
+    <section>
+      <h1 className="font-bold text-lg text-black dark:text-white sm:text-xl">
+        Interests
+      </h1>
+      <p className="text-md text-zinc-800 dark:text-zinc-300 sm:text-md">
+        Learn more about what I enjoy
+      </p>
+      <div className="grid gap-x-8 gap-y-8 grid-cols-3 bg-slate-400">
+        {items.map((item) => (
+          <Navigation.Tile key={item.label} {...item} />
+        ))}
+      </div>
+    </section>
   );
 }
