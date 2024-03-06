@@ -17,7 +17,7 @@ const items = [
 
 export default async function InterestsPage() {
   return (
-    <section>
+    <section className="bg-slate-400">
       <h1 className="font-bold text-lg text-black dark:text-white sm:text-xl">
         Interests
       </h1>

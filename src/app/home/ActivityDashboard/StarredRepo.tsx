@@ -7,8 +7,8 @@ export default function StarredRepo({ data }) {
       href={data.href}
       logo="/img/logos/github.svg"
     >
-      <Dashboard.Title lineClamp={1}>{data.name}</Dashboard.Title>
-      <Dashboard.Details lineClamp={1}>{data.description}</Dashboard.Details>
+      <Dashboard.Title>{data.name}</Dashboard.Title>
+      <Dashboard.Details>{data.description}</Dashboard.Details>
     </Dashboard.Card>
   );
 }

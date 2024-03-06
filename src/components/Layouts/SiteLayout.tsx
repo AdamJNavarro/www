@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { twJoin } from 'tailwind-merge';
 import { navbarRoutes } from '~/app/config/routes';
-import { useDisclosure } from '~/utils';
+import { useDisclosure } from '~/utils/Hooks';
 import ThemeToggle from './ThemeToggle';
 
 function useActivePath(): (href: string) => boolean {
@@ -53,56 +53,49 @@ const BurgerButton = ({ customClass, isOpen, onClick }: any) => (
 );
 
 export default function SiteLayout({ children }: any) {
-  const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure(false);
-  const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
+  const [menuOpened, { toggle: toggleMenu }] = useDisclosure();
 
   const headerTitle = useActiveRouteLabel();
   const checkActivePath = useActivePath();
 
+  // header #050505   sidebar: #080808
+
   return (
-    <main className="grid min-h-screen grid-rows-header bg-white dark:bg-black">
+    <main className="min-h-screen grid grid-rows-header bg-white dark:bg-slate-950">
       <div>
-        <header className="bg-zinc-50 border-b border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-[#050505] flex w-full fixed z-[200] h-16">
-          <div className="h-100 px-4 flex flex-1 flex-row items-center justify-between gap-4">
+        <header className="bg-zinc-50 border-b border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-slate-950 flex w-full fixed z-[200] h-16">
+          <div className="h-100 pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
             <div className="flex flex-row items-center justify-start gap-4">
-              <BurgerButton
-                isOpen={mobileOpened}
-                onClick={toggleMobile}
-                customClass="block sm:hidden"
-              />
-              <BurgerButton
-                isOpen={desktopOpened}
-                onClick={toggleDesktop}
-                customClass="hidden sm:block"
-              />
-              <p className="text-black dark:text-white font-bold text-lg block sm:hidden">
+              <p className="text-black dark:text-white font-bold text-lg block desktop:hidden">
                 {headerTitle}
               </p>
-              <p className="text-black dark:text-white font-bold text-lg hidden sm:block">
+              <p className="text-black dark:text-white font-bold text-lg hidden desktop:block">
                 Adam Navarro
               </p>
             </div>
-            <ThemeToggle />
+            <div className="flex flex-row items-center gap-4">
+              <ThemeToggle />
+              <BurgerButton
+                isOpen={menuOpened}
+                onClick={toggleMenu}
+                customClass="block desktop:hidden"
+              />
+            </div>
           </div>
         </header>
       </div>
-      <div
-        className={classNames({
-          grid: true,
-          'grid-cols-sidebarOpen': desktopOpened,
-          'grid-cols-sidebarClosed': !desktopOpened,
-        })}
-      >
+      <div className="grid desktop:grid-cols-sidebar">
         <div>
           <nav
             className={classNames({
               'flex flex-col py-4 px-2': true, // layout
-              'bg-zinc-50 border-r border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-[#080808]':
+              'bg-zinc-50 border-r border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-slate-950':
                 true, // colors
-              'top-16 z-[200] fixed': true, // positioning
-              'h-[calc(100dvh_-_96px)] w-[300px]': true, // for height and width
-              'transition-transform .3s ease-in-out': true, //animations
-              '-translate-x-full ': !desktopOpened, //hide sidebar to the left when closed
+              'top-16 l-0 z-[200] fixed': true, // positioning
+              'h-[calc(100vh_-_96px)] w-full desktop:w-sidebar': true, // for height and width
+              'transition-transform duration-300 ease-in-out desktop:-translate-x-0':
+                true, //animations
+              '-translate-x-full ': !menuOpened, //hide sidebar to the left when closed
             })}
           >
             <div className="flex-grow overflow-hidden relative">
@@ -115,12 +108,12 @@ export default function SiteLayout({ children }: any) {
                         key={item.label}
                         href={item.href}
                         onClick={() => {
-                          toggleMobile();
+                          toggleMenu();
                         }}
                         className={classNames({
                           'relative flex items-center p-2 mt-4 rounded-md font-medium text-md':
                             true,
-                          'text-zinc-800 dark:text-white hover:text-violet-700 dark:hover:text-violet-400':
+                          'text-zinc-800 dark:text-slate-200 hover:text-violet-700 dark:hover:text-white':
                             true,
                           'text-violet-700 dark:text-violet-400': isActive,
                         })}
@@ -135,8 +128,11 @@ export default function SiteLayout({ children }: any) {
             </div>
           </nav>
         </div>
-        <div className="flex relative overflow-y-auto flex-col w-100">
-          <div className="w-100 pt-12 pb-16 px-8 sm:px-6 sm:pt-16">{children}</div>
+        {/* Probably want to set a max-width here to handle large monitor layouts */}
+        <div className="flex overflow-y-auto flex-col">
+          <div className="flex-auto flex flex-col pt-12 pb-16 px-6 desktop:px-4 desktop:pt-16 mx-4 desktop:mx-24">
+            {children}
+          </div>
         </div>
       </div>
     </main>

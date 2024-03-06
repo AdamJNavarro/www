@@ -10,7 +10,7 @@ export default function MovieWatched() {
       href={film.url}
       logo="/img/logos/letterboxd.svg"
     >
-      <Dashboard.Title tt="capitalize">{film.name}</Dashboard.Title>
+      <Dashboard.Title>{film.name}</Dashboard.Title>
 
       <Dashboard.Details>{film.year}</Dashboard.Details>
     </Dashboard.Card>

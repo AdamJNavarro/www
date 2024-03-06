@@ -1,5 +1,4 @@
 import dayjs from 'dayjs';
-import { Group } from '@mantine/core';
 import Dashboard from './Dashboard';
 
 function buildStravaUrl(id: number): string {
@@ -54,13 +53,13 @@ export default function StravaSession({ data }) {
       logo="/img/logos/strava.svg"
     >
       <Dashboard.Title>{getSessionType(sport)}</Dashboard.Title>
-      <Group gap="sm">
+      <div className="flex space-x-2">
         <Dashboard.Details>{getSessionDate(date)}</Dashboard.Details>
         <Dashboard.Details>{getSessionDuration(totalDuration)}</Dashboard.Details>
         {sport !== 'WeightTraining' && (
           <Dashboard.Details>{getSessionDistance(distance)}</Dashboard.Details>
         )}
-      </Group>
+      </div>
     </Dashboard.Card>
   );
 }

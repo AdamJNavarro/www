@@ -1,8 +1,6 @@
-import { Box, Group, Skeleton, Text } from '@mantine/core';
+import { IconArrowUpRight } from '@tabler/icons-react';
 import Image from 'next/image';
-import classes from './Dashboard.module.css';
-import Navigation from '~/components/common/Navigation';
-import { Surface } from '~/components/common';
+import Link from 'next/link';
 
 interface DashboardCardProps {
   href: string;
@@ -11,68 +9,54 @@ interface DashboardCardProps {
   children: any;
 }
 
-const logoSize = 36;
+const logoSize = 24;
 
 function Card({ href, label, logo, children }: DashboardCardProps) {
   return (
-    <Navigation.Card href={href} isExternal>
-      <Group justify="space-between" mb="sm">
-        <Group>
+    <Link href={href} target="_blank" className="rounded-md p-4 bg-slate-900/60">
+      <div className="flex flex-1 items-center justify-between gap-4 mb-4">
+        <div className="flex items-center justify-start gap-4">
           <Image
             src={logo}
             width={logoSize}
             height={logoSize}
             alt={`dashboard ${label} icon`}
+            className="h-6 w-6"
           />
+          <div className="text-xl text-slate-100">{label}</div>
+        </div>
+        <IconArrowUpRight size={20} />
+      </div>
 
-          <Text className={classes.label}>{label}</Text>
-        </Group>
-      </Group>
-
-      <Box
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-        }}
-      >
-        {children}
-      </Box>
-    </Navigation.Card>
+      <div className="flex flex-col justify-center">{children}</div>
+    </Link>
   );
-}
-
-function Title(props) {
-  return <Text className={classes.title} {...props} />;
-}
-
-function Details(props) {
-  return <Text className={classes.details} {...props} />;
 }
 
 function Loading() {
   return (
-    <Skeleton radius="md">
-      <Surface.Card>
-        <Group justify="space-between" mb="sm">
-          <Group>
-            <Box w={logoSize} h={logoSize} />
-            <Text className={classes.label}>Label</Text>
-          </Group>
-        </Group>
-        <Box
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-          }}
-        >
-          <Dashboard.Title>Loading</Dashboard.Title>
-          <Dashboard.Details>Content</Dashboard.Details>
-        </Box>
-      </Surface.Card>
-    </Skeleton>
+    <div className="rounded-md p-4 bg-zinc-900 animate-pulse">
+      <div className="flex flex-1 items-center justify-between gap-4 mb-4">
+        <div className="flex items-center justify-start gap-4">
+          <div className="h-6 w-6" />
+          <div className="text-xl text-zinc-100"></div>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center">
+        <Dashboard.Title></Dashboard.Title>
+        <Dashboard.Details></Dashboard.Details>
+      </div>
+    </div>
   );
+}
+
+function Title(props) {
+  return <div className="text-md text-slate-100/2" {...props} />;
+}
+
+function Details(props) {
+  return <div className="text-sm text-slate-300/95" {...props} />;
 }
 
 const Dashboard = {

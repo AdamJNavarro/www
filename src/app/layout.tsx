@@ -9,8 +9,9 @@ const baseUrl = new URL('https://adamjnavarro.com');
 export const metadata: Metadata = {
   metadataBase: baseUrl,
   title: {
-    default: 'Adam Navarro',
-    template: '%s | Adam Navarro',
+    default: process.env.NODE_ENV === 'development' ? 'Localhost' : 'Adam Navarro',
+    template:
+      process.env.NODE_ENV === 'development' ? '%s | Dev' : '%s | Adam Navarro',
   },
   description: 'Software builder, musician and fitness enthusiast.',
   openGraph: {
@@ -44,7 +45,7 @@ export const viewport: Viewport = {
 
 export default function App({ children }: { children: any }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="bg-transparent">
       <head></head>
       <ThemeWrapper>
         <body className="antialiased">

@@ -8,7 +8,7 @@ export default function WordLearned({ data }: any) {
       href={buildMerriamWebsterUrl(data.spelling)}
       logo="/img/logos/merriam-webster.svg"
     >
-      <Dashboard.Title tt="capitalize">{data.spelling}</Dashboard.Title>
+      <Dashboard.Title>{data.spelling}</Dashboard.Title>
 
       <Dashboard.Details>{data.definition}.</Dashboard.Details>
     </Dashboard.Card>

@@ -43,8 +43,8 @@ function Card(props: NavigationCardProps) {
 
 function Tile(props: NavigationTileProps) {
   return (
-    <Link href={props.href} className="rounded-md p-4 bg-zinc-900">
-      <div className="flex flex-col items-center justify-center text-center h-20 text-md">
+    <Link href={props.href} className="rounded-md p-4 bg-slate-900">
+      <div className="flex flex-col items-center justify-center text-center h-20  text-md">
         <props.icon className="text-violet-500 h-7 w-7" size={28} />
         <div className="mt-2">{props.label}</div>
       </div>
