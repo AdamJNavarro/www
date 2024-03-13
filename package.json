@@ -18,7 +18,7 @@
     "@mantine/code-highlight": "^7.6.1",
     "@mantine/core": "^7.6.2",
     "@mantine/dates": "^7.6.1",
-    "@mantine/form": "^7.6.1",
+    "@mantine/form": "^7.6.2",
     "@mantine/hooks": "^7.6.1",
     "@mantine/next": "^6.0.21",
     "@spotify/web-api-ts-sdk": "^1.2.0",
