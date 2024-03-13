@@ -48,8 +48,8 @@ function Tile(props: NavigationTileProps) {
       className="rounded-md p-4 bg-slate-900/80 hover:bg-slate-900"
     >
       <div className="flex flex-col items-center justify-center text-center h-20  text-md">
-        <props.icon className="text-violet-500 h-7 w-7" size={28} />
-        <div className="mt-2">{props.label}</div>
+        <props.icon className="text-sky-200 h-7 w-7" size={28} />
+        <div className="mt-2 text-sky-200 font-medium">{props.label}</div>
       </div>
     </Link>
   );

@@ -18,6 +18,7 @@ interface SpotifyPodcast {
 
 interface SpotifyTrack {
   artist: string;
+  dateLiked: string;
   id: string;
   image: string;
   name: string;

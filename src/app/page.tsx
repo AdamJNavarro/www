@@ -41,14 +41,9 @@ export default async function HomePage() {
         className="rounded-full h-60 w-60 mx-auto mb-8"
       />
       <div className="text-center mb-16">
-        <p className="font-medium text-xl text-zinc-800 dark:text-violet-400 desktop:text-2xl">
+        <p className="font-medium text-xl text-zinc-800 dark:text-sky-200 desktop:text-2xl">
           Find Passion. Foster Passion.
         </p>
-      </div>
-      <div className="grid gap-x-4 desktop:gap-x-8 grid-cols-3 w-full justify-between mb-16">
-        {showcaseRoutes.map((item) => (
-          <Navigation.Tile key={item.label} {...item} />
-        ))}
       </div>
 
       <DummyProseSection />

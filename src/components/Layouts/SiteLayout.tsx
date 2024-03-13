@@ -100,7 +100,7 @@ export default function SiteLayout({ children }: any) {
           >
             <div className="flex-grow overflow-hidden relative">
               <div className="w-full h-full">
-                <div className="mr-2">
+                <div className="mr-2 space-y-3">
                   {navbarRoutes.map((item) => {
                     const isActive = checkActivePath(item.href);
                     return (
@@ -111,7 +111,7 @@ export default function SiteLayout({ children }: any) {
                           toggleMenu();
                         }}
                         className={classNames({
-                          'relative flex items-center p-2 mt-4 rounded-md font-medium text-md':
+                          'relative flex items-center py-1 px-2 rounded-md font-medium text-md':
                             true,
                           'text-zinc-800 dark:text-slate-200 hover:text-violet-700 dark:hover:text-white':
                             true,
@@ -119,7 +119,6 @@ export default function SiteLayout({ children }: any) {
                             isActive,
                         })}
                       >
-                        <item.icon className="mr-4" />
                         <span className="flex-1">{item.label}</span>
                       </Link>
                     );
@@ -131,7 +130,7 @@ export default function SiteLayout({ children }: any) {
         </div>
         {/* Probably want to set a max-width here to handle large monitor layouts */}
         <div className="flex overflow-y-auto flex-col">
-          <div className="flex-auto flex flex-col pt-12 pb-16 px-6 desktop:px-4 desktop:pt-16 mx-4 desktop:mx-24">
+          <div className="flex-auto flex flex-col pt-12 pb-16 px-6 desktop:px-4 desktop:pt-16 desktop:mx-24">
             {children}
           </div>
         </div>
