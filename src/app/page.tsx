@@ -126,7 +126,7 @@ async function LatestSpotifyTrack() {
 function DummyProseSection() {
   return (
     <div className="prose dark:prose-invert mx-auto mb-16">
-      <p>
+      <p className="first-letter:text-3xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis
         bibendum. Quis blandit turpis cursus in hac. Ac odio tempor orci dapibus.

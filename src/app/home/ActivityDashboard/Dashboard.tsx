@@ -16,7 +16,7 @@ function Card({ href, label, logo, children }: DashboardCardProps) {
     <Link
       href={href}
       target="_blank"
-      className="rounded-md p-4 bg-slate-900/80 flex flex-col justify-between dark:border dark:border-slate-800"
+      className="rounded-md p-4 bg-slate-900/80 flex flex-col justify-between dark:border dark:border-slate-800 dark:hover:bg-slate-900"
     >
       <div className="flex items-center justify-between gap-4 mb-4 ">
         <div className="flex items-center justify-start gap-4">
