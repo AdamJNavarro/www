@@ -17,14 +17,14 @@ const items = [
 
 export default async function InterestsPage() {
   return (
-    <section className="bg-slate-400">
+    <section>
       <h1 className="font-bold text-lg text-black dark:text-white sm:text-xl">
         Interests
       </h1>
       <p className="text-md text-zinc-800 dark:text-zinc-300 sm:text-md">
         Learn more about what I enjoy
       </p>
-      <div className="grid gap-x-8 gap-y-8 grid-cols-3 bg-slate-400">
+      <div className="grid gap-1.5 grid-cols-2  tablet:grid-cols-3">
         {items.map((item) => (
           <Navigation.Tile key={item.label} {...item} />
         ))}

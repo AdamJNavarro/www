@@ -1,5 +1,3 @@
-import { Blockquote, SimpleGrid } from '@mantine/core';
-
 interface QuoteProps {
   author: string;
   source: string;
@@ -10,22 +8,23 @@ const quotes: QuoteProps[] = [
   {
     author: 'J.R.R. Tolkien',
     source: 'The Fellowship of the Ring',
-    words: `“I wish it need not have happened in my time,” said Frodo.
-    “So do I,” said Gandalf, “and so do all who live to see such times. But that is not for them to decide. All we have to decide is what to do with the time that is given us.”`,
+    words: `I wish it need not have happened in my time,” said Frodo.
+    “So do I,” said Gandalf, “and so do all who live to see such times. But that is not for them to decide. All we have to decide is what to do with the time that is given us.`,
   },
 ];
 
 export default function QuotesList() {
   return (
-    <SimpleGrid cols={1} spacing="xl">
+    <div className="prose dark:prose-invert flex flex-col space-y-12">
       {quotes.map((quote, index) => (
-        <Blockquote
-          key={`quote-${index}`}
-          cite={`– ${quote.author} (${quote.source})`}
-        >
-          {quote.words}
-        </Blockquote>
+        <blockquote key={`quote-${index}`}>
+          <p>{quote.words}</p>
+          <footer>
+            {`-- ${quote.author} `}
+            <cite>{`(${quote.source})`}</cite>
+          </footer>
+        </blockquote>
       ))}
-    </SimpleGrid>
+    </div>
   );
 }

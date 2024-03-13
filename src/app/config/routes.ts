@@ -72,7 +72,7 @@ const routes: RouteConfig = {
   interests: {
     icon: IconMoodHappy,
     label: 'Interests',
-    href: '/interests',
+    href: '/#interests',
     metadata: {
       title: 'Interests',
       description: 'See what I enjoy in life.',

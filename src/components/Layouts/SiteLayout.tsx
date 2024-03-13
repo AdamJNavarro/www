@@ -66,7 +66,7 @@ export default function SiteLayout({ children }: any) {
         <header className="bg-zinc-50 border-b border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-slate-950 flex w-full fixed z-[200] h-16">
           <div className="h-100 pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
             <div className="flex flex-row items-center justify-start gap-4">
-              <p className="text-black dark:text-white font-bold text-lg block desktop:hidden">
+              <p className="text-black dark:text-white font-bold text-lg block capitalize desktop:hidden">
                 {headerTitle}
               </p>
               <p className="text-black dark:text-white font-bold text-lg hidden desktop:block">
@@ -115,7 +115,8 @@ export default function SiteLayout({ children }: any) {
                             true,
                           'text-zinc-800 dark:text-slate-200 hover:text-violet-700 dark:hover:text-white':
                             true,
-                          'text-violet-700 dark:text-violet-400': isActive,
+                          'underline underline-offset-8 decoration-2 decoration-violet-500':
+                            isActive,
                         })}
                       >
                         <item.icon className="mr-4" />

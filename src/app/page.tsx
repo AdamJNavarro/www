@@ -15,7 +15,19 @@ import { getLatestWord } from './data/db/queries';
 import MovieWatched from './home/ActivityDashboard/MovieWatched';
 import ShowWatched from './home/ActivityDashboard/ShowWatched';
 
-const items = [routes.interests, routes.uses, routes.social];
+const showcaseRoutes = [routes.interests, routes.uses, routes.social];
+
+const interestsRoutes = [
+  routes.books,
+  routes.charity,
+  routes.coding,
+  routes.dancing,
+  routes.movies,
+  routes.music,
+  routes.quotes,
+  routes.tv,
+  routes.words,
+];
 
 export default async function HomePage() {
   return (
@@ -23,29 +35,26 @@ export default async function HomePage() {
       <Image
         src="/img/home-photo.jpg"
         priority
-        height={256}
-        width={256}
+        height={240}
+        width={240}
         alt="adam-home-photo"
-        className="rounded-full h-64 w-64 mx-auto mb-12"
+        className="rounded-full h-60 w-60 mx-auto mb-8"
       />
       <div className="text-center mb-16">
-        <h1 className="font-semibold text-xl text-black dark:text-white desktop:text-2xl">
-          Adam Navarro
-        </h1>
-        <p className="font-light text-lg text-zinc-800 dark:text-zinc-400 desktop:text-xl">
+        <p className="font-medium text-xl text-zinc-800 dark:text-violet-400 desktop:text-2xl">
           Find Passion. Foster Passion.
         </p>
       </div>
-      <div className="grid desktop:hidden gap-x-4 desktop:gap-x-8 grid-cols-3 w-full justify-between mb-16">
-        {items.map((item) => (
+      <div className="grid gap-x-4 desktop:gap-x-8 grid-cols-3 w-full justify-between mb-16">
+        {showcaseRoutes.map((item) => (
           <Navigation.Tile key={item.label} {...item} />
         ))}
       </div>
 
-      {/* <DummyProseSection /> */}
+      <DummyProseSection />
 
-      <div>
-        <h2 className="text-center font-semibold text-lg text-black mb-12 dark:text-white desktop:text-xl">
+      <div className="mb-16">
+        <h2 className="text-center font-semibold text-xl text-black mb-8 dark:text-white desktop:text-xl">
           Latest Activity
         </h2>
 
@@ -65,6 +74,20 @@ export default async function HomePage() {
           <Suspense fallback={<Dashboard.Loading />}>
             <LatestSpotifyTrack />
           </Suspense>
+        </div>
+      </div>
+
+      <div>
+        <h2
+          id="interests"
+          className="text-center font-semibold text-xl text-black mb-8 dark:text-white desktop:text-xl"
+        >
+          Interests
+        </h2>
+        <div className="grid gap-1.5 grid-cols-2  tablet:grid-cols-3">
+          {interestsRoutes.map((item) => (
+            <Navigation.Tile key={item.label} {...item} />
+          ))}
         </div>
       </div>
     </section>
@@ -107,7 +130,7 @@ async function LatestSpotifyTrack() {
 
 function DummyProseSection() {
   return (
-    <div className="prose dark:prose-invert">
+    <div className="prose dark:prose-invert mx-auto mb-16">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis
@@ -120,7 +143,7 @@ function DummyProseSection() {
         Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Faucibus
         interdum posuere lorem ipsum.
       </p>
-      <p>
+      {/* <p>
         Massa tempor nec feugiat nisl pretium. At in tellus integer feugiat
         scelerisque varius. Sem viverra aliquet eget sit amet tellus cras adipiscing.
         Tellus orci ac auctor augue mauris. Sit amet commodo nulla facilisi nullam
@@ -132,7 +155,7 @@ function DummyProseSection() {
         fringilla ut. Velit euismod in pellentesque massa placerat duis ultricies.
         Nibh ipsum consequat nisl vel. Libero enim sed faucibus turpis in eu mi
         bibendum. Purus in massa tempor nec feugiat nisl.
-      </p>
+      </p> */}
     </div>
   );
 }

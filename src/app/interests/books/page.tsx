@@ -1,29 +1,18 @@
-import Link from 'next/link';
-import { Anchor } from '@mantine/core';
 import routes from '~/app/config/routes';
-import { Page } from '~/components/common';
-import { SocialUrls } from '~/app/social/Social.data';
-
-import Literal from './Literal';
 
 export const { metadata } = routes.books;
 
 export default async function BooksPage() {
   return (
-    <Page.Container>
-      <Page.Content>
-        <Page.Header>
-          <Page.Title>Books</Page.Title>
-          <Page.Description>
-            A peek into my literary tastes. Data provided by{' '}
-            <Anchor component={Link} href={SocialUrls.literal} target="_blank">
-              Literal
-            </Anchor>
-            .
-          </Page.Description>
-        </Page.Header>
-        <Literal />
-      </Page.Content>
-    </Page.Container>
+    <section>
+      <div className="mb-16">
+        <h1 className="font-bold text-lg text-black dark:text-white desktop:text-2xl">
+          Reading
+        </h1>
+        <p className="text-md text-zinc-800 dark:text-slate-300 prose dark:prose-invert">
+          A peek into my reading likes and consumption.
+        </p>
+      </div>
+    </section>
   );
 }

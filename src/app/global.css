@@ -2,8 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer base {
+  h2 {
+    @apply font-semibold text-lg text-black dark:text-white desktop:text-2xl;
+  }
+  h3 {
+    @apply font-medium text-base text-black dark:text-white desktop:text-xl;
+  }
+} */
+
+@layer components {
+  .pg-title {
+    @apply font-bold text-2xl text-black dark:text-white desktop:text-3xl;
+  }
+
+  .pg-desc {
+    @apply text-base text-zinc-800 dark:text-slate-300;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.prose h2,
+h3,
+h4 {
+  @apply tracking-tight !important;
+}
+
+.prose h1 + p {
+  @apply -mt-6 leading-snug text-zinc-800 dark:text-slate-300;
+}
+
+.prose h2 + p {
+  @apply -mt-6 leading-snug text-zinc-800 dark:text-slate-300;
+}
+
+.prose h3 + p {
+  @apply -mt-4 leading-snug text-zinc-800 dark:text-slate-300;
+}
+
+.prose a {
+  @apply no-underline dark:text-violet-400 hover:underline break-words;
 }

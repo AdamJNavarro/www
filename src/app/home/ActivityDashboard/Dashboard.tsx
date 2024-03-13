@@ -13,8 +13,12 @@ const logoSize = 24;
 
 function Card({ href, label, logo, children }: DashboardCardProps) {
   return (
-    <Link href={href} target="_blank" className="rounded-md p-4 bg-slate-900/60">
-      <div className="flex flex-1 items-center justify-between gap-4 mb-4">
+    <Link
+      href={href}
+      target="_blank"
+      className="rounded-md p-4 bg-slate-900/80 flex flex-col justify-between"
+    >
+      <div className="flex items-center justify-between gap-4 mb-4 ">
         <div className="flex items-center justify-start gap-4">
           <Image
             src={logo}
@@ -25,10 +29,10 @@ function Card({ href, label, logo, children }: DashboardCardProps) {
           />
           <div className="text-xl text-slate-100">{label}</div>
         </div>
-        <IconArrowUpRight size={20} />
+        <IconArrowUpRight size={20} className="text-slate-400" />
       </div>
 
-      <div className="flex flex-col justify-center">{children}</div>
+      <div className="flex flex-col justify-center ">{children}</div>
     </Link>
   );
 }
