@@ -22,7 +22,7 @@
     "@mantine/hooks": "^7.6.1",
     "@mantine/next": "^6.0.21",
     "@spotify/web-api-ts-sdk": "^1.2.0",
-    "@tabler/icons-react": "^2.47.0",
+    "@tabler/icons-react": "^3.1.0",
     "@vercel/postgres": "^0.7.2",
     "@vercel/speed-insights": "^1.0.10",
     "dayjs": "^1.11.10",
