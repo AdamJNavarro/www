@@ -1,4 +1,3 @@
-import { Section } from '~/components/common';
 import LetterboxdList from './LetterboxdList';
 
 const favorites = [
@@ -29,14 +28,5 @@ const favorites = [
 ];
 
 export default function LetterboxdFavorites() {
-  return (
-    <Section.Container>
-      <Section.Header>
-        <Section.Title>Letterboxd Top 4</Section.Title>
-      </Section.Header>
-      <Section.Content>
-        <LetterboxdList data={favorites} />
-      </Section.Content>
-    </Section.Container>
-  );
+  return <LetterboxdList data={favorites} />;
 }

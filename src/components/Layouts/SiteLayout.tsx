@@ -130,7 +130,7 @@ export default function SiteLayout({ children }: any) {
         </div>
         {/* Probably want to set a max-width here to handle large monitor layouts */}
         <div className="flex overflow-y-auto flex-col">
-          <div className="flex-auto flex flex-col pt-12 pb-16 px-6 desktop:px-4 desktop:pt-16 desktop:mx-24">
+          <div className="flex-auto flex flex-col pt-12 pb-16 px-shell desktop:pt-16 desktop:mx-24">
             {children}
           </div>
         </div>

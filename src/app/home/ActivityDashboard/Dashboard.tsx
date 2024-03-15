@@ -16,7 +16,7 @@ function Card({ href, label, logo, children }: DashboardCardProps) {
     <Link
       href={href}
       target="_blank"
-      className="rounded-md p-4 bg-slate-900/80 flex flex-col justify-between dark:border dark:border-slate-800 dark:hover:bg-slate-900"
+      className="rounded-md p-4 flex flex-col justify-between bg-surface border-surface hover-surface"
     >
       <div className="flex items-center justify-between gap-4 mb-4 ">
         <div className="flex items-center justify-start gap-4">
@@ -27,9 +27,9 @@ function Card({ href, label, logo, children }: DashboardCardProps) {
             alt={`dashboard ${label} icon`}
             className="h-6 w-6"
           />
-          <div className="text-xl text-slate-100">{label}</div>
+          <div className="text-xl text-surface-primary">{label}</div>
         </div>
-        <IconArrowUpRight size={20} className="text-slate-400" />
+        <IconArrowUpRight size={20} className="text-surface-tertiary" />
       </div>
 
       <div className="flex flex-col justify-center ">{children}</div>
@@ -39,11 +39,11 @@ function Card({ href, label, logo, children }: DashboardCardProps) {
 
 function Loading() {
   return (
-    <div className="rounded-md p-4 bg-zinc-900 animate-pulse">
+    <div className="rounded-md p-4 bg-surface animate-pulse">
       <div className="flex flex-1 items-center justify-between gap-4 mb-4">
         <div className="flex items-center justify-start gap-4">
           <div className="h-6 w-6" />
-          <div className="text-xl text-zinc-100"></div>
+          <div className="text-xl text-surface-primary"></div>
         </div>
       </div>
 
@@ -56,11 +56,11 @@ function Loading() {
 }
 
 function Title(props) {
-  return <div className="text-md text-slate-100/2" {...props} />;
+  return <div className="text-md text-surface-primary" {...props} />;
 }
 
 function Details(props) {
-  return <div className="text-sm text-slate-300/95" {...props} />;
+  return <div className="text-sm text-surface-secondary" {...props} />;
 }
 
 const Dashboard = {

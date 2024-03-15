@@ -7,13 +7,13 @@ export const { metadata } = routes.quotes;
 
 export default async function QuotesPage() {
   return (
-    <div className="prose dark:prose-invert">
-      <div className="mb-16">
+    <section>
+      <div className="prose mb-16">
         <h1>Quotes</h1>
         <p>A collection of my favorite words of wisdom.</p>
       </div>
       {/* <QuotesList /> */}
       <Literal />
-    </div>
+    </section>
   );
 }

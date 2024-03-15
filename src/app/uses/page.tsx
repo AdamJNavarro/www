@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getLogoPath, sortByAbc } from '~/utils';
 import routes from '../config/routes';
 import { Tag, UsesItem, computerUsesItems, miscUsesItems } from './uses.data';
+import { Page, Section } from '~/components/Layouts/Page';
 
 export const { metadata } = routes.uses;
 
@@ -12,20 +13,20 @@ const tagClass =
 export default async function UsesPage() {
   return (
     <div>
-      <div className="prose dark:prose-invert mb-16">
-        <h1>Uses</h1>
+      <Page.Header>
+        <Page.Title>Uses</Page.Title>
         <p>A collection of products I use.</p>
-      </div>
-      <div className="prose dark:prose-invert mb-12">
-        <h2>Computer</h2>
-      </div>
-      <div className="mt-8 mb-16">
+      </Page.Header>
+      <Section.Header>
+        <Section.Title>Computer</Section.Title>
+      </Section.Header>
+      <div className="mb-16">
         <UsesList items={computerUsesItems} />
       </div>
-      <div className="prose dark:prose-invert mb-12">
-        <h2>Lifestyle & Misc.</h2>
-      </div>
-      <div className="mt-8">
+      <Section.Header>
+        <Section.Title>Lifestyle & Misc.</Section.Title>
+      </Section.Header>
+      <div>
         <UsesList items={miscUsesItems} />
       </div>
     </div>
@@ -42,7 +43,7 @@ function UsesList({ items }: { items: UsesItem[] }) {
           <Link
             href={href}
             key={name}
-            className="flex items-center py-6 px-2 tablet:bg-slate-900/80 tablet:rounded-md dark:tablet:border dark:border-slate-800"
+            className="flex items-center py-6 px-2 bg-surface border-surface hover-surface tablet:rounded-md"
           >
             <div className="flex-initial flex-shrink-0 justify-center mr-3">
               <Image
@@ -54,16 +55,19 @@ function UsesList({ items }: { items: UsesItem[] }) {
               />
             </div>
             <div className="flex flex-col justify-center mr-2">
-              <div className="mb-0.5 text-lg font-medium desktop:text-xl">
+              <div className="text-surface-primary mb-0.5 text-lg font-medium desktop:text-xl">
                 {name}
               </div>
-              <div className="text-slate-300/95 text-sm leading-tight">
+              <div className="text-surface-secondary text-sm leading-tight">
                 {details}
               </div>
               {tags && (
                 <div className="flex flex-wrap gap-1.5 mt-3 sm:mt-3 opacity-90">
                   {tags.map((tag) => (
-                    <span className={`${tagClass} ${getUsesBadgeColor(tag)}`}>
+                    <span
+                      key={`${name}-${tag}-tag`}
+                      className={`${tagClass} ${getUsesBadgeColor(tag)}`}
+                    >
                       {tag}
                     </span>
                   ))}
