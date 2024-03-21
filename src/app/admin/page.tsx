@@ -15,8 +15,8 @@ export default async function AdminPage() {
   }
 
   return (
-    <>
+    <div>
       <AdminSignOut />
-    </>
+    </div>
   );
 }

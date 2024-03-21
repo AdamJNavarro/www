@@ -2,7 +2,6 @@ import './global.css';
 import { Metadata, Viewport } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import SiteLayout from '~/components/Layouts/SiteLayout';
-import ThemeWrapper from '~/components/Layouts/ThemeProvider';
 
 const baseUrl = new URL('https://adamjnavarro.com');
 
@@ -40,19 +39,16 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
-  //themeColor: theme.other.colors.root,
+  themeColor: '#020617',
 };
 
 export default function App({ children }: { children: any }) {
   return (
-    <html lang="en" suppressHydrationWarning className="bg-transparent">
-      <head></head>
-      <ThemeWrapper>
-        <body className="antialiased">
-          <SiteLayout>{children}</SiteLayout>
-          <SpeedInsights />
-        </body>
-      </ThemeWrapper>
+    <html lang="en" className="dark">
+      <body className="antialiased">
+        <SiteLayout>{children}</SiteLayout>
+        <SpeedInsights />
+      </body>
     </html>
   );
 }

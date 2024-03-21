@@ -23,8 +23,8 @@ const Page = {
   Title,
 };
 
-function SectionHeader({ children, ...rest }) {
-  const fullClasses = classNames('prose mb-8', rest.className);
+function ContentHeader({ children, ...rest }) {
+  const fullClasses = classNames('prose', rest.className);
   return (
     <div {...rest} className={fullClasses}>
       {children}
@@ -32,7 +32,7 @@ function SectionHeader({ children, ...rest }) {
   );
 }
 
-function SectionTitle({ children, ...rest }) {
+function ContentTitle({ children, ...rest }) {
   const fullClasses = classNames(rest.className);
   return (
     <h2 {...rest} className={fullClasses}>
@@ -41,9 +41,9 @@ function SectionTitle({ children, ...rest }) {
   );
 }
 
-const Section = {
-  Header: SectionHeader,
-  Title: SectionTitle,
+const Content = {
+  Header: ContentHeader,
+  Title: ContentTitle,
 };
 
-export { Page, Section };
+export { Page, Content };

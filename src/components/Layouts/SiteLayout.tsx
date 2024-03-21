@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 import { twJoin } from 'tailwind-merge';
 import { navbarRoutes } from '~/app/config/routes';
 import { useDisclosure } from '~/utils/Hooks';
-import ThemeToggle from './ThemeToggle';
 
 function useActivePath(): (href: string) => boolean {
   const pathname = usePathname();
@@ -58,12 +57,10 @@ export default function SiteLayout({ children }: any) {
   const headerTitle = useActiveRouteLabel();
   const checkActivePath = useActivePath();
 
-  // header #050505   sidebar: #080808
-
   return (
     <main className="min-h-screen grid grid-rows-header bg-white dark:bg-slate-950">
       <div>
-        <header className="bg-zinc-50 border-b border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-slate-950 flex w-full fixed z-[200] h-16">
+        <header className="bg-zinc-50 border-b border-zinc-900/10 dark:border-slate-800 dark:bg-slate-950 flex w-full fixed z-[200] h-16">
           <div className="h-100 pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
             <div className="flex flex-row items-center justify-start gap-4">
               <p className="text-black dark:text-white font-bold text-lg block capitalize desktop:hidden">
@@ -74,7 +71,6 @@ export default function SiteLayout({ children }: any) {
               </p>
             </div>
             <div className="flex flex-row items-center gap-4">
-              <ThemeToggle />
               <BurgerButton
                 isOpen={menuOpened}
                 onClick={toggleMenu}
@@ -89,7 +85,7 @@ export default function SiteLayout({ children }: any) {
           <nav
             className={classNames({
               'flex flex-col py-4 px-2': true, // layout
-              'bg-zinc-50 border-r border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-slate-950':
+              'bg-zinc-50 border-r border-zinc-900/10 dark:border-slate-800 dark:bg-slate-950':
                 true, // colors
               'top-16 l-0 z-[200] fixed': true, // positioning
               'h-[calc(100vh_-_96px)] w-full desktop:w-sidebar': true, // for height and width

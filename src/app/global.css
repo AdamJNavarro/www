@@ -2,22 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  h2 {
-    @apply font-semibold text-lg text-black dark:text-white desktop:text-2xl;
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
   }
-  h3 {
-    @apply font-medium text-base text-black dark:text-white desktop:text-xl;
-  }
-} */
+}
 
-@layer components {
-  .pg-title {
-    @apply font-bold text-2xl text-black dark:text-white desktop:text-3xl;
-  }
-
-  .pg-desc {
-    @apply text-base text-zinc-800 dark:text-slate-300;
+/* Temporarily disable light mode until styling has been implemented */
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
   }
 }
 
@@ -66,7 +60,7 @@
 .prose h2,
 h3,
 h4 {
-  @apply tracking-tight !important;
+  @apply dark:text-slate-200 tracking-tight !important;
 }
 
 .prose h1 + p {

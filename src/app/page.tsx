@@ -2,36 +2,31 @@ import Image from 'next/image';
 import { Suspense } from 'react';
 import routes from './config/routes';
 import Navigation from '~/components/common/Navigation';
-import BookRead from './home/ActivityDashboard/BookRead';
+import BookRead from './home/BookRead';
 import { getLatestStarredRepo } from './data/github';
 import { getLatestStravaActivity } from './data/strava';
 import { getLatestLikedSongs } from './data/spotify';
-import WordLearned from './home/ActivityDashboard/WordLearned';
-import StravaSession from './home/ActivityDashboard/StravaSession';
-import StarredRepo from './home/ActivityDashboard/StarredRepo';
-import SongLiked from './home/ActivityDashboard/SongLiked';
-import Dashboard from './home/ActivityDashboard/Dashboard';
+import WordLearned from './home/WordLearned';
+import StravaSession from './home/StravaSession';
+import StarredRepo from './home/StarredRepo';
+import SongLiked from './home/SongLiked';
+import Dashboard from './home/Dashboard';
 import { getLatestWord } from './data/db/queries';
-import MovieWatched from './home/ActivityDashboard/MovieWatched';
-import ShowWatched from './home/ActivityDashboard/ShowWatched';
-
-const showcaseRoutes = [routes.interests, routes.uses, routes.social];
+import MovieWatched from './home/MovieWatched';
+import ShowWatched from './home/ShowWatched';
 
 const interestsRoutes = [
   routes.books,
-  routes.charity,
-  routes.coding,
   routes.dancing,
   routes.movies,
   routes.music,
-  routes.quotes,
   routes.tv,
   routes.words,
 ];
 
 export default async function HomePage() {
   return (
-    <section>
+    <div>
       <Image
         src="/img/home-photo.jpg"
         priority
@@ -41,18 +36,19 @@ export default async function HomePage() {
         className="rounded-full h-60 w-60 mx-auto mb-8"
       />
       <div className="text-center mb-16">
-        <p className="font-medium text-xl text-zinc-800 dark:text-sky-200 desktop:text-2xl">
+        <p className="font-medium text-xl text-zinc-800 dark:text-slate-300 desktop:text-2xl">
           Find Passion. Foster Passion.
         </p>
       </div>
 
       <DummyProseSection />
 
-      <div className="mb-16">
-        <h2 className="text-center font-semibold text-xl text-black mb-8 dark:text-white desktop:text-xl">
+      <div>
+        <h2 className="text-center font-bold tracking-tight text-2xl dark:text-slate-200">
           Latest Activity
         </h2>
-
+      </div>
+      <div className="mt-8 mb-24">
         <div className="grid gap-4 grid-cols-1 desktop:grid-cols-2">
           <BookRead />
           <MovieWatched />
@@ -75,17 +71,19 @@ export default async function HomePage() {
       <div>
         <h2
           id="interests"
-          className="text-center font-semibold text-xl text-black mb-8 dark:text-white desktop:text-xl"
+          className="text-center font-bold tracking-tight text-2xl dark:text-slate-200"
         >
           Interests
         </h2>
+      </div>
+      <div className="mt-8 mb-24">
         <div className="grid gap-1.5 grid-cols-2  tablet:grid-cols-3">
           {interestsRoutes.map((item) => (
             <Navigation.Tile key={item.label} {...item} />
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
