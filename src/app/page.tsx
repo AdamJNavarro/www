@@ -27,7 +27,7 @@ const interestsRoutes = [
 
 export default async function HomePage() {
   return (
-    <div>
+    <div data-cy="home-page">
       <Image
         src="/img/home-photo.jpg"
         priority
