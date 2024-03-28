@@ -35,14 +35,14 @@ const favorites = [
   },
 ];
 
-function Callout(props) {
-  return (
-    <div className="px-4 py-3 border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm flex items-center text-neutral-900 dark:text-neutral-100 mb-8">
-      <div className="flex items-center w-4 mr-4">{props.emoji}</div>
-      <div className="w-full callout">{props.children}</div>
-    </div>
-  );
-}
+// function Callout(props) {
+//   return (
+//     <div className="px-4 py-3 border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm flex items-center text-neutral-900 dark:text-neutral-100 mb-8">
+//       <div className="flex items-center w-4 mr-4">{props.emoji}</div>
+//       <div className="w-full callout">{props.children}</div>
+//     </div>
+//   );
+// }
 
 export default async function MoviesPage() {
   return (
@@ -54,22 +54,17 @@ export default async function MoviesPage() {
           <a href={SocialUrls.letterboxd} target="_blank" rel="noopener noreferrer">
             Letterboxd
           </a>
+          .
         </p>
       </Page.Header>
 
       <p className="prose mb-24">
-        Natoque penatibus et magnis dis parturient montes nascetur. Enim praesent
-        elementum facilisis leo vel fringilla est ullamcorper. Rhoncus urna neque
-        viverra justo nec ultrices dui sapien eget. Felis donec et odio pellentesque
-        diam volutpat commodo sed. Ornare aenean euismod elementum nisi quis eleifend
-        quam adipiscing. Faucibus interdum posuere lorem ipsum.
+        I wouldn't classify myself as a cinephile but I'd say I am teetering right on
+        the edge. Going to the theater is a weekly ritual and it isn't often that I
+        miss a week. As a result, sometimes you end up seeing some less-than-stellar
+        films but there is simply something magical about the cinema for me. The
+        popcorn. The sound. The immersion.
       </p>
-
-      {/* <Callout emoji="💡">
-        Felis donec et odio pellentesque diam volutpat commodo sed. Ornare aenean
-        euismod elementum nisi quis eleifend quam adipiscing. Faucibus interdum
-        posuere lorem ipsum.
-      </Callout> */}
 
       <Content.Header>
         <Content.Title>All-Time Favorites</Content.Title>
@@ -79,12 +74,10 @@ export default async function MoviesPage() {
       </div>
 
       <p className="prose mb-24">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis
-        bibendum. Quis blandit turpis cursus in hac. Ac odio tempor orci dapibus.
-        Ornare lectus sit amet est. Sed vulputate odio ut enim blandit. Elementum
-        nibh tellus molestie nunc non blandit massa enim nec. Natoque penatibus et
-        magnis dis parturient montes nascetur.
+        As you can see, Peter Jackson's Lord of the Rings trilogy holds a special
+        place in my heart. Frank Darabont's Shawshank is another film that left an
+        indelible mark on me. Letterboxd only allows for a Top 4 but I'll be creating
+        a custom list and adding more entries in the future.
       </p>
 
       <Content.Header>
@@ -93,13 +86,6 @@ export default async function MoviesPage() {
       <div className="mt-8 mb-12">
         <LetterboxdList data={watched} />
       </div>
-      <p className="prose mb-24">
-        Natoque penatibus et magnis dis parturient montes nascetur. Enim praesent
-        elementum facilisis leo vel fringilla est ullamcorper. Rhoncus urna neque
-        viverra justo nec ultrices dui sapien eget. Felis donec et odio pellentesque
-        diam volutpat commodo sed. Ornare aenean euismod elementum nisi quis eleifend
-        quam adipiscing. Faucibus interdum posuere lorem ipsum.
-      </p>
     </div>
   );
 }

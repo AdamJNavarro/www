@@ -3,7 +3,6 @@
 import classNames from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { twJoin } from 'tailwind-merge';
 import { navbarRoutes } from '~/app/config/routes';
 import { useDisclosure } from '~/utils/Hooks';
 
@@ -27,8 +26,8 @@ function useActiveRouteLabel(): string {
   return pathname?.substring(pathname.lastIndexOf('/') + 1);
 }
 
-const BurgerButton = ({ customClass, isOpen, onClick }: any) => (
-  <button type="button" className={twJoin('h-5 w-5', customClass)} onClick={onClick}>
+const BurgerButton = ({ isOpen, onClick }: any) => (
+  <button type="button" className="h-5 w-5 block desktop:hidden" onClick={onClick}>
     <div className="sr-only">{isOpen ? 'Close menu' : 'Open menu'}</div>
     <div
       aria-hidden="true"
@@ -58,7 +57,7 @@ export default function SiteLayout({ children }: any) {
   const checkActivePath = useActivePath();
 
   return (
-    <main className="min-h-screen grid grid-rows-header bg-white dark:bg-slate-950">
+    <main className="min-h-screen grid grid-rows-header">
       <div>
         <header className="bg-zinc-50 border-b border-zinc-900/10 dark:border-slate-800 dark:bg-slate-950 flex w-full fixed z-[200] h-16">
           <div className="h-100 pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
@@ -71,11 +70,7 @@ export default function SiteLayout({ children }: any) {
               </p>
             </div>
             <div className="flex flex-row items-center gap-4">
-              <BurgerButton
-                isOpen={menuOpened}
-                onClick={toggleMenu}
-                customClass="block desktop:hidden"
-              />
+              <BurgerButton isOpen={menuOpened} onClick={toggleMenu} />
             </div>
           </div>
         </header>

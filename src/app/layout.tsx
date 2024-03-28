@@ -45,7 +45,7 @@ export const viewport: Viewport = {
 export default function App({ children }: { children: any }) {
   return (
     <html lang="en" className="dark">
-      <body className="antialiased">
+      <body className="antialiased dark:bg-slate-950">
         <SiteLayout>{children}</SiteLayout>
         <SpeedInsights />
       </body>

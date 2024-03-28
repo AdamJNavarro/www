@@ -14,6 +14,7 @@ import Dashboard from './home/Dashboard';
 import { getLatestWord } from './data/db/queries';
 import MovieWatched from './home/MovieWatched';
 import ShowWatched from './home/ShowWatched';
+import Link from 'next/link';
 
 const interestsRoutes = [
   routes.books,
@@ -41,7 +42,7 @@ export default async function HomePage() {
         </p>
       </div>
 
-      <DummyProseSection />
+      <Intro />
 
       <div>
         <h2 className="text-center font-bold tracking-tight text-2xl dark:text-slate-200">
@@ -119,36 +120,18 @@ async function LatestSpotifyTrack() {
   return <SongLiked data={data} />;
 }
 
-//transition-transform duration-200 ease-in-out hover:scale-105
-
-function DummyProseSection() {
+function Intro() {
   return (
     <div className="prose dark:prose-invert mx-auto mb-16">
-      <p className="first-letter:text-3xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis
-        bibendum. Quis blandit turpis cursus in hac. Ac odio tempor orci dapibus.
-        Ornare lectus sit amet est. Sed vulputate odio ut enim blandit. Elementum
-        nibh tellus molestie nunc non blandit massa enim nec. Natoque penatibus et
-        magnis dis parturient montes nascetur. Enim praesent elementum facilisis leo
-        vel fringilla est ullamcorper. Rhoncus urna neque viverra justo nec ultrices
-        dui sapien eget. Felis donec et odio pellentesque diam volutpat commodo sed.
-        Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Faucibus
-        interdum posuere lorem ipsum.
+      <p>
+        Hey there, my name is Adam! I’m a software developer, fitness enthusiast,
+        music & dance lover, and a dog owner to a 4-year-old Soft-coated Wheaten
+        Terrier named Ace. Feel free to explore my website to get to know more about
+        me, my interests and things I have created. You can also reach out to me on
+        any of the platforms listed on my{' '}
+        <Link href={routes.social.href}>socials</Link> page. I’d love to hear from
+        you!
       </p>
-      {/* <p>
-        Massa tempor nec feugiat nisl pretium. At in tellus integer feugiat
-        scelerisque varius. Sem viverra aliquet eget sit amet tellus cras adipiscing.
-        Tellus orci ac auctor augue mauris. Sit amet commodo nulla facilisi nullam
-        vehicula ipsum. Eget velit aliquet sagittis id consectetur purus.
-        Pellentesque adipiscing commodo elit at. Blandit aliquam etiam erat velit.
-        Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Turpis
-        massa sed elementum tempus egestas sed sed risus. Augue neque gravida in
-        fermentum et sollicitudin ac. Scelerisque viverra mauris in aliquam sem
-        fringilla ut. Velit euismod in pellentesque massa placerat duis ultricies.
-        Nibh ipsum consequat nisl vel. Libero enim sed faucibus turpis in eu mi
-        bibendum. Purus in massa tempor nec feugiat nisl.
-      </p> */}
     </div>
   );
 }

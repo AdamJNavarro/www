@@ -39,7 +39,7 @@ function LiteralList({ data }: any) {
         {data.map((item) => (
           <Link
             href={item.url}
-            key={item.name}
+            key={item.title}
             className="flex items-center px-6 py-5 tablet:px-4 tablet:bg-surface tablet:border-surface hover-surface tablet:rounded-md"
           >
             <div className="flex-initial flex-shrink-0 justify-center mr-6">
