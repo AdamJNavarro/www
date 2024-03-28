@@ -1,13 +1,10 @@
 import {
   IconBooks,
-  IconCode,
   IconDeviceTvOld,
-  IconGift,
   IconHome2,
   IconMoodHappy,
   IconMovie,
   IconMusic,
-  IconQuote,
   IconShoe,
   IconSocial,
   IconStack2,
@@ -28,34 +25,16 @@ const routes: RouteConfig = {
   books: {
     icon: IconBooks,
     label: 'Books',
-    href: '/interests/books',
+    href: '/books',
     metadata: {
       title: 'Books',
       description: 'A look into my literary world.',
     },
   },
-  charity: {
-    icon: IconGift,
-    label: 'Charity',
-    href: '/interests/charity',
-    metadata: {
-      title: 'Charity',
-      description: 'Some charity work I have done.',
-    },
-  },
-  coding: {
-    icon: IconCode,
-    label: 'Coding',
-    href: '/interests/coding',
-    metadata: {
-      title: 'Coding',
-      description: 'A look into my coding world.',
-    },
-  },
   dancing: {
     icon: IconShoe,
     label: 'Dancing',
-    href: '/interests/dancing',
+    href: '/dancing',
     metadata: {
       title: 'Dancing',
       description: 'Some of my dancing performances.',
@@ -72,7 +51,7 @@ const routes: RouteConfig = {
   interests: {
     icon: IconMoodHappy,
     label: 'Interests',
-    href: '/interests',
+    href: '/#interests',
     metadata: {
       title: 'Interests',
       description: 'See what I enjoy in life.',
@@ -81,7 +60,7 @@ const routes: RouteConfig = {
   movies: {
     icon: IconMovie,
     label: 'Movies',
-    href: '/interests/movies',
+    href: '/movies',
     metadata: {
       title: 'Movies',
       description: 'A look into my cinematic tastes.',
@@ -90,19 +69,10 @@ const routes: RouteConfig = {
   music: {
     icon: IconMusic,
     label: 'Music',
-    href: '/interests/music',
+    href: '/music',
     metadata: {
       title: 'Music',
       description: 'A peek into my taste in music and podcasts.',
-    },
-  },
-  quotes: {
-    icon: IconQuote,
-    label: 'Quotes',
-    href: '/interests/quotes',
-    metadata: {
-      title: 'Quotes',
-      description: 'Some of my favorite quotes.',
     },
   },
   social: {
@@ -117,7 +87,7 @@ const routes: RouteConfig = {
   tv: {
     icon: IconDeviceTvOld,
     label: 'TV',
-    href: '/interests/tv',
+    href: '/tv',
     metadata: {
       title: 'TV',
       description: 'A look into my tastes in television.',
@@ -135,7 +105,7 @@ const routes: RouteConfig = {
   words: {
     icon: IconTypography,
     label: 'Words',
-    href: '/interests/words',
+    href: '/words',
     metadata: {
       title: 'Words',
       description: 'A collection of words I have learned.',
@@ -143,11 +113,6 @@ const routes: RouteConfig = {
   },
 };
 
-export const navbarRoutes = [
-  routes.home,
-  routes.interests,
-  routes.uses,
-  routes.social,
-];
+export const navbarRoutes = [routes.home, routes.uses, routes.social];
 
 export default routes;

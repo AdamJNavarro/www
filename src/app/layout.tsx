@@ -1,18 +1,16 @@
-import '@mantine/core/styles.css';
-import '@mantine/code-highlight/styles.css';
-import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+import './global.css';
 import { Metadata, Viewport } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import Shell from '~/components/Layouts/Shell';
-import { theme } from './config/theme';
+import SiteLayout from '~/components/Layouts/SiteLayout';
 
 const baseUrl = new URL('https://adamjnavarro.com');
 
 export const metadata: Metadata = {
   metadataBase: baseUrl,
   title: {
-    default: 'Adam Navarro',
-    template: '%s | Adam Navarro',
+    default: process.env.NODE_ENV === 'development' ? 'Localhost' : 'Adam Navarro',
+    template:
+      process.env.NODE_ENV === 'development' ? '%s | Dev' : '%s | Adam Navarro',
   },
   description: 'Software builder, musician and fitness enthusiast.',
   openGraph: {
@@ -41,19 +39,14 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
-  themeColor: theme.other.colors.root,
+  themeColor: '#020617',
 };
 
 export default function App({ children }: { children: any }) {
   return (
-    <html lang="en" style={{ backgroundColor: theme.other.colors.root }}>
-      <head>
-        <ColorSchemeScript forceColorScheme="dark" />
-      </head>
-      <body style={{ backgroundColor: 'transparent' }}>
-        <MantineProvider forceColorScheme="dark" theme={theme}>
-          <Shell>{children}</Shell>
-        </MantineProvider>
+    <html lang="en" className="dark">
+      <body className="antialiased dark:bg-slate-950">
+        <SiteLayout>{children}</SiteLayout>
         <SpeedInsights />
       </body>
     </html>

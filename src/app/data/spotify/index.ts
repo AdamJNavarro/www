@@ -1,6 +1,8 @@
 'use server';
 
 import { SpotifyApi } from '@spotify/web-api-ts-sdk';
+import { unstable_noStore as noStore } from 'next/cache';
+
 import {
   ServerActionPayload,
   buildNamesString,
@@ -40,7 +42,8 @@ async function getAccessToken(): Promise<any> {
 
 export async function getLatestLikedSongs({
   limit,
-}): Promise<ServerActionPayload<SpotifyTrack[] | SpotifyTrack>> {
+}): Promise<ServerActionPayload<SpotifyTrack[]>> {
+  noStore();
   try {
     const token = await getAccessToken();
     const api = SpotifyApi.withAccessToken(client_id, token);
@@ -49,6 +52,7 @@ export async function getLatestLikedSongs({
       const { artists, album, id, name, external_urls } = item.track;
       return {
         artist: buildNamesString(artists, 'name'),
+        dateLiked: item.added_at,
         id,
         image: album.images[0].url,
         name,
@@ -56,7 +60,7 @@ export async function getLatestLikedSongs({
       };
     });
     return {
-      data: limit === 1 ? data[0] : data,
+      data,
       error: null,
     };
   } catch (error) {
@@ -67,11 +71,11 @@ export async function getLatestLikedSongs({
 export async function getSpotifyArtists(): Promise<
   ServerActionPayload<SpotifyArtist[]>
 > {
+  noStore();
   try {
     const token = await getAccessToken();
     const api = SpotifyApi.withAccessToken(client_id, token);
     const { artists } = await api.currentUser.followedArtists();
-
     const data = artists.items.map((item: any) => {
       const { followers, genres, id, images, external_urls, name } = item;
       return {
