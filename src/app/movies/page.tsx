@@ -5,8 +5,15 @@ import routes from '~/app/config/routes';
 import { Page, Content } from '~/components/Layouts/Page';
 import { watched } from './letterboxd/letterboxd.data';
 import { SocialUrls } from '~/app/social/Social.data';
+import Stats from '~/components/common/Stats';
 
 export const { metadata } = routes.movies;
+
+const movieStats = [
+  { label: 'Films', value: 1532 },
+  { label: 'Hours', value: 2873 },
+  { label: 'Directors', value: 836 },
+];
 
 const favorites = [
   {
@@ -65,6 +72,10 @@ export default async function MoviesPage() {
         films but there is simply something magical about the cinema for me. The
         popcorn. The sound. The immersion.
       </p>
+
+      <div className="mb-24">
+        <Stats data={movieStats} />
+      </div>
 
       <Content.Header>
         <Content.Title>All-Time Favorites</Content.Title>
