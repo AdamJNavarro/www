@@ -492,16 +492,6 @@
     },
     {
       "status": "WANTS_TO_READ",
-      "createdAt": "2023-12-19T19:38:14.227Z",
-      "id": "ckrpn35v43631511erugvd0gjw7",
-      "url": "https://literal.club/book/empire-of-grass-7iy6a",
-      "title": "Empire of Grass",
-      "cover": "https://assets.literal.club/1/ckrpn35v43631511erugvd0gjw7.jpg",
-      "isbn": "9781473603257",
-      "authors": "Tad Williams"
-    },
-    {
-      "status": "WANTS_TO_READ",
       "createdAt": "2023-12-19T19:38:49.993Z",
       "id": "clqcqzkjd11593920hu5k0d43zgd",
       "url": "https://literal.club/book/tad-williams-into-the-narrowdark-19vzb",
@@ -521,16 +511,6 @@
       "authors": "Robert M. Sapolsky"
     },
     {
-      "status": "IS_READING",
-      "createdAt": "2024-01-08T20:05:38.381Z",
-      "id": "cks7rxp4v1716631k98c1vf2ma9",
-      "url": "https://literal.club/book/the-witchwood-crown-qezze",
-      "title": "The Witchwood Crown",
-      "cover": "https://assets.literal.club/1/cks7rxp4v1716631k98c1vf2ma9.jpg",
-      "isbn": "9781473603226",
-      "authors": "Tad Williams"
-    },
-    {
       "status": "FINISHED",
       "createdAt": "2024-01-08T20:05:12.773Z",
       "id": "ckuh3bxwu1246184j7aizvffsbc",
@@ -539,7 +519,27 @@
       "cover": "https://assets.literal.club/2/ckuh3bxwu1246184j7aizvffsbc.jpg",
       "isbn": "9780756412685",
       "authors": "Tad Williams"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-03-28T19:21:37.532Z",
+      "id": "cks7rxp4v1716631k98c1vf2ma9",
+      "url": "https://literal.club/book/the-witchwood-crown-qezze",
+      "title": "The Witchwood Crown",
+      "cover": "https://assets.literal.club/1/cks7rxp4v1716631k98c1vf2ma9.jpg",
+      "isbn": "9781473603226",
+      "authors": "Tad Williams"
+    },
+    {
+      "status": "IS_READING",
+      "createdAt": "2024-03-28T19:22:03.613Z",
+      "id": "ckrpn35v43631511erugvd0gjw7",
+      "url": "https://literal.club/book/empire-of-grass-7iy6a",
+      "title": "Empire of Grass",
+      "cover": "https://assets.literal.club/1/ckrpn35v43631511erugvd0gjw7.jpg",
+      "isbn": "9781473603257",
+      "authors": "Tad Williams"
     }
   ],
-  "updatedAt": "2024-02-17T22:56:29.804Z"
+  "updatedAt": "2024-03-28T19:25:46.090Z"
 }

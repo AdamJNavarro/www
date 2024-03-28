@@ -52,12 +52,12 @@ async function getLiteralData() {
   }));
 
   const updatedData = JSON.stringify(
-    { books: updatedValues, updatedAt: new Date() },
+    { updatedAt: new Date(), books: updatedValues },
     null,
     2
   );
 
-  await fs.writeFile('./src/app/data/literal/books.json', updatedData, 'utf-8');
+  await fs.writeFile('./src/app/data/literal/data.json', updatedData, 'utf-8');
 }
 
 getLiteralData();
