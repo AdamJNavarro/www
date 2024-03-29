@@ -3,12 +3,23 @@ import Link from 'next/link';
 import { traktData } from '~/app/data/trakt';
 import TraktPoster from './TraktPoster';
 import { Content } from '~/components/Layouts/Page';
+import Stats from '~/components/common/Stats';
+
+const { watching, watched, favorites, stats } = traktData;
+
+const statsData = [
+  { label: 'Shows', value: stats.shows },
+  { label: 'Episodes', value: stats.episodes },
+  { label: 'Hours', value: Math.round(stats.minutes / 60) },
+];
 
 export default function Trakt() {
-  const { watching, watched, favorites } = traktData;
-
   return (
     <>
+      <div className="mb-24">
+        <Stats data={statsData} />
+      </div>
+
       <Content.Header>
         <Content.Title>All-Time Favorites</Content.Title>
       </Content.Header>
