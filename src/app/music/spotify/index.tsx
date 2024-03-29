@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { ReactElement, Suspense } from 'react';
 import Image from 'next/image';
 
 import Link from 'next/link';
@@ -7,9 +7,9 @@ import {
   getSpotifyArtists,
   getSpotifyPodcasts,
 } from '~/app/data/spotify';
-import { LoadingSpinner } from '~/components/common/pure-html';
-import { formatDate, nFormatter } from '~/utils';
+import { delayFetch, formatDate, nFormatter } from '~/utils';
 import { Content } from '~/components/Layouts/Page';
+import React from 'react';
 
 export default function SpotifyContent() {
   return (
@@ -18,7 +18,7 @@ export default function SpotifyContent() {
         <Content.Title>Favorite Artists</Content.Title>
       </Content.Header>
       <div className="mt-8 mb-16">
-        <Suspense fallback={<LoadingSpinner />}>
+        <Suspense fallback={<SpotifySkeletons count={10} />}>
           <SpotifyArtists />
         </Suspense>
       </div>
@@ -27,7 +27,7 @@ export default function SpotifyContent() {
         <Content.Title>Recently Liked Songs</Content.Title>
       </Content.Header>
       <div className="mt-8 mb-16">
-        <Suspense fallback={<LoadingSpinner />}>
+        <Suspense fallback={<SpotifySkeletons count={6} />}>
           <SpotifyTracks />
         </Suspense>
       </div>
@@ -36,7 +36,7 @@ export default function SpotifyContent() {
         <Content.Title>Favorite Podcasts</Content.Title>
       </Content.Header>
       <div className="mt-8 mb-16">
-        <Suspense fallback={<LoadingSpinner />}>
+        <Suspense fallback={<SpotifySkeletons count={4} />}>
           <SpotifyPodcasts />
         </Suspense>
       </div>
@@ -46,6 +46,7 @@ export default function SpotifyContent() {
 
 async function SpotifyArtists() {
   const { data, error } = await getSpotifyArtists();
+  await delayFetch(5);
 
   if (error) return null;
   if (!data) return null;
@@ -80,7 +81,7 @@ async function SpotifyTracks() {
   if (!data) return null;
 
   return (
-    <div className="flex flex-col space-y-8 bg-transparent">
+    <div className="flex flex-col space-y-8">
       {data.map((item) => (
         <Link href={item.url} key={item.name} className="flex items-center">
           <Image
@@ -110,7 +111,7 @@ async function SpotifyPodcasts() {
   if (!data) return null;
 
   return (
-    <div className="flex flex-col space-y-8 bg-transparent">
+    <div className="flex flex-col space-y-8">
       {data.map((item) => (
         <Link href={item.url} key={item.name} className="flex items-center">
           <Image
@@ -131,4 +132,29 @@ async function SpotifyPodcasts() {
       ))}
     </div>
   );
+}
+
+function SpotifySkeletons({ count }: { count: number }) {
+  const elements: ReactElement[] = [];
+
+  const countCeil = Math.ceil(count);
+
+  for (let i = 0; i < countCeil; i++) {
+    const skeletonSpan = (
+      <span
+        className="h-12 w-12 bg-surface animate-pulse dark:border dark:border-slate-800"
+        key={i}
+      >
+        &zwnj;
+      </span>
+    );
+    elements.push(
+      <React.Fragment key={i}>
+        {skeletonSpan}
+        <br />
+      </React.Fragment>
+    );
+  }
+
+  return <div className="flex flex-col space-y-8">{elements}</div>;
 }
