@@ -7,7 +7,7 @@ import {
   getSpotifyArtists,
   getSpotifyPodcasts,
 } from '~/app/data/spotify';
-import { delayFetch, formatDate, nFormatter } from '~/utils';
+import { formatDate, nFormatter } from '~/utils';
 import { Content } from '~/components/Layouts/Page';
 import React from 'react';
 
@@ -46,7 +46,6 @@ export default function SpotifyContent() {
 
 async function SpotifyArtists() {
   const { data, error } = await getSpotifyArtists();
-  await delayFetch(5);
 
   if (error) return null;
   if (!data) return null;
