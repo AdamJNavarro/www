@@ -54,7 +54,7 @@
 }
 
 .prose {
-  @apply dark:prose-invert;
+  @apply dark:prose-slate dark:prose-invert;
 }
 
 .prose h2,

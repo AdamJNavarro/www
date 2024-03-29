@@ -14,6 +14,7 @@ export type LiteralBook = {
   url: string;
   title: string;
   isbn: string;
+  pageCount: number;
   cover: string;
   authors: string;
 };
@@ -25,10 +26,10 @@ export const literalData = data as {
 
 export function getLiteralBooksByStatus(
   status: LiteralStatus,
-  limit: number
+  limit?: number
 ): LiteralBook[] {
   const matchingBooks = literalData.books.filter((book) => book.status === status);
-  return matchingBooks.slice(-limit);
+  return limit ? matchingBooks.slice(-limit) : matchingBooks;
 }
 
 export const lastBookFinished = literalData.books.findLast(

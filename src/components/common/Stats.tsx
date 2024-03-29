@@ -2,7 +2,7 @@ type StatsData = { label: string; value: number }[];
 
 export default function Stats({ data }: { data: StatsData }) {
   return (
-    <div className="grid grid-cols-3 gap-x-4 tablet:gap-x-8">
+    <div className="grid grid-flow-col auto-cols-fr gap-x-4 tablet:gap-x-8">
       {data.map((item) => (
         <div
           key={item.label}

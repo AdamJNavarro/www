@@ -20,6 +20,7 @@ const query = `
         title
         isbn13
         cover
+        pageCount
         authors {
           id
           name
@@ -48,6 +49,7 @@ async function getLiteralData() {
     title: entry.book.title,
     cover: entry.book.cover,
     isbn: entry.book.isbn13,
+    pageCount: entry.book.pageCount,
     authors: buildNamesString(entry.book.authors, 'name'),
   }));
 
