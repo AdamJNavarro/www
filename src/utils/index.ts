@@ -38,14 +38,12 @@ export function formatDate(date: string) {
   }
 
   const fullDate = targetDate.toLocaleString('en-us', {
-    month: 'long',
+    month: 'numeric',
     day: 'numeric',
-    year: 'numeric',
+    year: '2-digit',
   });
 
-  return formattedDate;
-
-  return `${fullDate} (${formattedDate})`;
+  return formattedDate.includes('d') ? formattedDate : fullDate;
 }
 
 export function nFormatter(num: number, digits: number) {
