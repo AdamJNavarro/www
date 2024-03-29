@@ -20,7 +20,7 @@ export default function TraktPoster({ posterId, title }: TraktPosterProps) {
   }, []);
 
   if (!posterUrl) {
-    return null;
+    return <div className="animate-pulse w-16 h-24 dark:bg-slate-800/60" />;
   }
 
   return (
