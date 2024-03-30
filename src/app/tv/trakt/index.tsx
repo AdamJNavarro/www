@@ -5,7 +5,8 @@ import TraktPoster from './TraktPoster';
 import { Content } from '~/components/Layouts/Page';
 import Stats from '~/components/common/Stats';
 
-const { watching, watched, favorites, stats } = traktData;
+const { watching, watched, favorites, stats, genres } = traktData;
+const highestGenreTotal = genres.reduce((a, b) => (a.total > b.total ? a : b)).total;
 
 const statsData = [
   { label: 'Shows', value: stats.shows },
@@ -40,6 +41,14 @@ export default function Trakt() {
       <div className="mt-8 mb-16">
         <TraktList data={watched.slice(0, 4)} />
       </div>
+
+      <Content.Header>
+        <Content.Title>Genres Breakdown</Content.Title>
+      </Content.Header>
+
+      <div className="mt-12 mb-24">
+        <Genres />
+      </div>
     </>
   );
 }
@@ -66,6 +75,32 @@ function TraktList({ data }: any) {
           </Link>
         ))}
       </div>
+    </div>
+  );
+}
+
+function Genres() {
+  return (
+    <div className="flex flex-col space-y-3 desktop:w-1/2">
+      {genres.map((item) => {
+        const barWidth = (item.total / highestGenreTotal) * 100;
+        const finalWidth = barWidth < 100 ? barWidth + 5 : barWidth;
+        return (
+          <div key={item.genre} className="flex">
+            <div className="flex-1">
+              <div className="text-base font-medium capitalize text-slate-200">
+                {item.genre}
+              </div>
+            </div>
+            <div className="flex-1">
+              <div
+                className="h-6 bg-sky-600 rounded-sm"
+                style={{ width: `${finalWidth}%` }}
+              />
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
