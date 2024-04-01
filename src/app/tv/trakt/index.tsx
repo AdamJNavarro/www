@@ -1,9 +1,10 @@
 import Link from 'next/link';
 
 import { traktData } from '~/app/data/trakt';
-import TraktPoster from './TraktPoster';
+import { TraktPoster, TraktPosterLoading } from './TraktPoster';
 import { Content } from '~/components/Layouts/Page';
 import Stats from '~/components/common/Stats';
+import { Suspense } from 'react';
 
 const { watching, watched, favorites, stats, genres } = traktData;
 const highestGenreTotal = genres.reduce((a, b) => (a.total > b.total ? a : b)).total;
@@ -64,7 +65,9 @@ function TraktList({ data }: any) {
             className="flex items-center px-6 py-5 tablet:px-4 tablet:bg-surface tablet:border-surface hover-surface tablet:rounded-md"
           >
             <div className="flex-initial flex-shrink-0 justify-center mr-6">
-              <TraktPoster posterId={item.showIds.tmdb} title={item.title} />
+              <Suspense fallback={<TraktPosterLoading />}>
+                <TraktPoster posterId={item.showIds.tmdb} title={item.title} />
+              </Suspense>
             </div>
             <div className="flex flex-col justify-center">
               <div className="text-surface-primary leading-tight mb-2 text-base">
