@@ -4,8 +4,8 @@ import routes from '~/app/config/routes';
 
 import { Page, Content } from '~/components/Layouts/Page';
 import { watched } from './letterboxd/letterboxd.data';
-import { SocialUrls } from '~/app/social/Social.data';
 import Stats from '~/components/common/Stats';
+import { DataAttribution } from '~/components/common/Attribution';
 
 export const { metadata } = routes.movies;
 
@@ -42,27 +42,12 @@ const favorites = [
   },
 ];
 
-// function Callout(props) {
-//   return (
-//     <div className="px-4 py-3 border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm flex items-center text-neutral-900 dark:text-neutral-100 mb-8">
-//       <div className="flex items-center w-4 mr-4">{props.emoji}</div>
-//       <div className="w-full callout">{props.children}</div>
-//     </div>
-//   );
-// }
-
 export default async function MoviesPage() {
   return (
     <div>
       <Page.Header>
         <Page.Title>Movies</Page.Title>
-        <p>
-          Data provided by{' '}
-          <a href={SocialUrls.letterboxd} target="_blank" rel="noopener noreferrer">
-            Letterboxd
-          </a>
-          .
-        </p>
+        <p>All things related to my love for cinema.</p>
       </Page.Header>
 
       <p className="prose mb-24">
@@ -96,6 +81,10 @@ export default async function MoviesPage() {
       </Content.Header>
       <div className="mt-8 mb-12">
         <LetterboxdList data={watched} />
+      </div>
+
+      <div className="mt-24">
+        <DataAttribution sources={['letterboxd']} />
       </div>
     </div>
   );
