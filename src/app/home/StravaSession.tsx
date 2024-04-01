@@ -1,4 +1,3 @@
-import dayjs from 'dayjs';
 import Dashboard from './Dashboard';
 
 function buildStravaUrl(id: number): string {
@@ -40,7 +39,12 @@ function getSessionDuration(duration: number): string {
 }
 
 function getSessionDate(date: any): string {
-  return `${dayjs(date).format('M/D/YY')}`;
+  const formattedDate = new Date(date).toLocaleString('en-us', {
+    month: 'numeric',
+    day: 'numeric',
+    year: '2-digit',
+  });
+  return formattedDate;
 }
 
 export default function StravaSession({ data }) {
