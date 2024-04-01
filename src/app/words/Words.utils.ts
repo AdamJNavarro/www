@@ -33,7 +33,3 @@ export function getShortenedPartOfSpeech(val: WordPart): string {
   if (val === 'verb') return 'v';
   return 'n';
 }
-
-export function buildMerriamWebsterUrl(word: string): string {
-  return `https://www.merriam-webster.com/dictionary/${encodeURIComponent(word)}`;
-}

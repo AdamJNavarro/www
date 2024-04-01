@@ -12,10 +12,12 @@ interface DashboardCardProps {
 const logoSize = 24;
 
 function Card({ href, label, logo, children }: DashboardCardProps) {
+  const isExternal = !href.startsWith('/') && !href.startsWith('#');
+
   return (
     <Link
       href={href}
-      target="_blank"
+      target={isExternal ? '_blank' : '_self'}
       className="rounded-md p-4 flex flex-col justify-between bg-surface border-surface hover-surface"
     >
       <div className="flex items-center justify-between gap-4 mb-4 ">
@@ -29,7 +31,9 @@ function Card({ href, label, logo, children }: DashboardCardProps) {
           />
           <div className="text-xl text-surface-primary">{label}</div>
         </div>
-        <IconArrowUpRight size={20} className="text-surface-tertiary" />
+        {isExternal && (
+          <IconArrowUpRight size={20} className="text-surface-tertiary" />
+        )}
       </div>
 
       <div className="flex flex-col justify-center ">{children}</div>

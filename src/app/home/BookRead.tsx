@@ -9,7 +9,6 @@ export default function BookRead() {
   return (
     <Dashboard.Card label="Book Read" href={book.url} logo="/img/logos/literal.svg">
       <Dashboard.Title>{book.title}</Dashboard.Title>
-
       <Dashboard.Details>{book.authors}</Dashboard.Details>
     </Dashboard.Card>
   );
