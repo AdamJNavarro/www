@@ -18,6 +18,7 @@ import Link from 'next/link';
 
 const interestsRoutes = [
   routes.books,
+  routes.coding,
   routes.dancing,
   routes.movies,
   routes.music,
@@ -124,12 +125,13 @@ function Intro() {
   return (
     <div className="prose dark:prose-invert mx-auto mb-16">
       <p>
-        Hey there, my name is Adam! I’m a software developer, fitness enthusiast,
-        music & dance lover, and a dog owner to a 4-year-old Soft-coated Wheaten
-        Terrier named Ace. Feel free to explore my website to get to know more about
-        me, my interests and things I have created. You can also reach out to me on
-        any of the platforms listed on my{' '}
-        <Link href={routes.social.href}>socials</Link> page. I’d love to hear from
+        Hey there, my name is Adam! I’m a{' '}
+        <Link href={routes.coding.href}>coder</Link>, fitness enthusiast, music &
+        dance lover, and a dog owner to a 4-year-old Soft-coated Wheaten Terrier
+        named Ace. Feel free to explore my website to get to know more about me, my{' '}
+        <Link href="#interests">interests</Link> and things I have created. You can
+        also reach out to me on any of the platforms listed on my{' '}
+        <Link href={routes.social.href}>social</Link> page. I’d love to hear from
         you!
       </p>
     </div>
