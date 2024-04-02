@@ -1,5 +1,6 @@
 import {
   IconBooks,
+  IconCode,
   IconDeviceTvOld,
   IconHome2,
   IconMoodHappy,
@@ -29,6 +30,15 @@ const routes: RouteConfig = {
     metadata: {
       title: 'Books',
       description: 'A look into my literary world.',
+    },
+  },
+  coding: {
+    icon: IconCode,
+    label: 'Coding',
+    href: '/coding',
+    metadata: {
+      title: 'Coding',
+      description: 'All things coding-related.',
     },
   },
   dancing: {
