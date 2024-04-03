@@ -71,7 +71,7 @@ const Services = {
   ),
 };
 
-// to-add: expo go, android studio, xcode, testflight
+// to-add: expo go, testflight
 const Environment = {
   VSCode: () => <StackItem href="https://code.visualstudio.com/" name="VSCode" />,
   Iterm: () => <StackItem href="https://iterm2.com/" name="iTerm" />,
@@ -79,6 +79,10 @@ const Environment = {
     <StackItem href="https://aws.amazon.com/codewhisperer/" name="Code Whisperer" />
   ),
   OhMyZsh: () => <StackItem href="https://ohmyz.sh/" name="Oh My Zsh" />,
+  AndroidStudio: () => (
+    <StackItem href="https://developer.android.com/studio" name="Android Studio" />
+  ),
+  Xcode: () => <StackItem href="https://developer.apple.com/xcode/" name="Xcode" />,
 };
 
 export { Languages, Frameworks, Services, Environment };

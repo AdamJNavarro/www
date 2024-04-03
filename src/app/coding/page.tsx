@@ -63,6 +63,8 @@ export default async function CodingPage() {
           <Environment.Iterm />
           <Environment.CodeWhisperer />
           <Environment.OhMyZsh />
+          <Environment.AndroidStudio />
+          <Environment.Xcode />
         </TechStackGrid>
       </div>
     </div>
