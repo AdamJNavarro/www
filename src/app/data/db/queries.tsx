@@ -4,6 +4,20 @@ import { sql } from '@vercel/postgres';
 import { unstable_noStore as noStore } from 'next/cache';
 import { handleServerActionError } from '~/utils';
 
+export async function getApiTokens(provider: string): Promise<any> {
+  noStore();
+
+  try {
+    const tokens = (
+      await sql`SELECT  provider, access_token AS "accessToken", refresh_token AS "refreshToken", expiration_date AS "expirationDate" FROM apitokens WHERE provider = ${provider}`
+    ).rows[0];
+    console.log('GAT data', tokens);
+    return tokens;
+  } catch (error) {
+    return handleServerActionError();
+  }
+}
+
 export async function getLatestWord(): Promise<any> {
   noStore();
 

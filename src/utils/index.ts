@@ -66,3 +66,7 @@ export function nFormatter(num: number, digits: number) {
   }
   return (num / si[i].value).toFixed(digits).replace(rx, '$1') + si[i].symbol;
 }
+
+export function unixTimestampToDate(val: number) {
+  return new Date(val * 1000);
+}

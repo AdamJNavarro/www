@@ -6,6 +6,7 @@ import { sql } from '@vercel/postgres';
 import { type Session } from 'next-auth';
 import { unstable_noStore as noStore, revalidatePath } from 'next/cache';
 import { auth } from '~/app/auth';
+import { handleServerActionError } from '~/utils';
 
 async function getSession(): Promise<Session> {
   const session = await auth();
@@ -14,6 +15,24 @@ async function getSession(): Promise<Session> {
   }
 
   return session;
+}
+
+export async function saveApiTokens({
+  provider,
+  accessToken,
+  refreshToken,
+  expirationDate,
+}: any) {
+  noStore();
+  try {
+    const { rows } =
+      await sql`UPDATE apitokens SET access_token = ${accessToken}, refresh_token = ${refreshToken}, expiration_date = ${expirationDate} WHERE provider = ${provider}`;
+    console.log('UPD DATA', rows);
+    return rows[0];
+  } catch (error) {
+    console.log('Save tokens err', error);
+    handleServerActionError();
+  }
 }
 
 export async function addWord(formData: FormData) {
