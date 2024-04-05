@@ -38,7 +38,7 @@ async function WordBank() {
         {data.map((item) => (
           <div
             key={item.spelling}
-            className="rounded-md p-4 bg-slate-900/80 flex flex-col  dark:border dark:border-slate-800"
+            className="rounded-md p-4 flex flex-col bg-surface border-surface shadow-md dark:shadow-none"
           >
             <div className="flex items-center justify-between gap-4 mb-4 ">
               <div className="flex items-center justify-start gap-1">

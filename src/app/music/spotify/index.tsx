@@ -62,8 +62,8 @@ async function SpotifyArtists() {
             className="h-12 w-12 rounded-sm dark:border dark:border-slate-800"
           />
           <div className="flex grow flex-col mx-4">
-            <div className="text-md text-slate-100/2">{item.name}</div>
-            <div className="text-sm text-slate-300/95">
+            <div className="text-md text-surface-primary">{item.name}</div>
+            <div className="text-sm text-surface-secondary">
               {nFormatter(item.followers, 0)} followers
             </div>
           </div>
@@ -91,10 +91,10 @@ async function SpotifyTracks() {
             className="h-12 w-12 rounded-sm dark:border dark:border-slate-800"
           />
           <div className="flex grow flex-col mx-4">
-            <div className="text-md text-slate-100/2">{item.name}</div>
-            <div className="text-sm text-slate-300/95">{item.artist}</div>
+            <div className="text-md text-surface-primary">{item.name}</div>
+            <div className="text-sm text-surface-secondary">{item.artist}</div>
           </div>
-          <div className="hidden desktop:block text-sm text-slate-400">
+          <div className="hidden desktop:block text-sm text-surface-tertiary">
             {formatDate(item.dateLiked)}
           </div>
         </Link>
@@ -121,10 +121,10 @@ async function SpotifyPodcasts() {
             className="h-12 w-12 rounded-sm dark:border dark:border-slate-800"
           />
           <div className="flex grow flex-col mx-4">
-            <div className="text-md text-slate-100/2">{item.name}</div>
-            <div className="text-sm text-slate-300/95">{item.publisher}</div>
+            <div className="text-md text-surface-primary">{item.name}</div>
+            <div className="text-sm text-surface-secondary">{item.publisher}</div>
           </div>
-          <div className="hidden desktop:block text-sm text-slate-400">
+          <div className="hidden desktop:block text-sm text-surface-tertiary">
             {item.total_episodes} eps
           </div>
         </Link>

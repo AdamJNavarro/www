@@ -6,9 +6,9 @@ export default function Stats({ data }: { data: StatsData }) {
       {data.map((item) => (
         <div
           key={item.label}
-          className="rounded-md p-4 flex flex-col bg-surface border-surface text-center"
+          className="rounded-md p-4 flex flex-col bg-surface border-surface text-center shadow-md dark:shadow-none"
         >
-          <div className="text-sky-200 text-xl font-bold tablet:text-2xl">
+          <div className="text-sky-800 dark:text-sky-200 text-xl font-bold tablet:text-2xl">
             {item.value.toLocaleString()}
           </div>
           <div className="text-base font-medium text-surface-secondary">

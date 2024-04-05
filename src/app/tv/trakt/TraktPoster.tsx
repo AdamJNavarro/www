@@ -8,7 +8,9 @@ interface TraktPosterProps {
 }
 
 export function TraktPosterLoading() {
-  return <div className="animate-pulse w-16 h-24 dark:bg-slate-800/60" />;
+  return (
+    <div className="animate-pulse w-16 h-24 bg-slate-300 dark:bg-slate-800/60" />
+  );
 }
 
 export async function TraktPoster({ posterId, title }: TraktPosterProps) {

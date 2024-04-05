@@ -8,7 +8,7 @@ import { Page, Content } from '~/components/Layouts/Page';
 export const { metadata } = routes.uses;
 
 const tagClass =
-  'text-[11px] inline-flex items-center font-bold leading-sm px-1.5 text-black/70 dark:text-black rounded-lg';
+  'text-[11px] inline-flex items-center font-bold leading-sm px-1.5 text-black/80 dark:text-black rounded-lg';
 
 export default async function UsesPage() {
   return (
@@ -35,7 +35,7 @@ export default async function UsesPage() {
 
 function UsesList({ items }: { items: UsesItem[] }) {
   return (
-    <div className="w-shell-full bg-slate-900/35 tablet:mx-0 tablet:bg-transparent">
+    <div className="w-shell-full dark:bg-slate-900/35 tablet:mx-0 tablet:bg-transparent">
       <div className="grid tablet:gap-4 grid-cols-1 desktop:grid-cols-2">
         {sortByAbc({ data: items, key: 'name' }).map((item) => {
           const { name, details, href, logo, tags } = item;
@@ -44,7 +44,7 @@ function UsesList({ items }: { items: UsesItem[] }) {
             <Link
               href={href}
               key={name}
-              className="flex items-center px-6 py-5 tablet:px-4 tablet:bg-surface tablet:border-surface hover-surface tablet:rounded-md"
+              className="flex items-center px-6 py-5 tablet:px-4 tablet:bg-surface tablet:border-surface tablet:hover-surface tablet:rounded-md tablet:shadow-surface"
             >
               <div className="flex-initial flex-shrink-0 justify-center mr-3">
                 <Image
@@ -84,11 +84,11 @@ function UsesList({ items }: { items: UsesItem[] }) {
 }
 
 function getUsesBadgeColor(tag: Tag): string {
-  if (tag === Tag.Ios) return 'dark:bg-sky-300';
-  if (tag === Tag.Macos) return 'dark:bg-sky-300';
-  if (tag === Tag.Free) return 'dark:bg-emerald-400';
-  if (tag === Tag.Freemium) return 'dark:bg-emerald-400';
-  if (tag === Tag.Subscription) return 'dark:bg-emerald-400';
-  if (tag === Tag.OTP) return 'dark:bg-emerald-400';
-  return 'dark:bg-violet-300';
+  if (tag === Tag.Ios) return 'bg-sky-200 dark:bg-sky-300';
+  if (tag === Tag.Macos) return 'bg-sky-200 dark:bg-sky-300';
+  if (tag === Tag.Free) return 'bg-emerald-200 dark:bg-emerald-400';
+  if (tag === Tag.Freemium) return 'bg-emerald-200 dark:bg-emerald-400';
+  if (tag === Tag.Subscription) return 'bg-emerald-200 dark:bg-emerald-400';
+  if (tag === Tag.OTP) return 'bg-emerald-200 dark:bg-emerald-400';
+  return 'bg-violet-200 dark:bg-violet-300';
 }

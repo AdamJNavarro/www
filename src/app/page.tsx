@@ -38,7 +38,7 @@ export default async function HomePage() {
         className="rounded-full h-60 w-60 mx-auto mb-8"
       />
       <div className="text-center mb-16">
-        <p className="font-medium text-xl text-zinc-800 dark:text-slate-300 desktop:text-2xl">
+        <p className="font-medium text-xl text-slate-700 dark:text-slate-300 desktop:text-2xl">
           Find Passion. Foster Passion.
         </p>
       </div>
@@ -46,12 +46,12 @@ export default async function HomePage() {
       <Intro />
 
       <div>
-        <h2 className="text-center font-bold tracking-tight text-2xl dark:text-slate-200">
+        <h2 className="text-center font-bold tracking-tight text-2xl text-slate-800 dark:text-slate-200">
           Latest Activity
         </h2>
       </div>
       <div className="mt-8 mb-24">
-        <div className="grid gap-4 grid-cols-1 desktop:grid-cols-2">
+        <div className="grid gap-6 grid-cols-1 desktop:grid-cols-2">
           <BookRead />
           <MovieWatched />
           <ShowWatched />
@@ -73,13 +73,13 @@ export default async function HomePage() {
       <div>
         <h2
           id="interests"
-          className="text-center font-bold tracking-tight text-2xl dark:text-slate-200"
+          className="text-center font-bold tracking-tight text-2xl text-slate-800 dark:text-slate-200"
         >
           Interests
         </h2>
       </div>
       <div className="mt-8 mb-24">
-        <div className="grid gap-1.5 grid-cols-2  tablet:grid-cols-3">
+        <div className="grid gap-3 grid-cols-2  tablet:grid-cols-3">
           {interestsRoutes.map((item) => (
             <Navigation.Tile key={item.label} {...item} />
           ))}

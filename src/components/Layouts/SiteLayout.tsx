@@ -31,19 +31,19 @@ const BurgerButton = ({ isOpen, onClick }: any) => (
     <div className="sr-only">{isOpen ? 'Close menu' : 'Open menu'}</div>
     <div
       aria-hidden="true"
-      className={`absolute h-0.5 w-5 bg-black dark:bg-white transition duration-300 ease-in-out ${
+      className={`absolute h-0.5 w-5 bg-slate-600 dark:bg-white transition duration-300 ease-in-out ${
         isOpen ? 'rotate-45' : '-translate-y-1.5'
       }`}
     />
     <div
       aria-hidden="true"
-      className={`absolute h-0.5 w-5 bg-black dark:bg-white transition duration-300 ease-in-out ${
+      className={`absolute h-0.5 w-5 bg-slate-600 dark:bg-white transition duration-300 ease-in-out ${
         isOpen ? 'opacity-0' : 'opacity-100'
       }`}
     />
     <div
       aria-hidden="true"
-      className={`absolute h-0.5 w-5 bg-black dark:bg-white transition duration-300 ease-in-out ${
+      className={`absolute h-0.5 w-5 bg-slate-600 dark:bg-white transition duration-300 ease-in-out ${
         isOpen ? '-rotate-45' : 'translate-y-1.5'
       }`}
     />
@@ -59,7 +59,7 @@ export default function SiteLayout({ children }: any) {
   return (
     <main className="min-h-screen grid grid-rows-header">
       <div>
-        <header className="bg-zinc-50 border-b border-zinc-900/10 dark:border-slate-800 dark:bg-slate-950 flex w-full fixed z-[200] h-16">
+        <header className="bg-white border-b dark:border-slate-800 dark:bg-slate-950 flex w-full fixed z-[200] h-16">
           <div className="h-100 pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
             <div className="flex flex-row items-center justify-start gap-4">
               <p className="text-black dark:text-white font-bold text-lg block capitalize desktop:hidden">
@@ -80,8 +80,7 @@ export default function SiteLayout({ children }: any) {
           <nav
             className={classNames({
               'flex flex-col py-4 px-2': true, // layout
-              'bg-zinc-50 border-r border-zinc-900/10 dark:border-slate-800 dark:bg-slate-950':
-                true, // colors
+              'bg-white border-r dark:border-slate-800 dark:bg-slate-950': true, // colors
               'top-16 l-0 z-[200] fixed': true, // positioning
               'h-[calc(100vh_-_96px)] w-full desktop:w-sidebar': true, // for height and width
               'transition-transform duration-300 ease-in-out desktop:-translate-x-0':
@@ -104,7 +103,7 @@ export default function SiteLayout({ children }: any) {
                         className={classNames({
                           'relative flex items-center py-1 px-2 rounded-md font-medium text-md':
                             true,
-                          'text-zinc-800 dark:text-slate-200 hover:text-violet-700 dark:hover:text-white':
+                          'text-slate-700 dark:text-slate-200 hover:text-slate-950 dark:hover:text-white':
                             true,
                           'underline underline-offset-8 decoration-2 decoration-violet-500':
                             isActive,
