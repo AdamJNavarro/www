@@ -9,7 +9,7 @@ interface TraktPosterProps {
 
 export function TraktPosterLoading() {
   return (
-    <div className="animate-pulse w-16 h-24 bg-slate-300 dark:bg-slate-800/60" />
+    <div className="animate-pulse w-16 h-24 bg-slate-200 dark:bg-slate-800/60" />
   );
 }
 
@@ -24,7 +24,7 @@ export async function TraktPoster({ posterId, title }: TraktPosterProps) {
       width={data.width}
       height={data.height}
       alt={`${title}-tv-poster`}
-      className="w-16 h-24"
+      className="w-16 h-24 shadow-md tablet:shadow-none"
     />
   );
 }

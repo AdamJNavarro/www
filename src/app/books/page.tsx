@@ -128,7 +128,7 @@ function LiteralList({ data }: any) {
                 width={325}
                 height={500}
                 alt={`${item.title}-book-cover`}
-                className="w-16 h-24"
+                className="w-16 h-24 shadow-md tablet:shadow-none"
               />
             </div>
             <div className="flex flex-col justify-center">

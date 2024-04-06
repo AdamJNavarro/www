@@ -11,6 +11,9 @@ import { formatDate, nFormatter } from '~/utils';
 import { Content } from '~/components/Layouts/Page';
 import React from 'react';
 
+const spotifyImageClassName =
+  'h-12 w-12 rounded-sm shadow-md dark:shadow-none dark:border dark:border-slate-800';
+
 export default function SpotifyContent() {
   return (
     <>
@@ -59,7 +62,7 @@ async function SpotifyArtists() {
             height={128}
             width={128}
             alt={`${item.name}-spotify-cover-art`}
-            className="h-12 w-12 rounded-sm dark:border dark:border-slate-800"
+            className={spotifyImageClassName}
           />
           <div className="flex grow flex-col mx-4">
             <div className="text-md text-surface-primary">{item.name}</div>
@@ -88,7 +91,7 @@ async function SpotifyTracks() {
             height={128}
             width={128}
             alt={`${item.name}-spotify-cover-art`}
-            className="h-12 w-12 rounded-sm dark:border dark:border-slate-800"
+            className={spotifyImageClassName}
           />
           <div className="flex grow flex-col mx-4">
             <div className="text-md text-surface-primary">{item.name}</div>
@@ -118,7 +121,7 @@ async function SpotifyPodcasts() {
             height={128}
             width={128}
             alt={`${item.name}-spotify-cover-art`}
-            className="h-12 w-12 rounded-sm dark:border dark:border-slate-800"
+            className={spotifyImageClassName}
           />
           <div className="flex grow flex-col mx-4">
             <div className="text-md text-surface-primary">{item.name}</div>
@@ -141,7 +144,7 @@ function SpotifySkeletons({ count }: { count: number }) {
   for (let i = 0; i < countCeil; i++) {
     const skeletonSpan = (
       <span
-        className="h-12 w-12 bg-surface animate-pulse dark:border dark:border-slate-800"
+        className="h-12 w-12 animate-pulse rounded-sm bg-slate-200 dark:bg-slate-900/80"
         key={i}
       >
         &zwnj;
