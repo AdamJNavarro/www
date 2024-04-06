@@ -38,8 +38,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  colorScheme: 'dark',
-  themeColor: '#020617',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f8fafc' },
+    { media: '(prefers-color-scheme: dark)', color: '#020617' },
+  ],
 };
 
 export default function App({ children }: { children: any }) {
