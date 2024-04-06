@@ -8,13 +8,6 @@
   }
 }
 
-/* Temporarily disable light mode until styling has been implemented */
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 @layer utilities {
   .px-shell {
     @apply px-6 desktop:px-0;
