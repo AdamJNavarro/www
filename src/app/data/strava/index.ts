@@ -34,7 +34,6 @@ async function getStravaAccessToken() {
 }
 
 async function generateStravaTokens(refreshToken: string) {
-  console.log('prev refr token:', refreshToken);
   const res = await goFetch({
     url: STRAVA_TOKEN_URL,
     config: {
@@ -52,7 +51,6 @@ async function generateStravaTokens(refreshToken: string) {
       }),
     },
   });
-  console.log('GEN RES DATA', res.data);
 
   const { access_token, refresh_token, expires_at } = res.data;
   const updVal = await saveApiTokens({
@@ -70,7 +68,6 @@ async function getStravaToken() {
   try {
     const { accessToken, refreshToken, expirationDate } =
       await getApiTokens('strava');
-    console.log('EXP DATE', expirationDate);
     const tokenExpirationDate = new Date(expirationDate);
     const currentDate = new Date();
     if (currentDate > tokenExpirationDate) {
@@ -80,7 +77,6 @@ async function getStravaToken() {
       console.log('FRresh Tokens', freshTokens);
       return freshTokens?.access_token;
     } else {
-      console.log('Use existing acc token');
       return accessToken;
     }
   } catch (error) {

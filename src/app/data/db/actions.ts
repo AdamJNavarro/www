@@ -26,8 +26,8 @@ export async function saveApiTokens({
   noStore();
   try {
     const { rows } =
-      await sql`UPDATE apitokens SET access_token = ${accessToken}, refresh_token = ${refreshToken}, expiration_date = ${expirationDate} WHERE provider = ${provider}`;
-    console.log('UPD DATA', rows);
+      await sql`UPDATE apitokens SET access_token = ${accessToken}, refresh_token = ${refreshToken}, expiration_date = ${expirationDate} WHERE provider = ${provider} RETURNING *`;
+    console.log('UPD TOKENS DATA', rows);
     return rows[0];
   } catch (error) {
     console.log('Save tokens err', error);
