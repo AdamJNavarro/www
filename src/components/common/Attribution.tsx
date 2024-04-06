@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ThemeImage from './ThemeImage';
 
 type DataSources = 'trakt' | 'letterboxd' | 'spotify';
 
@@ -24,8 +25,9 @@ export function DataAttribution({
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                src="/img/logos/letterboxd-attr-dark.svg"
+              <ThemeImage
+                srcDark="/img/logos/letterboxd-attr-dark.svg"
+                srcLight="/img/logos/letterboxd-attr-light.svg"
                 width={500}
                 height={110}
                 alt={`letterboxd brand icon`}
@@ -35,8 +37,9 @@ export function DataAttribution({
           )}
           {sources.includes('trakt') && (
             <a href="https://trakt.tv/" target="_blank" rel="noopener noreferrer">
-              <Image
-                src="/img/logos/trakt-attr-dark.svg"
+              <ThemeImage
+                srcDark="/img/logos/trakt-attr-dark.svg"
+                srcLight="/img/logos/trakt-attr-light.svg"
                 width={288}
                 height={98}
                 alt={`trakt brand icon`}

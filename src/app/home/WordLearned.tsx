@@ -5,7 +5,8 @@ export default function WordLearned({ data }: any) {
     <Dashboard.Card
       label="Word Learned"
       href={'/words'}
-      logo="/img/logos/merriam-webster.svg"
+      darkLogo="/img/logos/merriam-webster.svg"
+      lightLogo="/img/logos/merriam-webster.svg"
     >
       <Dashboard.Title>{data.spelling}</Dashboard.Title>
 

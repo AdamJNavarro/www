@@ -51,7 +51,6 @@ export default async function CodingPage() {
           <Services.Vercel />
           <Services.Github />
           <Services.Cloudinary />
-          <Services.EAS />
         </TechStackGrid>
       </div>
       <Content.Header>

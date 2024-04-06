@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { getLogoPath } from '~/utils';
+import ThemeImage from './ThemeImage';
 
 export function TechStackGrid({ children }: any) {
   return (
@@ -9,17 +10,18 @@ export function TechStackGrid({ children }: any) {
   );
 }
 
-function StackItem({ href, name }: any) {
+function StackItem({ href, name, hasThemeLogos = false }: any) {
   return (
     <a
       key={name}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-20 text-surface-secondary text-center font-medium text-sm space-y-2.5 line-clamp-2 tracking-tight hover:text-white"
+      className="w-20 text-surface-secondary text-center font-medium text-sm space-y-2.5 line-clamp-2 tracking-tight dark:hover:text-white"
     >
-      <Image
-        src={getLogoPath(name)}
+      <ThemeImage
+        srcDark={getLogoPath(name, hasThemeLogos ? 'dark' : undefined)}
+        srcLight={getLogoPath(name, hasThemeLogos ? 'light' : undefined)}
         width={80}
         height={80}
         alt={`${name} tech stack icon`}
@@ -48,18 +50,20 @@ const Frameworks = {
     <StackItem href="https://reactnative.dev/" name="React Native" />
   ),
   Mantine: () => <StackItem href="https://mantine.dev/" name="Mantine" />,
-  Cypress: () => <StackItem href="https://www.cypress.io/" name="Cypress" />,
+  Cypress: () => (
+    <StackItem href="https://www.cypress.io/" name="Cypress" hasThemeLogos />
+  ),
   Tailwindcss: () => (
     <StackItem href="https://tailwindcss.com/" name="tailwindcss" />
   ),
-  Expo: () => <StackItem href="https://expo.dev/" name="Expo" />,
+  Expo: () => <StackItem href="https://expo.dev/" name="Expo" hasThemeLogos />,
 };
 
 // to add: Sentry, Twilio, Branch
 const Services = {
   Cloudinary: () => <StackItem href="https://cloudinary.com/" name="Cloudinary" />,
-  Github: () => <StackItem href="https://github.com/" name="Github" />,
-  Vercel: () => <StackItem href="https://vercel.com/" name="Vercel" />,
+  Github: () => <StackItem href="https://github.com/" name="Github" hasThemeLogos />,
+  Vercel: () => <StackItem href="https://vercel.com/" name="Vercel" hasThemeLogos />,
   EAS: () => <StackItem href="https://expo.dev/eas" name="EAS" />,
   AwsIAM: () => <StackItem href="https://aws.amazon.com/iam" name="AWS IAM" />,
   AwsLambda: () => (

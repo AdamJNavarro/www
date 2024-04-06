@@ -4,6 +4,7 @@ import { getLogoPath, sortByAbc } from '~/utils';
 import routes from '../config/routes';
 import { Tag, UsesItem, computerUsesItems, miscUsesItems } from './uses.data';
 import { Page, Content } from '~/components/Layouts/Page';
+import ThemeImage from '~/components/common/ThemeImage';
 
 export const { metadata } = routes.uses;
 
@@ -38,7 +39,7 @@ function UsesList({ items }: { items: UsesItem[] }) {
     <div className="w-shell-full dark:bg-slate-900/35 tablet:mx-0 tablet:bg-transparent">
       <div className="grid tablet:gap-4 grid-cols-1 desktop:grid-cols-2">
         {sortByAbc({ data: items, key: 'name' }).map((item) => {
-          const { name, details, href, logo, tags } = item;
+          const { name, details, href, logo, tags, hasThemeLogos } = item;
 
           return (
             <Link
@@ -47,8 +48,13 @@ function UsesList({ items }: { items: UsesItem[] }) {
               className="flex items-center px-6 py-5 tablet:px-4 tablet:bg-surface tablet:border-surface tablet:hover-surface tablet:rounded-md tablet:shadow-surface"
             >
               <div className="flex-initial flex-shrink-0 justify-center mr-3">
-                <Image
-                  src={logo || getLogoPath(name)}
+                <ThemeImage
+                  srcDark={
+                    logo || getLogoPath(name, hasThemeLogos ? 'dark' : undefined)
+                  }
+                  srcLight={
+                    logo || getLogoPath(name, hasThemeLogos ? 'light' : undefined)
+                  }
                   width={128}
                   height={128}
                   alt={`${name} icon`}

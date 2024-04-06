@@ -9,8 +9,9 @@ export function makeKebabCase(str: string): string {
   return str.replaceAll(' ', '-').replaceAll('.', '-').toLowerCase();
 }
 
-export function getLogoPath(name: string): string {
+export function getLogoPath(name: string, variant?: string): string {
   const fixedName = makeKebabCase(name);
+  if (variant) return `/img/logos/${fixedName}-${variant}.svg`;
   return `/img/logos/${fixedName}.svg`;
 }
 
