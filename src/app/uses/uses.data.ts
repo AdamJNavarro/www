@@ -13,6 +13,7 @@ export interface UsesItem {
   href: string;
   details: string;
   logo?: string;
+  hasThemeLogos?: boolean;
   tags?: Tag[];
 }
 
@@ -48,6 +49,7 @@ const miscUsesItems = [
     href: 'https://literal.club/',
     details: 'How I track my reading.',
     tags: [Tag.Free],
+    hasThemeLogos: true,
   },
   {
     name: 'Trakt',

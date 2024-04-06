@@ -8,7 +8,8 @@ export default function MovieWatched() {
     <Dashboard.Card
       label="Movie Watched"
       href={film.url}
-      logo="/img/logos/letterboxd.svg"
+      darkLogo="/img/logos/letterboxd.svg"
+      lightLogo="/img/logos/letterboxd.svg"
     >
       <Dashboard.Title>{film.name}</Dashboard.Title>
 

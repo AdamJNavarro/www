@@ -1,17 +1,19 @@
 import { IconArrowUpRight } from '@tabler/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import ThemeImage from '~/components/common/ThemeImage';
 
 interface DashboardCardProps {
   href: string;
   label: string;
-  logo: string;
+  darkLogo: string;
+  lightLogo: string;
   children: any;
 }
 
 const logoSize = 24;
 
-function Card({ href, label, logo, children }: DashboardCardProps) {
+function Card({ href, label, darkLogo, lightLogo, children }: DashboardCardProps) {
   const isExternal = !href.startsWith('/') && !href.startsWith('#');
 
   return (
@@ -22,8 +24,9 @@ function Card({ href, label, logo, children }: DashboardCardProps) {
     >
       <div className="flex items-center justify-between gap-4 mb-4 ">
         <div className="flex items-center justify-start gap-4">
-          <Image
-            src={logo}
+          <ThemeImage
+            srcDark={darkLogo}
+            srcLight={lightLogo}
             width={logoSize}
             height={logoSize}
             alt={`dashboard ${label} icon`}

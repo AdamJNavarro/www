@@ -7,7 +7,12 @@ export default function BookRead() {
   if (!book) return <div />;
 
   return (
-    <Dashboard.Card label="Book Read" href={book.url} logo="/img/logos/literal.svg">
+    <Dashboard.Card
+      label="Book Read"
+      href={book.url}
+      darkLogo="/img/logos/literal-dark.svg"
+      lightLogo="/img/logos/literal-light.svg"
+    >
       <Dashboard.Title>{book.title}</Dashboard.Title>
       <Dashboard.Details>{book.authors}</Dashboard.Details>
     </Dashboard.Card>

@@ -54,7 +54,8 @@ export default function StravaSession({ data }) {
     <Dashboard.Card
       label="Workout"
       href={buildStravaUrl(id)}
-      logo="/img/logos/strava.svg"
+      darkLogo="/img/logos/strava.svg"
+      lightLogo="/img/logos/strava.svg"
     >
       <Dashboard.Title>{getSessionType(sport)}</Dashboard.Title>
       <div className="flex space-x-2">
