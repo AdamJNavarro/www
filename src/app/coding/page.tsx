@@ -16,7 +16,7 @@ export default async function CodingPage() {
     <div>
       <Page.Header>
         <Page.Title>Coding</Page.Title>
-        <p>What I use, write in, etc.</p>
+        <Page.Description>What I use, write in, etc.</Page.Description>
       </Page.Header>
       <Content.Header>
         <Content.Title>Languages</Content.Title>

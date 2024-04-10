@@ -9,7 +9,10 @@ export default async function SocialPage() {
     <div>
       <Page.Header>
         <Page.Title>Social Presence</Page.Title>
-        <p> Here are the places you can find me online.</p>
+        <Page.Description>
+          {' '}
+          Here are the places you can find me online.
+        </Page.Description>
       </Page.Header>
       <div className="prose mt-8 mb-16">
         <ul>

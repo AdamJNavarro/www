@@ -47,7 +47,9 @@ export default async function MoviesPage() {
     <div>
       <Page.Header>
         <Page.Title>Movies</Page.Title>
-        <p>All things related to my love for cinema.</p>
+        <Page.Description>
+          All things related to my love for cinema.
+        </Page.Description>
       </Page.Header>
 
       <p className="prose mb-24">

@@ -7,9 +7,10 @@ import {
   getSpotifyArtists,
   getSpotifyPodcasts,
 } from '~/app/data/spotify';
-import { formatDate, nFormatter } from '~/utils';
+import { nFormatter } from '~/utils';
 import { Content } from '~/components/Layouts/Page';
 import React from 'react';
+import { formatDate } from '~/utils/Dates';
 
 const spotifyImageClassName =
   'h-12 w-12 rounded-sm shadow-md dark:shadow-none dark:border dark:border-slate-800';
@@ -98,7 +99,7 @@ async function SpotifyTracks() {
             <div className="text-sm text-surface-secondary">{item.artist}</div>
           </div>
           <div className="hidden desktop:block text-sm text-surface-tertiary">
-            {formatDate(item.dateLiked)}
+            {formatDate({ date: item.dateLiked, format: 'ago' })}
           </div>
         </Link>
       ))}

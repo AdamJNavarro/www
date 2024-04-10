@@ -10,7 +10,7 @@ export default async function MusicPage() {
     <div>
       <Page.Header>
         <Page.Title>Music</Page.Title>
-        <p>A glimpse into my taste in music.</p>
+        <Page.Description>A glimpse into my taste in music.</Page.Description>
       </Page.Header>
       <SpotifyContent />
       <div className="mt-24">

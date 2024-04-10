@@ -21,9 +21,12 @@
     "moviedb-promise": "^4.0.4",
     "next": "^14.1.4",
     "next-auth": "^5.0.0-beta.16",
+    "next-mdx-remote": "^4.4.1",
     "octokit": "^3.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-tweet": "^3.2.1",
+    "sugar-high": "^0.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
