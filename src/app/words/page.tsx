@@ -5,7 +5,7 @@ import { LoadingSpinner } from '~/components/common/pure-html';
 import { auth } from '~/app/auth';
 import { Page } from '~/components/Layouts/Page';
 import WordForm from './WordForm';
-import { formatDate } from '~/utils';
+import { formatDate } from '~/utils/Dates';
 
 export const { metadata } = routes.words;
 
@@ -14,10 +14,10 @@ export default async function WordsPage() {
     <div>
       <Page.Header>
         <Page.Title>Words</Page.Title>
-        <p>
+        <Page.Description>
           An ever-growing list of words I encountered and did not know. I began
           logging mid-2018.
-        </p>
+        </Page.Description>
       </Page.Header>
       <Suspense fallback={<LoadingSpinner />}>
         <WordBank />
@@ -45,7 +45,7 @@ async function WordBank() {
                 <div className="text-lg text-surface-primary">{item.spelling}</div>
               </div>
               <div className="text-xs text-surface-tertiary">
-                {formatDate(String(item.dateLearned))}
+                {formatDate({ date: String(item.dateLearned), format: 'short' })}
               </div>
             </div>
             <div className="flex flex-col justify-center font-light text-base text-surface-secondary leading-tight">

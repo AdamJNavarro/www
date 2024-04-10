@@ -11,7 +11,9 @@ export default async function TvPage() {
     <div>
       <Page.Header>
         <Page.Title>Television</Page.Title>
-        <p>An inside look into my TV consumption, activity and preferences.</p>
+        <Page.Description>
+          An inside look into my TV consumption, activity and preferences.
+        </Page.Description>
       </Page.Header>
       <Trakt />
       <div className="mt-24">

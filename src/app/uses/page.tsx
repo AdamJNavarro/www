@@ -16,7 +16,7 @@ export default async function UsesPage() {
     <div>
       <Page.Header>
         <Page.Title>Uses</Page.Title>
-        <p>A collection of products I use.</p>
+        <Page.Description>A collection of products I use.</Page.Description>
       </Page.Header>
       <Content.Header>
         <Content.Title>Computer</Content.Title>

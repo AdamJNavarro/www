@@ -37,13 +37,13 @@ export default async function BooksPage() {
     <div>
       <Page.Header>
         <Page.Title>Books</Page.Title>
-        <p>
+        <Page.Description>
           A peek into my literary tastes and activity. Data provided by{' '}
           <a href={SocialUrls.literal} target="_blank" rel="noopener noreferrer">
             Literal
           </a>
           .
-        </p>
+        </Page.Description>
       </Page.Header>
 
       <div className="mb-24">

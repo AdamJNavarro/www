@@ -10,6 +10,7 @@ import {
   IconSocial,
   IconStack2,
   IconTypography,
+  IconWriting,
 } from '@tabler/icons-react';
 import { Metadata } from 'next';
 
@@ -23,6 +24,15 @@ type RouteConfig = {
 };
 
 const routes: RouteConfig = {
+  blog: {
+    icon: IconWriting,
+    label: 'Blog',
+    href: '/blog',
+    metadata: {
+      title: 'My Blog',
+      description: 'A collection of my thoughts and musings.',
+    },
+  },
   books: {
     icon: IconBooks,
     label: 'Books',

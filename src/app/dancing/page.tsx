@@ -8,7 +8,9 @@ export default async function DancingPage() {
     <div>
       <Page.Header>
         <Page.Title>Dancing</Page.Title>
-        <p>If there is a dance floor, you will find me on it.</p>
+        <Page.Description>
+          If there is a dance floor, you will find me on it.
+        </Page.Description>
       </Page.Header>
       <div className="prose mb-24">
         <p>

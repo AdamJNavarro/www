@@ -18,9 +18,19 @@ function Title({ children, ...rest }) {
   );
 }
 
+function Description({ children, ...rest }) {
+  const fullClasses = classNames('-mt-6 leading-snug', rest.className);
+  return (
+    <div {...rest} className={fullClasses}>
+      {children}
+    </div>
+  );
+}
+
 const Page = {
   Header,
   Title,
+  Description,
 };
 
 function ContentHeader({ children, ...rest }) {
