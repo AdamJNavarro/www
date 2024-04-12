@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { navbarRoutes } from '~/app/config/routes';
+import { buildReadableTitle } from '~/utils';
 import { useDisclosure } from '~/utils/Hooks';
 
 function useActivePath(): (href: string) => boolean {
@@ -23,7 +24,7 @@ function useActiveRouteLabel(): string {
   const pathname = usePathname();
   if (!pathname) return '';
   if (pathname === '/') return 'Adam Navarro';
-  return pathname?.substring(pathname.lastIndexOf('/') + 1);
+  return buildReadableTitle(pathname?.substring(pathname.lastIndexOf('/') + 1));
 }
 
 const BurgerButton = ({ isOpen, onClick }: any) => (
@@ -61,7 +62,7 @@ export default function SiteLayout({ children }: any) {
       <div>
         <header className="bg-white border-b dark:border-slate-800 dark:bg-slate-950 flex w-full fixed z-[200] h-16">
           <div className="h-100 pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
-            <div className="flex flex-row items-center justify-start gap-4">
+            <div className="flex flex-row  items-center justify-start gap-4">
               <p className="text-black dark:text-white font-bold text-lg block capitalize desktop:hidden">
                 {headerTitle}
               </p>

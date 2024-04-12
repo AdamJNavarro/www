@@ -5,6 +5,14 @@ export function buildNamesString(persons: any[], key: string): string {
   return persons.map((_person: any) => _person[key]).join(', ');
 }
 
+export function buildReadableTitle(slug: string): string {
+  return slug
+    .toLowerCase()
+    .split(/[-_.\s]/)
+    .map((w) => `${w.charAt(0).toUpperCase()}${w.substring(1)}`)
+    .join(' ');
+}
+
 export function makeKebabCase(str: string): string {
   return str.replaceAll(' ', '-').replaceAll('.', '-').toLowerCase();
 }
@@ -38,4 +46,14 @@ export function nFormatter(num: number, digits: number) {
 
 export function unixTimestampToDate(val: number) {
   return new Date(val * 1000);
+}
+
+type PluralizeArgs = {
+  count: number;
+  single: string;
+  plural?: string;
+};
+
+export function pluralize({ count, single, plural }: PluralizeArgs): string {
+  return `${count} ${count !== 1 ? plural || single + 's' : single}`;
 }

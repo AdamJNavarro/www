@@ -1,3 +1,5 @@
+import { pluralize } from '.';
+
 type DateFormat = 'short' | 'long' | 'ago' | 'short-ago' | 'long-ago';
 
 type FormatDateArgs = {
@@ -36,16 +38,16 @@ export function formatDate({ date, format }: FormatDateArgs): string {
   if (daysAgo < 1) {
     agoStr = 'Today';
   } else if (daysAgo < 7) {
-    agoStr = `${daysAgo}d ago`;
+    agoStr = `${pluralize({ count: daysAgo, single: 'day' })} ago`;
   } else if (daysAgo < 30) {
     const weeksAgo = Math.floor(daysAgo / 7);
-    agoStr = `${weeksAgo}w ago`;
+    agoStr = `${pluralize({ count: weeksAgo, single: 'week' })} ago`;
   } else if (daysAgo < 365) {
     const monthsAgo = Math.floor(daysAgo / 30);
-    agoStr = `${monthsAgo}mo ago`;
+    agoStr = `${pluralize({ count: monthsAgo, single: 'month' })} ago`;
   } else {
     const yearsAgo = Math.floor(daysAgo / 365);
-    agoStr = `${yearsAgo}y ago`;
+    agoStr = `${pluralize({ count: yearsAgo, single: 'year' })} ago`;
   }
 
   if (format === 'ago') return agoStr;

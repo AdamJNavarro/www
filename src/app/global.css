@@ -91,7 +91,7 @@
 }
 
 .prose .anchor:after {
-  @apply text-slate-400 dark:text-slate-600;
+  @apply text-slate-400 dark:text-violet-500;
   content: '#';
 }
 
@@ -126,4 +126,9 @@
 h3,
 h4 {
   @apply tracking-tight font-semibold !important;
+}
+
+.prose .tweet a {
+  text-decoration: inherit;
+  font-weight: 500;
 }
