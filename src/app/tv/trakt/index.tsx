@@ -5,8 +5,9 @@ import { TraktPoster, TraktPosterLoading } from './TraktPoster';
 import { Content } from '~/components/Layouts/Page';
 import Stats from '~/components/common/Stats';
 import { Suspense } from 'react';
+import { formatDate } from '~/utils/Dates';
 
-const { watching, watched, favorites, stats, genres } = traktData;
+const { watching, watched, favorites, stats, genres, updatedAt } = traktData;
 const highestGenreTotal = genres.reduce((a, b) => (a.total > b.total ? a : b)).total;
 
 const statsData = [
@@ -20,6 +21,9 @@ export default function Trakt() {
     <>
       <div className="mb-24">
         <Stats data={statsData} />
+        <div className="text-xs text-surface-tertiary text-center mt-4">
+          Updated {formatDate({ date: updatedAt, format: 'ago' })}
+        </div>
       </div>
 
       <Content.Header>

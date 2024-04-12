@@ -1,61 +1,38 @@
 {
-  "updatedAt": "2024-03-28T19:46:57.440Z",
+  "updatedAt": "2024-04-12T22:21:39.448Z",
   "stats": {
-    "shows": 177,
-    "episodes": 9737,
-    "minutes": 337824
+    "shows": 181,
+    "episodes": 9810,
+    "minutes": 339361
   },
   "watching": [
     {
-      "id": 976429196,
+      "id": 1007767739,
       "rank": 1,
-      "dateAdded": "2024-02-07T12:12:06.000Z",
+      "dateAdded": "2024-04-07T01:08:48.000Z",
       "showIds": {
-        "trakt": 193023,
-        "slug": "solo-leveling",
-        "tvdb": 389597,
-        "imdb": "tt21209876",
-        "tmdb": 127532,
+        "trakt": 2274,
+        "slug": "prison-break",
+        "tvdb": 360115,
+        "imdb": "tt0455275",
+        "tmdb": 2288,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/solo-leveling",
-      "title": "Solo Leveling",
-      "year": 2024,
-      "overview": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them.",
-      "status": "returning series",
+      "url": "https://trakt.tv/shows/prison-break",
+      "title": "Prison Break",
+      "year": 2005,
+      "overview": "Due to a political conspiracy, an innocent man is sent to death row and his only hope is his brother, who makes it his mission to deliberately get himself sent to the same prison in order to break the both of them out, from the inside out.",
+      "status": "ended",
       "genres": [
-        "anime",
+        "drama",
+        "crime",
         "action",
-        "adventure",
-        "fantasy"
-      ]
-    },
-    {
-      "id": 983355208,
-      "rank": 2,
-      "dateAdded": "2024-02-20T03:45:49.000Z",
-      "showIds": {
-        "trakt": 199863,
-        "slug": "ragna-crimson",
-        "tvdb": 417983,
-        "imdb": "tt28685470",
-        "tmdb": 195459,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/ragna-crimson",
-      "title": "Ragna Crimson",
-      "year": 2023,
-      "overview": "Ragna teams up with the enigmatic Crimson to stand against the dragons menacing the world. Although Crimson’s motivations are mysterious, his goal and Ragna’s perfectly align, and together they’ll vanquish the dragons once and for all.",
-      "status": "returning series",
-      "genres": [
-        "anime",
-        "action",
-        "fantasy"
+        "adventure"
       ]
     },
     {
       "id": 988017933,
-      "rank": 3,
+      "rank": 2,
       "dateAdded": "2024-02-28T19:50:00.000Z",
       "showIds": {
         "trakt": 170054,
@@ -76,27 +53,52 @@
       ]
     },
     {
-      "id": 996519581,
-      "rank": 4,
-      "dateAdded": "2024-03-15T00:16:16.000Z",
+      "id": 1009890211,
+      "rank": 3,
+      "dateAdded": "2024-04-12T02:03:49.000Z",
       "showIds": {
-        "trakt": 202498,
-        "slug": "ishura",
-        "tvdb": 431014,
-        "imdb": "tt26713948",
-        "tmdb": 220286,
+        "trakt": 163965,
+        "slug": "fallout",
+        "tvdb": 416744,
+        "imdb": "tt12637874",
+        "tmdb": 106379,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/ishura",
-      "title": "Ishura",
+      "url": "https://trakt.tv/shows/fallout",
+      "title": "Fallout",
       "year": 2024,
-      "overview": "A host of demigods have inherited the world after the Demon King has died, and a battle to determine the mightiest ensues.",
+      "overview": "The story of haves and have-nots in a world in which there’s almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
       "status": "returning series",
       "genres": [
-        "anime",
+        "fantasy",
+        "science-fiction",
         "action",
         "adventure",
-        "fantasy"
+        "drama"
+      ]
+    },
+    {
+      "id": 1010268356,
+      "rank": 4,
+      "dateAdded": "2024-04-12T20:48:05.000Z",
+      "showIds": {
+        "trakt": 150109,
+        "slug": "halo",
+        "tvdb": 366524,
+        "imdb": "tt2934286",
+        "tmdb": 52814,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/halo",
+      "title": "Halo",
+      "year": 2022,
+      "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction"
       ]
     }
   ],
@@ -140,7 +142,7 @@
       "title": "The OA",
       "year": 2016,
       "overview": "Prairie Johnson, blind as a child, comes home to the community she grew up in with her sight restored. Some hail her a miracle, others a dangerous mystery, but Prairie won’t talk with the FBI or her parents about the seven years she went missing.",
-      "status": "canceled",
+      "status": "ended",
       "genres": [
         "drama",
         "mystery",
@@ -458,6 +460,98 @@
   ],
   "watched": [
     {
+      "id": 196794,
+      "dateAdded": "2024-04-12T20:47:17.000Z",
+      "showIds": {
+        "trakt": 196794,
+        "slug": "shangri-la-frontier",
+        "tvdb": 421855,
+        "imdb": "tt28776190",
+        "tmdb": 205050,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/shangri-la-frontier",
+      "title": "Shangri-La Frontier",
+      "year": 2023,
+      "overview": "Rakuro Hizutome only cares about one thing: beating crappy VR games. He devotes his entire life to these buggy games and could clear them all in his sleep. One day, he decides to challenge himself and play a popular god-tier game called Shangri-La Frontier. But he quickly learns just how difficult it is. Will his expert skills be enough to uncover its hidden secrets?",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 202498,
+      "dateAdded": "2024-04-07T01:14:55.000Z",
+      "showIds": {
+        "trakt": 202498,
+        "slug": "ishura",
+        "tvdb": 431014,
+        "imdb": "tt26713948",
+        "tmdb": 220286,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/ishura",
+      "title": "Ishura",
+      "year": 2024,
+      "overview": "A host of demigods have inherited the world after the Demon King has died, and a battle to determine the mightiest ensues.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 193023,
+      "dateAdded": "2024-04-07T01:07:54.000Z",
+      "showIds": {
+        "trakt": 193023,
+        "slug": "solo-leveling",
+        "tvdb": 389597,
+        "imdb": "tt21209876",
+        "tmdb": 127532,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/solo-leveling",
+      "title": "Solo Leveling",
+      "year": 2024,
+      "overview": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 199863,
+      "dateAdded": "2024-04-07T01:07:32.000Z",
+      "showIds": {
+        "trakt": 199863,
+        "slug": "ragna-crimson",
+        "tvdb": 417983,
+        "imdb": "tt28685470",
+        "tmdb": 195459,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/ragna-crimson",
+      "title": "Ragna Crimson",
+      "year": 2023,
+      "overview": "Ragna teams up with the enigmatic Crimson to stand against the dragons menacing the world. Although Crimson’s motivations are mysterious, his goal and Ragna’s perfectly align, and together they’ll vanquish the dragons once and for all.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "fantasy"
+      ]
+    },
+    {
       "id": 104311,
       "dateAdded": "2024-03-26T21:33:03.000Z",
       "showIds": {
@@ -495,7 +589,7 @@
       "title": "Banished From the Hero's Party, I Decided to Live a Quiet Life in the Countryside",
       "year": 2021,
       "overview": "After being betrayed by the Hero’s party, Red hopes to start anew by opening an apothecary in a small town. He wants to keep his past life secret, but it won’t be easy...especially when a beautiful adventurer from his past asks to move in.",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "anime",
         "romance",
@@ -1140,7 +1234,7 @@
       "title": "DOTA: Dragon's Blood",
       "year": 2021,
       "overview": "After encounters with a dragon and a princess on her own mission, a Dragon Knight becomes embroiled in events larger than he could have ever imagined.",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "action",
         "adventure",
@@ -1164,7 +1258,7 @@
       "title": "Onmyoji",
       "year": 2023,
       "overview": "In the gilded enclave of the imperial court, Minamoto Hiromasa befriends the mystic Abe Seimei, solving tricky cases rising from the demonic realm.",
-      "status": "ended",
+      "status": "returning series",
       "genres": [
         "anime",
         "drama",
@@ -1433,7 +1527,7 @@
       "title": "Classroom of the Elite",
       "year": 2017,
       "overview": "Kiyotaka Ayanokoji has just enrolled at Tokyo Koudo Ikusei Senior High School, where it's said that 100% of students go on to college or find employment. But he ends up in Class 1-D, which is full of all the school's problem children.\n\nWhat's more, every month, the school awards students points with a cash value of 100,000 yen, and the classes employ a laissez-faire policy in which talking, sleeping, and even sabotage are permitted during class.\n\nOne month later, Ayanokoji, Horikita, and the students of Class D learn the truth of the system in place within their school...",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "drama",
         "anime"
@@ -2297,11 +2391,9 @@
       "url": "https://trakt.tv/shows/tokyo-ghoul",
       "title": "Tokyo Ghoul",
       "year": 2014,
-      "overview": "Ken Kaneki is a bookworm college student who meets a girl names Rize at a cafe he frequents. They're the same age and have the same interests, so they quickly become close. Little does Kaneki know that Rize is a ghoul – a kind of monster that lives by hunting and devouring human flesh. When part of her special organ – \"the red child\" – is transplanted into Kaneki, he becomes a ghoul himself, trapped in a warped world where humans are not the top of the food chain.",
+      "overview": "Ken Kaneki, a bookworm college student, meets Rize, a girl his own age with whom he shares many interests.",
       "status": "ended",
       "genres": [
-        "action",
-        "adventure",
         "anime",
         "horror",
         "drama",
@@ -3059,7 +3151,7 @@
       "url": "https://trakt.tv/shows/beyblade",
       "title": "Beyblade",
       "year": 2001,
-      "overview": "Thirteen-year-old Tyson Granger (Takao Kinomiya), along with his fellow teammates, Kai Hiwatari, Max Tate (Max Mizuhura), and Ray Kon (Rei Kon), strive to become the greatest Beybladers in the world. With the technical help of the team's resident genius, Kenny (Kyouju), and with the powerful strength of their BitBeasts, the Bladebreakers armed with their tops (AKA: Blades) attempt to reach their goal.",
+      "overview": "Thirteen-year-old Takao Kinomiya (Tyson Granger), along with his fellow teammates, Kai Hiwatari, Max Mizuhura (Max Tate), and Rei Kon (Ray Kon), strive to become the greatest Beybladers in the world. With the technical help of the team's resident genius, Kyoujyu (Kenny), and with the powerful strength of their BitBeasts, the Bladebreakers armed with their Beys attempt to reach their goal.",
       "status": "ended",
       "genres": [
         "anime",
@@ -4093,9 +4185,9 @@
       "status": "returning series",
       "genres": [
         "action",
-        "science-fiction",
         "adventure",
-        "fantasy"
+        "fantasy",
+        "science-fiction"
       ]
     },
     {
@@ -4571,23 +4663,23 @@
     },
     {
       "genre": "action",
-      "total": 83
-    },
-    {
-      "genre": "adventure",
-      "total": 71
+      "total": 86
     },
     {
       "genre": "fantasy",
-      "total": 70
+      "total": 74
+    },
+    {
+      "genre": "adventure",
+      "total": 73
     },
     {
       "genre": "science fiction",
-      "total": 52
+      "total": 53
     },
     {
       "genre": "anime",
-      "total": 48
+      "total": 52
     },
     {
       "genre": "mystery",
