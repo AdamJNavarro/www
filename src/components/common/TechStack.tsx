@@ -17,7 +17,7 @@ function StackItem({ href, name, hasThemeLogos = false }: any) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-20 text-surface-secondary text-center font-medium text-sm space-y-2.5 line-clamp-2 tracking-tight dark:hover:text-white"
+      className="w-20 text-surface-secondary text-center font-medium text-sm space-y-2.5 line-clamp-2 tracking-tight hover:text-black dark:hover:text-white"
     >
       <ThemeImage
         srcDark={getLogoPath(name, hasThemeLogos ? 'dark' : undefined)}
