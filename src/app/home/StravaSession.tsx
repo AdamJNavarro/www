@@ -1,14 +1,12 @@
+import { formatDate } from '~/utils/Dates';
 import Dashboard from './Dashboard';
 
 function buildStravaUrl(id: number): string {
   return `https://www.strava.com/activities/${id}`;
 }
 
-function getSessionType(type: string): string {
-  if (type.includes('Bike')) return 'Bike Ride';
-  if (type.includes('Run')) return 'Run';
-  if (type.includes('WeightTraining')) return 'Weight Lifting';
-  return 'Walk';
+function makeSportTypeReadable(sport: string): string {
+  return sport.replace(/([A-Z])/g, ' $1').trim();
 }
 
 function getSessionDistance(distance: number): string {
@@ -38,30 +36,23 @@ function getSessionDuration(duration: number): string {
   return str;
 }
 
-function getSessionDate(date: any): string {
-  const formattedDate = new Date(date).toLocaleString('en-us', {
-    month: 'numeric',
-    day: 'numeric',
-    year: '2-digit',
-  });
-  return formattedDate;
-}
-
 export default function StravaSession({ data }) {
   const { id, distance, totalDuration, sport, date } = data;
 
   return (
     <Dashboard.Card
-      label="Workout"
+      label="Workout Logged"
       href={buildStravaUrl(id)}
       darkLogo="/img/logos/strava.svg"
       lightLogo="/img/logos/strava.svg"
     >
-      <Dashboard.Title>{getSessionType(sport)}</Dashboard.Title>
+      <Dashboard.Title>{makeSportTypeReadable(sport)}</Dashboard.Title>
       <div className="flex space-x-2">
-        <Dashboard.Details>{getSessionDate(date)}</Dashboard.Details>
+        <Dashboard.Details>
+          {formatDate({ date, format: 'short' })}
+        </Dashboard.Details>
         <Dashboard.Details>{getSessionDuration(totalDuration)}</Dashboard.Details>
-        {sport !== 'WeightTraining' && (
+        {distance > 0 && (
           <Dashboard.Details>{getSessionDistance(distance)}</Dashboard.Details>
         )}
       </div>
