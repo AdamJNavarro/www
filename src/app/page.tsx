@@ -20,6 +20,7 @@ const interestsRoutes = [
   routes.books,
   routes.coding,
   routes.dancing,
+  routes.fitness,
   routes.movies,
   routes.music,
   routes.tv,
