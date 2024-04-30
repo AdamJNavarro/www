@@ -103,7 +103,7 @@ export default async function StravaHeatmap() {
         })}
       </div>
       <div className="text-surface-secondary text-xs font-medium text-end mt-1.5">
-        {todayLabel}
+        Today
       </div>
       <div className="flex justify-around text-surface-secondary text-xs mt-8">
         <div className="flex items-center">

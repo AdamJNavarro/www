@@ -11,9 +11,7 @@ export default async function FitnessPage() {
     <div>
       <Page.Header>
         <Page.Title>Fitness</Page.Title>
-        <Page.Description>
-          Nothing better than getting your blood pumping.
-        </Page.Description>
+        <Page.Description>What I do to keep my body healthy.</Page.Description>
       </Page.Header>
       <p className="prose mb-24">
         For as long as I can remember, fitness has been a major part of my life.
