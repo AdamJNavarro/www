@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-04-12T22:21:39.448Z",
+  "updatedAt": "2024-04-30T03:51:40.949Z",
   "stats": {
-    "shows": 181,
-    "episodes": 9810,
-    "minutes": 339361
+    "shows": 183,
+    "episodes": 9828,
+    "minutes": 340545
   },
   "watching": [
     {
@@ -31,55 +31,8 @@
       ]
     },
     {
-      "id": 988017933,
-      "rank": 2,
-      "dateAdded": "2024-02-28T19:50:00.000Z",
-      "showIds": {
-        "trakt": 170054,
-        "slug": "shogun-2024",
-        "tvdb": 392573,
-        "imdb": "tt2788316",
-        "tmdb": 126308,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/shogun-2024",
-      "title": "Shōgun",
-      "year": 2024,
-      "overview": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
-      "status": "returning series",
-      "genres": [
-        "drama",
-        "war"
-      ]
-    },
-    {
-      "id": 1009890211,
-      "rank": 3,
-      "dateAdded": "2024-04-12T02:03:49.000Z",
-      "showIds": {
-        "trakt": 163965,
-        "slug": "fallout",
-        "tvdb": 416744,
-        "imdb": "tt12637874",
-        "tmdb": 106379,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/fallout",
-      "title": "Fallout",
-      "year": 2024,
-      "overview": "The story of haves and have-nots in a world in which there’s almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
-      "status": "returning series",
-      "genres": [
-        "fantasy",
-        "science-fiction",
-        "action",
-        "adventure",
-        "drama"
-      ]
-    },
-    {
       "id": 1010268356,
-      "rank": 4,
+      "rank": 2,
       "dateAdded": "2024-04-12T20:48:05.000Z",
       "showIds": {
         "trakt": 150109,
@@ -98,6 +51,53 @@
         "action",
         "adventure",
         "fantasy",
+        "science-fiction"
+      ]
+    },
+    {
+      "id": 1018214466,
+      "rank": 3,
+      "dateAdded": "2024-04-30T02:06:05.000Z",
+      "showIds": {
+        "trakt": 121959,
+        "slug": "black-clover",
+        "tvdb": 331753,
+        "imdb": "tt7441658",
+        "tmdb": 73223,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/black-clover",
+      "title": "Black Clover",
+      "year": 2017,
+      "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "anime",
+        "adventure",
+        "comedy"
+      ]
+    },
+    {
+      "id": 1018214590,
+      "rank": 4,
+      "dateAdded": "2024-04-30T02:06:22.000Z",
+      "showIds": {
+        "trakt": 197270,
+        "slug": "kaiju-no-8",
+        "tvdb": 423075,
+        "imdb": "tt21975436",
+        "tmdb": 207468,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/kaiju-no-8",
+      "title": "Kaiju No. 8",
+      "year": 2024,
+      "overview": "In a world plagued by creatures known as Kaiju, Kafka Hibino aspired to enlist in The Defense Force. He makes a promise to enlist with his childhood friend, Mina Ashiro. Soon, life takes them in separate ways. While employed cleaning up after Kaiju battles, Kafka meets Reno Ichikawa. Reno's determination to join The Defense Force reawakens Kafka's promise to join Mina and protect humanity.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
         "science-fiction"
       ]
     }
@@ -415,30 +415,8 @@
       ]
     },
     {
-      "id": 971598908,
-      "rank": 15,
-      "dateAdded": "2024-01-30T23:08:25.000Z",
-      "showIds": {
-        "trakt": 170054,
-        "slug": "shogun-2024",
-        "tvdb": 392573,
-        "imdb": "tt2788316",
-        "tmdb": 126308,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/shogun-2024",
-      "title": "Shōgun",
-      "year": 2024,
-      "overview": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
-      "status": "returning series",
-      "genres": [
-        "drama",
-        "war"
-      ]
-    },
-    {
       "id": 988019316,
-      "rank": 16,
+      "rank": 15,
       "dateAdded": "2024-02-28T19:54:21.000Z",
       "showIds": {
         "trakt": 99188,
@@ -456,9 +434,75 @@
       "genres": [
         "reality"
       ]
+    },
+    {
+      "id": 1018214326,
+      "rank": 16,
+      "dateAdded": "2024-04-30T02:05:40.000Z",
+      "showIds": {
+        "trakt": 217121,
+        "slug": "baby-reindeer",
+        "tvdb": 417223,
+        "imdb": "tt13649112",
+        "tmdb": 241259,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/baby-reindeer",
+      "title": "Baby Reindeer",
+      "year": 2024,
+      "overview": "When a struggling comedian shows one act of kindness to a vulnerable woman, it sparks a suffocating obsession which threatens to wreck both their lives.",
+      "status": "ended",
+      "genres": [
+        "drama"
+      ]
     }
   ],
   "watched": [
+    {
+      "id": 163965,
+      "dateAdded": "2024-04-30T02:06:48.000Z",
+      "showIds": {
+        "trakt": 163965,
+        "slug": "fallout",
+        "tvdb": 416744,
+        "imdb": "tt12637874",
+        "tmdb": 106379,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/fallout",
+      "title": "Fallout",
+      "year": 2024,
+      "overview": "The story of haves and have-nots in a world in which there’s almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
+      "status": "returning series",
+      "genres": [
+        "fantasy",
+        "science-fiction",
+        "action",
+        "adventure",
+        "mystery"
+      ]
+    },
+    {
+      "id": 170054,
+      "dateAdded": "2024-04-30T02:06:33.000Z",
+      "showIds": {
+        "trakt": 170054,
+        "slug": "shogun-2024",
+        "tvdb": 392573,
+        "imdb": "tt2788316",
+        "tmdb": 126308,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/shogun-2024",
+      "title": "Shōgun",
+      "year": 2024,
+      "overview": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "war"
+      ]
+    },
     {
       "id": 196794,
       "dateAdded": "2024-04-12T20:47:17.000Z",
@@ -2418,8 +2462,7 @@
       "overview": "ER explores the inner workings of an urban teaching hospital and the critical issues faced by the dedicated physicians and staff of its overburdened emergency room.",
       "status": "ended",
       "genres": [
-        "drama",
-        "comedy"
+        "drama"
       ]
     },
     {
@@ -2440,8 +2483,7 @@
       "status": "ended",
       "genres": [
         "drama",
-        "crime",
-        "documentary"
+        "crime"
       ]
     },
     {
@@ -3534,7 +3576,7 @@
       "showIds": {
         "trakt": 169891,
         "slug": "the-haunting-of-bly-manor",
-        "tvdb": null,
+        "tvdb": 345246,
         "imdb": "tt10970552",
         "tmdb": 109958,
         "tvrage": null
@@ -4659,23 +4701,23 @@
   "genres": [
     {
       "genre": "drama",
-      "total": 116
+      "total": 117
     },
     {
       "genre": "action",
-      "total": 86
+      "total": 87
     },
     {
       "genre": "fantasy",
-      "total": 74
+      "total": 75
     },
     {
       "genre": "adventure",
-      "total": 73
+      "total": 74
     },
     {
       "genre": "science fiction",
-      "total": 53
+      "total": 54
     },
     {
       "genre": "anime",
@@ -4683,11 +4725,11 @@
     },
     {
       "genre": "mystery",
-      "total": 45
+      "total": 46
     },
     {
       "genre": "comedy",
-      "total": 37
+      "total": 36
     },
     {
       "genre": "crime",
@@ -4726,19 +4768,15 @@
       "total": 3
     },
     {
+      "genre": "war",
+      "total": 2
+    },
+    {
       "genre": "reality",
       "total": 1
     },
     {
-      "genre": "war",
-      "total": 1
-    },
-    {
       "genre": "donghua",
-      "total": 1
-    },
-    {
-      "genre": "documentary",
       "total": 1
     },
     {
