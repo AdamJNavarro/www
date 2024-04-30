@@ -3,15 +3,16 @@ import Link from 'next/link';
 import routes from '~/app/config/routes';
 
 import { Page, Content } from '~/components/Layouts/Page';
-import { watched } from './letterboxd/letterboxd.data';
+import { watched, lastUpdated } from './letterboxd/letterboxd.data';
 import Stats from '~/components/common/Stats';
 import { DataAttribution } from '~/components/common/Attribution';
+import { formatDate } from '~/utils/Dates';
 
 export const { metadata } = routes.movies;
 
 const movieStats = [
-  { label: 'Films', value: 1532 },
-  { label: 'Hours', value: 2873 },
+  { label: 'Films', value: 1535 },
+  { label: 'Hours', value: 2879 },
   { label: 'Directors', value: 836 },
 ];
 
@@ -62,6 +63,9 @@ export default async function MoviesPage() {
 
       <div className="mb-24">
         <Stats data={movieStats} />
+        <div className="text-xs text-surface-tertiary text-center mt-4">
+          Updated {formatDate({ date: lastUpdated, format: 'ago' })}
+        </div>
       </div>
 
       <Content.Header>

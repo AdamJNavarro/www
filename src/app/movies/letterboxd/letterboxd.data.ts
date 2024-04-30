@@ -1,10 +1,31 @@
-const lastUpdated = '03/28/2024';
+const lastUpdated = '2024-04-30T03:51:40.949Z';
 
 const watched = [
   {
-    posterPath: '/lF9LNf420WMH81gG7sq6ioDOhtl.jpg',
+    posterPath: '/x8Od47ZMDDT3ho3IRdXNmcjHknX.jpg',
+    dateAdded: '2024-05-01',
+    name: 'The Ministry of Ungentlemanly Warfare',
+    year: '2024',
+    url: 'https://boxd.it/u5zu',
+  },
+  {
+    posterPath: '/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg',
+    dateAdded: '2024-04-24',
+    name: 'Civil War',
+    year: '2024',
+    url: 'https://boxd.it/z1jW',
+  },
+  {
+    posterPath: '/jzP5rPwwNqUGERlrUzKKljfyulf.jpg',
+    dateAdded: '2024-03-30',
+    name: "My Hero Academia: World Heroes' Mission",
+    year: '2021',
+    url: 'https://boxd.it/sTw2',
+  },
+  {
+    posterPath: '/bQ2ywkchIiaKLSEaMrcT6e29f91.jpg',
     dateAdded: '2024-03-29',
-    name: 'Godzilla x Kong: The New Empire',
+    name: 'Godzilla × Kong: The New Empire',
     year: '2024',
     url: 'https://boxd.it/v1PK',
   },
@@ -21,27 +42,6 @@ const watched = [
     name: 'My Hero Academia: Two Heroes',
     year: '2018',
     url: 'https://boxd.it/igfw',
-  },
-  {
-    posterPath: '/bXi6IQiQDHD00JFio5ZSZOeRSBh.jpg',
-    dateAdded: '2024-03-26',
-    name: 'Road House',
-    year: '2024',
-    url: 'https://boxd.it/cdzQ',
-  },
-  {
-    posterPath: '/tBbr1LJn5rrP08Y16jJAKwLEECf.jpg',
-    dateAdded: '2024-03-18',
-    name: 'Hunter x Hunter: Phantom Rouge',
-    year: '2013',
-    url: 'https://boxd.it/6jPI',
-  },
-  {
-    posterPath: '/4eWeXswkAUIvdVWFvPrUFu2TxuI.jpg',
-    dateAdded: '2024-03-13',
-    name: 'Bob Marley: One Love',
-    year: '2024',
-    url: 'https://boxd.it/uckw',
   },
 ];
 
@@ -75,14 +75,14 @@ const watchlist = [
     url: 'https://boxd.it/sAhC',
   },
   {
-    posterPath: '/b4fn3VIdVTT3SX0rFMNFbl5xuvg.jpg',
+    posterPath: '/4lhR4L2vzzjl68P1zJyCH755Oz4.jpg',
     dateAdded: '2024-02-14',
     name: 'Monkey Man',
     year: '2024',
     url: 'https://boxd.it/kvsO',
   },
   {
-    posterPath: '/2DR8Wi785gwqCspLFVVr7G3sERx.jpg',
+    posterPath: '/vbI5h1Enc3gscdmg7lRnG4jX4R7.jpg',
     dateAdded: '2024-02-14',
     name: 'A Quiet Place: Day One',
     year: '2024',
