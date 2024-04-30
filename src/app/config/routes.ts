@@ -2,6 +2,7 @@ import {
   IconBooks,
   IconCode,
   IconDeviceTvOld,
+  IconHeart,
   IconHome2,
   IconMoodHappy,
   IconMovie,
@@ -58,6 +59,15 @@ const routes: RouteConfig = {
     metadata: {
       title: 'Dancing',
       description: 'Some of my dancing performances.',
+    },
+  },
+  fitness: {
+    icon: IconHeart,
+    label: 'Fitness',
+    href: '/fitness',
+    metadata: {
+      title: 'Fitness',
+      description: 'What I do to keep my body healthy.',
     },
   },
   home: {

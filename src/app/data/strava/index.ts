@@ -28,8 +28,6 @@ async function getStravaAccessToken() {
     },
   });
 
-  const expiresTimestamp = unixTimestampToDate(res.data.expires_at);
-
   return res.data.access_token;
 }
 
@@ -53,14 +51,12 @@ async function generateStravaTokens(refreshToken: string) {
   });
 
   const { access_token, refresh_token, expires_at } = res.data;
-  const updVal = await saveApiTokens({
+  return await saveApiTokens({
     provider: 'strava',
     accessToken: access_token,
     refreshToken: refresh_token,
     expirationDate: unixTimestampToDate(expires_at),
   });
-  console.log('UPD VAL', updVal);
-  return updVal;
 }
 
 async function getStravaToken() {
@@ -71,10 +67,8 @@ async function getStravaToken() {
     const tokenExpirationDate = new Date(expirationDate);
     const currentDate = new Date();
     if (currentDate > tokenExpirationDate) {
-      console.log('Expired token -- generate new');
       // token expired - generate new
       const freshTokens = await generateStravaTokens(refreshToken);
-      console.log('FRresh Tokens', freshTokens);
       return freshTokens?.access_token;
     } else {
       return accessToken;
@@ -135,15 +129,21 @@ export async function getStravaActivities({ params }: { params: string }) {
     const data = await response.json();
 
     const activities = data.map((obj) => {
-      const { id, distance, moving_time, elapsed_time, sport_type, start_date } =
-        obj;
+      const {
+        id,
+        distance,
+        moving_time,
+        elapsed_time,
+        sport_type,
+        start_date_local,
+      } = obj;
       return {
         id,
         distance,
         totalDuration: elapsed_time,
         movingDuration: moving_time,
         sport: sport_type,
-        date: start_date,
+        date: start_date_local,
       };
     });
 
