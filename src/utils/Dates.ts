@@ -54,3 +54,25 @@ export function formatDate({ date, format }: FormatDateArgs): string {
   if (format === 'short-ago') return `${shortDate} (${agoStr})`;
   return `${longDate} (${agoStr})`;
 }
+
+export function formatDuration(duration: number): string {
+  const hrs = Math.floor(duration / 3600);
+  const mins = Math.floor((duration % 3600) / 60);
+  const secs = Math.floor(duration % 60);
+
+  let str = '';
+
+  if (hrs > 0) {
+    str += `${hrs}hr `;
+  }
+
+  if (mins > 0) {
+    str += `${mins}m `;
+  }
+
+  if (secs > 0) {
+    str += `${secs}s`;
+  }
+
+  return str;
+}

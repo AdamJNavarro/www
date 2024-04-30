@@ -5,10 +5,7 @@ const numOfDays = 30;
 const today = new Date();
 const oldestDate = new Date(new Date().setDate(today.getDate() - numOfDays));
 const afterUnix = new Date(oldestDate).getTime() / 1000;
-const todayLabel = new Date().toLocaleString('en-us', {
-  month: 'short',
-  day: 'numeric',
-});
+
 const oldestDateLabel = new Date(oldestDate).toLocaleString('en-us', {
   month: 'short',
   day: 'numeric',
@@ -41,7 +38,6 @@ const cardioSportTypes = [
 ];
 
 function getTileColor(activities: any[]): string {
-  if (activities.length === 0) return 'bg-slate-300/60 dark:bg-slate-900/95';
   if (activities.length > 1) {
     // handle multiple activities
     const sportTypes = activities.map((obj) => obj.sport);
@@ -70,6 +66,9 @@ function getTileColor(activities: any[]): string {
   return 'bg-pink-700';
 }
 
+const baseHeatmapTileClass =
+  'rounded-sm place-content-center aspect-square text-center';
+
 export default async function StravaHeatmap() {
   const { data, error } = await getStravaActivities({
     params: `after=${afterUnix}&per_page=60`,
@@ -94,10 +93,22 @@ export default async function StravaHeatmap() {
             datesAreSameDay(item, obj.date)
           );
 
+          const hasActivities = matchingActivities.length > 0;
+
+          if (hasActivities) {
+            //const hasMultipleActivities = matchingActivities.length > 1;
+            return (
+              <div
+                key={item}
+                className={`${baseHeatmapTileClass} ${getTileColor(matchingActivities)}`}
+              />
+            );
+          }
+
           return (
             <div
               key={item}
-              className={`rounded-sm place-content-center aspect-square text-center ${getTileColor(matchingActivities)}`}
+              className={`${baseHeatmapTileClass} bg-slate-300/60 dark:bg-slate-900/95`}
             />
           );
         })}
@@ -118,10 +129,6 @@ export default async function StravaHeatmap() {
           <div className="h-3 w-3 rounded-full bg-sky-700 mr-1.5" />
           <div>Mobility</div>
         </div>
-        {/* <div className="flex items-center">
-          <div className="h-3 w-3 rounded-full bg-slate-900/95 mr-1.5" />
-          <div>Rest</div>
-        </div> */}
       </div>
     </div>
   );

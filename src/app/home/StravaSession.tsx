@@ -1,4 +1,4 @@
-import { formatDate } from '~/utils/Dates';
+import { formatDate, formatDuration } from '~/utils/Dates';
 import Dashboard from './Dashboard';
 
 function buildStravaUrl(id: number): string {
@@ -12,28 +12,6 @@ function makeSportTypeReadable(sport: string): string {
 function getSessionDistance(distance: number): string {
   const distanceInMiles = distance * 0.000621371192;
   return `${distanceInMiles.toFixed(1)} mi`;
-}
-
-function getSessionDuration(duration: number): string {
-  const hrs = Math.floor(duration / 3600);
-  const mins = Math.floor((duration % 3600) / 60);
-  const secs = Math.floor(duration % 60);
-
-  let str = '';
-
-  if (hrs > 0) {
-    str += `${hrs}hr `;
-  }
-
-  if (mins > 0) {
-    str += `${mins}m `;
-  }
-
-  if (secs > 0) {
-    str += `${secs}s`;
-  }
-
-  return str;
 }
 
 export default function StravaSession({ data }) {
@@ -51,7 +29,7 @@ export default function StravaSession({ data }) {
         <Dashboard.Details>
           {formatDate({ date, format: 'short' })}
         </Dashboard.Details>
-        <Dashboard.Details>{getSessionDuration(totalDuration)}</Dashboard.Details>
+        <Dashboard.Details>{formatDuration(totalDuration)}</Dashboard.Details>
         {distance > 0 && (
           <Dashboard.Details>{getSessionDistance(distance)}</Dashboard.Details>
         )}
