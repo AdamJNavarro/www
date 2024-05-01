@@ -63,10 +63,10 @@ export default function SiteLayout({ children }: any) {
         <header className="bg-white border-b dark:border-slate-800 dark:bg-slate-950 flex w-full fixed z-[200] h-16">
           <div className="h-100 pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
             <div className="flex flex-row  items-center justify-start gap-4">
-              <p className="text-black dark:text-white font-bold text-lg block capitalize desktop:hidden">
+              <p className="text-black dark:text-white font-extrabold text-lg block capitalize desktop:hidden">
                 {headerTitle}
               </p>
-              <p className="text-black dark:text-white font-bold text-lg hidden desktop:block">
+              <p className="text-black dark:text-white font-extrabold text-lg hidden desktop:block">
                 Adam Navarro
               </p>
             </div>
@@ -102,7 +102,7 @@ export default function SiteLayout({ children }: any) {
                           toggleMenu();
                         }}
                         className={classNames({
-                          'relative flex items-center py-1 px-2 rounded-md font-medium text-md':
+                          'relative flex items-center py-1 px-2 rounded-md font-medium':
                             true,
                           'text-slate-700 dark:text-slate-200 hover:text-slate-950 dark:hover:text-white':
                             true,

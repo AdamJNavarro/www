@@ -12,7 +12,7 @@ export default async function DancingPage() {
           If there is a dance floor, you will find me on it.
         </Page.Description>
       </Page.Header>
-      <div className="prose mb-24">
+      <div className="prose max-w-none mb-24">
         <p>
           It wasn’t until my college days that I realized just how much I enjoyed
           dancing. At first I would need a dose of the liquid courage to be

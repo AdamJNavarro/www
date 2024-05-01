@@ -53,7 +53,7 @@ export default async function MoviesPage() {
         </Page.Description>
       </Page.Header>
 
-      <p className="prose mb-24">
+      <p className="prose max-w-none mb-24">
         I wouldn't classify myself as a cinephile but I'd say I am teetering right on
         the edge. Going to the theater is a weekly ritual and it isn't often that I
         miss a week. As a result, sometimes you end up seeing some less-than-stellar
@@ -75,7 +75,7 @@ export default async function MoviesPage() {
         <LetterboxdList data={favorites} />
       </div>
 
-      <p className="prose mb-24">
+      <p className="prose max-w-none mb-24">
         As you can see, Peter Jackson's Lord of the Rings trilogy holds a special
         place in my heart. Frank Darabont's Shawshank is another film that left an
         indelible mark on me. Letterboxd only allows for a Top 4 but I'll be creating
@@ -98,7 +98,7 @@ export default async function MoviesPage() {
 
 function LetterboxdList({ data }: any) {
   return (
-    <div className="w-shell-full dark:bg-slate-900/35 tablet:mx-0 tablet:bg-transparent">
+    <div className="w-shell-full tablet:mx-0">
       <div className="grid grid-cols-1 tablet:gap-4 tablet:grid-cols-2">
         {data.map((item) => (
           <Link

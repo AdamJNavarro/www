@@ -60,7 +60,7 @@ export default function Trakt() {
 
 function TraktList({ data }: any) {
   return (
-    <div className="w-shell-full dark:bg-slate-900/35 tablet:mx-0 tablet:bg-transparent">
+    <div className="w-shell-full tablet:mx-0">
       <div className="grid grid-cols-1 tablet:gap-4 tablet:grid-cols-2">
         {data.map((item) => (
           <Link

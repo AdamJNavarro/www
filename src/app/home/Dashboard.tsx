@@ -63,7 +63,7 @@ function Loading() {
 }
 
 function Title(props) {
-  return <div className="text-md text-surface-primary" {...props} />;
+  return <div className="text-base text-surface-primary" {...props} />;
 }
 
 function Details(props) {

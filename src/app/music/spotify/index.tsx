@@ -66,7 +66,7 @@ async function SpotifyArtists() {
             className={spotifyImageClassName}
           />
           <div className="flex grow flex-col mx-4">
-            <div className="text-md text-surface-primary">{item.name}</div>
+            <div className="text-base text-surface-primary">{item.name}</div>
             <div className="text-sm text-surface-secondary">
               {nFormatter(item.followers, 0)} followers
             </div>
@@ -95,7 +95,7 @@ async function SpotifyTracks() {
             className={spotifyImageClassName}
           />
           <div className="flex grow flex-col mx-4">
-            <div className="text-md text-surface-primary">{item.name}</div>
+            <div className="text-base text-surface-primary">{item.name}</div>
             <div className="text-sm text-surface-secondary">{item.artist}</div>
           </div>
           <div className="hidden desktop:block text-sm text-surface-tertiary">
@@ -125,7 +125,7 @@ async function SpotifyPodcasts() {
             className={spotifyImageClassName}
           />
           <div className="flex grow flex-col mx-4">
-            <div className="text-md text-surface-primary">{item.name}</div>
+            <div className="text-base text-surface-primary">{item.name}</div>
             <div className="text-sm text-surface-secondary">{item.publisher}</div>
           </div>
           <div className="hidden desktop:block text-sm text-surface-tertiary">

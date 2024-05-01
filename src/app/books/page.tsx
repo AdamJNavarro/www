@@ -57,7 +57,7 @@ export default async function BooksPage() {
         <LiteralList data={currentBooks} />
       </div>
 
-      <p className="prose mb-24">
+      <p className="prose max-w-none mb-24">
         I try to limit myself to no more than two books at a time. In order to keep
         things fresh, I make an effort to rotate between non-fiction and fiction.
         Typically I am apprehensive towards longer series and gravitate towards
@@ -67,7 +67,7 @@ export default async function BooksPage() {
       <Content.Header>
         <Content.Title>Recently Read</Content.Title>
       </Content.Header>
-      <div className="prose mt-8 mb-12">
+      <div className="prose max-w-none mt-8 mb-12">
         <ul>
           {finishedBooks
             .slice(-recentlyReadLimit)
@@ -79,7 +79,7 @@ export default async function BooksPage() {
             ))}
         </ul>
       </div>
-      <p className="prose mb-24">
+      <p className="prose max-w-none mb-24">
         Here are the last 10 books I’ve finished. To see all of my past reading
         (since I started logging), you can check out my{' '}
         <a
@@ -97,7 +97,7 @@ export default async function BooksPage() {
       <Content.Header>
         <Content.Title>Favorite Quotes</Content.Title>
       </Content.Header>
-      <div className="prose mt-8 flex flex-col space-y-12">
+      <div className="prose max-w-none mt-8 flex flex-col space-y-12">
         {quotes.map((quote, index) => (
           <blockquote key={`quote-${index}`}>
             <p>{quote.words}</p>
@@ -114,7 +114,7 @@ export default async function BooksPage() {
 
 function LiteralList({ data }: any) {
   return (
-    <div className="w-shell-full dark:bg-slate-900/35 tablet:mx-0 tablet:bg-transparent">
+    <div className="w-shell-full tablet:mx-0">
       <div className="grid grid-cols-1 tablet:gap-4 tablet:grid-cols-2">
         {data.map((item) => (
           <Link

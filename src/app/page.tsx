@@ -123,7 +123,7 @@ async function LatestSpotifyTrack() {
 
 function Intro() {
   return (
-    <div className="prose dark:prose-invert mx-auto mb-16">
+    <div className="prose mx-auto mb-16">
       <p>
         Hey there, my name is Adam! I’m a{' '}
         <Link href={routes.coding.href}>coder</Link>, fitness enthusiast, music &
