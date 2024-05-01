@@ -10,11 +10,11 @@ function Tile(props: NavigationTileProps) {
   return (
     <Link
       href={props.href}
-      className="rounded-md p-4 bg-surface hover-surface shadow-surface flex items-center"
+      className="rounded-md h-14  bg-surface hover-surface shadow-surface flex items-center"
     >
-      <props.icon className="text-violet-500 dark:text-sky-200 h-5 w-5" />
+      <props.icon className="text-violet-500 dark:text-sky-200 h-5 w-5 mx-4" />
 
-      <div className="flex grow  justify-center">
+      <div className="flex grow">
         <div className="text-surface-primary text-base font-medium">
           {props.label}
         </div>

@@ -79,7 +79,7 @@ export default async function HomePage() {
         </h2>
       </div>
       <div className="mt-8 mb-24">
-        <div className="grid gap-4 grid-cols-2  tablet:grid-cols-3">
+        <div className="grid gap-5 grid-cols-[repeat(auto-fill,_minmax(160px,_1fr))]">
           {interestsRoutes.map((item) => (
             <Navigation.Tile key={item.label} {...item} />
           ))}
