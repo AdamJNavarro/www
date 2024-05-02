@@ -52,13 +52,13 @@ const routes: RouteConfig = {
       description: 'All things coding-related.',
     },
   },
-  dancing: {
+  dance: {
     icon: IconShoe,
-    label: 'Dancing',
-    href: '/dancing',
+    label: 'Dance',
+    href: '/dance',
     metadata: {
-      title: 'Dancing',
-      description: 'Some of my dancing performances.',
+      title: 'Dance',
+      description: 'Some of my dance performances.',
     },
   },
   fitness: {

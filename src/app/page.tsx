@@ -19,7 +19,7 @@ import Link from 'next/link';
 const interestsRoutes = [
   routes.books,
   routes.coding,
-  routes.dancing,
+  routes.dance,
   routes.fitness,
   routes.movies,
   routes.music,

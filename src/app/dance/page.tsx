@@ -1,13 +1,13 @@
 import routes from '~/app/config/routes';
 import { Page } from '~/components/Layouts/Page';
 
-export const { metadata } = routes.dancing;
+export const { metadata } = routes.dance;
 
-export default async function DancingPage() {
+export default async function DancePage() {
   return (
     <div>
       <Page.Header>
-        <Page.Title>Dancing</Page.Title>
+        <Page.Title>Dance</Page.Title>
         <Page.Description>
           If there is a dance floor, you will find me on it.
         </Page.Description>
