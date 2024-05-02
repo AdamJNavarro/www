@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { getLogoPath } from '~/utils';
 import ThemeImage from './ThemeImage';
 
@@ -79,9 +78,7 @@ const Services = {
 const Environment = {
   VSCode: () => <StackItem href="https://code.visualstudio.com/" name="VSCode" />,
   Iterm: () => <StackItem href="https://iterm2.com/" name="iTerm" />,
-  CodeWhisperer: () => (
-    <StackItem href="https://aws.amazon.com/codewhisperer/" name="Code Whisperer" />
-  ),
+  AmazonQ: () => <StackItem href="https://aws.amazon.com/q/" name="Amazon Q" />,
   OhMyZsh: () => <StackItem href="https://ohmyz.sh/" name="Oh My Zsh" />,
   AndroidStudio: () => (
     <StackItem href="https://developer.android.com/studio" name="Android Studio" />
