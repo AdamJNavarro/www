@@ -3,6 +3,7 @@ import routes from '../config/routes';
 import { Suspense } from 'react';
 import { LoadingSpinner } from '~/components/common/pure-html';
 import StravaHeatmap from './StravaHeatmap';
+import { DataAttribution } from '~/components/common/Attribution';
 
 export const { metadata } = routes.fitness;
 
@@ -13,7 +14,7 @@ export default async function FitnessPage() {
         <Page.Title>Fitness</Page.Title>
         <Page.Description>What I do to keep my body healthy.</Page.Description>
       </Page.Header>
-      <p className="prose mb-24">
+      <p className="prose max-w-none mb-24">
         For as long as I can remember, fitness has been a major part of my life.
         Growing up I played baseball, basketball, football and most of my free time
         was spent either playing neighborhood games (think Kick the Can, Ghost in the
@@ -26,6 +27,9 @@ export default async function FitnessPage() {
       <Suspense fallback={<LoadingSpinner />}>
         <StravaHeatmap />
       </Suspense>
+      <div className="mt-24">
+        <DataAttribution sources={['strava']} />
+      </div>
     </div>
   );
 }

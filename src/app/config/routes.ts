@@ -2,7 +2,7 @@ import {
   IconBooks,
   IconCode,
   IconDeviceTvOld,
-  IconHeart,
+  IconHeartbeat,
   IconHome2,
   IconMoodHappy,
   IconMovie,
@@ -62,7 +62,7 @@ const routes: RouteConfig = {
     },
   },
   fitness: {
-    icon: IconHeart,
+    icon: IconHeartbeat,
     label: 'Fitness',
     href: '/fitness',
     metadata: {

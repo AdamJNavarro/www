@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import ThemeImage from './ThemeImage';
 
-type DataSources = 'trakt' | 'letterboxd' | 'spotify';
+type DataSources = 'trakt' | 'letterboxd' | 'spotify' | 'strava';
 
 type DataAttributionProps = {
   label?: string;
@@ -59,6 +59,21 @@ export function DataAttribution({
                 height={709}
                 alt={`spotify brand icon`}
                 className="h-6 w-24"
+              />
+            </a>
+          )}
+          {sources.includes('strava') && (
+            <a
+              href="https://www.strava.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/img/logos/strava-attr.svg"
+                width={432}
+                height={91}
+                alt={`spotify brand icon`}
+                className="h-6 w-24 ml-2"
               />
             </a>
           )}
