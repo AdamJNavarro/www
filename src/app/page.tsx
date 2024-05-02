@@ -4,7 +4,7 @@ import routes from './config/routes';
 import Navigation from '~/components/common/Navigation';
 import BookRead from './home/BookRead';
 import { getLatestStarredRepo } from './data/github';
-import { getLatestStravaActivity } from './data/strava';
+import { getStravaActivities } from './data/strava';
 import { getLatestLikedSongs } from './data/spotify';
 import WordLearned from './home/WordLearned';
 import StravaSession from './home/StravaSession';
@@ -99,11 +99,13 @@ async function LatestWord() {
 }
 
 async function LatestStrava() {
-  const { data, error } = await getLatestStravaActivity();
+  const { data, error } = await getStravaActivities({
+    params: `per_page=1`,
+  });
 
   if (error) return null;
 
-  return <StravaSession data={data} />;
+  return <StravaSession data={data[0]} />;
 }
 
 async function LatestGithubRepoStarred() {
