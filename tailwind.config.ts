@@ -26,7 +26,7 @@ const config: Config = {
         sidebarClosed: '0px auto',
       },
       gridTemplateRows: {
-        header: '96px auto',
+        header: '64px auto',
       },
       width: {
         sidebar: `${sidebar_px}px`,

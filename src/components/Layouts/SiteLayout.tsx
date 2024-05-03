@@ -61,16 +61,16 @@ export default function SiteLayout({ children }: any) {
     <main className="min-h-screen grid grid-rows-header">
       <div>
         <header className="bg-white border-b dark:border-slate-800 dark:bg-slate-950 flex w-full fixed z-[200] h-16">
-          <div className="h-100 pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
-            <div className="flex flex-row  items-center justify-start gap-4">
-              <p className="text-black dark:text-white font-extrabold text-lg block capitalize desktop:hidden">
+          <div className="pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
+            <div className="flex items-center justify-start">
+              <div className="text-black dark:text-white font-extrabold text-lg block capitalize desktop:hidden">
                 {headerTitle}
-              </p>
-              <p className="text-black dark:text-white font-extrabold text-lg hidden desktop:block">
+              </div>
+              <div className="text-black dark:text-white font-extrabold text-lg hidden desktop:block">
                 Adam Navarro
-              </p>
+              </div>
             </div>
-            <div className="flex flex-row items-center gap-4">
+            <div className="flex items-center">
               <BurgerButton isOpen={menuOpened} onClick={toggleMenu} />
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function SiteLayout({ children }: any) {
               'flex flex-col py-4 px-2': true, // layout
               'bg-white border-r dark:border-slate-800 dark:bg-slate-950': true, // colors
               'top-16 l-0 z-[200] fixed': true, // positioning
-              'h-[calc(100vh_-_96px)] w-full desktop:w-sidebar': true, // for height and width
+              'h-[calc(100vh_-_64px)] w-full desktop:w-sidebar': true, // for height and width
               'transition-transform duration-300 ease-in-out desktop:-translate-x-0':
                 true, //animations
               '-translate-x-full ': !menuOpened, //hide sidebar to the left when closed
