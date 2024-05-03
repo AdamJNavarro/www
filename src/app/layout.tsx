@@ -1,5 +1,7 @@
 import './global.css';
 import { Metadata, Viewport } from 'next';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import SiteLayout from '~/components/Layouts/SiteLayout';
 
@@ -46,7 +48,7 @@ export const viewport: Viewport = {
 
 export default function App({ children }: { children: any }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${GeistMono.variable} ${GeistSans.variable}`}>
       <body className="antialiased bg-slate-50 dark:bg-slate-950">
         <SiteLayout>{children}</SiteLayout>
         <SpeedInsights />
