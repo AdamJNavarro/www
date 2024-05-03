@@ -60,20 +60,14 @@ export default function SiteLayout({ children }: any) {
   return (
     <main className="min-h-screen grid grid-rows-header">
       <div>
-        <header className="bg-white border-b dark:border-slate-800 dark:bg-slate-950 flex w-full fixed z-[200] h-16">
-          <div className="pl-4 pr-6 flex flex-1 flex-row items-center justify-between gap-4">
-            <div className="flex items-center justify-start">
-              <div className="text-black dark:text-white font-extrabold text-lg block capitalize desktop:hidden">
-                {headerTitle}
-              </div>
-              <div className="text-black dark:text-white font-extrabold text-lg hidden desktop:block">
-                Adam Navarro
-              </div>
-            </div>
-            <div className="flex items-center">
-              <BurgerButton isOpen={menuOpened} onClick={toggleMenu} />
-            </div>
+        <header className="bg-white border-b dark:border-slate-800 dark:bg-slate-950 flex min-w-0 w-full fixed z-[200] h-16 px-4 items-center justify-between gap-8">
+          <div className="text-black dark:text-white font-extrabold text-lg text-ellipsis overflow-hidden whitespace-nowrap block capitalize desktop:hidden">
+            {headerTitle}
           </div>
+          <div className="text-black dark:text-white font-extrabold text-lg hidden desktop:block">
+            Adam Navarro
+          </div>
+          <BurgerButton isOpen={menuOpened} onClick={toggleMenu} />
         </header>
       </div>
       <div className="grid desktop:grid-cols-sidebar">
