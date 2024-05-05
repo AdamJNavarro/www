@@ -1,11 +1,12 @@
 import { Suspense } from 'react';
 import routes from '~/app/config/routes';
-import { getWords } from '~/app/data/db/queries';
+import { getPaginatedWords, getWords } from '~/app/data/db/queries';
 import { LoadingSpinner } from '~/components/common/pure-html';
 import { auth } from '~/app/auth';
 import { Page } from '~/components/Layouts/Page';
 import WordForm from './WordForm';
 import { formatDate } from '~/utils/Dates';
+import WordsList from './WordsList';
 
 export const { metadata } = routes.words;
 
@@ -20,10 +21,18 @@ export default async function WordsPage() {
         </Page.Description>
       </Page.Header>
       <Suspense fallback={<LoadingSpinner />}>
-        <WordBank />
+        <TheWords />
       </Suspense>
     </div>
   );
+}
+
+async function TheWords() {
+  const { data, error } = await getPaginatedWords(0, 10);
+
+  if (error) return null;
+
+  return <WordsList initialWords={data} />;
 }
 
 async function WordBank() {

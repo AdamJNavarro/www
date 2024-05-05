@@ -48,3 +48,19 @@ export async function getWords() {
     return handleServerActionError();
   }
 }
+
+export async function getPaginatedWords(offset: number, limit: number) {
+  noStore();
+
+  try {
+    const words = (
+      await sql`SELECT spelling, definition, part_of_speech AS "partOfSpeech", date_learned AS "dateLearned" FROM words ORDER BY date_learned DESC LIMIT ${limit} OFFSET ${offset}`
+    ).rows;
+    return {
+      data: words,
+      error: null,
+    };
+  } catch (error) {
+    return handleServerActionError();
+  }
+}
