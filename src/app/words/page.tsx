@@ -1,11 +1,11 @@
 import { Suspense } from 'react';
 import routes from '~/app/config/routes';
-import { getWords } from '~/app/data/db/queries';
+import { getPaginatedWords } from '~/app/data/db/queries';
 import { LoadingSpinner } from '~/components/common/pure-html';
 import { auth } from '~/app/auth';
 import { Page } from '~/components/Layouts/Page';
 import WordForm from './WordForm';
-import { formatDate } from '~/utils/Dates';
+import WordsList from './WordsList';
 
 export const { metadata } = routes.words;
 
@@ -28,37 +28,18 @@ export default async function WordsPage() {
 
 async function WordBank() {
   const session = await auth();
-  const { data, error } = await getWords();
+  const { data, error } = await getPaginatedWords({ offset: 0, limit: 20 });
 
   if (error) return null;
 
   return (
     <div>
-      <div className="grid gap-4 grid-cols-1 desktop:grid-cols-2">
-        {data.map((item) => (
-          <div
-            key={item.spelling}
-            className="rounded-md p-4 flex flex-col bg-surface border-surface shadow-md dark:shadow-none"
-          >
-            <div className="flex items-center justify-between gap-4 mb-4 ">
-              <div className="flex items-center justify-start gap-1">
-                <div className="text-lg text-surface-primary">{item.spelling}</div>
-              </div>
-              <div className="text-xs text-surface-tertiary">
-                {formatDate({ date: String(item.dateLearned), format: 'short' })}
-              </div>
-            </div>
-            <div className="flex flex-col justify-center font-light text-base text-surface-secondary leading-tight">
-              {item.definition}.
-            </div>
-          </div>
-        ))}
-      </div>
       {session && session?.user?.email === 'adamjnav@gmail.com' && (
         <div className="my-24">
           <WordForm />
         </div>
       )}
+      <WordsList initialWords={data} />
     </div>
   );
 }
