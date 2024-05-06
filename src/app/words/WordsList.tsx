@@ -4,28 +4,34 @@ import { useEffect, useState } from 'react';
 import { formatDate } from '~/utils/Dates';
 import { getPaginatedWords } from '../data/db/queries';
 import { useInView } from 'react-intersection-observer';
+import { LoadingSpinner } from '~/components/common/pure-html';
 
-const NUM_TO_FETCH = 10;
+const NUM_TO_FETCH = 20;
 
 export default function WordsList({ initialWords }: any) {
-  const [offset, setOffset] = useState(NUM_TO_FETCH);
+  const [offset, setOffset] = useState(initialWords.length);
+  const [hasMoreWords, setHasMoreWords] = useState<boolean>(true);
   const [words, setWords] = useState<any[]>(initialWords);
   const { ref, inView } = useInView();
 
   const loadMoreWords = async () => {
-    const { data, error } = await getPaginatedWords(offset, NUM_TO_FETCH);
+    const { data, hasMore } = await getPaginatedWords({
+      offset,
+      limit: NUM_TO_FETCH,
+    });
     if (!data) return;
     setWords([...words, ...data]);
     setOffset(offset + NUM_TO_FETCH);
+    setHasMoreWords(hasMore);
   };
   useEffect(() => {
-    if (inView) {
+    if (inView && hasMoreWords) {
       loadMoreWords();
     }
-  }, [inView]);
+  }, [inView, hasMoreWords]);
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col">
       <div className="grid gap-4 grid-cols-1 desktop:grid-cols-2">
         {words.map((item) => (
           <div
@@ -46,7 +52,9 @@ export default function WordsList({ initialWords }: any) {
           </div>
         ))}
       </div>
-      <div ref={ref}>Loading...</div>
+      <div ref={ref} className="py-8 mx-auto">
+        {hasMoreWords ? <LoadingSpinner /> : null}
+      </div>
     </div>
   );
 }

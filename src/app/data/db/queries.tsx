@@ -33,34 +33,32 @@ export async function getLatestWord(): Promise<any> {
   }
 }
 
-export async function getWords() {
+export async function getPaginatedWords({
+  offset,
+  limit,
+}: {
+  offset: number;
+  limit: number;
+}) {
   noStore();
+
+  const overfetchLimit = limit + 1;
 
   try {
     const words = (
-      await sql`SELECT spelling, definition, part_of_speech AS "partOfSpeech", date_learned AS "dateLearned" FROM words ORDER BY date_learned DESC`
+      await sql`SELECT spelling, definition, part_of_speech AS "partOfSpeech", date_learned AS "dateLearned" FROM words ORDER BY date_learned DESC LIMIT ${overfetchLimit} OFFSET ${offset}`
     ).rows;
+
+    const hasMore = words.length > limit;
+    const expectedWords = hasMore ? words.slice(0, -1) : words;
+
     return {
-      data: words,
+      data: expectedWords,
+      hasMore,
       error: null,
     };
   } catch (error) {
-    return handleServerActionError();
-  }
-}
-
-export async function getPaginatedWords(offset: number, limit: number) {
-  noStore();
-
-  try {
-    const words = (
-      await sql`SELECT spelling, definition, part_of_speech AS "partOfSpeech", date_learned AS "dateLearned" FROM words ORDER BY date_learned DESC LIMIT ${limit} OFFSET ${offset}`
-    ).rows;
-    return {
-      data: words,
-      error: null,
-    };
-  } catch (error) {
-    return handleServerActionError();
+    const baseError = handleServerActionError();
+    return { ...baseError, hasMore: false };
   }
 }
