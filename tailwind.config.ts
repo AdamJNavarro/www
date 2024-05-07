@@ -16,6 +16,9 @@ const config: Config = {
       desktop: '1120px',
     },
     extend: {
+      animation: {
+        slogan: 'slogan 2.5s ease-in',
+      },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
@@ -27,6 +30,16 @@ const config: Config = {
       },
       gridTemplateRows: {
         header: '64px auto',
+      },
+      keyframes: {
+        slogan: {
+          '0%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        },
       },
       width: {
         sidebar: `${sidebar_px}px`,

@@ -39,7 +39,7 @@ export default async function HomePage() {
         className="rounded-full h-60 w-60 mx-auto mb-8"
       />
       <div className="text-center mb-16">
-        <p className="font-medium text-xl text-slate-700 dark:text-slate-300 desktop:text-2xl">
+        <p className="animate-slogan font-medium text-xl text-slate-700 dark:text-slate-300 desktop:text-2xl">
           Find Passion. Foster Passion.
         </p>
       </div>
