@@ -1,0 +1,26 @@
+name: Update Trakt Data
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 0'
+jobs:
+  prep-and-exec:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel env pull --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Install Deps
+        run: npm ci
+      - name: Run Trakt Script
+        run: npm run gen:trakt
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update trakt data'
