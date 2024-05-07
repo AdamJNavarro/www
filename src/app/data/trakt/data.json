@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-04-30T03:51:40.949Z",
+  "updatedAt": "2024-05-07T20:08:33.401Z",
   "stats": {
     "shows": 183,
     "episodes": 9828,
-    "minutes": 340545
+    "minutes": 340544
   },
   "watching": [
     {
@@ -4695,6 +4695,32 @@
         "drama",
         "mystery",
         "crime"
+      ]
+    },
+    {
+      "id": 1021980395,
+      "rank": 6,
+      "dateAdded": "2024-05-07T20:03:07.000Z",
+      "showIds": {
+        "trakt": 12915,
+        "slug": "dragon-ball-z",
+        "tvdb": 81472,
+        "imdb": "tt0121220",
+        "tmdb": 12971,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/dragon-ball-z",
+      "title": "Dragon Ball Z",
+      "year": 1989,
+      "overview": "The adventures of Earth's martial arts defender, Son Goku, continue with a new family and the revelation of his alien origins. Now Goku and his allies must defend the planet from an onslaught of new extraterrestrial enemies.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "anime",
+        "superhero"
       ]
     }
   ],
