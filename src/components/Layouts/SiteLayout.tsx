@@ -3,7 +3,7 @@
 import classNames from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { navbarRoutes } from '~/app/config/routes';
+import { navbarRoutes } from '~/app/(main)/config/routes';
 import { buildReadableTitle } from '~/utils';
 import { useDisclosure } from '~/utils/Hooks';
 
