@@ -12,7 +12,11 @@
   "commitlint": {
     "extends": "@commitlint/config-conventional"
   },
+  "overrides": {
+    "@react-pdf/layout": "3.11.5"
+  },
   "dependencies": {
+    "@react-pdf/renderer": "^3.4.4",
     "@spotify/web-api-ts-sdk": "^1.2.0",
     "@tabler/icons-react": "^3.3.0",
     "@vercel/postgres": "^0.8.0",
