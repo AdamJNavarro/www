@@ -14,10 +14,14 @@ const config: Config = {
     screens: {
       tablet: '701px',
       desktop: '1120px',
+      monitor: '1280px',
     },
     extend: {
       animation: {
         slogan: 'slogan 2.5s ease-in',
+      },
+      container: {
+        center: true,
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],

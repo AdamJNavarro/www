@@ -17,10 +17,17 @@ export function makeKebabCase(str: string): string {
   return str.replaceAll(' ', '-').replaceAll('.', '-').toLowerCase();
 }
 
+function checkLogoNameRedirects(name: string): string {
+  if (name === 'eas') return 'expo';
+  if (name === 'react-native') return 'react';
+  return name;
+}
+
 export function getLogoPath(name: string, variant?: string): string {
   const fixedName = makeKebabCase(name);
-  if (variant) return `/img/logos/${fixedName}-${variant}.svg`;
-  return `/img/logos/${fixedName}.svg`;
+  const finalName = checkLogoNameRedirects(fixedName);
+  if (variant) return `/img/logos/${finalName}-${variant}.svg`;
+  return `/img/logos/${finalName}.svg`;
 }
 
 export function nFormatter(num: number, digits: number) {

@@ -1,7 +1,30 @@
 import '../global.css';
-import { Viewport } from 'next';
+import { Metadata, Viewport } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
+
+const baseUrl = new URL('https://adamjnavarro.com');
+
+export const metadata: Metadata = {
+  metadataBase: baseUrl,
+  title: {
+    default: process.env.NODE_ENV === 'development' ? 'Localhost' : 'Adam Navarro',
+    template:
+      process.env.NODE_ENV === 'development' ? '%s | Dev' : '%s | Adam Navarro',
+  },
+  description: 'Software builder, musician and fitness enthusiast.',
+  openGraph: {
+    title: 'Adam Navarro',
+    description: 'Software builder, musician and fitness enthusiast.',
+    url: baseUrl,
+    siteName: 'Adam Navarro',
+    locale: 'en_US',
+    type: 'website',
+  },
+  icons: {
+    shortcut: '/shortcut-icon.png',
+  },
+};
 
 export const viewport: Viewport = {
   themeColor: [

@@ -141,8 +141,23 @@ const routes: RouteConfig = {
       description: 'A collection of words I have learned.',
     },
   },
+  resume: {
+    icon: IconTypography,
+    label: 'Resume',
+    href: '/resume',
+    metadata: {
+      title: 'Resume',
+      description: 'Resume.',
+    },
+  },
 };
 
-export const navbarRoutes = [routes.home, routes.uses, routes.social];
+export const navbarRoutes = [
+  routes.home,
+  routes.uses,
+  routes.social,
+  routes.blog,
+  routes.resume,
+];
 
 export default routes;

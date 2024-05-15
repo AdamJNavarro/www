@@ -132,3 +132,18 @@ h4 {
   text-decoration: inherit;
   font-weight: 500;
 }
+
+.list-inline {
+  display: block;
+}
+.list-inline li {
+  display: inline-block;
+}
+.list-inline li:after {
+  content: '\2022';
+  margin: 0 10px;
+}
+
+.list-inline li:last-child:after {
+  content: '';
+}

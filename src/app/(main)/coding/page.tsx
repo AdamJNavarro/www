@@ -1,13 +1,15 @@
 import routes from '~/app/(main)/config/routes';
 import { Content, Page } from '~/components/Layouts/Page';
 
+import { StackItem, TechStackGrid } from '~/components/common/TechStack';
 import {
-  Environment,
-  Frameworks,
-  Languages,
-  Services,
-  TechStackGrid,
-} from '~/components/common/TechStack';
+  awsStack,
+  environmentStack,
+  frameworkStack,
+  languageStack,
+  serviceStack,
+  toolStack,
+} from '../data/stack';
 
 export const { metadata } = routes.coding;
 
@@ -23,10 +25,9 @@ export default async function CodingPage() {
       </Content.Header>
       <div className="mt-8 mb-24">
         <TechStackGrid>
-          <Languages.JavaScript />
-          <Languages.TypeScript />
-          <Languages.Html />
-          <Languages.Css />
+          {languageStack.map((item) => (
+            <StackItem key={item.name} {...item} />
+          ))}
         </TechStackGrid>
       </div>
       <Content.Header>
@@ -34,13 +35,9 @@ export default async function CodingPage() {
       </Content.Header>
       <div className="mt-8 mb-24">
         <TechStackGrid>
-          <Frameworks.NextJs />
-          <Frameworks.React />
-          <Frameworks.Tailwindcss />
-          <Frameworks.Mantine />
-          <Frameworks.Cypress />
-          <Frameworks.ReactNative />
-          <Frameworks.Expo />
+          {frameworkStack.map((item) => (
+            <StackItem key={item.name} {...item} />
+          ))}
         </TechStackGrid>
       </div>
       <Content.Header>
@@ -48,9 +45,19 @@ export default async function CodingPage() {
       </Content.Header>
       <div className="mt-8 mb-24">
         <TechStackGrid>
-          <Services.Vercel />
-          <Services.Github />
-          <Services.Cloudinary />
+          {[...serviceStack, ...awsStack].map((item) => (
+            <StackItem key={item.name} {...item} />
+          ))}
+        </TechStackGrid>
+      </div>
+      <Content.Header>
+        <Content.Title>Tools</Content.Title>
+      </Content.Header>
+      <div className="mt-8 mb-24">
+        <TechStackGrid>
+          {toolStack.map((item) => (
+            <StackItem key={item.name} {...item} />
+          ))}
         </TechStackGrid>
       </div>
       <Content.Header>
@@ -58,12 +65,9 @@ export default async function CodingPage() {
       </Content.Header>
       <div className="mt-8 mb-24">
         <TechStackGrid>
-          <Environment.VSCode />
-          <Environment.Iterm />
-          <Environment.AmazonQ />
-          <Environment.OhMyZsh />
-          <Environment.AndroidStudio />
-          <Environment.Xcode />
+          {environmentStack.map((item) => (
+            <StackItem key={item.name} {...item} />
+          ))}
         </TechStackGrid>
       </div>
     </div>
