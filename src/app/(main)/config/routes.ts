@@ -152,12 +152,6 @@ const routes: RouteConfig = {
   },
 };
 
-export const navbarRoutes = [
-  routes.home,
-  routes.uses,
-  routes.social,
-  routes.blog,
-  routes.resume,
-];
+export const navbarRoutes = [routes.home, routes.uses, routes.social];
 
 export default routes;

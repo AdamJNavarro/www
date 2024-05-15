@@ -1,10 +1,8 @@
 import {
   allServiceStack,
-  awsStack,
   frameworkStack,
   languageStack,
   possibleProjectStack,
-  serviceStack,
   StackItem,
   toolStack,
 } from '~/app/(main)/data/stack';
@@ -44,27 +42,24 @@ type ResumePersonalCategory = {
 };
 
 const resumeName = 'Adam Navarro';
-const resumeSlogan = 'Web Developer  •  UX Engineer';
+const resumeSlogan = 'Web Developer  •  Front-End Focus';
 
 const resumeContacts: ResumeContact[] = [
   {
-    label: 'adamjnav@gmail.com',
-  },
-  {
     label: '(414) 640-6400',
   },
+  // {
+  //   label: 'Milwaukee, WI',
+  // },
   {
-    label: 'Milwaukee, WI',
+    label: 'adamjnav@gmail.com',
+    href: 'mailto:adamjnav@gmail.com',
   },
   {
     label: 'adamjnavarro.com',
     href: personalWebsiteURL,
   },
 ];
-
-const awsNames = awsStack.map((item) => item.name.substring(3)).join(',');
-const serviceNames = serviceStack.map((item) => item.name).join(', ');
-const allServices = `${serviceNames}, AWS (${awsNames})`;
 
 const resumeInterests = [
   'Fitness',
@@ -90,9 +85,6 @@ const resumeStrengths = [
 ];
 
 const resumeValues = ['some', 'values', 'go', 'here'];
-
-const personalPlaceholder =
-  'Empathy, Open-mindedness, Communication, Collaboration, Accountability, Resourcefulness, Adaptability, Problem Solving, Critical Thinking';
 
 const resumePersonalCategories: ResumePersonalCategory[] = [
   {
@@ -145,9 +137,11 @@ const resumeProjects: ResumeProject[] = [
   {
     id: 2,
     name: 'Expo Docs',
-    href: 'x',
+    href: 'https://docs.expo.dev/',
     summary: `The documentation website for the Expo ecosystem. Personal contributions include implementing Algolia search, embedding Snack code examples for the SDK & more.`,
-    stack: serviceStack.map((item) => item.name),
+    stack: possibleProjectStack
+      .filter((item) => item.projectIds.includes(2))
+      .map((obj) => obj.name),
   },
 ];
 
@@ -219,5 +213,5 @@ const resume: ResumeData = {
   },
 };
 
-export { resume, personalPlaceholder };
+export { resume };
 export type { ResumeExperience, ResumeProject };

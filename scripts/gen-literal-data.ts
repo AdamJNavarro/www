@@ -2,7 +2,7 @@ import ky from 'ky';
 import { loadEnvConfig } from '@next/env';
 import fs from 'fs/promises';
 import { buildNamesString } from '~/utils';
-import { LiteralBook } from '~/app/data/literal';
+import { LiteralBook } from '~/app/(main)/data/literal';
 
 const projectDir = process.cwd();
 loadEnvConfig(projectDir);

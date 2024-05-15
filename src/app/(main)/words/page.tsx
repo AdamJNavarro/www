@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import routes from '~/app/(main)/config/routes';
 import { getPaginatedWords } from '~/app/(main)/data/db/queries';
 import { LoadingSpinner } from '~/components/common/pure-html';
-import { auth } from '~/app/(main)/auth';
+import { auth } from '~/app/auth';
 import { Page } from '~/components/Layouts/Page';
 import WordForm from './WordForm';
 import WordsList from './WordsList';

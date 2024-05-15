@@ -11,43 +11,44 @@ const languageStack: StackItem[] = [
     name: 'JavaScript',
     href: 'https://tc39.es/ecma262/',
     activelyUsing: true,
-    projectIds: [1],
+    projectIds: [1, 2],
   },
   {
     name: 'TypeScript',
     href: 'https://www.typescriptlang.org/',
     activelyUsing: true,
-    projectIds: [1],
+    projectIds: [1, 2],
   },
   {
     name: 'HTML',
     href: 'https://html.spec.whatwg.org/multipage/',
     activelyUsing: true,
-    projectIds: [1],
+    projectIds: [1, 2],
   },
   {
     name: 'CSS',
     href: 'https://www.w3.org/Style/CSS/',
     activelyUsing: true,
-    projectIds: [1],
+    projectIds: [1, 2],
   },
   {
     name: 'MDX',
     href: 'https://mdxjs.com/',
     activelyUsing: true,
-    projectIds: [1],
+    projectIds: [1, 2],
   },
   {
     name: 'GraphQL',
     href: 'https://graphql.org/',
     activelyUsing: false,
-    projectIds: [],
+    projectIds: [2],
   },
   {
     name: 'Bash',
     href: 'https://www.gnu.org/software/bash/',
     activelyUsing: false,
     projectIds: [],
+    hasThemeLogos: true,
   },
 ];
 
@@ -56,19 +57,19 @@ const frameworkStack: StackItem[] = [
     name: 'Next.js',
     href: 'https://nextjs.org/',
     activelyUsing: true,
-    projectIds: [1],
+    projectIds: [1, 2],
   },
   {
     name: 'React',
     href: 'https://react.dev/',
     activelyUsing: true,
-    projectIds: [1],
+    projectIds: [1, 2],
   },
   {
     name: 'Node.js',
     href: 'https://nodejs.org/',
     activelyUsing: true,
-    projectIds: [1],
+    projectIds: [1, 2],
   },
   {
     name: 'TailwindCSS',
@@ -87,6 +88,7 @@ const frameworkStack: StackItem[] = [
     href: 'https://www.apollographql.com/docs/',
     activelyUsing: false,
     projectIds: [],
+    hasThemeLogos: true,
   },
   {
     name: 'Cypress',
@@ -147,7 +149,7 @@ const serviceStack: StackItem[] = [
   {
     name: 'Cloudinary',
     href: 'https://cloudinary.com/',
-    activelyUsing: false,
+    activelyUsing: true,
     projectIds: [],
   },
   {
@@ -173,7 +175,7 @@ const serviceStack: StackItem[] = [
     name: 'Algolia',
     href: 'https://www.algolia.com/',
     activelyUsing: false,
-    projectIds: [],
+    projectIds: [2],
   },
   {
     name: 'Firebase',
@@ -185,14 +187,14 @@ const serviceStack: StackItem[] = [
     name: 'CircleCI',
     href: 'https://circleci.com/',
     activelyUsing: false,
-    projectIds: [],
+    projectIds: [2],
     hasThemeLogos: true,
   },
   {
     name: 'Amplitude',
     href: 'https://amplitude.com/',
     activelyUsing: false,
-    projectIds: [],
+    projectIds: [2],
   },
   {
     name: 'Segment',
@@ -313,6 +315,12 @@ const toolStack: StackItem[] = [
   {
     name: 'ESlint',
     href: 'https://eslint.org/',
+    activelyUsing: true,
+    projectIds: [],
+  },
+  {
+    name: 'Commitlint',
+    href: 'https://commitlint.js.org/',
     activelyUsing: true,
     projectIds: [],
   },

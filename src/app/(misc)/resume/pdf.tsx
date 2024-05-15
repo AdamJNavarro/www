@@ -41,6 +41,12 @@ Font.register({
 
 Font.registerHyphenationCallback(hyphenationCallback);
 
+Font.registerEmojiSource({
+  format: 'png',
+  url: 'https://cdn.jsdelivr.net/npm/emoji-datasource-apple@15.1.2/img/apple/64/',
+  withVariationSelectors: true,
+});
+
 const colors = {
   neutral: {
     primary: '#020617',
@@ -53,27 +59,55 @@ const colors = {
   },
 };
 
+const fontSizes = {
+  sm: 10.5,
+  base: 11,
+  md: 12,
+  lg: 13,
+  xl: 14,
+};
+
+const fontWeights = {
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semiBold: 600,
+  bold: 700,
+};
+
+const spacing = {
+  px: '1px',
+  1: '4px',
+  2: '8px',
+  3: '12px',
+  6: '24px',
+  8: '32px',
+  9: '36px',
+  12: '48px',
+};
+
+const layoutHorizontalSpacing = spacing[9];
+
 const styles = StyleSheet.create({
   page: {
     backgroundColor: '#fff',
     display: 'flex',
     fontFamily: 'Geist Sans',
     justifyContent: 'flex-start',
-    fontSize: 10.5,
-    fontWeight: 300,
+    fontSize: fontSizes.base,
+    fontWeight: fontWeights.light,
     color: colors.neutral.primary,
+    paddingVertical: spacing[9],
   },
   header: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: '36px',
-    paddingTop: '36px',
-    flexBasis: '15%',
-    flexGrow: 0,
-    flexShrink: 1,
-    gap: '36px',
-    // backgroundColor: 'green',
+    alignItems: 'center',
+    paddingHorizontal: layoutHorizontalSpacing,
+    paddingBottom: spacing[9],
+    gap: layoutHorizontalSpacing,
+    //backgroundColor: 'green',
   },
   headerMain: {
     display: 'flex',
@@ -81,16 +115,17 @@ const styles = StyleSheet.create({
     flexBasis: '65%',
     flexGrow: 1,
     flexShrink: 0,
-    gap: '8px',
     //backgroundColor: 'indigo',
   },
   headerTitle: {
-    fontSize: 36,
-    fontWeight: 600,
+    fontSize: 32,
+    fontWeight: fontWeights.semiBold,
     color: colors.accent.primary,
   },
   headerSubtitle: {
-    fontSize: 10,
+    fontSize: fontSizes.md,
+    fontWeight: fontWeights.regular,
+    color: colors.neutral.tertiary,
   },
   headerContact: {
     //backgroundColor: 'orange',
@@ -98,7 +133,8 @@ const styles = StyleSheet.create({
     flexBasis: '35%',
     flexGrow: 0,
     flexShrink: 1,
-    gap: '2px',
+    gap: spacing.px,
+    fontSize: fontSizes.sm,
   },
   content: {
     alignItems: 'stretch',
@@ -106,15 +142,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'nowrap',
     justifyContent: 'flex-start',
-    flexBasis: '85%',
     flexGrow: 1,
-    flexShrink: 0,
-    paddingHorizontal: '36px',
-    gap: '36px',
+    paddingHorizontal: layoutHorizontalSpacing,
+    gap: layoutHorizontalSpacing,
   },
   sectionTitle: {
-    fontSize: 13,
-    fontWeight: 600,
+    fontSize: fontSizes.xl,
+    fontWeight: fontWeights.semiBold,
     color: colors.accent.secondary,
   },
   main: {
@@ -124,17 +158,17 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     flexGrow: 1,
     flexShrink: 0,
-    gap: '48px',
+    gap: spacing[9],
     //backgroundColor: 'purple',
   },
   mainSection: {
     //backgroundColor: 'indigo',
-    gap: '12px',
+    gap: spacing[3],
   },
   mainSectionEntry: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '32px',
+    gap: spacing[6],
   },
   sidebar: {
     alignSelf: 'stretch',
@@ -144,20 +178,20 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     flexGrow: 0,
     flexShrink: 1,
-    gap: '48px',
+    gap: spacing[12],
   },
   sidebarSection: {
     //backgroundColor: 'royalblue',
-    gap: '12px',
+    gap: spacing[3],
   },
   sidebarSectionEntry: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '6px',
+    gap: spacing[2],
   },
   sidebarEntryTitle: {
-    fontSize: 11,
-    fontWeight: 600,
+    fontSize: fontSizes.md,
+    fontWeight: fontWeights.semiBold,
     color: colors.neutral.secondary,
   },
   sidebarEntryBody: {
@@ -176,7 +210,7 @@ function SidebarSection({ title, children }: { title: string; children: any }) {
 
 function SidebarSectionEntry({ title, children }: { title: string; children: any }) {
   return (
-    <View style={styles.sidebarSectionEntry}>
+    <View wrap={false} style={styles.sidebarSectionEntry}>
       <Text style={styles.sidebarEntryTitle}>{title}</Text>
       <Text style={styles.sidebarEntryBody}>{children}</Text>
     </View>
@@ -188,9 +222,7 @@ export function ResumePdf() {
   const { name, slogan, contacts } = resume;
 
   return (
-    // @ts-ignore
     <Document author={name} title={`Résume for ${name}, ${year}`}>
-      {/* @ts-ignore */}
       <Page size="LETTER" style={styles.page}>
         <View style={styles.header}>
           <View style={styles.headerMain}>
@@ -238,20 +270,27 @@ function ExperienceSection() {
                 display: 'flex',
                 flexDirection: 'row',
                 alignItems: 'center',
-                gap: '4px',
+                gap: spacing[1],
               }}
             >
-              <Text style={{ fontSize: 12, fontWeight: 500 }}>{company}</Text>
-              <Text style={{ fontSize: 12 }}>•</Text>
-              <Text style={{ fontSize: 12, fontWeight: 400 }}>{role}</Text>
+              <Text
+                style={{ fontSize: fontSizes.md, fontWeight: fontWeights.medium }}
+              >
+                {company}
+              </Text>
+              <Text style={{ fontSize: fontSizes.md }}>•</Text>
+              <Text
+                style={{ fontSize: fontSizes.md, fontWeight: fontWeights.regular }}
+              >
+                {role}
+              </Text>
             </View>
             <Text
               style={{
-                fontWeight: 400,
-                //fontSize: 11,
+                fontWeight: fontWeights.regular,
                 color: colors.neutral.tertiary,
-                marginTop: '2px',
-                marginBottom: '12px',
+                marginTop: spacing.px,
+                marginBottom: spacing[3],
               }}
             >
               {start} &mdash; {end}
@@ -260,7 +299,7 @@ function ExperienceSection() {
               style={{
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '10px',
+                gap: spacing[1],
               }}
             >
               {details.map((detail) => (
@@ -285,20 +324,22 @@ function ProjectSection() {
           const { name, summary, stack } = project;
           return (
             <View
+              wrap={false}
               key={name}
               style={{
                 display: 'flex',
                 flexDirection: 'column',
               }}
             >
-              <Text style={{ fontSize: 12, fontWeight: 500 }}>{name}</Text>
-              <Text style={{ marginTop: '6px', marginBottom: '8px' }}>
-                {summary}
+              <Text
+                style={{ fontSize: fontSizes.md, fontWeight: fontWeights.medium }}
+              >
+                {name}
               </Text>
+              <Text style={{ marginVertical: spacing[2] }}>{summary}</Text>
               <Text
                 style={{
-                  fontSize: 10,
-                  fontWeight: 400,
+                  fontSize: fontSizes.sm,
                   color: colors.neutral.tertiary,
                 }}
               >
@@ -315,13 +356,22 @@ function ProjectSection() {
 function TechStackBody({ label, stack }: any): any {
   const activeItems = stack.filter((item) => item.activelyUsing);
   const inactiveItems = stack.filter((item) => !item.activelyUsing);
+
+  const activeNames = combineSharedNamespaces(activeItems);
+  const inactiveNames = combineSharedNamespaces(inactiveItems);
+
   return (
     <View style={styles.sidebarSectionEntry}>
       <Text style={styles.sidebarEntryTitle}>{label}</Text>
-      <Text style={styles.sidebarEntryBody}>
-        {`${combineSharedNamespaces(activeItems)}, `}
-        <Text style={[styles.sidebarEntryBody, { color: colors.neutral.tertiary }]}>
-          {combineSharedNamespaces(inactiveItems)}
+      <Text style={[styles.sidebarEntryBody, { fontWeight: fontWeights.regular }]}>
+        {activeNames}
+        <Text
+          style={[
+            styles.sidebarEntryBody,
+            { fontWeight: fontWeights.light, color: colors.neutral.secondary },
+          ]}
+        >
+          {`, ${inactiveNames}`}
         </Text>
       </Text>
     </View>
@@ -337,6 +387,9 @@ function TechSection() {
       <TechStackBody label={frameworks.label} stack={frameworks.items} />
       <TechStackBody label={services.label} stack={services.items} />
       <TechStackBody label={tools.label} stack={tools.items} />
+      <Text style={{ fontWeight: fontWeights.regular }}>
+        💡 Bold names indicate active use.
+      </Text>
     </SidebarSection>
   );
 }

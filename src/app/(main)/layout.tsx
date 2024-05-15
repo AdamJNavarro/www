@@ -8,7 +8,7 @@ import SiteLayout from '~/components/Layouts/SiteLayout';
 const baseUrl = new URL('https://adamjnavarro.com');
 
 export const metadata: Metadata = {
-  metadataBase: baseUrl,
+  metadataBase: new URL(baseUrl),
   title: {
     default: process.env.NODE_ENV === 'development' ? 'Localhost' : 'Adam Navarro',
     template:

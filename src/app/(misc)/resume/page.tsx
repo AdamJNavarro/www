@@ -22,19 +22,24 @@ export default function ResumePage() {
     <>
       <div className="py-12 border-b dark:border-slate-800">
         <div className="container">
-          <div className="flex flex-col items-center gap-6 text-center desktop:flex-row ">
-            <div className="flex-1 space-y-2">
-              <h1 className="font-bold text-4xl desktop:text-5xl">{resume.name}</h1>
-              <h2 className="text-surface-secondary font-medium text-lg desktop:text-xl">
-                {resume.slogan}
-              </h2>
+          <div className="flex flex-col items-center text-center space-y-2">
+            <div className="font-bold text-4xl desktop:text-5xl">{resume.name}</div>
+            <div className="text-surface-secondary font-medium text-lg desktop:text-xl">
+              {resume.slogan}
             </div>
-            {/* DOWNLOAD PDF BUTTOn */}
+            <a
+              className={`${textLinkClass} text-base desktop:text-lg`}
+              href="/api/pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download PDF
+            </a>
           </div>
         </div>
       </div>
       <div className="py-36 space-y-36 tablet:container">
-        <AboutSection />
+        <IntroSection />
         <TechStackSection />
         <ExperienceSection />
         <ProjectSection />
@@ -44,31 +49,35 @@ export default function ResumePage() {
   );
 }
 
-function AboutSection() {
+function IntroSection() {
   return (
     <div
-      className={`${flatSectionClass} bg-transparent flex flex-col-reverse space-y-16 space-y-reverse tablet:flex-row tablet:space-y-0 tablet:space-x-16`}
+      className={`${flatSectionClass} text-center desktop:text-left grid grid-cols-1 gap-16 desktop:grid-cols-[1fr_auto]`}
     >
-      <div className="flex text-lg desktop:text-xl bg-transparent">
-        {resume.about}
+      <div>
+        <div className={`${subSectionLabelClass}`}>What I'm Looking For</div>
+        <div className="text-lg desktop:text-xl bg-transparent">{resume.about}</div>
       </div>
-      <div className=" text-center tablet:text-left">
-        {resume.contacts.map((entry) => {
-          if (entry.href)
-            return (
-              <div key={entry.label}>
-                <a
-                  className={`${textLinkClass}`}
-                  href={entry.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {entry.label}
-                </a>
-              </div>
-            );
-          return <div key={entry.label}>{entry.label} </div>;
-        })}
+      <div>
+        <div className={subSectionLabelClass}>Contact Info</div>
+        <div className="space-y-0.5 font-medium">
+          {resume.contacts.map((entry) => {
+            if (entry.href)
+              return (
+                <div key={entry.label}>
+                  <a
+                    className={`${textLinkClass}`}
+                    href={entry.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {entry.label}
+                  </a>
+                </div>
+              );
+            return <div key={entry.label}>{entry.label} </div>;
+          })}
+        </div>
       </div>
     </div>
   );
@@ -81,7 +90,7 @@ function TechStackSection() {
     <div className={`${surfaceSectionClass}`}>
       <div className={sectionTitleClass}>{title}</div>
       <div className="text-base text-surface-tertiary text-center -mt-12 mb-16">
-        Darkened items mean I'm not actively using but have used before.
+        Brighter logos indicate active use.
       </div>
       <div className="space-y-16">
         <div className="grid grid-cols-1 gap-12 desktop:gap-24 desktop:grid-cols-2">
@@ -198,19 +207,14 @@ function ResumeStack({ label, stack }: { label: string; stack: StackItem[] }) {
               key={name}
               className="inline-block w-12 mr-5 mb-5 tablet:w-16 tablet:mr-7 tablet:mb-7"
             >
-              <a
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${activelyUsing ? 'brightness-100' : 'brightness-[.4]'} hover:filter-none`}
-              >
+              <a href={href} target="_blank" rel="noopener noreferrer">
                 <ThemeImage
                   srcDark={getLogoPath(name, hasThemeLogos ? 'dark' : undefined)}
                   srcLight={getLogoPath(name, hasThemeLogos ? 'light' : undefined)}
                   width={80}
                   height={80}
                   alt={`${name} stack icon`}
-                  className="h-8 tablet:h-12 inline  transition transform duration-300 hover:scale-110"
+                  className={`${activelyUsing ? 'brightness-100' : 'brightness-[.4]'} h-8 tablet:h-12 inline  transition transform duration-300 hover:scale-110 hover:filter-none`}
                 />
               </a>
             </div>
