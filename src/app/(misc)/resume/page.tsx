@@ -57,7 +57,7 @@ function IntroSection() {
     >
       <div>
         <div className={`${subSectionLabelClass}`}>What I'm Looking For</div>
-        <div className="text-lg desktop:text-xl bg-transparent">{resume.about}</div>
+        <div className="text-lg desktop:text-xl bg-transparent">{resume.intro}</div>
       </div>
       <div>
         <div className={subSectionLabelClass}>Contact Info</div>
@@ -119,14 +119,19 @@ function ExperienceSection() {
             <div key={`${company}-${role}`} className="space-y-8">
               <div className="flex flex-col items-center  tablet:justify-between tablet:flex-row">
                 <div className="space-x-1.5 text-lg tablet:text-2xl">
-                  <a
-                    className={`${textLinkClass} font-semibold`}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {company}
-                  </a>
+                  {href ? (
+                    <a
+                      className={`${textLinkClass} font-semibold`}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {company}
+                    </a>
+                  ) : (
+                    <span className={`font-semibold`}>{company}</span>
+                  )}
+
                   <span className="text-surface-tertiary">•</span>
                   <span className="font-regular text-surface-primary">{role}</span>
                 </div>

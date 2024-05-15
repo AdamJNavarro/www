@@ -21,7 +21,7 @@ type ResumeStack = {
 
 type ResumeExperience = {
   company: string;
-  href: string;
+  href?: string;
   role: string;
   start: string;
   end: string;
@@ -43,6 +43,8 @@ type ResumePersonalCategory = {
 
 const resumeName = 'Adam Navarro';
 const resumeSlogan = 'Web Developer  •  Front-End Focus';
+
+const resumeIntro = `A position with a company that can offer some level of mentorship to help me grow.  As well, in-person time is extremely desirable. Some company characteristics that are important to me include a higher degree of team/co-worker interaction, effective & empathetic communication and efficient workflows.`;
 
 const resumeContacts: ResumeContact[] = [
   {
@@ -101,10 +103,17 @@ const resumePersonalCategories: ResumePersonalCategory[] = [
   },
 ];
 
-const detailFiller =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue.';
-
 const resumeExperiences: ResumeExperience[] = [
+  {
+    company: 'Self-Employed',
+    role: 'Developer',
+    start: '2023',
+    end: 'Present',
+    details: [
+      `Completed various freelance jobs via Upwork and Fiverr. Mainly Next.js projects as well as an occasional react native mobile assignment.`,
+      `Audited and helped design/improve friends and acquaintances Wordpress websites.`,
+    ],
+  },
   {
     company: 'Expo',
     href: '/',
@@ -148,7 +157,7 @@ const resumeProjects: ResumeProject[] = [
 type ResumeData = {
   name: string;
   slogan: string;
-  about: string;
+  intro: string;
   contacts: ResumeContact[];
   tech: {
     title: string;
@@ -176,7 +185,7 @@ type ResumeData = {
 const resume: ResumeData = {
   name: resumeName,
   slogan: resumeSlogan,
-  about: `${detailFiller}`,
+  intro: resumeIntro,
   contacts: resumeContacts,
   tech: {
     title: 'Tech Stack',

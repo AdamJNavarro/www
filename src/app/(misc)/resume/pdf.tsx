@@ -255,60 +255,62 @@ function ExperienceSection() {
   return (
     <View style={styles.mainSection}>
       <Text style={styles.sectionTitle}>{title}</Text>
-      {items.map((item) => {
-        const { company, href, role, start, end, details } = item;
-        return (
-          <View
-            key={`${company}-${role}`}
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-            }}
-          >
+      <View style={styles.mainSectionEntry}>
+        {items.map((item) => {
+          const { company, href, role, start, end, details } = item;
+          return (
             <View
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                gap: spacing[1],
-              }}
-            >
-              <Text
-                style={{ fontSize: fontSizes.md, fontWeight: fontWeights.medium }}
-              >
-                {company}
-              </Text>
-              <Text style={{ fontSize: fontSizes.md }}>•</Text>
-              <Text
-                style={{ fontSize: fontSizes.md, fontWeight: fontWeights.regular }}
-              >
-                {role}
-              </Text>
-            </View>
-            <Text
-              style={{
-                fontWeight: fontWeights.regular,
-                color: colors.neutral.tertiary,
-                marginTop: spacing.px,
-                marginBottom: spacing[3],
-              }}
-            >
-              {start} &mdash; {end}
-            </Text>
-            <View
+              key={`${company}-${role}`}
               style={{
                 display: 'flex',
                 flexDirection: 'column',
-                gap: spacing[1],
               }}
             >
-              {details.map((detail) => (
-                <Text key={detail}>• &nbsp;{detail}</Text>
-              ))}
+              <View
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  gap: spacing[1],
+                }}
+              >
+                <Text
+                  style={{ fontSize: fontSizes.md, fontWeight: fontWeights.medium }}
+                >
+                  {company}
+                </Text>
+                <Text style={{ fontSize: fontSizes.md }}>•</Text>
+                <Text
+                  style={{ fontSize: fontSizes.md, fontWeight: fontWeights.regular }}
+                >
+                  {role}
+                </Text>
+              </View>
+              <Text
+                style={{
+                  fontWeight: fontWeights.regular,
+                  color: colors.neutral.tertiary,
+                  marginTop: spacing.px,
+                  marginBottom: spacing[3],
+                }}
+              >
+                {start} &mdash; {end}
+              </Text>
+              <View
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: spacing[1],
+                }}
+              >
+                {details.map((detail) => (
+                  <Text key={detail}>• &nbsp;{detail}</Text>
+                ))}
+              </View>
             </View>
-          </View>
-        );
-      })}
+          );
+        })}
+      </View>
     </View>
   );
 }
@@ -317,14 +319,13 @@ function ProjectSection() {
   const { title, items } = resume.projects;
 
   return (
-    <View style={styles.mainSection}>
+    <View wrap={false} style={styles.mainSection}>
       <Text style={styles.sectionTitle}>{title}</Text>
       <View style={styles.mainSectionEntry}>
         {items.map((project) => {
           const { name, summary, stack } = project;
           return (
             <View
-              wrap={false}
               key={name}
               style={{
                 display: 'flex',
