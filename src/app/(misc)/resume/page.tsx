@@ -9,7 +9,8 @@ const textLinkClass =
 
 const flatSectionClass = 'px-8 tablet:px-0';
 
-const surfaceSectionClass = 'p-8 bg-surface tablet:p-12 tablet:rounded-xl';
+const surfaceSectionClass =
+  'p-8 bg-surface shadow-lg dark:shadow-violet-500/20 tablet:p-12 tablet:rounded-xl';
 
 const sectionTitleClass =
   'text-center mb-16 text-surface-primary font-bold text-3xl desktop:text-4xl';
