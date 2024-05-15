@@ -59,7 +59,11 @@ async function getLiteralData() {
     2
   );
 
-  await fs.writeFile('./src/app/data/literal/data.json', updatedData, 'utf-8');
+  await fs.writeFile(
+    './src/app/(main)/data/literal/data.json',
+    updatedData,
+    'utf-8'
+  );
 }
 
 getLiteralData();
