@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-05-12T06:03:35.971Z",
+  "updatedAt": "2024-05-19T06:03:11.662Z",
   "stats": {
-    "shows": 183,
-    "episodes": 9828,
-    "minutes": 340545
+    "shows": 184,
+    "episodes": 10009,
+    "minutes": 345231
   },
   "watching": [
     {
@@ -31,56 +31,30 @@
       ]
     },
     {
-      "id": 1010268356,
+      "id": 1026026560,
       "rank": 2,
-      "dateAdded": "2024-04-12T20:48:05.000Z",
+      "dateAdded": "2024-05-15T21:12:01.000Z",
       "showIds": {
-        "trakt": 150109,
-        "slug": "halo",
-        "tvdb": 366524,
-        "imdb": "tt2934286",
-        "tmdb": 52814,
+        "trakt": 180817,
+        "slug": "black-bird",
+        "tvdb": 401998,
+        "imdb": "tt4301160",
+        "tmdb": 155537,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/halo",
-      "title": "Halo",
+      "url": "https://trakt.tv/shows/black-bird",
+      "title": "Black Bird",
       "year": 2022,
-      "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
-      "status": "returning series",
-      "genres": [
-        "action",
-        "adventure",
-        "fantasy",
-        "science-fiction"
-      ]
-    },
-    {
-      "id": 1018214466,
-      "rank": 3,
-      "dateAdded": "2024-04-30T02:06:05.000Z",
-      "showIds": {
-        "trakt": 121959,
-        "slug": "black-clover",
-        "tvdb": 331753,
-        "imdb": "tt7441658",
-        "tmdb": 73223,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/black-clover",
-      "title": "Black Clover",
-      "year": 2017,
-      "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
+      "overview": "As Jimmy Keene begins a 10-year prison sentence, he gets an incredible offer: If he can elicit a confession from suspected killer Larry Hall, Jimmy will be freed. Completing this mission becomes the challenge of a lifetime.",
       "status": "ended",
       "genres": [
-        "action",
-        "anime",
-        "adventure",
-        "comedy"
+        "crime",
+        "drama"
       ]
     },
     {
       "id": 1018214590,
-      "rank": 4,
+      "rank": 3,
       "dateAdded": "2024-04-30T02:06:22.000Z",
       "showIds": {
         "trakt": 197270,
@@ -347,30 +321,8 @@
       ]
     },
     {
-      "id": 737410989,
-      "rank": 12,
-      "dateAdded": "2022-09-07T03:08:26.000Z",
-      "showIds": {
-        "trakt": 180817,
-        "slug": "black-bird",
-        "tvdb": 401998,
-        "imdb": "tt4301160",
-        "tmdb": 155537,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/black-bird",
-      "title": "Black Bird",
-      "year": 2022,
-      "overview": "As Jimmy Keene begins a 10-year prison sentence, he gets an incredible offer: If he can elicit a confession from suspected killer Larry Hall, Jimmy will be freed. Completing this mission becomes the challenge of a lifetime.",
-      "status": "ended",
-      "genres": [
-        "crime",
-        "drama"
-      ]
-    },
-    {
       "id": 760409701,
-      "rank": 13,
+      "rank": 12,
       "dateAdded": "2022-11-03T03:01:58.000Z",
       "showIds": {
         "trakt": 154997,
@@ -393,7 +345,7 @@
     },
     {
       "id": 779580222,
-      "rank": 14,
+      "rank": 13,
       "dateAdded": "2023-01-09T03:20:36.000Z",
       "showIds": {
         "trakt": 70384,
@@ -416,7 +368,7 @@
     },
     {
       "id": 988019316,
-      "rank": 15,
+      "rank": 14,
       "dateAdded": "2024-02-28T19:54:21.000Z",
       "showIds": {
         "trakt": 99188,
@@ -437,7 +389,7 @@
     },
     {
       "id": 1018214326,
-      "rank": 16,
+      "rank": 15,
       "dateAdded": "2024-04-30T02:05:40.000Z",
       "showIds": {
         "trakt": 217121,
@@ -458,6 +410,52 @@
     }
   ],
   "watched": [
+    {
+      "id": 121959,
+      "dateAdded": "2024-05-19T04:27:09.000Z",
+      "showIds": {
+        "trakt": 121959,
+        "slug": "black-clover",
+        "tvdb": 331753,
+        "imdb": "tt7441658",
+        "tmdb": 73223,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/black-clover",
+      "title": "Black Clover",
+      "year": 2017,
+      "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "anime",
+        "adventure",
+        "comedy"
+      ]
+    },
+    {
+      "id": 150109,
+      "dateAdded": "2024-05-15T21:12:49.000Z",
+      "showIds": {
+        "trakt": 150109,
+        "slug": "halo",
+        "tvdb": 366524,
+        "imdb": "tt2934286",
+        "tmdb": 52814,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/halo",
+      "title": "Halo",
+      "year": 2022,
+      "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction"
+      ]
+    },
     {
       "id": 163965,
       "dateAdded": "2024-04-30T02:06:48.000Z",
@@ -497,7 +495,7 @@
       "title": "Shōgun",
       "year": 2024,
       "overview": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
-      "status": "ended",
+      "status": "returning series",
       "genres": [
         "drama",
         "war"
@@ -518,7 +516,7 @@
       "title": "Shangri-La Frontier",
       "year": 2023,
       "overview": "Rakuro Hizutome only cares about one thing: beating crappy VR games. He devotes his entire life to these buggy games and could clear them all in his sleep. One day, he decides to challenge himself and play a popular god-tier game called Shangri-La Frontier. But he quickly learns just how difficult it is. Will his expert skills be enough to uncover its hidden secrets?",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "anime",
         "action",
@@ -2565,7 +2563,7 @@
       "url": "https://trakt.tv/shows/the-inbetweeners",
       "title": "The Inbetweeners",
       "year": 2008,
-      "overview": "Welcome to a world of futile crushes, sibling brawls, getting drunk too quickly and casting constant aspersions about your friends' sexuality.",
+      "overview": "Those who remember the awkward years of adolescence can relive those painful days in this British comedy series, where the cringe-inducing humor arises from the ill-fated antics of its four protagonists. Suburban teenage friends Will, Simon, Jay and Neil, students at Rudge Park Comprehensive, attempt to navigate the social scene, attract members of the gentler sex, and saunter among the cool crowd. However, despite their best efforts, the four hapless lads usually end up on the side of the nerds.",
       "status": "ended",
       "genres": [
         "comedy"
@@ -3101,8 +3099,9 @@
       "status": "ended",
       "genres": [
         "anime",
+        "action",
         "adventure",
-        "children"
+        "fantasy"
       ]
     },
     {
@@ -4210,29 +4209,6 @@
       ]
     },
     {
-      "id": 150109,
-      "dateAdded": "2022-05-04T01:17:01.000Z",
-      "showIds": {
-        "trakt": 150109,
-        "slug": "halo",
-        "tvdb": 366524,
-        "imdb": "tt2934286",
-        "tmdb": 52814,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/halo",
-      "title": "Halo",
-      "year": 2022,
-      "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
-      "status": "returning series",
-      "genres": [
-        "action",
-        "adventure",
-        "fantasy",
-        "science-fiction"
-      ]
-    },
-    {
       "id": 77692,
       "dateAdded": "2022-05-04T01:07:41.000Z",
       "showIds": {
@@ -4731,15 +4707,15 @@
     },
     {
       "genre": "action",
-      "total": 87
+      "total": 89
     },
     {
       "genre": "fantasy",
-      "total": 75
+      "total": 76
     },
     {
       "genre": "adventure",
-      "total": 74
+      "total": 75
     },
     {
       "genre": "science fiction",
@@ -4747,7 +4723,7 @@
     },
     {
       "genre": "anime",
-      "total": 52
+      "total": 53
     },
     {
       "genre": "mystery",
@@ -4755,7 +4731,7 @@
     },
     {
       "genre": "comedy",
-      "total": 36
+      "total": 37
     },
     {
       "genre": "crime",
@@ -4790,11 +4766,11 @@
       "total": 3
     },
     {
-      "genre": "children",
-      "total": 3
+      "genre": "war",
+      "total": 2
     },
     {
-      "genre": "war",
+      "genre": "children",
       "total": 2
     },
     {
