@@ -233,6 +233,12 @@ const serviceStack: StackItem[] = [
     activelyUsing: false,
     projectIds: [],
   },
+  {
+    name: 'Wordpress',
+    href: 'https://wordpress.com/',
+    activelyUsing: false,
+    projectIds: [],
+  },
   // NEED TO FIND LOGOS FOR BELOW ITEMS
   // {
   //   name: 'Fathom',
