@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-05-21T18:50:52.338Z",
+  "updatedAt": "2024-05-23T20:55:13.547Z",
   "stats": {
     "shows": 186,
     "episodes": 10043,
-    "minutes": 346448
+    "minutes": 346451
   },
   "watching": [
     {
@@ -77,8 +77,29 @@
       ]
     },
     {
-      "id": 1018214590,
+      "id": 1030602176,
       "rank": 4,
+      "dateAdded": "2024-05-23T18:05:06.000Z",
+      "showIds": {
+        "trakt": 228099,
+        "slug": "tires",
+        "tvdb": 446718,
+        "imdb": "tt31491800",
+        "tmdb": 247522,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/tires",
+      "title": "Tires",
+      "year": 2024,
+      "overview": "At his father's auto shop, a hapless manager strives to improve customer service and drive profits while keeping his troublemaking cousin in line.",
+      "status": "returning series",
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": 1018214590,
+      "rank": 5,
       "dateAdded": "2024-04-30T02:06:22.000Z",
       "showIds": {
         "trakt": 197270,
@@ -97,6 +118,32 @@
         "anime",
         "action",
         "science-fiction"
+      ]
+    },
+    {
+      "id": 1030607595,
+      "rank": 6,
+      "dateAdded": "2024-05-23T18:22:07.000Z",
+      "showIds": {
+        "trakt": 33994,
+        "slug": "d-gray-man",
+        "tvdb": 79635,
+        "imdb": "tt0899258",
+        "tmdb": 34141,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/d-gray-man",
+      "title": "D.Gray-man",
+      "year": 2006,
+      "overview": "Darkness is moving in, and young exorcist Allen Walker is humanity’s greatest hope against the wicked forces conspiring to bring civilization to its knees. Akuma – cruel spirits born of tragedy and lost souls – lurk in every shadow, willing and eager to do the bidding of their leader, the dread Millennium Earl. With an eye cursed to see evil in its truest form and blessed with an arm to slay soul-devouring demons, Allen stands ready to confront the gathering evil. Should he fail, Innocence will be lost forever. The war to decide the fate of mankind has begun – and the carnage will be endless.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "mystery",
+        "anime"
       ]
     }
   ],
