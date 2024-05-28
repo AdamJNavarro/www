@@ -1,8 +1,7 @@
 import { Page } from '~/components/Layouts/Page';
 import routes from '../config/routes';
 import { Suspense } from 'react';
-import { LoadingSpinner } from '~/components/common/pure-html';
-import StravaHeatmap from './StravaHeatmap';
+import StravaHeatmap, { StravaHeatmapLoading } from './StravaHeatmap';
 import { DataAttribution } from '~/components/common/Attribution';
 
 export const { metadata } = routes.fitness;
@@ -24,7 +23,7 @@ export default async function FitnessPage() {
         sessions instilled a love for lifting weights that has been going strong for
         a decade plus.
       </p>
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<StravaHeatmapLoading />}>
         <StravaHeatmap />
       </Suspense>
       <div className="mt-24">

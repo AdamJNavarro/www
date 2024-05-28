@@ -133,3 +133,46 @@ export default async function StravaHeatmap() {
     </div>
   );
 }
+
+export function StravaHeatmapLoading() {
+  return (
+    <div className="w-80 mx-auto">
+      <div className="text-surface-primary text-lg text-center font-medium">
+        Activity Heatmap
+      </div>
+      <div className="text-xs text-center text-surface-tertiary mb-8">
+        (Last 30 Days)
+      </div>
+      <div className="text-surface-secondary text-xs font-medium mb-1.5">
+        {oldestDateLabel}
+      </div>
+      <div className="grid grid-cols-6 max-w-full gap-1 dark:gap-2.5">
+        {allDates.reverse().map((item) => {
+          return (
+            <div
+              key={item}
+              className={`${baseHeatmapTileClass} animate-pulse bg-slate-300/60 dark:bg-slate-900/95`}
+            />
+          );
+        })}
+      </div>
+      <div className="text-surface-secondary text-xs font-medium text-end mt-1.5">
+        Today
+      </div>
+      <div className="flex justify-around text-surface-secondary text-xs mt-8">
+        <div className="flex items-center">
+          <div className="h-3 w-3 rounded-full bg-violet-700 mr-1.5" />
+          <div>Weights</div>
+        </div>
+        <div className="flex items-center">
+          <div className="h-3 w-3 rounded-full bg-pink-700 mr-1.5" />
+          <div>Cardio</div>
+        </div>
+        <div className="flex items-center">
+          <div className="h-3 w-3 rounded-full bg-sky-700 mr-1.5" />
+          <div>Mobility</div>
+        </div>
+      </div>
+    </div>
+  );
+}
