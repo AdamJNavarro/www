@@ -7,15 +7,13 @@ const token = process.env.TRAKT_ACCESS_TOKEN;
 const client_id = process.env.TRAKT_CLIENT_ID;
 
 const TRAKT_USERNAME = 'adamjnavarro';
-const TRAKT_TOKEN_URL = 'https://api.trakt.tv/oauth/token';
-
 const BASE_URL = `https://api.trakt.tv/users/${TRAKT_USERNAME}`;
 
 const urls = {
   stats: `${BASE_URL}/stats`,
   history: `${BASE_URL}/history/shows`,
   watched: `${BASE_URL}/watched/shows?extended=noseasons`,
-  watching: `${BASE_URL}/lists/currently-watching/items/show`,
+  watching: `${BASE_URL}/lists/currently-watching/items/show,season`,
   watchlist: `${BASE_URL}/watchlist/shows`,
   favorites: `${BASE_URL}/lists/favorite-tv/items/show`,
 };
@@ -35,13 +33,34 @@ export async function traktFetch(url: string): Promise<any> {
 
 function flattenTraktShowData(data: any[]) {
   return data.map((item: any) => {
-    const { ids, title, year, overview, status, genres } = item.show;
+    const { id, listed_at: dateAdded, rank, type } = item;
+    const { ids: showIds, title, year, overview, status, genres } = item.show;
+    if (type === 'season') {
+      return {
+        id,
+        type,
+        rank,
+        dateAdded,
+        showIds,
+        url: `https://trakt.tv/shows/${showIds.slug}`,
+        title,
+        year,
+        overview,
+        status,
+        genres,
+        seasonIds: item.season.ids,
+        seasonNumber: item.season.number,
+        seasonTitle: item.season.title,
+      };
+    }
+
     return {
-      id: item.id,
-      rank: item.rank,
-      dateAdded: item.listed_at,
-      showIds: ids,
-      url: `https://trakt.tv/shows/${ids.slug}`,
+      id,
+      type,
+      rank,
+      dateAdded,
+      showIds,
+      url: `https://trakt.tv/shows/${showIds.slug}`,
       title,
       year,
       overview,
@@ -88,14 +107,15 @@ async function generateTraktData() {
   const watchingData = await traktFetch(`${urls.watching}?extended=full`);
   const watching = flattenTraktShowData(watchingData);
 
-  const watchlistData = await traktFetch(`${urls.watchlist}?extended=full`);
-  const watchlist = flattenTraktShowData(watchlistData);
+  // const watchlistData = await traktFetch(`${urls.watchlist}?extended=full`);
+  // const watchlist = flattenTraktShowData(watchlistData);
 
   const watchedData = await traktFetch(`${urls.watched}&extended=full`);
   const watched = watchedData.map((item: any) => {
     const { ids, title, year, overview, status, genres } = item.show;
     return {
       id: ids.trakt,
+      type: 'show',
       dateAdded: item.last_watched_at,
       showIds: ids,
       url: `https://trakt.tv/shows/${ids.slug}`,
@@ -113,7 +133,7 @@ async function generateTraktData() {
       updatedAt: new Date(),
       stats,
       watching,
-      watchlist,
+      //watchlist,
       watched,
       favorites,
       genres,

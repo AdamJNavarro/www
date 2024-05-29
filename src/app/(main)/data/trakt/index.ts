@@ -35,7 +35,7 @@ export const traktData = data as {
   stats: TraktStatTotals;
   favorites: TraktShow[];
   watching: TraktShow[];
-  watchlist: TraktShow[];
+  watchlist?: TraktShow[];
   watched: TraktShow[];
   genres: any[];
   updatedAt: any;

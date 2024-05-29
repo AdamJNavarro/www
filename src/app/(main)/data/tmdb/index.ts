@@ -5,9 +5,26 @@ import { handleServerActionError } from '~/utils';
 
 const moviedb = new MovieDb(process.env.TMDB_KEY as string);
 
-export async function getTmdbPoster(id: number): Promise<any> {
+type GetTmdbPosterArgs = {
+  type: (string & 'show') | 'season';
+  showId: number;
+  seasonNumber: number;
+};
+
+export async function getTmdbPoster({
+  type,
+  showId,
+  seasonNumber = 1,
+}: GetTmdbPosterArgs): Promise<any> {
   try {
-    const resp = await moviedb.tvImages({ id, language: 'en' });
+    const resp =
+      type === 'show'
+        ? await moviedb.tvImages({ id: showId, language: 'en,null' })
+        : await moviedb.seasonImages({
+            language: 'en,null',
+            season_number: seasonNumber,
+            id: showId,
+          });
     if (resp.posters && resp.posters.length) {
       return {
         data: resp.posters[0],
