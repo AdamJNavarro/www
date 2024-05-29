@@ -2,9 +2,14 @@ import { getStravaActivities } from '../data/strava';
 
 const allDates: any[] = [];
 const numOfDays = 30;
-const today = new Date();
-const oldestDate = new Date(new Date().setDate(today.getDate() - numOfDays));
+const currentDate = new Date();
+const oldestDate = new Date(new Date().setDate(currentDate.getDate() - numOfDays));
 const afterUnix = new Date(oldestDate).getTime() / 1000;
+
+const currentDateLabel = new Date(currentDate).toLocaleString('en-us', {
+  month: 'short',
+  day: 'numeric',
+});
 
 const oldestDateLabel = new Date(oldestDate).toLocaleString('en-us', {
   month: 'short',
@@ -12,7 +17,7 @@ const oldestDateLabel = new Date(oldestDate).toLocaleString('en-us', {
 });
 
 for (let i = 0; i < numOfDays; i++) {
-  const priorDate = new Date(new Date().setDate(today.getDate() - i));
+  const priorDate = new Date(new Date().setDate(currentDate.getDate() - i));
   allDates.push(priorDate);
 }
 
@@ -36,6 +41,11 @@ const cardioSportTypes = [
   'Rowing',
   'Swim',
 ];
+
+const baseHeatmapTileClass =
+  'rounded-sm place-content-center aspect-square text-center';
+
+const heatmapGridClass = 'grid grid-cols-6 max-w-full gap-1 dark:gap-2.5';
 
 function getTileColor(activities: any[]): string {
   if (activities.length > 1) {
@@ -66,10 +76,14 @@ function getTileColor(activities: any[]): string {
   return 'bg-pink-700';
 }
 
-const baseHeatmapTileClass =
-  'rounded-sm place-content-center aspect-square text-center';
+const reverseOrderDates = allDates.sort((a, b) => {
+  if (new Date(a) > new Date(b)) {
+    return 1;
+  }
+  return -1;
+});
 
-export default async function StravaHeatmap() {
+export default async function Tiles() {
   const { data, error } = await getStravaActivities({
     params: `after=${afterUnix}&per_page=60`,
   });
@@ -77,64 +91,51 @@ export default async function StravaHeatmap() {
   if (error) return null;
 
   return (
-    <div className="w-80 mx-auto">
-      <div className="text-surface-primary text-lg text-center font-medium">
-        Activity Heatmap
-      </div>
-      <div className="text-xs text-center text-surface-tertiary mb-8">
-        (Last 30 Days)
-      </div>
-      <div className="text-surface-secondary text-xs font-medium mb-1.5">
-        {oldestDateLabel}
-      </div>
-      <div className="grid grid-cols-6 max-w-full gap-1 dark:gap-2.5">
-        {allDates.reverse().map((item) => {
-          const matchingActivities = data.filter((obj) =>
-            datesAreSameDay(item, obj.date)
-          );
+    <div className={heatmapGridClass}>
+      {reverseOrderDates.map((item) => {
+        const matchingActivities = data.filter((obj) =>
+          datesAreSameDay(item, obj.date)
+        );
 
-          const hasActivities = matchingActivities.length > 0;
+        const hasActivities = matchingActivities.length > 0;
 
-          if (hasActivities) {
-            //const hasMultipleActivities = matchingActivities.length > 1;
-            return (
-              <div
-                key={item}
-                className={`${baseHeatmapTileClass} ${getTileColor(matchingActivities)}`}
-              />
-            );
-          }
-
+        if (hasActivities) {
+          //const hasMultipleActivities = matchingActivities.length > 1;
           return (
             <div
               key={item}
-              className={`${baseHeatmapTileClass} bg-slate-300/60 dark:bg-slate-900/95`}
+              className={`${baseHeatmapTileClass} ${getTileColor(matchingActivities)}`}
             />
           );
-        })}
-      </div>
-      <div className="text-surface-secondary text-xs font-medium text-end mt-1.5">
-        Today
-      </div>
-      <div className="flex justify-around text-surface-secondary text-xs mt-8">
-        <div className="flex items-center">
-          <div className="h-3 w-3 rounded-full bg-violet-700 mr-1.5" />
-          <div>Weights</div>
-        </div>
-        <div className="flex items-center">
-          <div className="h-3 w-3 rounded-full bg-pink-700 mr-1.5" />
-          <div>Cardio</div>
-        </div>
-        <div className="flex items-center">
-          <div className="h-3 w-3 rounded-full bg-sky-700 mr-1.5" />
-          <div>Mobility</div>
-        </div>
-      </div>
+        }
+
+        return (
+          <div
+            key={item}
+            className={`${baseHeatmapTileClass} bg-slate-300/60 dark:bg-slate-900/95`}
+          />
+        );
+      })}
     </div>
   );
 }
 
-export function StravaHeatmapLoading() {
+export function Loading() {
+  return (
+    <div className={heatmapGridClass}>
+      {allDates.map((item) => {
+        return (
+          <div
+            key={item}
+            className={`${baseHeatmapTileClass} animate-pulse bg-slate-300/60 dark:bg-slate-800/50`}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+function Container({ children }: { children: any }) {
   return (
     <div className="w-80 mx-auto">
       <div className="text-surface-primary text-lg text-center font-medium">
@@ -146,18 +147,9 @@ export function StravaHeatmapLoading() {
       <div className="text-surface-secondary text-xs font-medium mb-1.5">
         {oldestDateLabel}
       </div>
-      <div className="grid grid-cols-6 max-w-full gap-1 dark:gap-2.5">
-        {allDates.reverse().map((item) => {
-          return (
-            <div
-              key={item}
-              className={`${baseHeatmapTileClass} animate-pulse bg-slate-300/60 dark:bg-slate-900/95`}
-            />
-          );
-        })}
-      </div>
+      {children}
       <div className="text-surface-secondary text-xs font-medium text-end mt-1.5">
-        Today
+        {currentDateLabel}
       </div>
       <div className="flex justify-around text-surface-secondary text-xs mt-8">
         <div className="flex items-center">
@@ -176,3 +168,11 @@ export function StravaHeatmapLoading() {
     </div>
   );
 }
+
+const StravaHeatmap = {
+  Container,
+  Loading,
+  Tiles,
+};
+
+export { StravaHeatmap };
