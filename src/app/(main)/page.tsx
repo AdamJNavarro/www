@@ -15,6 +15,7 @@ import { getLatestWord } from './data/db/queries';
 import MovieWatched from './home/MovieWatched';
 import ShowWatched from './home/ShowWatched';
 import Link from 'next/link';
+import { getAge } from '~/utils/Dates';
 
 const interestsRoutes = [
   routes.books,
@@ -124,16 +125,19 @@ async function LatestSpotifyTrack() {
   return <SongLiked data={data} />;
 }
 
+//const myBirthday = new Date(1992, 10, 22);
+const aceBirthday = new Date(2019, 9, 19);
+
 function Intro() {
   return (
     <div className="prose mx-auto mb-16">
       <p>
         Hey there, my name is Adam! I’m a{' '}
         <Link href={routes.coding.href}>coder</Link>, fitness enthusiast, music &
-        dance lover, and a dog owner to a 4-year-old Soft-coated Wheaten Terrier
-        named Ace. Feel free to explore my website to get to know more about me, my{' '}
-        <Link href="#interests">interests</Link> and things I have created. You can
-        also reach out to me on any of the platforms listed on my{' '}
+        dance lover, and a dog owner to a {getAge(aceBirthday)}-year-old Soft-coated
+        Wheaten Terrier named Ace. Feel free to explore my website to get to know
+        more about me, my <Link href="#interests">interests</Link> and things I have
+        created. You can also reach out to me on any of the platforms listed on my{' '}
         <Link href={routes.social.href}>social</Link> page. I’d love to hear from
         you!
       </p>

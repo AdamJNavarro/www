@@ -76,3 +76,9 @@ export function formatDuration(duration: number): string {
 
   return str;
 }
+
+export function getAge(birthDate: Date): number {
+  return Math.floor(
+    (new Date().getTime() - new Date(birthDate).getTime()) / 3.15576e10
+  );
+}
