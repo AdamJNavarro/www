@@ -43,7 +43,7 @@ export async function getGithubRepoLanguages({
       owner,
       repo,
     });
-
+    // @ts-ignore
     const totalBytes = Object.values(resp.data).reduce((a, b) => a + b, 0);
     const items = Object.keys(resp.data).map((key) => ({
       language: key,
