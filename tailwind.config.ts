@@ -18,7 +18,7 @@ const config: Config = {
     },
     extend: {
       animation: {
-        slogan: 'slogan 2.5s ease-in',
+        slogan: 'slogan 1.5s ease-in',
       },
       container: {
         center: true,
