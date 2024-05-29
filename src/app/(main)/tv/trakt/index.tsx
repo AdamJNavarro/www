@@ -70,12 +70,13 @@ function TraktList({ data }: any) {
           >
             <div className="flex-initial flex-shrink-0 justify-center mr-6">
               <Suspense fallback={<TraktPosterLoading />}>
-                <TraktPoster posterId={item.showIds.tmdb} title={item.title} />
+                <TraktPoster item={item} />
               </Suspense>
             </div>
             <div className="flex flex-col justify-center">
               <div className="text-surface-primary leading-tight mb-2 text-base">
-                {item.title}
+                {item.title}{' '}
+                {item.type === 'season' ? `(S${item.seasonNumber})` : null}
               </div>
               <div className="text-surface-tertiary text-sm">{item.year}</div>
             </div>

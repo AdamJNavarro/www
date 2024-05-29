@@ -1,38 +1,15 @@
 {
-  "updatedAt": "2024-05-26T06:03:28.182Z",
+  "updatedAt": "2024-05-29T17:00:22.857Z",
   "stats": {
-    "shows": 186,
-    "episodes": 10043,
-    "minutes": 346363
+    "shows": 187,
+    "episodes": 10094,
+    "minutes": 347609
   },
   "watching": [
     {
-      "id": 1028662198,
-      "rank": 1,
-      "dateAdded": "2024-05-20T18:49:57.000Z",
-      "showIds": {
-        "trakt": 131598,
-        "slug": "demon-slayer-kimetsu-no-yaiba",
-        "tvdb": 348545,
-        "imdb": "tt9335498",
-        "tmdb": 85937,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/demon-slayer-kimetsu-no-yaiba",
-      "title": "Demon Slayer: Kimetsu no Yaiba",
-      "year": 2019,
-      "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
-      "status": "returning series",
-      "genres": [
-        "anime",
-        "action",
-        "fantasy",
-        "history"
-      ]
-    },
-    {
       "id": 1026026560,
-      "rank": 2,
+      "type": "show",
+      "rank": 1,
       "dateAdded": "2024-05-15T21:12:01.000Z",
       "showIds": {
         "trakt": 180817,
@@ -53,38 +30,15 @@
       ]
     },
     {
-      "id": 1028661814,
-      "rank": 3,
-      "dateAdded": "2024-05-20T18:48:36.000Z",
-      "showIds": {
-        "trakt": 104311,
-        "slug": "my-hero-academia",
-        "tvdb": 305074,
-        "imdb": "tt5626028",
-        "tmdb": 65930,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/my-hero-academia",
-      "title": "My Hero Academia",
-      "year": 2016,
-      "overview": "A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
-      "status": "returning series",
-      "genres": [
-        "action",
-        "superhero",
-        "anime",
-        "comedy"
-      ]
-    },
-    {
       "id": 1030602176,
-      "rank": 4,
+      "type": "show",
+      "rank": 2,
       "dateAdded": "2024-05-23T18:05:06.000Z",
       "showIds": {
         "trakt": 228099,
         "slug": "tires",
         "tvdb": 446718,
-        "imdb": "tt31491800",
+        "imdb": "tt31491435",
         "tmdb": 247522,
         "tvrage": null
       },
@@ -99,7 +53,8 @@
     },
     {
       "id": 1018214590,
-      "rank": 5,
+      "type": "show",
+      "rank": 3,
       "dateAdded": "2024-04-30T02:06:22.000Z",
       "showIds": {
         "trakt": 197270,
@@ -121,9 +76,112 @@
       ]
     },
     {
-      "id": 1030607595,
+      "id": 1033438873,
+      "type": "season",
+      "rank": 4,
+      "dateAdded": "2024-05-29T15:54:43.000Z",
+      "showIds": {
+        "trakt": 131598,
+        "slug": "demon-slayer-kimetsu-no-yaiba",
+        "tvdb": 348545,
+        "imdb": "tt9335498",
+        "tmdb": 85937,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/demon-slayer-kimetsu-no-yaiba",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "year": 2019,
+      "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "fantasy",
+        "history"
+      ],
+      "seasonIds": {
+        "trakt": 327116,
+        "tvdb": 2119434,
+        "tmdb": 345811,
+        "tvrage": null
+      },
+      "seasonNumber": 5,
+      "seasonTitle": "Hashira Training Arc"
+    },
+    {
+      "id": 1033453686,
+      "type": "season",
+      "rank": 5,
+      "dateAdded": "2024-05-29T16:36:39.000Z",
+      "showIds": {
+        "trakt": 33994,
+        "slug": "d-gray-man",
+        "tvdb": 79635,
+        "imdb": "tt0899258",
+        "tmdb": 34141,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/d-gray-man",
+      "title": "D.Gray-man",
+      "year": 2006,
+      "overview": "Darkness is moving in, and young exorcist Allen Walker is humanity’s greatest hope against the wicked forces conspiring to bring civilization to its knees. Akuma – cruel spirits born of tragedy and lost souls – lurk in every shadow, willing and eager to do the bidding of their leader, the dread Millennium Earl. With an eye cursed to see evil in its truest form and blessed with an arm to slay soul-devouring demons, Allen stands ready to confront the gathering evil. Should he fail, Innocence will be lost forever. The war to decide the fate of mankind has begun – and the carnage will be endless.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "mystery",
+        "anime"
+      ],
+      "seasonIds": {
+        "trakt": 45762,
+        "tvdb": 17618,
+        "tmdb": 44944,
+        "tvrage": null
+      },
+      "seasonNumber": 2,
+      "seasonTitle": "Season 2"
+    },
+    {
+      "id": 1033453992,
+      "type": "season",
       "rank": 6,
-      "dateAdded": "2024-05-23T18:22:07.000Z",
+      "dateAdded": "2024-05-29T16:37:44.000Z",
+      "showIds": {
+        "trakt": 104311,
+        "slug": "my-hero-academia",
+        "tvdb": 305074,
+        "imdb": "tt5626028",
+        "tmdb": 65930,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/my-hero-academia",
+      "title": "My Hero Academia",
+      "year": 2016,
+      "overview": "A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "superhero",
+        "anime",
+        "comedy"
+      ],
+      "seasonIds": {
+        "trakt": 327715,
+        "tvdb": 2101541,
+        "tmdb": 356358,
+        "tvrage": null
+      },
+      "seasonNumber": 7,
+      "seasonTitle": "Season 7"
+    }
+  ],
+  "watched": [
+    {
+      "id": 33994,
+      "type": "show",
+      "dateAdded": "2024-05-29T16:36:35.000Z",
       "showIds": {
         "trakt": 33994,
         "slug": "d-gray-man",
@@ -145,368 +203,10 @@
         "mystery",
         "anime"
       ]
-    }
-  ],
-  "watchlist": [
-    {
-      "id": 693554208,
-      "rank": 1,
-      "dateAdded": "2022-05-09T21:09:17.000Z",
-      "showIds": {
-        "trakt": 123775,
-        "slug": "dark",
-        "tvdb": 334824,
-        "imdb": "tt5753856",
-        "tmdb": 70523,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/dark",
-      "title": "Dark",
-      "year": 2017,
-      "overview": "A missing child causes four families to help each other for answers. What they could not imagine is that this mystery would be connected to innumerable other secrets of the small town.",
-      "status": "ended",
-      "genres": [
-        "drama",
-        "mystery",
-        "science-fiction"
-      ]
     },
-    {
-      "id": 693553930,
-      "rank": 2,
-      "dateAdded": "2022-05-09T21:05:19.000Z",
-      "showIds": {
-        "trakt": 113835,
-        "slug": "the-oa",
-        "tvdb": 321060,
-        "imdb": "tt4635282",
-        "tmdb": 69061,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/the-oa",
-      "title": "The OA",
-      "year": 2016,
-      "overview": "Prairie Johnson, blind as a child, comes home to the community she grew up in with her sight restored. Some hail her a miracle, others a dangerous mystery, but Prairie won’t talk with the FBI or her parents about the seven years she went missing.",
-      "status": "ended",
-      "genres": [
-        "drama",
-        "mystery",
-        "fantasy",
-        "science-fiction"
-      ]
-    },
-    {
-      "id": 693554680,
-      "rank": 3,
-      "dateAdded": "2022-05-09T21:12:03.000Z",
-      "showIds": {
-        "trakt": 125479,
-        "slug": "succession",
-        "tvdb": 338186,
-        "imdb": "tt7660850",
-        "tmdb": 76331,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/succession",
-      "title": "Succession",
-      "year": 2018,
-      "overview": "Follow the lives of the Roy family as they contemplate their future once their aging father begins to step back from the media and entertainment conglomerate they control.",
-      "status": "ended",
-      "genres": [
-        "drama",
-        "comedy"
-      ]
-    },
-    {
-      "id": 693552897,
-      "rank": 4,
-      "dateAdded": "2022-05-09T20:50:17.000Z",
-      "showIds": {
-        "trakt": 173337,
-        "slug": "1883",
-        "tvdb": 396390,
-        "imdb": "tt13991232",
-        "tmdb": 118357,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/1883",
-      "title": "1883",
-      "year": 2021,
-      "overview": "Follow the Dutton family as they embark on a journey west through the Great Plains toward the last bastion of untamed America. A stark retelling of Western expansion, and an intense study of one family fleeing poverty to seek a better future in America’s promised land — Montana.",
-      "status": "ended",
-      "genres": [
-        "drama",
-        "western"
-      ]
-    },
-    {
-      "id": 693554761,
-      "rank": 5,
-      "dateAdded": "2022-05-09T21:13:11.000Z",
-      "showIds": {
-        "trakt": 126995,
-        "slug": "yellowstone-2018",
-        "tvdb": 341164,
-        "imdb": "tt4236770",
-        "tmdb": 73586,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/yellowstone-2018",
-      "title": "Yellowstone",
-      "year": 2018,
-      "overview": "Follow the violent world of the Dutton family, who controls the largest contiguous ranch in the United States. Led by their patriarch John Dutton, the family defends their property against constant attack by land developers, an Indian reservation, and America’s first National Park.",
-      "status": "returning series",
-      "genres": [
-        "drama",
-        "western"
-      ]
-    },
-    {
-      "id": 693554898,
-      "rank": 6,
-      "dateAdded": "2022-05-09T21:15:26.000Z",
-      "showIds": {
-        "trakt": 4589,
-        "slug": "band-of-brothers",
-        "tvdb": 74205,
-        "imdb": "tt0185906",
-        "tmdb": 4613,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/band-of-brothers",
-      "title": "Band of Brothers",
-      "year": 2001,
-      "overview": "Drawn from interviews with survivors of Easy Company, as well as their journals and letters, Band of Brothers chronicles the experiences of these men from paratrooper training in Georgia through the end of the war. As an elite rifle company parachuting into Normandy early on D-Day morning, participants in the Battle of the Bulge, and witness to the horrors of war, the men of Easy knew extraordinary bravery and extraordinary fear - and became the stuff of legend. Based on Stephen E. Ambrose's acclaimed book of the same name.",
-      "status": "ended",
-      "genres": [
-        "drama",
-        "war"
-      ]
-    },
-    {
-      "id": 693554903,
-      "rank": 7,
-      "dateAdded": "2022-05-09T21:15:29.000Z",
-      "showIds": {
-        "trakt": 1429,
-        "slug": "the-wire",
-        "tvdb": 79126,
-        "imdb": "tt0306414",
-        "tmdb": 1438,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/the-wire",
-      "title": "The Wire",
-      "year": 2002,
-      "overview": "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated.",
-      "status": "ended",
-      "genres": [
-        "drama",
-        "crime"
-      ]
-    },
-    {
-      "id": 694060113,
-      "rank": 8,
-      "dateAdded": "2022-05-12T01:55:22.000Z",
-      "showIds": {
-        "trakt": 1389,
-        "slug": "the-sopranos",
-        "tvdb": 75299,
-        "imdb": "tt0141842",
-        "tmdb": 1398,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/the-sopranos",
-      "title": "The Sopranos",
-      "year": 1999,
-      "overview": "The story of New Jersey-based Italian-American mobster Tony Soprano and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads. Those difficulties are often highlighted through his ongoing professional relationship with psychiatrist Jennifer Melfi. The show features Tony's family members and Mafia associates in prominent roles and story arcs, most notably his wife Carmela and his cousin and protégé Christopher Moltisanti.",
-      "status": "ended",
-      "genres": [
-        "drama"
-      ]
-    },
-    {
-      "id": 719989389,
-      "rank": 9,
-      "dateAdded": "2022-07-21T02:49:47.000Z",
-      "showIds": {
-        "trakt": 119913,
-        "slug": "ozark",
-        "tvdb": 329089,
-        "imdb": "tt5071412",
-        "tmdb": 69740,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/ozark",
-      "title": "Ozark",
-      "year": 2017,
-      "overview": "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
-      "status": "ended",
-      "genres": [
-        "drama",
-        "crime"
-      ]
-    },
-    {
-      "id": 717198322,
-      "rank": 10,
-      "dateAdded": "2022-07-13T02:42:07.000Z",
-      "showIds": {
-        "trakt": 93720,
-        "slug": "mr-robot",
-        "tvdb": 289590,
-        "imdb": "tt4158110",
-        "tmdb": 62560,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/mr-robot",
-      "title": "Mr. Robot",
-      "year": 2015,
-      "overview": "A contemporary and culturally resonant drama about a young programmer, Elliot, who suffers from a debilitating anti-social disorder and decides that he can only connect to people by hacking them. He wields his skills as a weapon to protect the people that he cares about. Elliot will find himself in the intersection between a cybersecurity firm he works for and the underworld organizations that are recruiting him to bring down corporate America.",
-      "status": "ended",
-      "genres": [
-        "drama",
-        "crime"
-      ]
-    },
-    {
-      "id": 719989413,
-      "rank": 11,
-      "dateAdded": "2022-07-21T02:50:17.000Z",
-      "showIds": {
-        "trakt": 144629,
-        "slug": "euphoria-2019",
-        "tvdb": 360261,
-        "imdb": "tt8772296",
-        "tmdb": 85552,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/euphoria-2019",
-      "title": "Euphoria",
-      "year": 2019,
-      "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
-      "status": "returning series",
-      "genres": [
-        "drama"
-      ]
-    },
-    {
-      "id": 760409701,
-      "rank": 12,
-      "dateAdded": "2022-11-03T03:01:58.000Z",
-      "showIds": {
-        "trakt": 154997,
-        "slug": "severance",
-        "tvdb": 371980,
-        "imdb": "tt11280740",
-        "tmdb": 95396,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/severance",
-      "title": "Severance",
-      "year": 2022,
-      "overview": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
-      "status": "returning series",
-      "genres": [
-        "science-fiction",
-        "mystery",
-        "drama"
-      ]
-    },
-    {
-      "id": 779580222,
-      "rank": 13,
-      "dateAdded": "2023-01-09T03:20:36.000Z",
-      "showIds": {
-        "trakt": 70384,
-        "slug": "sense8",
-        "tvdb": 268156,
-        "imdb": "tt2431438",
-        "tmdb": 61664,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/sense8",
-      "title": "Sense8",
-      "year": 2015,
-      "overview": "One gunshot, one death, one moment out of time that irrevocably links eight minds in disparate parts of the world, putting them in each other's lives, each other's secrets, and in terrible danger. Ordinary people suddenly reborn as \"Sensates.\"",
-      "status": "canceled",
-      "genres": [
-        "drama",
-        "fantasy",
-        "science-fiction"
-      ]
-    },
-    {
-      "id": 988019316,
-      "rank": 14,
-      "dateAdded": "2024-02-28T19:54:21.000Z",
-      "showIds": {
-        "trakt": 99188,
-        "slug": "alone",
-        "tvdb": 295936,
-        "imdb": "tt4803766",
-        "tmdb": 63726,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/alone",
-      "title": "Alone",
-      "year": 2015,
-      "overview": "Hardcore survivalists are put by themselves in the Vancouver Island wilderness, without camera crews, teams, or producers – on a single mission to stay alive for as long as possible.",
-      "status": "returning series",
-      "genres": [
-        "reality"
-      ]
-    },
-    {
-      "id": 1028661926,
-      "rank": 15,
-      "dateAdded": "2024-05-20T18:49:11.000Z",
-      "showIds": {
-        "trakt": 2274,
-        "slug": "prison-break",
-        "tvdb": 360115,
-        "imdb": "tt0455275",
-        "tmdb": 2288,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/prison-break",
-      "title": "Prison Break",
-      "year": 2005,
-      "overview": "Due to a political conspiracy, an innocent man is sent to death row and his only hope is his brother, who makes it his mission to deliberately get himself sent to the same prison in order to break the both of them out, from the inside out.",
-      "status": "ended",
-      "genres": [
-        "drama",
-        "crime",
-        "action",
-        "adventure"
-      ]
-    },
-    {
-      "id": 1018214326,
-      "rank": 16,
-      "dateAdded": "2024-04-30T02:05:40.000Z",
-      "showIds": {
-        "trakt": 217121,
-        "slug": "baby-reindeer",
-        "tvdb": 417223,
-        "imdb": "tt13649112",
-        "tmdb": 241259,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/baby-reindeer",
-      "title": "Baby Reindeer",
-      "year": 2024,
-      "overview": "When a struggling comedian shows one act of kindness to a vulnerable woman, it sparks a suffocating obsession which threatens to wreck both their lives.",
-      "status": "ended",
-      "genres": [
-        "drama"
-      ]
-    }
-  ],
-  "watched": [
     {
       "id": 159568,
+      "type": "show",
       "dateAdded": "2024-05-21T02:11:23.000Z",
       "showIds": {
         "trakt": 159568,
@@ -530,6 +230,7 @@
     },
     {
       "id": 2274,
+      "type": "show",
       "dateAdded": "2024-05-20T18:49:06.000Z",
       "showIds": {
         "trakt": 2274,
@@ -553,6 +254,7 @@
     },
     {
       "id": 121959,
+      "type": "show",
       "dateAdded": "2024-05-19T04:27:09.000Z",
       "showIds": {
         "trakt": 121959,
@@ -576,6 +278,7 @@
     },
     {
       "id": 150109,
+      "type": "show",
       "dateAdded": "2024-05-15T21:12:49.000Z",
       "showIds": {
         "trakt": 150109,
@@ -599,6 +302,7 @@
     },
     {
       "id": 163965,
+      "type": "show",
       "dateAdded": "2024-04-30T02:06:48.000Z",
       "showIds": {
         "trakt": 163965,
@@ -623,6 +327,7 @@
     },
     {
       "id": 170054,
+      "type": "show",
       "dateAdded": "2024-04-30T02:06:33.000Z",
       "showIds": {
         "trakt": 170054,
@@ -644,6 +349,7 @@
     },
     {
       "id": 196794,
+      "type": "show",
       "dateAdded": "2024-04-12T20:47:17.000Z",
       "showIds": {
         "trakt": 196794,
@@ -668,6 +374,7 @@
     },
     {
       "id": 202498,
+      "type": "show",
       "dateAdded": "2024-04-07T01:14:55.000Z",
       "showIds": {
         "trakt": 202498,
@@ -691,6 +398,7 @@
     },
     {
       "id": 193023,
+      "type": "show",
       "dateAdded": "2024-04-07T01:07:54.000Z",
       "showIds": {
         "trakt": 193023,
@@ -714,6 +422,7 @@
     },
     {
       "id": 199863,
+      "type": "show",
       "dateAdded": "2024-04-07T01:07:32.000Z",
       "showIds": {
         "trakt": 199863,
@@ -736,6 +445,7 @@
     },
     {
       "id": 104311,
+      "type": "show",
       "dateAdded": "2024-03-26T21:33:03.000Z",
       "showIds": {
         "trakt": 104311,
@@ -759,6 +469,7 @@
     },
     {
       "id": 178617,
+      "type": "show",
       "dateAdded": "2024-03-10T01:17:00.000Z",
       "showIds": {
         "trakt": 178617,
@@ -783,6 +494,7 @@
     },
     {
       "id": 45529,
+      "type": "show",
       "dateAdded": "2024-03-07T00:32:55.000Z",
       "showIds": {
         "trakt": 45529,
@@ -808,6 +520,7 @@
     },
     {
       "id": 46375,
+      "type": "show",
       "dateAdded": "2024-02-28T19:49:23.000Z",
       "showIds": {
         "trakt": 46375,
@@ -828,6 +541,7 @@
     },
     {
       "id": 34642,
+      "type": "show",
       "dateAdded": "2024-02-18T23:27:53.000Z",
       "showIds": {
         "trakt": 34642,
@@ -853,6 +567,7 @@
     },
     {
       "id": 104465,
+      "type": "show",
       "dateAdded": "2024-02-15T03:33:30.000Z",
       "showIds": {
         "trakt": 104465,
@@ -875,6 +590,7 @@
     },
     {
       "id": 102203,
+      "type": "show",
       "dateAdded": "2024-02-05T00:14:46.000Z",
       "showIds": {
         "trakt": 102203,
@@ -898,6 +614,7 @@
     },
     {
       "id": 204694,
+      "type": "show",
       "dateAdded": "2024-01-30T23:07:27.000Z",
       "showIds": {
         "trakt": 204694,
@@ -921,6 +638,7 @@
     },
     {
       "id": 183346,
+      "type": "show",
       "dateAdded": "2024-01-27T23:51:34.000Z",
       "showIds": {
         "trakt": 183346,
@@ -942,6 +660,7 @@
     },
     {
       "id": 158594,
+      "type": "show",
       "dateAdded": "2024-01-23T04:49:37.000Z",
       "showIds": {
         "trakt": 158594,
@@ -965,6 +684,7 @@
     },
     {
       "id": 155536,
+      "type": "show",
       "dateAdded": "2024-01-23T04:47:46.000Z",
       "showIds": {
         "trakt": 155536,
@@ -988,6 +708,7 @@
     },
     {
       "id": 158032,
+      "type": "show",
       "dateAdded": "2024-01-23T04:47:06.000Z",
       "showIds": {
         "trakt": 158032,
@@ -1013,6 +734,7 @@
     },
     {
       "id": 104307,
+      "type": "show",
       "dateAdded": "2024-01-19T00:52:45.000Z",
       "showIds": {
         "trakt": 104307,
@@ -1039,6 +761,7 @@
     },
     {
       "id": 195644,
+      "type": "show",
       "dateAdded": "2024-01-18T01:22:13.000Z",
       "showIds": {
         "trakt": 195644,
@@ -1063,6 +786,7 @@
     },
     {
       "id": 140100,
+      "type": "show",
       "dateAdded": "2024-01-04T19:32:35.000Z",
       "showIds": {
         "trakt": 140100,
@@ -1086,6 +810,7 @@
     },
     {
       "id": 99188,
+      "type": "show",
       "dateAdded": "2023-12-27T19:54:00.000Z",
       "showIds": {
         "trakt": 99188,
@@ -1106,6 +831,7 @@
     },
     {
       "id": 176276,
+      "type": "show",
       "dateAdded": "2023-12-20T23:03:03.000Z",
       "showIds": {
         "trakt": 176276,
@@ -1128,6 +854,7 @@
     },
     {
       "id": 37313,
+      "type": "show",
       "dateAdded": "2023-12-20T23:02:33.000Z",
       "showIds": {
         "trakt": 37313,
@@ -1150,6 +877,7 @@
     },
     {
       "id": 41522,
+      "type": "show",
       "dateAdded": "2023-12-20T23:02:01.000Z",
       "showIds": {
         "trakt": 41522,
@@ -1171,6 +899,7 @@
     },
     {
       "id": 147842,
+      "type": "show",
       "dateAdded": "2023-12-20T23:01:19.000Z",
       "showIds": {
         "trakt": 147842,
@@ -1194,6 +923,7 @@
     },
     {
       "id": 181120,
+      "type": "show",
       "dateAdded": "2023-12-20T23:01:00.000Z",
       "showIds": {
         "trakt": 181120,
@@ -1218,6 +948,7 @@
     },
     {
       "id": 137154,
+      "type": "show",
       "dateAdded": "2023-12-20T23:00:43.000Z",
       "showIds": {
         "trakt": 137154,
@@ -1241,6 +972,7 @@
     },
     {
       "id": 79279,
+      "type": "show",
       "dateAdded": "2023-12-20T23:00:23.000Z",
       "showIds": {
         "trakt": 79279,
@@ -1268,6 +1000,7 @@
     },
     {
       "id": 183474,
+      "type": "show",
       "dateAdded": "2023-12-20T23:00:06.000Z",
       "showIds": {
         "trakt": 183474,
@@ -1290,6 +1023,7 @@
     },
     {
       "id": 132339,
+      "type": "show",
       "dateAdded": "2023-12-20T23:00:02.000Z",
       "showIds": {
         "trakt": 132339,
@@ -1312,6 +1046,7 @@
     },
     {
       "id": 138247,
+      "type": "show",
       "dateAdded": "2023-12-20T22:59:26.000Z",
       "showIds": {
         "trakt": 138247,
@@ -1334,6 +1069,7 @@
     },
     {
       "id": 181978,
+      "type": "show",
       "dateAdded": "2023-12-20T22:59:18.000Z",
       "showIds": {
         "trakt": 181978,
@@ -1357,6 +1093,7 @@
     },
     {
       "id": 207683,
+      "type": "show",
       "dateAdded": "2023-12-20T22:59:01.000Z",
       "showIds": {
         "trakt": 207683,
@@ -1381,6 +1118,7 @@
     },
     {
       "id": 189388,
+      "type": "show",
       "dateAdded": "2023-12-20T22:58:47.000Z",
       "showIds": {
         "trakt": 189388,
@@ -1404,6 +1142,7 @@
     },
     {
       "id": 173886,
+      "type": "show",
       "dateAdded": "2023-12-20T22:58:31.000Z",
       "showIds": {
         "trakt": 173886,
@@ -1428,6 +1167,7 @@
     },
     {
       "id": 198903,
+      "type": "show",
       "dateAdded": "2023-12-20T22:58:10.000Z",
       "showIds": {
         "trakt": 198903,
@@ -1452,6 +1192,7 @@
     },
     {
       "id": 126125,
+      "type": "show",
       "dateAdded": "2023-12-20T22:56:42.000Z",
       "showIds": {
         "trakt": 126125,
@@ -1479,6 +1220,7 @@
     },
     {
       "id": 124381,
+      "type": "show",
       "dateAdded": "2023-12-20T19:50:56.000Z",
       "showIds": {
         "trakt": 124381,
@@ -1502,6 +1244,7 @@
     },
     {
       "id": 193213,
+      "type": "show",
       "dateAdded": "2023-12-20T19:50:46.000Z",
       "showIds": {
         "trakt": 193213,
@@ -1526,6 +1269,7 @@
     },
     {
       "id": 196336,
+      "type": "show",
       "dateAdded": "2023-06-05T02:51:11.000Z",
       "showIds": {
         "trakt": 196336,
@@ -1546,6 +1290,7 @@
     },
     {
       "id": 35780,
+      "type": "show",
       "dateAdded": "2023-04-01T17:37:35.000Z",
       "showIds": {
         "trakt": 35780,
@@ -1569,6 +1314,7 @@
     },
     {
       "id": 124764,
+      "type": "show",
       "dateAdded": "2023-04-01T17:37:24.000Z",
       "showIds": {
         "trakt": 124764,
@@ -1590,6 +1336,7 @@
     },
     {
       "id": 158947,
+      "type": "show",
       "dateAdded": "2023-04-01T17:37:09.000Z",
       "showIds": {
         "trakt": 158947,
@@ -1610,6 +1357,7 @@
     },
     {
       "id": 64409,
+      "type": "show",
       "dateAdded": "2023-04-01T17:37:00.000Z",
       "showIds": {
         "trakt": 64409,
@@ -1634,6 +1382,7 @@
     },
     {
       "id": 163643,
+      "type": "show",
       "dateAdded": "2023-02-14T22:03:19.000Z",
       "showIds": {
         "trakt": 163643,
@@ -1655,6 +1404,7 @@
     },
     {
       "id": 189509,
+      "type": "show",
       "dateAdded": "2023-01-29T04:13:28.000Z",
       "showIds": {
         "trakt": 189509,
@@ -1675,6 +1425,7 @@
     },
     {
       "id": 93786,
+      "type": "show",
       "dateAdded": "2023-01-20T00:58:58.000Z",
       "showIds": {
         "trakt": 93786,
@@ -1697,6 +1448,7 @@
     },
     {
       "id": 120748,
+      "type": "show",
       "dateAdded": "2023-01-15T23:42:44.000Z",
       "showIds": {
         "trakt": 120748,
@@ -1718,6 +1470,7 @@
     },
     {
       "id": 150900,
+      "type": "show",
       "dateAdded": "2023-01-05T23:12:55.000Z",
       "showIds": {
         "trakt": 150900,
@@ -1741,6 +1494,7 @@
     },
     {
       "id": 173241,
+      "type": "show",
       "dateAdded": "2023-01-05T23:11:48.000Z",
       "showIds": {
         "trakt": 173241,
@@ -1765,6 +1519,7 @@
     },
     {
       "id": 168471,
+      "type": "show",
       "dateAdded": "2023-01-05T23:10:53.000Z",
       "showIds": {
         "trakt": 168471,
@@ -1787,6 +1542,7 @@
     },
     {
       "id": 163668,
+      "type": "show",
       "dateAdded": "2023-01-05T23:10:25.000Z",
       "showIds": {
         "trakt": 163668,
@@ -1809,6 +1565,7 @@
     },
     {
       "id": 164920,
+      "type": "show",
       "dateAdded": "2023-01-03T01:34:42.000Z",
       "showIds": {
         "trakt": 164920,
@@ -1832,6 +1589,7 @@
     },
     {
       "id": 173996,
+      "type": "show",
       "dateAdded": "2022-12-23T04:41:39.000Z",
       "showIds": {
         "trakt": 173996,
@@ -1854,6 +1612,7 @@
     },
     {
       "id": 182138,
+      "type": "show",
       "dateAdded": "2022-11-14T04:54:08.000Z",
       "showIds": {
         "trakt": 182138,
@@ -1875,6 +1634,7 @@
     },
     {
       "id": 43623,
+      "type": "show",
       "dateAdded": "2022-11-10T01:41:52.000Z",
       "showIds": {
         "trakt": 43623,
@@ -1900,6 +1660,7 @@
     },
     {
       "id": 190673,
+      "type": "show",
       "dateAdded": "2022-10-31T22:18:10.000Z",
       "showIds": {
         "trakt": 190673,
@@ -1922,6 +1683,7 @@
     },
     {
       "id": 152639,
+      "type": "show",
       "dateAdded": "2022-10-26T22:13:06.000Z",
       "showIds": {
         "trakt": 152639,
@@ -1948,6 +1710,7 @@
     },
     {
       "id": 154574,
+      "type": "show",
       "dateAdded": "2022-10-26T22:12:03.000Z",
       "showIds": {
         "trakt": 154574,
@@ -1971,6 +1734,7 @@
     },
     {
       "id": 125963,
+      "type": "show",
       "dateAdded": "2022-10-25T03:08:25.000Z",
       "showIds": {
         "trakt": 125963,
@@ -1995,6 +1759,7 @@
     },
     {
       "id": 161830,
+      "type": "show",
       "dateAdded": "2022-10-18T05:26:39.000Z",
       "showIds": {
         "trakt": 161830,
@@ -2016,6 +1781,7 @@
     },
     {
       "id": 151854,
+      "type": "show",
       "dateAdded": "2022-10-13T17:50:39.000Z",
       "showIds": {
         "trakt": 151854,
@@ -2039,6 +1805,7 @@
     },
     {
       "id": 12522,
+      "type": "show",
       "dateAdded": "2022-10-11T23:16:52.000Z",
       "showIds": {
         "trakt": 12522,
@@ -2063,6 +1830,7 @@
     },
     {
       "id": 16759,
+      "type": "show",
       "dateAdded": "2022-10-08T23:50:40.000Z",
       "showIds": {
         "trakt": 16759,
@@ -2086,6 +1854,7 @@
     },
     {
       "id": 183616,
+      "type": "show",
       "dateAdded": "2022-10-08T00:48:06.000Z",
       "showIds": {
         "trakt": 183616,
@@ -2107,6 +1876,7 @@
     },
     {
       "id": 60731,
+      "type": "show",
       "dateAdded": "2022-10-02T06:12:48.000Z",
       "showIds": {
         "trakt": 60731,
@@ -2131,6 +1901,7 @@
     },
     {
       "id": 125481,
+      "type": "show",
       "dateAdded": "2022-09-24T19:14:38.000Z",
       "showIds": {
         "trakt": 125481,
@@ -2155,6 +1926,7 @@
     },
     {
       "id": 145411,
+      "type": "show",
       "dateAdded": "2022-09-20T00:44:14.000Z",
       "showIds": {
         "trakt": 145411,
@@ -2179,6 +1951,7 @@
     },
     {
       "id": 162712,
+      "type": "show",
       "dateAdded": "2022-09-11T16:46:13.000Z",
       "showIds": {
         "trakt": 162712,
@@ -2204,6 +1977,7 @@
     },
     {
       "id": 188024,
+      "type": "show",
       "dateAdded": "2022-09-06T00:22:15.000Z",
       "showIds": {
         "trakt": 188024,
@@ -2226,6 +2000,7 @@
     },
     {
       "id": 117930,
+      "type": "show",
       "dateAdded": "2022-08-29T23:48:41.000Z",
       "showIds": {
         "trakt": 117930,
@@ -2248,6 +2023,7 @@
     },
     {
       "id": 116965,
+      "type": "show",
       "dateAdded": "2022-08-26T23:02:46.000Z",
       "showIds": {
         "trakt": 116965,
@@ -2269,6 +2045,7 @@
     },
     {
       "id": 885,
+      "type": "show",
       "dateAdded": "2022-08-23T19:26:00.000Z",
       "showIds": {
         "trakt": 885,
@@ -2293,6 +2070,7 @@
     },
     {
       "id": 19453,
+      "type": "show",
       "dateAdded": "2022-08-13T00:27:48.000Z",
       "showIds": {
         "trakt": 19453,
@@ -2316,6 +2094,7 @@
     },
     {
       "id": 149786,
+      "type": "show",
       "dateAdded": "2022-08-08T00:25:51.000Z",
       "showIds": {
         "trakt": 149786,
@@ -2337,6 +2116,7 @@
     },
     {
       "id": 108124,
+      "type": "show",
       "dateAdded": "2022-07-31T22:01:43.000Z",
       "showIds": {
         "trakt": 108124,
@@ -2361,6 +2141,7 @@
     },
     {
       "id": 142611,
+      "type": "show",
       "dateAdded": "2022-07-22T03:59:26.000Z",
       "showIds": {
         "trakt": 142611,
@@ -2383,6 +2164,7 @@
     },
     {
       "id": 145186,
+      "type": "show",
       "dateAdded": "2022-07-20T14:10:44.000Z",
       "showIds": {
         "trakt": 145186,
@@ -2403,6 +2185,7 @@
     },
     {
       "id": 104439,
+      "type": "show",
       "dateAdded": "2022-07-18T02:53:16.000Z",
       "showIds": {
         "trakt": 104439,
@@ -2427,6 +2210,7 @@
     },
     {
       "id": 119887,
+      "type": "show",
       "dateAdded": "2022-07-12T02:20:14.000Z",
       "showIds": {
         "trakt": 119887,
@@ -2450,6 +2234,7 @@
     },
     {
       "id": 38304,
+      "type": "show",
       "dateAdded": "2022-07-06T22:48:10.000Z",
       "showIds": {
         "trakt": 38304,
@@ -2472,6 +2257,7 @@
     },
     {
       "id": 169967,
+      "type": "show",
       "dateAdded": "2022-07-06T00:34:50.000Z",
       "showIds": {
         "trakt": 169967,
@@ -2495,6 +2281,7 @@
     },
     {
       "id": 148714,
+      "type": "show",
       "dateAdded": "2022-07-05T22:21:16.000Z",
       "showIds": {
         "trakt": 148714,
@@ -2516,6 +2303,7 @@
     },
     {
       "id": 138218,
+      "type": "show",
       "dateAdded": "2022-06-13T00:01:13.000Z",
       "showIds": {
         "trakt": 138218,
@@ -2538,6 +2326,7 @@
     },
     {
       "id": 46397,
+      "type": "show",
       "dateAdded": "2022-06-08T03:57:10.000Z",
       "showIds": {
         "trakt": 46397,
@@ -2562,6 +2351,7 @@
     },
     {
       "id": 77558,
+      "type": "show",
       "dateAdded": "2022-05-20T23:13:48.000Z",
       "showIds": {
         "trakt": 77558,
@@ -2586,6 +2376,7 @@
     },
     {
       "id": 4564,
+      "type": "show",
       "dateAdded": "2022-05-18T15:54:25.000Z",
       "showIds": {
         "trakt": 4564,
@@ -2606,6 +2397,7 @@
     },
     {
       "id": 511,
+      "type": "show",
       "dateAdded": "2022-05-12T01:56:39.000Z",
       "showIds": {
         "trakt": 511,
@@ -2627,6 +2419,7 @@
     },
     {
       "id": 139960,
+      "type": "show",
       "dateAdded": "2022-05-09T21:21:01.000Z",
       "showIds": {
         "trakt": 139960,
@@ -2651,6 +2444,7 @@
     },
     {
       "id": 2673,
+      "type": "show",
       "dateAdded": "2022-05-09T21:18:44.000Z",
       "showIds": {
         "trakt": 2673,
@@ -2671,6 +2465,7 @@
     },
     {
       "id": 7313,
+      "type": "show",
       "dateAdded": "2022-05-09T21:17:06.000Z",
       "showIds": {
         "trakt": 7313,
@@ -2692,6 +2487,7 @@
     },
     {
       "id": 7276,
+      "type": "show",
       "dateAdded": "2022-05-09T21:16:25.000Z",
       "showIds": {
         "trakt": 7276,
@@ -2712,6 +2508,7 @@
     },
     {
       "id": 8312,
+      "type": "show",
       "dateAdded": "2022-05-09T21:15:58.000Z",
       "showIds": {
         "trakt": 8312,
@@ -2734,6 +2531,7 @@
     },
     {
       "id": 1960,
+      "type": "show",
       "dateAdded": "2022-05-09T21:15:38.000Z",
       "showIds": {
         "trakt": 1960,
@@ -2757,6 +2555,7 @@
     },
     {
       "id": 1209,
+      "type": "show",
       "dateAdded": "2022-05-09T21:15:33.000Z",
       "showIds": {
         "trakt": 1209,
@@ -2778,6 +2577,7 @@
     },
     {
       "id": 1396,
+      "type": "show",
       "dateAdded": "2022-05-09T21:15:16.000Z",
       "showIds": {
         "trakt": 1396,
@@ -2800,6 +2600,7 @@
     },
     {
       "id": 58540,
+      "type": "show",
       "dateAdded": "2022-05-09T21:13:33.000Z",
       "showIds": {
         "trakt": 58540,
@@ -2820,6 +2621,7 @@
     },
     {
       "id": 31801,
+      "type": "show",
       "dateAdded": "2022-05-09T21:12:19.000Z",
       "showIds": {
         "trakt": 31801,
@@ -2840,6 +2642,7 @@
     },
     {
       "id": 60307,
+      "type": "show",
       "dateAdded": "2022-05-09T21:11:34.000Z",
       "showIds": {
         "trakt": 60307,
@@ -2864,6 +2667,7 @@
     },
     {
       "id": 50503,
+      "type": "show",
       "dateAdded": "2022-05-09T21:11:08.000Z",
       "showIds": {
         "trakt": 50503,
@@ -2887,6 +2691,7 @@
     },
     {
       "id": 1401,
+      "type": "show",
       "dateAdded": "2022-05-09T21:10:48.000Z",
       "showIds": {
         "trakt": 1401,
@@ -2911,6 +2716,7 @@
     },
     {
       "id": 1393,
+      "type": "show",
       "dateAdded": "2022-05-09T21:10:11.000Z",
       "showIds": {
         "trakt": 1393,
@@ -2935,6 +2741,7 @@
     },
     {
       "id": 123775,
+      "type": "show",
       "dateAdded": "2022-05-09T21:09:12.000Z",
       "showIds": {
         "trakt": 123775,
@@ -2957,6 +2764,7 @@
     },
     {
       "id": 31882,
+      "type": "show",
       "dateAdded": "2022-05-09T21:06:26.000Z",
       "showIds": {
         "trakt": 31882,
@@ -2979,6 +2787,7 @@
     },
     {
       "id": 145026,
+      "type": "show",
       "dateAdded": "2022-05-09T21:05:39.000Z",
       "showIds": {
         "trakt": 145026,
@@ -3004,6 +2813,7 @@
     },
     {
       "id": 68319,
+      "type": "show",
       "dateAdded": "2022-05-09T21:04:42.000Z",
       "showIds": {
         "trakt": 68319,
@@ -3025,6 +2835,7 @@
     },
     {
       "id": 15556,
+      "type": "show",
       "dateAdded": "2022-05-09T21:03:44.000Z",
       "showIds": {
         "trakt": 15556,
@@ -3045,6 +2856,7 @@
     },
     {
       "id": 46038,
+      "type": "show",
       "dateAdded": "2022-05-09T21:02:49.000Z",
       "showIds": {
         "trakt": 46038,
@@ -3065,6 +2877,7 @@
     },
     {
       "id": 1416,
+      "type": "show",
       "dateAdded": "2022-05-09T21:01:53.000Z",
       "showIds": {
         "trakt": 1416,
@@ -3085,6 +2898,7 @@
     },
     {
       "id": 99046,
+      "type": "show",
       "dateAdded": "2022-05-09T21:00:29.000Z",
       "showIds": {
         "trakt": 99046,
@@ -3110,6 +2924,7 @@
     },
     {
       "id": 60278,
+      "type": "show",
       "dateAdded": "2022-05-09T20:58:13.000Z",
       "showIds": {
         "trakt": 60278,
@@ -3135,6 +2950,7 @@
     },
     {
       "id": 60300,
+      "type": "show",
       "dateAdded": "2022-05-09T20:57:34.000Z",
       "showIds": {
         "trakt": 60300,
@@ -3159,6 +2975,7 @@
     },
     {
       "id": 153534,
+      "type": "show",
       "dateAdded": "2022-05-09T20:51:09.000Z",
       "showIds": {
         "trakt": 153534,
@@ -3181,6 +2998,7 @@
     },
     {
       "id": 165792,
+      "type": "show",
       "dateAdded": "2022-05-09T20:51:03.000Z",
       "showIds": {
         "trakt": 165792,
@@ -3201,6 +3019,7 @@
     },
     {
       "id": 146535,
+      "type": "show",
       "dateAdded": "2022-05-09T20:50:57.000Z",
       "showIds": {
         "trakt": 146535,
@@ -3224,6 +3043,7 @@
     },
     {
       "id": 897,
+      "type": "show",
       "dateAdded": "2022-05-09T20:47:39.000Z",
       "showIds": {
         "trakt": 897,
@@ -3247,6 +3067,7 @@
     },
     {
       "id": 60156,
+      "type": "show",
       "dateAdded": "2022-05-09T20:46:12.000Z",
       "showIds": {
         "trakt": 60156,
@@ -3271,6 +3092,7 @@
     },
     {
       "id": 31517,
+      "type": "show",
       "dateAdded": "2022-05-09T20:44:28.000Z",
       "showIds": {
         "trakt": 31517,
@@ -3296,6 +3118,7 @@
     },
     {
       "id": 44751,
+      "type": "show",
       "dateAdded": "2022-05-09T20:43:08.000Z",
       "showIds": {
         "trakt": 44751,
@@ -3321,6 +3144,7 @@
     },
     {
       "id": 62163,
+      "type": "show",
       "dateAdded": "2022-05-09T20:42:01.000Z",
       "showIds": {
         "trakt": 62163,
@@ -3346,6 +3170,7 @@
     },
     {
       "id": 1398,
+      "type": "show",
       "dateAdded": "2022-05-09T20:41:39.000Z",
       "showIds": {
         "trakt": 1398,
@@ -3370,6 +3195,7 @@
     },
     {
       "id": 46676,
+      "type": "show",
       "dateAdded": "2022-05-09T20:41:24.000Z",
       "showIds": {
         "trakt": 46676,
@@ -3392,6 +3218,7 @@
     },
     {
       "id": 145783,
+      "type": "show",
       "dateAdded": "2022-05-09T20:38:30.000Z",
       "showIds": {
         "trakt": 145783,
@@ -3412,6 +3239,7 @@
     },
     {
       "id": 162639,
+      "type": "show",
       "dateAdded": "2022-05-09T20:38:02.000Z",
       "showIds": {
         "trakt": 162639,
@@ -3433,6 +3261,7 @@
     },
     {
       "id": 44846,
+      "type": "show",
       "dateAdded": "2022-05-09T20:36:40.000Z",
       "showIds": {
         "trakt": 44846,
@@ -3454,6 +3283,7 @@
     },
     {
       "id": 39825,
+      "type": "show",
       "dateAdded": "2022-05-09T20:35:57.000Z",
       "showIds": {
         "trakt": 39825,
@@ -3476,6 +3306,7 @@
     },
     {
       "id": 60158,
+      "type": "show",
       "dateAdded": "2022-05-04T23:13:32.000Z",
       "showIds": {
         "trakt": 60158,
@@ -3497,6 +3328,7 @@
     },
     {
       "id": 1693,
+      "type": "show",
       "dateAdded": "2022-05-04T23:13:10.000Z",
       "showIds": {
         "trakt": 1693,
@@ -3520,6 +3352,7 @@
     },
     {
       "id": 30535,
+      "type": "show",
       "dateAdded": "2022-05-04T03:44:17.000Z",
       "showIds": {
         "trakt": 30535,
@@ -3543,6 +3376,7 @@
     },
     {
       "id": 60942,
+      "type": "show",
       "dateAdded": "2022-05-04T03:43:45.000Z",
       "showIds": {
         "trakt": 60942,
@@ -3569,6 +3403,7 @@
     },
     {
       "id": 60958,
+      "type": "show",
       "dateAdded": "2022-05-04T03:43:27.000Z",
       "showIds": {
         "trakt": 60958,
@@ -3593,6 +3428,7 @@
     },
     {
       "id": 60936,
+      "type": "show",
       "dateAdded": "2022-05-04T03:43:15.000Z",
       "showIds": {
         "trakt": 60936,
@@ -3619,6 +3455,7 @@
     },
     {
       "id": 4591,
+      "type": "show",
       "dateAdded": "2022-05-04T03:28:06.000Z",
       "showIds": {
         "trakt": 4591,
@@ -3643,6 +3480,7 @@
     },
     {
       "id": 32613,
+      "type": "show",
       "dateAdded": "2022-05-04T03:27:13.000Z",
       "showIds": {
         "trakt": 32613,
@@ -3667,6 +3505,7 @@
     },
     {
       "id": 152990,
+      "type": "show",
       "dateAdded": "2022-05-04T03:24:31.000Z",
       "showIds": {
         "trakt": 152990,
@@ -3689,6 +3528,7 @@
     },
     {
       "id": 10494,
+      "type": "show",
       "dateAdded": "2022-05-04T03:24:21.000Z",
       "showIds": {
         "trakt": 10494,
@@ -3712,6 +3552,7 @@
     },
     {
       "id": 169891,
+      "type": "show",
       "dateAdded": "2022-05-04T01:41:02.000Z",
       "showIds": {
         "trakt": 169891,
@@ -3734,6 +3575,7 @@
     },
     {
       "id": 134526,
+      "type": "show",
       "dateAdded": "2022-05-04T01:40:58.000Z",
       "showIds": {
         "trakt": 134526,
@@ -3756,6 +3598,7 @@
     },
     {
       "id": 1420,
+      "type": "show",
       "dateAdded": "2022-05-04T01:37:56.000Z",
       "showIds": {
         "trakt": 1420,
@@ -3779,6 +3622,7 @@
     },
     {
       "id": 60157,
+      "type": "show",
       "dateAdded": "2022-05-04T01:37:50.000Z",
       "showIds": {
         "trakt": 60157,
@@ -3799,6 +3643,7 @@
     },
     {
       "id": 1403,
+      "type": "show",
       "dateAdded": "2022-05-04T01:37:45.000Z",
       "showIds": {
         "trakt": 1403,
@@ -3823,6 +3668,7 @@
     },
     {
       "id": 18265,
+      "type": "show",
       "dateAdded": "2022-05-04T01:36:52.000Z",
       "showIds": {
         "trakt": 18265,
@@ -3843,6 +3689,7 @@
     },
     {
       "id": 112663,
+      "type": "show",
       "dateAdded": "2022-05-04T01:34:43.000Z",
       "showIds": {
         "trakt": 112663,
@@ -3866,6 +3713,7 @@
     },
     {
       "id": 77938,
+      "type": "show",
       "dateAdded": "2022-05-04T01:34:34.000Z",
       "showIds": {
         "trakt": 77938,
@@ -3890,6 +3738,7 @@
     },
     {
       "id": 157085,
+      "type": "show",
       "dateAdded": "2022-05-04T01:21:28.000Z",
       "showIds": {
         "trakt": 157085,
@@ -3913,6 +3762,7 @@
     },
     {
       "id": 169009,
+      "type": "show",
       "dateAdded": "2022-05-04T01:21:24.000Z",
       "showIds": {
         "trakt": 169009,
@@ -3938,6 +3788,7 @@
     },
     {
       "id": 95966,
+      "type": "show",
       "dateAdded": "2022-05-04T01:21:19.000Z",
       "showIds": {
         "trakt": 95966,
@@ -3960,6 +3811,7 @@
     },
     {
       "id": 31360,
+      "type": "show",
       "dateAdded": "2022-05-04T01:21:16.000Z",
       "showIds": {
         "trakt": 31360,
@@ -3980,6 +3832,7 @@
     },
     {
       "id": 2900,
+      "type": "show",
       "dateAdded": "2022-05-04T01:21:03.000Z",
       "showIds": {
         "trakt": 2900,
@@ -4003,6 +3856,7 @@
     },
     {
       "id": 34818,
+      "type": "show",
       "dateAdded": "2022-05-04T01:20:53.000Z",
       "showIds": {
         "trakt": 34818,
@@ -4026,6 +3880,7 @@
     },
     {
       "id": 152779,
+      "type": "show",
       "dateAdded": "2022-05-04T01:20:28.000Z",
       "showIds": {
         "trakt": 152779,
@@ -4048,6 +3903,7 @@
     },
     {
       "id": 4214,
+      "type": "show",
       "dateAdded": "2022-05-04T01:20:18.000Z",
       "showIds": {
         "trakt": 4214,
@@ -4068,6 +3924,7 @@
     },
     {
       "id": 131598,
+      "type": "show",
       "dateAdded": "2022-05-04T01:20:02.000Z",
       "showIds": {
         "trakt": 131598,
@@ -4091,6 +3948,7 @@
     },
     {
       "id": 1927,
+      "type": "show",
       "dateAdded": "2022-05-04T01:19:50.000Z",
       "showIds": {
         "trakt": 1927,
@@ -4112,6 +3970,7 @@
     },
     {
       "id": 1411,
+      "type": "show",
       "dateAdded": "2022-05-04T01:19:39.000Z",
       "showIds": {
         "trakt": 1411,
@@ -4132,6 +3991,7 @@
     },
     {
       "id": 52,
+      "type": "show",
       "dateAdded": "2022-05-04T01:19:16.000Z",
       "showIds": {
         "trakt": 52,
@@ -4154,6 +4014,7 @@
     },
     {
       "id": 21410,
+      "type": "show",
       "dateAdded": "2022-05-04T01:19:11.000Z",
       "showIds": {
         "trakt": 21410,
@@ -4176,6 +4037,7 @@
     },
     {
       "id": 138163,
+      "type": "show",
       "dateAdded": "2022-05-04T01:19:09.000Z",
       "showIds": {
         "trakt": 138163,
@@ -4199,6 +4061,7 @@
     },
     {
       "id": 98990,
+      "type": "show",
       "dateAdded": "2022-05-04T01:19:08.000Z",
       "showIds": {
         "trakt": 98990,
@@ -4220,6 +4083,7 @@
     },
     {
       "id": 1438,
+      "type": "show",
       "dateAdded": "2022-05-04T01:18:47.000Z",
       "showIds": {
         "trakt": 1438,
@@ -4243,6 +4107,7 @@
     },
     {
       "id": 1395,
+      "type": "show",
       "dateAdded": "2022-05-04T01:18:45.000Z",
       "showIds": {
         "trakt": 1395,
@@ -4266,6 +4131,7 @@
     },
     {
       "id": 99718,
+      "type": "show",
       "dateAdded": "2022-05-04T01:18:40.000Z",
       "showIds": {
         "trakt": 99718,
@@ -4287,6 +4153,7 @@
     },
     {
       "id": 137178,
+      "type": "show",
       "dateAdded": "2022-05-04T01:18:09.000Z",
       "showIds": {
         "trakt": 137178,
@@ -4311,6 +4178,7 @@
     },
     {
       "id": 1391,
+      "type": "show",
       "dateAdded": "2022-05-04T01:17:49.000Z",
       "showIds": {
         "trakt": 1391,
@@ -4331,6 +4199,7 @@
     },
     {
       "id": 37522,
+      "type": "show",
       "dateAdded": "2022-05-04T01:17:34.000Z",
       "showIds": {
         "trakt": 37522,
@@ -4351,6 +4220,7 @@
     },
     {
       "id": 77692,
+      "type": "show",
       "dateAdded": "2022-05-04T01:07:41.000Z",
       "showIds": {
         "trakt": 77692,
@@ -4371,6 +4241,7 @@
     },
     {
       "id": 154221,
+      "type": "show",
       "dateAdded": "2022-05-04T01:04:33.000Z",
       "showIds": {
         "trakt": 154221,
@@ -4393,6 +4264,7 @@
     },
     {
       "id": 1628,
+      "type": "show",
       "dateAdded": "2022-05-04T01:04:21.000Z",
       "showIds": {
         "trakt": 1628,
@@ -4416,6 +4288,7 @@
     },
     {
       "id": 1095,
+      "type": "show",
       "dateAdded": "2022-05-04T01:04:15.000Z",
       "showIds": {
         "trakt": 1095,
@@ -4436,6 +4309,7 @@
     },
     {
       "id": 4583,
+      "type": "show",
       "dateAdded": "2022-05-04T01:03:09.000Z",
       "showIds": {
         "trakt": 4583,
@@ -4459,6 +4333,7 @@
     },
     {
       "id": 4532,
+      "type": "show",
       "dateAdded": "2022-05-04T01:03:01.000Z",
       "showIds": {
         "trakt": 4532,
@@ -4479,6 +4354,7 @@
     },
     {
       "id": 4580,
+      "type": "show",
       "dateAdded": "2022-05-04T01:02:48.000Z",
       "showIds": {
         "trakt": 4580,
@@ -4504,6 +4380,7 @@
     },
     {
       "id": 4254,
+      "type": "show",
       "dateAdded": "2022-05-04T01:02:38.000Z",
       "showIds": {
         "trakt": 4254,
@@ -4524,6 +4401,7 @@
     },
     {
       "id": 1399,
+      "type": "show",
       "dateAdded": "2022-05-04T00:36:19.000Z",
       "showIds": {
         "trakt": 1399,
@@ -4545,6 +4423,7 @@
     },
     {
       "id": 2177,
+      "type": "show",
       "dateAdded": "2022-05-04T00:36:03.000Z",
       "showIds": {
         "trakt": 2177,
@@ -4566,6 +4445,7 @@
     },
     {
       "id": 1611,
+      "type": "show",
       "dateAdded": "2022-05-04T00:35:52.000Z",
       "showIds": {
         "trakt": 1611,
@@ -4589,6 +4469,7 @@
     },
     {
       "id": 1657,
+      "type": "show",
       "dateAdded": "2022-05-04T00:34:39.000Z",
       "showIds": {
         "trakt": 1657,
@@ -4609,6 +4490,7 @@
     },
     {
       "id": 2302,
+      "type": "show",
       "dateAdded": "2022-05-04T00:34:30.000Z",
       "showIds": {
         "trakt": 2302,
@@ -4629,6 +4511,7 @@
     },
     {
       "id": 1388,
+      "type": "show",
       "dateAdded": "2022-05-04T00:33:15.000Z",
       "showIds": {
         "trakt": 1388,
@@ -4651,6 +4534,7 @@
     },
     {
       "id": 1390,
+      "type": "show",
       "dateAdded": "2022-05-04T00:33:11.000Z",
       "showIds": {
         "trakt": 1390,
@@ -4674,6 +4558,7 @@
     },
     {
       "id": 152473,
+      "type": "show",
       "dateAdded": "2020-11-30T04:07:00.000Z",
       "showIds": {
         "trakt": 152473,
@@ -4698,6 +4583,7 @@
   "favorites": [
     {
       "id": 696434767,
+      "type": "show",
       "rank": 1,
       "dateAdded": "2022-05-18T17:32:27.000Z",
       "showIds": {
@@ -4722,6 +4608,7 @@
     },
     {
       "id": 696434786,
+      "type": "show",
       "rank": 2,
       "dateAdded": "2022-05-18T17:32:38.000Z",
       "showIds": {
@@ -4743,6 +4630,7 @@
     },
     {
       "id": 696434880,
+      "type": "show",
       "rank": 3,
       "dateAdded": "2022-05-18T17:33:08.000Z",
       "showIds": {
@@ -4766,6 +4654,7 @@
     },
     {
       "id": 719687403,
+      "type": "show",
       "rank": 4,
       "dateAdded": "2022-07-20T02:37:18.000Z",
       "showIds": {
@@ -4792,6 +4681,7 @@
     },
     {
       "id": 744695742,
+      "type": "show",
       "rank": 5,
       "dateAdded": "2022-09-26T20:06:24.000Z",
       "showIds": {
@@ -4816,6 +4706,7 @@
     },
     {
       "id": 1021980395,
+      "type": "show",
       "rank": 6,
       "dateAdded": "2024-05-07T20:03:07.000Z",
       "showIds": {
@@ -4848,27 +4739,27 @@
     },
     {
       "genre": "action",
-      "total": 91
+      "total": 92
     },
     {
       "genre": "adventure",
-      "total": 76
+      "total": 77
     },
     {
       "genre": "fantasy",
-      "total": 76
+      "total": 77
     },
     {
       "genre": "science fiction",
-      "total": 55
+      "total": 56
     },
     {
       "genre": "anime",
-      "total": 54
+      "total": 55
     },
     {
       "genre": "mystery",
-      "total": 46
+      "total": 47
     },
     {
       "genre": "comedy",
