@@ -19,7 +19,6 @@ export function makeKebabCase(str: string): string {
 
 function checkLogoNameRedirects(name: string): string {
   if (name === 'eas') return 'expo';
-  if (name === 'react-native') return 'react';
   return name;
 }
 
