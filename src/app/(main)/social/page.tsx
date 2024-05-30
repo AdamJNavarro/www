@@ -1,6 +1,7 @@
 import { Page } from '~/components/Layouts/Page';
 import routes from '../config/routes';
-import { SocialPlatforms } from './Social.data';
+
+import SocialStack from './SocialStack';
 
 export const { metadata } = routes.social;
 
@@ -10,20 +11,11 @@ export default async function SocialPage() {
       <Page.Header>
         <Page.Title>Social Presence</Page.Title>
         <Page.Description>
-          {' '}
           Here are the places you can find me online.
         </Page.Description>
       </Page.Header>
-      <div className="prose mt-8 mb-16">
-        <ul>
-          {SocialPlatforms.filter((platform) => platform.show).map((item) => (
-            <li key={item.label}>
-              <a href={item.href} target="_blank" rel="noopener noreferrer">
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+      <div className="mt-8 mb-24">
+        <SocialStack />
       </div>
     </div>
   );

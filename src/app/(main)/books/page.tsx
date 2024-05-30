@@ -1,12 +1,13 @@
 import routes from '~/app/(main)/config/routes';
 import { Content, Page } from '~/components/Layouts/Page';
-import { SocialUrls } from '~/app/(main)/social/Social.data';
 import { getLiteralBooksByStatus } from '../data/literal';
 import Link from 'next/link';
 import Image from 'next/image';
 import Stats from '~/components/common/Stats';
 
 export const { metadata } = routes.books;
+
+const literalUrl = 'https://literal.club/adamjnavarro';
 
 interface QuoteProps {
   author: string;
@@ -39,7 +40,7 @@ export default async function BooksPage() {
         <Page.Title>Books</Page.Title>
         <Page.Description>
           A peek into my literary tastes and activity. Data provided by{' '}
-          <a href={SocialUrls.literal} target="_blank" rel="noopener noreferrer">
+          <a href={literalUrl} target="_blank" rel="noopener noreferrer">
             Literal
           </a>
           .
@@ -82,11 +83,7 @@ export default async function BooksPage() {
       <p className="prose max-w-none mb-24">
         Here are the last 10 books I’ve finished. To see all of my past reading
         (since I started logging), you can check out my{' '}
-        <a
-          href={`${SocialUrls.literal}/has-read`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={`${literalUrl}/has-read`} target="_blank" rel="noopener noreferrer">
           finished log
         </a>
         . If you have any questions or want to discuss any of the titles, feel free
