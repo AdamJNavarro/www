@@ -144,7 +144,7 @@ const serviceStack: StackItem[] = [
     href: 'https://expo.dev/eas',
     activelyUsing: false,
     projectIds: [],
-    hasThemeLogos: true,
+    hasThemeLogos: false,
   },
   {
     name: 'Cloudinary',

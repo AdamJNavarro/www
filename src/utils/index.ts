@@ -18,7 +18,7 @@ export function makeKebabCase(str: string): string {
 }
 
 function checkLogoNameRedirects(name: string): string {
-  if (name === 'eas') return 'expo';
+  //if (name === 'eas') return 'expo';
   return name;
 }
 
