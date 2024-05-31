@@ -9,6 +9,7 @@ import {
   languageStack,
   serviceStack,
   toolStack,
+  experimentingStack,
 } from '../data/stack';
 
 export const { metadata } = routes.coding;
@@ -66,6 +67,16 @@ export default async function CodingPage() {
       <div className="mt-8 mb-24">
         <TechStackGrid>
           {environmentStack.map((item) => (
+            <StackItem key={item.name} {...item} />
+          ))}
+        </TechStackGrid>
+      </div>
+      <Content.Header>
+        <Content.Title>Exploring & Experimenting</Content.Title>
+      </Content.Header>
+      <div className="mt-8 mb-24">
+        <TechStackGrid>
+          {experimentingStack.map((item) => (
             <StackItem key={item.name} {...item} />
           ))}
         </TechStackGrid>

@@ -378,6 +378,47 @@ const environmentStack: StackItem[] = [
   },
 ];
 
+const experimentingStack: StackItem[] = [
+  {
+    name: 'Zed',
+    href: 'https://zed.dev/',
+    activelyUsing: true,
+    projectIds: [],
+    hasThemeLogos: true,
+  },
+  {
+    name: 'PNPM',
+    href: 'https://pnpm.io/',
+    activelyUsing: true,
+    projectIds: [],
+  },
+  {
+    name: 'Remix',
+    href: 'https://remix.run/',
+    activelyUsing: true,
+    projectIds: [],
+  },
+  {
+    name: 'Nuxt',
+    href: 'https://nuxt.com/',
+    activelyUsing: true,
+    projectIds: [],
+  },
+  {
+    name: 'Vue.js',
+    href: 'https://vuejs.org/',
+    activelyUsing: true,
+    projectIds: [],
+  },
+  {
+    name: 'Nx',
+    href: 'https://nx.dev/',
+    activelyUsing: true,
+    projectIds: [],
+    hasThemeLogos: true,
+  },
+];
+
 const possibleProjectStack: StackItem[] = [
   ...languageStack,
   ...frameworkStack,
@@ -396,6 +437,7 @@ export {
   allServiceStack,
   environmentStack,
   possibleProjectStack,
+  experimentingStack,
 };
 
 export type { StackItem };
