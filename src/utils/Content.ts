@@ -8,6 +8,8 @@ type Metadata = {
   image?: string;
 };
 
+type ContentDir = (string & 'prompts') | 'blog';
+
 function parseFrontmatter(fileContent: string) {
   const frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
   const match = frontmatterRegex.exec(fileContent);
@@ -48,6 +50,6 @@ function getMDXData(dir) {
   });
 }
 
-export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), 'content/blog'));
+export function getMDXContent(dir: ContentDir) {
+  return getMDXData(path.join(process.cwd(), `content/${dir}`));
 }

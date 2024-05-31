@@ -105,6 +105,15 @@ const routes: RouteConfig = {
       description: 'A peek into my taste in music and podcasts.',
     },
   },
+  prompts: {
+    icon: IconWriting,
+    label: 'Prompts',
+    href: '/prompts',
+    metadata: {
+      title: 'Some thought-provokers.',
+      description: 'A collection of things to get the mind working.',
+    },
+  },
   social: {
     icon: IconSocial,
     label: 'Social',
