@@ -3,7 +3,7 @@ import routes from '../config/routes';
 import { getBlogPosts } from '../data/blog';
 import Link from 'next/link';
 import { formatDate } from '~/utils/Dates';
-import { pluralize, sortByDate } from '~/utils';
+import { sortByDate } from '~/utils';
 
 export const { metadata } = routes.blog;
 
@@ -31,7 +31,6 @@ export default async function BlogPage() {
                 <div>
                   {formatDate({ date: post.metadata.publishedAt, format: 'long' })}
                 </div>
-                <div>~{pluralize({ count: post.readingTime, single: 'min' })}</div>
               </div>
             </div>
           </Link>

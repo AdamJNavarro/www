@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import readingTime from 'reading-time';
 
 type Metadata = {
   title: string;
@@ -41,12 +40,10 @@ function getMDXData(dir) {
   return mdxFiles.map((file) => {
     const { metadata, content } = readMDXFile(path.join(dir, file));
     const slug = path.basename(file, path.extname(file));
-    const { minutes } = readingTime(content);
     return {
       metadata,
       slug,
       content,
-      readingTime: minutes,
     };
   });
 }
