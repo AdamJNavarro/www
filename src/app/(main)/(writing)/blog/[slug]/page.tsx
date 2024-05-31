@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getBlogPosts } from '~/app/(main)/data/blog';
 import { CustomMDX } from '~/components/common/Mdx';
 import { Page } from '~/components/Layouts/Page';
+import { getMDXContent } from '~/utils/Content';
 import { formatDate } from '~/utils/Dates';
 
 export async function generateMetadata({ params }): Promise<Metadata | undefined> {
-  const post = getBlogPosts().find((post) => post.slug === params.slug);
+  const post = getMDXContent('blog').find((post) => post.slug === params.slug);
   if (!post) {
     return;
   }
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }): Promise<Metadata | undefined
 }
 
 export default function Blog({ params }) {
-  const post = getBlogPosts().find((post) => post.slug === params.slug);
+  const post = getMDXContent('blog').find((post) => post.slug === params.slug);
 
   if (!post) {
     notFound();
