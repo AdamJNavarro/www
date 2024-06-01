@@ -1,7 +1,8 @@
 import NextAuth from 'next-auth';
 import GitHub from 'next-auth/providers/github';
+import Google from 'next-auth/providers/google';
 
-const isDev = (process.env.VERCEL_ENV as string) === 'development';
+const isDev = (process.env.NODE_ENV as string) === 'development';
 
 export const {
   handlers: { GET, POST },
@@ -14,6 +15,11 @@ export const {
       redirectProxyUrl: isDev
         ? 'http://localhost:3000/api/auth/callback/github'
         : 'https://adamjnavarro.com/api/auth/callback/github',
+    }),
+    Google({
+      redirectProxyUrl: isDev
+        ? 'http://localhost:3000/api/auth/callback/google'
+        : 'https://adamjnavarro.com/api/auth/callback/google',
     }),
   ],
   pages: {
