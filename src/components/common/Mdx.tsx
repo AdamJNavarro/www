@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import React from 'react';
 import { highlight } from 'sugar-high';
-import { TweetComponent } from './Tweet';
 
 function CustomLink(props) {
   const href = props.href;
@@ -92,7 +91,6 @@ const components = {
   a: CustomLink,
   Table,
   code: Code,
-  StaticTweet: TweetComponent,
 };
 
 export function CustomMDX(props) {

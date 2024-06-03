@@ -2,7 +2,7 @@ import ky from 'ky';
 import { loadEnvConfig } from '@next/env';
 import fs from 'fs/promises';
 import { buildNamesString } from '~/utils';
-import { LiteralBook } from '~/app/(main)/data/literal';
+import { LiteralBook } from '~/app/data/literal';
 
 const projectDir = process.cwd();
 loadEnvConfig(projectDir);
@@ -59,11 +59,7 @@ async function getLiteralData() {
     2
   );
 
-  await fs.writeFile(
-    './src/app/(main)/data/literal/data.json',
-    updatedData,
-    'utf-8'
-  );
+  await fs.writeFile('./src/app/data/literal/data.json', updatedData, 'utf-8');
 }
 
 getLiteralData();
