@@ -27,14 +27,6 @@
 }
 
 @layer utilities {
-  .px-shell {
-    @apply px-6 desktop:px-0;
-  }
-
-  .w-shell-full {
-    @apply -mx-6;
-  }
-
   .border-surface {
     @apply dark:border dark:border-slate-800;
   }
