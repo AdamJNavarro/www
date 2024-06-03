@@ -34,10 +34,10 @@ export default async function HomePage() {
       <Image
         src="/img/home-photo.jpg"
         priority
-        height={240}
-        width={240}
+        height={320}
+        width={320}
         alt="adam-home-photo"
-        className="rounded-full h-60 w-60 mx-auto mb-8"
+        className="rounded-full h-60 w-60 mx-auto mb-8 tablet:h-80 tablet:w-80"
       />
       <div className="text-center mb-16">
         <p className="animate-slogan font-medium text-lg text-slate-700 dark:text-slate-300">
