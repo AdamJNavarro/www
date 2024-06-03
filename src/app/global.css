@@ -66,10 +66,18 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .page-h1 {
+    @apply leading-none font-bold text-2xl mb-16 tablet:mb-24;
+  }
+
+  .page-h2 {
+    @apply leading-none font-medium text-xl mb-12 tablet:mb-16;
+  }
 }
 
 .prose {
-  @apply prose-slate dark:prose-slate dark:prose-invert;
+  @apply max-w-none prose-slate dark:prose-slate dark:prose-invert;
 }
 
 .prose .anchor {
@@ -122,10 +130,30 @@
   @apply m-0;
 }
 
-.prose h2,
-h3,
-h4 {
-  @apply tracking-tight font-semibold !important;
+.prose h1 {
+  @apply font-bold text-xl tablet:text-xl;
+}
+
+.prose h2 {
+  @apply font-bold text-lg;
+}
+.prose h3 {
+  @apply font-bold text-md;
+}
+.prose h4 {
+  @apply font-medium text-md;
+}
+
+.prose p {
+  @apply text-md;
+}
+
+.prose li {
+  @apply text-md;
+}
+
+.prose strong {
+  @apply font-semibold;
 }
 
 .prose .tweet a {

@@ -141,7 +141,7 @@ async function generateTraktData() {
     null,
     2
   );
-  await fs.writeFile('./src/app/(main)/data/trakt/data.json', completeData, 'utf-8');
+  await fs.writeFile('./src/app/data/trakt/data.json', completeData, 'utf-8');
 }
 
 generateTraktData();
