@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-06-02T06:03:08.721Z",
+  "updatedAt": "2024-06-09T06:03:20.458Z",
   "stats": {
     "shows": 188,
-    "episodes": 10100,
-    "minutes": 347734
+    "episodes": 10152,
+    "minutes": 349246
   },
   "watching": [
     {
@@ -30,9 +30,42 @@
       ]
     },
     {
+      "id": 1035333260,
+      "type": "season",
+      "rank": 2,
+      "dateAdded": "2024-06-02T18:05:29.000Z",
+      "showIds": {
+        "trakt": 188929,
+        "slug": "the-eminence-in-shadow",
+        "tvdb": 407520,
+        "imdb": "tt14115938",
+        "tmdb": 119495,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-eminence-in-shadow",
+      "title": "The Eminence in Shadow",
+      "year": 2022,
+      "overview": "Shadowbrokers are those who go unnoticed, posing as unremarkable people, when in truth, they control everything from behind the scenes. Sid wants to be someone just like that more than anything, and something as insignificant as boring reality isn’t going to get in his way! He trains in secret every single night, preparing for his eventual rise to power—only to denied his destiny by a run-of-the-mill (yet deadly) traffic accident. But when he wakes up in a another world and suddenly finds himself at the head of an actual secret organization doing battle with evil in the shadows, he’ll finally get a chance to act out all of his delusional fantasies!",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "comedy",
+        "fantasy",
+        "action"
+      ],
+      "seasonIds": {
+        "trakt": 278348,
+        "tvdb": 1945464,
+        "tmdb": 183169,
+        "tvrage": null
+      },
+      "seasonNumber": 1,
+      "seasonTitle": "Season 1"
+    },
+    {
       "id": 1018214590,
       "type": "show",
-      "rank": 2,
+      "rank": 3,
       "dateAdded": "2024-04-30T02:06:22.000Z",
       "showIds": {
         "trakt": 197270,
@@ -56,7 +89,7 @@
     {
       "id": 1033438873,
       "type": "season",
-      "rank": 3,
+      "rank": 4,
       "dateAdded": "2024-05-29T15:54:43.000Z",
       "showIds": {
         "trakt": 131598,
@@ -85,41 +118,6 @@
       },
       "seasonNumber": 5,
       "seasonTitle": "Hashira Training Arc"
-    },
-    {
-      "id": 1033453686,
-      "type": "season",
-      "rank": 4,
-      "dateAdded": "2024-05-29T16:36:39.000Z",
-      "showIds": {
-        "trakt": 33994,
-        "slug": "d-gray-man",
-        "tvdb": 79635,
-        "imdb": "tt0899258",
-        "tmdb": 34141,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/d-gray-man",
-      "title": "D.Gray-man",
-      "year": 2006,
-      "overview": "Darkness is moving in, and young exorcist Allen Walker is humanity’s greatest hope against the wicked forces conspiring to bring civilization to its knees. Akuma – cruel spirits born of tragedy and lost souls – lurk in every shadow, willing and eager to do the bidding of their leader, the dread Millennium Earl. With an eye cursed to see evil in its truest form and blessed with an arm to slay soul-devouring demons, Allen stands ready to confront the gathering evil. Should he fail, Innocence will be lost forever. The war to decide the fate of mankind has begun – and the carnage will be endless.",
-      "status": "ended",
-      "genres": [
-        "action",
-        "adventure",
-        "fantasy",
-        "science-fiction",
-        "mystery",
-        "anime"
-      ],
-      "seasonIds": {
-        "trakt": 45762,
-        "tvdb": 17618,
-        "tmdb": 44944,
-        "tvrage": null
-      },
-      "seasonNumber": 2,
-      "seasonTitle": "Season 2"
     },
     {
       "id": 1033453992,
@@ -157,30 +155,9 @@
   ],
   "watched": [
     {
-      "id": 228099,
-      "type": "show",
-      "dateAdded": "2024-06-01T15:19:33.000Z",
-      "showIds": {
-        "trakt": 228099,
-        "slug": "tires",
-        "tvdb": 446718,
-        "imdb": "tt31491435",
-        "tmdb": 247522,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/tires",
-      "title": "Tires",
-      "year": 2024,
-      "overview": "At his father's auto shop, a hapless manager strives to improve customer service and drive profits while keeping his troublemaking cousin in line.",
-      "status": "returning series",
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
       "id": 33994,
       "type": "show",
-      "dateAdded": "2024-05-29T16:36:35.000Z",
+      "dateAdded": "2024-06-02T18:05:10.000Z",
       "showIds": {
         "trakt": 33994,
         "slug": "d-gray-man",
@@ -201,6 +178,27 @@
         "science-fiction",
         "mystery",
         "anime"
+      ]
+    },
+    {
+      "id": 228099,
+      "type": "show",
+      "dateAdded": "2024-06-01T15:19:33.000Z",
+      "showIds": {
+        "trakt": 228099,
+        "slug": "tires",
+        "tvdb": 446718,
+        "imdb": "tt31491435",
+        "tmdb": 247522,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/tires",
+      "title": "Tires",
+      "year": 2024,
+      "overview": "At his father's auto shop, a hapless manager strives to improve customer service and drive profits while keeping his troublemaking cousin in line.",
+      "status": "returning series",
+      "genres": [
+        "comedy"
       ]
     },
     {
@@ -362,7 +360,7 @@
       "title": "Shangri-La Frontier",
       "year": 2023,
       "overview": "Rakuro Hizutome only cares about one thing: beating crappy VR games. He devotes his entire life to these buggy games and could clear them all in his sleep. One day, he decides to challenge himself and play a popular god-tier game called Shangri-La Frontier. But he quickly learns just how difficult it is. Will his expert skills be enough to uncover its hidden secrets?",
-      "status": "ended",
+      "status": "returning series",
       "genres": [
         "anime",
         "action",
@@ -1462,10 +1460,7 @@
       "year": 2017,
       "overview": "Kiyotaka Ayanokoji has just enrolled at Tokyo Koudo Ikusei Senior High School, where it's said that 100% of students go on to college or find employment. But he ends up in Class 1-D, which is full of all the school's problem children.\n\nWhat's more, every month, the school awards students points with a cash value of 100,000 yen, and the classes employ a laissez-faire policy in which talking, sleeping, and even sabotage are permitted during class.\n\nOne month later, Ayanokoji, Horikita, and the students of Class D learn the truth of the system in place within their school...",
       "status": "ended",
-      "genres": [
-        "drama",
-        "anime"
-      ]
+      "genres": []
     },
     {
       "id": 150900,
@@ -4734,7 +4729,7 @@
   "genres": [
     {
       "genre": "drama",
-      "total": 118
+      "total": 117
     },
     {
       "genre": "action",
@@ -4754,7 +4749,7 @@
     },
     {
       "genre": "anime",
-      "total": 55
+      "total": 54
     },
     {
       "genre": "mystery",
