@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-06-18T16:30:35.253Z",
+  "updatedAt": "2024-06-23T06:03:17.724Z",
   "stats": {
     "shows": 191,
-    "episodes": 10234,
-    "minutes": 351200
+    "episodes": 10258,
+    "minutes": 351816
   },
   "watching": [
     {
@@ -87,41 +87,9 @@
       "seasonTitle": "Hashira Training Arc"
     },
     {
-      "id": 1042808288,
-      "type": "season",
-      "rank": 4,
-      "dateAdded": "2024-06-17T19:46:06.000Z",
-      "showIds": {
-        "trakt": 139892,
-        "slug": "fire-force",
-        "tvdb": 355480,
-        "imdb": "tt9307686",
-        "tmdb": 88046,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/fire-force",
-      "title": "Fire Force",
-      "year": 2019,
-      "overview": "Year 198 of the Solar Era in Tokyo, special fire brigades are fighting against a phenomenon called spontaneous human combustion where humans beings are turned into living infernos called \"Infernals\". While the Infernals are first generation cases of spontaneous human combustion, later generations possess the ability to manipulate flames while retaining human form. Shinra Kusakabe, a youth who gained the nickname Devil's Footprints for his ability to ignite his feet at will, joins the Special Fire Force Company 8 which composes of other flames users as they work to extinguish any Infernals they encounter. As a faction that is creating Infernals appears, Shira begins to uncover the truth behind a mysterious fire that caused the death of his family twelve years ago.",
-      "status": "returning series",
-      "genres": [
-        "anime",
-        "action",
-        "fantasy"
-      ],
-      "seasonIds": {
-        "trakt": 206938,
-        "tvdb": 1808343,
-        "tmdb": 139192,
-        "tvrage": null
-      },
-      "seasonNumber": 2,
-      "seasonTitle": "Season 2"
-    },
-    {
       "id": 1042808676,
       "type": "season",
-      "rank": 5,
+      "rank": 4,
       "dateAdded": "2024-06-17T19:47:09.000Z",
       "showIds": {
         "trakt": 154574,
@@ -154,7 +122,7 @@
     {
       "id": 1033453992,
       "type": "season",
-      "rank": 6,
+      "rank": 5,
       "dateAdded": "2024-05-29T16:37:44.000Z",
       "showIds": {
         "trakt": 104311,
@@ -187,7 +155,7 @@
     {
       "id": 1042857693,
       "type": "season",
-      "rank": 7,
+      "rank": 6,
       "dateAdded": "2024-06-17T22:39:53.000Z",
       "showIds": {
         "trakt": 139960,
@@ -221,6 +189,29 @@
   ],
   "watched": [
     {
+      "id": 139892,
+      "type": "show",
+      "dateAdded": "2024-06-19T22:36:24.000Z",
+      "showIds": {
+        "trakt": 139892,
+        "slug": "fire-force",
+        "tvdb": 355480,
+        "imdb": "tt9307686",
+        "tmdb": 88046,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/fire-force",
+      "title": "Fire Force",
+      "year": 2019,
+      "overview": "Year 198 of the Solar Era in Tokyo, special fire brigades are fighting against a phenomenon called spontaneous human combustion where humans beings are turned into living infernos called \"Infernals\". While the Infernals are first generation cases of spontaneous human combustion, later generations possess the ability to manipulate flames while retaining human form. Shinra Kusakabe, a youth who gained the nickname Devil's Footprints for his ability to ignite his feet at will, joins the Special Fire Force Company 8 which composes of other flames users as they work to extinguish any Infernals they encounter. As a faction that is creating Infernals appears, Shira begins to uncover the truth behind a mysterious fire that caused the death of his family twelve years ago.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "fantasy"
+      ]
+    },
+    {
       "id": 188929,
       "type": "show",
       "dateAdded": "2024-06-17T19:46:31.000Z",
@@ -242,29 +233,6 @@
         "comedy",
         "fantasy",
         "action"
-      ]
-    },
-    {
-      "id": 139892,
-      "type": "show",
-      "dateAdded": "2024-06-17T19:46:01.000Z",
-      "showIds": {
-        "trakt": 139892,
-        "slug": "fire-force",
-        "tvdb": 355480,
-        "imdb": "tt9307686",
-        "tmdb": 88046,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/fire-force",
-      "title": "Fire Force",
-      "year": 2019,
-      "overview": "Year 198 of the Solar Era in Tokyo, special fire brigades are fighting against a phenomenon called spontaneous human combustion where humans beings are turned into living infernos called \"Infernals\". While the Infernals are first generation cases of spontaneous human combustion, later generations possess the ability to manipulate flames while retaining human form. Shinra Kusakabe, a youth who gained the nickname Devil's Footprints for his ability to ignite his feet at will, joins the Special Fire Force Company 8 which composes of other flames users as they work to extinguish any Infernals they encounter. As a faction that is creating Infernals appears, Shira begins to uncover the truth behind a mysterious fire that caused the death of his family twelve years ago.",
-      "status": "returning series",
-      "genres": [
-        "anime",
-        "action",
-        "fantasy"
       ]
     },
     {
