@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-06-27T13:45:42.596Z",
+  "updatedAt": "2024-07-08T16:42:50.009Z",
   "books": [
     {
       "status": "FINISHED",
@@ -574,17 +574,6 @@
       "authors": "Tad Williams"
     },
     {
-      "status": "WANTS_TO_READ",
-      "createdAt": "2024-06-05T04:10:56.905Z",
-      "id": "ckmji0c2b522011ibj2g5vv4eg",
-      "url": "https://literal.club/book/thinking-in-systems-0q34a",
-      "title": "Thinking in Systems",
-      "cover": "https://assets.literal.club/4/ckmji0c2b522011ibj2g5vv4eg.jpg",
-      "isbn": "9781603580557",
-      "pageCount": 218,
-      "authors": "Donella H. Meadows, Diana Wright"
-    },
-    {
       "status": "FINISHED",
       "createdAt": "2024-06-25T17:07:04.641Z",
       "id": "ckrpn35v43631511erugvd0gjw7",
@@ -597,7 +586,18 @@
     },
     {
       "status": "IS_READING",
-      "createdAt": "2024-06-25T17:07:15.129Z",
+      "createdAt": "2024-07-07T23:10:08.266Z",
+      "id": "ckmji0c2b522011ibj2g5vv4eg",
+      "url": "https://literal.club/book/thinking-in-systems-0q34a",
+      "title": "Thinking in Systems",
+      "cover": "https://assets.literal.club/4/ckmji0c2b522011ibj2g5vv4eg.jpg",
+      "isbn": "9781603580557",
+      "pageCount": 218,
+      "authors": "Donella H. Meadows, Diana Wright"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-07-08T16:13:34.770Z",
       "id": "clqcqzkjd11593920hu5k0d43zgd",
       "url": "https://literal.club/book/tad-williams-into-the-narrowdark-19vzb",
       "title": "Into the Narrowdark",
