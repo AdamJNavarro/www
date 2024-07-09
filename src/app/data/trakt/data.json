@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-06-23T06:03:17.724Z",
+  "updatedAt": "2024-07-09T16:32:56.765Z",
   "stats": {
-    "shows": 191,
-    "episodes": 10258,
-    "minutes": 351816
+    "shows": 193,
+    "episodes": 10290,
+    "minutes": 351752
   },
   "watching": [
     {
@@ -30,66 +30,42 @@
       ]
     },
     {
-      "id": 1018214590,
-      "type": "show",
-      "rank": 2,
-      "dateAdded": "2024-04-30T02:06:22.000Z",
-      "showIds": {
-        "trakt": 197270,
-        "slug": "kaiju-no-8",
-        "tvdb": 423075,
-        "imdb": "tt21975436",
-        "tmdb": 207468,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/kaiju-no-8",
-      "title": "Kaiju No. 8",
-      "year": 2024,
-      "overview": "In a world plagued by creatures known as Kaiju, Kafka Hibino aspired to enlist in The Defense Force. He makes a promise to enlist with his childhood friend, Mina Ashiro. Soon, life takes them in separate ways. While employed cleaning up after Kaiju battles, Kafka meets Reno Ichikawa. Reno's determination to join The Defense Force reawakens Kafka's promise to join Mina and protect humanity.",
-      "status": "returning series",
-      "genres": [
-        "anime",
-        "action",
-        "science-fiction"
-      ]
-    },
-    {
-      "id": 1033438873,
+      "id": 1051864661,
       "type": "season",
-      "rank": 3,
-      "dateAdded": "2024-05-29T15:54:43.000Z",
+      "rank": 2,
+      "dateAdded": "2024-07-07T22:58:54.000Z",
       "showIds": {
-        "trakt": 131598,
-        "slug": "demon-slayer-kimetsu-no-yaiba",
-        "tvdb": 348545,
-        "imdb": "tt9335498",
-        "tmdb": 85937,
+        "trakt": 105481,
+        "slug": "mob-psycho-100",
+        "tvdb": 307375,
+        "imdb": "tt5897304",
+        "tmdb": 67075,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/demon-slayer-kimetsu-no-yaiba",
-      "title": "Demon Slayer: Kimetsu no Yaiba",
-      "year": 2019,
-      "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
-      "status": "returning series",
+      "url": "https://trakt.tv/shows/mob-psycho-100",
+      "title": "Mob Psycho 100",
+      "year": 2016,
+      "overview": "Shigeo Kageyama, a.k.a. \"Mob,\" is a boy who has trouble expressing himself, but who happens to be a powerful esper. Mob is determined to live a normal life and keeps his ESP suppressed, but when his emotions surge to a level of 100%, something terrible happens to him! As he's surrounded by false espers, evil spirits, and mysterious organizations, what will Mob think? What choices will he make?",
+      "status": "ended",
       "genres": [
-        "anime",
         "action",
-        "fantasy",
-        "history"
+        "comedy",
+        "anime",
+        "fantasy"
       ],
       "seasonIds": {
-        "trakt": 327116,
-        "tvdb": 2119434,
-        "tmdb": 345811,
+        "trakt": 161025,
+        "tvdb": 771985,
+        "tmdb": 110805,
         "tvrage": null
       },
-      "seasonNumber": 5,
-      "seasonTitle": "Hashira Training Arc"
+      "seasonNumber": 2,
+      "seasonTitle": "Mob Psycho II"
     },
     {
       "id": 1042808676,
       "type": "season",
-      "rank": 4,
+      "rank": 3,
       "dateAdded": "2024-06-17T19:47:09.000Z",
       "showIds": {
         "trakt": 154574,
@@ -118,6 +94,34 @@
       },
       "seasonNumber": 2,
       "seasonTitle": "Season 2"
+    },
+    {
+      "id": 1051864909,
+      "type": "show",
+      "rank": 4,
+      "dateAdded": "2024-07-07T22:59:58.000Z",
+      "showIds": {
+        "trakt": 45698,
+        "slug": "hunter-x-hunter",
+        "tvdb": 79076,
+        "imdb": "tt0426719",
+        "tmdb": 45952,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/hunter-x-hunter",
+      "title": "Hunter x Hunter",
+      "year": 1999,
+      "overview": "Gon Freecss discovers that the father he had always been told was dead was actually alive the whole time. Ging is a famous Hunter: an individual who has proven themself an elite member of humanity. Gon becomes determined to follow in his father's footsteps, pass the rigorous Hunter Examination.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "anime",
+        "comedy",
+        "drama"
+      ]
     },
     {
       "id": 1033453992,
@@ -185,9 +189,115 @@
       },
       "seasonNumber": 4,
       "seasonTitle": "Season 4"
+    },
+    {
+      "id": 1051887393,
+      "type": "season",
+      "rank": 7,
+      "dateAdded": "2024-07-08T00:12:07.000Z",
+      "showIds": {
+        "trakt": 158032,
+        "slug": "tower-of-god",
+        "tvdb": 376729,
+        "imdb": "tt12057106",
+        "tmdb": 97860,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/tower-of-god",
+      "title": "Tower of God",
+      "year": 2020,
+      "overview": "Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy",
+        "drama",
+        "mystery"
+      ],
+      "seasonIds": {
+        "trakt": 300682,
+        "tvdb": 2016680,
+        "tmdb": 303660,
+        "tvrage": null
+      },
+      "seasonNumber": 2,
+      "seasonTitle": "Season 2"
     }
   ],
   "watched": [
+    {
+      "id": 105481,
+      "type": "show",
+      "dateAdded": "2024-07-07T22:58:49.000Z",
+      "showIds": {
+        "trakt": 105481,
+        "slug": "mob-psycho-100",
+        "tvdb": 307375,
+        "imdb": "tt5897304",
+        "tmdb": 67075,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/mob-psycho-100",
+      "title": "Mob Psycho 100",
+      "year": 2016,
+      "overview": "Shigeo Kageyama, a.k.a. \"Mob,\" is a boy who has trouble expressing himself, but who happens to be a powerful esper. Mob is determined to live a normal life and keeps his ESP suppressed, but when his emotions surge to a level of 100%, something terrible happens to him! As he's surrounded by false espers, evil spirits, and mysterious organizations, what will Mob think? What choices will he make?",
+      "status": "ended",
+      "genres": [
+        "action",
+        "comedy",
+        "anime",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 131598,
+      "type": "show",
+      "dateAdded": "2024-07-07T22:58:06.000Z",
+      "showIds": {
+        "trakt": 131598,
+        "slug": "demon-slayer-kimetsu-no-yaiba",
+        "tvdb": 348545,
+        "imdb": "tt9335498",
+        "tmdb": 85937,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/demon-slayer-kimetsu-no-yaiba",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "year": 2019,
+      "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
+      "status": "in production",
+      "genres": [
+        "anime",
+        "action",
+        "fantasy",
+        "history"
+      ]
+    },
+    {
+      "id": 197270,
+      "type": "show",
+      "dateAdded": "2024-07-07T22:57:55.000Z",
+      "showIds": {
+        "trakt": 197270,
+        "slug": "kaiju-no-8",
+        "tvdb": 423075,
+        "imdb": "tt21975436",
+        "tmdb": 207468,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/kaiju-no-8",
+      "title": "Kaiju No. 8",
+      "year": 2024,
+      "overview": "In a world plagued by creatures known as Kaiju, Kafka Hibino aspired to enlist in The Defense Force. He makes a promise to enlist with his childhood friend, Mina Ashiro. Soon, life takes them in separate ways. While employed cleaning up after Kaiju battles, Kafka meets Reno Ichikawa. Reno's determination to join The Defense Force reawakens Kafka's promise to join Mina and protect humanity.",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "science-fiction"
+      ]
+    },
     {
       "id": 139892,
       "type": "show",
@@ -252,7 +362,9 @@
       "year": 2017,
       "overview": "Kiyotaka Ayanokoji has just enrolled at Tokyo Koudo Ikusei Senior High School, where it's said that 100% of students go on to college or find employment. But he ends up in Class 1-D, which is full of all the school's problem children.\n\nWhat's more, every month, the school awards students points with a cash value of 100,000 yen, and the classes employ a laissez-faire policy in which talking, sleeping, and even sabotage are permitted during class.\n\nOne month later, Ayanokoji, Horikita, and the students of Class D learn the truth of the system in place within their school...",
       "status": "ended",
-      "genres": []
+      "genres": [
+        "anime"
+      ]
     },
     {
       "id": 158639,
@@ -486,7 +598,7 @@
       "title": "Shangri-La Frontier",
       "year": 2023,
       "overview": "Rakuro Hizutome only cares about one thing: beating crappy VR games. He devotes his entire life to these buggy games and could clear them all in his sleep. One day, he decides to challenge himself and play a popular god-tier game called Shangri-La Frontier. But he quickly learns just how difficult it is. Will his expert skills be enough to uncover its hidden secrets?",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "anime",
         "action",
@@ -4026,30 +4138,6 @@
       ]
     },
     {
-      "id": 131598,
-      "type": "show",
-      "dateAdded": "2022-05-04T01:20:02.000Z",
-      "showIds": {
-        "trakt": 131598,
-        "slug": "demon-slayer-kimetsu-no-yaiba",
-        "tvdb": 348545,
-        "imdb": "tt9335498",
-        "tmdb": 85937,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/demon-slayer-kimetsu-no-yaiba",
-      "title": "Demon Slayer: Kimetsu no Yaiba",
-      "year": 2019,
-      "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
-      "status": "returning series",
-      "genres": [
-        "anime",
-        "action",
-        "fantasy",
-        "history"
-      ]
-    },
-    {
       "id": 1927,
       "type": "show",
       "dateAdded": "2022-05-04T01:19:50.000Z",
@@ -4842,23 +4930,23 @@
     },
     {
       "genre": "action",
-      "total": 95
+      "total": 97
     },
     {
       "genre": "fantasy",
-      "total": 81
+      "total": 82
     },
     {
       "genre": "adventure",
       "total": 78
     },
     {
-      "genre": "science fiction",
-      "total": 58
+      "genre": "anime",
+      "total": 60
     },
     {
-      "genre": "anime",
-      "total": 57
+      "genre": "science fiction",
+      "total": 59
     },
     {
       "genre": "mystery",
@@ -4866,7 +4954,7 @@
     },
     {
       "genre": "comedy",
-      "total": 40
+      "total": 41
     },
     {
       "genre": "crime",
