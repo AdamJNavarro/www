@@ -117,7 +117,7 @@ const resumeExperiences: ResumeExperience[] = [
   {
     company: 'Expo',
     href: '/',
-    role: 'Technical Relations Manager',
+    role: 'Developer / Technical Relations Manager',
     start: 'February 2018',
     end: 'June 2022',
     details: [
