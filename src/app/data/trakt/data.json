@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-07-09T16:32:56.765Z",
+  "updatedAt": "2024-07-14T06:03:53.957Z",
   "stats": {
     "shows": 193,
-    "episodes": 10290,
-    "minutes": 351752
+    "episodes": 10315,
+    "minutes": 352420
   },
   "watching": [
     {
@@ -30,42 +30,9 @@
       ]
     },
     {
-      "id": 1051864661,
-      "type": "season",
-      "rank": 2,
-      "dateAdded": "2024-07-07T22:58:54.000Z",
-      "showIds": {
-        "trakt": 105481,
-        "slug": "mob-psycho-100",
-        "tvdb": 307375,
-        "imdb": "tt5897304",
-        "tmdb": 67075,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/mob-psycho-100",
-      "title": "Mob Psycho 100",
-      "year": 2016,
-      "overview": "Shigeo Kageyama, a.k.a. \"Mob,\" is a boy who has trouble expressing himself, but who happens to be a powerful esper. Mob is determined to live a normal life and keeps his ESP suppressed, but when his emotions surge to a level of 100%, something terrible happens to him! As he's surrounded by false espers, evil spirits, and mysterious organizations, what will Mob think? What choices will he make?",
-      "status": "ended",
-      "genres": [
-        "action",
-        "comedy",
-        "anime",
-        "fantasy"
-      ],
-      "seasonIds": {
-        "trakt": 161025,
-        "tvdb": 771985,
-        "tmdb": 110805,
-        "tvrage": null
-      },
-      "seasonNumber": 2,
-      "seasonTitle": "Mob Psycho II"
-    },
-    {
       "id": 1042808676,
       "type": "season",
-      "rank": 3,
+      "rank": 2,
       "dateAdded": "2024-06-17T19:47:09.000Z",
       "showIds": {
         "trakt": 154574,
@@ -98,7 +65,7 @@
     {
       "id": 1051864909,
       "type": "show",
-      "rank": 4,
+      "rank": 3,
       "dateAdded": "2024-07-07T22:59:58.000Z",
       "showIds": {
         "trakt": 45698,
@@ -126,7 +93,7 @@
     {
       "id": 1033453992,
       "type": "season",
-      "rank": 5,
+      "rank": 4,
       "dateAdded": "2024-05-29T16:37:44.000Z",
       "showIds": {
         "trakt": 104311,
@@ -159,7 +126,7 @@
     {
       "id": 1042857693,
       "type": "season",
-      "rank": 6,
+      "rank": 5,
       "dateAdded": "2024-06-17T22:39:53.000Z",
       "showIds": {
         "trakt": 139960,
@@ -193,7 +160,7 @@
     {
       "id": 1051887393,
       "type": "season",
-      "rank": 7,
+      "rank": 6,
       "dateAdded": "2024-07-08T00:12:07.000Z",
       "showIds": {
         "trakt": 158032,
@@ -230,7 +197,7 @@
     {
       "id": 105481,
       "type": "show",
-      "dateAdded": "2024-07-07T22:58:49.000Z",
+      "dateAdded": "2024-07-13T19:53:56.000Z",
       "showIds": {
         "trakt": 105481,
         "slug": "mob-psycho-100",
@@ -267,7 +234,7 @@
       "title": "Demon Slayer: Kimetsu no Yaiba",
       "year": 2019,
       "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
-      "status": "in production",
+      "status": "returning series",
       "genres": [
         "anime",
         "action",
@@ -2420,7 +2387,9 @@
         "fantasy",
         "science-fiction",
         "mystery",
-        "horror"
+        "horror",
+        "action",
+        "adventure"
       ]
     },
     {
@@ -4930,7 +4899,7 @@
     },
     {
       "genre": "action",
-      "total": 97
+      "total": 98
     },
     {
       "genre": "fantasy",
@@ -4938,7 +4907,7 @@
     },
     {
       "genre": "adventure",
-      "total": 78
+      "total": 79
     },
     {
       "genre": "anime",
