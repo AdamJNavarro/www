@@ -11,31 +11,31 @@ const languageStack: StackItem[] = [
     name: 'JavaScript',
     href: 'https://tc39.es/ecma262/',
     activelyUsing: true,
-    projectIds: [1, 2],
+    projectIds: [1, 2, 3],
   },
   {
     name: 'TypeScript',
     href: 'https://www.typescriptlang.org/',
     activelyUsing: true,
-    projectIds: [1, 2],
+    projectIds: [1, 2, 3],
   },
   {
     name: 'HTML',
     href: 'https://html.spec.whatwg.org/multipage/',
     activelyUsing: true,
-    projectIds: [1, 2],
+    projectIds: [1, 2, 3],
   },
   {
     name: 'CSS',
     href: 'https://www.w3.org/Style/CSS/',
     activelyUsing: true,
-    projectIds: [1, 2],
+    projectIds: [1, 2, 3],
   },
   {
     name: 'MDX',
     href: 'https://mdxjs.com/',
     activelyUsing: true,
-    projectIds: [1, 2],
+    projectIds: [1, 2, 3],
   },
   {
     name: 'GraphQL',
@@ -69,7 +69,7 @@ const frameworkStack: StackItem[] = [
     name: 'Node.js',
     href: 'https://nodejs.org/',
     activelyUsing: true,
-    projectIds: [1, 2],
+    projectIds: [1, 2, 3],
   },
   {
     name: 'TailwindCSS',
@@ -121,6 +121,18 @@ const frameworkStack: StackItem[] = [
     href: 'https://www.gatsbyjs.com/',
     activelyUsing: false,
     projectIds: [],
+  },
+  {
+    name: 'Storybook',
+    href: 'https://storybook.js.org/',
+    activelyUsing: true,
+    projectIds: [3],
+  },
+  {
+    name: 'Lit',
+    href: 'https://lit.dev/',
+    activelyUsing: true,
+    projectIds: [3],
   },
 ];
 
@@ -238,6 +250,12 @@ const serviceStack: StackItem[] = [
     href: 'https://wordpress.com/',
     activelyUsing: false,
     projectIds: [],
+  },
+  {
+    name: 'Chromatic',
+    href: 'https://www.chromatic.com/',
+    activelyUsing: true,
+    projectIds: [3],
   },
   // NEED TO FIND LOGOS FOR BELOW ITEMS
   // {

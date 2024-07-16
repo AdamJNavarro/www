@@ -1,4 +1,12 @@
-import { Document, Font, Page, StyleSheet, Text, View } from '@react-pdf/renderer';
+import {
+  Document,
+  Font,
+  Link,
+  Page,
+  StyleSheet,
+  Text,
+  View,
+} from '@react-pdf/renderer';
 import React from 'react';
 import { resume } from './data';
 import { combineSharedNamespaces } from './utils';
@@ -323,7 +331,7 @@ function ProjectSection() {
       <Text style={styles.sectionTitle}>{title}</Text>
       <View style={styles.mainSectionEntry}>
         {items.map((project) => {
-          const { name, summary, stack } = project;
+          const { name, href, summary, stack } = project;
           return (
             <View
               key={name}
@@ -332,11 +340,12 @@ function ProjectSection() {
                 flexDirection: 'column',
               }}
             >
-              <Text
+              <Link
+                src={href}
                 style={{ fontSize: fontSizes.md, fontWeight: fontWeights.medium }}
               >
                 {name}
-              </Text>
+              </Link>
               <Text style={{ marginVertical: spacing[2] }}>{summary}</Text>
               <Text
                 style={{

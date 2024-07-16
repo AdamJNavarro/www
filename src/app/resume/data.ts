@@ -152,6 +152,16 @@ const resumeProjects: ResumeProject[] = [
       .filter((item) => item.projectIds.includes(2))
       .map((obj) => obj.name),
   },
+  {
+    id: 3,
+    name: 'Design System',
+    href: 'https://main--668701d0edfbe3f26bccb5c3.chromatic.com',
+    summary:
+      'A personal, work-in-progress atomic design system that leverages web components that can be used in a variety of frameworks such as react, vue, svelte.',
+    stack: possibleProjectStack
+      .filter((item) => item.projectIds.includes(3))
+      .map((obj) => obj.name),
+  },
 ];
 
 type ResumeData = {
