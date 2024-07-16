@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-07-08T16:42:50.009Z",
+  "updatedAt": "2024-07-16T16:53:14.254Z",
   "books": [
     {
       "status": "FINISHED",
@@ -605,6 +605,28 @@
       "isbn": "9780756410650",
       "pageCount": 0,
       "authors": "Tad Williams"
+    },
+    {
+      "status": "IS_READING",
+      "createdAt": "2024-07-10T17:19:19.993Z",
+      "id": "cl309qog1417130hy4nue0i0me",
+      "url": "https://literal.club/book/olivie-blake-the-atlas-paradox-9fygw",
+      "title": "The Atlas Paradox",
+      "cover": "https://assets.literal.club/cover/1/cl309qog1417130hy4nue0i0me.jpg",
+      "isbn": "9781250855121",
+      "pageCount": 400,
+      "authors": "Olivie Blake"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-07-15T21:57:41.018Z",
+      "id": "ckrp8vv9v1612601czq9y8u91g7",
+      "url": "https://literal.club/book/the-atlas-six-w9bym",
+      "title": "The Atlas Six",
+      "cover": "https://assets.literal.club/2/ckrp8vv9v1612601czq9y8u91g7.jpg",
+      "isbn": "9781679910999",
+      "pageCount": 384,
+      "authors": "Olivie Blake"
     }
   ]
 }
