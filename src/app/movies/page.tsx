@@ -10,9 +10,9 @@ import { formatDate } from '~/utils/Dates';
 export const { metadata } = routes.movies;
 
 const movieStats = [
-  { label: 'Films', value: 1535 },
-  { label: 'Hours', value: 2879 },
-  { label: 'Directors', value: 836 },
+  { label: 'Films', value: 1546 },
+  { label: 'Hours', value: 2899 },
+  { label: 'Directors', value: 841 },
 ];
 
 const favorites = [
