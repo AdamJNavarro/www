@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-07-21T06:03:50.054Z",
+  "updatedAt": "2024-07-23T18:03:07.619Z",
   "stats": {
-    "shows": 193,
-    "episodes": 10315,
-    "minutes": 352423
+    "shows": 194,
+    "episodes": 10385,
+    "minutes": 354362
   },
   "watching": [
     {
@@ -30,9 +30,40 @@
       ]
     },
     {
-      "id": 1042808676,
+      "id": 1059871654,
       "type": "season",
       "rank": 2,
+      "dateAdded": "2024-07-22T17:08:32.000Z",
+      "showIds": {
+        "trakt": 189717,
+        "slug": "the-bear",
+        "tvdb": 403294,
+        "imdb": "tt14452776",
+        "tmdb": 136315,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-bear",
+      "title": "The Bear",
+      "year": 2022,
+      "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "comedy"
+      ],
+      "seasonIds": {
+        "trakt": 276534,
+        "tvdb": 1928517,
+        "tmdb": 215540,
+        "tvrage": null
+      },
+      "seasonNumber": 1,
+      "seasonTitle": "Season 1"
+    },
+    {
+      "id": 1042808676,
+      "type": "season",
+      "rank": 3,
       "dateAdded": "2024-06-17T19:47:09.000Z",
       "showIds": {
         "trakt": 154574,
@@ -63,37 +94,35 @@
       "seasonTitle": "Season 2"
     },
     {
-      "id": 1051864909,
+      "id": 1060012335,
       "type": "show",
-      "rank": 3,
-      "dateAdded": "2024-07-07T22:59:58.000Z",
+      "rank": 4,
+      "dateAdded": "2024-07-23T00:27:46.000Z",
       "showIds": {
-        "trakt": 45698,
-        "slug": "hunter-x-hunter",
-        "tvdb": 79076,
-        "imdb": "tt0426719",
-        "tmdb": 45952,
+        "trakt": 103804,
+        "slug": "grimgar-of-fantasy-and-ash",
+        "tvdb": 303868,
+        "imdb": "tt5341430",
+        "tmdb": 65369,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/hunter-x-hunter",
-      "title": "Hunter x Hunter",
-      "year": 1999,
-      "overview": "Gon Freecss discovers that the father he had always been told was dead was actually alive the whole time. Ging is a famous Hunter: an individual who has proven themself an elite member of humanity. Gon becomes determined to follow in his father's footsteps, pass the rigorous Hunter Examination.",
+      "url": "https://trakt.tv/shows/grimgar-of-fantasy-and-ash",
+      "title": "Grimgar of Fantasy and Ash",
+      "year": 2016,
+      "overview": "Fear, survival, instinct. Thrown into a foreign land with nothing but hazy memories and the knowledge of their name, they can feel only these three emotions resonating deep within their souls. A group of strangers is given no other choice than to accept the only paying job in this game-like world—the role of a soldier in the Reserve Army—and eliminate anything that threatens the peace in their new world, Grimgar.\n\nWhen all of the stronger candidates join together, those left behind must create a party together to survive: Manato, a charismatic leader and priest; Haruhiro, a nervous thief; Yume, a cheerful hunter; Shihoru, a shy mage; Mogzo, a kind warrior; and Ranta, a rowdy dark knight. Despite its resemblance to one, this is no game—there are no redos or respawns; it is kill or be killed.\n\nIt is now up to this ragtag group of unlikely fighters to survive together in a world where life and death are separated only by a fine line.",
       "status": "ended",
       "genres": [
+        "anime",
         "action",
         "adventure",
-        "fantasy",
-        "science-fiction",
-        "anime",
-        "comedy",
-        "drama"
+        "drama",
+        "fantasy"
       ]
     },
     {
       "id": 1033453992,
       "type": "season",
-      "rank": 4,
+      "rank": 5,
       "dateAdded": "2024-05-29T16:37:44.000Z",
       "showIds": {
         "trakt": 104311,
@@ -122,40 +151,6 @@
       },
       "seasonNumber": 7,
       "seasonTitle": "Season 7"
-    },
-    {
-      "id": 1042857693,
-      "type": "season",
-      "rank": 5,
-      "dateAdded": "2024-06-17T22:39:53.000Z",
-      "showIds": {
-        "trakt": 139960,
-        "slug": "the-boys-2019",
-        "tvdb": 355567,
-        "imdb": "tt1190634",
-        "tmdb": 76479,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/the-boys-2019",
-      "title": "The Boys",
-      "year": 2019,
-      "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
-      "status": "returning series",
-      "genres": [
-        "action",
-        "superhero",
-        "fantasy",
-        "science-fiction",
-        "adventure"
-      ],
-      "seasonIds": {
-        "trakt": 302185,
-        "tvdb": 2064526,
-        "tmdb": 305753,
-        "tvrage": null
-      },
-      "seasonNumber": 4,
-      "seasonTitle": "Season 4"
     },
     {
       "id": 1051887393,
@@ -194,6 +189,58 @@
     }
   ],
   "watched": [
+    {
+      "id": 139960,
+      "type": "show",
+      "dateAdded": "2024-07-22T00:06:46.000Z",
+      "showIds": {
+        "trakt": 139960,
+        "slug": "the-boys-2019",
+        "tvdb": 355567,
+        "imdb": "tt1190634",
+        "tmdb": 76479,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-boys-2019",
+      "title": "The Boys",
+      "year": 2019,
+      "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+      "status": "returning series",
+      "genres": [
+        "action",
+        "superhero",
+        "fantasy",
+        "science-fiction",
+        "adventure"
+      ]
+    },
+    {
+      "id": 45698,
+      "type": "show",
+      "dateAdded": "2024-07-22T00:06:37.000Z",
+      "showIds": {
+        "trakt": 45698,
+        "slug": "hunter-x-hunter",
+        "tvdb": 79076,
+        "imdb": "tt0426719",
+        "tmdb": 45952,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/hunter-x-hunter",
+      "title": "Hunter x Hunter",
+      "year": 1999,
+      "overview": "Gon Freecss discovers that the father he had always been told was dead was actually alive the whole time. Ging is a famous Hunter: an individual who has proven themself an elite member of humanity. Gon becomes determined to follow in his father's footsteps, pass the rigorous Hunter Examination.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "anime",
+        "comedy",
+        "drama"
+      ]
+    },
     {
       "id": 105481,
       "type": "show",
@@ -494,7 +541,7 @@
       "title": "Halo",
       "year": 2022,
       "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
-      "status": "returning series",
+      "status": "canceled",
       "genres": [
         "action",
         "adventure",
@@ -565,7 +612,7 @@
       "title": "Shangri-La Frontier",
       "year": 2023,
       "overview": "Rakuro Hizutome only cares about one thing: beating crappy VR games. He devotes his entire life to these buggy games and could clear them all in his sleep. One day, he decides to challenge himself and play a popular god-tier game called Shangri-La Frontier. But he quickly learns just how difficult it is. Will his expert skills be enough to uncover its hidden secrets?",
-      "status": "ended",
+      "status": "returning series",
       "genres": [
         "anime",
         "action",
@@ -2599,31 +2646,6 @@
       "genres": [
         "drama",
         "crime"
-      ]
-    },
-    {
-      "id": 139960,
-      "type": "show",
-      "dateAdded": "2022-05-09T21:21:01.000Z",
-      "showIds": {
-        "trakt": 139960,
-        "slug": "the-boys-2019",
-        "tvdb": 355567,
-        "imdb": "tt1190634",
-        "tmdb": 76479,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/the-boys-2019",
-      "title": "The Boys",
-      "year": 2019,
-      "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
-      "status": "returning series",
-      "genres": [
-        "action",
-        "superhero",
-        "fantasy",
-        "science-fiction",
-        "adventure"
       ]
     },
     {
@@ -4895,27 +4917,27 @@
   "genres": [
     {
       "genre": "drama",
-      "total": 117
+      "total": 118
     },
     {
       "genre": "action",
-      "total": 98
+      "total": 99
     },
     {
       "genre": "fantasy",
-      "total": 82
+      "total": 83
     },
     {
       "genre": "adventure",
-      "total": 79
+      "total": 80
     },
     {
       "genre": "anime",
-      "total": 60
+      "total": 61
     },
     {
       "genre": "science fiction",
-      "total": 59
+      "total": 60
     },
     {
       "genre": "mystery",
@@ -4923,7 +4945,7 @@
     },
     {
       "genre": "comedy",
-      "total": 41
+      "total": 42
     },
     {
       "genre": "crime",
