@@ -46,8 +46,10 @@ export async function addWord(formData: FormData) {
     throw new Error('Unauthorized');
   }
 
-  const spelling = formData.get('spelling')?.toString() || '';
-  const definition = formData.get('definition')?.toString() || '';
+  const rawSpelling = formData.get('spelling')?.toString() || '';
+  const spelling = rawSpelling.toLowerCase().trim();
+  const rawDefinition = formData.get('definition')?.toString() || '';
+  const definition = rawDefinition.trim();
   const partOfSpeech = formData.get('partOfSpeech')?.toString() || '';
   const dateLearned = formData.get('dateLearned')?.toString() || '';
 
