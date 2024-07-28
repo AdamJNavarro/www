@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-07-23T18:03:07.619Z",
+  "updatedAt": "2024-07-28T06:03:20.035Z",
   "stats": {
-    "shows": 194,
-    "episodes": 10385,
-    "minutes": 354362
+    "shows": 195,
+    "episodes": 10397,
+    "minutes": 354545
   },
   "watching": [
     {
@@ -94,30 +94,38 @@
       "seasonTitle": "Season 2"
     },
     {
-      "id": 1060012335,
-      "type": "show",
+      "id": 1060477159,
+      "type": "season",
       "rank": 4,
-      "dateAdded": "2024-07-23T00:27:46.000Z",
+      "dateAdded": "2024-07-24T01:35:49.000Z",
       "showIds": {
-        "trakt": 103804,
-        "slug": "grimgar-of-fantasy-and-ash",
-        "tvdb": 303868,
-        "imdb": "tt5341430",
-        "tmdb": 65369,
+        "trakt": 60923,
+        "slug": "rage-of-bahamut",
+        "tvdb": 284133,
+        "imdb": "tt3981938",
+        "tmdb": 61445,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/grimgar-of-fantasy-and-ash",
-      "title": "Grimgar of Fantasy and Ash",
-      "year": 2016,
-      "overview": "Fear, survival, instinct. Thrown into a foreign land with nothing but hazy memories and the knowledge of their name, they can feel only these three emotions resonating deep within their souls. A group of strangers is given no other choice than to accept the only paying job in this game-like world—the role of a soldier in the Reserve Army—and eliminate anything that threatens the peace in their new world, Grimgar.\n\nWhen all of the stronger candidates join together, those left behind must create a party together to survive: Manato, a charismatic leader and priest; Haruhiro, a nervous thief; Yume, a cheerful hunter; Shihoru, a shy mage; Mogzo, a kind warrior; and Ranta, a rowdy dark knight. Despite its resemblance to one, this is no game—there are no redos or respawns; it is kill or be killed.\n\nIt is now up to this ragtag group of unlikely fighters to survive together in a world where life and death are separated only by a fine line.",
+      "url": "https://trakt.tv/shows/rage-of-bahamut",
+      "title": "Rage of Bahamut",
+      "year": 2014,
+      "overview": "Two thousand years ago, the black-and-silver-winged dragon, Bahamut, terrorized the magical land of Mistarcia. The humans, god, and demons that inhabited the land united forces against the fiend and sealed its power into a key which was split in two, one half protected by gods and the other protected by demons. Now, Mistarcia is a peaceful realm – until a human woman steals the god’s half of the key. Based on the immensely popular digital card game, Rage of Bahamut: Genesis is an exciting blend of action and fantasy.",
       "status": "ended",
       "genres": [
-        "anime",
         "action",
         "adventure",
-        "drama",
-        "fantasy"
-      ]
+        "fantasy",
+        "science-fiction",
+        "anime"
+      ],
+      "seasonIds": {
+        "trakt": 62384,
+        "tvdb": 593695,
+        "tmdb": 62921,
+        "tvrage": null
+      },
+      "seasonNumber": 1,
+      "seasonTitle": "Genesis"
     },
     {
       "id": 1033453992,
@@ -189,6 +197,31 @@
     }
   ],
   "watched": [
+    {
+      "id": 103804,
+      "type": "show",
+      "dateAdded": "2024-07-23T23:17:44.000Z",
+      "showIds": {
+        "trakt": 103804,
+        "slug": "grimgar-of-fantasy-and-ash",
+        "tvdb": 303868,
+        "imdb": "tt5341430",
+        "tmdb": 65369,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/grimgar-of-fantasy-and-ash",
+      "title": "Grimgar of Fantasy and Ash",
+      "year": 2016,
+      "overview": "Fear, survival, instinct. Thrown into a foreign land with nothing but hazy memories and the knowledge of their name, they can feel only these three emotions resonating deep within their souls. A group of strangers is given no other choice than to accept the only paying job in this game-like world—the role of a soldier in the Reserve Army—and eliminate anything that threatens the peace in their new world, Grimgar.\n\nWhen all of the stronger candidates join together, those left behind must create a party together to survive: Manato, a charismatic leader and priest; Haruhiro, a nervous thief; Yume, a cheerful hunter; Shihoru, a shy mage; Mogzo, a kind warrior; and Ranta, a rowdy dark knight. Despite its resemblance to one, this is no game—there are no redos or respawns; it is kill or be killed.\n\nIt is now up to this ragtag group of unlikely fighters to survive together in a world where life and death are separated only by a fine line.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "drama",
+        "fantasy"
+      ]
+    },
     {
       "id": 139960,
       "type": "show",
@@ -3817,7 +3850,7 @@
       "url": "https://trakt.tv/shows/attack-on-titan",
       "title": "Attack on Titan",
       "year": 2013,
-      "overview": "Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest Titans. Flash forward to the present and the city has not seen a Titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a Colossal Titan that appears out of thin air. As the smaller Titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single Titan and take revenge for all of mankind.",
+      "overview": "Many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
       "status": "ended",
       "genres": [
         "fantasy",
@@ -4917,23 +4950,23 @@
   "genres": [
     {
       "genre": "drama",
-      "total": 118
+      "total": 119
     },
     {
       "genre": "action",
-      "total": 99
+      "total": 100
     },
     {
       "genre": "fantasy",
-      "total": 83
+      "total": 84
     },
     {
       "genre": "adventure",
-      "total": 80
+      "total": 81
     },
     {
       "genre": "anime",
-      "total": 61
+      "total": 62
     },
     {
       "genre": "science fiction",
