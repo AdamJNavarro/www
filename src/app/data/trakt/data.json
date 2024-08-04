@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-07-28T06:03:20.035Z",
+  "updatedAt": "2024-08-04T06:03:26.782Z",
   "stats": {
-    "shows": 195,
-    "episodes": 10397,
-    "minutes": 354545
+    "shows": 196,
+    "episodes": 10409,
+    "minutes": 354821
   },
   "watching": [
     {
@@ -94,10 +94,10 @@
       "seasonTitle": "Season 2"
     },
     {
-      "id": 1060477159,
+      "id": 1063143505,
       "type": "season",
       "rank": 4,
-      "dateAdded": "2024-07-24T01:35:49.000Z",
+      "dateAdded": "2024-07-29T15:37:13.000Z",
       "showIds": {
         "trakt": 60923,
         "slug": "rage-of-bahamut",
@@ -119,13 +119,13 @@
         "anime"
       ],
       "seasonIds": {
-        "trakt": 62384,
-        "tvdb": 593695,
-        "tmdb": 62921,
+        "trakt": 126942,
+        "tvdb": 666426,
+        "tmdb": 90705,
         "tvrage": null
       },
-      "seasonNumber": 1,
-      "seasonTitle": "Genesis"
+      "seasonNumber": 2,
+      "seasonTitle": "Virgin Soul"
     },
     {
       "id": 1033453992,
@@ -197,6 +197,31 @@
     }
   ],
   "watched": [
+    {
+      "id": 60923,
+      "type": "show",
+      "dateAdded": "2024-07-29T15:36:42.000Z",
+      "showIds": {
+        "trakt": 60923,
+        "slug": "rage-of-bahamut",
+        "tvdb": 284133,
+        "imdb": "tt3981938",
+        "tmdb": 61445,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/rage-of-bahamut",
+      "title": "Rage of Bahamut",
+      "year": 2014,
+      "overview": "Two thousand years ago, the black-and-silver-winged dragon, Bahamut, terrorized the magical land of Mistarcia. The humans, god, and demons that inhabited the land united forces against the fiend and sealed its power into a key which was split in two, one half protected by gods and the other protected by demons. Now, Mistarcia is a peaceful realm – until a human woman steals the god’s half of the key. Based on the immensely popular digital card game, Rage of Bahamut: Genesis is an exciting blend of action and fantasy.",
+      "status": "ended",
+      "genres": [
+        "action",
+        "adventure",
+        "fantasy",
+        "science-fiction",
+        "anime"
+      ]
+    },
     {
       "id": 103804,
       "type": "show",
@@ -604,7 +629,8 @@
         "science-fiction",
         "action",
         "adventure",
-        "mystery"
+        "mystery",
+        "drama"
       ]
     },
     {
@@ -914,8 +940,7 @@
       "genres": [
         "action",
         "adventure",
-        "animation",
-        "drama"
+        "animation"
       ]
     },
     {
@@ -1844,7 +1869,8 @@
         "action",
         "adventure",
         "fantasy",
-        "science-fiction"
+        "science-fiction",
+        "drama"
       ]
     },
     {
@@ -4950,27 +4976,27 @@
   "genres": [
     {
       "genre": "drama",
-      "total": 119
+      "total": 120
     },
     {
       "genre": "action",
-      "total": 100
+      "total": 101
     },
     {
       "genre": "fantasy",
-      "total": 84
+      "total": 85
     },
     {
       "genre": "adventure",
-      "total": 81
+      "total": 82
     },
     {
       "genre": "anime",
-      "total": 62
+      "total": 63
     },
     {
       "genre": "science fiction",
-      "total": 60
+      "total": 61
     },
     {
       "genre": "mystery",
