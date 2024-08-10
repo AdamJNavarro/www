@@ -1,38 +1,15 @@
 {
-  "updatedAt": "2024-08-04T06:03:26.782Z",
+  "updatedAt": "2024-08-10T00:34:50.311Z",
   "stats": {
-    "shows": 196,
-    "episodes": 10409,
-    "minutes": 354821
+    "shows": 197,
+    "episodes": 10415,
+    "minutes": 355204
   },
   "watching": [
     {
-      "id": 1026026560,
-      "type": "show",
-      "rank": 1,
-      "dateAdded": "2024-05-15T21:12:01.000Z",
-      "showIds": {
-        "trakt": 180817,
-        "slug": "black-bird",
-        "tvdb": 401998,
-        "imdb": "tt4301160",
-        "tmdb": 155537,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/black-bird",
-      "title": "Black Bird",
-      "year": 2022,
-      "overview": "As Jimmy Keene begins a 10-year prison sentence, he gets an incredible offer: If he can elicit a confession from suspected killer Larry Hall, Jimmy will be freed. Completing this mission becomes the challenge of a lifetime.",
-      "status": "ended",
-      "genres": [
-        "crime",
-        "drama"
-      ]
-    },
-    {
       "id": 1059871654,
       "type": "season",
-      "rank": 2,
+      "rank": 1,
       "dateAdded": "2024-07-22T17:08:32.000Z",
       "showIds": {
         "trakt": 189717,
@@ -61,76 +38,9 @@
       "seasonTitle": "Season 1"
     },
     {
-      "id": 1042808676,
-      "type": "season",
-      "rank": 3,
-      "dateAdded": "2024-06-17T19:47:09.000Z",
-      "showIds": {
-        "trakt": 154574,
-        "slug": "house-of-the-dragon",
-        "tvdb": 371572,
-        "imdb": "tt11198330",
-        "tmdb": 94997,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/house-of-the-dragon",
-      "title": "House of the Dragon",
-      "year": 2022,
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "status": "returning series",
-      "genres": [
-        "drama",
-        "action",
-        "adventure",
-        "fantasy"
-      ],
-      "seasonIds": {
-        "trakt": 339395,
-        "tvdb": 2118892,
-        "tmdb": 368014,
-        "tvrage": null
-      },
-      "seasonNumber": 2,
-      "seasonTitle": "Season 2"
-    },
-    {
-      "id": 1063143505,
-      "type": "season",
-      "rank": 4,
-      "dateAdded": "2024-07-29T15:37:13.000Z",
-      "showIds": {
-        "trakt": 60923,
-        "slug": "rage-of-bahamut",
-        "tvdb": 284133,
-        "imdb": "tt3981938",
-        "tmdb": 61445,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/rage-of-bahamut",
-      "title": "Rage of Bahamut",
-      "year": 2014,
-      "overview": "Two thousand years ago, the black-and-silver-winged dragon, Bahamut, terrorized the magical land of Mistarcia. The humans, god, and demons that inhabited the land united forces against the fiend and sealed its power into a key which was split in two, one half protected by gods and the other protected by demons. Now, Mistarcia is a peaceful realm – until a human woman steals the god’s half of the key. Based on the immensely popular digital card game, Rage of Bahamut: Genesis is an exciting blend of action and fantasy.",
-      "status": "ended",
-      "genres": [
-        "action",
-        "adventure",
-        "fantasy",
-        "science-fiction",
-        "anime"
-      ],
-      "seasonIds": {
-        "trakt": 126942,
-        "tvdb": 666426,
-        "tmdb": 90705,
-        "tvrage": null
-      },
-      "seasonNumber": 2,
-      "seasonTitle": "Virgin Soul"
-    },
-    {
       "id": 1033453992,
       "type": "season",
-      "rank": 5,
+      "rank": 2,
       "dateAdded": "2024-05-29T16:37:44.000Z",
       "showIds": {
         "trakt": 104311,
@@ -163,7 +73,7 @@
     {
       "id": 1051887393,
       "type": "season",
-      "rank": 6,
+      "rank": 3,
       "dateAdded": "2024-07-08T00:12:07.000Z",
       "showIds": {
         "trakt": 158032,
@@ -197,6 +107,28 @@
     }
   ],
   "watched": [
+    {
+      "id": 180817,
+      "type": "show",
+      "dateAdded": "2024-08-10T00:32:34.000Z",
+      "showIds": {
+        "trakt": 180817,
+        "slug": "black-bird",
+        "tvdb": 401998,
+        "imdb": "tt4301160",
+        "tmdb": 155537,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/black-bird",
+      "title": "Black Bird",
+      "year": 2022,
+      "overview": "As Jimmy Keene begins a 10-year prison sentence, he gets an incredible offer: If he can elicit a confession from suspected killer Larry Hall, Jimmy will be freed. Completing this mission becomes the challenge of a lifetime.",
+      "status": "ended",
+      "genres": [
+        "crime",
+        "drama"
+      ]
+    },
     {
       "id": 60923,
       "type": "show",
@@ -629,7 +561,6 @@
         "science-fiction",
         "action",
         "adventure",
-        "mystery",
         "drama"
       ]
     },
@@ -1366,7 +1297,7 @@
       "url": "https://trakt.tv/shows/kengan-ashura",
       "title": "Kengan Ashura",
       "year": 2019,
-      "overview": "Since the Edo periods of Japan, gladiator arenas exist in certain areas. In these arenas, wealthy business owners and merchants hire gladiators to fight in unarmed combat where winner takes all. Toki Taouma, nicknamed \"Ashura,\" joins these arenas and devastates his opponents. His spectacular ability to crush his enemies catches the attention of the big business owners, including the Nogi Group chairman, Nogi Hideki.",
+      "overview": "Ohma Tokita enters a hidden world where corporate disputes are settled in brutal gladiator bouts. Forget the money, he just wants to fight — and win.",
       "status": "returning series",
       "genres": [
         "action",
@@ -1488,7 +1419,7 @@
       "title": "Onmyoji",
       "year": 2023,
       "overview": "In the gilded enclave of the imperial court, Minamoto Hiromasa befriends the mystic Abe Seimei, solving tricky cases rising from the demonic realm.",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "anime",
         "drama",
@@ -2566,7 +2497,8 @@
         "fantasy",
         "science-fiction",
         "action",
-        "adventure"
+        "adventure",
+        "drama"
       ]
     },
     {
@@ -4976,7 +4908,7 @@
   "genres": [
     {
       "genre": "drama",
-      "total": 120
+      "total": 122
     },
     {
       "genre": "action",
@@ -5000,7 +4932,7 @@
     },
     {
       "genre": "mystery",
-      "total": 47
+      "total": 46
     },
     {
       "genre": "comedy",
@@ -5008,7 +4940,7 @@
     },
     {
       "genre": "crime",
-      "total": 36
+      "total": 37
     },
     {
       "genre": "horror",

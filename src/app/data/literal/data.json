@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-07-23T18:03:12.119Z",
+  "updatedAt": "2024-08-10T00:34:58.588Z",
   "books": [
     {
       "status": "FINISHED",
@@ -618,17 +618,6 @@
       "authors": "Olivie Blake"
     },
     {
-      "status": "IS_READING",
-      "createdAt": "2024-07-22T17:09:33.464Z",
-      "id": "clemycsds937420hknmwerf84i",
-      "url": "https://literal.club/book/olivie-blake-the-atlas-complex-8yh5y",
-      "title": "The Atlas Complex",
-      "cover": "https://assets.literal.club/cover/1/clemycsds937420hknmwerf84i.jpg",
-      "isbn": "9781529095357",
-      "pageCount": 0,
-      "authors": "Olivie Blake"
-    },
-    {
       "status": "FINISHED",
       "createdAt": "2024-07-22T17:09:03.537Z",
       "id": "cl309qog1417130hy4nue0i0me",
@@ -638,6 +627,28 @@
       "isbn": "9781250855121",
       "pageCount": 400,
       "authors": "Olivie Blake"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-08-10T00:31:48.365Z",
+      "id": "clemycsds937420hknmwerf84i",
+      "url": "https://literal.club/book/olivie-blake-the-atlas-complex-8yh5y",
+      "title": "The Atlas Complex",
+      "cover": "https://assets.literal.club/cover/1/clemycsds937420hknmwerf84i.jpg",
+      "isbn": "9781529095357",
+      "pageCount": 0,
+      "authors": "Olivie Blake"
+    },
+    {
+      "status": "IS_READING",
+      "createdAt": "2024-08-10T00:32:02.267Z",
+      "id": "ckpw4ggoy254991rjmuk5gkp7z",
+      "url": "https://literal.club/book/the-blade-itself-e9k6u",
+      "title": "The Blade Itself",
+      "cover": "https://assets.literal.club/4/ckpw4ggoy254991rjmuk5gkp7z.jpg",
+      "isbn": "9780575079793",
+      "pageCount": 536,
+      "authors": "Joe Abercrombie"
     }
   ]
 }
