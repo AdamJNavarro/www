@@ -1,15 +1,41 @@
 {
-  "updatedAt": "2024-08-10T00:34:50.311Z",
+  "updatedAt": "2024-08-13T17:23:52.126Z",
   "stats": {
     "shows": 197,
     "episodes": 10415,
-    "minutes": 355204
+    "minutes": 355237
   },
   "watching": [
     {
+      "id": 1070284872,
+      "type": "show",
+      "rank": 1,
+      "dateAdded": "2024-08-13T01:09:16.000Z",
+      "showIds": {
+        "trakt": 97793,
+        "slug": "ushio-and-tora-2015",
+        "tvdb": 294001,
+        "imdb": "tt4801510",
+        "tmdb": 63085,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/ushio-and-tora-2015",
+      "title": "Ushio and Tora",
+      "year": 2015,
+      "overview": "Ushio thinks that his father's talk of an ancient ancestor impaling a demon on a temple altar stone with the legendary Beast Spear is nuts, but when he finds the monster in his own basement, Ushio has to take another look at the family legend! To save his friends and family from the invading spirits, Ushio is forced to release Tora from his captivity. But will the creature prove to be worse than the curse?",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "action",
+        "adventure",
+        "anime",
+        "drama"
+      ]
+    },
+    {
       "id": 1059871654,
       "type": "season",
-      "rank": 1,
+      "rank": 2,
       "dateAdded": "2024-07-22T17:08:32.000Z",
       "showIds": {
         "trakt": 189717,
@@ -40,7 +66,7 @@
     {
       "id": 1033453992,
       "type": "season",
-      "rank": 2,
+      "rank": 3,
       "dateAdded": "2024-05-29T16:37:44.000Z",
       "showIds": {
         "trakt": 104311,
@@ -73,7 +99,7 @@
     {
       "id": 1051887393,
       "type": "season",
-      "rank": 3,
+      "rank": 4,
       "dateAdded": "2024-07-08T00:12:07.000Z",
       "showIds": {
         "trakt": 158032,
