@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-08-13T17:23:52.126Z",
+  "updatedAt": "2024-08-18T06:03:53.277Z",
   "stats": {
-    "shows": 197,
-    "episodes": 10415,
-    "minutes": 355237
+    "shows": 198,
+    "episodes": 10421,
+    "minutes": 355537
   },
   "watching": [
     {
@@ -133,6 +133,32 @@
     }
   ],
   "watched": [
+    {
+      "id": 199140,
+      "type": "show",
+      "dateAdded": "2024-08-15T21:37:27.000Z",
+      "showIds": {
+        "trakt": 199140,
+        "slug": "parasyte-the-grey",
+        "tvdb": 424566,
+        "imdb": "tt21874396",
+        "tmdb": 208825,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/parasyte-the-grey",
+      "title": "Parasyte: The Grey",
+      "year": 2024,
+      "overview": "When unidentified parasites violently take over human hosts and gain power, humanity must rise to combat the growing threat.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "horror",
+        "fantasy",
+        "science-fiction",
+        "action",
+        "adventure"
+      ]
+    },
     {
       "id": 180817,
       "type": "show",
@@ -4934,19 +4960,19 @@
   "genres": [
     {
       "genre": "drama",
-      "total": 122
+      "total": 123
     },
     {
       "genre": "action",
-      "total": 101
+      "total": 102
     },
     {
       "genre": "fantasy",
-      "total": 85
+      "total": 86
     },
     {
       "genre": "adventure",
-      "total": 82
+      "total": 83
     },
     {
       "genre": "anime",
@@ -4954,7 +4980,7 @@
     },
     {
       "genre": "science fiction",
-      "total": 61
+      "total": 62
     },
     {
       "genre": "mystery",
@@ -4970,7 +4996,7 @@
     },
     {
       "genre": "horror",
-      "total": 16
+      "total": 17
     },
     {
       "genre": "superhero",
