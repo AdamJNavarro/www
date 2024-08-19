@@ -54,7 +54,7 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "husky": "^9.1.4",
-    "ky": "^1.6.0",
+    "ky": "^1.7.0",
     "lint-staged": "^15.2.9",
     "postcss": "^8.4.41",
     "prettier": "^3.3.3",
