@@ -1,35 +1,36 @@
 {
-  "updatedAt": "2024-08-18T06:03:53.277Z",
+  "updatedAt": "2024-08-20T14:26:46.794Z",
   "stats": {
-    "shows": 198,
-    "episodes": 10421,
-    "minutes": 355537
+    "shows": 199,
+    "episodes": 10460,
+    "minutes": 356473
   },
   "watching": [
     {
-      "id": 1070284872,
+      "id": 1073698637,
       "type": "show",
       "rank": 1,
-      "dateAdded": "2024-08-13T01:09:16.000Z",
+      "dateAdded": "2024-08-19T19:40:36.000Z",
       "showIds": {
-        "trakt": 97793,
-        "slug": "ushio-and-tora-2015",
-        "tvdb": 294001,
-        "imdb": "tt4801510",
-        "tmdb": 63085,
+        "trakt": 42285,
+        "slug": "steins-gate",
+        "tvdb": 244061,
+        "imdb": "tt1910272",
+        "tmdb": 42509,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/ushio-and-tora-2015",
-      "title": "Ushio and Tora",
-      "year": 2015,
-      "overview": "Ushio thinks that his father's talk of an ancient ancestor impaling a demon on a temple altar stone with the legendary Beast Spear is nuts, but when he finds the monster in his own basement, Ushio has to take another look at the family legend! To save his friends and family from the invading spirits, Ushio is forced to release Tora from his captivity. But will the creature prove to be worse than the curse?",
+      "url": "https://trakt.tv/shows/steins-gate",
+      "title": "Steins;Gate",
+      "year": 2011,
+      "overview": "A group of friends have customized their microwave so that it can send text messages to the past. As they perform different experiments, an organization named SERN who has been doing their own research on time travel tracks them down and now the characters have to find a way to avoid being captured by them.",
       "status": "ended",
       "genres": [
-        "comedy",
-        "action",
-        "adventure",
+        "science-fiction",
+        "mystery",
+        "fantasy",
         "anime",
-        "drama"
+        "comedy",
+        "romance"
       ]
     },
     {
@@ -64,9 +65,34 @@
       "seasonTitle": "Season 1"
     },
     {
+      "id": 1073698706,
+      "type": "show",
+      "rank": 3,
+      "dateAdded": "2024-08-19T19:40:45.000Z",
+      "showIds": {
+        "trakt": 153862,
+        "slug": "station-eleven",
+        "tvdb": 366529,
+        "imdb": "tt10574236",
+        "tmdb": 90972,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/station-eleven",
+      "title": "Station Eleven",
+      "year": 2021,
+      "overview": "A post apocalyptic saga spanning multiple timelines telling the stories of survivors of a devastating flu as they attempt to rebuild and reimagine the world anew while holding on to the best of what's been lost.",
+      "status": "ended",
+      "genres": [
+        "drama",
+        "fantasy",
+        "science-fiction",
+        "mystery"
+      ]
+    },
+    {
       "id": 1033453992,
       "type": "season",
-      "rank": 3,
+      "rank": 4,
       "dateAdded": "2024-05-29T16:37:44.000Z",
       "showIds": {
         "trakt": 104311,
@@ -99,7 +125,7 @@
     {
       "id": 1051887393,
       "type": "season",
-      "rank": 4,
+      "rank": 5,
       "dateAdded": "2024-07-08T00:12:07.000Z",
       "showIds": {
         "trakt": 158032,
@@ -133,6 +159,31 @@
     }
   ],
   "watched": [
+    {
+      "id": 97793,
+      "type": "show",
+      "dateAdded": "2024-08-19T19:40:09.000Z",
+      "showIds": {
+        "trakt": 97793,
+        "slug": "ushio-and-tora-2015",
+        "tvdb": 294001,
+        "imdb": "tt4801510",
+        "tmdb": 63085,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/ushio-and-tora-2015",
+      "title": "Ushio and Tora",
+      "year": 2015,
+      "overview": "Ushio thinks that his father's talk of an ancient ancestor impaling a demon on a temple altar stone with the legendary Beast Spear is nuts, but when he finds the monster in his own basement, Ushio has to take another look at the family legend! To save his friends and family from the invading spirits, Ushio is forced to release Tora from his captivity. But will the creature prove to be worse than the curse?",
+      "status": "ended",
+      "genres": [
+        "comedy",
+        "action",
+        "adventure",
+        "anime",
+        "drama"
+      ]
+    },
     {
       "id": 199140,
       "type": "show",
@@ -4960,11 +5011,11 @@
   "genres": [
     {
       "genre": "drama",
-      "total": 123
+      "total": 124
     },
     {
       "genre": "action",
-      "total": 102
+      "total": 103
     },
     {
       "genre": "fantasy",
@@ -4972,11 +5023,11 @@
     },
     {
       "genre": "adventure",
-      "total": 83
+      "total": 84
     },
     {
       "genre": "anime",
-      "total": 63
+      "total": 64
     },
     {
       "genre": "science fiction",
@@ -4988,7 +5039,7 @@
     },
     {
       "genre": "comedy",
-      "total": 42
+      "total": 43
     },
     {
       "genre": "crime",

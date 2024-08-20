@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-08-19T06:04:53.743Z",
+  "updatedAt": "2024-08-20T14:26:51.022Z",
   "books": [
     {
       "status": "FINISHED",
@@ -641,13 +641,35 @@
     },
     {
       "status": "IS_READING",
-      "createdAt": "2024-08-10T00:32:02.267Z",
+      "createdAt": "2024-08-19T19:38:49.951Z",
+      "id": "ckr1qld5a06gg01crlo85nwy5",
+      "url": "https://literal.club/book/abercrombie-joebefore-they-are-hanged-27971",
+      "title": "Before They Are Hanged",
+      "cover": "https://assets.literal.club/4/ckr1qld5a06gg01crlo85nwy5.jpg",
+      "isbn": "9780575077881",
+      "pageCount": 448,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-08-19T19:37:26.084Z",
       "id": "ckpw4ggoy254991rjmuk5gkp7z",
       "url": "https://literal.club/book/the-blade-itself-e9k6u",
       "title": "The Blade Itself",
       "cover": "https://assets.literal.club/4/ckpw4ggoy254991rjmuk5gkp7z.jpg",
       "isbn": "9780575079793",
       "pageCount": 536,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "WANTS_TO_READ",
+      "createdAt": "2024-08-19T19:39:38.113Z",
+      "id": "cl7kb3b0w13889380jvm7pwlfwnx",
+      "url": "https://literal.club/book/joe-abercrombie-last-argument-of-kings-5a5pu",
+      "title": "Last Argument of Kings",
+      "cover": "http://books.google.com/books/content?id=GUWjzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "isbn": "9780316387392",
+      "pageCount": null,
       "authors": "Joe Abercrombie"
     }
   ]
