@@ -1,7 +1,7 @@
+import { letterboxdData } from '../data/letterboxd';
 import Dashboard from './Dashboard';
-import { watched } from '~/app/movies/letterboxd/letterboxd.data';
 
-const film = watched[0];
+const film = letterboxdData.watched[0];
 
 export default function MovieWatched() {
   return (
