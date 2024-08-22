@@ -2,17 +2,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import routes from '~/app/config/routes';
 
-import { watched, lastUpdated } from './letterboxd/letterboxd.data';
 import Stats from '~/components/common/Stats';
 import { DataAttribution } from '~/components/common/Attribution';
 import { formatDate } from '~/utils/Dates';
+import { letterboxdData } from '../data/letterboxd';
 
 export const { metadata } = routes.movies;
 
 const movieStats = [
-  { label: 'Films', value: 1546 },
-  { label: 'Hours', value: 2899 },
-  { label: 'Directors', value: 841 },
+  { label: 'Films', value: 1549 },
+  { label: 'Hours', value: 2905 },
+  { label: 'Directors', value: 846 },
 ];
 
 const favorites = [
@@ -60,7 +60,7 @@ export default async function MoviesPage() {
       <div className="mb-24">
         <Stats data={movieStats} />
         <div className="text-sm text-surface-tertiary text-center mt-4">
-          Updated {formatDate({ date: lastUpdated, format: 'ago' })}
+          Updated {formatDate({ date: letterboxdData.updatedAt, format: 'ago' })}
         </div>
       </div>
 
@@ -81,7 +81,7 @@ export default async function MoviesPage() {
       <h2 className="page-h2 text-center">Recently Watched</h2>
 
       <div className="mb-12">
-        <LetterboxdList data={watched} />
+        <LetterboxdList data={letterboxdData.watched} />
       </div>
 
       <div className="mt-24">
