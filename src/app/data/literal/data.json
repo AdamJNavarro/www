@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-08-20T14:26:51.022Z",
+  "updatedAt": "2024-08-26T06:05:00.779Z",
   "books": [
     {
       "status": "FINISHED",
@@ -640,17 +640,6 @@
       "authors": "Olivie Blake"
     },
     {
-      "status": "IS_READING",
-      "createdAt": "2024-08-19T19:38:49.951Z",
-      "id": "ckr1qld5a06gg01crlo85nwy5",
-      "url": "https://literal.club/book/abercrombie-joebefore-they-are-hanged-27971",
-      "title": "Before They Are Hanged",
-      "cover": "https://assets.literal.club/4/ckr1qld5a06gg01crlo85nwy5.jpg",
-      "isbn": "9780575077881",
-      "pageCount": 448,
-      "authors": "Joe Abercrombie"
-    },
-    {
       "status": "FINISHED",
       "createdAt": "2024-08-19T19:37:26.084Z",
       "id": "ckpw4ggoy254991rjmuk5gkp7z",
@@ -662,8 +651,19 @@
       "authors": "Joe Abercrombie"
     },
     {
-      "status": "WANTS_TO_READ",
-      "createdAt": "2024-08-19T19:39:38.113Z",
+      "status": "FINISHED",
+      "createdAt": "2024-08-21T15:26:17.255Z",
+      "id": "ckr1qld5a06gg01crlo85nwy5",
+      "url": "https://literal.club/book/abercrombie-joebefore-they-are-hanged-27971",
+      "title": "Before They Are Hanged",
+      "cover": "https://assets.literal.club/4/ckr1qld5a06gg01crlo85nwy5.jpg",
+      "isbn": "9780575077881",
+      "pageCount": 448,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "IS_READING",
+      "createdAt": "2024-08-21T15:26:36.509Z",
       "id": "cl7kb3b0w13889380jvm7pwlfwnx",
       "url": "https://literal.club/book/joe-abercrombie-last-argument-of-kings-5a5pu",
       "title": "Last Argument of Kings",
