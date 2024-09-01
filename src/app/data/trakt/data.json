@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-08-25T06:03:38.929Z",
+  "updatedAt": "2024-09-01T06:04:26.167Z",
   "stats": {
     "shows": 199,
     "episodes": 10460,
-    "minutes": 356467
+    "minutes": 356466
   },
   "watching": [
     {
@@ -878,7 +878,8 @@
       "overview": "An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
       "status": "returning series",
       "genres": [
-        "drama"
+        "drama",
+        "mystery"
       ]
     },
     {
@@ -1401,7 +1402,7 @@
       "title": "Kengan Ashura",
       "year": 2019,
       "overview": "Ohma Tokita enters a hidden world where corporate disputes are settled in brutal gladiator bouts. Forget the money, he just wants to fight — and win.",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "action",
         "anime",
@@ -5035,7 +5036,7 @@
     },
     {
       "genre": "mystery",
-      "total": 46
+      "total": 47
     },
     {
       "genre": "comedy",
