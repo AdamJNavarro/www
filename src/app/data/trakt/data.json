@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-09-01T06:04:26.167Z",
+  "updatedAt": "2024-09-03T01:59:37.314Z",
   "stats": {
     "shows": 199,
     "episodes": 10460,
@@ -7,92 +7,65 @@
   },
   "watching": [
     {
-      "id": 1073698637,
-      "type": "show",
-      "rank": 1,
-      "dateAdded": "2024-08-19T19:40:36.000Z",
-      "showIds": {
-        "trakt": 42285,
-        "slug": "steins-gate",
-        "tvdb": 244061,
-        "imdb": "tt1910272",
-        "tmdb": 42509,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/steins-gate",
-      "title": "Steins;Gate",
-      "year": 2011,
-      "overview": "A group of friends have customized their microwave so that it can send text messages to the past. As they perform different experiments, an organization named SERN who has been doing their own research on time travel tracks them down and now the characters have to find a way to avoid being captured by them.",
-      "status": "ended",
-      "genres": [
-        "science-fiction",
-        "mystery",
-        "fantasy",
-        "anime",
-        "comedy",
-        "romance"
-      ]
-    },
-    {
-      "id": 1059871654,
+      "id": 1081306397,
       "type": "season",
-      "rank": 2,
-      "dateAdded": "2024-07-22T17:08:32.000Z",
+      "rank": 1,
+      "dateAdded": "2024-09-03T01:56:07.000Z",
       "showIds": {
-        "trakt": 189717,
-        "slug": "the-bear",
-        "tvdb": 403294,
-        "imdb": "tt14452776",
-        "tmdb": 136315,
+        "trakt": 150900,
+        "slug": "the-lord-of-the-rings-the-rings-of-power",
+        "tvdb": 367506,
+        "imdb": "tt7631058",
+        "tmdb": 84773,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/the-bear",
-      "title": "The Bear",
+      "url": "https://trakt.tv/shows/the-lord-of-the-rings-the-rings-of-power",
+      "title": "The Lord of the Rings: The Rings of Power",
       "year": 2022,
-      "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+      "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
       "status": "returning series",
       "genres": [
-        "drama",
-        "comedy"
+        "fantasy",
+        "action",
+        "adventure",
+        "drama"
       ],
       "seasonIds": {
-        "trakt": 276534,
-        "tvdb": 1928517,
-        "tmdb": 215540,
+        "trakt": 370434,
+        "tvdb": 2115635,
+        "tmdb": 382474,
         "tvrage": null
       },
-      "seasonNumber": 1,
-      "seasonTitle": "Season 1"
+      "seasonNumber": 2,
+      "seasonTitle": "Season 2"
     },
     {
-      "id": 1073698706,
+      "id": 1081306472,
       "type": "show",
-      "rank": 3,
-      "dateAdded": "2024-08-19T19:40:45.000Z",
+      "rank": 2,
+      "dateAdded": "2024-09-03T01:56:22.000Z",
       "showIds": {
-        "trakt": 153862,
-        "slug": "station-eleven",
-        "tvdb": 366529,
-        "imdb": "tt10574236",
-        "tmdb": 90972,
+        "trakt": 185699,
+        "slug": "bad-monkey",
+        "tvdb": 408436,
+        "imdb": "tt15203646",
+        "tmdb": 130853,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/station-eleven",
-      "title": "Station Eleven",
-      "year": 2021,
-      "overview": "A post apocalyptic saga spanning multiple timelines telling the stories of survivors of a devastating flu as they attempt to rebuild and reimagine the world anew while holding on to the best of what's been lost.",
-      "status": "ended",
+      "url": "https://trakt.tv/shows/bad-monkey",
+      "title": "Bad Monkey",
+      "year": 2024,
+      "overview": "A detective turned restaurant inspector in Southern Florida is pulled into a world of greed and corruption after a tourist finds a severed arm while fishing. And yes, there's a monkey.",
+      "status": "returning series",
       "genres": [
-        "drama",
-        "fantasy",
-        "science-fiction",
-        "mystery"
+        "comedy",
+        "crime"
       ]
     },
     {
       "id": 1033453992,
       "type": "season",
-      "rank": 4,
+      "rank": 3,
       "dateAdded": "2024-05-29T16:37:44.000Z",
       "showIds": {
         "trakt": 104311,
@@ -125,7 +98,7 @@
     {
       "id": 1051887393,
       "type": "season",
-      "rank": 5,
+      "rank": 4,
       "dateAdded": "2024-07-08T00:12:07.000Z",
       "showIds": {
         "trakt": 158032,

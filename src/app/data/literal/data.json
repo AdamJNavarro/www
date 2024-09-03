@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-09-02T06:05:03.689Z",
+  "updatedAt": "2024-09-03T01:59:06.856Z",
   "books": [
     {
       "status": "FINISHED",
@@ -662,14 +662,25 @@
       "authors": "Joe Abercrombie"
     },
     {
-      "status": "IS_READING",
-      "createdAt": "2024-08-21T15:26:36.509Z",
+      "status": "FINISHED",
+      "createdAt": "2024-09-03T01:53:20.425Z",
       "id": "cl7kb3b0w13889380jvm7pwlfwnx",
       "url": "https://literal.club/book/joe-abercrombie-last-argument-of-kings-5a5pu",
       "title": "Last Argument of Kings",
       "cover": "http://books.google.com/books/content?id=GUWjzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "isbn": "9780316387392",
       "pageCount": null,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "IS_READING",
+      "createdAt": "2024-09-03T01:54:24.997Z",
+      "id": "cksuvp2sv101395988g4tj228y1",
+      "url": "https://literal.club/book/best-served-cold-8xz92",
+      "title": "Best Served Cold",
+      "cover": "https://assets.literal.club/2/cksuvp2sv101395988g4tj228y1.jpg",
+      "isbn": "9780575088160",
+      "pageCount": 560,
       "authors": "Joe Abercrombie"
     }
   ]

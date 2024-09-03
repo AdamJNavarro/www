@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2024-08-22T04:15:37.502Z",
+  "updatedAt": "2024-09-03T01:59:56.672Z",
   "watched": [
+    {
+      "name": "The Watchers",
+      "dateAdded": "2024-09-03",
+      "year": "2024",
+      "url": "https://boxd.it/F6Rw",
+      "posterPath": "/vZVEUPychdvZLrTNwWErr9xZFmu.jpg"
+    },
     {
       "name": "Alien: Romulus",
       "dateAdded": "2024-08-16",
@@ -35,13 +42,6 @@
       "year": "2023",
       "url": "https://boxd.it/s3ds",
       "posterPath": "/qdq40gRS8xKnpFt5V75t6lUHgpx.jpg"
-    },
-    {
-      "name": "Sam Morril: You've Changed",
-      "dateAdded": "2024-07-17",
-      "year": "2024",
-      "url": "https://boxd.it/NElq",
-      "posterPath": "/p0JPe6qN5yPtqgRSaUGpUZ5JE6z.jpg"
     }
   ]
 }

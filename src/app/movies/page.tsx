@@ -10,9 +10,9 @@ import { letterboxdData } from '../data/letterboxd';
 export const { metadata } = routes.movies;
 
 const movieStats = [
-  { label: 'Films', value: 1549 },
-  { label: 'Hours', value: 2905 },
-  { label: 'Directors', value: 846 },
+  { label: 'Films', value: 1550 },
+  { label: 'Hours', value: 2906 },
+  { label: 'Directors', value: 843 },
 ];
 
 const favorites = [
