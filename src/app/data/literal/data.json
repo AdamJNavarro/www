@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-09-09T06:05:36.836Z",
+  "updatedAt": "2024-09-16T06:05:42.272Z",
   "books": [
     {
       "status": "FINISHED",
@@ -674,7 +674,29 @@
     },
     {
       "status": "IS_READING",
-      "createdAt": "2024-09-03T01:54:24.997Z",
+      "createdAt": "2024-09-16T01:09:00.221Z",
+      "id": "ckrlup1xm847889183slxdbfh2w",
+      "url": "https://literal.club/book/red-country-2gwlp",
+      "title": "Red Country",
+      "cover": "https://assets.literal.club/3/ckrlup1xm847889183slxdbfh2w.jpg",
+      "isbn": "9780316214445",
+      "pageCount": 300,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-09-16T01:09:55.361Z",
+      "id": "ckrlup8b3848399183sj7awn868",
+      "url": "https://literal.club/book/the-heroes-9pdu3",
+      "title": "The Heroes",
+      "cover": "https://assets.literal.club/1/ckrlup8b3848399183sj7awn868.jpg",
+      "isbn": "9780316123358",
+      "pageCount": 560,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-09-16T01:08:00.726Z",
       "id": "cksuvp2sv101395988g4tj228y1",
       "url": "https://literal.club/book/best-served-cold-8xz92",
       "title": "Best Served Cold",
