@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-09-16T06:05:42.272Z",
+  "updatedAt": "2024-09-23T06:05:06.368Z",
   "books": [
     {
       "status": "FINISHED",
@@ -673,17 +673,6 @@
       "authors": "Joe Abercrombie"
     },
     {
-      "status": "IS_READING",
-      "createdAt": "2024-09-16T01:09:00.221Z",
-      "id": "ckrlup1xm847889183slxdbfh2w",
-      "url": "https://literal.club/book/red-country-2gwlp",
-      "title": "Red Country",
-      "cover": "https://assets.literal.club/3/ckrlup1xm847889183slxdbfh2w.jpg",
-      "isbn": "9780316214445",
-      "pageCount": 300,
-      "authors": "Joe Abercrombie"
-    },
-    {
       "status": "FINISHED",
       "createdAt": "2024-09-16T01:09:55.361Z",
       "id": "ckrlup8b3848399183sj7awn868",
@@ -703,6 +692,28 @@
       "cover": "https://assets.literal.club/2/cksuvp2sv101395988g4tj228y1.jpg",
       "isbn": "9780575088160",
       "pageCount": 560,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-09-18T18:09:59.633Z",
+      "id": "ckrlup1xm847889183slxdbfh2w",
+      "url": "https://literal.club/book/red-country-2gwlp",
+      "title": "Red Country",
+      "cover": "https://assets.literal.club/3/ckrlup1xm847889183slxdbfh2w.jpg",
+      "isbn": "9780316214445",
+      "pageCount": 300,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "IS_READING",
+      "createdAt": "2024-09-18T18:10:10.989Z",
+      "id": "ckso4fhya117371i9884lslnj6",
+      "url": "https://literal.club/book/sharp-ends-j2z3y",
+      "title": "Sharp Ends",
+      "cover": "https://assets.literal.club/2/ckso4fhya117371i9884lslnj6.jpg",
+      "isbn": "9780316390811",
+      "pageCount": 544,
       "authors": "Joe Abercrombie"
     }
   ]
