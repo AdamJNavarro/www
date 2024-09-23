@@ -16,7 +16,7 @@
     "@react-pdf/layout": "3.11.5"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^3.4.4",
+    "@react-pdf/renderer": "^3.4.5",
     "@spotify/web-api-ts-sdk": "^1.2.0",
     "@tabler/icons-react": "^3.17.0",
     "@vercel/postgres": "^0.10.0",
