@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-09-22T06:03:28.946Z",
+  "updatedAt": "2024-09-29T06:03:45.132Z",
   "stats": {
     "shows": 199,
     "episodes": 10460,
-    "minutes": 356474
+    "minutes": 356425
   },
   "watching": [
     {
@@ -4668,7 +4668,8 @@
       "status": "ended",
       "genres": [
         "drama",
-        "mystery"
+        "mystery",
+        "comedy"
       ]
     },
     {
@@ -5013,7 +5014,7 @@
     },
     {
       "genre": "comedy",
-      "total": 43
+      "total": 44
     },
     {
       "genre": "crime",
