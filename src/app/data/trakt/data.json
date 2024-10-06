@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2024-09-29T06:03:45.132Z",
+  "updatedAt": "2024-10-06T06:03:53.961Z",
   "stats": {
-    "shows": 199,
-    "episodes": 10460,
-    "minutes": 356425
+    "shows": 200,
+    "episodes": 10466,
+    "minutes": 356826
   },
   "watching": [
     {
@@ -128,10 +128,31 @@
         "tvrage": null
       },
       "seasonNumber": 2,
-      "seasonTitle": "Return of the Prince"
+      "seasonTitle": "Season 2"
     }
   ],
   "watched": [
+    {
+      "id": 253927,
+      "type": "show",
+      "dateAdded": "2024-09-30T01:00:06.000Z",
+      "showIds": {
+        "trakt": 253927,
+        "slug": "mr-mcmahon",
+        "tvdb": 453899,
+        "imdb": "tt33301469",
+        "tmdb": 263089,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/mr-mcmahon",
+      "title": "Mr. McMahon",
+      "year": 2024,
+      "overview": "WWE experienced record-breaking highs and crushing lows under Vince McMahon's leadership. This docuseries delves into the mogul's controversial reign.",
+      "status": "ended",
+      "genres": [
+        "documentary"
+      ]
+    },
     {
       "id": 97793,
       "type": "show",
@@ -1733,7 +1754,7 @@
       "title": "That '90s Show",
       "year": 2023,
       "overview": "Hello, Wisconsin! It's 1995 and Leia Forman, daughter of Eric and Donna, is visiting her grandparents for the summer where she bonds with a new generation of Point Place kids under the watchful eye of Kitty and the stern glare of Red. Sex, drugs and rock 'n roll never dies, it just changes clothes.",
-      "status": "returning series",
+      "status": "canceled",
       "genres": [
         "comedy"
       ]
@@ -5055,6 +5076,10 @@
     {
       "genre": "children",
       "total": 2
+    },
+    {
+      "genre": "documentary",
+      "total": 1
     },
     {
       "genre": "reality",
