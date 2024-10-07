@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-09-30T06:05:19.861Z",
+  "updatedAt": "2024-10-07T06:05:26.306Z",
   "books": [
     {
       "status": "FINISHED",
@@ -706,14 +706,25 @@
       "authors": "Joe Abercrombie"
     },
     {
-      "status": "IS_READING",
-      "createdAt": "2024-09-18T18:10:10.989Z",
+      "status": "FINISHED",
+      "createdAt": "2024-10-03T00:02:01.618Z",
       "id": "ckso4fhya117371i9884lslnj6",
       "url": "https://literal.club/book/sharp-ends-j2z3y",
       "title": "Sharp Ends",
       "cover": "https://assets.literal.club/2/ckso4fhya117371i9884lslnj6.jpg",
       "isbn": "9780316390811",
       "pageCount": 544,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "IS_READING",
+      "createdAt": "2024-10-03T00:02:21.827Z",
+      "id": "cks7rc2em03531k9844vglj58",
+      "url": "https://literal.club/book/a-little-hatred-x7piw",
+      "title": "A Little Hatred",
+      "cover": "https://assets.literal.club/2/cks7rc2em03531k9844vglj58.jpg",
+      "isbn": "9780316187169",
+      "pageCount": 480,
       "authors": "Joe Abercrombie"
     }
   ]
