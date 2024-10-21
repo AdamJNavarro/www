@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-10-14T06:05:22.467Z",
+  "updatedAt": "2024-10-21T06:05:17.957Z",
   "books": [
     {
       "status": "FINISHED",
@@ -717,8 +717,19 @@
       "authors": "Joe Abercrombie"
     },
     {
-      "status": "IS_READING",
-      "createdAt": "2024-10-10T16:06:43.010Z",
+      "status": "FINISHED",
+      "createdAt": "2024-10-10T16:06:22.738Z",
+      "id": "cks7rc2em03531k9844vglj58",
+      "url": "https://literal.club/book/a-little-hatred-x7piw",
+      "title": "A Little Hatred",
+      "cover": "https://assets.literal.club/2/cks7rc2em03531k9844vglj58.jpg",
+      "isbn": "9780316187169",
+      "pageCount": 480,
+      "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-10-15T03:17:32.978Z",
       "id": "cksx9ko9k1014496e8gdzazccu2",
       "url": "https://literal.club/book/the-trouble-with-peace-o8axv",
       "title": "The Trouble with Peace",
@@ -728,14 +739,14 @@
       "authors": "Joe Abercrombie"
     },
     {
-      "status": "FINISHED",
-      "createdAt": "2024-10-10T16:06:22.738Z",
-      "id": "cks7rc2em03531k9844vglj58",
-      "url": "https://literal.club/book/a-little-hatred-x7piw",
-      "title": "A Little Hatred",
-      "cover": "https://assets.literal.club/2/cks7rc2em03531k9844vglj58.jpg",
-      "isbn": "9780316187169",
-      "pageCount": 480,
+      "status": "IS_READING",
+      "createdAt": "2024-10-15T03:18:25.033Z",
+      "id": "cktg0f29r39148513xiyfori39h",
+      "url": "https://literal.club/book/joe-abercrombie-the-wisdom-of-crowds-k62qd",
+      "title": "The Wisdom of Crowds",
+      "cover": "https://assets.literal.club/cover/1/cktg0f29r39148513xiyfori39h.jpg",
+      "isbn": "9780575095991",
+      "pageCount": 528,
       "authors": "Joe Abercrombie"
     }
   ]
