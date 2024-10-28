@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-10-21T06:05:17.957Z",
+  "updatedAt": "2024-10-28T06:05:34.565Z",
   "books": [
     {
       "status": "FINISHED",
@@ -739,8 +739,8 @@
       "authors": "Joe Abercrombie"
     },
     {
-      "status": "IS_READING",
-      "createdAt": "2024-10-15T03:18:25.033Z",
+      "status": "FINISHED",
+      "createdAt": "2024-10-23T03:29:04.861Z",
       "id": "cktg0f29r39148513xiyfori39h",
       "url": "https://literal.club/book/joe-abercrombie-the-wisdom-of-crowds-k62qd",
       "title": "The Wisdom of Crowds",
@@ -748,6 +748,17 @@
       "isbn": "9780575095991",
       "pageCount": 528,
       "authors": "Joe Abercrombie"
+    },
+    {
+      "status": "IS_READING",
+      "createdAt": "2024-10-23T03:31:30.793Z",
+      "id": "cldt7llbh596420hhaj5wxlh8w",
+      "url": "https://literal.club/book/brandon-sanderson-mistborn-401iv",
+      "title": "Mistborn",
+      "cover": "https://assets.literal.club/cover/2/cldt7llbh596420hhaj5wxlh8w.jpg",
+      "isbn": "9781250868282",
+      "pageCount": null,
+      "authors": "Brandon Sanderson"
     }
   ]
 }
