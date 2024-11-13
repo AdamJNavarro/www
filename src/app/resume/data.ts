@@ -162,6 +162,26 @@ const resumeProjects: ResumeProject[] = [
       .filter((item) => item.projectIds.includes(3))
       .map((obj) => obj.name),
   },
+  {
+    id: 4,
+    name: 'Linkli',
+    href: 'https://github.com/AdamJNavarro/linkli',
+    summary:
+      'A CLI that allows you to open docs for popular tech products in the JS ecosystem. Provides smart autocomplete suggestions based on products found within a project by detecting a product’s footprint (config files, unique package.json keys, etc). Built this due to the frustration of having to manage doc links for my project’s stack via bookmarks in Brave Browser.',
+    stack: possibleProjectStack
+      .filter((item) => item.projectIds.includes(4))
+      .map((obj) => obj.name),
+  },
+  {
+    id: 5,
+    name: 'Pet Tracker',
+    href: 'https://navarro-pet-tracker.netlify.app',
+    summary:
+      'A simple web app I built to help track routine activities with my dogs by simply tapping on the tile to update a log time. Currently tracks letting them out, meds, baths and grooming. I have the app running on an iPad that’s mounted next to the backyard patio door. It has nearly eliminated texts and discussions regarding if, when and how long ago dog activities have happened which was the reason I built it.',
+    stack: possibleProjectStack
+      .filter((item) => item.projectIds.includes(5))
+      .map((obj) => obj.name),
+  },
 ];
 
 type ResumeData = {

@@ -347,14 +347,14 @@ function ProjectSection() {
                 {name}
               </Link>
               <Text style={{ marginVertical: spacing[2] }}>{summary}</Text>
-              <Text
+              {/* <Text
                 style={{
                   fontSize: fontSizes.sm,
                   color: colors.neutral.tertiary,
                 }}
               >
                 {stack.join(', ')}
-              </Text>
+              </Text> */}
             </View>
           );
         })}
