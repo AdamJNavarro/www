@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-11-11T06:05:16.367Z",
+  "updatedAt": "2024-11-18T06:05:31.877Z",
   "books": [
     {
       "status": "FINISHED",
@@ -750,14 +750,58 @@
       "authors": "Joe Abercrombie"
     },
     {
+      "status": "WANTS_TO_READ",
+      "createdAt": "2024-11-13T15:51:46.379Z",
+      "id": "cklhqhone28581ii33nrfpjab",
+      "url": "https://literal.club/book/warbreaker-1deki",
+      "title": "Warbreaker",
+      "cover": "https://assets.literal.club/2/cklhqhone28581ii33nrfpjab.jpg",
+      "isbn": "9780575097469",
+      "pageCount": 672,
+      "authors": "Brandon Sanderson"
+    },
+    {
       "status": "IS_READING",
-      "createdAt": "2024-10-23T03:31:30.793Z",
-      "id": "cldt7llbh596420hhaj5wxlh8w",
-      "url": "https://literal.club/book/brandon-sanderson-mistborn-401iv",
+      "createdAt": "2024-11-13T15:50:58.904Z",
+      "id": "cl733uu3y14063320jtkd27wqufg",
+      "url": "https://literal.club/book/brandon-sanderson-the-well-of-ascension-rnke7",
+      "title": "The Well of Ascension",
+      "cover": "http://books.google.com/books/content?id=kbJtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "isbn": "9781250868299",
+      "pageCount": 608,
+      "authors": "Brandon Sanderson"
+    },
+    {
+      "status": "WANTS_TO_READ",
+      "createdAt": "2024-11-13T15:51:36.126Z",
+      "id": "cldah90p316017740htw8cvmq9zf",
+      "url": "https://literal.club/book/brandon-sanderson-the-hero-of-ages-iabmx",
+      "title": "The Hero of Ages",
+      "cover": "http://books.google.com/books/content?id=k7JtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "isbn": "9781250868312",
+      "pageCount": 0,
+      "authors": "Brandon Sanderson"
+    },
+    {
+      "status": "FINISHED",
+      "createdAt": "2024-11-13T15:49:32.917Z",
+      "id": "cm3g24rql738520hyxsct293z2",
+      "url": "https://literal.club/book/brandon-sanderson-mistborn-v0hnj",
       "title": "Mistborn",
       "cover": "https://assets.literal.club/cover/2/cldt7llbh596420hhaj5wxlh8w.jpg",
-      "isbn": "9781250868282",
-      "pageCount": null,
+      "isbn": null,
+      "pageCount": 0,
+      "authors": "Brandon Sanderson"
+    },
+    {
+      "status": "WANTS_TO_READ",
+      "createdAt": "2024-11-13T15:52:01.711Z",
+      "id": "clqve7ffh650670hi5gpvhphh5",
+      "url": "https://literal.club/book/brandon-sanderson-tress-of-the-emerald-sea-0ipzw",
+      "title": "Tress of the Emerald Sea",
+      "cover": "https://assets.literal.club/cover/2/clqve7ffh650670hi5gpvhphh5.jpg",
+      "isbn": "9781399613378",
+      "pageCount": 0,
       "authors": "Brandon Sanderson"
     }
   ]
