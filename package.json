@@ -18,7 +18,7 @@
   "dependencies": {
     "@react-pdf/renderer": "^3.4.5",
     "@spotify/web-api-ts-sdk": "^1.2.0",
-    "@tabler/icons-react": "^3.27.1",
+    "@tabler/icons-react": "^3.28.1",
     "@vercel/postgres": "^0.10.0",
     "@vercel/speed-insights": "^1.1.0",
     "classnames": "^2.5.1",
