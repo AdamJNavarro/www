@@ -27,7 +27,7 @@ const languageStack: StackItem[] = [
     activelyUsing: true,
   },
   {
-    name: "C#",
+    name: 'C#',
     href: 'https://dotnet.microsoft.com/en-us/languages/csharp',
     activelyUsing: true,
   },
@@ -66,8 +66,8 @@ const frameworkStack: StackItem[] = [
     activelyUsing: true,
   },
   {
-    name: ".NET Core",
-    href: "https://dotnet.microsoft.com/en-us/apps/aspnet",
+    name: '.NET Core',
+    href: 'https://dotnet.microsoft.com/en-us/apps/aspnet',
     activelyUsing: true,
   },
   {
@@ -139,7 +139,7 @@ const serviceStack: StackItem[] = [
     hasThemeLogos: true,
   },
   {
-    name: "Azure",
+    name: 'Azure',
     href: 'https://azure.microsoft.com/',
     activelyUsing: true,
   },
@@ -349,10 +349,10 @@ const environmentStack: StackItem[] = [
     activelyUsing: true,
   },
   {
-    name: "Rider",
-    href: "https://www.jetbrains.com/rider/",
+    name: 'Rider',
+    href: 'https://www.jetbrains.com/rider/',
     activelyUsing: true,
-  }
+  },
 ];
 
 const experimentingStack: StackItem[] = [
@@ -399,8 +399,12 @@ const possibleProjectStack: StackItem[] = [
 
 const allServiceStack = [...serviceStack, ...awsStack];
 
-const entireStack = [...languageStack, ...allServiceStack, ...frameworkStack, ...toolStack]
-
+const entireStack = [
+  ...languageStack,
+  ...allServiceStack,
+  ...frameworkStack,
+  ...toolStack,
+];
 
 export {
   languageStack,
@@ -412,7 +416,7 @@ export {
   environmentStack,
   possibleProjectStack,
   experimentingStack,
-  entireStack
+  entireStack,
 };
 
 export type { StackItem };

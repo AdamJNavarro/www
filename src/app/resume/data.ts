@@ -5,12 +5,14 @@ import {
   languageStack,
   toolStack,
 } from '~/app/data/stack';
-import { Resume, ResumeContact, ResumeExperience, ResumeProject } from './resume.types';
-
+import {
+  Resume,
+  ResumeContact,
+  ResumeExperience,
+  ResumeProject,
+} from './resume.types';
 
 const personalWebsiteURL = 'https://adamjnavarro.com/';
-
-
 
 const resumeName = 'Adam Navarro';
 const resumeSlogan = 'Full Stack Developer';
@@ -30,7 +32,6 @@ const resumeContacts: ResumeContact[] = [
   },
 ];
 
-
 const softSkills = [
   'Empathy',
   'Open-mindedness',
@@ -43,7 +44,6 @@ const softSkills = [
   'Critical Thinking',
   'Approachability',
 ];
-
 
 const resumeExperiences: ResumeExperience[] = [
   {
@@ -78,26 +78,26 @@ const resumeProjects: ResumeProject[] = [
     name: 'Website',
     href: personalWebsiteURL,
     repo: 'https://github.com/AdamJNavarro/www#stack',
-    summary: 'My personal website that serves as both a place to get to know me/stay up-to-date with my activity & as a playground for me to develop and sharpen my coding skills. Currently makes use of several REST apis such as Spotify, Strava, GitHub (& others) to populate data.',
- 
+    summary:
+      'My personal website that serves as both a place to get to know me/stay up-to-date with my activity & as a playground for me to develop and sharpen my coding skills. Currently makes use of several REST apis such as Spotify, Strava, GitHub (& others) to populate data.',
   },
   {
     id: 2,
     name: 'Cog Log',
     href: 'https://adamjnav-coglog.azurewebsites.net/',
     repo: 'https://github.com/AdamJNavarro/coglog#stack',
-    summary: 'A collection of learnings, questions or thoughts to be used during my daily reviews.',
+    summary:
+      'A collection of learnings, questions or thoughts to be used during my daily reviews.',
   },
   {
     id: 3,
     name: 'Pet Tracker',
     href: 'https://navarro-pet-tracker.netlify.app/',
     repo: 'https://github.com/AdamJNavarro/pet-tracker#stack',
-    summary: 'A simple interface to keep track of common and recurring activities for my dogs.',
-  }
+    summary:
+      'A simple interface to keep track of common and recurring activities for my dogs.',
+  },
 ];
-
-
 
 const resume: Resume = {
   name: resumeName,
@@ -136,8 +136,8 @@ const resume: Resume = {
   skills: {
     title: 'Skills',
     hard: entireStack,
-    soft: softSkills.sort((a, b) => a.localeCompare(b)).join(', ')
-  }
+    soft: softSkills.sort((a, b) => a.localeCompare(b)).join(', '),
+  },
 };
 
 export { resume };

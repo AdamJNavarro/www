@@ -168,15 +168,13 @@ function ProjectSection() {
               {project.name}
             </a>
 
-            <div className="text-md">{project.summary}</div>           
+            <div className="text-md">{project.summary}</div>
           </div>
         ))}
       </div>
     </div>
   );
 }
-
-
 
 function ResumeStack({ label, stack }: { label: string; stack: StackItem[] }) {
   return (
