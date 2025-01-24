@@ -1,49 +1,92 @@
 {
-  "updatedAt": "2024-10-06T06:03:53.961Z",
+  "updatedAt": "2025-01-24T21:06:26.981Z",
   "stats": {
-    "shows": 200,
-    "episodes": 10466,
-    "minutes": 356826
+    "shows": 205,
+    "episodes": 10642,
+    "minutes": 361774
   },
   "watching": [
     {
-      "id": 1081306397,
-      "type": "season",
+      "id": 1153842600,
+      "type": "show",
       "rank": 1,
-      "dateAdded": "2024-09-03T01:56:07.000Z",
+      "dateAdded": "2025-01-10T03:16:38.000Z",
       "showIds": {
-        "trakt": 150900,
-        "slug": "the-lord-of-the-rings-the-rings-of-power",
-        "tvdb": 367506,
-        "imdb": "tt7631058",
-        "tmdb": 84773,
+        "trakt": 200465,
+        "slug": "american-primeval",
+        "tvdb": 428066,
+        "imdb": "tt24069848",
+        "tmdb": 215866,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/the-lord-of-the-rings-the-rings-of-power",
-      "title": "The Lord of the Rings: The Rings of Power",
-      "year": 2022,
-      "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
+      "url": "https://trakt.tv/shows/american-primeval",
+      "title": "American Primeval",
+      "year": 2025,
+      "overview": "A mother and son fleeing from their past form a found family while confronting a harsh landscape of freedom and cruelty in the American West.",
+      "status": "ended",
+      "genres": [
+        "western",
+        "drama",
+        "action",
+        "adventure"
+      ]
+    }
+  ],
+  "watched": [
+    {
+      "id": 181978,
+      "type": "show",
+      "dateAdded": "2025-01-23T04:36:24.000Z",
+      "showIds": {
+        "trakt": 181978,
+        "slug": "castlevania-nocturne",
+        "tvdb": 421113,
+        "imdb": "tt14833612",
+        "tmdb": 123548,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/castlevania-nocturne",
+      "title": "Castlevania: Nocturne",
+      "year": 2023,
+      "overview": "As revolution sweeps France, Richter Belmont fights to uphold his family's legacy and prevent the rise of a ruthless, power-hungry vampire ruler.",
       "status": "returning series",
       "genres": [
         "fantasy",
-        "action",
-        "adventure",
+        "science-fiction",
+        "animation",
         "drama"
-      ],
-      "seasonIds": {
-        "trakt": 370434,
-        "tvdb": 2115635,
-        "tmdb": 382474,
-        "tvrage": null
-      },
-      "seasonNumber": 2,
-      "seasonTitle": "Season 2"
+      ]
     },
     {
-      "id": 1081306472,
+      "id": 158032,
       "type": "show",
-      "rank": 2,
-      "dateAdded": "2024-09-03T01:56:22.000Z",
+      "dateAdded": "2025-01-12T16:16:35.000Z",
+      "showIds": {
+        "trakt": 158032,
+        "slug": "tower-of-god",
+        "tvdb": 376729,
+        "imdb": "tt12057106",
+        "tmdb": 97860,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/tower-of-god",
+      "title": "Tower of God",
+      "year": 2020,
+      "overview": "Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "action",
+        "adventure",
+        "fantasy",
+        "drama",
+        "mystery"
+      ]
+    },
+    {
+      "id": 185699,
+      "type": "show",
+      "dateAdded": "2025-01-12T16:16:24.000Z",
       "showIds": {
         "trakt": 185699,
         "slug": "bad-monkey",
@@ -63,10 +106,132 @@
       ]
     },
     {
-      "id": 1033453992,
-      "type": "season",
-      "rank": 3,
-      "dateAdded": "2024-05-29T16:37:44.000Z",
+      "id": 162712,
+      "type": "show",
+      "dateAdded": "2025-01-12T16:16:19.000Z",
+      "showIds": {
+        "trakt": 162712,
+        "slug": "squid-game",
+        "tvdb": 383275,
+        "imdb": "tt10919420",
+        "tmdb": 93405,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/squid-game",
+      "title": "Squid Game",
+      "year": 2021,
+      "overview": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+      "status": "returning series",
+      "genres": [
+        "drama",
+        "action",
+        "adventure",
+        "mystery",
+        "suspense",
+        "thriller"
+      ]
+    },
+    {
+      "id": 215309,
+      "type": "show",
+      "dateAdded": "2024-12-20T04:48:16.000Z",
+      "showIds": {
+        "trakt": 215309,
+        "slug": "dan-da-dan",
+        "tvdb": 432832,
+        "imdb": "tt30217403",
+        "tmdb": 240411,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/dan-da-dan",
+      "title": "Dan Da Dan",
+      "year": 2024,
+      "overview": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
+      "status": "returning series",
+      "genres": [
+        "anime",
+        "action",
+        "comedy",
+        "fantasy"
+      ]
+    },
+    {
+      "id": 127460,
+      "type": "show",
+      "dateAdded": "2024-11-22T16:57:24.000Z",
+      "showIds": {
+        "trakt": 127460,
+        "slug": "real-girl",
+        "tvdb": 342010,
+        "imdb": "tt7112156",
+        "tmdb": 77721,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/real-girl",
+      "title": "Real Girl",
+      "year": 2018,
+      "overview": "Tsutsui Hikari (a.k.a \"Tsuttsun\") is a high school student who is content with his virtual life of anime and video games. One day, he gets stuck cleaning the pool with Iroha, a real live girl who is stylish, sassy and known to be easy with boys ... and she aggressively approaches him! Tsuttsun, who has few friends and lives in his own world, finds himself smitten by the confident and wild Iroha ... and his whole world is turned upside down!! It's the awkward and pure love story of a boy who experiences relationship for the first time.",
+      "status": "ended",
+      "genres": [
+        "anime",
+        "comedy",
+        "drama",
+        "romance"
+      ]
+    },
+    {
+      "id": 129528,
+      "type": "show",
+      "dateAdded": "2024-10-29T02:38:11.000Z",
+      "showIds": {
+        "trakt": 129528,
+        "slug": "rascal-does-not-dream-of-bunny-girl-senpai",
+        "tvdb": 345596,
+        "imdb": "tt8993398",
+        "tmdb": 82739,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/rascal-does-not-dream-of-bunny-girl-senpai",
+      "title": "Rascal Does Not Dream of Bunny Girl Senpai",
+      "year": 2018,
+      "overview": "Puberty Syndrome—a rumored, mysterious syndrome that only affects those in their puberty. For example, a bunny girl suddenly appeared in front of Sakuta Azusagawa. The bunny girl's real identity is Mai Sakurajima, a teenage celebrity who is currently an inactive high school senior. For some reason, her charming figure does not reflect in the eyes of others. In the course of revealing the mystery behind this phenomenon, Sakuta begins to explore his feelings towards Mai. Set in a city where the skies and seas shine, Sakuta unfolds the meaning behind his bizarre encounters on women with the said syndrome.",
+      "status": "returning series",
+      "genres": [
+        "comedy",
+        "anime",
+        "mystery",
+        "romance",
+        "drama"
+      ]
+    },
+    {
+      "id": 150900,
+      "type": "show",
+      "dateAdded": "2024-10-15T03:14:28.000Z",
+      "showIds": {
+        "trakt": 150900,
+        "slug": "the-lord-of-the-rings-the-rings-of-power",
+        "tvdb": 367506,
+        "imdb": "tt7631058",
+        "tmdb": 84773,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/the-lord-of-the-rings-the-rings-of-power",
+      "title": "The Lord of the Rings: The Rings of Power",
+      "year": 2022,
+      "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
+      "status": "returning series",
+      "genres": [
+        "fantasy",
+        "action",
+        "adventure",
+        "drama"
+      ]
+    },
+    {
+      "id": 104311,
+      "type": "show",
+      "dateAdded": "2024-10-15T03:14:20.000Z",
       "showIds": {
         "trakt": 104311,
         "slug": "my-hero-academia",
@@ -85,53 +250,32 @@
         "superhero",
         "anime",
         "comedy"
-      ],
-      "seasonIds": {
-        "trakt": 327715,
-        "tvdb": 2101541,
-        "tmdb": 356358,
-        "tvrage": null
-      },
-      "seasonNumber": 7,
-      "seasonTitle": "Season 7"
+      ]
     },
     {
-      "id": 1051887393,
-      "type": "season",
-      "rank": 4,
-      "dateAdded": "2024-07-08T00:12:07.000Z",
+      "id": 156460,
+      "type": "show",
+      "dateAdded": "2024-10-10T16:07:41.000Z",
       "showIds": {
-        "trakt": 158032,
-        "slug": "tower-of-god",
-        "tvdb": 376729,
-        "imdb": "tt12057106",
-        "tmdb": 97860,
+        "trakt": 156460,
+        "slug": "mushoku-tensei-jobless-reincarnation",
+        "tvdb": 371310,
+        "imdb": "tt13293588",
+        "tmdb": 94664,
         "tvrage": null
       },
-      "url": "https://trakt.tv/shows/tower-of-god",
-      "title": "Tower of God",
-      "year": 2020,
-      "overview": "Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.",
+      "url": "https://trakt.tv/shows/mushoku-tensei-jobless-reincarnation",
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "year": 2021,
+      "overview": "A 34-year-old hikikomori is kicked out of his home by his family after the death of his parents. After his eviction, he saves a group of teenagers from being killed by a speeding truck, but loses his life in the process. When he comes to, he realizes he has been reborn as Rudeus Greyrat, in a world of swords and sorcery.",
       "status": "returning series",
       "genres": [
         "anime",
-        "action",
         "adventure",
-        "fantasy",
         "drama",
-        "mystery"
-      ],
-      "seasonIds": {
-        "trakt": 300682,
-        "tvdb": 2016680,
-        "tmdb": 303660,
-        "tvrage": null
-      },
-      "seasonNumber": 2,
-      "seasonTitle": "Season 2"
-    }
-  ],
-  "watched": [
+        "fantasy"
+      ]
+    },
     {
       "id": 253927,
       "type": "show",
@@ -368,7 +512,7 @@
       "title": "Demon Slayer: Kimetsu no Yaiba",
       "year": 2019,
       "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "anime",
         "action",
@@ -464,7 +608,8 @@
       "overview": "Kiyotaka Ayanokoji has just enrolled at Tokyo Koudo Ikusei Senior High School, where it's said that 100% of students go on to college or find employment. But he ends up in Class 1-D, which is full of all the school's problem children.\n\nWhat's more, every month, the school awards students points with a cash value of 100,000 yen, and the classes employ a laissez-faire policy in which talking, sleeping, and even sabotage are permitted during class.\n\nOne month later, Ayanokoji, Horikita, and the students of Class D learn the truth of the system in place within their school...",
       "status": "returning series",
       "genres": [
-        "anime"
+        "anime",
+        "suspense"
       ]
     },
     {
@@ -724,7 +869,7 @@
       "title": "Ishura",
       "year": 2024,
       "overview": "A host of demigods have inherited the world after the Demon King has died, and a battle to determine the mightiest ensues.",
-      "status": "ended",
+      "status": "returning series",
       "genres": [
         "anime",
         "action",
@@ -777,30 +922,6 @@
         "anime",
         "action",
         "fantasy"
-      ]
-    },
-    {
-      "id": 104311,
-      "type": "show",
-      "dateAdded": "2024-03-26T21:33:03.000Z",
-      "showIds": {
-        "trakt": 104311,
-        "slug": "my-hero-academia",
-        "tvdb": 305074,
-        "imdb": "tt5626028",
-        "tmdb": 65930,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/my-hero-academia",
-      "title": "My Hero Academia",
-      "year": 2016,
-      "overview": "A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
-      "status": "returning series",
-      "genres": [
-        "action",
-        "superhero",
-        "anime",
-        "comedy"
       ]
     },
     {
@@ -946,7 +1067,8 @@
         "anime",
         "action",
         "mystery",
-        "adventure"
+        "adventure",
+        "horror"
       ]
     },
     {
@@ -1043,32 +1165,6 @@
       ]
     },
     {
-      "id": 158032,
-      "type": "show",
-      "dateAdded": "2024-01-23T04:47:06.000Z",
-      "showIds": {
-        "trakt": 158032,
-        "slug": "tower-of-god",
-        "tvdb": 376729,
-        "imdb": "tt12057106",
-        "tmdb": 97860,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/tower-of-god",
-      "title": "Tower of God",
-      "year": 2020,
-      "overview": "Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.",
-      "status": "returning series",
-      "genres": [
-        "anime",
-        "action",
-        "adventure",
-        "fantasy",
-        "drama",
-        "mystery"
-      ]
-    },
-    {
       "id": 104307,
       "type": "show",
       "dateAdded": "2024-01-19T00:52:45.000Z",
@@ -1160,7 +1256,7 @@
       "title": "Alone",
       "year": 2015,
       "overview": "Hardcore survivalists are put by themselves in the Vancouver Island wilderness, without camera crews, teams, or producers – on a single mission to stay alive for as long as possible.",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "reality"
       ]
@@ -1350,11 +1446,13 @@
       "title": "Baki Hanma",
       "year": 2021,
       "overview": "To gain the skills he needs to surpass his powerful father, Baki enters Arizona State Prison to take on the notorious inmate known as Mr. Unchained.",
-      "status": "returning series",
+      "status": "ended",
       "genres": [
         "anime",
         "action",
-        "adventure"
+        "adventure",
+        "fantasy",
+        "science-fiction"
       ]
     },
     {
@@ -1400,31 +1498,9 @@
       "genres": [
         "action",
         "anime",
-        "adventure"
-      ]
-    },
-    {
-      "id": 181978,
-      "type": "show",
-      "dateAdded": "2023-12-20T22:59:18.000Z",
-      "showIds": {
-        "trakt": 181978,
-        "slug": "castlevania-nocturne",
-        "tvdb": 421113,
-        "imdb": "tt14833612",
-        "tmdb": 123548,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/castlevania-nocturne",
-      "title": "Castlevania: Nocturne",
-      "year": 2023,
-      "overview": "In the thick of the French Revolution, members of the so-called lower classes are rising up to fight inequality. Meanwhile, Richter Belmont senses a far grimmer and greater danger. He's picked up his family's long-held tradition of vampire hunting, a vocation that goes back almost as long as a vampiric life span (in other words, forever) but he's never seen anything quite like what he's witnessing now.",
-      "status": "returning series",
-      "genres": [
+        "adventure",
         "fantasy",
-        "science-fiction",
-        "animation",
-        "drama"
+        "science-fiction"
       ]
     },
     {
@@ -1551,7 +1627,8 @@
         "adventure",
         "drama",
         "crime",
-        "mystery"
+        "mystery",
+        "suspense"
       ]
     },
     {
@@ -1779,31 +1856,8 @@
       "genres": [
         "drama",
         "mystery",
-        "anime"
-      ]
-    },
-    {
-      "id": 150900,
-      "type": "show",
-      "dateAdded": "2023-01-05T23:12:55.000Z",
-      "showIds": {
-        "trakt": 150900,
-        "slug": "the-lord-of-the-rings-the-rings-of-power",
-        "tvdb": 367506,
-        "imdb": "tt7631058",
-        "tmdb": 84773,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/the-lord-of-the-rings-the-rings-of-power",
-      "title": "The Lord of the Rings: The Rings of Power",
-      "year": 2022,
-      "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
-      "status": "returning series",
-      "genres": [
-        "fantasy",
-        "action",
-        "adventure",
-        "drama"
+        "anime",
+        "suspense"
       ]
     },
     {
@@ -1970,7 +2024,8 @@
         "fantasy",
         "science-fiction",
         "anime",
-        "crime"
+        "crime",
+        "suspense"
       ]
     },
     {
@@ -2267,32 +2322,6 @@
       ]
     },
     {
-      "id": 162712,
-      "type": "show",
-      "dateAdded": "2022-09-11T16:46:13.000Z",
-      "showIds": {
-        "trakt": 162712,
-        "slug": "squid-game",
-        "tvdb": 383275,
-        "imdb": "tt10919420",
-        "tmdb": 93405,
-        "tvrage": null
-      },
-      "url": "https://trakt.tv/shows/squid-game",
-      "title": "Squid Game",
-      "year": 2021,
-      "overview": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
-      "status": "returning series",
-      "genres": [
-        "drama",
-        "action",
-        "adventure",
-        "mystery",
-        "suspense",
-        "thriller"
-      ]
-    },
-    {
       "id": 188024,
       "type": "show",
       "dateAdded": "2022-09-06T00:22:15.000Z",
@@ -2542,7 +2571,7 @@
       "url": "https://trakt.tv/shows/castlevania",
       "title": "Castlevania",
       "year": 2017,
-      "overview": "A dark medieval fantasy following the last surviving member of the disgraced Belmont clan, trying to save Eastern Europe from extinction at the hand of Vlad Dracula Tepe himself. Inspired by the classic video game series.",
+      "overview": "A vampire hunter fights to save a besieged city from an army of otherworldly beasts controlled by Dracula himself.",
       "status": "ended",
       "genres": [
         "animation",
@@ -2666,7 +2695,8 @@
         "action",
         "adventure",
         "anime",
-        "mystery"
+        "mystery",
+        "suspense"
       ]
     },
     {
@@ -2691,7 +2721,8 @@
         "horror",
         "drama",
         "fantasy",
-        "science-fiction"
+        "science-fiction",
+        "suspense"
       ]
     },
     {
@@ -3745,7 +3776,8 @@
         "anime",
         "action",
         "adventure",
-        "romance"
+        "romance",
+        "horror"
       ]
     },
     {
@@ -4046,7 +4078,7 @@
       "url": "https://trakt.tv/shows/midnight-mass",
       "title": "Midnight Mass",
       "year": 2021,
-      "overview": "An unsettling omen washes ashore in the wake of the storm. Later, when the locals gather for a potluck, tragedy strikes – and a miracle occurs.",
+      "overview": "A young man returns to his isolated hometown on Crockett Island, hoping to rebuild his life after serving four years in prison for killing someone in a drunk-driving incident. He arrives at the same time as a mysterious, charismatic young priest who begins to revitalise the town's flagging faith. However, the community's divisions are soon exacerbated by the priest's deeds while mysterious events befall the small town.",
       "status": "ended",
       "genres": [
         "drama",
@@ -5007,43 +5039,43 @@
   "genres": [
     {
       "genre": "drama",
-      "total": 124
+      "total": 127
     },
     {
       "genre": "action",
-      "total": 103
+      "total": 104
     },
     {
       "genre": "fantasy",
-      "total": 86
+      "total": 90
     },
     {
       "genre": "adventure",
-      "total": 84
+      "total": 85
     },
     {
       "genre": "anime",
-      "total": 64
+      "total": 68
     },
     {
       "genre": "science fiction",
-      "total": 62
+      "total": 64
     },
     {
       "genre": "mystery",
-      "total": 47
+      "total": 48
     },
     {
       "genre": "comedy",
-      "total": 44
+      "total": 48
     },
     {
       "genre": "crime",
-      "total": 37
+      "total": 38
     },
     {
       "genre": "horror",
-      "total": 17
+      "total": 19
     },
     {
       "genre": "superhero",
@@ -5054,8 +5086,12 @@
       "total": 9
     },
     {
+      "genre": "suspense",
+      "total": 9
+    },
+    {
       "genre": "romance",
-      "total": 7
+      "total": 9
     },
     {
       "genre": "thriller",
@@ -5063,10 +5099,6 @@
     },
     {
       "genre": "history",
-      "total": 3
-    },
-    {
-      "genre": "suspense",
       "total": 3
     },
     {
