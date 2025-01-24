@@ -89,6 +89,7 @@ const spacing = {
 	2: "8px",
 	3: "12px",
 	4: "16px",
+	5: "20px",
 	6: "24px",
 	8: "32px",
 	9: "36px",
@@ -104,8 +105,8 @@ const styles = StyleSheet.create({
 		fontSize: fontSizes.base,
 		fontWeight: fontWeights.light,
 		color: colors.neutral.primary,
-		padding: spacing[9],
-		gap: spacing[6],
+		padding: spacing[12], // maybe "1in"
+		gap: spacing[5],
 	},
 	header: {
 		display: "flex",
@@ -115,35 +116,32 @@ const styles = StyleSheet.create({
 	headerTitle: {
 		fontSize: 32,
 		fontWeight: fontWeights.semiBold,
-		color: colors.accent.primary,
+		color: colors.neutral.primary,
 		alignSelf: "center",
-		// backgroundColor: "navy",
 	},
 	headerSubtitle: {
 		fontSize: fontSizes.md,
 		fontWeight: fontWeights.regular,
-		color: colors.neutral.tertiary,
+		color: colors.neutral.secondary,
 		alignSelf: "center",
-		// backgroundColor: "magenta",
 	},
 	headerContact: {
-		// backgroundColor: "orange",
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "space-evenly",
 		paddingTop: spacing[2],
-		gap: spacing.px,
 		fontSize: fontSizes.sm,
+		color: colors.neutral.secondary
 	},
 	section: {
 		display: "flex",
 		flexDirection: "column",
-		// backgroundColor: "coral",
 	},
 	sectionTitle: {
-		fontSize: fontSizes.xl,
-		fontWeight: fontWeights.semiBold,
-		color: colors.accent.secondary,
+		fontSize: fontSizes.lg,
+		fontWeight: fontWeights.medium,
+		color: colors.neutral.primary,
+		textTransform: "uppercase"
 	},
 	sectionLine: {
 		height: "0.5px",
@@ -153,9 +151,7 @@ const styles = StyleSheet.create({
 	sectionContent: {
 		display: "flex",
 		flexDirection: "column",
-		gap: spacing[6],
 		paddingVertical: spacing[3],
-		// backgroundColor: "lightcoral",
 	},
 	sectionCategoryLabel: {
 		fontSize: fontSizes.md,
@@ -166,6 +162,10 @@ const styles = StyleSheet.create({
 	sectionCategoryBody: {
 		fontSize: fontSizes.base,
 	},
+	link: {
+		textDecoration: "none",
+		color: colors.accent.primary
+	}
 });
 
 export function ResumePdf() {
@@ -185,9 +185,8 @@ export function ResumePdf() {
 					</View>
 				</View>
 				<ExperienceSection />
-				<ProjectSection />
-				<StackSection />
-				<PersonalSection />
+				<Projects />
+				<Skills />
 			</Page>
 		</Document>
 	);
@@ -195,13 +194,14 @@ export function ResumePdf() {
 
 function Section({
 	title,
+	contentSpacing = spacing[6],
 	children,
-}: { title: string; children: React.ReactNode }) {
+}: { title: string; contentSpacing?: string; children: React.ReactNode }) {
 	return (
 		<View style={styles.section}>
 			<Text style={styles.sectionTitle}>{title}</Text>
 			<View style={styles.sectionLine} />
-			<View style={styles.sectionContent}>{children}</View>
+			<View style={[styles.sectionContent, {gap: contentSpacing}]}>{children}</View>
 		</View>
 	);
 }
@@ -209,7 +209,7 @@ function Section({
 function ExperienceSection() {
 	const { title, items } = resume.experience;
 	return (
-		<Section title={title}>
+		<Section title={title} contentSpacing={spacing[5]}>
 			{items.map((item) => {
 				const { company, href, role, start, end, details } = item;
 				return (
@@ -251,7 +251,7 @@ function ExperienceSection() {
 								fontWeight: fontWeights.regular,
 								color: colors.neutral.tertiary,
 								marginTop: spacing.px,
-								marginBottom: spacing[3],
+								marginBottom: spacing[2],
 							}}
 						>
 							{start} &mdash; {end}
@@ -274,111 +274,67 @@ function ExperienceSection() {
 	);
 }
 
-function ProjectSection() {
+function Projects() {
 	const { title, items } = resume.projects;
 
 	return (
-		<Section title={title}>
+		<Section title={title} contentSpacing={spacing[3]}>
 			{items.map((project) => {
-				const { name, href, summary, stack } = project;
+				const { name, href, repo } = project;
 				return (
-					<View
+				
+						<View
 						key={name}
-						style={{
-							display: "flex",
-							flexDirection: "column",
-						}}
-					>
+							style={{
+								display: "flex",
+								flexDirection: "row",
+								alignItems: "center",
+								gap: spacing[2],
+							}}
+						>
+						<Text style={{ fontSize: fontSizes.md }}>•</Text>
+
 						<Link
 							src={href}
-							style={{
+							style={[styles.link, {
 								fontSize: fontSizes.md,
 								fontWeight: fontWeights.medium,
-							}}
+								
+							}]}
 						>
 							{name}
 						</Link>
-						<Text style={{ marginVertical: spacing[2] }}>{summary}</Text>
-						<Text
-							style={{
-								fontSize: fontSizes.sm,
-								color: colors.neutral.tertiary,
-							}}
-						>
-							{stack.join(", ")}
+
+						<Text style={{ color: colors.neutral.tertiary}}>
+							( <Link
+							href={repo}
+							style={{ color: colors.neutral.tertiary}}
+							>
+								repo
+							</Link> )
 						</Text>
-					</View>
+						
+						</View>
+						
+						
 				);
 			})}
 		</Section>
 	);
 }
 
-function StackSection() {
-	const { title, stacks } = resume.tech;
-	const { languages, tools, frameworks, services } = stacks;
-	return (
-		<Section title={title}>
-			<TechStackCategory label={languages.label} stack={languages.items} />
-			<TechStackCategory label={frameworks.label} stack={frameworks.items} />
-			<TechStackCategory label={services.label} stack={services.items} />
-			<TechStackCategory label={tools.label} stack={tools.items} />
-		</Section>
-	);
-}
+function Skills() {
+	const {title, soft, hard} = resume.skills;
 
-function PersonalSection() {
-	const { title, categories } = resume.personal;
-
-	return (
-		<Section title={title}>
-			{categories.map((category) => (
-				<View
-					key={category.label}
-					style={{
-						display: "flex",
-						flexDirection: "column",
-					}}
-				>
-					<Text style={styles.sectionCategoryLabel}>{category.label}</Text>
-					<Text>{category.body}</Text>
-				</View>
-			))}
-		</Section>
-	);
-}
-
-function TechStackCategory({ label, stack }: any): any {
-	const activeItems = stack.filter((item) => item.activelyUsing);
-	const inactiveItems = stack.filter((item) => !item.activelyUsing);
+	const activeItems = hard.filter((item) => item.activelyUsing);
 
 	const activeNames = combineSharedNamespaces(activeItems);
-	const inactiveNames = combineSharedNamespaces(inactiveItems);
 
 	return (
-		<View
-			style={{
-				display: "flex",
-				flexDirection: "column",
-			}}
-		>
-			<Text style={styles.sectionCategoryLabel}>{label}</Text>
-			<Text
-				style={[
-					styles.sectionCategoryBody,
-					{ fontWeight: fontWeights.regular },
-				]}
-			>
-				{activeNames}
-				<Text
-					style={[
-						styles.sectionCategoryBody,
-						{ fontWeight: fontWeights.light, color: colors.neutral.secondary },
-					]}
-				>
-					{`, ${inactiveNames}`}
-				</Text>
-			</Text>
-		</View>
-	);
+		<Section title={title} contentSpacing={spacing[3]}>
+				<Text style={{color: colors.neutral.primary}}>{activeNames}</Text>
+			
+			<Text style={{color: colors.neutral.secondary}}>{soft}</Text>
+		</Section>
+	)
 }

@@ -41,10 +41,9 @@ export default function ResumePage() {
       </div>
       <div className="py-36 space-y-36">
         <IntroSection />
-        <TechStackSection />
         <ExperienceSection />
         <ProjectSection />
-        <PersonalSection />
+        <TechStackSection />
       </div>
     </>
   );
@@ -57,7 +56,7 @@ function IntroSection() {
     >
       <div>
         <div className={`${subSectionLabelClass}`}>What I'm Looking For</div>
-        <div className="text-md">{resume.intro}</div>
+        <div className="text-md">{resume.objective}</div>
       </div>
       <div>
         <div className={subSectionLabelClass}>Contact Info</div>
@@ -169,12 +168,7 @@ function ProjectSection() {
               {project.name}
             </a>
 
-            <div className="text-md">{project.summary}</div>
-            <ul className="list-inline text-surface-tertiary text-sm">
-              {project.stack.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            <div className="text-md">{project.summary}</div>           
           </div>
         ))}
       </div>
@@ -182,22 +176,7 @@ function ProjectSection() {
   );
 }
 
-function PersonalSection() {
-  const { title, categories } = resume.personal;
-  return (
-    <div className={`${flatSectionClass} text-center`}>
-      <div className={sectionTitleClass}>{title}</div>
-      <div className="grid grid-cols-1 gap-16 desktop:grid-cols-2">
-        {categories.map((category) => (
-          <div key={`personal-cat-${category.label}`}>
-            <div className={subSectionLabelClass}>{category.label}</div>
-            <div className="text-surface-secondary text-md">{category.body}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
+
 
 function ResumeStack({ label, stack }: { label: string; stack: StackItem[] }) {
   return (

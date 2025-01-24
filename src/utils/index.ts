@@ -18,7 +18,8 @@ export function makeKebabCase(str: string): string {
 }
 
 function checkLogoNameRedirects(name: string): string {
-  //if (name === 'eas') return 'expo';
+  if (name === '-net-core') return 'dotnet-core';
+  if (name === 'c#') return 'csharp';
   return name;
 }
 
