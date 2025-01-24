@@ -61,7 +61,7 @@ function TraktList({ data }: any) {
           key={item.title}
           className="flex items-center py-5 tablet:px-4 tablet:bg-surface tablet:border-surface tablet:hover-surface tablet:rounded-md tablet:shadow-surface"
         >
-          <div className="flex-initial flex-shrink-0 justify-center mr-6">
+          <div className="flex-initial shrink-0 justify-center mr-6">
             <Suspense fallback={<TraktPosterLoading />}>
               <TraktPoster item={item} />
             </Suspense>
@@ -94,7 +94,7 @@ function Genres() {
             </div>
             <div className="flex-1">
               <div
-                className="h-6 bg-sky-600 dark:bg-sky-600 rounded-sm"
+                className="h-6 bg-sky-600 dark:bg-sky-600 rounded-xs"
                 style={{ width: `${finalWidth}%` }}
               />
             </div>

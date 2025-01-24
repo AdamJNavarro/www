@@ -100,7 +100,7 @@ function LetterboxdList({ data }: any) {
           key={item.name}
           className="flex items-center  py-5 tablet:px-4 tablet:bg-surface tablet:border-surface tablet:hover-surface tablet:rounded-md tablet:shadow-surface"
         >
-          <div className="flex-initial flex-shrink-0 justify-center mr-6">
+          <div className="flex-initial shrink-0 justify-center mr-6">
             <Image
               src={`https://image.tmdb.org/t/p/original${item.posterPath}`}
               width={640}

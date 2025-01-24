@@ -1,75 +1,95 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
-  --sh-class: #2d5e9d;
-  --sh-identifier: #354150;
-  --sh-sign: #8996a3;
-  --sh-string: #007f7a;
-  --sh-keyword: #e02518;
-  --sh-comment: #a19595;
-  --sh-jsxliterals: #6266d1;
-  --sh-property: #e25a1c;
-  --sh-entity: #e25a1c;
+@config '../../tailwind.config.ts';
+
+@plugin "@tailwindcss/typography";
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
+@utility border-surface {
+  @apply dark:border dark:border-slate-800;
+}
+
+@utility bg-surface {
+  @apply bg-white dark:bg-slate-900/80;
+}
+
+@utility hover-surface {
+  @apply dark:hover:bg-slate-900;
+}
+
+@utility shadow-surface {
+  @apply transition duration-500 shadow-md hover:shadow-lg dark:shadow-lg dark:hover:shadow-violet-500/20;
+}
+
+@utility text-surface-primary {
+  @apply text-slate-800 dark:text-slate-200;
+}
+
+@utility text-surface-secondary {
+  @apply text-slate-700 dark:text-slate-300/95;
+}
+
+@utility text-surface-tertiary {
+  @apply text-slate-600 dark:text-slate-400;
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility page-h1 {
+  @apply leading-none font-bold text-2xl mb-16 tablet:mb-24;
+}
+
+@utility page-h2 {
+  @apply leading-none font-medium text-xl mb-12 tablet:mb-16;
 }
 
 @layer utilities {
-  .border-surface {
-    @apply dark:border dark:border-slate-800;
+  :root {
+    --sh-class: #2d5e9d;
+    --sh-identifier: #354150;
+    --sh-sign: #8996a3;
+    --sh-string: #007f7a;
+    --sh-keyword: #e02518;
+    --sh-comment: #a19595;
+    --sh-jsxliterals: #6266d1;
+    --sh-property: #e25a1c;
+    --sh-entity: #e25a1c;
   }
 
-  .bg-surface {
-    @apply bg-white dark:bg-slate-900/80;
-  }
-
-  .hover-surface {
-    @apply dark:hover:bg-slate-900;
-  }
-
-  .shadow-surface {
-    @apply transition duration-500 shadow-md hover:shadow-lg dark:shadow-lg dark:hover:shadow-violet-500/20;
-  }
-
-  .text-surface-primary {
-    @apply text-slate-800 dark:text-slate-200;
-  }
-
-  .text-surface-secondary {
-    @apply text-slate-700 dark:text-slate-300/95;
-  }
-
-  .text-surface-tertiary {
-    @apply text-slate-600 dark:text-slate-400;
-  }
-
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  .page-h1 {
-    @apply leading-none font-bold text-2xl mb-16 tablet:mb-24;
-  }
-
-  .page-h2 {
-    @apply leading-none font-medium text-xl mb-12 tablet:mb-16;
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sh-class: #4c97f8;
+      --sh-identifier: white;
+      --sh-keyword: #f47067;
+      --sh-string: #0fa295;
+    }
+    html {
+      color-scheme: dark;
+    }
   }
 }
 
 .prose {
-  @apply max-w-none prose-slate dark:prose-slate dark:prose-invert;
+  @apply max-w-none prose-slate dark:prose-invert;
 }
 
 .prose .anchor {

@@ -39,7 +39,7 @@ function UsesList({ items }: { items: UsesItem[] }) {
             key={name}
             className="flex items-center py-5 tablet:px-4 tablet:bg-surface tablet:border-surface tablet:hover-surface tablet:rounded-md tablet:shadow-surface"
           >
-            <div className="flex-initial flex-shrink-0 justify-center mr-3">
+            <div className="flex-initial shrink-0 justify-center mr-3">
               <ThemeImage
                 srcDark={
                   logo || getLogoPath(name, hasThemeLogos ? 'dark' : undefined)

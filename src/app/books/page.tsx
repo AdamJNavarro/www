@@ -112,7 +112,7 @@ function LiteralList({ data }: any) {
           key={item.title}
           className="flex items-center py-5 tablet:px-4 tablet:bg-surface tablet:border-surface tablet:hover-surface tablet:rounded-md tablet:shadow-surface"
         >
-          <div className="flex-initial flex-shrink-0 justify-center mr-6">
+          <div className="flex-initial shrink-0 justify-center mr-6">
             <Image
               src={item.cover}
               width={325}
