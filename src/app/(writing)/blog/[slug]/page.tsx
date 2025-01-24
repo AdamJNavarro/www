@@ -4,7 +4,8 @@ import { CustomMDX } from '~/components/common/Mdx';
 import { getMDXContent } from '~/utils/Content';
 import { formatDate } from '~/utils/Dates';
 
-export async function generateMetadata({ params }): Promise<Metadata | undefined> {
+export async function generateMetadata(props): Promise<Metadata | undefined> {
+  const params = await props.params;
   const post = getMDXContent('blog').find((post) => post.slug === params.slug);
   if (!post) {
     return;
@@ -18,7 +19,8 @@ export async function generateMetadata({ params }): Promise<Metadata | undefined
   };
 }
 
-export default function Blog({ params }) {
+export default async function Blog(props) {
+  const params = await props.params;
   const post = getMDXContent('blog').find((post) => post.slug === params.slug);
 
   if (!post) {

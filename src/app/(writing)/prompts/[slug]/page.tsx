@@ -4,7 +4,8 @@ import { CustomMDX } from '~/components/common/Mdx';
 import { getMDXContent } from '~/utils/Content';
 import { formatDate } from '~/utils/Dates';
 
-export async function generateMetadata({ params }): Promise<Metadata | undefined> {
+export async function generateMetadata(props): Promise<Metadata | undefined> {
+  const params = await props.params;
   const prompt = getMDXContent('prompts').find(
     (prompt) => prompt.slug === params.slug
   );
@@ -20,7 +21,8 @@ export async function generateMetadata({ params }): Promise<Metadata | undefined
   };
 }
 
-export default function Prompt({ params }) {
+export default async function Prompt(props) {
+  const params = await props.params;
   const prompt = getMDXContent('prompts').find(
     (prompt) => prompt.slug === params.slug
   );

@@ -80,7 +80,7 @@ function SubmitButton() {
       type="submit"
       disabled={pending}
       aria-disabled={pending}
-      className="py-1 w-1/2 rounded-sm  dark:border-2 dark:border-violet-500"
+      className="py-1 w-1/2 rounded-xs  dark:border-2 dark:border-violet-500"
     >
       Submit
     </button>

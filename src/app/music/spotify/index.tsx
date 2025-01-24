@@ -12,7 +12,7 @@ import React from 'react';
 import { formatDate } from '~/utils/Dates';
 
 const spotifyImageClassName =
-  'h-16 w-16 rounded-sm shadow-md dark:shadow-none dark:border dark:border-slate-800';
+  'h-16 w-16 rounded-xs shadow-md dark:shadow-none dark:border dark:border-slate-800';
 
 export default function SpotifyContent() {
   return (
@@ -141,7 +141,7 @@ function SpotifySkeletons({ count }: { count: number }) {
   for (let i = 0; i < countCeil; i++) {
     const skeletonSpan = (
       <span
-        className="h-16 w-16 animate-pulse rounded-sm bg-slate-200 dark:bg-slate-900/80"
+        className="h-16 w-16 animate-pulse rounded-xs bg-slate-200 dark:bg-slate-900/80"
         key={i}
       >
         &zwnj;

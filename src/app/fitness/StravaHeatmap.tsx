@@ -43,7 +43,7 @@ const cardioSportTypes = [
 ];
 
 const baseHeatmapTileClass =
-  'rounded-sm place-content-center aspect-square text-center';
+  'rounded-xs place-content-center aspect-square text-center';
 
 const heatmapGridClass = 'grid grid-cols-6 max-w-full gap-1 dark:gap-2.5';
 
@@ -61,13 +61,13 @@ function getTileColor(activities: any[]): string {
     if (uniqSportTypes.includes('Yoga')) hasMobility = true;
     if (uniqSportTypes.some((x) => cardioSportTypes.includes(x))) hasCardio = true;
     if (hasWeightTraining && hasMobility && hasCardio)
-      return 'bg-gradient-to-br from-violet-700 via-sky-700 to-pink-700';
+      return 'bg-linear-to-br from-violet-700 via-sky-700 to-pink-700';
     if (hasWeightTraining && hasMobility)
-      return 'bg-gradient-to-br from-50% to-50% from-violet-700 to-sky-700';
+      return 'bg-linear-to-br from-50% to-50% from-violet-700 to-sky-700';
     if (hasWeightTraining && hasCardio)
-      return 'bg-gradient-to-br from-50% to-50% from-violet-700 to-pink-700';
+      return 'bg-linear-to-br from-50% to-50% from-violet-700 to-pink-700';
     if (hasMobility && hasCardio)
-      return 'bg-gradient-to-br from-50% to-50% from-sky-700 to-pink-700';
+      return 'bg-linear-to-br from-50% to-50% from-sky-700 to-pink-700';
     return 'bg-pink-700';
   }
   const { sport } = activities[0];

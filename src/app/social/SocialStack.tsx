@@ -82,7 +82,7 @@ function StackItem({ href, name, hasThemeLogos = false }: any) {
 
 export default function SocialStack() {
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,_80px)] gap-12 tablet:gap-16">
+    <div className="grid grid-cols-[repeat(auto-fit,80px)] gap-12 tablet:gap-16">
       {socialStackItems.map((item) => (
         <StackItem key={item.name} {...item} />
       ))}

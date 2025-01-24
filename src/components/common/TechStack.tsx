@@ -3,7 +3,7 @@ import ThemeImage from './ThemeImage';
 
 export function TechStackGrid({ children }: any) {
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,_80px)] gap-12 tablet:gap-16">
+    <div className="grid grid-cols-[repeat(auto-fit,80px)] gap-12 tablet:gap-16">
       {children}
     </div>
   );
