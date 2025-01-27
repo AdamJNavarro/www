@@ -17,7 +17,7 @@ const personalWebsiteURL = 'https://adamjnavarro.com/';
 const resumeName = 'Adam Navarro';
 const resumeSlogan = 'Full Stack Developer';
 
-const resumeObjective = `A position with a company that can offer some level of mentorship to help me grow.  As well, in-person time is extremely desirable. Some company characteristics that are important to me include a higher degree of team/co-worker interaction, effective & empathetic communication and efficient workflows.`;
+const resumeObjective = `A position with a company that can offer some level of mentorship to help me grow.  As well, in-person time is extremely desirable. Some company characteristics that are important to me include a higher degree of team/co-worker interaction, effective and empathetic communication and efficient workflows.`;
 
 const resumeContacts: ResumeContact[] = [
   {
@@ -47,13 +47,14 @@ const softSkills = [
 
 const resumeExperiences: ResumeExperience[] = [
   {
-    company: 'Freelance',
+    company: 'Freelance and Personal',
     role: 'Developer',
     start: 'December 2023',
     end: 'Present',
     details: [
-      `Completed various freelance jobs via Upwork and Fiverr. Mainly Next.js projects as well as an occasional react native mobile assignment.`,
-      `Audited and helped design/improve friends and acquaintances Wordpress websites.`,
+      `Taught myself C# and the Microsoft stack to increase my opportunites of finding a developer position that is in-office.`,
+      `Built and deployed Linkli - a CLI that automatically detects a codebase's tech stack and allow users to open documentation without leaving the terminal.`,
+      `Audited Stella Mahaga's website (marlamhs.com) and performed configuration improvements that lead to a decrease in storage and service costs, an increase in potential patient inquiries and stronger site security. Implemented a re-design to improve readibility and information consumption for a better user experience.`,
     ],
   },
   {
@@ -66,7 +67,7 @@ const resumeExperiences: ResumeExperience[] = [
       'Created and maintained code examples and sample applications to increase user knowledge on how to leverage the Expo SDK.',
       'Maintained and made continuous improvements to Expo documentation.',
       'Contributed quality-of-life improvements to the Expo CLI.',
-      'Created and iterated Expo support systems and flows using platforms such as Github, Slack, Discourse and Canny.Identified and designated resourceful and engaged users, known as Expo Pillars, in the Expo ecosystem. Pillars often resulted in external contributions and a reduction on internal support burden and cost.',
+      'Created and iterated Expo support systems and flows using platforms such as Github, Slack, Discourse and Canny. Identified and designated resourceful and engaged users, known as Expo Pillars, in the Expo ecosystem. Pillars often resulted in external contributions and a reduction on internal support burden and cost.',
       'Served as the direct contact and conduit for Expo partners, professionals and high-value users.',
     ],
   },
@@ -79,7 +80,7 @@ const resumeProjects: ResumeProject[] = [
     href: personalWebsiteURL,
     repo: 'https://github.com/AdamJNavarro/www#stack',
     summary:
-      'My personal website that serves as both a place to get to know me/stay up-to-date with my activity & as a playground for me to develop and sharpen my coding skills. Currently makes use of several REST apis such as Spotify, Strava, GitHub (& others) to populate data.',
+      'My personal website that serves as both a place to get to know me and as a playground for me to develop and sharpen my coding skills. Uses several popular REST apis such as Spotify, Strava, GitHub, Trakt, TMDB to populate data.',
   },
   {
     id: 2,
