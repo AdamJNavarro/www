@@ -184,7 +184,7 @@ export function ResumePdf() {
             ))}
           </View>
         </View>
-        <ExperienceSection />
+        <Experiences />
         <Projects />
         <Skills />
       </Page>
@@ -212,7 +212,7 @@ function Section({
   );
 }
 
-function ExperienceSection() {
+function Experiences() {
   const { title, items } = resume.experience;
   return (
     <Section title={title} contentSpacing={spacing[5]}>
@@ -286,19 +286,17 @@ function Projects() {
   return (
     <Section title={title} contentSpacing={spacing[3]}>
       {items.map((project) => {
-        const { name, href, repo } = project;
+        const { name, href, repo, summary } = project;
         return (
+          <View key={name} style={{display: 'flex', flexDirection: 'column', gap: spacing[1]}}>
           <View
-            key={name}
             style={{
               display: 'flex',
               flexDirection: 'row',
               alignItems: 'center',
-              gap: spacing[2],
+              gap: spacing[1],
             }}
           >
-            <Text style={{ fontSize: fontSizes.md }}>•</Text>
-
             <Link
               src={href}
               style={[
@@ -311,7 +309,6 @@ function Projects() {
             >
               {name}
             </Link>
-
             <Text style={{ color: colors.neutral.tertiary }}>
               ({' '}
               <Link href={repo} style={{ color: colors.neutral.tertiary }}>
@@ -319,6 +316,8 @@ function Projects() {
               </Link>{' '}
               )
             </Text>
+          </View>
+          <Text style={{ color: colors.neutral.primary }}>{summary}</Text>
           </View>
         );
       })}
