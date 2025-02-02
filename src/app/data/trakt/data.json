@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2025-01-26T06:06:40.705Z",
+  "updatedAt": "2025-02-02T06:02:58.947Z",
   "stats": {
-    "shows": 205,
-    "episodes": 10642,
-    "minutes": 361775
+    "shows": 206,
+    "episodes": 10689,
+    "minutes": 362901
   },
   "watching": [
     {
@@ -33,6 +33,31 @@
     }
   ],
   "watched": [
+    {
+      "id": 79353,
+      "type": "show",
+      "dateAdded": "2025-01-30T23:57:59.000Z",
+      "showIds": {
+        "trakt": 79353,
+        "slug": "assassination-classroom",
+        "tvdb": 283947,
+        "imdb": "tt3837246",
+        "tmdb": 62110,
+        "tvrage": null
+      },
+      "url": "https://trakt.tv/shows/assassination-classroom",
+      "title": "Assassination Classroom",
+      "year": 2013,
+      "overview": "The students of Class 3-E have a mission: kill their teacher before graduation. He has already destroyed the moon, and has promised to destroy the Earth if he can not be killed within a year. But how can this class of misfits kill a tentacled monster, capable of reaching Mach 20 speed, who may be the best teacher any of them have ever had?",
+      "status": "ended",
+      "genres": [
+        "action",
+        "comedy",
+        "adventure",
+        "anime",
+        "science-fiction"
+      ]
+    },
     {
       "id": 181978,
       "type": "show",
@@ -2435,7 +2460,9 @@
         "action",
         "adventure",
         "animation",
-        "drama"
+        "drama",
+        "fantasy",
+        "science-fiction"
       ]
     },
     {
@@ -2551,9 +2578,7 @@
         "fantasy",
         "science-fiction",
         "mystery",
-        "horror",
-        "action",
-        "adventure"
+        "horror"
       ]
     },
     {
@@ -5047,7 +5072,7 @@
     },
     {
       "genre": "fantasy",
-      "total": 90
+      "total": 91
     },
     {
       "genre": "adventure",
@@ -5055,18 +5080,18 @@
     },
     {
       "genre": "anime",
-      "total": 68
+      "total": 69
     },
     {
       "genre": "science fiction",
-      "total": 64
-    },
-    {
-      "genre": "mystery",
-      "total": 48
+      "total": 66
     },
     {
       "genre": "comedy",
+      "total": 49
+    },
+    {
+      "genre": "mystery",
       "total": 48
     },
     {
