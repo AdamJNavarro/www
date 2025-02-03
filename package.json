@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/config-conventional": "^19.7.1",
     "@eslint/compat": "^1.2.6",
     "@next/eslint-plugin-next": "15.1.6",
     "@tailwindcss/postcss": "^4.0.3",
