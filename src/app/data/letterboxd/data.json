@@ -1,47 +1,47 @@
 {
-  "updatedAt": "2024-09-03T01:59:56.672Z",
-  "watched": [
-    {
-      "name": "The Watchers",
-      "dateAdded": "2024-09-03",
-      "year": "2024",
-      "url": "https://boxd.it/F6Rw",
-      "posterPath": "/vZVEUPychdvZLrTNwWErr9xZFmu.jpg"
-    },
-    {
-      "name": "Alien: Romulus",
-      "dateAdded": "2024-08-16",
-      "year": "2024",
-      "url": "https://boxd.it/zGqO",
-      "posterPath": "/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg"
-    },
-    {
-      "name": "Deadpool & Wolverine",
-      "dateAdded": "2024-07-29",
-      "year": "2024",
-      "url": "https://boxd.it/jq8s",
-      "posterPath": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
-    },
-    {
-      "name": "Twisters",
-      "dateAdded": "2024-07-25",
-      "year": "2024",
-      "url": "https://boxd.it/qV7a",
-      "posterPath": "/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg"
-    },
-    {
-      "name": "A Quiet Place: Day One",
-      "dateAdded": "2024-07-20",
-      "year": "2024",
-      "url": "https://boxd.it/sDAi",
-      "posterPath": "/hU42CRk14JuPEdqZG3AWmagiPAP.jpg"
-    },
-    {
-      "name": "Asteroid City",
-      "dateAdded": "2024-07-19",
-      "year": "2023",
-      "url": "https://boxd.it/s3ds",
-      "posterPath": "/qdq40gRS8xKnpFt5V75t6lUHgpx.jpg"
-    }
-  ]
+	"updatedAt": "2024-09-03T01:59:56.672Z",
+	"watched": [
+		{
+			"name": "The Watchers",
+			"dateAdded": "2024-09-03",
+			"year": "2024",
+			"url": "https://boxd.it/F6Rw",
+			"posterPath": "/vZVEUPychdvZLrTNwWErr9xZFmu.jpg"
+		},
+		{
+			"name": "Alien: Romulus",
+			"dateAdded": "2024-08-16",
+			"year": "2024",
+			"url": "https://boxd.it/zGqO",
+			"posterPath": "/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg"
+		},
+		{
+			"name": "Deadpool & Wolverine",
+			"dateAdded": "2024-07-29",
+			"year": "2024",
+			"url": "https://boxd.it/jq8s",
+			"posterPath": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
+		},
+		{
+			"name": "Twisters",
+			"dateAdded": "2024-07-25",
+			"year": "2024",
+			"url": "https://boxd.it/qV7a",
+			"posterPath": "/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg"
+		},
+		{
+			"name": "A Quiet Place: Day One",
+			"dateAdded": "2024-07-20",
+			"year": "2024",
+			"url": "https://boxd.it/sDAi",
+			"posterPath": "/hU42CRk14JuPEdqZG3AWmagiPAP.jpg"
+		},
+		{
+			"name": "Asteroid City",
+			"dateAdded": "2024-07-19",
+			"year": "2023",
+			"url": "https://boxd.it/s3ds",
+			"posterPath": "/qdq40gRS8xKnpFt5V75t6lUHgpx.jpg"
+		}
+	]
 }

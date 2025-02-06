@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @config '../../tailwind.config.ts';
 
@@ -13,177 +13,177 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
 }
 
 @utility border-surface {
-  @apply dark:border dark:border-slate-800;
+	@apply dark:border dark:border-slate-800;
 }
 
 @utility bg-surface {
-  @apply bg-white dark:bg-slate-900/80;
+	@apply bg-white dark:bg-slate-900/80;
 }
 
 @utility hover-surface {
-  @apply dark:hover:bg-slate-900;
+	@apply dark:hover:bg-slate-900;
 }
 
 @utility shadow-surface {
-  @apply transition duration-500 shadow-md hover:shadow-lg dark:shadow-lg dark:hover:shadow-violet-500/20;
+	@apply transition duration-500 shadow-md hover:shadow-lg dark:shadow-lg dark:hover:shadow-violet-500/20;
 }
 
 @utility text-surface-primary {
-  @apply text-slate-800 dark:text-slate-200;
+	@apply text-slate-800 dark:text-slate-200;
 }
 
 @utility text-surface-secondary {
-  @apply text-slate-700 dark:text-slate-300/95;
+	@apply text-slate-700 dark:text-slate-300/95;
 }
 
 @utility text-surface-tertiary {
-  @apply text-slate-600 dark:text-slate-400;
+	@apply text-slate-600 dark:text-slate-400;
 }
 
 @utility text-balance {
-  text-wrap: balance;
+	text-wrap: balance;
 }
 
 @utility page-h1 {
-  @apply leading-none font-bold text-2xl mb-16 tablet:mb-24;
+	@apply leading-none font-bold text-2xl mb-16 tablet:mb-24;
 }
 
 @utility page-h2 {
-  @apply leading-none font-medium text-xl mb-12 tablet:mb-16;
+	@apply leading-none font-medium text-xl mb-12 tablet:mb-16;
 }
 
 @layer utilities {
-  :root {
-    --sh-class: #2d5e9d;
-    --sh-identifier: #354150;
-    --sh-sign: #8996a3;
-    --sh-string: #007f7a;
-    --sh-keyword: #e02518;
-    --sh-comment: #a19595;
-    --sh-jsxliterals: #6266d1;
-    --sh-property: #e25a1c;
-    --sh-entity: #e25a1c;
-  }
+	:root {
+		--sh-class: #2d5e9d;
+		--sh-identifier: #354150;
+		--sh-sign: #8996a3;
+		--sh-string: #007f7a;
+		--sh-keyword: #e02518;
+		--sh-comment: #a19595;
+		--sh-jsxliterals: #6266d1;
+		--sh-property: #e25a1c;
+		--sh-entity: #e25a1c;
+	}
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --sh-class: #4c97f8;
-      --sh-identifier: white;
-      --sh-keyword: #f47067;
-      --sh-string: #0fa295;
-    }
-    html {
-      color-scheme: dark;
-    }
-  }
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--sh-class: #4c97f8;
+			--sh-identifier: white;
+			--sh-keyword: #f47067;
+			--sh-string: #0fa295;
+		}
+		html {
+			color-scheme: dark;
+		}
+	}
 }
 
 .prose {
-  @apply max-w-none prose-slate dark:prose-invert;
+	@apply max-w-none prose-slate dark:prose-invert;
 }
 
 .prose .anchor {
-  @apply absolute invisible no-underline;
+	@apply absolute invisible no-underline;
 
-  margin-left: -1em;
-  padding-right: 0.5em;
-  width: 80%;
-  max-width: 700px;
-  cursor: pointer;
+	margin-left: -1em;
+	padding-right: 0.5em;
+	width: 80%;
+	max-width: 700px;
+	cursor: pointer;
 }
 
 .anchor:hover {
-  @apply visible;
+	@apply visible;
 }
 
 .prose a {
-  @apply no-underline text-violet-700 dark:text-violet-400 hover:underline break-words;
+	@apply no-underline text-violet-700 dark:text-violet-400 hover:underline break-words;
 }
 
 .prose .anchor:after {
-  @apply text-slate-400 dark:text-violet-500;
-  content: '#';
+	@apply text-slate-400 dark:text-violet-500;
+	content: "#";
 }
 
 .prose *:hover > .anchor {
-  @apply visible no-underline;
+	@apply visible no-underline;
 }
 
 .prose pre {
-  @apply bg-surface rounded-lg overflow-x-auto;
+	@apply bg-surface rounded-lg overflow-x-auto;
 }
 
 .prose code {
-  @apply px-1 py-0.5 rounded-lg;
+	@apply px-1 py-0.5 rounded-lg;
 }
 
 .prose pre code {
-  @apply p-0;
-  border: initial;
-  line-height: 1.5;
+	@apply p-0;
+	border: initial;
+	line-height: 1.5;
 }
 
 .prose code span {
-  @apply font-medium;
+	@apply font-medium;
 }
 
 .prose img {
-  /* Don't apply styles to next/image */
-  @apply m-0;
+	/* Don't apply styles to next/image */
+	@apply m-0;
 }
 
 .prose h1 {
-  @apply font-bold text-xl tablet:text-xl;
+	@apply font-bold text-xl tablet:text-xl;
 }
 
 .prose h2 {
-  @apply font-bold text-lg;
+	@apply font-bold text-lg;
 }
 .prose h3 {
-  @apply font-bold text-md;
+	@apply font-bold text-md;
 }
 .prose h4 {
-  @apply font-medium text-md;
+	@apply font-medium text-md;
 }
 
 .prose p {
-  @apply text-md;
+	@apply text-md;
 }
 
 .prose li {
-  @apply text-md;
+	@apply text-md;
 }
 
 .prose strong {
-  @apply font-semibold;
+	@apply font-semibold;
 }
 
 .prose .tweet a {
-  text-decoration: inherit;
-  font-weight: 500;
+	text-decoration: inherit;
+	font-weight: 500;
 }
 
 .list-inline {
-  display: block;
+	display: block;
 }
 .list-inline li {
-  display: inline-block;
+	display: inline-block;
 }
 .list-inline li:after {
-  content: '\2022';
-  margin: 0 10px;
+	content: "\2022";
+	margin: 0 10px;
 }
 
 .list-inline li:last-child:after {
-  content: '';
+	content: "";
 }
