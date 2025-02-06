@@ -1,60 +1,58 @@
-/* eslint-disable consistent-return */
+"use server";
 
-'use server';
-
-import { sql } from '@vercel/postgres';
-import { type Session } from 'next-auth';
-import { unstable_noStore as noStore, revalidatePath } from 'next/cache';
-import { auth } from '~/app/auth';
-import { handleServerActionError } from '~/utils';
+import { sql } from "@vercel/postgres";
+import type { Session } from "next-auth";
+import { unstable_noStore as noStore, revalidatePath } from "next/cache";
+import { auth } from "~/app/auth";
+import { handleServerActionError } from "~/utils";
 
 async function getSession(): Promise<Session> {
-  const session = await auth();
-  if (!session || !session.user) {
-    throw new Error('Unauthorized');
-  }
+	const session = await auth();
+	if (!session || !session.user) {
+		throw new Error("Unauthorized");
+	}
 
-  return session;
+	return session;
 }
 
 export async function saveApiTokens({
-  provider,
-  accessToken,
-  refreshToken,
-  expirationDate,
+	provider,
+	accessToken,
+	refreshToken,
+	expirationDate,
 }: any) {
-  noStore();
-  try {
-    const { rows } =
-      await sql`UPDATE apitokens SET access_token = ${accessToken}, refresh_token = ${refreshToken}, expiration_date = ${expirationDate} WHERE provider = ${provider} RETURNING *`;
-    return rows[0];
-  } catch (error) {
-    console.log('Save tokens err', error);
-    handleServerActionError();
-  }
+	noStore();
+	try {
+		const { rows } =
+			await sql`UPDATE apitokens SET access_token = ${accessToken}, refresh_token = ${refreshToken}, expiration_date = ${expirationDate} WHERE provider = ${provider} RETURNING *`;
+		return rows[0];
+	} catch (error) {
+		console.log("Save tokens err", error);
+		handleServerActionError();
+	}
 }
 
 export async function addWord(formData: FormData) {
-  if (!process.env.POSTGRES_URL) {
-    return [];
-  }
+	if (!process.env.POSTGRES_URL) {
+		return [];
+	}
 
-  const session = await getSession();
-  const email = session.user?.email as string;
+	const session = await getSession();
+	const email = session.user?.email as string;
 
-  if (email !== 'adamjnav@gmail.com') {
-    throw new Error('Unauthorized');
-  }
+	if (email !== "adamjnav@gmail.com") {
+		throw new Error("Unauthorized");
+	}
 
-  const rawSpelling = formData.get('spelling')?.toString() || '';
-  const spelling = rawSpelling.toLowerCase().trim();
-  const rawDefinition = formData.get('definition')?.toString() || '';
-  const definition = rawDefinition.trim();
-  const partOfSpeech = formData.get('partOfSpeech')?.toString() || '';
-  const dateLearned = formData.get('dateLearned')?.toString() || '';
+	const rawSpelling = formData.get("spelling")?.toString() || "";
+	const spelling = rawSpelling.toLowerCase().trim();
+	const rawDefinition = formData.get("definition")?.toString() || "";
+	const definition = rawDefinition.trim();
+	const partOfSpeech = formData.get("partOfSpeech")?.toString() || "";
+	const dateLearned = formData.get("dateLearned")?.toString() || "";
 
-  noStore();
+	noStore();
 
-  await sql`INSERT INTO words (spelling, definition, part_of_speech, date_learned) VALUES (${spelling}, ${definition}, ${partOfSpeech}, ${dateLearned});`;
-  revalidatePath('/words');
+	await sql`INSERT INTO words (spelling, definition, part_of_speech, date_learned) VALUES (${spelling}, ${definition}, ${partOfSpeech}, ${dateLearned});`;
+	revalidatePath("/words");
 }
