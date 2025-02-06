@@ -18,7 +18,7 @@
     "@types/react-dom": "19.0.3"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^4.1.6",
+    "@react-pdf/renderer": "^4.2.1",
     "@spotify/web-api-ts-sdk": "^1.2.0",
     "@tabler/icons-react": "^3.29.0",
     "@vercel/postgres": "^0.10.0",
