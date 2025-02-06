@@ -39,28 +39,17 @@
 		"@biomejs/biome": "1.9.4",
 		"@commitlint/cli": "^19.7.1",
 		"@commitlint/config-conventional": "^19.7.1",
-		"@eslint/compat": "^1.2.6",
-		"@next/eslint-plugin-next": "15.1.6",
 		"@tailwindcss/postcss": "^4.0.4",
 		"@tailwindcss/typography": "^0.5.16",
 		"@types/node": "^22.13.1",
 		"@types/react": "19.0.8",
 		"@types/react-dom": "19.0.3",
-		"@typescript-eslint/eslint-plugin": "^8.23.0",
-		"@typescript-eslint/parser": "^8.23.0",
 		"convert-csv-to-json": "^2.50.0",
 		"cypress": "^14.0.2",
-		"eslint": "^9.19.0",
-		"eslint-config-next": "15.1.6",
-		"eslint-plugin-import": "^2.31.0",
-		"eslint-plugin-jsx-a11y": "^6.10.2",
-		"eslint-plugin-react": "^7.37.4",
-		"eslint-plugin-react-hooks": "^5.1.0",
 		"husky": "^9.1.7",
 		"ky": "^1.7.4",
 		"lint-staged": "^15.4.3",
 		"postcss": "^8.5.1",
-		"prettier": "^3.4.2",
 		"tailwindcss": "^4.0.4",
 		"tsx": "^4.19.2",
 		"typescript": "^5.7.3"
@@ -69,12 +58,6 @@
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
 			"biome check --write --no-errors-on-unmatched"
 		]
-	},
-	"prettier": {
-		"trailingComma": "es5",
-		"tabWidth": 2,
-		"singleQuote": true,
-		"printWidth": 85
 	},
 	"private": true,
 	"scripts": {
@@ -93,8 +76,6 @@
 		"cypress:open": "cypress open",
 		"cypress:run": "cypress run",
 		"prepare": "husky",
-		"prettier:check": "prettier --check \"**/*.{ts,tsx}\"",
-		"prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
 		"test": "cypress run"
 	}
 }

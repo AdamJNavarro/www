@@ -10,7 +10,6 @@ Source code for [adamjnavarro.com](https://www.adamjnavarro.com)
 - TailwindCSS
 - Cypress
 - Husky
-- Prettier
-- Eslint
+- Biome
 - Commitlint
 - Lint-staged

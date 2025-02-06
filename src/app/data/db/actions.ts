@@ -1,5 +1,3 @@
-/* eslint-disable consistent-return */
-
 "use server";
 
 import { sql } from "@vercel/postgres";
