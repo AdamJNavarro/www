@@ -1,15 +1,43 @@
 {
-	"updatedAt": "2025-02-02T06:02:58.947Z",
+	"updatedAt": "2025-02-09T06:03:19.925Z",
 	"stats": {
-		"shows": 206,
-		"episodes": 10689,
-		"minutes": 362901
+		"shows": 207,
+		"episodes": 10723,
+		"minutes": 364000
 	},
 	"watching": [
 		{
+			"id": 1168694975,
+			"type": "season",
+			"rank": 1,
+			"dateAdded": "2025-02-03T02:19:11.000Z",
+			"showIds": {
+				"trakt": 184471,
+				"slug": "the-night-agent",
+				"tvdb": 407281,
+				"imdb": "tt13918776",
+				"tmdb": 129552,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/the-night-agent",
+			"title": "The Night Agent",
+			"year": 2023,
+			"overview": "Brought together by a midnight phone call, an FBI agent and a cybersecurity expert must unravel an ever-growing web of political conspiracies.",
+			"status": "returning series",
+			"genres": ["drama", "mystery", "action", "adventure"],
+			"seasonIds": {
+				"trakt": 419991,
+				"tvdb": 2155895,
+				"tmdb": 422475,
+				"tvrage": null
+			},
+			"seasonNumber": 2,
+			"seasonTitle": "Season 2"
+		},
+		{
 			"id": 1153842600,
 			"type": "show",
-			"rank": 1,
+			"rank": 2,
 			"dateAdded": "2025-01-10T03:16:38.000Z",
 			"showIds": {
 				"trakt": 200465,
@@ -28,6 +56,44 @@
 		}
 	],
 	"watched": [
+		{
+			"id": 38304,
+			"type": "show",
+			"dateAdded": "2025-02-03T02:19:45.000Z",
+			"showIds": {
+				"trakt": 38304,
+				"slug": "blue-exorcist",
+				"tvdb": 248035,
+				"imdb": "tt1799631",
+				"tmdb": 38464,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/blue-exorcist",
+			"title": "Blue Exorcist",
+			"year": 2011,
+			"overview": "Humans live in the world of Assiah, demons in Gehenna. The two dimensions are not meant to interfere with each other, but demons still possess creatures in Assiah in spite of this. The humans who can fight these demons are known as exorcists. Rin Okumura is a boy who bears the curse of being Satan's illegitimate son. His foster father sacrificed himself to save him from demons. To avenge his foster father's death as well as to prove himself, Rin decides to follow the path of an exorcist and defeat his own father, Satan. To hone his raw skills, Rin enters True Cross Academy to train with other exorcist candidates.",
+			"status": "returning series",
+			"genres": ["anime", "action", "fantasy"]
+		},
+		{
+			"id": 184471,
+			"type": "show",
+			"dateAdded": "2025-02-03T02:18:59.000Z",
+			"showIds": {
+				"trakt": 184471,
+				"slug": "the-night-agent",
+				"tvdb": 407281,
+				"imdb": "tt13918776",
+				"tmdb": 129552,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/the-night-agent",
+			"title": "The Night Agent",
+			"year": 2023,
+			"overview": "Brought together by a midnight phone call, an FBI agent and a cybersecurity expert must unravel an ever-growing web of political conspiracies.",
+			"status": "returning series",
+			"genres": ["drama", "mystery", "action", "adventure"]
+		},
 		{
 			"id": 79353,
 			"type": "show",
@@ -2180,25 +2246,6 @@
 			"genres": ["animation", "fantasy", "science-fiction", "drama"]
 		},
 		{
-			"id": 38304,
-			"type": "show",
-			"dateAdded": "2022-07-06T22:48:10.000Z",
-			"showIds": {
-				"trakt": 38304,
-				"slug": "blue-exorcist",
-				"tvdb": 248035,
-				"imdb": "tt1799631",
-				"tmdb": 38464,
-				"tvrage": null
-			},
-			"url": "https://trakt.tv/shows/blue-exorcist",
-			"title": "Blue Exorcist",
-			"year": 2011,
-			"overview": "Humans live in the world of Assiah, demons in Gehenna. The two dimensions are not meant to interfere with each other, but demons still possess creatures in Assiah in spite of this. The humans who can fight these demons are known as exorcists. Rin Okumura is a boy who bears the curse of being Satan's illegitimate son. His foster father sacrificed himself to save him from demons. To avenge his foster father's death as well as to prove himself, Rin decides to follow the path of an exorcist and defeat his own father, Satan. To hone his raw skills, Rin enters True Cross Academy to train with other exorcist candidates.",
-			"status": "returning series",
-			"genres": ["anime", "action", "fantasy"]
-		},
-		{
 			"id": 169967,
 			"type": "show",
 			"dateAdded": "2022-07-06T00:34:50.000Z",
@@ -4280,11 +4327,11 @@
 	"genres": [
 		{
 			"genre": "drama",
-			"total": 127
+			"total": 128
 		},
 		{
 			"genre": "action",
-			"total": 104
+			"total": 105
 		},
 		{
 			"genre": "fantasy",
@@ -4292,7 +4339,7 @@
 		},
 		{
 			"genre": "adventure",
-			"total": 85
+			"total": 86
 		},
 		{
 			"genre": "anime",
@@ -4303,12 +4350,12 @@
 			"total": 66
 		},
 		{
-			"genre": "comedy",
+			"genre": "mystery",
 			"total": 49
 		},
 		{
-			"genre": "mystery",
-			"total": 48
+			"genre": "comedy",
+			"total": 49
 		},
 		{
 			"genre": "crime",
