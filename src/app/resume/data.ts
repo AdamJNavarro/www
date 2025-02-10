@@ -3,6 +3,7 @@ import {
 	entireStack,
 	frameworkStack,
 	languageStack,
+	serviceStack,
 	toolStack,
 } from "~/app/data/stack";
 import type {
@@ -46,6 +47,33 @@ const softSkills = [
 	"Approachability",
 ];
 
+const conceptualSkills = [
+	"CI/CD",
+	"Data Structures",
+	"Relational Databases",
+	"API",
+	"REST",
+	"CRUD",
+	"SOLID",
+	"UI",
+	"Unit Testing",
+	"Responsive Design",
+	"Object-Oriented Programming",
+	"MVC",
+];
+
+const volunteerExperiences: ResumeExperience[] = [
+	{
+		company: "Holistic Health & Hospice",
+		role: "Patient Visitor",
+		start: "January 2025",
+		end: "Present",
+		details: [
+			"Travel to facilities to spend time with hospice patients where I will play guitar or piano, play games or simply spend time having conversation.",
+		],
+	},
+];
+
 const resumeExperiences: ResumeExperience[] = [
 	{
 		company: "Freelance and Personal",
@@ -53,7 +81,7 @@ const resumeExperiences: ResumeExperience[] = [
 		start: "December 2023",
 		end: "Present",
 		details: [
-			"Taught myself C# and the Microsoft stack to increase my opportunites of finding a developer position that is in-office.",
+			"Learned C#, ASP.NET Core, Entity Framework and the Microsoft stack which empowered me to build and deploy my Cog Log project.",
 			`Built and deployed Linkli - a CLI that automatically detects a codebase's tech stack and allow users to open documentation without leaving the terminal.`,
 			`Audited Stella Mahaga's website (marlamhs.com) and performed configuration improvements that lead to a decrease in storage and service costs, an increase in potential patient inquiries and stronger site security. Implemented a re-design to improve readibility and information consumption for a better user experience.`,
 		],
@@ -65,10 +93,11 @@ const resumeExperiences: ResumeExperience[] = [
 		start: "February 2018",
 		end: "June 2022",
 		details: [
-			"Created and maintained code examples and sample applications to increase user knowledge on how to leverage the Expo SDK.",
-			"Maintained and made continuous improvements to Expo documentation.",
-			"Contributed quality-of-life improvements to the Expo CLI.",
-			"Created and iterated Expo support systems and flows using platforms such as Github, Slack, Discourse and Canny. Identified and designated resourceful and engaged users, known as Expo Pillars, in the Expo ecosystem. Pillars often resulted in external contributions and a reduction on internal support burden and cost.",
+			"Created and maintained code examples, sample applications to increase user knowledge and adoption.",
+			"Maintained and made continuous improvements to Expo documentation with a focus on user experience and information consumption.",
+			"Contributed quality-of-life improvements to the Expo command line interface.",
+			"Developed and iterated Expo support systems and flows using platforms such as Github, Slack, Discourse and Canny.",
+			"Identified, designated and empowered resourceful and engaged users which increased external contributions and reduced internal support burden and cost.",
 			"Served as the direct contact and conduit for Expo partners, professionals and high-value users.",
 		],
 	},
@@ -77,11 +106,11 @@ const resumeExperiences: ResumeExperience[] = [
 const resumeProjects: ResumeProject[] = [
 	{
 		id: 1,
-		name: "Website",
+		name: "AdamJNavarro",
 		href: personalWebsiteURL,
 		repo: "https://github.com/AdamJNavarro/www#stack",
 		summary:
-			"My personal website that serves as both a place to get to know me and as a playground for me to develop and sharpen my coding skills. Uses several popular REST apis such as Spotify, Strava, GitHub, Trakt, TMDB to populate data.",
+			"My website built with Next.js that serves as both a place to get to know me and as a playground for me to develop and sharpen my coding skills. Uses APIs such as Spotify, Strava, GitHub, Trakt, TMDB to populate data.",
 	},
 	{
 		id: 2,
@@ -89,7 +118,7 @@ const resumeProjects: ResumeProject[] = [
 		href: "https://adamjnav-coglog.azurewebsites.net/",
 		repo: "https://github.com/AdamJNavarro/coglog#stack",
 		summary:
-			"A collection of learnings, questions or thoughts to be used during my daily reviews.",
+			"A personal cognitive log built with ASP.NET Core that reinforces learning and boosts information retention.",
 	},
 	{
 		id: 3,
@@ -97,7 +126,7 @@ const resumeProjects: ResumeProject[] = [
 		href: "https://navarro-pet-tracker.netlify.app/",
 		repo: "https://github.com/AdamJNavarro/pet-tracker#stack",
 		summary:
-			"A simple interface to keep track of common and recurring activities for my dogs.",
+			"A dog tracking app built with Svelte that reduced redundant communication and improved pet health and care.",
 	},
 ];
 
@@ -118,7 +147,7 @@ const resume: Resume = {
 				items: toolStack,
 			},
 			frameworks: {
-				label: "Frameworks & Libraries",
+				label: "Frameworks",
 				items: frameworkStack,
 			},
 			services: {
@@ -137,8 +166,30 @@ const resume: Resume = {
 	},
 	skills: {
 		title: "Skills",
-		hard: entireStack,
+		tech: [
+			{
+				label: "Languages",
+				stack: languageStack,
+			},
+			{
+				label: "Frameworks",
+				stack: frameworkStack,
+			},
+			{
+				label: "Services",
+				stack: serviceStack,
+			},
+			{
+				label: "Tools",
+				stack: toolStack,
+			},
+		],
+		concepts: conceptualSkills.sort((a, b) => a.localeCompare(b)).join(", "),
 		soft: softSkills.sort((a, b) => a.localeCompare(b)).join(", "),
+	},
+	volunteering: {
+		title: "Volunteering",
+		items: volunteerExperiences,
 	},
 };
 

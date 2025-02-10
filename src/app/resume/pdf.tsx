@@ -49,12 +49,6 @@ Font.register({
 
 Font.registerHyphenationCallback(hyphenationCallback);
 
-Font.registerEmojiSource({
-	format: "png",
-	url: "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@15.1.2/img/apple/64/",
-	withVariationSelectors: true,
-});
-
 const colors = {
 	neutral: {
 		primary: "#020617",
@@ -174,6 +168,7 @@ export function ResumePdf() {
 				<Experiences />
 				<Projects />
 				<Skills />
+				<Volunteering />
 			</Page>
 		</Document>
 	);
@@ -211,42 +206,49 @@ function Experiences() {
 						style={{
 							display: "flex",
 							flexDirection: "column",
+							gap: spacing[2],
 						}}
 					>
 						<View
 							style={{
 								display: "flex",
 								flexDirection: "row",
-								alignItems: "center",
-								gap: spacing[1],
+								justifyContent: "space-between",
 							}}
 						>
-							<Text
+							<View
 								style={{
-									fontSize: fontSizes.md,
-									fontFamily: fontFamilies.medium,
+									display: "flex",
+									flexDirection: "row",
+									alignItems: "center",
+									gap: spacing[2],
 								}}
 							>
-								{company}
-							</Text>
-							<Text style={{ fontSize: fontSizes.md }}>•</Text>
+								<Text
+									style={{
+										fontSize: fontSizes.lg,
+										fontFamily: fontFamilies.medium,
+									}}
+								>
+									{company}
+								</Text>
+								<Text
+									style={{
+										fontSize: fontSizes.md,
+									}}
+								>
+									({role})
+								</Text>
+							</View>
 							<Text
 								style={{
-									fontSize: fontSizes.md,
+									color: colors.neutral.tertiary,
 								}}
 							>
-								{role}
+								{start} &mdash; {end}
 							</Text>
 						</View>
-						<Text
-							style={{
-								color: colors.neutral.tertiary,
-								marginTop: spacing.px,
-								marginBottom: spacing[2],
-							}}
-						>
-							{start} &mdash; {end}
-						</Text>
+
 						<View
 							style={{
 								display: "flex",
@@ -286,7 +288,7 @@ function Projects() {
 								display: "flex",
 								flexDirection: "row",
 								alignItems: "center",
-								gap: spacing[1],
+								gap: spacing[2],
 							}}
 						>
 							<Link
@@ -302,10 +304,10 @@ function Projects() {
 								{name}
 							</Link>
 							<Text style={{ color: colors.neutral.tertiary }}>
-								({" "}
+								(
 								<Link href={repo} style={{ color: colors.neutral.tertiary }}>
 									repo
-								</Link>{" "}
+								</Link>
 								)
 							</Text>
 						</View>
@@ -318,17 +320,106 @@ function Projects() {
 }
 
 function Skills() {
-	const { title, soft, hard } = resume.skills;
-
-	const activeItems = hard.filter((item) => item.activelyUsing);
-
-	const activeNames = combineSharedNamespaces(activeItems);
+	const { title, soft, concepts, tech } = resume.skills;
 
 	return (
-		<Section title={title} contentSpacing={spacing[3]}>
-			<Text style={{ color: colors.neutral.primary }}>{activeNames}</Text>
+		<Section title={title} contentSpacing={spacing[2]}>
+			{tech.map((entry) => {
+				const activeItems = entry.stack.filter((item) => item.activelyUsing);
+				const activeNames = combineSharedNamespaces(activeItems);
 
-			<Text style={{ color: colors.neutral.secondary }}>{soft}</Text>
+				return (
+					<Text key={entry.label} style={{ fontFamily: fontFamilies.medium }}>
+						{entry.label}:{"  "}
+						<Text style={{ fontFamily: fontFamilies.regular }}>
+							{activeNames}
+						</Text>
+					</Text>
+				);
+			})}
+
+			<Text style={{ fontFamily: fontFamilies.medium }}>
+				Concepts:{"  "}
+				<Text style={{ fontFamily: fontFamilies.regular }}>{concepts}</Text>
+			</Text>
+
+			<Text style={{ fontFamily: fontFamilies.medium }}>
+				Soft:{"  "}
+				<Text style={{ fontFamily: fontFamilies.regular }}>{soft}</Text>
+			</Text>
+		</Section>
+	);
+}
+
+function Volunteering() {
+	const { title, items } = resume.volunteering;
+	return (
+		<Section title={title} contentSpacing={spacing[5]}>
+			{items.map((item) => {
+				const { company, href, role, start, end, details } = item;
+				return (
+					<View
+						key={`${company}-${role}`}
+						style={{
+							display: "flex",
+							flexDirection: "column",
+							gap: spacing[2],
+						}}
+					>
+						<View
+							style={{
+								display: "flex",
+								flexDirection: "row",
+								justifyContent: "space-between",
+							}}
+						>
+							<View
+								style={{
+									display: "flex",
+									flexDirection: "row",
+									alignItems: "center",
+									gap: spacing[2],
+								}}
+							>
+								<Text
+									style={{
+										fontSize: fontSizes.lg,
+										fontFamily: fontFamilies.medium,
+									}}
+								>
+									{company}
+								</Text>
+								<Text
+									style={{
+										fontSize: fontSizes.md,
+									}}
+								>
+									({role})
+								</Text>
+							</View>
+							<Text
+								style={{
+									color: colors.neutral.tertiary,
+								}}
+							>
+								{start} &mdash; {end}
+							</Text>
+						</View>
+
+						<View
+							style={{
+								display: "flex",
+								flexDirection: "column",
+								gap: spacing[1],
+							}}
+						>
+							{details.map((detail) => (
+								<Text key={detail}>• &nbsp;{detail}</Text>
+							))}
+						</View>
+					</View>
+				);
+			})}
 		</Section>
 	);
 }
