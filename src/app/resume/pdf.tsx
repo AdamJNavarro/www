@@ -16,35 +16,35 @@ const hyphenationCallback = (word: string) => {
 	return [word];
 };
 
+const fontFamilies = {
+	regular: "EB Garamond",
+	medium: "EB Garamond Medium",
+	semiBold: "EB Garamond Semibold",
+	bold: "EB Garamond Bold",
+};
+
 Font.register({
-	family: "Geist Sans",
-	fonts: [
-		{
-			fontStyle: "normal",
-			fontWeight: 300,
-			src: "node_modules/geist/dist/fonts/geist-sans/Geist-Light.ttf",
-		},
-		{
-			fontStyle: "normal",
-			fontWeight: 400,
-			src: "node_modules/geist/dist/fonts/geist-sans/Geist-Regular.ttf",
-		},
-		{
-			fontStyle: "normal",
-			fontWeight: 500,
-			src: "node_modules/geist/dist/fonts/geist-sans/Geist-Medium.ttf",
-		},
-		{
-			fontStyle: "normal",
-			fontWeight: 600,
-			src: "node_modules/geist/dist/fonts/geist-sans/Geist-SemiBold.ttf",
-		},
-		{
-			fontStyle: "normal",
-			fontWeight: 700,
-			src: "node_modules/geist/dist/fonts/geist-sans/Geist-Bold.ttf",
-		},
-	],
+	family: fontFamilies.regular,
+	fontStyle: "normal",
+	src: "https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RUAw.ttf",
+});
+
+Font.register({
+	family: fontFamilies.medium,
+	fontStyle: "normal",
+	src: "https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRUAw.ttf",
+});
+
+Font.register({
+	family: fontFamilies.semiBold,
+	fontStyle: "normal",
+	src: "https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-NfNUAw.ttf",
+});
+
+Font.register({
+	family: fontFamilies.bold,
+	fontStyle: "normal",
+	src: "https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-DPNUAw.ttf",
 });
 
 Font.registerHyphenationCallback(hyphenationCallback);
@@ -68,19 +68,10 @@ const colors = {
 };
 
 const fontSizes = {
-	sm: 10.5,
-	base: 11,
-	md: 12,
+	base: 12,
+	md: 12.5,
 	lg: 13,
 	xl: 14,
-};
-
-const fontWeights = {
-	light: 300,
-	regular: 400,
-	medium: 500,
-	semiBold: 600,
-	bold: 700,
 };
 
 const spacing = {
@@ -100,10 +91,9 @@ const styles = StyleSheet.create({
 	page: {
 		backgroundColor: "#fff",
 		display: "flex",
-		fontFamily: "Geist Sans",
+		fontFamily: fontFamilies.regular,
 		justifyContent: "flex-start",
 		fontSize: fontSizes.base,
-		fontWeight: fontWeights.light,
 		color: colors.neutral.primary,
 		padding: spacing[12], // maybe "1in"
 		gap: spacing[5],
@@ -111,17 +101,15 @@ const styles = StyleSheet.create({
 	header: {
 		display: "flex",
 		flexDirection: "column",
-		// backgroundColor: "green",
 	},
 	headerTitle: {
 		fontSize: 32,
-		fontWeight: fontWeights.semiBold,
+		fontFamily: fontFamilies.semiBold,
 		color: colors.neutral.primary,
 		alignSelf: "center",
 	},
 	headerSubtitle: {
 		fontSize: fontSizes.md,
-		fontWeight: fontWeights.regular,
 		color: colors.neutral.secondary,
 		alignSelf: "center",
 	},
@@ -130,7 +118,6 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "space-evenly",
 		paddingTop: spacing[2],
-		fontSize: fontSizes.sm,
 		color: colors.neutral.secondary,
 	},
 	section: {
@@ -139,7 +126,7 @@ const styles = StyleSheet.create({
 	},
 	sectionTitle: {
 		fontSize: fontSizes.lg,
-		fontWeight: fontWeights.medium,
+		fontFamily: fontFamilies.medium,
 		color: colors.neutral.primary,
 		textTransform: "uppercase",
 	},
@@ -155,7 +142,7 @@ const styles = StyleSheet.create({
 	},
 	sectionCategoryLabel: {
 		fontSize: fontSizes.md,
-		fontWeight: fontWeights.semiBold,
+		fontFamily: fontFamilies.semiBold,
 		color: colors.neutral.secondary,
 		paddingBottom: spacing[1],
 	},
@@ -237,7 +224,7 @@ function Experiences() {
 							<Text
 								style={{
 									fontSize: fontSizes.md,
-									fontWeight: fontWeights.medium,
+									fontFamily: fontFamilies.medium,
 								}}
 							>
 								{company}
@@ -246,7 +233,6 @@ function Experiences() {
 							<Text
 								style={{
 									fontSize: fontSizes.md,
-									fontWeight: fontWeights.regular,
 								}}
 							>
 								{role}
@@ -254,7 +240,6 @@ function Experiences() {
 						</View>
 						<Text
 							style={{
-								fontWeight: fontWeights.regular,
 								color: colors.neutral.tertiary,
 								marginTop: spacing.px,
 								marginBottom: spacing[2],
@@ -310,7 +295,7 @@ function Projects() {
 									styles.link,
 									{
 										fontSize: fontSizes.md,
-										fontWeight: fontWeights.medium,
+										fontFamily: fontFamilies.medium,
 									},
 								]}
 							>
