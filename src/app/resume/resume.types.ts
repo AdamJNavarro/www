@@ -51,7 +51,15 @@ export type Resume = {
 	};
 	skills: {
 		title: string;
-		hard: StackItem[];
+		tech: {
+			label: string;
+			stack: StackItem[];
+		}[];
+		concepts: string;
 		soft: string;
+	};
+	volunteering: {
+		title: string;
+		items: ResumeExperience[];
 	};
 };
