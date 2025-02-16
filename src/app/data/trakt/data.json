@@ -1,9 +1,9 @@
 {
-	"updatedAt": "2025-02-09T06:03:19.925Z",
+	"updatedAt": "2025-02-16T06:03:17.594Z",
 	"stats": {
 		"shows": 207,
 		"episodes": 10723,
-		"minutes": 364000
+		"minutes": 363952
 	},
 	"watching": [
 		{
@@ -108,7 +108,7 @@
 			},
 			"url": "https://trakt.tv/shows/assassination-classroom",
 			"title": "Assassination Classroom",
-			"year": 2013,
+			"year": 2015,
 			"overview": "The students of Class 3-E have a mission: kill their teacher before graduation. He has already destroyed the moon, and has promised to destroy the Earth if he can not be killed within a year. But how can this class of misfits kill a tentacled monster, capable of reaching Mach 20 speed, who may be the best teacher any of them have ever had?",
 			"status": "ended",
 			"genres": ["action", "comedy", "adventure", "anime", "science-fiction"]
@@ -287,7 +287,7 @@
 			"url": "https://trakt.tv/shows/my-hero-academia",
 			"title": "My Hero Academia",
 			"year": 2016,
-			"overview": "A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+			"overview": "For his entire life, Izuku has dreamed of being a hero—an ambitious goal for anyone, but an especially challenging one for a boy without superpowers. That’s right: in a world where 80% of the population has some sort of special Gift, Izuku was unlucky enough to be born completely normal. But that won’t stop him from enrolling in one of the most prestigious hero academies in the world to learn what it truly means to be a hero.",
 			"status": "returning series",
 			"genres": ["action", "superhero", "anime", "comedy"]
 		},
