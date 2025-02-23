@@ -1,9 +1,9 @@
 {
-	"updatedAt": "2025-02-16T06:03:17.594Z",
+	"updatedAt": "2025-02-23T06:03:05.335Z",
 	"stats": {
 		"shows": 207,
-		"episodes": 10723,
-		"minutes": 363952
+		"episodes": 10720,
+		"minutes": 363869
 	},
 	"watching": [
 		{
@@ -1020,7 +1020,7 @@
 			"url": "https://trakt.tv/shows/love-death",
 			"title": "Love & Death",
 			"year": 2023,
-			"overview": "Candy and Pat Montgomery and Betty and Allan Gore — two churchgoing couples — enjoy their small town Texas life… until an extramarital affair leads somebody to pick up an axe.",
+			"overview": "Candy and Pat Montgomery and Betty and Allan Gore — two churchgoing couples — enjoy their small town Texas life... until an extramarital affair leads somebody to pick up an axe.",
 			"status": "ended",
 			"genres": ["crime", "drama"]
 		},
@@ -3333,7 +3333,7 @@
 			"url": "https://trakt.tv/shows/true-blood",
 			"title": "True Blood",
 			"year": 2008,
-			"overview": "Thanks to a Japanese scientist's invention of synthetic, blood vampires have progressed from legendary monsters to fellow citizens overnight. And while humans have been safely removed from the menu, many remain apprehensive about these creatures \"coming out of the coffin.\" Religious leaders, government officials, and vampire fundamentalists around the world have chosen their sides, but in the small Louisiana town of Bon Temps, the jury is still out.",
+			"overview": "Thanks to a Japanese scientist's invention of synthetic blood, vampires have progressed from legendary monsters to fellow citizens overnight. And while humans have been safely removed from the menu, many remain apprehensive about these creatures \"coming out of the coffin.\" Religious leaders, government officials, and vampire fundamentalists around the world have chosen their sides, but in the small Louisiana town of Bon Temps, the jury is still out.",
 			"status": "ended",
 			"genres": ["drama", "fantasy", "science-fiction", "mystery"]
 		},
