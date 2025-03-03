@@ -47,7 +47,7 @@
 		"postcss": "^8.5.3",
 		"tailwindcss": "^4.0.8",
 		"tsx": "^4.19.3",
-		"typescript": "^5.7.3"
+		"typescript": "^5.8.2"
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
