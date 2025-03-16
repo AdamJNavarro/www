@@ -1,9 +1,9 @@
 {
-	"updatedAt": "2025-03-09T06:03:15.016Z",
+	"updatedAt": "2025-03-16T06:03:06.579Z",
 	"stats": {
 		"shows": 207,
 		"episodes": 10720,
-		"minutes": 363909
+		"minutes": 363908
 	},
 	"watching": [
 		{
@@ -574,7 +574,7 @@
 			"url": "https://trakt.tv/shows/the-eminence-in-shadow",
 			"title": "The Eminence in Shadow",
 			"year": 2022,
-			"overview": "Shadowbrokers are those who go unnoticed, posing as unremarkable people, when in truth, they control everything from behind the scenes. Sid wants to be someone just like that more than anything, and something as insignificant as boring reality isn’t going to get in his way! He trains in secret every single night, preparing for his eventual rise to power—only to denied his destiny by a run-of-the-mill (yet deadly) traffic accident. But when he wakes up in a another world and suddenly finds himself at the head of an actual secret organization doing battle with evil in the shadows, he’ll finally get a chance to act out all of his delusional fantasies!",
+			"overview": "Shadowbrokers are those who go unnoticed, posing as unremarkable people, when in truth, they control everything from behind the scenes. Sid wants to be someone just like that more than anything, and something as insignificant as boring reality isn’t going to get in his way! He trains in secret every single night, preparing for his eventual rise to power—only to be denied his destiny by a run-of-the-mill (yet deadly) traffic accident. But when he wakes up in a another world and suddenly finds himself at the head of an actual secret organization doing battle with evil in the shadows, he’ll finally get a chance to act out all of his delusional fantasies!",
 			"status": "ended",
 			"genres": ["anime", "comedy", "fantasy", "action"]
 		},
@@ -1604,7 +1604,7 @@
 			"url": "https://trakt.tv/shows/1899",
 			"title": "1899",
 			"year": 2022,
-			"overview": "Passengers on an immigrant ship traveling to the new continent get caught in a mysterious riddle when they find a second vessel adrift on the open sea.",
+			"overview": "When mysterious events change the course of an immigrant ship headed for New York in 1899, a mind-bending riddle unfolds for its bewildered passengers.",
 			"status": "canceled",
 			"genres": ["mystery", "drama"]
 		},
@@ -3333,7 +3333,7 @@
 			"url": "https://trakt.tv/shows/true-blood",
 			"title": "True Blood",
 			"year": 2008,
-			"overview": "Thanks to a Japanese scientist's invention of synthetic blood, vampires have progressed from legendary monsters to fellow citizens overnight. And while humans have been safely removed from the menu, many remain apprehensive about these creatures \"coming out of the coffin.\" Religious leaders, government officials, and vampire fundamentalists around the world have chosen their sides, but in the small Louisiana town of Bon Temps, the jury is still out.",
+			"overview": "Thanks to a Japanese scientist's invention of synthetic blood, vampires have progressed overnight from legendary monsters to fellow citizens. And while humans have been safely removed from the menu, many remain apprehensive about these creatures \"coming out of the coffin.\" Religious leaders, government officials, and vampire fundamentalists around the world have chosen their sides.  But in the small Louisiana town of Bon Temps, the jury is still out.",
 			"status": "ended",
 			"genres": ["drama", "fantasy", "science-fiction", "mystery"]
 		},
@@ -3835,7 +3835,7 @@
 			"title": "The Mandalorian",
 			"year": 2019,
 			"overview": "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
-			"status": "returning series",
+			"status": "ended",
 			"genres": ["fantasy", "science-fiction", "action", "adventure", "drama"]
 		},
 		{
