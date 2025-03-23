@@ -1,44 +1,85 @@
 {
-	"updatedAt": "2025-03-16T06:03:06.579Z",
+	"updatedAt": "2025-03-23T06:03:24.907Z",
 	"stats": {
-		"shows": 207,
-		"episodes": 10720,
-		"minutes": 363908
+		"shows": 208,
+		"episodes": 10736,
+		"minutes": 364727
 	},
 	"watching": [
 		{
-			"id": 1168694975,
+			"id": 1197032929,
 			"type": "season",
 			"rank": 1,
-			"dateAdded": "2025-02-03T02:19:11.000Z",
+			"dateAdded": "2025-03-18T14:34:57.000Z",
 			"showIds": {
-				"trakt": 184471,
-				"slug": "the-night-agent",
-				"tvdb": 407281,
-				"imdb": "tt13918776",
-				"tmdb": 129552,
+				"trakt": 155536,
+				"slug": "reacher",
+				"tvdb": 366924,
+				"imdb": "tt9288030",
+				"tmdb": 108978,
 				"tvrage": null
 			},
-			"url": "https://trakt.tv/shows/the-night-agent",
-			"title": "The Night Agent",
-			"year": 2023,
-			"overview": "Brought together by a midnight phone call, an FBI agent and a cybersecurity expert must unravel an ever-growing web of political conspiracies.",
+			"url": "https://trakt.tv/shows/reacher",
+			"title": "Reacher",
+			"year": 2022,
+			"overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
 			"status": "returning series",
-			"genres": ["drama", "mystery", "action", "adventure"],
+			"genres": ["action", "adventure", "crime", "drama"],
 			"seasonIds": {
-				"trakt": 419991,
-				"tvdb": 2155895,
-				"tmdb": 422475,
+				"trakt": 391263,
+				"tvdb": 2107274,
+				"tmdb": 432260,
 				"tvrage": null
 			},
-			"seasonNumber": 2,
-			"seasonTitle": "Season 2"
+			"seasonNumber": 3,
+			"seasonTitle": "Season 3"
 		},
 		{
-			"id": 1153842600,
+			"id": 1197035336,
 			"type": "show",
 			"rank": 2,
-			"dateAdded": "2025-01-10T03:16:38.000Z",
+			"dateAdded": "2025-03-18T14:40:56.000Z",
+			"showIds": {
+				"trakt": 203875,
+				"slug": "sakamoto-days",
+				"tvdb": 423732,
+				"imdb": "tt17069148",
+				"tmdb": 207332,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/sakamoto-days",
+			"title": "SAKAMOTO DAYS",
+			"year": 2025,
+			"overview": "Once the greatest hitman of all, Taro Sakamoto retired in the name of love. But when his past catches up, he must fight to protect his beloved family.",
+			"status": "returning series",
+			"genres": ["anime", "comedy", "action"]
+		},
+		{
+			"id": 1197032677,
+			"type": "show",
+			"rank": 3,
+			"dateAdded": "2025-03-18T14:33:56.000Z",
+			"showIds": {
+				"trakt": 154997,
+				"slug": "severance",
+				"tvdb": 371980,
+				"imdb": "tt11280740",
+				"tmdb": 95396,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/severance",
+			"title": "Severance",
+			"year": 2022,
+			"overview": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+			"status": "returning series",
+			"genres": ["science-fiction", "mystery", "drama"]
+		}
+	],
+	"watched": [
+		{
+			"id": 200465,
+			"type": "show",
+			"dateAdded": "2025-03-18T14:34:29.000Z",
 			"showIds": {
 				"trakt": 200465,
 				"slug": "american-primeval",
@@ -53,9 +94,26 @@
 			"overview": "A mother and son fleeing from their past form a found family while confronting a harsh landscape of freedom and cruelty in the American West.",
 			"status": "ended",
 			"genres": ["western", "drama", "action", "adventure"]
-		}
-	],
-	"watched": [
+		},
+		{
+			"id": 184471,
+			"type": "show",
+			"dateAdded": "2025-03-18T14:34:25.000Z",
+			"showIds": {
+				"trakt": 184471,
+				"slug": "the-night-agent",
+				"tvdb": 407281,
+				"imdb": "tt13918776",
+				"tmdb": 129552,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/the-night-agent",
+			"title": "The Night Agent",
+			"year": 2023,
+			"overview": "Brought together by a midnight phone call, an FBI agent and a cybersecurity expert must unravel an ever-growing web of political conspiracies.",
+			"status": "returning series",
+			"genres": ["drama", "mystery", "action", "adventure"]
+		},
 		{
 			"id": 38304,
 			"type": "show",
@@ -74,25 +132,6 @@
 			"overview": "Humans live in the world of Assiah, demons in Gehenna. The two dimensions are not meant to interfere with each other, but demons still possess creatures in Assiah in spite of this. The humans who can fight these demons are known as exorcists. Rin Okumura is a boy who bears the curse of being Satan's illegitimate son. His foster father sacrificed himself to save him from demons. To avenge his foster father's death as well as to prove himself, Rin decides to follow the path of an exorcist and defeat his own father, Satan. To hone his raw skills, Rin enters True Cross Academy to train with other exorcist candidates.",
 			"status": "returning series",
 			"genres": ["anime", "action", "fantasy"]
-		},
-		{
-			"id": 184471,
-			"type": "show",
-			"dateAdded": "2025-02-03T02:18:59.000Z",
-			"showIds": {
-				"trakt": 184471,
-				"slug": "the-night-agent",
-				"tvdb": 407281,
-				"imdb": "tt13918776",
-				"tmdb": 129552,
-				"tvrage": null
-			},
-			"url": "https://trakt.tv/shows/the-night-agent",
-			"title": "The Night Agent",
-			"year": 2023,
-			"overview": "Brought together by a midnight phone call, an FBI agent and a cybersecurity expert must unravel an ever-growing web of political conspiracies.",
-			"status": "returning series",
-			"genres": ["drama", "mystery", "action", "adventure"]
 		},
 		{
 			"id": 79353,
@@ -287,7 +326,7 @@
 			"url": "https://trakt.tv/shows/my-hero-academia",
 			"title": "My Hero Academia",
 			"year": 2016,
-			"overview": "For his entire life, Izuku has dreamed of being a hero—an ambitious goal for anyone, but an especially challenging one for a boy without superpowers. That’s right: in a world where 80% of the population has some sort of special Gift, Izuku was unlucky enough to be born completely normal. But that won’t stop him from enrolling in one of the most prestigious hero academies in the world to learn what it truly means to be a hero.",
+			"overview": "For his entire life, Izuku has dreamed of being a hero—an ambitious goal for anyone, but an especially challenging one for a boy without superpowers. That’s right: in a world where 80% of the population has some sort of special gift, Izuku was unlucky enough to be born completely normal. But that won’t stop him from enrolling in one of the most prestigious hero academies in the world to learn what it truly means to be a hero.",
 			"status": "returning series",
 			"genres": ["action", "superhero", "anime", "comedy"]
 		},
@@ -2167,7 +2206,14 @@
 			"year": 2016,
 			"overview": "Shimazu Toyohisa is a real-life samurai who fought in the pivotal Battle of Sekigahara. In his dying moments, Shimazu is transported to a world of magic with other famous warriors throughout history. These warriors are forced to fight each other in an endless battle.",
 			"status": "ended",
-			"genres": ["fantasy", "science-fiction", "anime", "action", "adventure"]
+			"genres": [
+				"fantasy",
+				"science-fiction",
+				"anime",
+				"action",
+				"adventure",
+				"comedy"
+			]
 		},
 		{
 			"id": 142611,
@@ -4190,49 +4236,9 @@
 	],
 	"favorites": [
 		{
-			"id": 696434767,
-			"type": "show",
-			"rank": 1,
-			"dateAdded": "2022-05-18T17:32:27.000Z",
-			"showIds": {
-				"trakt": 4583,
-				"slug": "lost-2004",
-				"tvdb": 73739,
-				"imdb": "tt0411008",
-				"tmdb": 4607,
-				"tvrage": null
-			},
-			"url": "https://trakt.tv/shows/lost-2004",
-			"title": "Lost",
-			"year": 2004,
-			"overview": "Stripped of everything, the survivors of a horrific plane crash  must work together to stay alive. But the island holds many secrets.",
-			"status": "ended",
-			"genres": ["mystery", "adventure", "action", "drama"]
-		},
-		{
-			"id": 696434786,
-			"type": "show",
-			"rank": 2,
-			"dateAdded": "2022-05-18T17:32:38.000Z",
-			"showIds": {
-				"trakt": 4532,
-				"slug": "scrubs",
-				"tvdb": 76156,
-				"imdb": "tt0285403",
-				"tmdb": 4556,
-				"tvrage": null
-			},
-			"url": "https://trakt.tv/shows/scrubs",
-			"title": "Scrubs",
-			"year": 2001,
-			"overview": "In the unreal world of Sacred Heart Hospital, John \"J.D.\" Dorian learns the ways of medicine, friendship and life.",
-			"status": "canceled",
-			"genres": ["comedy"]
-		},
-		{
 			"id": 696434880,
 			"type": "show",
-			"rank": 3,
+			"rank": 1,
 			"dateAdded": "2022-05-18T17:33:08.000Z",
 			"showIds": {
 				"trakt": 1388,
@@ -4250,56 +4256,9 @@
 			"genres": ["drama", "crime", "thriller"]
 		},
 		{
-			"id": 719687403,
-			"type": "show",
-			"rank": 4,
-			"dateAdded": "2022-07-20T02:37:18.000Z",
-			"showIds": {
-				"trakt": 4580,
-				"slug": "smallville",
-				"tvdb": 72218,
-				"imdb": "tt0279600",
-				"tmdb": 4604,
-				"tvrage": null
-			},
-			"url": "https://trakt.tv/shows/smallville",
-			"title": "Smallville",
-			"year": 2001,
-			"overview": "The origins of the world’s greatest hero–from Krypton refugee Kal-el’s arrival on Earth through his tumultuous teen years to Clark Kent’s final steps toward embracing his destiny as the Man of Steel.",
-			"status": "ended",
-			"genres": [
-				"drama",
-				"action",
-				"adventure",
-				"fantasy",
-				"science-fiction",
-				"superhero"
-			]
-		},
-		{
-			"id": 744695742,
-			"type": "show",
-			"rank": 5,
-			"dateAdded": "2022-09-26T20:06:24.000Z",
-			"showIds": {
-				"trakt": 1438,
-				"slug": "psych",
-				"tvdb": 79335,
-				"imdb": "tt0491738",
-				"tmdb": 1447,
-				"tvrage": null
-			},
-			"url": "https://trakt.tv/shows/psych",
-			"title": "Psych",
-			"year": 2006,
-			"overview": "Thanks to his police officer father's efforts, Shawn Spencer spent his childhood developing a keen eye for detail (and a lasting dislike of his dad). Years later, Shawn's frequent tips to the police lead to him being falsely accused of a crime he solved.\n\nNow, Shawn has no choice but to use his abilities to perpetuate his cover story: psychic crime-solving powers, all the while dragging his best friend, his dad, and the police along for the ride.",
-			"status": "ended",
-			"genres": ["comedy", "drama", "mystery", "crime"]
-		},
-		{
 			"id": 1021980395,
 			"type": "show",
-			"rank": 6,
+			"rank": 2,
 			"dateAdded": "2024-05-07T20:03:07.000Z",
 			"showIds": {
 				"trakt": 12915,
@@ -4322,16 +4281,103 @@
 				"anime",
 				"superhero"
 			]
+		},
+		{
+			"id": 696434767,
+			"type": "show",
+			"rank": 3,
+			"dateAdded": "2022-05-18T17:32:27.000Z",
+			"showIds": {
+				"trakt": 4583,
+				"slug": "lost-2004",
+				"tvdb": 73739,
+				"imdb": "tt0411008",
+				"tmdb": 4607,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/lost-2004",
+			"title": "Lost",
+			"year": 2004,
+			"overview": "Stripped of everything, the survivors of a horrific plane crash  must work together to stay alive. But the island holds many secrets.",
+			"status": "ended",
+			"genres": ["mystery", "adventure", "action", "drama"]
+		},
+		{
+			"id": 744695742,
+			"type": "show",
+			"rank": 4,
+			"dateAdded": "2022-09-26T20:06:24.000Z",
+			"showIds": {
+				"trakt": 1438,
+				"slug": "psych",
+				"tvdb": 79335,
+				"imdb": "tt0491738",
+				"tmdb": 1447,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/psych",
+			"title": "Psych",
+			"year": 2006,
+			"overview": "Thanks to his police officer father's efforts, Shawn Spencer spent his childhood developing a keen eye for detail (and a lasting dislike of his dad). Years later, Shawn's frequent tips to the police lead to him being falsely accused of a crime he solved.\n\nNow, Shawn has no choice but to use his abilities to perpetuate his cover story: psychic crime-solving powers, all the while dragging his best friend, his dad, and the police along for the ride.",
+			"status": "ended",
+			"genres": ["comedy", "drama", "mystery", "crime"]
+		},
+		{
+			"id": 696434786,
+			"type": "show",
+			"rank": 5,
+			"dateAdded": "2022-05-18T17:32:38.000Z",
+			"showIds": {
+				"trakt": 4532,
+				"slug": "scrubs",
+				"tvdb": 76156,
+				"imdb": "tt0285403",
+				"tmdb": 4556,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/scrubs",
+			"title": "Scrubs",
+			"year": 2001,
+			"overview": "In the unreal world of Sacred Heart Hospital, John \"J.D.\" Dorian learns the ways of medicine, friendship and life.",
+			"status": "canceled",
+			"genres": ["comedy"]
+		},
+		{
+			"id": 719687403,
+			"type": "show",
+			"rank": 6,
+			"dateAdded": "2022-07-20T02:37:18.000Z",
+			"showIds": {
+				"trakt": 4580,
+				"slug": "smallville",
+				"tvdb": 72218,
+				"imdb": "tt0279600",
+				"tmdb": 4604,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/smallville",
+			"title": "Smallville",
+			"year": 2001,
+			"overview": "The origins of the world’s greatest hero–from Krypton refugee Kal-el’s arrival on Earth through his tumultuous teen years to Clark Kent’s final steps toward embracing his destiny as the Man of Steel.",
+			"status": "ended",
+			"genres": [
+				"drama",
+				"action",
+				"adventure",
+				"fantasy",
+				"science-fiction",
+				"superhero"
+			]
 		}
 	],
 	"genres": [
 		{
 			"genre": "drama",
-			"total": 128
+			"total": 129
 		},
 		{
 			"genre": "action",
-			"total": 105
+			"total": 106
 		},
 		{
 			"genre": "fantasy",
@@ -4339,7 +4385,7 @@
 		},
 		{
 			"genre": "adventure",
-			"total": 86
+			"total": 87
 		},
 		{
 			"genre": "anime",
@@ -4350,11 +4396,11 @@
 			"total": 66
 		},
 		{
-			"genre": "mystery",
-			"total": 49
+			"genre": "comedy",
+			"total": 50
 		},
 		{
-			"genre": "comedy",
+			"genre": "mystery",
 			"total": 49
 		},
 		{
@@ -4390,6 +4436,10 @@
 			"total": 3
 		},
 		{
+			"genre": "western",
+			"total": 2
+		},
+		{
 			"genre": "war",
 			"total": 2
 		},
@@ -4411,10 +4461,6 @@
 		},
 		{
 			"genre": "family",
-			"total": 1
-		},
-		{
-			"genre": "western",
 			"total": 1
 		}
 	]
