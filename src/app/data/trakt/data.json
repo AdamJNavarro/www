@@ -1,63 +1,15 @@
 {
-	"updatedAt": "2025-03-23T06:03:24.907Z",
+	"updatedAt": "2025-03-30T06:03:24.626Z",
 	"stats": {
 		"shows": 208,
-		"episodes": 10736,
-		"minutes": 364727
+		"episodes": 10744,
+		"minutes": 365131
 	},
 	"watching": [
 		{
-			"id": 1197032929,
-			"type": "season",
-			"rank": 1,
-			"dateAdded": "2025-03-18T14:34:57.000Z",
-			"showIds": {
-				"trakt": 155536,
-				"slug": "reacher",
-				"tvdb": 366924,
-				"imdb": "tt9288030",
-				"tmdb": 108978,
-				"tvrage": null
-			},
-			"url": "https://trakt.tv/shows/reacher",
-			"title": "Reacher",
-			"year": 2022,
-			"overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
-			"status": "returning series",
-			"genres": ["action", "adventure", "crime", "drama"],
-			"seasonIds": {
-				"trakt": 391263,
-				"tvdb": 2107274,
-				"tmdb": 432260,
-				"tvrage": null
-			},
-			"seasonNumber": 3,
-			"seasonTitle": "Season 3"
-		},
-		{
-			"id": 1197035336,
-			"type": "show",
-			"rank": 2,
-			"dateAdded": "2025-03-18T14:40:56.000Z",
-			"showIds": {
-				"trakt": 203875,
-				"slug": "sakamoto-days",
-				"tvdb": 423732,
-				"imdb": "tt17069148",
-				"tmdb": 207332,
-				"tvrage": null
-			},
-			"url": "https://trakt.tv/shows/sakamoto-days",
-			"title": "SAKAMOTO DAYS",
-			"year": 2025,
-			"overview": "Once the greatest hitman of all, Taro Sakamoto retired in the name of love. But when his past catches up, he must fight to protect his beloved family.",
-			"status": "returning series",
-			"genres": ["anime", "comedy", "action"]
-		},
-		{
 			"id": 1197032677,
 			"type": "show",
-			"rank": 3,
+			"rank": 1,
 			"dateAdded": "2025-03-18T14:33:56.000Z",
 			"showIds": {
 				"trakt": 154997,
@@ -76,6 +28,25 @@
 		}
 	],
 	"watched": [
+		{
+			"id": 155536,
+			"type": "show",
+			"dateAdded": "2025-03-30T04:43:42.000Z",
+			"showIds": {
+				"trakt": 155536,
+				"slug": "reacher",
+				"tvdb": 366924,
+				"imdb": "tt9288030",
+				"tmdb": 108978,
+				"tvrage": null
+			},
+			"url": "https://trakt.tv/shows/reacher",
+			"title": "Reacher",
+			"year": 2022,
+			"overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+			"status": "returning series",
+			"genres": ["action", "adventure", "crime", "drama"]
+		},
 		{
 			"id": 200465,
 			"type": "show",
@@ -130,7 +101,7 @@
 			"title": "Blue Exorcist",
 			"year": 2011,
 			"overview": "Humans live in the world of Assiah, demons in Gehenna. The two dimensions are not meant to interfere with each other, but demons still possess creatures in Assiah in spite of this. The humans who can fight these demons are known as exorcists. Rin Okumura is a boy who bears the curse of being Satan's illegitimate son. His foster father sacrificed himself to save him from demons. To avenge his foster father's death as well as to prove himself, Rin decides to follow the path of an exorcist and defeat his own father, Satan. To hone his raw skills, Rin enters True Cross Academy to train with other exorcist candidates.",
-			"status": "returning series",
+			"status": "ended",
 			"genres": ["anime", "action", "fantasy"]
 		},
 		{
@@ -856,7 +827,7 @@
 			"title": "Ishura",
 			"year": 2024,
 			"overview": "A host of demigods have inherited the world after the Demon King has died, and a battle to determine the mightiest ensues.",
-			"status": "returning series",
+			"status": "ended",
 			"genres": ["anime", "action", "adventure", "fantasy"]
 		},
 		{
@@ -1081,25 +1052,6 @@
 			"overview": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
 			"status": "returning series",
 			"genres": ["anime", "fantasy", "action", "drama"]
-		},
-		{
-			"id": 155536,
-			"type": "show",
-			"dateAdded": "2024-01-23T04:47:46.000Z",
-			"showIds": {
-				"trakt": 155536,
-				"slug": "reacher",
-				"tvdb": 366924,
-				"imdb": "tt9288030",
-				"tmdb": 108978,
-				"tvrage": null
-			},
-			"url": "https://trakt.tv/shows/reacher",
-			"title": "Reacher",
-			"year": 2022,
-			"overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
-			"status": "returning series",
-			"genres": ["action", "adventure", "crime", "drama"]
 		},
 		{
 			"id": 104307,
