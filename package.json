@@ -40,7 +40,7 @@
 		"@types/react": "^19.1.0",
 		"@types/react-dom": "^19.1.1",
 		"convert-csv-to-json": "^2.50.0",
-		"cypress": "^14.2.1",
+		"cypress": "^14.3.0",
 		"husky": "^9.1.7",
 		"ky": "^1.8.0",
 		"lint-staged": "^15.5.0",
