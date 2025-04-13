@@ -1,9 +1,9 @@
 {
-	"updatedAt": "2025-04-06T06:03:25.399Z",
+	"updatedAt": "2025-04-13T06:03:25.426Z",
 	"stats": {
 		"shows": 208,
 		"episodes": 10744,
-		"minutes": 365138
+		"minutes": 365084
 	},
 	"watching": [
 		{
@@ -139,7 +139,7 @@
 			"title": "Castlevania: Nocturne",
 			"year": 2023,
 			"overview": "As revolution sweeps France, Richter Belmont fights to uphold his family's legacy and prevent the rise of a ruthless, power-hungry vampire ruler.",
-			"status": "returning series",
+			"status": "canceled",
 			"genres": ["fantasy", "science-fiction", "animation", "drama"]
 		},
 		{
@@ -1068,7 +1068,7 @@
 			"url": "https://trakt.tv/shows/bungo-stray-dogs",
 			"title": "Bungo Stray Dogs",
 			"year": 2016,
-			"overview": "Atsushi Nakajima was kicked out of his orphanage, and now he has no place to go and no food. While he is standing by a river, on the brink of starvation, he rescues a man whimsically attempting suicide. That man is Osamu Dazai, and he and his partner Kunikida are members of a very special detective agency. They have supernatural powers and deal with cases that are too dangerous for the police or the military. They're tracking down a tiger that has appeared in the area recently, around the time Atsushi came to the area. The tiger seems to have a connection to Atsushi, and by the time the case is solved, it is clear that Atsushi's future will involve much more of Dazai and the rest of the detectives!",
+			"overview": "Unconfident loner Atsushi Nakajima joins the Armed Detective Agency, a group of operatives who fight Port Mafia with their supernatural abilities.",
 			"status": "returning series",
 			"genres": [
 				"anime",
@@ -1372,7 +1372,7 @@
 			"year": 2023,
 			"overview": "Ruthless siblings Roderick and Madeline Usher have built Fortunato Pharmaceuticals into an empire of wealth, privilege and power. But past secrets come to light when the heirs to the Usher dynasty start dying at the hands of a mysterious woman from their youth.",
 			"status": "ended",
-			"genres": ["drama", "horror", "crime", "mystery"]
+			"genres": ["drama", "horror", "mystery"]
 		},
 		{
 			"id": 173886,
@@ -3126,7 +3126,7 @@
 			"year": 2013,
 			"overview": "Both a gift and a curse, Graham has the extraordinary ability to think like his prey—he sees what they see, feels what they feel. But while Graham is pursuing an especially troubling, cannibalistic murderer, Special Agent Jack Crawford teams him with a highly respected psychiatrist – a man with a taste for the criminal minded – Dr. Hannibal Lecter.",
 			"status": "ended",
-			"genres": ["drama", "crime", "horror"]
+			"genres": ["drama", "crime", "horror", "thriller"]
 		},
 		{
 			"id": 60158,
@@ -4190,7 +4190,7 @@
 		{
 			"id": 696434880,
 			"type": "show",
-			"rank": 1,
+			"rank": 3,
 			"dateAdded": "2022-05-18T17:33:08.000Z",
 			"showIds": {
 				"trakt": 1388,
@@ -4210,7 +4210,7 @@
 		{
 			"id": 1021980395,
 			"type": "show",
-			"rank": 2,
+			"rank": 6,
 			"dateAdded": "2024-05-07T20:03:07.000Z",
 			"showIds": {
 				"trakt": 12915,
@@ -4237,7 +4237,7 @@
 		{
 			"id": 696434767,
 			"type": "show",
-			"rank": 3,
+			"rank": 1,
 			"dateAdded": "2022-05-18T17:32:27.000Z",
 			"showIds": {
 				"trakt": 4583,
@@ -4257,7 +4257,7 @@
 		{
 			"id": 744695742,
 			"type": "show",
-			"rank": 4,
+			"rank": 5,
 			"dateAdded": "2022-09-26T20:06:24.000Z",
 			"showIds": {
 				"trakt": 1438,
@@ -4277,7 +4277,7 @@
 		{
 			"id": 696434786,
 			"type": "show",
-			"rank": 5,
+			"rank": 2,
 			"dateAdded": "2022-05-18T17:32:38.000Z",
 			"showIds": {
 				"trakt": 4532,
@@ -4297,7 +4297,7 @@
 		{
 			"id": 719687403,
 			"type": "show",
-			"rank": 6,
+			"rank": 4,
 			"dateAdded": "2022-07-20T02:37:18.000Z",
 			"showIds": {
 				"trakt": 4580,
@@ -4357,7 +4357,7 @@
 		},
 		{
 			"genre": "crime",
-			"total": 38
+			"total": 37
 		},
 		{
 			"genre": "horror",
@@ -4381,7 +4381,7 @@
 		},
 		{
 			"genre": "thriller",
-			"total": 7
+			"total": 8
 		},
 		{
 			"genre": "history",
