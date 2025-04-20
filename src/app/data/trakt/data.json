@@ -1,9 +1,9 @@
 {
-	"updatedAt": "2025-04-13T06:03:25.426Z",
+	"updatedAt": "2025-04-20T06:03:21.942Z",
 	"stats": {
 		"shows": 208,
 		"episodes": 10744,
-		"minutes": 365084
+		"minutes": 365150
 	},
 	"watching": [
 		{
@@ -139,7 +139,7 @@
 			"title": "Castlevania: Nocturne",
 			"year": 2023,
 			"overview": "As revolution sweeps France, Richter Belmont fights to uphold his family's legacy and prevent the rise of a ruthless, power-hungry vampire ruler.",
-			"status": "canceled",
+			"status": "returning series",
 			"genres": ["fantasy", "science-fiction", "animation", "drama"]
 		},
 		{
@@ -4223,16 +4223,9 @@
 			"url": "https://trakt.tv/shows/dragon-ball-z",
 			"title": "Dragon Ball Z",
 			"year": 1989,
-			"overview": "The adventures of Earth's martial arts defender, Son Goku, continue with a new family and the revelation of his alien origins. Now Goku and his allies must defend the planet from an onslaught of new extraterrestrial enemies.",
+			"overview": "Goku is back with his new son, Gohan, but just when things are getting settled down, the adventures continue. Whether he is facing enemies such as Freeza, Cell, or Boo, Goku is proven to be an elite of his own and discovers his race, Saiyan. He meets many new people, gaining allies as well as enemies, as he still finds time to raise a family and be the happy-go-lucky Saiyan he is.",
 			"status": "ended",
-			"genres": [
-				"action",
-				"adventure",
-				"fantasy",
-				"science-fiction",
-				"anime",
-				"superhero"
-			]
+			"genres": ["action", "adventure", "fantasy", "science-fiction", "anime"]
 		},
 		{
 			"id": 696434767,
