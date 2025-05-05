@@ -1,5 +1,5 @@
 {
-	"updatedAt": "2025-04-28T06:08:53.062Z",
+	"updatedAt": "2025-05-05T06:05:34.799Z",
 	"books": [
 		{
 			"status": "FINISHED",
@@ -761,28 +761,6 @@
 			"authors": "Brandon Sanderson"
 		},
 		{
-			"status": "IS_READING",
-			"createdAt": "2024-11-13T15:50:58.904Z",
-			"id": "cl733uu3y14063320jtkd27wqufg",
-			"url": "https://literal.club/book/brandon-sanderson-the-well-of-ascension-rnke7",
-			"title": "The Well of Ascension",
-			"cover": "http://books.google.com/books/content?id=kbJtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-			"isbn": "9781250868299",
-			"pageCount": 608,
-			"authors": "Brandon Sanderson"
-		},
-		{
-			"status": "WANTS_TO_READ",
-			"createdAt": "2024-11-13T15:51:36.126Z",
-			"id": "cldah90p316017740htw8cvmq9zf",
-			"url": "https://literal.club/book/brandon-sanderson-the-hero-of-ages-iabmx",
-			"title": "The Hero of Ages",
-			"cover": "http://books.google.com/books/content?id=k7JtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-			"isbn": "9781250868312",
-			"pageCount": 0,
-			"authors": "Brandon Sanderson"
-		},
-		{
 			"status": "FINISHED",
 			"createdAt": "2024-11-13T15:49:32.917Z",
 			"id": "cm3g24rql738520hyxsct293z2",
@@ -803,6 +781,39 @@
 			"isbn": "9781399613378",
 			"pageCount": 0,
 			"authors": "Brandon Sanderson"
+		},
+		{
+			"status": "FINISHED",
+			"createdAt": "2025-04-29T22:38:28.607Z",
+			"id": "cl733uu3y14063320jtkd27wqufg",
+			"url": "https://literal.club/book/brandon-sanderson-the-well-of-ascension-rnke7",
+			"title": "The Well of Ascension",
+			"cover": "http://books.google.com/books/content?id=kbJtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+			"isbn": "9781250868299",
+			"pageCount": 608,
+			"authors": "Brandon Sanderson"
+		},
+		{
+			"status": "IS_READING",
+			"createdAt": "2025-04-29T22:39:03.495Z",
+			"id": "cldah90p316017740htw8cvmq9zf",
+			"url": "https://literal.club/book/brandon-sanderson-the-hero-of-ages-iabmx",
+			"title": "The Hero of Ages",
+			"cover": "http://books.google.com/books/content?id=k7JtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+			"isbn": "9781250868312",
+			"pageCount": 0,
+			"authors": "Brandon Sanderson"
+		},
+		{
+			"status": "FINISHED",
+			"createdAt": "2025-04-29T22:40:39.378Z",
+			"id": "ckybuxltq14020990iho2btpatik",
+			"url": "https://literal.club/book/tad-williams-the-navigators-children-qevu6",
+			"title": "The Navigator's Children",
+			"cover": "https://assets.literal.club/2/ckybuxltq14020990iho2btpatik.jpg",
+			"isbn": "9781473603349",
+			"pageCount": 400,
+			"authors": "Tad Williams"
 		}
 	]
 }
