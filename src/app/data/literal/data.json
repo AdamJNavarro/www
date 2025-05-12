@@ -1,5 +1,5 @@
 {
-	"updatedAt": "2025-05-05T06:05:34.799Z",
+	"updatedAt": "2025-05-12T06:05:29.828Z",
 	"books": [
 		{
 			"status": "FINISHED",
@@ -585,17 +585,6 @@
 			"authors": "Tad Williams"
 		},
 		{
-			"status": "IS_READING",
-			"createdAt": "2024-07-07T23:10:08.266Z",
-			"id": "ckmji0c2b522011ibj2g5vv4eg",
-			"url": "https://literal.club/book/thinking-in-systems-0q34a",
-			"title": "Thinking in Systems",
-			"cover": "https://assets.literal.club/4/ckmji0c2b522011ibj2g5vv4eg.jpg",
-			"isbn": "9781603580557",
-			"pageCount": 218,
-			"authors": "Donella H. Meadows, Diana Wright"
-		},
-		{
 			"status": "FINISHED",
 			"createdAt": "2024-07-08T16:13:34.770Z",
 			"id": "clqcqzkjd11593920hu5k0d43zgd",
@@ -750,17 +739,6 @@
 			"authors": "Joe Abercrombie"
 		},
 		{
-			"status": "WANTS_TO_READ",
-			"createdAt": "2024-11-13T15:51:46.379Z",
-			"id": "cklhqhone28581ii33nrfpjab",
-			"url": "https://literal.club/book/warbreaker-1deki",
-			"title": "Warbreaker",
-			"cover": "https://assets.literal.club/2/cklhqhone28581ii33nrfpjab.jpg",
-			"isbn": "9780575097469",
-			"pageCount": 672,
-			"authors": "Brandon Sanderson"
-		},
-		{
 			"status": "FINISHED",
 			"createdAt": "2024-11-13T15:49:32.917Z",
 			"id": "cm3g24rql738520hyxsct293z2",
@@ -794,17 +772,6 @@
 			"authors": "Brandon Sanderson"
 		},
 		{
-			"status": "IS_READING",
-			"createdAt": "2025-04-29T22:39:03.495Z",
-			"id": "cldah90p316017740htw8cvmq9zf",
-			"url": "https://literal.club/book/brandon-sanderson-the-hero-of-ages-iabmx",
-			"title": "The Hero of Ages",
-			"cover": "http://books.google.com/books/content?id=k7JtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-			"isbn": "9781250868312",
-			"pageCount": 0,
-			"authors": "Brandon Sanderson"
-		},
-		{
 			"status": "FINISHED",
 			"createdAt": "2025-04-29T22:40:39.378Z",
 			"id": "ckybuxltq14020990iho2btpatik",
@@ -814,6 +781,39 @@
 			"isbn": "9781473603349",
 			"pageCount": 400,
 			"authors": "Tad Williams"
+		},
+		{
+			"status": "NONE",
+			"createdAt": "2025-05-09T14:56:14.729Z",
+			"id": "ckmji0c2b522011ibj2g5vv4eg",
+			"url": "https://literal.club/book/thinking-in-systems-0q34a",
+			"title": "Thinking in Systems",
+			"cover": "https://assets.literal.club/4/ckmji0c2b522011ibj2g5vv4eg.jpg",
+			"isbn": "9781603580557",
+			"pageCount": 218,
+			"authors": "Donella H. Meadows, Diana Wright"
+		},
+		{
+			"status": "FINISHED",
+			"createdAt": "2025-05-09T14:56:18.108Z",
+			"id": "cldah90p316017740htw8cvmq9zf",
+			"url": "https://literal.club/book/brandon-sanderson-the-hero-of-ages-iabmx",
+			"title": "The Hero of Ages",
+			"cover": "http://books.google.com/books/content?id=k7JtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+			"isbn": "9781250868312",
+			"pageCount": 0,
+			"authors": "Brandon Sanderson"
+		},
+		{
+			"status": "IS_READING",
+			"createdAt": "2025-05-09T14:57:01.624Z",
+			"id": "cklhqhone28581ii33nrfpjab",
+			"url": "https://literal.club/book/warbreaker-1deki",
+			"title": "Warbreaker",
+			"cover": "https://assets.literal.club/2/cklhqhone28581ii33nrfpjab.jpg",
+			"isbn": "9780575097469",
+			"pageCount": 672,
+			"authors": "Brandon Sanderson"
 		}
 	]
 }
